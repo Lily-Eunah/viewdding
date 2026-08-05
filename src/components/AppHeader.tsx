@@ -7,6 +7,10 @@ export function AppHeader() {
         <span className="brand-kicker">WEDDING VENUE ARCHIVE</span>
         <span className="brand-name">Viewdding</span>
       </Link>
+      <nav className="site-links" aria-label="서비스 메뉴">
+        <Link href="/search/">Wedding Hall</Link>
+        <Link href="/gatherings/">Gathering</Link>
+      </nav>
     </header>
   );
 }
