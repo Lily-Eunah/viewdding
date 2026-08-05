@@ -3,6 +3,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { EMPTY_RESTAURANT_FILTERS, filterRestaurants } from "@/domain/restaurant-filter";
 import type { GatheringPurpose, RestaurantFilterState, RestaurantRecord, Weekday } from "@/domain/restaurant-types";
+import { KakaoRestaurantMap } from "./KakaoRestaurantMap";
 import { RestaurantCard } from "./RestaurantCard";
 
 const WEEKDAYS: Array<{ value: Weekday; label: string }> = [
@@ -36,10 +37,17 @@ function toggleValue(values: string[], value: string): string[] {
   return values.includes(value) ? values.filter((item) => item !== value) : [...values, value];
 }
 
-export function RestaurantSearchExperience({ restaurants }: { restaurants: RestaurantRecord[] }) {
+export function RestaurantSearchExperience({
+  restaurants,
+  kakaoMapAppKey,
+}: {
+  restaurants: RestaurantRecord[];
+  kakaoMapAppKey: string;
+}) {
   const [draft, setDraft] = useState<RestaurantFilterState>({ ...EMPTY_RESTAURANT_FILTERS });
   const [applied, setApplied] = useState<RestaurantFilterState>({ ...EMPTY_RESTAURANT_FILTERS });
   const [detailOpen, setDetailOpen] = useState(true);
+  const [viewMode, setViewMode] = useState<"list" | "map">("list");
 
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
@@ -129,11 +137,26 @@ export function RestaurantSearchExperience({ restaurants }: { restaurants: Resta
 
       <div id="restaurant-results" className="results-heading">
         <p className="result-context">{applied.purpose === "invitation" ? "청첩장 모임" : "상견례"} 장소</p>
-        <div className="result-summary"><strong>조건 확인 {results.matched.length}곳</strong><span>정보 미확인 {results.unknown.length}곳 · 총 {total}곳</span></div>
+        <div className="result-heading-row">
+          <div className="result-summary"><strong>조건 확인 {results.matched.length}곳</strong><span>정보 미확인 {results.unknown.length}곳 · 총 {total}곳</span></div>
+          <div className="result-view-switch" role="group" aria-label="결과 보기 방식">
+            <button type="button" className={viewMode === "list" ? "is-selected" : ""} aria-pressed={viewMode === "list"} onClick={() => setViewMode("list")}>목록</button>
+            <button type="button" className={viewMode === "map" ? "is-selected" : ""} aria-pressed={viewMode === "map"} onClick={() => setViewMode("map")}>지도</button>
+          </div>
+        </div>
       </div>
-      <div className="result-list">{results.matched.map((item) => <RestaurantCard key={item.restaurant.id} restaurant={item.restaurant} />)}</div>
-      {results.matched.length === 0 ? <div className="empty-state"><h3>조건이 확인된 음식점이 없어요.</h3><p>조건을 하나 줄이거나 정보 미확인 결과를 확인해보세요.</p></div> : null}
-      {results.unknown.length > 0 ? <details className="unknown-results"><summary>정보 확인이 필요한 음식점 {results.unknown.length}곳 보기</summary><p>선택 조건과 다르지는 않지만 필요한 값 일부가 확인되지 않은 곳입니다.</p><div className="result-list">{results.unknown.map((item) => <RestaurantCard key={item.restaurant.id} restaurant={item.restaurant} unknownReasons={item.unknownReasons} />)}</div></details> : null}
+      {viewMode === "map" ? (
+        <KakaoRestaurantMap
+          restaurants={[...results.matched, ...results.unknown].map((item) => item.restaurant)}
+          appKey={kakaoMapAppKey}
+        />
+      ) : (
+        <>
+          <div className="result-list">{results.matched.map((item) => <RestaurantCard key={item.restaurant.id} restaurant={item.restaurant} />)}</div>
+          {results.matched.length === 0 ? <div className="empty-state"><h3>조건이 확인된 음식점이 없어요.</h3><p>조건을 하나 줄이거나 정보 미확인 결과를 확인해보세요.</p></div> : null}
+          {results.unknown.length > 0 ? <details className="unknown-results"><summary>정보 확인이 필요한 음식점 {results.unknown.length}곳 보기</summary><p>선택 조건과 다르지는 않지만 필요한 값 일부가 확인되지 않은 곳입니다.</p><div className="result-list">{results.unknown.map((item) => <RestaurantCard key={item.restaurant.id} restaurant={item.restaurant} unknownReasons={item.unknownReasons} />)}</div></details> : null}
+        </>
+      )}
     </section>
   );
 }

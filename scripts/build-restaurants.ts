@@ -1,14 +1,40 @@
 import fs from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import nextEnv from "@next/env";
+import {
+  geocodeAddressCandidates,
+  normalizeAddressKey,
+  restaurantGeocodeFromDocument,
+  type KakaoAddressDocument,
+  type RestaurantGeocode,
+} from "../src/domain/restaurant-geocoding";
 import { normalizeRestaurantRow, type RestaurantSourceRow } from "../src/domain/restaurant-normalization";
+import type { RestaurantRecord } from "../src/domain/restaurant-types";
 
 const scriptDir = path.dirname(fileURLToPath(import.meta.url));
 const projectRoot = path.resolve(scriptDir, "..");
+const { loadEnvConfig } = nextEnv;
+loadEnvConfig(projectRoot);
 const spreadsheetId = process.env.VIEWDDING_RESTAURANT_SHEET_ID ?? "1-aC-dMvSfVnBfzpTuqY2tWwzgdJ15aBoZ6KOomvJZD4";
 const sheetName = process.env.VIEWDDING_RESTAURANT_SHEET_NAME ?? "Restaurants";
+const kakaoRestApiKey = process.env.KAKAO_REST_API_KEY?.trim() ?? "";
 const outputPath = path.join(projectRoot, "src", "data", "restaurants.generated.json");
 const metadataPath = path.join(projectRoot, "src", "data", "restaurant-metadata.generated.json");
+const geocodeCachePath = path.join(projectRoot, "src", "data", "restaurant-geocodes.generated.json");
+
+interface GeocodeCacheEntry extends RestaurantGeocode {
+  provider: "kakao";
+  updatedAt: string;
+}
+
+type GeocodeCache = Record<string, GeocodeCacheEntry>;
+
+class KakaoGeocodeError extends Error {
+  constructor(public readonly status: number) {
+    super(`Kakao 주소 검색에 실패했습니다: ${status}`);
+  }
+}
 
 function parseCsv(contents: string): string[][] {
   const rows: string[][] = [];
@@ -50,25 +76,108 @@ function objectsFromCsv(contents: string): RestaurantSourceRow[] {
   return rows.map((values) => Object.fromEntries(headers.map((header, index) => [header.trim(), values[index] ?? ""])));
 }
 
+async function loadGeocodeCache(): Promise<GeocodeCache> {
+  try {
+    return JSON.parse(await fs.readFile(geocodeCachePath, "utf8")) as GeocodeCache;
+  } catch (error) {
+    if ((error as NodeJS.ErrnoException).code === "ENOENT") return {};
+    throw error;
+  }
+}
+
+async function geocodeAddress(address: string): Promise<RestaurantGeocode | null> {
+  for (const query of geocodeAddressCandidates(address)) {
+    const url = new URL("https://dapi.kakao.com/v2/local/search/address.json");
+    url.searchParams.set("query", query);
+    url.searchParams.set("size", "1");
+    const response = await fetch(url, {
+      headers: { Authorization: `KakaoAK ${kakaoRestApiKey}` },
+    });
+    if (!response.ok) throw new KakaoGeocodeError(response.status);
+    const payload = await response.json() as { documents?: KakaoAddressDocument[] };
+    const result = payload.documents?.[0]
+      ? restaurantGeocodeFromDocument(payload.documents[0], query)
+      : null;
+    if (result) return result;
+  }
+  return null;
+}
+
 const csvUrl = `https://docs.google.com/spreadsheets/d/${spreadsheetId}/gviz/tq?tqx=out:csv&sheet=${encodeURIComponent(sheetName)}`;
 const response = await fetch(csvUrl);
 if (!response.ok) throw new Error(`Google Sheet 음식점 데이터를 가져오지 못했습니다: ${response.status}`);
 
 const csv = await response.text();
 const sourceRows = objectsFromCsv(csv);
-const restaurants = sourceRows.flatMap((row) => {
+const normalizedRestaurants = sourceRows.flatMap((row) => {
   const restaurant = normalizeRestaurantRow(row);
   return restaurant?.active ? [restaurant] : [];
 });
+const geocodeCache = await loadGeocodeCache();
+let geocodingAvailable = Boolean(kakaoRestApiKey);
+let sourceCoordinateCount = 0;
+let cachedCoordinateCount = 0;
+let geocodedCoordinateCount = 0;
+
+const restaurants: RestaurantRecord[] = [];
+for (const restaurant of normalizedRestaurants) {
+  if (restaurant.latitude !== null && restaurant.longitude !== null) {
+    sourceCoordinateCount += 1;
+    restaurants.push(restaurant);
+    continue;
+  }
+  if (!restaurant.address) {
+    restaurants.push(restaurant);
+    continue;
+  }
+
+  const cacheKey = normalizeAddressKey(restaurant.address);
+  let geocode: RestaurantGeocode | null = geocodeCache[cacheKey] ?? null;
+  if (geocode) {
+    cachedCoordinateCount += 1;
+  } else if (geocodingAvailable) {
+    try {
+      geocode = await geocodeAddress(restaurant.address);
+      if (geocode) {
+        geocodeCache[cacheKey] = {
+          ...geocode,
+          provider: "kakao",
+          updatedAt: new Date().toISOString(),
+        };
+        geocodedCoordinateCount += 1;
+      }
+    } catch (error) {
+      if (error instanceof KakaoGeocodeError && [401, 403].includes(error.status)) {
+        geocodingAvailable = false;
+        console.warn("Kakao REST API 키를 확인할 수 없어 기존 좌표만 사용합니다.");
+      } else {
+        console.warn(`주소 좌표 변환을 건너뜁니다: ${restaurant.address}`);
+      }
+    }
+  }
+
+  restaurants.push(geocode ? {
+    ...restaurant,
+    latitude: geocode.latitude,
+    longitude: geocode.longitude,
+  } : restaurant);
+}
 
 await fs.mkdir(path.dirname(outputPath), { recursive: true });
 await fs.writeFile(outputPath, `${JSON.stringify(restaurants, null, 2)}\n`, "utf8");
+await fs.writeFile(geocodeCachePath, `${JSON.stringify(geocodeCache, null, 2)}\n`, "utf8");
 await fs.writeFile(metadataPath, `${JSON.stringify({
   generatedAt: new Date().toISOString(),
   sourceSpreadsheetId: spreadsheetId,
   sourceSheetName: sheetName,
   sourceRows: sourceRows.length,
   exportedRestaurants: restaurants.length,
+  coordinates: {
+    fromSheet: sourceCoordinateCount,
+    fromCache: cachedCoordinateCount,
+    geocodedThisBuild: geocodedCoordinateCount,
+    missing: restaurants.filter((restaurant) => restaurant.latitude === null || restaurant.longitude === null).length,
+  },
   districts: Array.from(new Set(restaurants.map((restaurant) => restaurant.district))).sort((a, b) => a.localeCompare(b, "ko")),
 }, null, 2)}\n`, "utf8");
 

@@ -1,9 +1,15 @@
 {
-  "generatedAt": "2026-08-05T12:37:14.980Z",
+  "generatedAt": "2026-08-05T13:12:56.856Z",
   "sourceSpreadsheetId": "1-aC-dMvSfVnBfzpTuqY2tWwzgdJ15aBoZ6KOomvJZD4",
   "sourceSheetName": "Restaurants",
-  "sourceRows": 64,
-  "exportedRestaurants": 32,
+  "sourceRows": 108,
+  "exportedRestaurants": 108,
+  "coordinates": {
+    "fromSheet": 0,
+    "fromCache": 0,
+    "geocodedThisBuild": 0,
+    "missing": 108
+  },
   "districts": [
     "강남구",
     "서초구",

@@ -17,7 +17,10 @@ export default function GatheringsPage() {
           <p>청첩장 모임과 상견례를 나누어 보고,<br />요일과 인원, 공간 조건에 맞는 장소를 찾아보세요.</p>
         </div>
       </section>
-      <RestaurantSearchExperience restaurants={restaurants} />
+      <RestaurantSearchExperience
+        restaurants={restaurants}
+        kakaoMapAppKey={process.env.NEXT_PUBLIC_KAKAO_MAP_JS_KEY ?? ""}
+      />
     </>
   );
 }

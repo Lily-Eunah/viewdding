@@ -14,6 +14,7 @@
     "build": "npm run data:build && next build"
   },
   "dependencies": {
+    "@next/env": "16.3.0",
     "next": "16.3.0",
     "react": "19.2.8",
     "react-dom": "19.2.8"
