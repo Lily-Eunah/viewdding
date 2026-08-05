@@ -1,11 +1,12 @@
 {
-  "generatedAt": "2026-08-05T09:13:13.939Z",
+  "generatedAt": "2026-08-05T09:52:54.271Z",
   "sourceSpreadsheetId": "1-aC-dMvSfVnBfzpTuqY2tWwzgdJ15aBoZ6KOomvJZD4",
   "sourceSheetName": "Restaurants",
-  "sourceRows": 5,
-  "exportedRestaurants": 5,
+  "sourceRows": 27,
+  "exportedRestaurants": 27,
   "districts": [
     "강남구",
+    "서초구",
     "송파구",
     "종로구"
   ]
