@@ -60,8 +60,6 @@ export function SearchExperience({ compact = false }: { compact?: boolean }) {
   useEffect(() => setVisible(PAGE_SIZE), [applied]);
 
   const detailCount = Number(draft.guests !== null) + Number(draft.naturalLight) + draft.ceremonyFormats.length + Number(draft.intervalAtLeast !== null) + draft.meals.length;
-  const total = results.matched.length + results.unknown.length;
-
   function commit(next: FilterState) {
     setApplied(next);
     setDraft(next);
@@ -107,7 +105,7 @@ export function SearchExperience({ compact = false }: { compact?: boolean }) {
 
       <div id="search-results" className="results-heading">
         <div className="applied-chips">{chips.map((chip) => <button key={chip.key} type="button" onClick={chip.remove}>{chip.label} ×</button>)}</div>
-        <div className="result-summary"><strong>조건 확인 {results.matched.length}개</strong><span>정보 미확인 {results.unknown.length}개 · 총 {total}개</span></div>
+        <div className="result-summary"><strong>검색 결과 {results.matched.length}개</strong><span>추가 확인이 필요한 홀 {results.unknown.length}개는 아래에 따로 모았어요.</span></div>
       </div>
 
       <div className="result-list">{results.matched.slice(0, visible).map((item) => <HallCard key={item.hall.id} hall={item.hall} />)}</div>

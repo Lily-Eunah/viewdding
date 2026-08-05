@@ -43,7 +43,7 @@ export function HallCard({ hall }: { hall: HallRecord; unknownReasons?: Filtered
         </div>
         <div className="chip-row">{hallTags(hall).map((tag) => <span className="chip" key={tag}>{tag}</span>)}</div>
       </div>
-      {facts.length > 0 ? <dl className="hall-facts">{facts.map((fact) => <div key={fact.label}><dt>{fact.label}</dt><dd>{fact.value}</dd></div>)}</dl> : null}
+      {facts.length > 0 ? <dl className={`hall-facts count-${facts.length}`}>{facts.map((fact) => <div key={fact.label}><dt>{fact.label}</dt><dd>{fact.value}</dd></div>)}</dl> : null}
       <footer className="hall-card-footer">{checkedAt ? <span>{checkedAt}</span> : <span /> }<Link href={`/halls/${hall.id}/`}>상세 보기 <span aria-hidden="true">→</span></Link></footer>
     </article>
   );
