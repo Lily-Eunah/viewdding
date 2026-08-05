@@ -1,0 +1,265 @@
+[
+  {
+    "id": "R001:invitation",
+    "sourceId": "R001",
+    "status": "검토중",
+    "purpose": "invitation",
+    "name": "오봉집",
+    "branch": "강남역점",
+    "cuisines": [
+      "한식"
+    ],
+    "venueType": "보쌈·낙지볶음",
+    "district": "강남구",
+    "area": "강남역",
+    "address": "서울 강남구 테헤란로6길 48 2층",
+    "nearestStation": "강남역",
+    "stationExit": "확인필요",
+    "walkingMinutes": 5,
+    "pricePerPerson": {
+      "min": 10000,
+      "max": 50000,
+      "raw": "10000~50000"
+    },
+    "lunchPriceMin": 10000,
+    "dinnerPriceMin": 20000,
+    "courseAvailable": "no",
+    "privateRoom": "unknown",
+    "roomCapacity": {
+      "min": null,
+      "max": null,
+      "raw": null
+    },
+    "parking": "unknown",
+    "parkingDetail": "예약 가능한 청모 후보",
+    "closedWeekdays": null,
+    "regularClosedDaysRaw": "확인필요",
+    "naverMapUrl": "https://map.naver.com/p/search/%EC%98%A4%EB%B4%89%EC%A7%91%20%EA%B0%95%EB%82%A8%EC%97%AD%EC%A0%90",
+    "kakaoMapUrl": "https://map.kakao.com/?q=%EC%98%A4%EB%B4%89%EC%A7%91%20%EA%B0%95%EB%82%A8%EC%97%AD%EC%A0%90",
+    "sourceCount": 1,
+    "officialEvidence": null,
+    "recommendationPoints": "강남역 도보권 / 전화 예약 가능 / 캐주얼한 한식 청모",
+    "captionTags": [
+      "청모언급",
+      "강남역",
+      "한식",
+      "예약가능"
+    ],
+    "verifiedAt": "2026-08-05",
+    "notes": "독립 출처 1개 추가 확보 필요",
+    "latitude": null,
+    "longitude": null,
+    "active": true
+  },
+  {
+    "id": "R002:family_meeting",
+    "sourceId": "R002",
+    "status": "공개후보",
+    "purpose": "family_meeting",
+    "name": "경복궁",
+    "branch": "관훈점",
+    "cuisines": [
+      "한식"
+    ],
+    "venueType": "한정식",
+    "district": "종로구",
+    "area": "인사동·종각",
+    "address": "서울 종로구 인사동5길 38 아미드호텔 지하1층",
+    "nearestStation": "종각역",
+    "stationExit": "확인필요",
+    "walkingMinutes": 5,
+    "pricePerPerson": {
+      "min": 50000,
+      "max": 200000,
+      "raw": "50000~200000"
+    },
+    "lunchPriceMin": 50000,
+    "dinnerPriceMin": 70000,
+    "courseAvailable": "yes",
+    "privateRoom": "yes",
+    "roomCapacity": {
+      "min": 6,
+      "max": null,
+      "raw": "6~"
+    },
+    "parking": "unknown",
+    "parkingDetail": "호텔 주차 확인 필요",
+    "closedWeekdays": [],
+    "regularClosedDaysRaw": "없음",
+    "naverMapUrl": "https://map.naver.com/p/search/%EA%B2%BD%EB%B3%B5%EA%B6%81%20%EA%B4%80%ED%9B%88%EC%A0%90",
+    "kakaoMapUrl": "https://map.kakao.com/?q=%EA%B2%BD%EB%B3%B5%EA%B6%81%20%EA%B4%80%ED%9B%88%EC%A0%90",
+    "sourceCount": 2,
+    "officialEvidence": "상견례·격식 있는 가족모임 용도로 반복 언급",
+    "recommendationPoints": "종각역 도보권 / 프라이빗룸 / 한정식 코스 / 상견례 후기 확인",
+    "captionTags": [
+      "상견례후기",
+      "개별룸",
+      "한정식",
+      "종각역"
+    ],
+    "verifiedAt": "2026-08-05",
+    "notes": "정확한 가격·룸 최대인원 추가 확인 필요",
+    "latitude": null,
+    "longitude": null,
+    "active": true
+  },
+  {
+    "id": "R003:family_meeting",
+    "sourceId": "R003",
+    "status": "공개후보",
+    "purpose": "family_meeting",
+    "name": "모담다이닝",
+    "branch": "광화문점",
+    "cuisines": [
+      "한식"
+    ],
+    "venueType": "한정식",
+    "district": "종로구",
+    "area": "광화문",
+    "address": "서울 종로구 새문안로2길 10 덕수궁디팰리스 지하1층 B102·B103호",
+    "nearestStation": "광화문역",
+    "stationExit": "확인필요",
+    "walkingMinutes": 7,
+    "pricePerPerson": {
+      "min": 30000,
+      "max": 100000,
+      "raw": "30000~100000"
+    },
+    "lunchPriceMin": 30000,
+    "dinnerPriceMin": 50000,
+    "courseAvailable": "yes",
+    "privateRoom": "yes",
+    "roomCapacity": {
+      "min": 4,
+      "max": null,
+      "raw": "4~"
+    },
+    "parking": "available",
+    "parkingDetail": "건물 내 2시간 무료 언급",
+    "closedWeekdays": [],
+    "regularClosedDaysRaw": "없음",
+    "naverMapUrl": "https://map.naver.com/p/search/%EB%AA%A8%EB%8B%B4%EB%8B%A4%EC%9D%B4%EB%8B%9D%20%EA%B4%91%ED%99%94%EB%AC%B8%EC%A0%90",
+    "kakaoMapUrl": "https://map.kakao.com/?q=%EB%AA%A8%EB%8B%B4%EB%8B%A4%EC%9D%B4%EB%8B%9D%20%EA%B4%91%ED%99%94%EB%AC%B8%EC%A0%90",
+    "sourceCount": 2,
+    "officialEvidence": "상견례 세팅·룸 예약 관련 후기 확인",
+    "recommendationPoints": "광화문 접근성 / 상견례 세팅 / 개별룸 / 2시간 무료주차 언급",
+    "captionTags": [
+      "상견례후기",
+      "개별룸",
+      "광화문",
+      "무료주차"
+    ],
+    "verifiedAt": "2026-08-05",
+    "notes": "주말 혼잡·룸 이용시간 제한 후기 있음",
+    "latitude": null,
+    "longitude": null,
+    "active": true
+  },
+  {
+    "id": "R004:invitation",
+    "sourceId": "R004",
+    "status": "검토중",
+    "purpose": "invitation",
+    "name": "금우도",
+    "branch": "방이점",
+    "cuisines": [
+      "한식",
+      "일식"
+    ],
+    "venueType": "한우 오마카세",
+    "district": "송파구",
+    "area": "방이동·잠실",
+    "address": "서울 송파구 오금로11길 30 2층",
+    "nearestStation": "송파나루역",
+    "stationExit": "확인필요",
+    "walkingMinutes": 8,
+    "pricePerPerson": {
+      "min": 99000,
+      "max": 200000,
+      "raw": "99000~200000"
+    },
+    "lunchPriceMin": 99000,
+    "dinnerPriceMin": 99000,
+    "courseAvailable": "yes",
+    "privateRoom": "yes",
+    "roomCapacity": {
+      "min": 4,
+      "max": null,
+      "raw": "4~"
+    },
+    "parking": "unknown",
+    "parkingDetail": "확인필요",
+    "closedWeekdays": null,
+    "regularClosedDaysRaw": "확인필요",
+    "naverMapUrl": "https://map.naver.com/p/search/%EA%B8%88%EC%9A%B0%EB%8F%84",
+    "kakaoMapUrl": "https://map.kakao.com/?q=%EA%B8%88%EC%9A%B0%EB%8F%84",
+    "sourceCount": 1,
+    "officialEvidence": null,
+    "recommendationPoints": "방이동 도보권 / 프라이빗룸 / 한우 오마카세 / 청첩장모임 후기",
+    "captionTags": [
+      "청모후기",
+      "프라이빗룸",
+      "한우오마카세",
+      "방이동"
+    ],
+    "verifiedAt": "2026-08-05",
+    "notes": "독립 출처 1개 추가 확보 필요",
+    "latitude": null,
+    "longitude": null,
+    "active": true
+  },
+  {
+    "id": "R005:invitation",
+    "sourceId": "R005",
+    "status": "검토중",
+    "purpose": "invitation",
+    "name": "조인바이트",
+    "branch": null,
+    "cuisines": [
+      "양식"
+    ],
+    "venueType": "레스토랑·라운지",
+    "district": "강남구",
+    "area": "선정릉",
+    "address": "서울 강남구 선릉로112길 13",
+    "nearestStation": "선정릉역",
+    "stationExit": "확인필요",
+    "walkingMinutes": 6,
+    "pricePerPerson": {
+      "min": 30000,
+      "max": 100000,
+      "raw": "30000~100000"
+    },
+    "lunchPriceMin": 30000,
+    "dinnerPriceMin": 50000,
+    "courseAvailable": "unknown",
+    "privateRoom": "no",
+    "roomCapacity": {
+      "min": 0,
+      "max": 0,
+      "raw": "0~0"
+    },
+    "parking": "valet",
+    "parkingDetail": "발렛·단체석 언급",
+    "closedWeekdays": [
+      "sun"
+    ],
+    "regularClosedDaysRaw": "일",
+    "naverMapUrl": "https://map.naver.com/p/search/%EC%A1%B0%EC%9D%B8%EB%B0%94%EC%9D%B4%ED%8A%B8",
+    "kakaoMapUrl": "https://map.kakao.com/?q=%EC%A1%B0%EC%9D%B8%EB%B0%94%EC%9D%B4%ED%8A%B8",
+    "sourceCount": 1,
+    "officialEvidence": null,
+    "recommendationPoints": "선정릉역 도보권 / 분위기 좋은 레스토랑 / 단체석·발렛 / 청첩장모임 후기",
+    "captionTags": [
+      "청모후기",
+      "선정릉역",
+      "양식",
+      "발렛"
+    ],
+    "verifiedAt": "2026-08-05",
+    "notes": "후기에서 가격 대비 음식 평가는 아쉬움으로 언급",
+    "latitude": null,
+    "longitude": null,
+    "active": true
+  }
+]

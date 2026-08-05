@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "next dev",
-    "data:build": "tsx scripts/build-data.ts",
+    "data:build": "tsx scripts/build-data.ts && npm run data:restaurants",
+    "data:restaurants": "tsx scripts/build-restaurants.ts",
     "sites:stage": "tsx scripts/stage-sites.ts",
     "sites:build": "npm run build && npm run sites:stage",
     "test": "vitest run",
