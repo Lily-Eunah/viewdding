@@ -1,0 +1,28 @@
+{
+  "name": "viewdding-wedding-archive",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "data:build": "tsx scripts/build-data.ts",
+    "sites:stage": "tsx scripts/stage-sites.ts",
+    "sites:build": "npm run build && npm run sites:stage",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit --incremental false",
+    "build": "npm run data:build && next build"
+  },
+  "dependencies": {
+    "next": "16.3.0",
+    "react": "19.2.8",
+    "react-dom": "19.2.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "tsx": "^4.20.0",
+    "typescript": "^5.9.0",
+    "vitest": "4.1.10"
+  }
+}
