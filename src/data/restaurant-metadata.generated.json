@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-08-05T09:52:54.271Z",
+  "generatedAt": "2026-08-05T12:37:14.980Z",
   "sourceSpreadsheetId": "1-aC-dMvSfVnBfzpTuqY2tWwzgdJ15aBoZ6KOomvJZD4",
   "sourceSheetName": "Restaurants",
-  "sourceRows": 27,
-  "exportedRestaurants": 27,
+  "sourceRows": 64,
+  "exportedRestaurants": 32,
   "districts": [
     "강남구",
     "서초구",
