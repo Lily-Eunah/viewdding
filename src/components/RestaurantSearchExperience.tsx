@@ -241,10 +241,12 @@ export function RestaurantSearchExperience({
         {detailOpen ? <div className="restaurant-detail-panel">
           <fieldset className={`restaurant-cuisine-field ${styles.cuisineField}`}><legend>음식 종류</legend><div className="option-row">{RESTAURANT_CUISINE_CATEGORIES.map((cuisine) => <button key={cuisine} type="button" className={draft.cuisines.includes(cuisine) ? "option is-selected" : "option"} aria-pressed={draft.cuisines.includes(cuisine)} onClick={() => setDraft({ ...draft, cuisines: toggleValue(draft.cuisines, cuisine) })}>{cuisine}</button>)}</div></fieldset>
           <label className="field-label"><span>1인 최대 예산</span><select value={draft.budgetMax ?? ""} onChange={(event) => setDraft({ ...draft, budgetMax: event.target.value ? Number(event.target.value) : null })}><option value="">가격 전체</option>{BUDGETS.map((budget) => <option key={budget} value={budget}>{budget.toLocaleString("ko-KR")}원</option>)}</select></label>
-          {draft.privateRoomOnly ? <label className="field-label"><span>룸 이용 인원</span><input type="number" min="1" placeholder="예: 6" value={draft.partySize ?? ""} onChange={(event) => setDraft({ ...draft, partySize: event.target.value ? Number(event.target.value) : null })} /></label> : null}
           <fieldset className="restaurant-boolean-filters"><legend>필수 조건</legend><div className="option-row">
             <button type="button" className={draft.courseOnly ? "option is-selected" : "option"} aria-pressed={draft.courseOnly} onClick={() => setDraft({ ...draft, courseOnly: !draft.courseOnly })}>코스 가능</button>
-            <button type="button" className={draft.privateRoomOnly ? "option is-selected" : "option"} aria-pressed={draft.privateRoomOnly} onClick={() => setDraft({ ...draft, privateRoomOnly: !draft.privateRoomOnly, partySize: draft.privateRoomOnly ? null : draft.partySize })}>룸 있음</button>
+            <div className="restaurant-room-condition">
+              <button type="button" className={draft.privateRoomOnly ? "option is-selected" : "option"} aria-pressed={draft.privateRoomOnly} onClick={() => setDraft({ ...draft, privateRoomOnly: !draft.privateRoomOnly, partySize: draft.privateRoomOnly ? null : draft.partySize })}>룸 있음</button>
+              {draft.privateRoomOnly ? <label className="restaurant-room-count"><input type="number" inputMode="numeric" min="1" aria-label="룸 이용 인원" placeholder="6" value={draft.partySize ?? ""} onChange={(event) => setDraft({ ...draft, partySize: event.target.value ? Number(event.target.value) : null })} /><span aria-hidden="true">명</span></label> : null}
+            </div>
             <button type="button" className={draft.parkingOnly ? "option is-selected" : "option"} aria-pressed={draft.parkingOnly} onClick={() => setDraft({ ...draft, parkingOnly: !draft.parkingOnly })}>주차 가능</button>
           </div></fieldset>
           <p className="missing-policy">선택한 요일이 정기 휴무인 음식점은 제외합니다. 휴무일을 확인하지 못한 곳은 ‘정보 확인 필요’로 분리합니다.</p>
