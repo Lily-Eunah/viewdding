@@ -4,11 +4,14 @@ import Script from "next/script";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { restaurantsWithinBounds } from "@/domain/restaurant-map";
 import type { RestaurantRecord } from "@/domain/restaurant-types";
-import styles from "./RestaurantMapEnhancements.module.css";
+import {
+  applyRestaurantMarkerSelection,
+  createRestaurantMarkerImages,
+  type RestaurantMarkerImages,
+} from "./kakao-marker-style";
 
 interface MarkerEntry {
   marker: KakaoMarkerInstance;
-  position: KakaoLatLng;
 }
 
 function restaurantName(restaurant: RestaurantRecord): string {
@@ -33,8 +36,8 @@ export function KakaoRestaurantMap({
   const mapNodeRef = useRef<HTMLDivElement>(null);
   const mapInstanceRef = useRef<KakaoMapInstance | null>(null);
   const markerEntriesRef = useRef(new Map<string, MarkerEntry>());
+  const markerImagesRef = useRef<RestaurantMarkerImages | null>(null);
   const clustererRef = useRef<KakaoMarkerClustererInstance | null>(null);
-  const selectedOverlayRef = useRef<KakaoCustomOverlayInstance | null>(null);
   const [sdkReady, setSdkReady] = useState(false);
   const [scriptError, setScriptError] = useState(false);
   const mappableRestaurants = useMemo(
@@ -67,14 +70,23 @@ export function KakaoRestaurantMap({
     markerEntriesRef.current.clear();
 
     const bounds = new maps.LatLngBounds();
+    const markerImages = createRestaurantMarkerImages(maps);
+    markerImagesRef.current = markerImages;
     const markers = mappableRestaurants.map((restaurant) => {
       const position = new maps.LatLng(restaurant.latitude!, restaurant.longitude!);
-      const marker = new maps.Marker({ position, title: restaurantName(restaurant), clickable: true });
+      const selected = restaurant.id === selectedId;
+      const marker = new maps.Marker({
+        position,
+        title: restaurantName(restaurant),
+        clickable: true,
+        image: selected ? markerImages.selected : markerImages.normal,
+      });
+      marker.setZIndex(selected ? 10 : 0);
       maps.event.addListener(marker, "click", () => {
         setSelectedId(restaurant.id);
         setListExpanded(false);
       });
-      markerEntriesRef.current.set(restaurant.id, { marker, position });
+      markerEntriesRef.current.set(restaurant.id, { marker });
       bounds.extend(position);
       return marker;
     });
@@ -112,39 +124,14 @@ export function KakaoRestaurantMap({
   }, [mappableRestaurants, sdkReady]);
 
   useEffect(() => {
-    selectedOverlayRef.current?.setMap(null);
-    selectedOverlayRef.current = null;
-    const map = mapInstanceRef.current;
-    const maps = window.kakao?.maps;
-    if (!map || !maps || !selectedRestaurant || selectedRestaurant.latitude === null || selectedRestaurant.longitude === null) return;
+    const markerImages = markerImagesRef.current;
+    if (!markerImages) return;
+    applyRestaurantMarkerSelection(markerEntriesRef.current, selectedId, markerImages);
+  }, [selectedId]);
 
-    const highlight = document.createElement("span");
-    highlight.className = styles.selectedMapPin;
-    highlight.setAttribute("aria-hidden", "true");
-    const overlay = new maps.CustomOverlay({
-      map,
-      position: new maps.LatLng(selectedRestaurant.latitude, selectedRestaurant.longitude),
-      content: highlight,
-      yAnchor: 1,
-      zIndex: 10,
-    });
-    selectedOverlayRef.current = overlay;
-
-    return () => {
-      overlay.setMap(null);
-      if (selectedOverlayRef.current === overlay) selectedOverlayRef.current = null;
-    };
-  }, [selectedRestaurant]);
-
-  function focusRestaurant(restaurant: RestaurantRecord) {
+  function selectRestaurant(restaurant: RestaurantRecord) {
     setSelectedId(restaurant.id);
     setListExpanded(false);
-    const entry = markerEntriesRef.current.get(restaurant.id);
-    const map = mapInstanceRef.current;
-    if (entry && map) {
-      map.panTo(entry.position);
-      map.setLevel(4);
-    }
   }
 
   const missingCoordinateCount = restaurants.length - mappableRestaurants.length;
@@ -217,7 +204,7 @@ export function KakaoRestaurantMap({
               type="button"
               className={restaurant.id === selectedRestaurant?.id ? "is-selected" : ""}
               aria-pressed={restaurant.id === selectedRestaurant?.id}
-              onClick={() => focusRestaurant(restaurant)}
+              onClick={() => selectRestaurant(restaurant)}
             >
               <strong>{restaurantName(restaurant)}</strong>
               <span>{restaurant.area ?? restaurant.district}{restaurant.nearestStation ? ` · ${restaurant.nearestStation}` : ""}</span>

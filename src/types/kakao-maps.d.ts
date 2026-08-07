@@ -20,35 +20,44 @@ interface KakaoMapInstance {
 
 interface KakaoMarkerInstance {
   setMap(map: KakaoMapInstance | null): void;
+  setImage(image: KakaoMarkerImageInstance): void;
+  setZIndex(zIndex: number): void;
 }
 
 interface KakaoMarkerClustererInstance {
   clear(): void;
 }
 
-interface KakaoCustomOverlayInstance {
-  setMap(map: KakaoMapInstance | null): void;
-}
+interface KakaoSize {}
+
+interface KakaoPoint {}
+
+interface KakaoMarkerImageInstance {}
 
 interface KakaoMapsNamespace {
   load(callback: () => void): void;
   LatLng: new (latitude: number, longitude: number) => KakaoLatLng;
   LatLngBounds: new () => KakaoLatLngBounds;
+  Size: new (width: number, height: number) => KakaoSize;
+  Point: new (x: number, y: number) => KakaoPoint;
+  MarkerImage: new (
+    source: string,
+    size: KakaoSize,
+    options?: { offset?: KakaoPoint; alt?: string },
+  ) => KakaoMarkerImageInstance;
   Map: new (container: HTMLElement, options: { center: KakaoLatLng; level: number }) => KakaoMapInstance;
-  Marker: new (options: { position: KakaoLatLng; title: string; clickable: boolean }) => KakaoMarkerInstance;
+  Marker: new (options: {
+    position: KakaoLatLng;
+    title: string;
+    clickable: boolean;
+    image?: KakaoMarkerImageInstance;
+  }) => KakaoMarkerInstance;
   MarkerClusterer: new (options: {
     map: KakaoMapInstance;
     markers: KakaoMarkerInstance[];
     averageCenter: boolean;
     minLevel: number;
   }) => KakaoMarkerClustererInstance;
-  CustomOverlay: new (options: {
-    map: KakaoMapInstance;
-    position: KakaoLatLng;
-    content: HTMLElement;
-    yAnchor: number;
-    zIndex: number;
-  }) => KakaoCustomOverlayInstance;
   event: {
     addListener(target: object, type: string, listener: () => void): void;
     removeListener(target: object, type: string, listener: () => void): void;
