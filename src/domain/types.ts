@@ -26,14 +26,18 @@ export interface NumericRange {
   raw: string | number | null;
 }
 
-export type HallPhotoUsageStatus = "official_source_linked" | "partner_provided" | "licensed";
+export type HallPhotoUsageStatus =
+  | "official_source_linked"
+  | "public_source_linked"
+  | "partner_provided"
+  | "licensed";
 
 export interface HallPhoto {
   id: string;
   url: string;
   sourceUrl: string;
   sourceName: string;
-  sourceType: "official_website" | "official_social" | "partner";
+  sourceType: "official_website" | "official_social" | "public_listing" | "partner";
   usageStatus: HallPhotoUsageStatus;
   photoKind: "wedding_setup" | "space_overview";
   checkedAt: string;

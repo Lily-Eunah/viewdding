@@ -1,13 +1,18 @@
 import hallsJson from "./halls.generated.json";
+import discoveredPhotoSeedsJson from "./hall-photos.discovered.generated.json";
 import type { HallPhoto } from "@/domain/types";
 
-// Only hall-identifiable images from first-party pages are public here.
-// `official_source_linked` means the original file remains hosted by the venue;
-// it does not imply that Viewdding owns the copyright.
+// Images remain hosted by their source pages. A linked source status does not
+// imply that Viewdding owns the copyright or has a separate reuse license.
 type OfficialPhotoSeed = Pick<
   HallPhoto,
   "url" | "sourceUrl" | "photoKind"
 >;
+
+type DiscoveredPhotoSeed = OfficialPhotoSeed &
+  Pick<HallPhoto, "sourceType" | "usageStatus" | "checkedAt"> & {
+    hallId: string;
+  };
 
 const officialPhotoSeeds: Readonly<Record<string, OfficialPhotoSeed>> = {
   "H-SEO-20260728-002": {
@@ -262,6 +267,12 @@ const officialPhotoSeeds: Readonly<Record<string, OfficialPhotoSeed>> = {
   },
 };
 
+const discoveredPhotoSeeds = discoveredPhotoSeedsJson as DiscoveredPhotoSeed[];
+const allPhotoSeeds: Readonly<Record<string, OfficialPhotoSeed | DiscoveredPhotoSeed>> = {
+  ...officialPhotoSeeds,
+  ...Object.fromEntries(discoveredPhotoSeeds.map(({ hallId, ...photo }) => [hallId, photo])),
+};
+
 const hallLabelsById = new Map(
   hallsJson.map((hall) => [
     hall.id,
@@ -271,13 +282,19 @@ const hallLabelsById = new Map(
 
 export const hallPhotosByHallId: Readonly<Record<string, readonly HallPhoto[]>> =
   Object.fromEntries(
-    Object.entries(officialPhotoSeeds).map(([hallId, photo]) => {
+    Object.entries(allPhotoSeeds).map(([hallId, photo]) => {
       const label = hallLabelsById.get(hallId);
       const venueName = label?.venueName ?? "Viewdding";
       const hallName = label?.hallName ?? hallId;
-      const sourceName = photo.sourceUrl.includes("wedding.seoulwomen.or.kr")
-        ? "\uc11c\uc6b8\uc2dc \ub354 \uc544\ub984\ub2e4\uc6b4 \uacb0\ud63c\uc2dd \uacf5\uc2dd \ud398\uc774\uc9c0"
-        : `${venueName} \uacf5\uc2dd \ud648\ud398\uc774\uc9c0`;
+      const sourceType = "sourceType" in photo ? photo.sourceType : "official_website";
+      const usageStatus =
+        "usageStatus" in photo ? photo.usageStatus : "official_source_linked";
+      const sourceName =
+        sourceType === "public_listing"
+          ? "\uacf5\uac1c \uc6e8\ub529 \uc815\ubcf4 \ud398\uc774\uc9c0"
+          : photo.sourceUrl.includes("wedding.seoulwomen.or.kr")
+            ? "\uc11c\uc6b8\uc2dc \ub354 \uc544\ub984\ub2e4\uc6b4 \uacb0\ud63c\uc2dd \uacf5\uc2dd \ud398\uc774\uc9c0"
+            : `${venueName} \uacf5\uc2dd \ud648\ud398\uc774\uc9c0`;
       const altSuffix =
         photo.photoKind === "wedding_setup"
           ? "\uc608\uc2dd \uc138\ud305 \uc804\uacbd"
@@ -291,9 +308,9 @@ export const hallPhotosByHallId: Readonly<Record<string, readonly HallPhoto[]>> 
             ...photo,
             sourceName,
             alt: `${venueName} ${hallName} ${altSuffix}`,
-            sourceType: "official_website" as const,
-            usageStatus: "official_source_linked" as const,
-            checkedAt: "2026-08-07",
+            sourceType,
+            usageStatus,
+            checkedAt: "checkedAt" in photo ? photo.checkedAt : "2026-08-07",
             isPrimary: true,
           },
         ],
@@ -303,6 +320,7 @@ export const hallPhotosByHallId: Readonly<Record<string, readonly HallPhoto[]>> 
 
 const publicUsageStatuses = new Set<HallPhoto["usageStatus"]>([
   "official_source_linked",
+  "public_source_linked",
   "partner_provided",
   "licensed",
 ]);
