@@ -46,7 +46,7 @@ export function RestaurantSearchExperience({
 }) {
   const [draft, setDraft] = useState<RestaurantFilterState>({ ...EMPTY_RESTAURANT_FILTERS });
   const [applied, setApplied] = useState<RestaurantFilterState>({ ...EMPTY_RESTAURANT_FILTERS });
-  const [detailOpen, setDetailOpen] = useState(true);
+  const [detailOpen, setDetailOpen] = useState(false);
   const [viewMode, setViewMode] = useState<"list" | "map">("list");
 
   useEffect(() => {
@@ -65,6 +65,7 @@ export function RestaurantSearchExperience({
     };
     setDraft(parsed);
     setApplied(parsed);
+    if (parsed.weekday || parsed.cuisines.length || parsed.budgetMax || parsed.partySize || parsed.courseOnly || parsed.privateRoomOnly || parsed.parkingOnly) setDetailOpen(true);
   }, []);
 
   const purposeRestaurants = useMemo(
