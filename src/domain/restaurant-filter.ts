@@ -3,6 +3,7 @@ import type {
   RestaurantFilterState,
   RestaurantRecord,
 } from "./restaurant-types";
+import { categorizeRestaurantCuisines } from "./restaurant-cuisine";
 
 type MatchState = "match" | "unknown" | "mismatch";
 
@@ -47,9 +48,10 @@ export function evaluateRestaurant(
     checks.push({ state: areaMatch ? "match" : "mismatch", reason: "동네·역" });
   }
   if (filters.cuisines.length > 0) {
+    const cuisineCategories = categorizeRestaurantCuisines(restaurant.cuisines);
     checks.push({
-      state: filters.cuisines.some((cuisine) => restaurant.cuisines.includes(cuisine)) ? "match" : "mismatch",
-      reason: "음식",
+      state: filters.cuisines.some((cuisine) => cuisineCategories.includes(cuisine)) ? "match" : "mismatch",
+      reason: "음식 종류",
     });
   }
   checks.push({ state: matchWeekday(restaurant, filters), reason: "방문 요일" });

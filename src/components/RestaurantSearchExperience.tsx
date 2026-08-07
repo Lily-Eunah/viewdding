@@ -2,6 +2,8 @@
 
 import { useEffect, useMemo, useState } from "react";
 import { EMPTY_RESTAURANT_FILTERS, filterRestaurants } from "@/domain/restaurant-filter";
+import { isRestaurantCuisineCategory, RESTAURANT_CUISINE_CATEGORIES } from "@/domain/restaurant-cuisine";
+import type { RestaurantCuisineCategory } from "@/domain/restaurant-cuisine";
 import type { GatheringPurpose, RestaurantFilterState, RestaurantRecord, Weekday } from "@/domain/restaurant-types";
 import { KakaoRestaurantMap } from "./KakaoRestaurantMap";
 import { RestaurantCard } from "./RestaurantCard";
@@ -33,8 +35,12 @@ function queryFromFilters(filters: RestaurantFilterState): string {
   return params.toString();
 }
 
-function toggleValue(values: string[], value: string): string[] {
+function toggleValue<T extends string>(values: T[], value: T): T[] {
   return values.includes(value) ? values.filter((item) => item !== value) : [...values, value];
+}
+
+function cuisineCategoriesFrom(value: string | null): RestaurantCuisineCategory[] {
+  return value?.split(",").filter(isRestaurantCuisineCategory) ?? [];
 }
 
 export function RestaurantSearchExperience({
@@ -56,7 +62,7 @@ export function RestaurantSearchExperience({
       district: params.get("district") ?? "",
       area: params.get("area") ?? "",
       weekday: (params.get("weekday") as Weekday | null) ?? null,
-      cuisines: params.get("cuisines")?.split(",").filter(Boolean) ?? [],
+      cuisines: cuisineCategoriesFrom(params.get("cuisines")),
       budgetMax: params.get("budget") ? Number(params.get("budget")) : null,
       partySize: params.get("people") ? Number(params.get("people")) : null,
       courseOnly: params.get("course") === "1",
@@ -78,10 +84,6 @@ export function RestaurantSearchExperience({
   );
   const areas = useMemo(
     () => Array.from(new Set(purposeRestaurants.flatMap((restaurant) => [restaurant.area, restaurant.nearestStation]).filter((item): item is string => Boolean(item)))).sort((a, b) => a.localeCompare(b, "ko")),
-    [purposeRestaurants],
-  );
-  const cuisines = useMemo(
-    () => Array.from(new Set(purposeRestaurants.flatMap((restaurant) => restaurant.cuisines))).sort((a, b) => a.localeCompare(b, "ko")),
     [purposeRestaurants],
   );
   const results = useMemo(() => filterRestaurants(restaurants, applied), [applied, restaurants]);
@@ -124,7 +126,7 @@ export function RestaurantSearchExperience({
 
         <button className="detail-toggle" type="button" aria-expanded={detailOpen} onClick={() => setDetailOpen(!detailOpen)}>{detailOpen ? "−" : "+"} 상세 조건{selectedCount ? ` ${selectedCount}` : ""}</button>
         {detailOpen ? <div className="restaurant-detail-panel">
-          <fieldset className="restaurant-cuisine-field"><legend>음식</legend><div className="option-row">{cuisines.map((cuisine) => <button key={cuisine} type="button" className={draft.cuisines.includes(cuisine) ? "option is-selected" : "option"} aria-pressed={draft.cuisines.includes(cuisine)} onClick={() => setDraft({ ...draft, cuisines: toggleValue(draft.cuisines, cuisine) })}>{cuisine}</button>)}</div></fieldset>
+          <fieldset className="restaurant-cuisine-field"><legend>음식 종류</legend><div className="option-row">{RESTAURANT_CUISINE_CATEGORIES.map((cuisine) => <button key={cuisine} type="button" className={draft.cuisines.includes(cuisine) ? "option is-selected" : "option"} aria-pressed={draft.cuisines.includes(cuisine)} onClick={() => setDraft({ ...draft, cuisines: toggleValue(draft.cuisines, cuisine) })}>{cuisine}</button>)}</div></fieldset>
           <label className="field-label"><span>1인 최대 예산</span><select value={draft.budgetMax ?? ""} onChange={(event) => setDraft({ ...draft, budgetMax: event.target.value ? Number(event.target.value) : null })}><option value="">가격 전체</option>{BUDGETS.map((budget) => <option key={budget} value={budget}>{budget.toLocaleString("ko-KR")}원</option>)}</select></label>
           <label className="field-label"><span>룸 이용 인원</span><input type="number" min="1" placeholder="예: 6" value={draft.partySize ?? ""} onChange={(event) => setDraft({ ...draft, partySize: event.target.value ? Number(event.target.value) : null })} /></label>
           <fieldset className="restaurant-boolean-filters"><legend>필수 조건</legend><div className="option-row">

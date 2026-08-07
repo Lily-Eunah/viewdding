@@ -1,4 +1,5 @@
 import type { NumericRange } from "./types";
+import type { RestaurantCuisineCategory } from "./restaurant-cuisine";
 
 export type GatheringPurpose = "invitation" | "family_meeting";
 export type Weekday = "mon" | "tue" | "wed" | "thu" | "fri" | "sat" | "sun";
@@ -48,7 +49,7 @@ export interface RestaurantFilterState {
   district: string;
   area: string;
   weekday: Weekday | null;
-  cuisines: string[];
+  cuisines: RestaurantCuisineCategory[];
   budgetMax: number | null;
   partySize: number | null;
   courseOnly: boolean;

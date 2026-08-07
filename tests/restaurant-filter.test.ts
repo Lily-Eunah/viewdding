@@ -36,4 +36,22 @@ describe("restaurant filter", () => {
   it("keeps rows separate by gathering purpose", () => {
     expect(evaluateRestaurant(restaurant(), { ...EMPTY_RESTAURANT_FILTERS, purpose: "family_meeting" })).toBeNull();
   });
+
+  it("filters granular menu labels by broad cuisine category", () => {
+    expect(evaluateRestaurant(
+      restaurant({ cuisines: ["파스타", "스테이크"] }),
+      { ...EMPTY_RESTAURANT_FILTERS, cuisines: ["양식"] },
+    )?.state).toBe("match");
+    expect(evaluateRestaurant(
+      restaurant({ cuisines: ["파스타", "스테이크"] }),
+      { ...EMPTY_RESTAURANT_FILTERS, cuisines: ["한식"] },
+    )).toBeNull();
+  });
+
+  it("does not use venue type as a cuisine filter condition", () => {
+    expect(evaluateRestaurant(
+      restaurant({ cuisines: ["파스타"], venueType: "한정식" }),
+      { ...EMPTY_RESTAURANT_FILTERS, cuisines: ["한식"] },
+    )).toBeNull();
+  });
 });

@@ -50,8 +50,8 @@ export function RestaurantCard({ restaurant, unknownReasons = [] }: { restaurant
         <p className="hall-location">{restaurant.area ?? restaurant.district} · {station}</p>
         {restaurant.recommendationPoints ? <p className="restaurant-point">{restaurant.recommendationPoints}</p> : null}
         <div className="chip-row">
+          {restaurant.venueType ? <span className="chip restaurant-venue-type">업종 · {restaurant.venueType}</span> : null}
           {restaurant.cuisines.map((cuisine) => <span className="chip" key={cuisine}>{cuisine}</span>)}
-          {restaurant.venueType ? <span className="chip">{restaurant.venueType}</span> : null}
           {restaurant.captionTags.slice(0, 4).map((tag) => <span className="chip" key={tag}>#{tag}</span>)}
         </div>
         {unknownReasons.length > 0 ? <p className="unknown-reason">확인 필요: {unknownReasons.join(" · ")}</p> : null}
