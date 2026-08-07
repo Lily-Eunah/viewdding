@@ -2893,12 +2893,12 @@
     "stationExit": "확인필요",
     "walkingMinutes": null,
     "pricePerPerson": {
-      "min": null,
-      "max": null,
-      "raw": null
+      "min": 18000,
+      "max": 58000,
+      "raw": "18000~58000"
     },
-    "lunchPriceMin": null,
-    "dinnerPriceMin": null,
+    "lunchPriceMin": 18000,
+    "dinnerPriceMin": 35000,
     "courseAvailable": "unknown",
     "privateRoom": "unknown",
     "roomCapacity": {
@@ -3157,11 +3157,11 @@
     "stationExit": "2번",
     "walkingMinutes": 1,
     "pricePerPerson": {
-      "min": null,
-      "max": null,
-      "raw": null
+      "min": 30000,
+      "max": 120000,
+      "raw": "30000~120000"
     },
-    "lunchPriceMin": null,
+    "lunchPriceMin": 60000,
     "dinnerPriceMin": null,
     "courseAvailable": "unknown",
     "privateRoom": "unknown",
@@ -3212,9 +3212,9 @@
     "stationExit": "5번",
     "walkingMinutes": 3,
     "pricePerPerson": {
-      "min": null,
-      "max": null,
-      "raw": null
+      "min": 13000,
+      "max": 15000,
+      "raw": "13000~15000"
     },
     "lunchPriceMin": null,
     "dinnerPriceMin": null,
@@ -3373,9 +3373,9 @@
     "stationExit": "확인필요",
     "walkingMinutes": null,
     "pricePerPerson": {
-      "min": null,
-      "max": null,
-      "raw": null
+      "min": 38000,
+      "max": 68000,
+      "raw": "38000~68000"
     },
     "lunchPriceMin": null,
     "dinnerPriceMin": null,
@@ -3531,9 +3531,9 @@
     "stationExit": "확인필요",
     "walkingMinutes": null,
     "pricePerPerson": {
-      "min": null,
-      "max": null,
-      "raw": null
+      "min": 18900,
+      "max": 24900,
+      "raw": "18900~24900"
     },
     "lunchPriceMin": null,
     "dinnerPriceMin": null,
@@ -3586,11 +3586,11 @@
     "walkingMinutes": null,
     "pricePerPerson": {
       "min": 85000,
-      "max": null,
-      "raw": "85000~"
+      "max": 200000,
+      "raw": "85000~200000"
     },
     "lunchPriceMin": 85000,
-    "dinnerPriceMin": null,
+    "dinnerPriceMin": 135000,
     "courseAvailable": "yes",
     "privateRoom": "yes",
     "roomCapacity": {
@@ -4272,12 +4272,12 @@
     "stationExit": "확인필요",
     "walkingMinutes": null,
     "pricePerPerson": {
-      "min": null,
-      "max": null,
-      "raw": null
+      "min": 75000,
+      "max": 220000,
+      "raw": "75000~220000"
     },
-    "lunchPriceMin": null,
-    "dinnerPriceMin": null,
+    "lunchPriceMin": 75000,
+    "dinnerPriceMin": 95000,
     "courseAvailable": "yes",
     "privateRoom": "yes",
     "roomCapacity": {
@@ -4856,11 +4856,11 @@
     "stationExit": "1번",
     "walkingMinutes": 3,
     "pricePerPerson": {
-      "min": null,
-      "max": null,
-      "raw": null
+      "min": 70000,
+      "max": 220000,
+      "raw": "70000~220000"
     },
-    "lunchPriceMin": null,
+    "lunchPriceMin": 70000,
     "dinnerPriceMin": null,
     "courseAvailable": "yes",
     "privateRoom": "yes",
@@ -4909,11 +4909,11 @@
     "stationExit": "7번",
     "walkingMinutes": 7,
     "pricePerPerson": {
-      "min": null,
-      "max": null,
-      "raw": null
+      "min": 55000,
+      "max": 150000,
+      "raw": "55000~150000"
     },
-    "lunchPriceMin": null,
+    "lunchPriceMin": 55000,
     "dinnerPriceMin": null,
     "courseAvailable": "yes",
     "privateRoom": "yes",
@@ -5067,11 +5067,11 @@
     "walkingMinutes": 5,
     "pricePerPerson": {
       "min": 60000,
-      "max": null,
-      "raw": "60000~"
+      "max": 120000,
+      "raw": "60000~120000"
     },
     "lunchPriceMin": 60000,
-    "dinnerPriceMin": null,
+    "dinnerPriceMin": 120000,
     "courseAvailable": "yes",
     "privateRoom": "yes",
     "roomCapacity": {
@@ -5765,11 +5765,11 @@
     "stationExit": "5번",
     "walkingMinutes": 3,
     "pricePerPerson": {
-      "min": null,
-      "max": null,
-      "raw": null
+      "min": 41000,
+      "max": 168000,
+      "raw": "41000~168000"
     },
-    "lunchPriceMin": null,
+    "lunchPriceMin": 41000,
     "dinnerPriceMin": null,
     "courseAvailable": "yes",
     "privateRoom": "yes",
@@ -5818,11 +5818,11 @@
     "stationExit": "5번",
     "walkingMinutes": 3,
     "pricePerPerson": {
-      "min": null,
-      "max": null,
-      "raw": null
+      "min": 41000,
+      "max": 168000,
+      "raw": "41000~168000"
     },
-    "lunchPriceMin": null,
+    "lunchPriceMin": 41000,
     "dinnerPriceMin": null,
     "courseAvailable": "yes",
     "privateRoom": "yes",
@@ -6089,11 +6089,11 @@
     "stationExit": "3번",
     "walkingMinutes": 4,
     "pricePerPerson": {
-      "min": null,
-      "max": null,
-      "raw": null
+      "min": 59000,
+      "max": 168000,
+      "raw": "59000~168000"
     },
-    "lunchPriceMin": null,
+    "lunchPriceMin": 59000,
     "dinnerPriceMin": null,
     "courseAvailable": "yes",
     "privateRoom": "yes",
@@ -6142,12 +6142,12 @@
     "stationExit": "4번",
     "walkingMinutes": 8,
     "pricePerPerson": {
-      "min": null,
-      "max": null,
-      "raw": null
+      "min": 15000,
+      "max": 65000,
+      "raw": "15000~65000"
     },
-    "lunchPriceMin": null,
-    "dinnerPriceMin": null,
+    "lunchPriceMin": 50000,
+    "dinnerPriceMin": 55000,
     "courseAvailable": "no",
     "privateRoom": "no",
     "roomCapacity": {
@@ -7064,9 +7064,9 @@
     "stationExit": "2번",
     "walkingMinutes": 5,
     "pricePerPerson": {
-      "min": null,
-      "max": null,
-      "raw": null
+      "min": 18000,
+      "max": 60000,
+      "raw": "18000~60000"
     },
     "lunchPriceMin": null,
     "dinnerPriceMin": null,
@@ -7170,11 +7170,11 @@
     "stationExit": "2번",
     "walkingMinutes": 4,
     "pricePerPerson": {
-      "min": null,
-      "max": null,
-      "raw": null
+      "min": 55000,
+      "max": 180000,
+      "raw": "55000~180000"
     },
-    "lunchPriceMin": null,
+    "lunchPriceMin": 55000,
     "dinnerPriceMin": null,
     "courseAvailable": "yes",
     "privateRoom": "yes",
@@ -7438,9 +7438,9 @@
     "stationExit": "4번",
     "walkingMinutes": 2,
     "pricePerPerson": {
-      "min": null,
-      "max": null,
-      "raw": null
+      "min": 13900,
+      "max": 26900,
+      "raw": "13900~26900"
     },
     "lunchPriceMin": null,
     "dinnerPriceMin": null,
@@ -7650,9 +7650,9 @@
     "stationExit": "7번",
     "walkingMinutes": 3,
     "pricePerPerson": {
-      "min": null,
-      "max": null,
-      "raw": null
+      "min": 12000,
+      "max": 29000,
+      "raw": "12000~29000"
     },
     "lunchPriceMin": null,
     "dinnerPriceMin": null,
@@ -7866,11 +7866,11 @@
     "stationExit": "8번",
     "walkingMinutes": 1,
     "pricePerPerson": {
-      "min": null,
-      "max": null,
-      "raw": null
+      "min": 48000,
+      "max": 150000,
+      "raw": "48000~150000"
     },
-    "lunchPriceMin": null,
+    "lunchPriceMin": 48000,
     "dinnerPriceMin": null,
     "courseAvailable": "yes",
     "privateRoom": "yes",
@@ -7972,9 +7972,9 @@
     "stationExit": "1번",
     "walkingMinutes": 3,
     "pricePerPerson": {
-      "min": null,
-      "max": null,
-      "raw": null
+      "min": 26900,
+      "max": 41900,
+      "raw": "26900~41900"
     },
     "lunchPriceMin": null,
     "dinnerPriceMin": null,
@@ -8025,11 +8025,11 @@
     "stationExit": "1번",
     "walkingMinutes": 3,
     "pricePerPerson": {
-      "min": null,
-      "max": null,
-      "raw": null
+      "min": 60000,
+      "max": 180000,
+      "raw": "60000~180000"
     },
-    "lunchPriceMin": null,
+    "lunchPriceMin": 60000,
     "dinnerPriceMin": null,
     "courseAvailable": "yes",
     "privateRoom": "yes",
@@ -8078,12 +8078,12 @@
     "stationExit": "2번",
     "walkingMinutes": 9,
     "pricePerPerson": {
-      "min": null,
-      "max": null,
-      "raw": null
+      "min": 39000,
+      "max": 189000,
+      "raw": "39000~189000"
     },
-    "lunchPriceMin": null,
-    "dinnerPriceMin": null,
+    "lunchPriceMin": 39000,
+    "dinnerPriceMin": 99000,
     "courseAvailable": "yes",
     "privateRoom": "yes",
     "roomCapacity": {
@@ -8182,9 +8182,9 @@
     "stationExit": "6번",
     "walkingMinutes": 2,
     "pricePerPerson": {
-      "min": null,
-      "max": null,
-      "raw": null
+      "min": 14000,
+      "max": 18000,
+      "raw": "14000~18000"
     },
     "lunchPriceMin": null,
     "dinnerPriceMin": null,
@@ -8657,11 +8657,11 @@
     "stationExit": "3번",
     "walkingMinutes": 7,
     "pricePerPerson": {
-      "min": null,
-      "max": null,
-      "raw": null
+      "min": 58000,
+      "max": 126000,
+      "raw": "58000~126000"
     },
-    "lunchPriceMin": null,
+    "lunchPriceMin": 58000,
     "dinnerPriceMin": null,
     "courseAvailable": "yes",
     "privateRoom": "yes",
@@ -8710,11 +8710,11 @@
     "stationExit": "3번",
     "walkingMinutes": 7,
     "pricePerPerson": {
-      "min": null,
-      "max": null,
-      "raw": null
+      "min": 58000,
+      "max": 126000,
+      "raw": "58000~126000"
     },
-    "lunchPriceMin": null,
+    "lunchPriceMin": 58000,
     "dinnerPriceMin": null,
     "courseAvailable": "yes",
     "privateRoom": "yes",
@@ -8924,12 +8924,12 @@
     "stationExit": "1번",
     "walkingMinutes": 4,
     "pricePerPerson": {
-      "min": null,
-      "max": null,
-      "raw": null
+      "min": 39000,
+      "max": 189000,
+      "raw": "39000~189000"
     },
-    "lunchPriceMin": null,
-    "dinnerPriceMin": null,
+    "lunchPriceMin": 39000,
+    "dinnerPriceMin": 109000,
     "courseAvailable": "yes",
     "privateRoom": "yes",
     "roomCapacity": {
@@ -9029,9 +9029,9 @@
     "stationExit": "10번",
     "walkingMinutes": 3,
     "pricePerPerson": {
-      "min": null,
-      "max": null,
-      "raw": null
+      "min": 12000,
+      "max": 25000,
+      "raw": "12000~25000"
     },
     "lunchPriceMin": null,
     "dinnerPriceMin": null,
@@ -9084,9 +9084,9 @@
     "stationExit": "8번",
     "walkingMinutes": 1,
     "pricePerPerson": {
-      "min": null,
-      "max": null,
-      "raw": null
+      "min": 21000,
+      "max": 47000,
+      "raw": "21000~47000"
     },
     "lunchPriceMin": null,
     "dinnerPriceMin": null,
