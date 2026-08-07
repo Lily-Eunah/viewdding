@@ -1,9 +1,12 @@
 {
-  "generatedAt": "2026-08-07T06:51:17.608Z",
+  "generatedAt": "2026-08-07T15:44:15.607Z",
   "sourceSpreadsheetId": "1-aC-dMvSfVnBfzpTuqY2tWwzgdJ15aBoZ6KOomvJZD4",
   "sourceSheetName": "Restaurants",
+  "evidenceSheetName": "Evidence",
   "sourceRows": 628,
   "exportedRestaurants": 529,
+  "sourceEvidenceRows": 1768,
+  "exportedEvidence": 1461,
   "coordinates": {
     "fromSheet": 0,
     "fromCache": 529,

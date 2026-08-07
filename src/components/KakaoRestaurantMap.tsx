@@ -1,9 +1,11 @@
 "use client";
 
+import Link from "next/link";
 import Script from "next/script";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { restaurantsWithinBounds } from "@/domain/restaurant-map";
 import type { RestaurantRecord } from "@/domain/restaurant-types";
+import { restaurantSlug } from "@/lib/restaurant-routes";
 import {
   applyRestaurantMarkerSelection,
   createRestaurantMarkerImages,
@@ -192,6 +194,7 @@ export function KakaoRestaurantMap({
               {selectedRestaurant.cuisines.slice(0, 2).map((cuisine) => <span key={cuisine}>{cuisine}</span>)}
             </div>
             <div className="map-selected-links">
+              <Link href={`/restaurants/${restaurantSlug(selectedRestaurant)}/`}>상세보기</Link>
               {selectedRestaurant.naverMapUrl ? <a href={selectedRestaurant.naverMapUrl} target="_blank" rel="noreferrer">네이버 지도</a> : null}
               {selectedRestaurant.kakaoMapUrl ? <a href={selectedRestaurant.kakaoMapUrl} target="_blank" rel="noreferrer">카카오맵</a> : null}
             </div>
