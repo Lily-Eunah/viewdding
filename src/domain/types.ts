@@ -62,6 +62,8 @@ export interface HallRecord {
   locationAddress?: string | null;
   locationPlaceUrl?: string | null;
   locationCheckedAt?: string | null;
+  locationSourceUrl?: string | null;
+  locationSourceType?: string | null;
   publicStatus: "public";
   lighting: LightingType;
   naturalLight: NaturalLight;

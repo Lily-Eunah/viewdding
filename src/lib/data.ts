@@ -6,22 +6,31 @@ import type { HallRecord } from "@/domain/types";
 
 type GeneratedHallRecord = Omit<HallRecord, "photos">;
 type HallVenueGeocode = {
+  district: string;
   latitude: number;
   longitude: number;
   matchedAddress: string;
+  sourceAddress?: string;
   placeUrl: string;
   checkedAt: string;
+  sourceUrl?: string;
+  sourceType?: string;
 };
 
 const hallVenueGeocodes = hallVenueGeocodesJson as Record<string, HallVenueGeocode>;
 
 export const halls: HallRecord[] = (hallsJson as GeneratedHallRecord[]).map((hall) => ({
   ...hall,
+  district: hallVenueGeocodes[hall.venueId]?.district ?? hall.district,
   latitude: hallVenueGeocodes[hall.venueId]?.latitude ?? null,
   longitude: hallVenueGeocodes[hall.venueId]?.longitude ?? null,
-  locationAddress: hallVenueGeocodes[hall.venueId]?.matchedAddress ?? hall.address,
+  locationAddress: hallVenueGeocodes[hall.venueId]?.sourceAddress
+    ?? hallVenueGeocodes[hall.venueId]?.matchedAddress
+    ?? hall.address,
   locationPlaceUrl: hallVenueGeocodes[hall.venueId]?.placeUrl ?? hall.mapUrl,
   locationCheckedAt: hallVenueGeocodes[hall.venueId]?.checkedAt ?? null,
+  locationSourceUrl: hallVenueGeocodes[hall.venueId]?.sourceUrl ?? null,
+  locationSourceType: hallVenueGeocodes[hall.venueId]?.sourceType ?? null,
   photos: photosForHall(hall.id),
 }));
 export const metadata = metadataJson;

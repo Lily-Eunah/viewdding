@@ -22,6 +22,9 @@ export interface HallVenueGeocode {
   method: "address" | "keyword";
   provider: "kakao";
   checkedAt: string;
+  sourceAddress?: string;
+  sourceUrl?: string;
+  sourceType?: "official_public" | "official_venue" | "official_map" | "verified_directory";
 }
 
 export function normalizeVenueSearchText(value: string): string {

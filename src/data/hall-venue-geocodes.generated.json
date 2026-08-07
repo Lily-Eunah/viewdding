@@ -11,7 +11,8 @@
     "query": "서울특별시 강남구 학동로 519",
     "method": "address",
     "provider": "kakao",
-    "checkedAt": "2026-08-07"
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울특별시 강남구 학동로 519"
   },
   "V-SEO-20260728-003": {
     "venueId": "V-SEO-20260728-003",
@@ -25,7 +26,8 @@
     "query": "서울특별시 마포구 마포대로 8",
     "method": "address",
     "provider": "kakao",
-    "checkedAt": "2026-08-07"
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울특별시 마포구 마포대로 8"
   },
   "V-SEO-20260728-004": {
     "venueId": "V-SEO-20260728-004",
@@ -39,7 +41,8 @@
     "query": "서울특별시 마포구 월드컵로 240 (성산동)",
     "method": "address",
     "provider": "kakao",
-    "checkedAt": "2026-08-07"
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울특별시 마포구 월드컵로 240 (성산동)"
   },
   "V-SEO-20260728-005": {
     "venueId": "V-SEO-20260728-005",
@@ -53,7 +56,8 @@
     "query": "서울특별시 중구 동호로 287",
     "method": "address",
     "provider": "kakao",
-    "checkedAt": "2026-08-07"
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울특별시 중구 동호로 287"
   },
   "V-SEO-20260728-006": {
     "venueId": "V-SEO-20260728-006",
@@ -67,7 +71,8 @@
     "query": "서울특별시 중구 동호로 249",
     "method": "address",
     "provider": "kakao",
-    "checkedAt": "2026-08-07"
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울특별시 중구 동호로 249"
   },
   "V-SEO-20260728-009": {
     "venueId": "V-SEO-20260728-009",
@@ -81,7 +86,8 @@
     "query": "서울특별시 강남구 개포로 625",
     "method": "address",
     "provider": "kakao",
-    "checkedAt": "2026-08-07"
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울특별시 강남구 개포로 625"
   },
   "V-SEO-20260728-010": {
     "venueId": "V-SEO-20260728-010",
@@ -95,7 +101,8 @@
     "query": "서울특별시 강남구 압구정동 380-1",
     "method": "address",
     "provider": "kakao",
-    "checkedAt": "2026-08-07"
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울특별시 강남구 압구정동 380-1"
   },
   "V-SEO-20260728-011": {
     "venueId": "V-SEO-20260728-011",
@@ -109,7 +116,8 @@
     "query": "서울특별시 강남구 남부순환로 3104",
     "method": "address",
     "provider": "kakao",
-    "checkedAt": "2026-08-07"
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울특별시 강남구 남부순환로 3104"
   },
   "V-SEO-20260728-012": {
     "venueId": "V-SEO-20260728-012",
@@ -123,7 +131,8 @@
     "query": "서울특별시 강남구 개포로 621",
     "method": "address",
     "provider": "kakao",
-    "checkedAt": "2026-08-07"
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울특별시 강남구 개포로 621"
   },
   "V-SEO-20260728-013": {
     "venueId": "V-SEO-20260728-013",
@@ -137,7 +146,8 @@
     "query": "서울특별시 강남구 논현로 430 지하 1층",
     "method": "address",
     "provider": "kakao",
-    "checkedAt": "2026-08-07"
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울특별시 강남구 논현로 430 지하 1층"
   },
   "V-SEO-20260728-014": {
     "venueId": "V-SEO-20260728-014",
@@ -151,7 +161,8 @@
     "query": "서울특별시 강남구 봉은사로 524",
     "method": "address",
     "provider": "kakao",
-    "checkedAt": "2026-08-07"
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울특별시 강남구 봉은사로 524"
   },
   "V-SEO-20260728-015": {
     "venueId": "V-SEO-20260728-015",
@@ -165,7 +176,8 @@
     "query": "서울특별시 강남구 테헤란로87길 22",
     "method": "address",
     "provider": "kakao",
-    "checkedAt": "2026-08-07"
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울특별시 강남구 테헤란로87길 22"
   },
   "V-SEO-20260728-016": {
     "venueId": "V-SEO-20260728-016",
@@ -179,7 +191,8 @@
     "query": "서울특별시 강남구 도산대로 434",
     "method": "address",
     "provider": "kakao",
-    "checkedAt": "2026-08-07"
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울특별시 강남구 도산대로 434"
   },
   "V-SEO-20260728-017": {
     "venueId": "V-SEO-20260728-017",
@@ -193,7 +206,8 @@
     "query": "서울특별시 강남구 도산대로 318",
     "method": "address",
     "provider": "kakao",
-    "checkedAt": "2026-08-07"
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울특별시 강남구 도산대로 318"
   },
   "V-SEO-20260728-018": {
     "venueId": "V-SEO-20260728-018",
@@ -207,7 +221,8 @@
     "query": "서울특별시 강남구 논현로79길 72",
     "method": "address",
     "provider": "kakao",
-    "checkedAt": "2026-08-07"
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울특별시 강남구 논현로79길 72"
   },
   "V-SEO-20260728-019": {
     "venueId": "V-SEO-20260728-019",
@@ -221,7 +236,8 @@
     "query": "서울특별시 강남구 언주로 508",
     "method": "address",
     "provider": "kakao",
-    "checkedAt": "2026-08-07"
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울특별시 강남구 언주로 508"
   },
   "V-SEO-20260728-020": {
     "venueId": "V-SEO-20260728-020",
@@ -235,7 +251,8 @@
     "query": "서울특별시 강남구 테헤란로 322",
     "method": "address",
     "provider": "kakao",
-    "checkedAt": "2026-08-07"
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울특별시 강남구 테헤란로 322"
   },
   "V-SEO-20260728-021": {
     "venueId": "V-SEO-20260728-021",
@@ -249,7 +266,8 @@
     "query": "서울특별시 강남구 봉은사로 130",
     "method": "address",
     "provider": "kakao",
-    "checkedAt": "2026-08-07"
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울특별시 강남구 봉은사로 130"
   },
   "V-SEO-20260728-022": {
     "venueId": "V-SEO-20260728-022",
@@ -263,7 +281,8 @@
     "query": "서울특별시 강남구 영동대로 325",
     "method": "address",
     "provider": "kakao",
-    "checkedAt": "2026-08-07"
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울특별시 강남구 영동대로 325"
   },
   "V-SEO-20260728-023": {
     "venueId": "V-SEO-20260728-023",
@@ -277,7 +296,8 @@
     "query": "서울특별시 강남구 봉은사로 637",
     "method": "address",
     "provider": "kakao",
-    "checkedAt": "2026-08-07"
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울특별시 강남구 봉은사로 637"
   },
   "V-SEO-20260728-024": {
     "venueId": "V-SEO-20260728-024",
@@ -291,7 +311,8 @@
     "query": "서울특별시 강남구 언주로 835",
     "method": "address",
     "provider": "kakao",
-    "checkedAt": "2026-08-07"
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울특별시 강남구 언주로 835"
   },
   "V-SEO-20260728-025": {
     "venueId": "V-SEO-20260728-025",
@@ -305,7 +326,8 @@
     "query": "서울특별시 강남구 언주로 711",
     "method": "address",
     "provider": "kakao",
-    "checkedAt": "2026-08-07"
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울특별시 강남구 언주로 711"
   },
   "V-SEO-20260728-026": {
     "venueId": "V-SEO-20260728-026",
@@ -319,7 +341,8 @@
     "query": "서울특별시 강남구 역삼로 607",
     "method": "address",
     "provider": "kakao",
-    "checkedAt": "2026-08-07"
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울특별시 강남구 역삼로 607"
   },
   "V-SEO-20260728-027": {
     "venueId": "V-SEO-20260728-027",
@@ -333,7 +356,8 @@
     "query": "서울특별시 강남구 도산대로 203",
     "method": "address",
     "provider": "kakao",
-    "checkedAt": "2026-08-07"
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울특별시 강남구 도산대로 203"
   },
   "V-SEO-20260728-028": {
     "venueId": "V-SEO-20260728-028",
@@ -347,7 +371,8 @@
     "query": "서울특별시 강남구 논현로 508",
     "method": "address",
     "provider": "kakao",
-    "checkedAt": "2026-08-07"
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울특별시 강남구 논현로 508"
   },
   "V-SEO-20260728-029": {
     "venueId": "V-SEO-20260728-029",
@@ -361,7 +386,8 @@
     "query": "서울특별시 강남구 테헤란로 406",
     "method": "address",
     "provider": "kakao",
-    "checkedAt": "2026-08-07"
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울특별시 강남구 테헤란로 406"
   },
   "V-SEO-20260728-030": {
     "venueId": "V-SEO-20260728-030",
@@ -375,7 +401,8 @@
     "query": "서울특별시 강남구 밤고개로21길 79",
     "method": "address",
     "provider": "kakao",
-    "checkedAt": "2026-08-07"
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울특별시 강남구 밤고개로21길 79"
   },
   "V-SEO-20260728-031": {
     "venueId": "V-SEO-20260728-031",
@@ -389,7 +416,8 @@
     "query": "서울특별시 강남구 논현로 742",
     "method": "address",
     "provider": "kakao",
-    "checkedAt": "2026-08-07"
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울특별시 강남구 논현로 742"
   },
   "V-SEO-20260728-032": {
     "venueId": "V-SEO-20260728-032",
@@ -403,7 +431,8 @@
     "query": "서울특별시 강남구 테헤란로87길 46",
     "method": "address",
     "provider": "kakao",
-    "checkedAt": "2026-08-07"
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울특별시 강남구 테헤란로87길 46"
   },
   "V-SEO-20260728-033": {
     "venueId": "V-SEO-20260728-033",
@@ -417,7 +446,8 @@
     "query": "서울특별시 강남구 영동대로 737",
     "method": "address",
     "provider": "kakao",
-    "checkedAt": "2026-08-07"
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울특별시 강남구 영동대로 737"
   },
   "V-SEO-20260728-034": {
     "venueId": "V-SEO-20260728-034",
@@ -431,7 +461,8 @@
     "query": "서울특별시 강남구 봉은사로 302",
     "method": "address",
     "provider": "kakao",
-    "checkedAt": "2026-08-07"
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울특별시 강남구 봉은사로 302"
   },
   "V-SEO-20260728-035": {
     "venueId": "V-SEO-20260728-035",
@@ -445,7 +476,8 @@
     "query": "서울특별시 강남구 언주로148길 5",
     "method": "address",
     "provider": "kakao",
-    "checkedAt": "2026-08-07"
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울특별시 강남구 언주로148길 5"
   },
   "V-SEO-20260728-036": {
     "venueId": "V-SEO-20260728-036",
@@ -459,7 +491,8 @@
     "query": "서울특별시 강남구 영동대로 506",
     "method": "address",
     "provider": "kakao",
-    "checkedAt": "2026-08-07"
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울특별시 강남구 영동대로 506"
   },
   "V-SEO-20260728-037": {
     "venueId": "V-SEO-20260728-037",
@@ -473,7 +506,8 @@
     "query": "서울특별시 강남구 언주로126길 23",
     "method": "address",
     "provider": "kakao",
-    "checkedAt": "2026-08-07"
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울특별시 강남구 언주로126길 23"
   },
   "V-SEO-20260728-038": {
     "venueId": "V-SEO-20260728-038",
@@ -487,7 +521,8 @@
     "query": "서울특별시 강남구 도산대로38길 32",
     "method": "address",
     "provider": "kakao",
-    "checkedAt": "2026-08-07"
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울특별시 강남구 도산대로38길 32"
   },
   "V-SEO-20260728-039": {
     "venueId": "V-SEO-20260728-039",
@@ -501,7 +536,8 @@
     "query": "서울특별시 강남구 테헤란로25길 10",
     "method": "address",
     "provider": "kakao",
-    "checkedAt": "2026-08-07"
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울특별시 강남구 테헤란로25길 10"
   },
   "V-SEO-20260728-040": {
     "venueId": "V-SEO-20260728-040",
@@ -515,7 +551,8 @@
     "query": "서울특별시 강남구 영동대로 318",
     "method": "address",
     "provider": "kakao",
-    "checkedAt": "2026-08-07"
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울특별시 강남구 영동대로 318"
   },
   "V-SEO-20260728-041": {
     "venueId": "V-SEO-20260728-041",
@@ -529,7 +566,8 @@
     "query": "서울특별시 강남구 논현로 645",
     "method": "address",
     "provider": "kakao",
-    "checkedAt": "2026-08-07"
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울특별시 강남구 논현로 645"
   },
   "V-SEO-20260728-042": {
     "venueId": "V-SEO-20260728-042",
@@ -543,7 +581,8 @@
     "query": "서울특별시 강남구 도산대로 144",
     "method": "address",
     "provider": "kakao",
-    "checkedAt": "2026-08-07"
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울특별시 강남구 도산대로 144"
   },
   "V-SEO-20260728-043": {
     "venueId": "V-SEO-20260728-043",
@@ -557,7 +596,8 @@
     "query": "서울특별시 강남구 테헤란로 231",
     "method": "address",
     "provider": "kakao",
-    "checkedAt": "2026-08-07"
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울특별시 강남구 테헤란로 231"
   },
   "V-SEO-20260728-044": {
     "venueId": "V-SEO-20260728-044",
@@ -571,7 +611,8 @@
     "query": "서울특별시 강남구 강남대로 652",
     "method": "address",
     "provider": "kakao",
-    "checkedAt": "2026-08-07"
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울특별시 강남구 강남대로 652"
   },
   "V-SEO-20260728-045": {
     "venueId": "V-SEO-20260728-045",
@@ -585,7 +626,8 @@
     "query": "서울특별시 강남구 논현로 854",
     "method": "address",
     "provider": "kakao",
-    "checkedAt": "2026-08-07"
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울특별시 강남구 논현로 854"
   },
   "V-SEO-20260728-046": {
     "venueId": "V-SEO-20260728-046",
@@ -613,7 +655,8 @@
     "query": "서울특별시 마포구 증산로 87",
     "method": "address",
     "provider": "kakao",
-    "checkedAt": "2026-08-07"
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울특별시 마포구 증산로 87"
   },
   "V-SEO-20260728-048": {
     "venueId": "V-SEO-20260728-048",
@@ -627,7 +670,8 @@
     "query": "서울특별시 마포구 마포나루길 442",
     "method": "address",
     "provider": "kakao",
-    "checkedAt": "2026-08-07"
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울특별시 마포구 마포나루길 442"
   },
   "V-SEO-20260728-049": {
     "venueId": "V-SEO-20260728-049",
@@ -641,7 +685,8 @@
     "query": "서울특별시 마포구 망원동 205-8",
     "method": "address",
     "provider": "kakao",
-    "checkedAt": "2026-08-07"
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울특별시 마포구 망원동 205-8"
   },
   "V-SEO-20260728-050": {
     "venueId": "V-SEO-20260728-050",
@@ -655,7 +700,8 @@
     "query": "서울특별시 마포구 증산로 32",
     "method": "address",
     "provider": "kakao",
-    "checkedAt": "2026-08-07"
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울특별시 마포구 증산로 32"
   },
   "V-SEO-20260728-051": {
     "venueId": "V-SEO-20260728-051",
@@ -669,7 +715,8 @@
     "query": "서울특별시 마포구 상암동 487-386",
     "method": "address",
     "provider": "kakao",
-    "checkedAt": "2026-08-07"
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울특별시 마포구 상암동 487-386"
   },
   "V-SEO-20260728-052": {
     "venueId": "V-SEO-20260728-052",
@@ -683,7 +730,8 @@
     "query": "서울특별시 마포구 양화로 72",
     "method": "address",
     "provider": "kakao",
-    "checkedAt": "2026-08-07"
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울특별시 마포구 양화로 72"
   },
   "V-SEO-20260728-053": {
     "venueId": "V-SEO-20260728-053",
@@ -697,7 +745,8 @@
     "query": "서울특별시 마포구 양화로 130",
     "method": "address",
     "provider": "kakao",
-    "checkedAt": "2026-08-07"
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울특별시 마포구 양화로 130"
   },
   "V-SEO-20260728-054": {
     "venueId": "V-SEO-20260728-054",
@@ -711,7 +760,8 @@
     "query": "서울특별시 마포구 마포대로 58",
     "method": "address",
     "provider": "kakao",
-    "checkedAt": "2026-08-07"
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울특별시 마포구 마포대로 58"
   },
   "V-SEO-20260728-055": {
     "venueId": "V-SEO-20260728-055",
@@ -725,7 +775,8 @@
     "query": "서울특별시 마포구 양화로 87",
     "method": "address",
     "provider": "kakao",
-    "checkedAt": "2026-08-07"
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울특별시 마포구 양화로 87"
   },
   "V-SEO-20260728-056": {
     "venueId": "V-SEO-20260728-056",
@@ -739,7 +790,8 @@
     "query": "서울특별시 마포구 백범로 23",
     "method": "address",
     "provider": "kakao",
-    "checkedAt": "2026-08-07"
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울특별시 마포구 백범로 23"
   },
   "V-SEO-20260728-057": {
     "venueId": "V-SEO-20260728-057",
@@ -753,7 +805,8 @@
     "query": "서울특별시 마포구 월드컵북로58길 15",
     "method": "address",
     "provider": "kakao",
-    "checkedAt": "2026-08-07"
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울특별시 마포구 월드컵북로58길 15"
   },
   "V-SEO-20260728-058": {
     "venueId": "V-SEO-20260728-058",
@@ -767,7 +820,8 @@
     "query": "서울특별시 마포구 마포대로 92",
     "method": "address",
     "provider": "kakao",
-    "checkedAt": "2026-08-07"
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울특별시 마포구 마포대로 92"
   },
   "V-SEO-20260728-059": {
     "venueId": "V-SEO-20260728-059",
@@ -781,7 +835,8 @@
     "query": "서울특별시 마포구 마포대로 78",
     "method": "address",
     "provider": "kakao",
-    "checkedAt": "2026-08-07"
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울특별시 마포구 마포대로 78"
   },
   "V-SEO-20260728-060": {
     "venueId": "V-SEO-20260728-060",
@@ -795,7 +850,8 @@
     "query": "서울특별시 마포구",
     "method": "address",
     "provider": "kakao",
-    "checkedAt": "2026-08-07"
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울특별시 마포구"
   },
   "V-SEO-20260728-061": {
     "venueId": "V-SEO-20260728-061",
@@ -809,7 +865,8 @@
     "query": "서울특별시 마포구 월드컵북로 31",
     "method": "address",
     "provider": "kakao",
-    "checkedAt": "2026-08-07"
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울특별시 마포구 월드컵북로 31"
   },
   "V-SEO-20260728-062": {
     "venueId": "V-SEO-20260728-062",
@@ -823,7 +880,8 @@
     "query": "서울특별시 중구 세종대로 119",
     "method": "address",
     "provider": "kakao",
-    "checkedAt": "2026-08-07"
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울특별시 중구 세종대로 119"
   },
   "V-SEO-20260728-063": {
     "venueId": "V-SEO-20260728-063",
@@ -837,7 +895,8 @@
     "query": "서울특별시 중구 회현동1가 산 1-44",
     "method": "address",
     "provider": "kakao",
-    "checkedAt": "2026-08-07"
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울특별시 중구 회현동1가 산 1-44"
   },
   "V-SEO-20260728-064": {
     "venueId": "V-SEO-20260728-064",
@@ -851,7 +910,8 @@
     "query": "서울특별시 중구 동호로 257-8",
     "method": "address",
     "provider": "kakao",
-    "checkedAt": "2026-08-07"
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울특별시 중구 동호로 257-8"
   },
   "V-SEO-20260728-065": {
     "venueId": "V-SEO-20260728-065",
@@ -865,7 +925,8 @@
     "query": "서울특별시 중구 서소문로 124 시티스퀘어 20층",
     "method": "address",
     "provider": "kakao",
-    "checkedAt": "2026-08-07"
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울특별시 중구 서소문로 124 시티스퀘어 20층"
   },
   "V-SEO-20260728-066": {
     "venueId": "V-SEO-20260728-066",
@@ -879,7 +940,8 @@
     "query": "서울특별시 중구 다산로 138",
     "method": "address",
     "provider": "kakao",
-    "checkedAt": "2026-08-07"
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울특별시 중구 다산로 138"
   },
   "V-SEO-20260728-068": {
     "venueId": "V-SEO-20260728-068",
@@ -893,7 +955,8 @@
     "query": "서울특별시 중구 을지로 238",
     "method": "address",
     "provider": "kakao",
-    "checkedAt": "2026-08-07"
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울특별시 중구 을지로 238"
   },
   "V-SEO-20260728-069": {
     "venueId": "V-SEO-20260728-069",
@@ -907,7 +970,8 @@
     "query": "서울특별시 중구 남대문로 9",
     "method": "address",
     "provider": "kakao",
-    "checkedAt": "2026-08-07"
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울특별시 중구 남대문로 9"
   },
   "V-SEO-20260728-070": {
     "venueId": "V-SEO-20260728-070",
@@ -921,7 +985,8 @@
     "query": "서울특별시 중구 필동로5길 7",
     "method": "address",
     "provider": "kakao",
-    "checkedAt": "2026-08-07"
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울특별시 중구 필동로5길 7"
   },
   "V-SEO-20260728-071": {
     "venueId": "V-SEO-20260728-071",
@@ -935,7 +1000,8 @@
     "query": "서울특별시 중구 퇴계로36길 10",
     "method": "address",
     "provider": "kakao",
-    "checkedAt": "2026-08-07"
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울특별시 중구 퇴계로36길 10"
   },
   "V-SEO-20260728-072": {
     "venueId": "V-SEO-20260728-072",
@@ -949,7 +1015,8 @@
     "query": "서울특별시 중구 퇴계로 67",
     "method": "address",
     "provider": "kakao",
-    "checkedAt": "2026-08-07"
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울특별시 중구 퇴계로 67"
   },
   "V-SEO-20260728-073": {
     "venueId": "V-SEO-20260728-073",
@@ -963,7 +1030,8 @@
     "query": "서울특별시 중구 소공로 106",
     "method": "address",
     "provider": "kakao",
-    "checkedAt": "2026-08-07"
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울특별시 중구 소공로 106"
   },
   "V-SEO-20260728-074": {
     "venueId": "V-SEO-20260728-074",
@@ -977,7 +1045,8 @@
     "query": "서울특별시 중구 마른내로 71",
     "method": "address",
     "provider": "kakao",
-    "checkedAt": "2026-08-07"
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울특별시 중구 마른내로 71"
   },
   "V-SEO-20260728-075": {
     "venueId": "V-SEO-20260728-075",
@@ -991,7 +1060,8 @@
     "query": "서울특별시 중구 을지로 264",
     "method": "address",
     "provider": "kakao",
-    "checkedAt": "2026-08-07"
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울특별시 중구 을지로 264"
   },
   "V-SEO-20260728-076": {
     "venueId": "V-SEO-20260728-076",
@@ -1005,7 +1075,8 @@
     "query": "서울특별시 중구 청파로 464",
     "method": "address",
     "provider": "kakao",
-    "checkedAt": "2026-08-07"
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울특별시 중구 청파로 464"
   },
   "V-SEO-20260728-077": {
     "venueId": "V-SEO-20260728-077",
@@ -1019,7 +1090,8 @@
     "query": "서울특별시 중구 퇴계로 115 18층",
     "method": "address",
     "provider": "kakao",
-    "checkedAt": "2026-08-07"
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울특별시 중구 퇴계로 115 18층"
   },
   "V-SEO-20260728-078": {
     "venueId": "V-SEO-20260728-078",
@@ -1033,7 +1105,8 @@
     "query": "서울특별시 중구 다산로46길 17 B1",
     "method": "address",
     "provider": "kakao",
-    "checkedAt": "2026-08-07"
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울특별시 중구 다산로46길 17 B1"
   },
   "V-SEO-20260728-079": {
     "venueId": "V-SEO-20260728-079",
@@ -1047,7 +1120,8 @@
     "query": "서울특별시 강남구 봉은사로16길 31 1층",
     "method": "address",
     "provider": "kakao",
-    "checkedAt": "2026-08-07"
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울특별시 강남구 봉은사로16길 31 1층"
   },
   "V-SEO-20260728-080": {
     "venueId": "V-SEO-20260728-080",
@@ -1061,7 +1135,8 @@
     "query": "서울특별시 강남구 언주로 564",
     "method": "address",
     "provider": "kakao",
-    "checkedAt": "2026-08-07"
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울특별시 강남구 언주로 564"
   },
   "V-SEO-20260728-081": {
     "venueId": "V-SEO-20260728-081",
@@ -1075,7 +1150,8 @@
     "query": "서울특별시 마포구 성암로 189 2층",
     "method": "address",
     "provider": "kakao",
-    "checkedAt": "2026-08-07"
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울특별시 마포구 성암로 189 2층"
   },
   "V-SEO-20260728-082": {
     "venueId": "V-SEO-20260728-082",
@@ -1089,7 +1165,8 @@
     "query": "서울특별시 중구 세종대로9길 41 퍼시픽타워 20F",
     "method": "address",
     "provider": "kakao",
-    "checkedAt": "2026-08-07"
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울특별시 중구 세종대로9길 41 퍼시픽타워 20F"
   },
   "V-SEO-20260728-083": {
     "venueId": "V-SEO-20260728-083",
@@ -1103,7 +1180,8 @@
     "query": "서울특별시 중구 청파로 463",
     "method": "address",
     "provider": "kakao",
-    "checkedAt": "2026-08-07"
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울특별시 중구 청파로 463"
   },
   "V-SEO-20260729-001": {
     "venueId": "V-SEO-20260729-001",
@@ -1146,6 +1224,23 @@
     "method": "keyword",
     "provider": "kakao",
     "checkedAt": "2026-08-07"
+  },
+  "V-SEO-20260729-004": {
+    "venueId": "V-SEO-20260729-004",
+    "venueName": "한강공원 광나루 장미원",
+    "district": "강동구",
+    "latitude": 37.5499660095739,
+    "longitude": 127.122248580466,
+    "matchedAddress": "서울 강동구 선사로 83-106",
+    "matchedPlaceName": null,
+    "placeUrl": "https://map.kakao.com/?q=%ED%95%9C%EA%B0%95%EA%B3%B5%EC%9B%90%20%EA%B4%91%EB%82%98%EB%A3%A8%20%EC%9E%A5%EB%AF%B8%EC%9B%90",
+    "query": "서울특별시 강동구 선사로 83-106",
+    "method": "address",
+    "provider": "kakao",
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울특별시 강동구 선사로 83-106",
+    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities/549",
+    "sourceType": "official_public"
   },
   "V-SEO-20260729-005": {
     "venueId": "V-SEO-20260729-005",
@@ -1301,6 +1396,23 @@
     "provider": "kakao",
     "checkedAt": "2026-08-07"
   },
+  "V-SEO-20260729-016": {
+    "venueId": "V-SEO-20260729-016",
+    "venueName": "마곡광장 썬큰마당",
+    "district": "강서구",
+    "latitude": 37.5660114536639,
+    "longitude": 126.82692745642,
+    "matchedAddress": "서울 강서구 마곡중앙5로 지하 9",
+    "matchedPlaceName": null,
+    "placeUrl": "https://map.kakao.com/?q=%EB%A7%88%EA%B3%A1%EA%B4%91%EC%9E%A5%20%EC%8D%AC%ED%81%B0%EB%A7%88%EB%8B%B9",
+    "query": "서울특별시 강서구 마곡중앙5로 9",
+    "method": "address",
+    "provider": "kakao",
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울특별시 강서구 마곡중앙5로 9",
+    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities/758",
+    "sourceType": "official_public"
+  },
   "V-SEO-20260729-017": {
     "venueId": "V-SEO-20260729-017",
     "venueName": "서울식물원 사색의 정원",
@@ -1315,6 +1427,23 @@
     "provider": "kakao",
     "checkedAt": "2026-08-07"
   },
+  "V-SEO-20260729-018": {
+    "venueId": "V-SEO-20260729-018",
+    "venueName": "서울식물원 잔디마당",
+    "district": "강서구",
+    "latitude": 37.5722444079878,
+    "longitude": 126.83284283132,
+    "matchedAddress": "서울 강서구 마곡동로 161",
+    "matchedPlaceName": null,
+    "placeUrl": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%EC%8B%9D%EB%AC%BC%EC%9B%90%20%EC%9E%94%EB%94%94%EB%A7%88%EB%8B%B9",
+    "query": "서울특별시 강서구 마곡동로 161",
+    "method": "address",
+    "provider": "kakao",
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울특별시 강서구 마곡동로 161",
+    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities/3201",
+    "sourceType": "official_public"
+  },
   "V-SEO-20260729-019": {
     "venueId": "V-SEO-20260729-019",
     "venueName": "어울림플라자 공연장",
@@ -1327,7 +1456,8 @@
     "query": "서울 강서구 공항대로 489",
     "method": "address",
     "provider": "kakao",
-    "checkedAt": "2026-08-07"
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울 강서구 공항대로 489"
   },
   "V-SEO-20260729-020": {
     "venueId": "V-SEO-20260729-020",
@@ -1397,7 +1527,8 @@
     "query": "서울특별시 관악구 낙성대로 70",
     "method": "address",
     "provider": "kakao",
-    "checkedAt": "2026-08-07"
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울특별시 관악구 낙성대로 70"
   },
   "V-SEO-20260729-025": {
     "venueId": "V-SEO-20260729-025",
@@ -1483,6 +1614,40 @@
     "provider": "kakao",
     "checkedAt": "2026-08-07"
   },
+  "V-SEO-20260729-031": {
+    "venueId": "V-SEO-20260729-031",
+    "venueName": "광진구청 대강당홀",
+    "district": "광진구",
+    "latitude": 37.5362819442695,
+    "longitude": 127.087753081994,
+    "matchedAddress": "서울 광진구 아차산로 400",
+    "matchedPlaceName": null,
+    "placeUrl": "https://map.kakao.com/?q=%EA%B4%91%EC%A7%84%EA%B5%AC%EC%B2%AD%20%EB%8C%80%EA%B0%95%EB%8B%B9%ED%99%80",
+    "query": "서울특별시 광진구 아차산로 400",
+    "method": "address",
+    "provider": "kakao",
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울특별시 광진구 아차산로 400",
+    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities/3218",
+    "sourceType": "official_public"
+  },
+  "V-SEO-20260729-032": {
+    "venueId": "V-SEO-20260729-032",
+    "venueName": "뚝섬 루프탑 웨딩홀",
+    "district": "광진구",
+    "latitude": 37.5288433609042,
+    "longitude": 127.066685088298,
+    "matchedAddress": "서울 광진구 강변북로 2216",
+    "matchedPlaceName": null,
+    "placeUrl": "https://map.kakao.com/?q=%EB%9A%9D%EC%84%AC%20%EB%A3%A8%ED%94%84%ED%83%91%20%EC%9B%A8%EB%94%A9%ED%99%80",
+    "query": "서울특별시 광진구 강변북로 2216",
+    "method": "address",
+    "provider": "kakao",
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울특별시 광진구 강변북로 2216",
+    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities/3196",
+    "sourceType": "official_public"
+  },
   "V-SEO-20260729-033": {
     "venueId": "V-SEO-20260729-033",
     "venueName": "어린이대공원 포시즌가든",
@@ -1553,6 +1718,23 @@
     "provider": "kakao",
     "checkedAt": "2026-08-07"
   },
+  "V-SEO-20260729-038": {
+    "venueId": "V-SEO-20260729-038",
+    "venueName": "명품웨딩 프로포즈",
+    "district": "구로구",
+    "latitude": 37.4999880723052,
+    "longitude": 126.884098218095,
+    "matchedAddress": "서울 구로구 구로중앙로 134",
+    "matchedPlaceName": null,
+    "placeUrl": "https://map.kakao.com/?q=%EB%AA%85%ED%92%88%EC%9B%A8%EB%94%A9%20%ED%94%84%EB%A1%9C%ED%8F%AC%EC%A6%88",
+    "query": "서울특별시 구로구 구로중앙로 134 리치몰 1·3층",
+    "method": "address",
+    "provider": "kakao",
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울특별시 구로구 구로중앙로 134 리치몰 1·3층",
+    "sourceUrl": "https://thewedd.com/hall-81/",
+    "sourceType": "verified_directory"
+  },
   "V-SEO-20260729-039": {
     "venueId": "V-SEO-20260729-039",
     "venueName": "웨스턴베니비스 신도림",
@@ -1595,6 +1777,74 @@
     "provider": "kakao",
     "checkedAt": "2026-08-07"
   },
+  "V-SEO-20260729-042": {
+    "venueId": "V-SEO-20260729-042",
+    "venueName": "테크노마트웨딩시티",
+    "district": "구로구",
+    "latitude": 37.5071169087537,
+    "longitude": 126.890222775625,
+    "matchedAddress": "서울 구로구 새말로 97",
+    "matchedPlaceName": null,
+    "placeUrl": "https://map.kakao.com/?q=%EC%9B%A8%EB%94%A9%EC%8B%9C%ED%8B%B0%20%EC%8B%A0%EB%8F%84%EB%A6%BC",
+    "query": "서울특별시 구로구 새말로 97",
+    "method": "address",
+    "provider": "kakao",
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울특별시 구로구 새말로 97",
+    "sourceUrl": "https://place.map.kakao.com/326511102",
+    "sourceType": "official_map"
+  },
+  "V-SEO-20260729-043": {
+    "venueId": "V-SEO-20260729-043",
+    "venueName": "푸른수목원 잔디마당",
+    "district": "구로구",
+    "latitude": 37.4814539858385,
+    "longitude": 126.82368696515,
+    "matchedAddress": "서울 구로구 서해안로 2117",
+    "matchedPlaceName": null,
+    "placeUrl": "https://map.kakao.com/?q=%ED%91%B8%EB%A5%B8%EC%88%98%EB%AA%A9%EC%9B%90%20%EC%9E%94%EB%94%94%EB%A7%88%EB%8B%B9",
+    "query": "서울특별시 구로구 서해안로 2117",
+    "method": "address",
+    "provider": "kakao",
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울특별시 구로구 서해안로 2117",
+    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities/3202",
+    "sourceType": "official_public"
+  },
+  "V-SEO-20260729-044": {
+    "venueId": "V-SEO-20260729-044",
+    "venueName": "마벨리에 시흥점",
+    "district": "금천구",
+    "latitude": 37.4519790161758,
+    "longitude": 126.90079038873,
+    "matchedAddress": "서울 금천구 시흥대로 201",
+    "matchedPlaceName": null,
+    "placeUrl": "https://map.kakao.com/?q=%EB%A7%88%EB%B2%A8%EB%A6%AC%EC%97%90%20%EC%8B%9C%ED%9D%A5%EC%A0%90",
+    "query": "서울특별시 금천구 시흥대로 201 홈플러스 시흥점 7층",
+    "method": "address",
+    "provider": "kakao",
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울특별시 금천구 시흥대로 201 홈플러스 시흥점 7층",
+    "sourceUrl": "https://thewedd.com/hall-79/",
+    "sourceType": "verified_directory"
+  },
+  "V-SEO-20260729-045": {
+    "venueId": "V-SEO-20260729-045",
+    "venueName": "금천구 녹색광장 잔디마당",
+    "district": "금천구",
+    "latitude": 37.4475077313295,
+    "longitude": 126.911566195906,
+    "matchedAddress": "서울 금천구 시흥동 411-26",
+    "matchedPlaceName": null,
+    "placeUrl": "https://map.kakao.com/?q=%EA%B8%88%EC%B2%9C%EA%B5%AC%20%EB%85%B9%EC%83%89%EA%B4%91%EC%9E%A5%20%EC%9E%94%EB%94%94%EB%A7%88%EB%8B%B9",
+    "query": "서울특별시 금천구 시흥동 411-26",
+    "method": "address",
+    "provider": "kakao",
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울특별시 금천구 시흥동 411-26",
+    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities/3204",
+    "sourceType": "official_public"
+  },
   "V-SEO-20260729-046": {
     "venueId": "V-SEO-20260729-046",
     "venueName": "비엔티컨벤션",
@@ -1623,6 +1873,23 @@
     "provider": "kakao",
     "checkedAt": "2026-08-07"
   },
+  "V-SEO-20260729-048": {
+    "venueId": "V-SEO-20260729-048",
+    "venueName": "JW컨벤션웨딩홀",
+    "district": "노원구",
+    "latitude": 37.6149530035255,
+    "longitude": 127.064043360012,
+    "matchedAddress": "서울 노원구 화랑로 325",
+    "matchedPlaceName": null,
+    "placeUrl": "https://map.kakao.com/?q=%EC%A0%9C%EC%9D%B4%EB%8D%94%EB%B8%94%EC%9C%A0%EC%BB%A8%EB%B2%A4%EC%85%98%EC%9B%A8%EB%94%A9%ED%99%80",
+    "query": "서울특별시 노원구 화랑로 325",
+    "method": "address",
+    "provider": "kakao",
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울특별시 노원구 화랑로 325",
+    "sourceUrl": "https://jwconvention.co.kr/m/m_sub05_01.html",
+    "sourceType": "official_venue"
+  },
   "V-SEO-20260729-049": {
     "venueId": "V-SEO-20260729-049",
     "venueName": "노원구 화랑대 철도공원",
@@ -1636,6 +1903,74 @@
     "method": "keyword",
     "provider": "kakao",
     "checkedAt": "2026-08-07"
+  },
+  "V-SEO-20260729-050": {
+    "venueId": "V-SEO-20260729-050",
+    "venueName": "북서울미술관 썬큰가든·별광장",
+    "district": "노원구",
+    "latitude": 37.6406604547872,
+    "longitude": 127.066865579183,
+    "matchedAddress": "서울 노원구 동일로 1238",
+    "matchedPlaceName": null,
+    "placeUrl": "https://map.kakao.com/?q=%EB%B6%81%EC%84%9C%EC%9A%B8%EB%AF%B8%EC%88%A0%EA%B4%80%20%EC%8D%AC%ED%81%B0%EA%B0%80%EB%93%A0%C2%B7%EB%B3%84%EA%B4%91%EC%9E%A5",
+    "query": "서울특별시 노원구 동일로 1238",
+    "method": "address",
+    "provider": "kakao",
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울특별시 노원구 동일로 1238",
+    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities/407",
+    "sourceType": "official_public"
+  },
+  "V-SEO-20260729-051": {
+    "venueId": "V-SEO-20260729-051",
+    "venueName": "불암산 힐링타운 철쭉동산",
+    "district": "노원구",
+    "latitude": 37.6555734467468,
+    "longitude": 127.080421643299,
+    "matchedAddress": "서울 노원구 한글비석로12길 51-27",
+    "matchedPlaceName": null,
+    "placeUrl": "https://map.kakao.com/?q=%EB%B6%88%EC%95%94%EC%82%B0%20%ED%9E%90%EB%A7%81%ED%83%80%EC%9A%B4%20%EC%B2%A0%EC%AD%89%EB%8F%99%EC%82%B0",
+    "query": "서울특별시 노원구 중계동 산 42-3",
+    "method": "address",
+    "provider": "kakao",
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울특별시 노원구 중계동 산 42-3",
+    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities/761",
+    "sourceType": "official_public"
+  },
+  "V-SEO-20260729-052": {
+    "venueId": "V-SEO-20260729-052",
+    "venueName": "메이다이닝",
+    "district": "도봉구",
+    "latitude": 37.6779409583278,
+    "longitude": 127.035364546109,
+    "matchedAddress": "서울 도봉구 도봉로169길 202",
+    "matchedPlaceName": null,
+    "placeUrl": "https://map.kakao.com/?q=%EB%A9%94%EC%9D%B4%EB%8B%A4%EC%9D%B4%EB%8B%9D",
+    "query": "서울특별시 도봉구 도봉로169길 202",
+    "method": "address",
+    "provider": "kakao",
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울특별시 도봉구 도봉로169길 202",
+    "sourceUrl": "https://www.tripinfo.co.kr/info.html?content_id=2379200&content_type_id=39&navi=trip_hot-seoul",
+    "sourceType": "verified_directory"
+  },
+  "V-SEO-20260729-053": {
+    "venueId": "V-SEO-20260729-053",
+    "venueName": "도봉구청 선인봉홀",
+    "district": "도봉구",
+    "latitude": 37.6687161285201,
+    "longitude": 127.047131400119,
+    "matchedAddress": "서울 도봉구 마들로 656",
+    "matchedPlaceName": null,
+    "placeUrl": "https://map.kakao.com/?q=%EB%8F%84%EB%B4%89%EA%B5%AC%EC%B2%AD%20%EC%84%A0%EC%9D%B8%EB%B4%89%ED%99%80",
+    "query": "서울특별시 도봉구 마들로 656 도봉구청사 2층",
+    "method": "address",
+    "provider": "kakao",
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울특별시 도봉구 마들로 656 도봉구청사 2층",
+    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities/3220",
+    "sourceType": "official_public"
   },
   "V-SEO-20260729-054": {
     "venueId": "V-SEO-20260729-054",
@@ -1735,6 +2070,23 @@
     "provider": "kakao",
     "checkedAt": "2026-08-07"
   },
+  "V-SEO-20260729-061": {
+    "venueId": "V-SEO-20260729-061",
+    "venueName": "서울한방진흥센터 야외마당",
+    "district": "동대문구",
+    "latitude": 37.5806004145096,
+    "longitude": 127.037586644096,
+    "matchedAddress": "서울 동대문구 약령중앙로 26",
+    "matchedPlaceName": null,
+    "placeUrl": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%ED%95%9C%EB%B0%A9%EC%A7%84%ED%9D%A5%EC%84%BC%ED%84%B0%20%EC%95%BC%EC%99%B8%EB%A7%88%EB%8B%B9",
+    "query": "서울특별시 동대문구 약령중앙로 26",
+    "method": "address",
+    "provider": "kakao",
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울특별시 동대문구 약령중앙로 26",
+    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities/436",
+    "sourceType": "official_public"
+  },
   "V-SEO-20260729-062": {
     "venueId": "V-SEO-20260729-062",
     "venueName": "더에스비웨딩컨벤션",
@@ -1749,6 +2101,23 @@
     "provider": "kakao",
     "checkedAt": "2026-08-07"
   },
+  "V-SEO-20260729-063": {
+    "venueId": "V-SEO-20260729-063",
+    "venueName": "마리앤코 동작스카이",
+    "district": "동작구",
+    "latitude": 37.5012468358161,
+    "longitude": 126.933556258538,
+    "matchedAddress": "서울 동작구 상도로 120",
+    "matchedPlaceName": null,
+    "placeUrl": "https://map.kakao.com/?q=%ED%95%B8%EB%93%9C%ED%94%BD%ED%8A%B8%ED%98%B8%ED%85%94",
+    "query": "서울특별시 동작구 상도로 120",
+    "method": "address",
+    "provider": "kakao",
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울특별시 동작구 상도로 120",
+    "sourceUrl": "https://www.marieenco.co.kr/place/32",
+    "sourceType": "official_venue"
+  },
   "V-SEO-20260729-064": {
     "venueId": "V-SEO-20260729-064",
     "venueName": "플로렌스 보라매점",
@@ -1762,6 +2131,23 @@
     "method": "keyword",
     "provider": "kakao",
     "checkedAt": "2026-08-07"
+  },
+  "V-SEO-20260729-065": {
+    "venueId": "V-SEO-20260729-065",
+    "venueName": "보라매시민안전체험관 다목적홀",
+    "district": "동작구",
+    "latitude": 37.492771336295,
+    "longitude": 126.917024877173,
+    "matchedAddress": "서울 동작구 여의대방로20나길 16",
+    "matchedPlaceName": null,
+    "placeUrl": "https://map.kakao.com/?q=%EB%B3%B4%EB%9D%BC%EB%A7%A4%EC%8B%9C%EB%AF%BC%EC%95%88%EC%A0%84%EC%B2%B4%ED%97%98%EA%B4%80%20%EB%8B%A4%EB%AA%A9%EC%A0%81%ED%99%80",
+    "query": "서울특별시 동작구 여의대방로20나길 16",
+    "method": "address",
+    "provider": "kakao",
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울특별시 동작구 여의대방로20나길 16",
+    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities/474",
+    "sourceType": "official_public"
   },
   "V-SEO-20260729-066": {
     "venueId": "V-SEO-20260729-066",
@@ -1789,7 +2175,8 @@
     "query": "서울 서대문구 연희로 353",
     "method": "address",
     "provider": "kakao",
-    "checkedAt": "2026-08-07"
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울 서대문구 연희로 353"
   },
   "V-SEO-20260729-068": {
     "venueId": "V-SEO-20260729-068",
@@ -1804,6 +2191,23 @@
     "method": "keyword",
     "provider": "kakao",
     "checkedAt": "2026-08-07"
+  },
+  "V-SEO-20260729-070": {
+    "venueId": "V-SEO-20260729-070",
+    "venueName": "서대문 안산 잔디마당",
+    "district": "서대문구",
+    "latitude": 37.5795568020785,
+    "longitude": 126.938067087683,
+    "matchedAddress": "서울 서대문구 연희로32길 134",
+    "matchedPlaceName": null,
+    "placeUrl": "https://map.kakao.com/?q=%EC%84%9C%EB%8C%80%EB%AC%B8%20%EC%95%88%EC%82%B0%20%EC%9E%94%EB%94%94%EB%A7%88%EB%8B%B9",
+    "query": "서울특별시 서대문구 연희로32길 134",
+    "method": "address",
+    "provider": "kakao",
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울특별시 서대문구 연희로32길 134",
+    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities/3203",
+    "sourceType": "official_public"
   },
   "V-SEO-20260729-071": {
     "venueId": "V-SEO-20260729-071",
@@ -1831,7 +2235,8 @@
     "query": "서울 서초구 잠원동 6-1",
     "method": "address",
     "provider": "kakao",
-    "checkedAt": "2026-08-07"
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울 서초구 잠원동 6-1"
   },
   "V-SEO-20260729-073": {
     "venueId": "V-SEO-20260729-073",
@@ -1845,7 +2250,8 @@
     "query": "서울 서초구 반포동 107-3",
     "method": "address",
     "provider": "kakao",
-    "checkedAt": "2026-08-07"
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울 서초구 반포동 107-3"
   },
   "V-SEO-20260729-074": {
     "venueId": "V-SEO-20260729-074",
@@ -1859,7 +2265,8 @@
     "query": "서울 서초구 서초중앙로 14",
     "method": "address",
     "provider": "kakao",
-    "checkedAt": "2026-08-07"
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울 서초구 서초중앙로 14"
   },
   "V-SEO-20260729-075": {
     "venueId": "V-SEO-20260729-075",
@@ -1901,7 +2308,8 @@
     "query": "서울 서초구 강남대로 213",
     "method": "address",
     "provider": "kakao",
-    "checkedAt": "2026-08-07"
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울 서초구 강남대로 213"
   },
   "V-SEO-20260729-078": {
     "venueId": "V-SEO-20260729-078",
@@ -1915,7 +2323,8 @@
     "query": "서울 서초구 양재동 24",
     "method": "address",
     "provider": "kakao",
-    "checkedAt": "2026-08-07"
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울 서초구 양재동 24"
   },
   "V-SEO-20260729-079": {
     "venueId": "V-SEO-20260729-079",
@@ -1943,7 +2352,8 @@
     "query": "서울 서초구 반포대로 222",
     "method": "address",
     "provider": "kakao",
-    "checkedAt": "2026-08-07"
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울 서초구 반포대로 222"
   },
   "V-SEO-20260729-081": {
     "venueId": "V-SEO-20260729-081",
@@ -1957,7 +2367,8 @@
     "query": "서울 서초구 올림픽대로 2085-14",
     "method": "address",
     "provider": "kakao",
-    "checkedAt": "2026-08-07"
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울 서초구 올림픽대로 2085-14"
   },
   "V-SEO-20260729-082": {
     "venueId": "V-SEO-20260729-082",
@@ -1971,7 +2382,8 @@
     "query": "서울 서초구 태봉로 114",
     "method": "address",
     "provider": "kakao",
-    "checkedAt": "2026-08-07"
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울 서초구 태봉로 114"
   },
   "V-SEO-20260729-083": {
     "venueId": "V-SEO-20260729-083",
@@ -1985,7 +2397,8 @@
     "query": "서울 서초구 신흥안길 40-15",
     "method": "address",
     "provider": "kakao",
-    "checkedAt": "2026-08-07"
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울 서초구 신흥안길 40-15"
   },
   "V-SEO-20260729-084": {
     "venueId": "V-SEO-20260729-084",
@@ -1999,7 +2412,8 @@
     "query": "서울 서초구 양재동 232",
     "method": "address",
     "provider": "kakao",
-    "checkedAt": "2026-08-07"
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울 서초구 양재동 232"
   },
   "V-SEO-20260729-085": {
     "venueId": "V-SEO-20260729-085",
@@ -2028,6 +2442,40 @@
     "method": "keyword",
     "provider": "kakao",
     "checkedAt": "2026-08-07"
+  },
+  "V-SEO-20260729-087": {
+    "venueId": "V-SEO-20260729-087",
+    "venueName": "서울교육대학교 그랜드홀",
+    "district": "서초구",
+    "latitude": 37.4907404857731,
+    "longitude": 127.015424537648,
+    "matchedAddress": "서울 서초구 서초중앙로 96",
+    "matchedPlaceName": null,
+    "placeUrl": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%EA%B5%90%EC%9C%A1%EB%8C%80%ED%95%99%EA%B5%90%20%EA%B7%B8%EB%9E%9C%EB%93%9C%ED%99%80",
+    "query": "서울특별시 서초구 서초중앙로 96",
+    "method": "address",
+    "provider": "kakao",
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울특별시 서초구 서초중앙로 96",
+    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities/3224",
+    "sourceType": "official_public"
+  },
+  "V-SEO-20260729-088": {
+    "venueId": "V-SEO-20260729-088",
+    "venueName": "서울교육대학교 사향광장",
+    "district": "서초구",
+    "latitude": 37.4907404857731,
+    "longitude": 127.015424537648,
+    "matchedAddress": "서울 서초구 서초중앙로 96",
+    "matchedPlaceName": null,
+    "placeUrl": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%EA%B5%90%EC%9C%A1%EB%8C%80%ED%95%99%EA%B5%90%20%EC%82%AC%ED%96%A5%EA%B4%91%EC%9E%A5",
+    "query": "서울특별시 서초구 서초중앙로 96",
+    "method": "address",
+    "provider": "kakao",
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울특별시 서초구 서초중앙로 96",
+    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities/3225",
+    "sourceType": "official_public"
   },
   "V-SEO-20260729-089": {
     "venueId": "V-SEO-20260729-089",
@@ -2197,6 +2645,23 @@
     "provider": "kakao",
     "checkedAt": "2026-08-07"
   },
+  "V-SEO-20260729-101": {
+    "venueId": "V-SEO-20260729-101",
+    "venueName": "웨딩스퀘어 성북",
+    "district": "성북구",
+    "latitude": 37.6052551856298,
+    "longitude": 127.02732104049,
+    "matchedAddress": "서울 성북구 동소문로 284",
+    "matchedPlaceName": null,
+    "placeUrl": "https://map.kakao.com/?q=%EC%9B%A8%EB%94%A9%EC%8A%A4%ED%80%98%EC%96%B4%20%EC%84%B1%EB%B6%81",
+    "query": "서울특별시 성북구 동소문로 284 길음서희스타힐스 1·2층",
+    "method": "address",
+    "provider": "kakao",
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울특별시 성북구 동소문로 284 길음서희스타힐스 1·2층",
+    "sourceUrl": "https://www.weddingcrowd.kr/hall/view.php?idx=1385",
+    "sourceType": "verified_directory"
+  },
   "V-SEO-20260729-102": {
     "venueId": "V-SEO-20260729-102",
     "venueName": "포레스트원웨딩",
@@ -2253,6 +2718,23 @@
     "provider": "kakao",
     "checkedAt": "2026-08-07"
   },
+  "V-SEO-20260729-106": {
+    "venueId": "V-SEO-20260729-106",
+    "venueName": "더컨벤션 잠실점",
+    "district": "송파구",
+    "latitude": 37.5156313294847,
+    "longitude": 127.105600888814,
+    "matchedAddress": "서울 송파구 올림픽로 319",
+    "matchedPlaceName": null,
+    "placeUrl": "https://map.kakao.com/?q=%EB%8D%94%EC%BB%A8%EB%B2%A4%EC%85%98%20%EC%9E%A0%EC%8B%A4%EC%A0%90",
+    "query": "서울특별시 송파구 올림픽로 319 3층",
+    "method": "address",
+    "provider": "kakao",
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울특별시 송파구 올림픽로 319 3층",
+    "sourceUrl": "https://jamsil.theconvention.co.kr/",
+    "sourceType": "official_venue"
+  },
   "V-SEO-20260729-107": {
     "venueId": "V-SEO-20260729-107",
     "venueName": "라브르 에드니아",
@@ -2266,6 +2748,23 @@
     "method": "keyword",
     "provider": "kakao",
     "checkedAt": "2026-08-07"
+  },
+  "V-SEO-20260729-108": {
+    "venueId": "V-SEO-20260729-108",
+    "venueName": "라비니움",
+    "district": "송파구",
+    "latitude": 37.5384652017119,
+    "longitude": 127.122430526102,
+    "matchedAddress": "서울 송파구 천호대로 996",
+    "matchedPlaceName": null,
+    "placeUrl": "https://map.kakao.com/?q=%EB%9D%BC%EB%B9%84%EB%8B%88%EC%9B%80",
+    "query": "서울특별시 송파구 천호대로 996",
+    "method": "address",
+    "provider": "kakao",
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울특별시 송파구 천호대로 996",
+    "sourceUrl": "https://pf.kakao.com/_dRpfG/109066663",
+    "sourceType": "official_venue"
   },
   "V-SEO-20260729-109": {
     "venueId": "V-SEO-20260729-109",
@@ -2393,6 +2892,40 @@
     "provider": "kakao",
     "checkedAt": "2026-08-07"
   },
+  "V-SEO-20260729-118": {
+    "venueId": "V-SEO-20260729-118",
+    "venueName": "잠실 루프탑 웨딩홀",
+    "district": "송파구",
+    "latitude": 37.5192083935363,
+    "longitude": 127.076510250617,
+    "matchedAddress": "서울 송파구 백제고분로 2",
+    "matchedPlaceName": null,
+    "placeUrl": "https://map.kakao.com/?q=%EC%9E%A0%EC%8B%A4%20%EB%A3%A8%ED%94%84%ED%83%91%20%EC%9B%A8%EB%94%A9%ED%99%80",
+    "query": "서울특별시 송파구 백제고분로 2",
+    "method": "address",
+    "provider": "kakao",
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울특별시 송파구 백제고분로 2",
+    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities/3197",
+    "sourceType": "official_public"
+  },
+  "V-SEO-20260729-119": {
+    "venueId": "V-SEO-20260729-119",
+    "venueName": "한성백제박물관 하늘정원 루프탑",
+    "district": "송파구",
+    "latitude": 37.5154287227604,
+    "longitude": 127.120800706942,
+    "matchedAddress": "서울 송파구 위례성대로 71",
+    "matchedPlaceName": null,
+    "placeUrl": "https://map.kakao.com/?q=%ED%95%9C%EC%84%B1%EB%B0%B1%EC%A0%9C%EB%B0%95%EB%AC%BC%EA%B4%80%20%ED%95%98%EB%8A%98%EC%A0%95%EC%9B%90%20%EB%A3%A8%ED%94%84%ED%83%91",
+    "query": "서울특별시 송파구 위례성대로 71",
+    "method": "address",
+    "provider": "kakao",
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울특별시 송파구 위례성대로 71",
+    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities/3198",
+    "sourceType": "official_public"
+  },
   "V-SEO-20260729-120": {
     "venueId": "V-SEO-20260729-120",
     "venueName": "로프트가든344",
@@ -2462,6 +2995,40 @@
     "method": "keyword",
     "provider": "kakao",
     "checkedAt": "2026-08-07"
+  },
+  "V-SEO-20260729-125": {
+    "venueId": "V-SEO-20260729-125",
+    "venueName": "라피쥬웨딩 한국거래소점",
+    "district": "영등포구",
+    "latitude": 37.5230469062504,
+    "longitude": 126.928178455049,
+    "matchedAddress": "서울 영등포구 여의나루로 76",
+    "matchedPlaceName": null,
+    "placeUrl": "https://map.kakao.com/?q=%EB%9D%BC%ED%94%BC%EC%A5%AC%EC%9B%A8%EB%94%A9%20%ED%95%9C%EA%B5%AD%EA%B1%B0%EB%9E%98%EC%86%8C%EC%A0%90",
+    "query": "서울특별시 영등포구 여의나루로 76 한국거래소",
+    "method": "address",
+    "provider": "kakao",
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울특별시 영등포구 여의나루로 76 한국거래소",
+    "sourceUrl": "https://thewedd.com/hall-63/",
+    "sourceType": "verified_directory"
+  },
+  "V-SEO-20260729-126": {
+    "venueId": "V-SEO-20260729-126",
+    "venueName": "여의도웨딩컨벤션(KT빌딩)",
+    "district": "영등포구",
+    "latitude": 37.5216201830377,
+    "longitude": 126.91913977365,
+    "matchedAddress": "서울 영등포구 여의대로 14",
+    "matchedPlaceName": null,
+    "placeUrl": "https://map.kakao.com/?q=%EC%97%AC%EC%9D%98%EB%8F%84%EC%9B%A8%EB%94%A9%EC%BB%A8%EB%B2%A4%EC%85%98(KT%EB%B9%8C%EB%94%A9)",
+    "query": "서울특별시 영등포구 여의대로 14 KT빌딩",
+    "method": "address",
+    "provider": "kakao",
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울특별시 영등포구 여의대로 14 KT빌딩",
+    "sourceUrl": "https://www.ywedding.co.kr/about/",
+    "sourceType": "official_venue"
   },
   "V-SEO-20260729-127": {
     "venueId": "V-SEO-20260729-127",
@@ -2575,6 +3142,40 @@
     "provider": "kakao",
     "checkedAt": "2026-08-07"
   },
+  "V-SEO-20260729-135": {
+    "venueId": "V-SEO-20260729-135",
+    "venueName": "선유도공원 원형무대",
+    "district": "영등포구",
+    "latitude": 37.5423832345578,
+    "longitude": 126.901819342041,
+    "matchedAddress": "서울 영등포구 선유로 343",
+    "matchedPlaceName": null,
+    "placeUrl": "https://map.kakao.com/?q=%EC%84%A0%EC%9C%A0%EB%8F%84%EA%B3%B5%EC%9B%90%20%EC%9B%90%ED%98%95%EB%AC%B4%EB%8C%80",
+    "query": "서울특별시 영등포구 선유로 343",
+    "method": "address",
+    "provider": "kakao",
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울특별시 영등포구 선유로 343",
+    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities/395",
+    "sourceType": "official_public"
+  },
+  "V-SEO-20260729-136": {
+    "venueId": "V-SEO-20260729-136",
+    "venueName": "여의도 루프탑 웨딩홀",
+    "district": "영등포구",
+    "latitude": 37.5285532844695,
+    "longitude": 126.935013857348,
+    "matchedAddress": "서울 영등포구 여의동로 338",
+    "matchedPlaceName": null,
+    "placeUrl": "https://map.kakao.com/?q=%EC%97%AC%EC%9D%98%EB%8F%84%20%EB%A3%A8%ED%94%84%ED%83%91%20%EC%9B%A8%EB%94%A9%ED%99%80",
+    "query": "서울특별시 영등포구 여의동로 338",
+    "method": "address",
+    "provider": "kakao",
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울특별시 영등포구 여의동로 338",
+    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities/3194",
+    "sourceType": "official_public"
+  },
   "V-SEO-20260729-137": {
     "venueId": "V-SEO-20260729-137",
     "venueName": "여의도 한강공원 물빛무대",
@@ -2588,6 +3189,23 @@
     "method": "keyword",
     "provider": "kakao",
     "checkedAt": "2026-08-07"
+  },
+  "V-SEO-20260729-138": {
+    "venueId": "V-SEO-20260729-138",
+    "venueName": "영중종합사회복지관 5층 체육관",
+    "district": "영등포구",
+    "latitude": 37.5222450490688,
+    "longitude": 126.908895797578,
+    "matchedAddress": "서울 영등포구 양산로 232",
+    "matchedPlaceName": null,
+    "placeUrl": "https://map.kakao.com/?q=%EC%98%81%EC%A4%91%EC%A2%85%ED%95%A9%EC%82%AC%ED%9A%8C%EB%B3%B5%EC%A7%80%EA%B4%80%205%EC%B8%B5%20%EC%B2%B4%EC%9C%A1%EA%B4%80",
+    "query": "서울특별시 영등포구 양산로 232",
+    "method": "address",
+    "provider": "kakao",
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울특별시 영등포구 양산로 232",
+    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities/3215",
+    "sourceType": "official_public"
   },
   "V-SEO-20260729-139": {
     "venueId": "V-SEO-20260729-139",
@@ -2629,7 +3247,8 @@
     "query": "서울 용산구 이태원로 29",
     "method": "address",
     "provider": "kakao",
-    "checkedAt": "2026-08-07"
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울 용산구 이태원로 29"
   },
   "V-SEO-20260729-142": {
     "venueId": "V-SEO-20260729-142",
@@ -2671,7 +3290,8 @@
     "query": "서울 용산구 청암동 164",
     "method": "address",
     "provider": "kakao",
-    "checkedAt": "2026-08-07"
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울 용산구 청암동 164"
   },
   "V-SEO-20260729-145": {
     "venueId": "V-SEO-20260729-145",
@@ -2699,7 +3319,8 @@
     "query": "서울 용산구 한남동 726-419",
     "method": "address",
     "provider": "kakao",
-    "checkedAt": "2026-08-07"
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울 용산구 한남동 726-419"
   },
   "V-SEO-20260729-147": {
     "venueId": "V-SEO-20260729-147",
@@ -2714,6 +3335,57 @@
     "method": "keyword",
     "provider": "kakao",
     "checkedAt": "2026-08-07"
+  },
+  "V-SEO-20260729-148": {
+    "venueId": "V-SEO-20260729-148",
+    "venueName": "용산가족공원 연못광장",
+    "district": "용산구",
+    "latitude": 37.5201286099941,
+    "longitude": 126.984157658103,
+    "matchedAddress": "서울 용산구 서빙고로 185",
+    "matchedPlaceName": null,
+    "placeUrl": "https://map.kakao.com/?q=%EC%9A%A9%EC%82%B0%EA%B0%80%EC%A1%B1%EA%B3%B5%EC%9B%90%20%EC%97%B0%EB%AA%BB%EA%B4%91%EC%9E%A5",
+    "query": "서울특별시 용산구 서빙고로 185",
+    "method": "address",
+    "provider": "kakao",
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울특별시 용산구 서빙고로 185",
+    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities/4187",
+    "sourceType": "official_public"
+  },
+  "V-SEO-20260729-149": {
+    "venueId": "V-SEO-20260729-149",
+    "venueName": "용산아트홀 전시장",
+    "district": "용산구",
+    "latitude": 37.5324522944579,
+    "longitude": 126.990478820837,
+    "matchedAddress": "서울 용산구 녹사평대로 150",
+    "matchedPlaceName": null,
+    "placeUrl": "https://map.kakao.com/?q=%EC%9A%A9%EC%82%B0%EC%95%84%ED%8A%B8%ED%99%80%20%EC%A0%84%EC%8B%9C%EC%9E%A5",
+    "query": "서울특별시 용산구 녹사평대로 150",
+    "method": "address",
+    "provider": "kakao",
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울특별시 용산구 녹사평대로 150",
+    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities/3219",
+    "sourceType": "official_public"
+  },
+  "V-SEO-20260729-150": {
+    "venueId": "V-SEO-20260729-150",
+    "venueName": "라피쥬웨딩 예서헌점",
+    "district": "은평구",
+    "latitude": 37.6409587657364,
+    "longitude": 126.941248683016,
+    "matchedAddress": "서울 은평구 연서로48길 72",
+    "matchedPlaceName": null,
+    "placeUrl": "https://map.kakao.com/?q=%EB%9D%BC%ED%94%BC%EC%A5%AC%EC%9B%A8%EB%94%A9%20%EC%98%88%EC%84%9C%ED%97%8C%EC%A0%90",
+    "query": "서울특별시 은평구 연서로48길 72",
+    "method": "address",
+    "provider": "kakao",
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울특별시 은평구 연서로48길 72",
+    "sourceUrl": "https://yozmwedding.co.kr/venue/?bmode=view&idx=171359921",
+    "sourceType": "verified_directory"
   },
   "V-SEO-20260729-151": {
     "venueId": "V-SEO-20260729-151",
@@ -2743,6 +3415,23 @@
     "provider": "kakao",
     "checkedAt": "2026-08-07"
   },
+  "V-SEO-20260729-153": {
+    "venueId": "V-SEO-20260729-153",
+    "venueName": "은평역사한옥박물관 은평마당",
+    "district": "은평구",
+    "latitude": 37.6403336262874,
+    "longitude": 126.938008171987,
+    "matchedAddress": "서울 은평구 연서로50길 8",
+    "matchedPlaceName": null,
+    "placeUrl": "https://map.kakao.com/?q=%EC%9D%80%ED%8F%89%EC%97%AD%EC%82%AC%ED%95%9C%EC%98%A5%EB%B0%95%EB%AC%BC%EA%B4%80%20%EC%9D%80%ED%8F%89%EB%A7%88%EB%8B%B9",
+    "query": "서울특별시 은평구 연서로50길 8",
+    "method": "address",
+    "provider": "kakao",
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울특별시 은평구 연서로50길 8",
+    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities/1519",
+    "sourceType": "official_public"
+  },
   "V-SEO-20260729-154": {
     "venueId": "V-SEO-20260729-154",
     "venueName": "두가헌 삼청",
@@ -2756,6 +3445,23 @@
     "method": "keyword",
     "provider": "kakao",
     "checkedAt": "2026-08-07"
+  },
+  "V-SEO-20260729-155": {
+    "venueId": "V-SEO-20260729-155",
+    "venueName": "라피쥬웨딩 인사점",
+    "district": "종로구",
+    "latitude": 37.573541668109,
+    "longitude": 126.986652501347,
+    "matchedAddress": "서울 종로구 인사동6길 14",
+    "matchedPlaceName": null,
+    "placeUrl": "https://map.kakao.com/?q=%EB%9D%BC%ED%94%BC%EC%A5%AC%EC%9B%A8%EB%94%A9%20%EC%9D%B8%EC%82%AC%EC%A0%90",
+    "query": "서울특별시 종로구 인사동6길 14",
+    "method": "address",
+    "provider": "kakao",
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울특별시 종로구 인사동6길 14",
+    "sourceUrl": "https://www.directwedding.co.kr/weddinghall/hall0175",
+    "sourceType": "verified_directory"
   },
   "V-SEO-20260729-156": {
     "venueId": "V-SEO-20260729-156",
@@ -2911,6 +3617,23 @@
     "provider": "kakao",
     "checkedAt": "2026-08-07"
   },
+  "V-SEO-20260729-167": {
+    "venueId": "V-SEO-20260729-167",
+    "venueName": "세종문화회관 예인마당",
+    "district": "종로구",
+    "latitude": 37.5718478584908,
+    "longitude": 126.976168275947,
+    "matchedAddress": "서울 종로구 세종대로 175",
+    "matchedPlaceName": null,
+    "placeUrl": "https://map.kakao.com/?q=%EC%84%B8%EC%A2%85%EB%AC%B8%ED%99%94%ED%9A%8C%EA%B4%80%20%EC%98%88%EC%9D%B8%EB%A7%88%EB%8B%B9",
+    "query": "서울특별시 종로구 세종대로 175",
+    "method": "address",
+    "provider": "kakao",
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울특별시 종로구 세종대로 175",
+    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities/753",
+    "sourceType": "official_public"
+  },
   "V-SEO-20260730-001": {
     "venueId": "V-SEO-20260730-001",
     "venueName": "루나스가든",
@@ -2923,7 +3646,8 @@
     "query": "서울특별시 도봉구 노해로 327 하누소 빌딩 6층",
     "method": "address",
     "provider": "kakao",
-    "checkedAt": "2026-08-07"
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울특별시 도봉구 노해로 327 하누소 빌딩 6층"
   },
   "V-SEO-20260730-002": {
     "venueId": "V-SEO-20260730-002",
@@ -2937,7 +3661,8 @@
     "query": "서울특별시 성북구 성북로23길 9",
     "method": "address",
     "provider": "kakao",
-    "checkedAt": "2026-08-07"
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울특별시 성북구 성북로23길 9"
   },
   "V-SEO-20260730-003": {
     "venueId": "V-SEO-20260730-003",
@@ -2951,7 +3676,8 @@
     "query": "서울특별시 영등포구 신길로 89",
     "method": "address",
     "provider": "kakao",
-    "checkedAt": "2026-08-07"
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울특별시 영등포구 신길로 89"
   },
   "V-SEO-20260730-004": {
     "venueId": "V-SEO-20260730-004",
@@ -2965,7 +3691,8 @@
     "query": "서울특별시 용산구 장문로9길 11",
     "method": "address",
     "provider": "kakao",
-    "checkedAt": "2026-08-07"
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울특별시 용산구 장문로9길 11"
   },
   "V-SEO-20260730-005": {
     "venueId": "V-SEO-20260730-005",
@@ -2979,7 +3706,8 @@
     "query": "서울특별시 양천구 목동서로 225 대한민국예술인센터",
     "method": "address",
     "provider": "kakao",
-    "checkedAt": "2026-08-07"
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울특별시 양천구 목동서로 225 대한민국예술인센터"
   },
   "V-SEO-20260730-007": {
     "venueId": "V-SEO-20260730-007",
@@ -2993,7 +3721,8 @@
     "query": "서울특별시 동작구 동작대로 59",
     "method": "address",
     "provider": "kakao",
-    "checkedAt": "2026-08-07"
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울특별시 동작구 동작대로 59"
   },
   "V-SEO-20260730-008": {
     "venueId": "V-SEO-20260730-008",
@@ -3007,7 +3736,8 @@
     "query": "서울특별시 동작구 노량진로 100",
     "method": "address",
     "provider": "kakao",
-    "checkedAt": "2026-08-07"
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울특별시 동작구 노량진로 100"
   },
   "V-SEO-20260730-009": {
     "venueId": "V-SEO-20260730-009",
@@ -3021,6 +3751,7 @@
     "query": "서울특별시 동작구 노량진로 74",
     "method": "address",
     "provider": "kakao",
-    "checkedAt": "2026-08-07"
+    "checkedAt": "2026-08-07",
+    "sourceAddress": "서울특별시 동작구 노량진로 74"
   }
 }

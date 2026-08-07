@@ -4,6 +4,10 @@ import { fileURLToPath } from "node:url";
 import nextEnv from "@next/env";
 import hallsJson from "../src/data/halls.generated.json";
 import {
+  HALL_LOCATION_OVERRIDES,
+  type HallLocationSourceType,
+} from "../src/data/hall-location-overrides";
+import {
   coordinatesFromKakao,
   selectKakaoVenueDocument,
   type HallVenueGeocode,
@@ -33,6 +37,9 @@ interface VenueSeed {
   venueName: string;
   district: string;
   address: string | null;
+  sourceUrl: string | null;
+  sourceType: HallLocationSourceType | null;
+  searchQuery: string | null;
 }
 
 class KakaoLocalError extends Error {
@@ -67,6 +74,7 @@ async function geocodeAddress(seed: VenueSeed): Promise<HallVenueGeocode | null>
       ? restaurantGeocodeFromDocument(payload.documents[0], query)
       : null;
     if (!result) continue;
+    if (!result.matchedAddress.includes(seed.district)) continue;
     return {
       venueId: seed.venueId,
       venueName: seed.venueName,
@@ -75,23 +83,27 @@ async function geocodeAddress(seed: VenueSeed): Promise<HallVenueGeocode | null>
       longitude: result.longitude,
       matchedAddress: result.matchedAddress,
       matchedPlaceName: null,
-      placeUrl: `https://map.kakao.com/?q=${encodeURIComponent(seed.venueName)}`,
+      placeUrl: `https://map.kakao.com/?q=${encodeURIComponent(seed.searchQuery ?? seed.venueName)}`,
       query,
       method: "address",
       provider: "kakao",
       checkedAt,
+      sourceAddress: seed.address,
+      sourceUrl: seed.sourceUrl ?? undefined,
+      sourceType: seed.sourceType ?? undefined,
     };
   }
   return null;
 }
 
 async function geocodeKeyword(seed: VenueSeed): Promise<HallVenueGeocode | null> {
-  const query = `${seed.venueName} ${seed.district}`;
+  const venueSearchName = seed.searchQuery ?? seed.venueName;
+  const query = `${venueSearchName} ${seed.district}`;
   const url = new URL("https://dapi.kakao.com/v2/local/search/keyword.json");
   url.searchParams.set("query", query);
   url.searchParams.set("size", "5");
   const payload = await kakaoRequest<{ documents?: KakaoKeywordDocument[] }>(url);
-  const document = selectKakaoVenueDocument(seed.venueName, seed.district, payload.documents ?? []);
+  const document = selectKakaoVenueDocument(venueSearchName, seed.district, payload.documents ?? []);
   const coordinates = document ? coordinatesFromKakao(document.x, document.y) : null;
   if (!document || !coordinates) return null;
   return {
@@ -106,17 +118,24 @@ async function geocodeKeyword(seed: VenueSeed): Promise<HallVenueGeocode | null>
     method: "keyword",
     provider: "kakao",
     checkedAt,
+    sourceAddress: seed.address ?? undefined,
+    sourceUrl: seed.sourceUrl ?? undefined,
+    sourceType: seed.sourceType ?? undefined,
   };
 }
 
 const venues = Array.from(
   (hallsJson as GeneratedHall[]).reduce((map, hall) => {
+    const override = HALL_LOCATION_OVERRIDES[hall.venueId];
     if (!map.has(hall.venueId)) {
       map.set(hall.venueId, {
         venueId: hall.venueId,
         venueName: hall.venueName,
-        district: hall.district,
-        address: hall.address,
+        district: override?.district ?? hall.district,
+        address: override?.address ?? hall.address,
+        sourceUrl: override?.sourceUrl ?? null,
+        sourceType: override?.sourceType ?? null,
+        searchQuery: override?.searchQuery ?? null,
       });
     } else if (!map.get(hall.venueId)?.address && hall.address) {
       map.get(hall.venueId)!.address = hall.address;
@@ -131,7 +150,25 @@ let missing = 0;
 let apiAvailable = Boolean(apiKey);
 
 for (const seed of venues) {
-  if (cache[seed.venueId]) continue;
+  const cached = cache[seed.venueId];
+  const sourceAddressChanged = Boolean(
+    cached
+    && seed.sourceType
+    && cached.sourceAddress !== seed.address,
+  );
+  const districtChanged = Boolean(cached && cached.district !== seed.district);
+  if (sourceAddressChanged || districtChanged) {
+    delete cache[seed.venueId];
+  } else if (cached) {
+    cache[seed.venueId] = {
+      ...cached,
+      district: seed.district,
+      sourceAddress: seed.address ?? cached.sourceAddress,
+      sourceUrl: seed.sourceUrl ?? cached.sourceUrl,
+      sourceType: seed.sourceType ?? cached.sourceType,
+    };
+    continue;
+  }
   if (!apiAvailable) {
     missing += 1;
     continue;
