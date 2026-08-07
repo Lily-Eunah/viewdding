@@ -24,9 +24,12 @@ export default function HomePage() {
           <h1 id="landing-title">Wedding Archive</h1>
           <p>결혼을 준비하는 모든 순간을,<br />하나의 기록으로 남겨요.</p>
         </section>
-        <nav className="landing-crisp-entry" aria-label="웨딩홀 찾기 시작">
+        <nav className="landing-crisp-entry" aria-label="Viewdding 서비스 시작">
           <Link className="landing-crisp-cta" href="/search/">
             <span>Wedding Hall 둘러보기</span><span className="landing-crisp-arrow" aria-hidden="true">→</span>
+          </Link>
+          <Link className="landing-crisp-cta" href="/gatherings/">
+            <span>Gathering Map 둘러보기</span><span className="landing-crisp-arrow" aria-hidden="true">→</span>
           </Link>
         </nav>
         <p className="landing-crisp-footer">Viewdding · For every wedding moment</p>

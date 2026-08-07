@@ -176,8 +176,8 @@ body:has(.landing-page-reference):after{display:none}
 .landing-crisp-copy{top:45.3%;width:min(90vw,540px)}
 .landing-crisp-copy h1{margin:0;font:400 clamp(1.18rem,3.05svh,1.72rem)/1 "Cormorant Garamond",Didot,"Bodoni 72",Georgia,serif;letter-spacing:.105em;text-transform:uppercase;white-space:nowrap}
 .landing-crisp-copy p{margin:clamp(.68rem,1.6svh,.92rem) 0 0;color:#494540c4;font:400 clamp(.68rem,1.58svh,.82rem)/1.72 var(--serif);letter-spacing:-.005em}
-.landing-crisp-entry{top:76.9%}
-.landing-crisp-cta{position:relative;display:inline-flex;min-height:44px;align-items:center;gap:.72rem;color:#45423ec9;font:400 clamp(.71rem,1.62svh,.84rem)/1.5 var(--serif);letter-spacing:-.01em;white-space:nowrap;-webkit-tap-highlight-color:#4b464014}
+.landing-crisp-entry{top:76.9%;display:flex;width:min(92vw,520px);align-items:center;justify-content:center;gap:clamp(1.2rem,4vw,4.25rem)}
+.landing-crisp-cta{position:relative;display:inline-flex;min-height:44px;align-items:center;justify-content:center;gap:.72rem;color:#45423ec9;font:400 clamp(.71rem,1.62svh,.84rem)/1.5 var(--serif);letter-spacing:-.01em;white-space:nowrap;-webkit-tap-highlight-color:#4b464014}
 .landing-crisp-cta:after{position:absolute;right:15%;bottom:-1px;left:15%;height:1px;content:"";background:#49454085;opacity:1;transform:scaleX(.72);transition:transform .25s,opacity .25s}
 .landing-crisp-cta:hover:after,.landing-crisp-cta:focus-visible:after{transform:scaleX(1)}
 .landing-crisp-arrow{margin-top:-.08em;font:400 1.15em/1.5 Georgia,serif}
@@ -195,6 +195,6 @@ body:has(.landing-page-reference):after{display:none}
 }
 @media(max-width:899px){
   .landing-page-reference .landing-crisp-copy{top:41.6%;transform:translateX(calc(-50% + 2px))}
-  .landing-page-reference .landing-crisp-entry{top:72.8%}
+  .landing-page-reference .landing-crisp-entry{top:72.8%;gap:clamp(.8rem,4vw,1.5rem)}
   .landing-page-reference .landing-crisp-footer{right:0;bottom:max(5.3%,calc(env(safe-area-inset-bottom) + 1rem));left:0;width:100%;transform:none}
 }
