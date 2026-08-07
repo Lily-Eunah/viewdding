@@ -26,6 +26,20 @@ export interface NumericRange {
   raw: string | number | null;
 }
 
+export type HallPhotoUsageStatus = "official_source_linked" | "partner_provided" | "licensed";
+
+export interface HallPhoto {
+  id: string;
+  url: string;
+  sourceUrl: string;
+  sourceName: string;
+  sourceType: "official_website" | "official_social" | "partner";
+  usageStatus: HallPhotoUsageStatus;
+  checkedAt: string;
+  alt: string;
+  isPrimary: boolean;
+}
+
 export interface HallRecord {
   id: string;
   venueId: string;
@@ -62,6 +76,7 @@ export interface HallRecord {
   sourceId: string | null;
   sourceUrl: string | null;
   sourceType: string | null;
+  photos?: HallPhoto[];
   raw: {
     representativeClassification: string | null;
     lighting: string | null;

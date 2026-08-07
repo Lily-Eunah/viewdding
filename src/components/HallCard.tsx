@@ -2,6 +2,7 @@ import Link from "next/link";
 import type { FilteredHall, HallRecord } from "@/domain/types";
 import { ceremonyLabel, hallTags, mealLabels, rangeLabel } from "@/lib/labels";
 import { FavoriteButton } from "./FavoriteButton";
+import { HallPhotoMedia } from "./HallPhotoMedia";
 
 function hasRange(range: HallRecord["capacity"]): boolean {
   return range.min !== null && range.max !== null;
@@ -30,9 +31,11 @@ export function HallCard({ hall }: { hall: HallRecord; unknownReasons?: Filtered
     { label: "식사", value: mealLabel(hall) },
   ].filter((fact): fact is { label: string; value: string } => fact.value !== null);
   const checkedAt = checkedAtLabel(hall.detailCheckedAt ?? hall.classificationCheckedAt);
+  const primaryPhoto = hall.photos?.[0];
 
   return (
-    <article className={`hall-card${facts.length === 0 ? " is-sparse" : ""}`}>
+    <article className={`hall-card${facts.length === 0 ? " is-sparse" : ""}${primaryPhoto ? " has-photo" : ""}`}>
+      {primaryPhoto ? <HallPhotoMedia photo={primaryPhoto} variant="card" /> : null}
       <div className="hall-card-main">
         <div className="hall-card-heading">
           <div>

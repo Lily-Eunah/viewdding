@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { FavoriteButton } from "@/components/FavoriteButton";
+import { HallPhotoMedia } from "@/components/HallPhotoMedia";
 import { getHall, halls } from "@/lib/data";
 import { ceremonyLabel, hallTags, mealLabels, rangeLabel } from "@/lib/labels";
 
@@ -29,6 +30,7 @@ export default async function HallDetailPage({ params }: { params: Promise<{ id:
   return (
     <article className="detail-page">
       <nav className="breadcrumb"><Link href="/search/">서울 웨딩홀</Link><span>›</span><span>{hall.district}</span></nav>
+      {hall.photos && hall.photos.length > 0 ? <section className="hall-photo-gallery" aria-label={`${hall.venueName} ${hall.hallName} 공식 사진`}>{hall.photos.map((photo) => <HallPhotoMedia key={photo.id} photo={photo} variant="detail" />)}</section> : null}
       <header className="detail-header"><div><p className="eyebrow">{hall.venueName}</p><h1>{hall.hallName}</h1><p>{hall.district}{hall.address ? ` · ${hall.address}` : ""}</p><div className="chip-row">{hallTags(hall).map((tag) => <span className="chip" key={tag}>{tag}</span>)}</div></div><FavoriteButton hallId={hall.id} /></header>
       <dl className="fact-grid">{facts.map(([label, value]) => <div key={label}><dt>{label}</dt><dd>{value}</dd></div>)}</dl>
       <section className="detail-section"><h2>분류 정보</h2><div className="quiet-table">{classifications.map(([label, value]) => <div key={label}><span>{label}</span><strong>{value}</strong></div>)}</div></section>

@@ -227,6 +227,25 @@ body:has(.landing-page-reference):after{display:none}
   }
 }
 
+/* Hall photography: first-party linked previews only */
+.hall-card.has-photo{overflow:hidden;padding-top:0}
+.hall-photo{position:relative;overflow:hidden;margin:0;background:#ddd7ce}
+.hall-photo img{display:block;width:100%;height:100%;object-fit:cover}
+.hall-photo-card{height:clamp(190px,27vw,260px);margin:0 -29px 22px}
+.hall-photo figcaption{position:absolute;right:10px;bottom:9px;padding:5px 8px;color:#f8f5ef;background:#3f3b36b8;font:500 9px/1.2 var(--sans);letter-spacing:.025em;backdrop-filter:blur(5px)}
+.hall-photo figcaption a{color:inherit}
+.hall-photo-gallery{display:grid;gap:10px;margin:0 0 30px}
+.hall-photo-detail{aspect-ratio:16/10;border:1px solid #c9c0b4}
+.hall-photo-detail img{object-position:center}
+
+@media(max-width:540px){
+  .hall-card.has-photo{padding-top:0}
+  .hall-photo-card{height:190px;margin:0 -17px 18px}
+  .hall-photo-gallery{margin-bottom:22px}
+  .hall-photo-detail{aspect-ratio:4/3}
+  .hall-photo figcaption{right:7px;bottom:7px;font-size:8px}
+}
+
 /* Mobile full-screen restaurant map */
 .mobile-map-toolbar,.mobile-filter-sheet-header,.mobile-filter-apply,.mobile-filter-backdrop{display:none}
 .map-sheet-handle{display:flex;width:100%;align-items:center;gap:9px;padding:11px 15px;border:0;border-bottom:1px solid #d4ccc2;color:#544f49;background:#f8f5ef;text-align:left}.map-sheet-handle>span{display:none}.map-sheet-handle strong{font:600 11px/1.3 var(--sans)}.map-sheet-handle small{margin-left:auto;color:#847c73;font-size:10px}.map-selected-chips{display:flex;flex-wrap:wrap;gap:5px;margin:10px 0}.map-selected-chips span{padding:4px 7px;border:1px solid #d0c7bc;color:#70695f;background:#fbf8f2;font-size:9px}.map-selected-links{display:flex;gap:14px;margin-top:12px}.map-selected-links a{border-bottom:1px solid #a59b8f;font-size:10px;font-weight:700}.map-empty-list{padding:28px 18px;color:#817a71;font-size:11px;text-align:center}

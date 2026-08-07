@@ -1,8 +1,14 @@
 import hallsJson from "@/data/halls.generated.json";
+import { photosForHall } from "@/data/hall-photos";
 import metadataJson from "@/data/metadata.generated.json";
 import type { HallRecord } from "@/domain/types";
 
-export const halls = hallsJson as HallRecord[];
+type GeneratedHallRecord = Omit<HallRecord, "photos">;
+
+export const halls: HallRecord[] = (hallsJson as GeneratedHallRecord[]).map((hall) => ({
+  ...hall,
+  photos: photosForHall(hall.id),
+}));
 export const metadata = metadataJson;
 export const districts = metadata.districts;
 
