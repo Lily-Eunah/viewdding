@@ -1,42 +1,43 @@
-# Hall photo pilot audit — 2026-08-07
+# Hall photo audit - 2026-08-07
 
 ## Acceptance rules
 
-- The official first-party page names the same individual hall as the Viewdding record.
+- The official first-party page names the same venue or individual hall as the Viewdding record.
 - The image shows the ceremony hall or ceremony space itself. Lobby, banquet, food, and bride-lounge-only images are excluded.
 - The original image URL is HTTPS and returns an image response.
-- `wedding_setup` means ceremony styling is visible; `space_overview` means the official page shows the identifiable space without ceremony styling.
+- `wedding_setup` means ceremony styling is visible. `space_overview` means the official page shows the identifiable space without ceremony styling.
 - Viewdding links to the venue-hosted original. `official_source_linked` does not grant Viewdding ownership or a reuse license.
 
-## Published pilot set
+## Published set
 
-| # | Venue / hall | Kind | Official source |
-|---:|---|---|---|
-| 1 | 빌라드지디 청담 / 에스파체 앙피레 | wedding setup | chungdamvilladegd.com |
-| 2 | 호텔 나루 서울 / 나루 볼룸 | space overview | hotelnaruseoul.com |
-| 3 | 서울신라호텔 / 다이너스티 | space overview | shillahotels.com |
-| 4 | 더청담 / 노블레스 | wedding setup | thecheongdam.com |
-| 5 | 더청담 / 더 돔 | wedding setup | thecheongdam.com |
-| 6 | 라움 / 마제스틱 볼룸 | wedding setup | theraum.co.kr |
-| 7 | 라움 / 그라스가든 | wedding setup | theraum.co.kr |
-| 8 | 라움 / 폰드가든 | wedding setup | theraum.co.kr |
-| 9 | 라움 / 체임버홀 | wedding setup | theraum.co.kr |
-| 10 | SETEC / 컨벤션홀 | space overview | wedding.seoulwomen.or.kr |
-| 11 | 소노펠리체컨벤션 / 다이아몬드홀 | wedding setup | sonofeliceconvention.com |
-| 12 | 문화비축기지 / 야외 예식공간 | wedding setup | wedding.seoulwomen.or.kr |
-| 13 | 월드컵공원 / 평화잔디광장 | wedding setup | wedding.seoulwomen.or.kr |
-| 14 | 서울가든호텔 / 그랜드 볼룸 | wedding setup | seoulgarden.co.kr |
-| 15 | 노보텔 앰배서더 서울 동대문 / 그랜드볼룸 라온 | wedding setup | ambatel.com |
-| 16 | 보타닉파크웨딩 / 오키드홀 | wedding setup | botanicparkwedding.com |
-| 17 | 웨딩스퀘어 강변 / 루시드홀 | wedding setup | weddingsquare.co.kr |
-| 18 | 비엔티컨벤션 / 단독홀 | wedding setup | bntconvention.com |
-| 19 | 웨딩스퀘어 강변 / 그레이스홀 | wedding setup | weddingsquare.co.kr |
-| 20 | 웨딩스퀘어 강변 / 아모르홀 | wedding setup | weddingsquare.co.kr |
+- Total hall records with an official photo: 50
+- Original pilot: 20
+- Added in this expansion: 30
+- Expansion mix: 6 commercial venue photos and 24 Seoul public-wedding venue photos
+- Every addition was visually reviewed at the hall or venue-space level.
 
-## Rejected during visual review
+```text
+H-SEO-20260728-002  H-SEO-20260728-004  H-SEO-20260728-009
+H-SEO-20260728-014  H-SEO-20260728-015  H-SEO-20260728-016
+H-SEO-20260728-017  H-SEO-20260728-026  H-SEO-20260728-030
+H-SEO-20260728-031  H-SEO-20260728-059  H-SEO-20260728-062
+H-SEO-20260728-065  H-SEO-20260728-066  H-SEO-20260728-076
+H-SEO-20260728-080  H-SEO-20260728-082  H-SEO-20260729-105
+H-SEO-20260729-120  H-SEO-20260729-128  H-SEO-20260729-131
+H-SEO-20260729-132  H-SEO-20260729-133  H-SEO-20260729-138
+H-SEO-20260729-144  H-SEO-20260729-150  H-SEO-20260729-160
+H-SEO-20260729-162  H-SEO-20260729-163  H-SEO-20260729-166
+H-SEO-20260729-170  H-SEO-20260729-171  H-SEO-20260729-184
+H-SEO-20260729-191  H-SEO-20260729-192  H-SEO-20260729-200
+H-SEO-20260729-215  H-SEO-20260729-217  H-SEO-20260729-224
+H-SEO-20260729-225  H-SEO-20260729-247  H-SEO-20260729-267
+H-SEO-20260729-279  H-SEO-20260729-280  H-SEO-20260729-284
+H-SEO-20260729-298  H-SEO-20260729-305  H-SEO-20260729-306
+H-SEO-20260730-001  H-SEO-20260730-005
+```
 
-- 보타닉파크웨딩: four images showing the bride lounge rather than the Orchid Hall.
-- 서울가든호텔: one bride-lounge image and two detail-only images.
-- 메리스에이프럴: portrait, bouquet, and detail images without a sufficiently identifiable hall overview.
-- 서교스퀘어: a bare performance-space overview was held back in favor of a stronger ceremony-hall image.
+## Review notes
 
+- Generic venue hero images, logos, bride lounges, banquet-only images, and duplicate rooftop renderings were rejected.
+- The UI distinguishes official ceremony setups from official space overviews.
+- Source labels and alt text are derived from the normalized hall record, which avoids duplicated or garbled labels in the registry.

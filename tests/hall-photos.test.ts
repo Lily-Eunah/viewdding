@@ -6,9 +6,9 @@ describe("hall photo registry", () => {
   const hallIds = new Set(hallsJson.map((hall) => hall.id));
   const entries = Object.entries(hallPhotosByHallId);
 
-  it("publishes exactly 20 individually verified hall photos in the pilot", () => {
-    expect(entries).toHaveLength(20);
-    expect(entries.flatMap(([, photos]) => photos)).toHaveLength(20);
+  it("publishes exactly 50 individually verified hall photos", () => {
+    expect(entries).toHaveLength(50);
+    expect(entries.flatMap(([, photos]) => photos)).toHaveLength(50);
   });
 
   it("only references existing halls", () => {
