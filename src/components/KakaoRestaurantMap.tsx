@@ -2,6 +2,7 @@
 
 import Script from "next/script";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { restaurantsWithinBounds } from "@/domain/restaurant-map";
 import type { RestaurantRecord } from "@/domain/restaurant-types";
 
 interface MarkerEntry {
@@ -11,6 +12,14 @@ interface MarkerEntry {
 
 function restaurantName(restaurant: RestaurantRecord): string {
   return `${restaurant.name}${restaurant.branch ? ` ${restaurant.branch}` : ""}`;
+}
+
+function priceSummary(restaurant: RestaurantRecord): string {
+  const { min, max } = restaurant.pricePerPerson;
+  if (min !== null && max !== null) return `${min.toLocaleString("ko-KR")}~${max.toLocaleString("ko-KR")}원`;
+  if (min !== null) return `${min.toLocaleString("ko-KR")}원부터`;
+  if (max !== null) return `${max.toLocaleString("ko-KR")}원까지`;
+  return "가격 확인 필요";
 }
 
 export function KakaoRestaurantMap({
@@ -30,10 +39,11 @@ export function KakaoRestaurantMap({
     () => restaurants.filter((restaurant) => restaurant.latitude !== null && restaurant.longitude !== null),
     [restaurants],
   );
-  const [selectedId, setSelectedId] = useState<string | null>(mappableRestaurants[0]?.id ?? null);
-  const selectedRestaurant = mappableRestaurants.find((restaurant) => restaurant.id === selectedId)
-    ?? mappableRestaurants[0]
-    ?? null;
+  const [visibleIds, setVisibleIds] = useState<string[]>([]);
+  const [selectedId, setSelectedId] = useState<string | null>(null);
+  const [listExpanded, setListExpanded] = useState(false);
+  const selectedRestaurant = mappableRestaurants.find((restaurant) => restaurant.id === selectedId) ?? null;
+  const visibleRestaurants = mappableRestaurants.filter((restaurant) => visibleIds.includes(restaurant.id));
 
   const loadMapSdk = useCallback(() => {
     const maps = window.kakao?.maps;
@@ -58,7 +68,10 @@ export function KakaoRestaurantMap({
     const markers = mappableRestaurants.map((restaurant) => {
       const position = new maps.LatLng(restaurant.latitude!, restaurant.longitude!);
       const marker = new maps.Marker({ position, title: restaurantName(restaurant), clickable: true });
-      maps.event.addListener(marker, "click", () => setSelectedId(restaurant.id));
+      maps.event.addListener(marker, "click", () => {
+        setSelectedId(restaurant.id);
+        setListExpanded(false);
+      });
       markerEntriesRef.current.set(restaurant.id, { marker, position });
       bounds.extend(position);
       return marker;
@@ -73,13 +86,32 @@ export function KakaoRestaurantMap({
       map.setBounds(bounds);
     }
 
-    setSelectedId((current) => mappableRestaurants.some((restaurant) => restaurant.id === current)
-      ? current
-      : first.id);
+    const updateVisibleRestaurants = () => {
+      const visibleBounds = map.getBounds();
+      const southWest = visibleBounds.getSouthWest();
+      const northEast = visibleBounds.getNorthEast();
+      const visible = restaurantsWithinBounds(mappableRestaurants, {
+        south: southWest.getLat(),
+        west: southWest.getLng(),
+        north: northEast.getLat(),
+        east: northEast.getLng(),
+      });
+      const nextIds = visible.map((restaurant) => restaurant.id);
+      setVisibleIds(nextIds);
+      setSelectedId((current) => current && nextIds.includes(current) ? current : null);
+    };
+
+    setVisibleIds(mappableRestaurants.map((restaurant) => restaurant.id));
+    setSelectedId((current) => mappableRestaurants.some((restaurant) => restaurant.id === current) ? current : null);
+    maps.event.addListener(map, "idle", updateVisibleRestaurants);
+    updateVisibleRestaurants();
+
+    return () => maps.event.removeListener(map, "idle", updateVisibleRestaurants);
   }, [mappableRestaurants, sdkReady]);
 
   function focusRestaurant(restaurant: RestaurantRecord) {
     setSelectedId(restaurant.id);
+    setListExpanded(false);
     const entry = markerEntriesRef.current.get(restaurant.id);
     const map = mapInstanceRef.current;
     if (entry && map) {
@@ -125,17 +157,34 @@ export function KakaoRestaurantMap({
         ) : null}
       </div>
 
-      <aside className="restaurant-map-sidebar" aria-label="지도 음식점 목록">
+      <aside className={`restaurant-map-sidebar${listExpanded ? " is-expanded" : ""}`} aria-label="지도 음식점 목록">
+        <button
+          className="map-sheet-handle"
+          type="button"
+          aria-expanded={listExpanded}
+          onClick={() => setListExpanded((expanded) => !expanded)}
+        >
+          <span aria-hidden="true" />
+          <strong>현재 지도 {visibleRestaurants.length}곳</strong>
+          <small>{listExpanded ? "지도 보기" : "목록 보기"}</small>
+        </button>
         {selectedRestaurant ? (
           <div className="map-selected-place">
             <p className="eyebrow">선택한 장소</p>
             <h3>{restaurantName(selectedRestaurant)}</h3>
-            <p>{selectedRestaurant.address ?? selectedRestaurant.area ?? selectedRestaurant.district}</p>
-            {selectedRestaurant.kakaoMapUrl ? <a href={selectedRestaurant.kakaoMapUrl} target="_blank" rel="noreferrer">카카오맵 상세 보기 →</a> : null}
+            <p>{selectedRestaurant.area ?? selectedRestaurant.district}{selectedRestaurant.nearestStation ? ` · ${selectedRestaurant.nearestStation}` : ""} · {priceSummary(selectedRestaurant)}</p>
+            <div className="map-selected-chips">
+              {selectedRestaurant.venueType ? <span>업종 · {selectedRestaurant.venueType}</span> : null}
+              {selectedRestaurant.cuisines.slice(0, 2).map((cuisine) => <span key={cuisine}>{cuisine}</span>)}
+            </div>
+            <div className="map-selected-links">
+              {selectedRestaurant.naverMapUrl ? <a href={selectedRestaurant.naverMapUrl} target="_blank" rel="noreferrer">네이버 지도</a> : null}
+              {selectedRestaurant.kakaoMapUrl ? <a href={selectedRestaurant.kakaoMapUrl} target="_blank" rel="noreferrer">카카오맵</a> : null}
+            </div>
           </div>
         ) : null}
         <div className="map-place-list">
-          {mappableRestaurants.map((restaurant) => (
+          {visibleRestaurants.map((restaurant) => (
             <button
               key={restaurant.id}
               type="button"
@@ -147,6 +196,7 @@ export function KakaoRestaurantMap({
               <span>{restaurant.area ?? restaurant.district}{restaurant.nearestStation ? ` · ${restaurant.nearestStation}` : ""}</span>
             </button>
           ))}
+          {visibleRestaurants.length === 0 ? <p className="map-empty-list">현재 지도 영역에 음식점이 없습니다.</p> : null}
         </div>
       </aside>
     </section>

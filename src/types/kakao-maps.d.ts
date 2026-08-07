@@ -1,10 +1,16 @@
-interface KakaoLatLng {}
+interface KakaoLatLng {
+  getLat(): number;
+  getLng(): number;
+}
 
 interface KakaoLatLngBounds {
   extend(position: KakaoLatLng): void;
+  getNorthEast(): KakaoLatLng;
+  getSouthWest(): KakaoLatLng;
 }
 
 interface KakaoMapInstance {
+  getBounds(): KakaoLatLngBounds;
   panTo(position: KakaoLatLng): void;
   relayout(): void;
   setBounds(bounds: KakaoLatLngBounds): void;
@@ -34,6 +40,7 @@ interface KakaoMapsNamespace {
   }) => KakaoMarkerClustererInstance;
   event: {
     addListener(target: object, type: string, listener: () => void): void;
+    removeListener(target: object, type: string, listener: () => void): void;
   };
 }
 
