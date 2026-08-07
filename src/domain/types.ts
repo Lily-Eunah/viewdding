@@ -35,6 +35,7 @@ export interface HallPhoto {
   sourceName: string;
   sourceType: "official_website" | "official_social" | "partner";
   usageStatus: HallPhotoUsageStatus;
+  photoKind: "wedding_setup" | "space_overview";
   checkedAt: string;
   alt: string;
   isPrimary: boolean;

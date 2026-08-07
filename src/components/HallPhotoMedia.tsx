@@ -18,8 +18,10 @@ export function HallPhotoMedia({ photo, variant }: { photo: HallPhoto; variant: 
         onError={() => setFailed(true)}
       />
       <figcaption>
+        <span>{photo.photoKind === "wedding_setup" ? "공식 예식 세팅" : "공식 공간 전경"}</span>
+        <span aria-hidden="true"> · </span>
         <a href={photo.sourceUrl} target="_blank" rel="noreferrer">
-          {photo.sourceName} 사진 <span aria-hidden="true">↗</span>
+          {photo.sourceName} <span aria-hidden="true">↗</span>
         </a>
       </figcaption>
     </figure>

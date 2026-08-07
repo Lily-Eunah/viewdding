@@ -6,6 +6,11 @@ describe("hall photo registry", () => {
   const hallIds = new Set(hallsJson.map((hall) => hall.id));
   const entries = Object.entries(hallPhotosByHallId);
 
+  it("publishes exactly 20 individually verified hall photos in the pilot", () => {
+    expect(entries).toHaveLength(20);
+    expect(entries.flatMap(([, photos]) => photos)).toHaveLength(20);
+  });
+
   it("only references existing halls", () => {
     for (const [hallId] of entries) expect(hallIds.has(hallId)).toBe(true);
   });
@@ -17,6 +22,7 @@ describe("hall photo registry", () => {
         expect(photo.sourceUrl).toMatch(/^https:\/\//);
         expect(photo.sourceType).toBe("official_website");
         expect(photo.usageStatus).toBe("official_source_linked");
+        expect(["wedding_setup", "space_overview"]).toContain(photo.photoKind);
         expect(photo.alt.length).toBeGreaterThan(10);
       }
     }
