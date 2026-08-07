@@ -1467,13 +1467,13 @@
     "lunchPriceMin": 20000,
     "dinnerPriceMin": 30000,
     "courseAvailable": "unknown",
-    "privateRoom": "unknown",
+    "privateRoom": "yes",
     "roomCapacity": {
       "min": null,
       "max": null,
       "raw": null
     },
-    "parking": "unknown",
+    "parking": "none",
     "parkingDetail": null,
     "closedWeekdays": [],
     "regularClosedDaysRaw": "없음",
@@ -1527,7 +1527,7 @@
       "max": null,
       "raw": null
     },
-    "parking": "unknown",
+    "parking": "available",
     "parkingDetail": null,
     "closedWeekdays": [],
     "regularClosedDaysRaw": "없음",
@@ -1581,7 +1581,7 @@
       "max": null,
       "raw": null
     },
-    "parking": "unknown",
+    "parking": "available",
     "parkingDetail": null,
     "closedWeekdays": [],
     "regularClosedDaysRaw": "없음",
@@ -1634,7 +1634,7 @@
       "max": null,
       "raw": null
     },
-    "parking": "unknown",
+    "parking": "available",
     "parkingDetail": null,
     "closedWeekdays": [],
     "regularClosedDaysRaw": "없음",
@@ -1735,13 +1735,13 @@
     "lunchPriceMin": 20000,
     "dinnerPriceMin": 35000,
     "courseAvailable": "no",
-    "privateRoom": "unknown",
+    "privateRoom": "yes",
     "roomCapacity": {
       "min": null,
       "max": null,
       "raw": null
     },
-    "parking": "unknown",
+    "parking": "none",
     "parkingDetail": null,
     "closedWeekdays": [],
     "regularClosedDaysRaw": "없음",
@@ -2005,7 +2005,7 @@
       "max": null,
       "raw": null
     },
-    "parking": "unknown",
+    "parking": "available",
     "parkingDetail": null,
     "closedWeekdays": [
       "sun"
@@ -2060,7 +2060,7 @@
       "max": null,
       "raw": null
     },
-    "parking": "unknown",
+    "parking": "valet",
     "parkingDetail": null,
     "closedWeekdays": [
       "sun"
@@ -2115,7 +2115,7 @@
       "max": null,
       "raw": null
     },
-    "parking": "unknown",
+    "parking": "available",
     "parkingDetail": null,
     "closedWeekdays": [],
     "regularClosedDaysRaw": "없음",
@@ -2219,7 +2219,7 @@
       "max": null,
       "raw": null
     },
-    "parking": "unknown",
+    "parking": "available",
     "parkingDetail": null,
     "closedWeekdays": [],
     "regularClosedDaysRaw": "없음",
@@ -2326,7 +2326,7 @@
       "max": null,
       "raw": null
     },
-    "parking": "unknown",
+    "parking": "available",
     "parkingDetail": null,
     "closedWeekdays": [],
     "regularClosedDaysRaw": "없음",
@@ -2425,13 +2425,13 @@
     "lunchPriceMin": 35000,
     "dinnerPriceMin": 60000,
     "courseAvailable": "yes",
-    "privateRoom": "unknown",
+    "privateRoom": "yes",
     "roomCapacity": {
       "min": null,
       "max": null,
       "raw": null
     },
-    "parking": "unknown",
+    "parking": "available",
     "parkingDetail": null,
     "closedWeekdays": [],
     "regularClosedDaysRaw": "없음",
@@ -2477,13 +2477,13 @@
     "lunchPriceMin": 25000,
     "dinnerPriceMin": 35000,
     "courseAvailable": "yes",
-    "privateRoom": "unknown",
+    "privateRoom": "yes",
     "roomCapacity": {
       "min": null,
       "max": null,
       "raw": null
     },
-    "parking": "unknown",
+    "parking": "available",
     "parkingDetail": null,
     "closedWeekdays": [],
     "regularClosedDaysRaw": "없음",
@@ -2529,7 +2529,7 @@
     "lunchPriceMin": 50000,
     "dinnerPriceMin": 80000,
     "courseAvailable": "yes",
-    "privateRoom": "unknown",
+    "privateRoom": "yes",
     "roomCapacity": {
       "min": null,
       "max": null,
@@ -2688,13 +2688,13 @@
     "lunchPriceMin": 18000,
     "dinnerPriceMin": 30000,
     "courseAvailable": "no",
-    "privateRoom": "unknown",
+    "privateRoom": "yes",
     "roomCapacity": {
       "min": null,
       "max": null,
       "raw": null
     },
-    "parking": "unknown",
+    "parking": "none",
     "parkingDetail": null,
     "closedWeekdays": [],
     "regularClosedDaysRaw": "없음",
@@ -2740,13 +2740,13 @@
     "lunchPriceMin": 12000,
     "dinnerPriceMin": 20000,
     "courseAvailable": "no",
-    "privateRoom": "unknown",
+    "privateRoom": "yes",
     "roomCapacity": {
       "min": null,
       "max": null,
       "raw": null
     },
-    "parking": "unknown",
+    "parking": "available",
     "parkingDetail": null,
     "closedWeekdays": [
       "sun"
@@ -2853,7 +2853,7 @@
       "max": null,
       "raw": null
     },
-    "parking": "unknown",
+    "parking": "none",
     "parkingDetail": null,
     "closedWeekdays": [],
     "regularClosedDaysRaw": "없음",
@@ -3170,7 +3170,7 @@
       "max": null,
       "raw": null
     },
-    "parking": "unknown",
+    "parking": "available",
     "parkingDetail": "GFC 주차 조건 매장 확인 필요",
     "closedWeekdays": [
       "sat",
@@ -3225,7 +3225,7 @@
       "max": null,
       "raw": null
     },
-    "parking": "unknown",
+    "parking": "available",
     "parkingDetail": "홍우빌딩 주차 조건 매장 확인 필요",
     "closedWeekdays": [],
     "regularClosedDaysRaw": "없음",
@@ -3278,7 +3278,7 @@
       "max": null,
       "raw": null
     },
-    "parking": "unknown",
+    "parking": "available",
     "parkingDetail": "강남N타워 주차·대관 조건 매장 확인 필요",
     "closedWeekdays": [],
     "regularClosedDaysRaw": "없음",
@@ -3598,7 +3598,7 @@
       "max": null,
       "raw": null
     },
-    "parking": "unknown",
+    "parking": "valet",
     "parkingDetail": "주차·발렛 조건 매장 확인 필요",
     "closedWeekdays": null,
     "regularClosedDaysRaw": "확인필요",
@@ -3703,7 +3703,7 @@
       "max": 24,
       "raw": "~24"
     },
-    "parking": "unknown",
+    "parking": "available",
     "parkingDetail": "주차·발렛 조건 매장 확인 필요",
     "closedWeekdays": null,
     "regularClosedDaysRaw": "확인필요",
@@ -3860,7 +3860,7 @@
       "max": null,
       "raw": null
     },
-    "parking": "unknown",
+    "parking": "available",
     "parkingDetail": "주차·발렛 조건 매장 확인 필요",
     "closedWeekdays": [
       "mon"
@@ -3915,7 +3915,7 @@
       "max": null,
       "raw": null
     },
-    "parking": "unknown",
+    "parking": "available",
     "parkingDetail": "주차 가능 여부 매장 확인 필요",
     "closedWeekdays": null,
     "regularClosedDaysRaw": "확인필요",
@@ -3968,7 +3968,7 @@
       "max": null,
       "raw": null
     },
-    "parking": "unknown",
+    "parking": "available",
     "parkingDetail": "주차·발렛 조건 매장 확인 필요",
     "closedWeekdays": [
       "mon"
@@ -4126,7 +4126,7 @@
       "max": null,
       "raw": null
     },
-    "parking": "unknown",
+    "parking": "available",
     "parkingDetail": "주차 조건 매장 확인 필요",
     "closedWeekdays": [
       "sun"
@@ -4233,7 +4233,7 @@
       "max": null,
       "raw": null
     },
-    "parking": "unknown",
+    "parking": "available",
     "parkingDetail": "주차·발렛 조건 매장 확인 필요",
     "closedWeekdays": [],
     "regularClosedDaysRaw": "없음",
@@ -4285,7 +4285,7 @@
       "max": null,
       "raw": null
     },
-    "parking": "unknown",
+    "parking": "available",
     "parkingDetail": "주차·발렛 조건 매장 확인 필요",
     "closedWeekdays": [],
     "regularClosedDaysRaw": "없음",
@@ -4390,7 +4390,7 @@
       "max": null,
       "raw": null
     },
-    "parking": "unknown",
+    "parking": "valet",
     "parkingDetail": "주차·발렛 조건 매장 확인 필요",
     "closedWeekdays": [],
     "regularClosedDaysRaw": "없음",
@@ -4758,13 +4758,13 @@
     "lunchPriceMin": null,
     "dinnerPriceMin": null,
     "courseAvailable": "yes",
-    "privateRoom": "unknown",
+    "privateRoom": "yes",
     "roomCapacity": {
       "min": null,
       "max": null,
       "raw": null
     },
-    "parking": "unknown",
+    "parking": "valet",
     "parkingDetail": "호텔 주차 할인 조건 확인 필요",
     "closedWeekdays": [],
     "regularClosedDaysRaw": "없음",
@@ -4810,13 +4810,13 @@
     "lunchPriceMin": null,
     "dinnerPriceMin": null,
     "courseAvailable": "yes",
-    "privateRoom": "unknown",
+    "privateRoom": "yes",
     "roomCapacity": {
       "min": null,
       "max": null,
       "raw": null
     },
-    "parking": "unknown",
+    "parking": "available",
     "parkingDetail": "호텔 주차·발렛 조건 확인 필요",
     "closedWeekdays": null,
     "regularClosedDaysRaw": "확인필요",
@@ -5073,13 +5073,13 @@
     "lunchPriceMin": 60000,
     "dinnerPriceMin": null,
     "courseAvailable": "yes",
-    "privateRoom": "unknown",
+    "privateRoom": "yes",
     "roomCapacity": {
       "min": null,
       "max": null,
       "raw": null
     },
-    "parking": "unknown",
+    "parking": "valet",
     "parkingDetail": "건물 주차 지원 여부 확인 필요",
     "closedWeekdays": [
       "sun"
@@ -5134,7 +5134,7 @@
       "max": null,
       "raw": null
     },
-    "parking": "unknown",
+    "parking": "available",
     "parkingDetail": "S-TOWER 주차 지원 조건 확인 필요",
     "closedWeekdays": null,
     "regularClosedDaysRaw": "확인필요",
@@ -5187,7 +5187,7 @@
       "max": null,
       "raw": null
     },
-    "parking": "unknown",
+    "parking": "none",
     "parkingDetail": "주차 지원 여부 매장 확인 필요",
     "closedWeekdays": null,
     "regularClosedDaysRaw": "확인필요",
@@ -5293,7 +5293,7 @@
       "max": null,
       "raw": null
     },
-    "parking": "unknown",
+    "parking": "available",
     "parkingDetail": "주차 지원 여부 매장 확인 필요",
     "closedWeekdays": [],
     "regularClosedDaysRaw": "없음",
@@ -5349,7 +5349,7 @@
     "parking": "available",
     "parkingDetail": "코엑스 주차 할인 조건 확인 필요",
     "closedWeekdays": null,
-    "regularClosedDaysRaw": "확인필요",
+    "regularClosedDaysRaw": null,
     "naverMapUrl": "https://map.naver.com/p/search/%EC%9D%BC%EC%83%81%EC%A0%95%EC%9B%90%20%EC%BD%94%EC%97%91%EC%8A%A4%EC%A0%90",
     "kakaoMapUrl": "https://place.map.kakao.com/634815035",
     "sourceCount": 1,
@@ -5399,7 +5399,7 @@
       "max": null,
       "raw": null
     },
-    "parking": "unknown",
+    "parking": "available",
     "parkingDetail": "건물 주차 지원 여부 확인 필요",
     "closedWeekdays": [
       "sat",
@@ -5559,10 +5559,12 @@
       "max": null,
       "raw": null
     },
-    "parking": "unknown",
+    "parking": "available",
     "parkingDetail": "주차 조건 매장 확인 필요",
-    "closedWeekdays": null,
-    "regularClosedDaysRaw": "확인필요",
+    "closedWeekdays": [
+      "sun"
+    ],
+    "regularClosedDaysRaw": "일",
     "naverMapUrl": "https://map.naver.com/p/search/%EB%A7%88%EB%8B%B4%EB%B0%8D%20%EC%84%A0%EB%A6%89%EC%A0%90",
     "kakaoMapUrl": "https://place.map.kakao.com/18283045",
     "sourceCount": 1,
@@ -5612,7 +5614,7 @@
       "max": null,
       "raw": null
     },
-    "parking": "unknown",
+    "parking": "available",
     "parkingDetail": "주차·발렛 조건 매장 확인 필요",
     "closedWeekdays": null,
     "regularClosedDaysRaw": "확인필요",
@@ -5665,10 +5667,12 @@
       "max": null,
       "raw": null
     },
-    "parking": "unknown",
+    "parking": "valet",
     "parkingDetail": "건물 주차 지원 여부 확인 필요",
-    "closedWeekdays": null,
-    "regularClosedDaysRaw": "확인필요",
+    "closedWeekdays": [
+      "sun"
+    ],
+    "regularClosedDaysRaw": "일",
     "naverMapUrl": "https://map.naver.com/p/search/%EA%B2%BD%EC%B2%9C%EC%95%A0%EC%9D%B82237%20%EC%82%BC%EC%84%B1%EB%B3%B8%EC%A0%90",
     "kakaoMapUrl": "https://place.map.kakao.com/21306153",
     "sourceCount": 1,
@@ -5718,7 +5722,7 @@
       "max": null,
       "raw": null
     },
-    "parking": "unknown",
+    "parking": "available",
     "parkingDetail": "주차 조건 매장 확인 필요",
     "closedWeekdays": [
       "sat",
@@ -5880,7 +5884,7 @@
       "max": null,
       "raw": null
     },
-    "parking": "unknown",
+    "parking": "available",
     "parkingDetail": "주차 조건 매장 확인 필요",
     "closedWeekdays": [
       "sat",
@@ -6315,7 +6319,7 @@
       "max": null,
       "raw": null
     },
-    "parking": "unknown",
+    "parking": "available",
     "parkingDetail": "주차 조건 매장 확인 필요",
     "closedWeekdays": [
       "sat",
@@ -6371,7 +6375,7 @@
       "max": null,
       "raw": null
     },
-    "parking": "unknown",
+    "parking": "available",
     "parkingDetail": "건물 주차 지원 여부 확인 필요",
     "closedWeekdays": [
       "sun"
@@ -6481,7 +6485,7 @@
       "max": null,
       "raw": null
     },
-    "parking": "unknown",
+    "parking": "available",
     "parkingDetail": "주차 조건 매장 확인 필요",
     "closedWeekdays": [
       "sat",
@@ -7761,7 +7765,7 @@
     "lunchPriceMin": null,
     "dinnerPriceMin": null,
     "courseAvailable": "no",
-    "privateRoom": "unknown",
+    "privateRoom": "yes",
     "roomCapacity": {
       "min": null,
       "max": null,
@@ -9146,7 +9150,7 @@
       "max": null,
       "raw": null
     },
-    "parking": "unknown",
+    "parking": "available",
     "parkingDetail": "전용 주차 여부와 인근 주차장 이용 조건 확인 필요",
     "closedWeekdays": [],
     "regularClosedDaysRaw": "없음",
@@ -9406,13 +9410,13 @@
     "lunchPriceMin": null,
     "dinnerPriceMin": null,
     "courseAvailable": "no",
-    "privateRoom": "unknown",
+    "privateRoom": "yes",
     "roomCapacity": {
       "min": null,
       "max": null,
       "raw": null
     },
-    "parking": "unknown",
+    "parking": "available",
     "parkingDetail": "전용 주차 여부와 인근 주차장 이용 조건 확인 필요",
     "closedWeekdays": [
       "sun"
@@ -10473,7 +10477,7 @@
       "max": null,
       "raw": "4~"
     },
-    "parking": "unknown",
+    "parking": "available",
     "parkingDetail": "건물 주차 지원 조건 확인 필요",
     "closedWeekdays": [],
     "regularClosedDaysRaw": "없음",
@@ -10950,7 +10954,7 @@
       "max": null,
       "raw": null
     },
-    "parking": "unknown",
+    "parking": "none",
     "parkingDetail": "주차 편의정보 미표시",
     "closedWeekdays": [],
     "regularClosedDaysRaw": "없음",
@@ -11002,7 +11006,7 @@
       "max": null,
       "raw": null
     },
-    "parking": "unknown",
+    "parking": "none",
     "parkingDetail": "주차 편의정보 미표시",
     "closedWeekdays": [],
     "regularClosedDaysRaw": "없음",
@@ -11054,7 +11058,7 @@
       "max": null,
       "raw": null
     },
-    "parking": "unknown",
+    "parking": "available",
     "parkingDetail": "주차 편의정보 미표시",
     "closedWeekdays": [],
     "regularClosedDaysRaw": "없음",
@@ -11318,7 +11322,7 @@
       "max": null,
       "raw": null
     },
-    "parking": "unknown",
+    "parking": "none",
     "parkingDetail": "주차 편의정보 미표시",
     "closedWeekdays": [],
     "regularClosedDaysRaw": "없음",
@@ -11628,7 +11632,7 @@
     "lunchPriceMin": 38000,
     "dinnerPriceMin": 50000,
     "courseAvailable": "yes",
-    "privateRoom": "unknown",
+    "privateRoom": "yes",
     "roomCapacity": {
       "min": null,
       "max": null,
@@ -11686,7 +11690,7 @@
       "max": null,
       "raw": null
     },
-    "parking": "unknown",
+    "parking": "available",
     "parkingDetail": "전용 주차 여부 확인 필요",
     "closedWeekdays": [],
     "regularClosedDaysRaw": "없음",
@@ -12262,7 +12266,7 @@
     "lunchPriceMin": 120000,
     "dinnerPriceMin": 150000,
     "courseAvailable": "yes",
-    "privateRoom": "unknown",
+    "privateRoom": "yes",
     "roomCapacity": {
       "min": null,
       "max": null,
@@ -13419,7 +13423,7 @@
       "max": 12,
       "raw": "4~12"
     },
-    "parking": "unknown",
+    "parking": "none",
     "parkingDetail": "주차 여부 예약 시 확인",
     "closedWeekdays": [],
     "regularClosedDaysRaw": "없음",
@@ -13575,7 +13579,7 @@
       "max": null,
       "raw": null
     },
-    "parking": "unknown",
+    "parking": "none",
     "parkingDetail": "전용 주차 확인 필요",
     "closedWeekdays": [
       "wed"
@@ -14255,7 +14259,7 @@
       "max": null,
       "raw": null
     },
-    "parking": "unknown",
+    "parking": "none",
     "parkingDetail": "상가 주차 가능 여부 확인",
     "closedWeekdays": [
       "mon"
@@ -14413,7 +14417,7 @@
       "max": null,
       "raw": null
     },
-    "parking": "unknown",
+    "parking": "available",
     "parkingDetail": "전용 주차 여부 확인",
     "closedWeekdays": [],
     "regularClosedDaysRaw": "없음",
@@ -14987,7 +14991,7 @@
       "max": null,
       "raw": null
     },
-    "parking": "unknown",
+    "parking": "available",
     "parkingDetail": "주차 여부 예약 시 확인",
     "closedWeekdays": null,
     "regularClosedDaysRaw": "확인필요",
@@ -15838,7 +15842,7 @@
       "max": null,
       "raw": null
     },
-    "parking": "unknown",
+    "parking": "none",
     "parkingDetail": "주차 정보 확인 필요",
     "closedWeekdays": [],
     "regularClosedDaysRaw": "없음",
@@ -17447,7 +17451,7 @@
       "max": 16,
       "raw": "12~16"
     },
-    "parking": "unknown",
+    "parking": "available",
     "parkingDetail": "건물 주차 가능 여부 사전 확인",
     "closedWeekdays": [
       "mon",
@@ -18790,7 +18794,7 @@
       "max": null,
       "raw": null
     },
-    "parking": "unknown",
+    "parking": "available",
     "parkingDetail": "주차 가능 여부 사전 확인",
     "closedWeekdays": [
       "mon"
@@ -20074,7 +20078,7 @@
       "max": null,
       "raw": null
     },
-    "parking": "unknown",
+    "parking": "available",
     "parkingDetail": "전용주차 여부와 인근 유료주차장 확인",
     "closedWeekdays": [],
     "regularClosedDaysRaw": "없음",
@@ -22580,7 +22584,7 @@
       "max": 20,
       "raw": "2~20"
     },
-    "parking": "unknown",
+    "parking": "valet",
     "parkingDetail": "매장 주차 가능 대수 예약 전 확인",
     "closedWeekdays": [],
     "regularClosedDaysRaw": "없음",
@@ -22854,7 +22858,7 @@
       "max": 14,
       "raw": "0~14"
     },
-    "parking": "unknown",
+    "parking": "none",
     "parkingDetail": "매장 또는 인근 유료주차 가능 여부 확인",
     "closedWeekdays": [],
     "regularClosedDaysRaw": "없음",
@@ -23568,7 +23572,7 @@
       "max": 12,
       "raw": "0~12"
     },
-    "parking": "unknown",
+    "parking": "available",
     "parkingDetail": "매장 또는 인근 유료주차 이용 여부 확인",
     "closedWeekdays": [],
     "regularClosedDaysRaw": "없음",
@@ -28013,7 +28017,7 @@
       "max": null,
       "raw": null
     },
-    "parking": "unknown",
+    "parking": "available",
     "parkingDetail": "매장 전용 주차 안내가 지도 편의정보에 없어 인근 유료주차장 이용·방문 전 확인",
     "closedWeekdays": [],
     "regularClosedDaysRaw": "없음",
@@ -28068,7 +28072,7 @@
       "max": null,
       "raw": null
     },
-    "parking": "unknown",
+    "parking": "available",
     "parkingDetail": "지도 편의정보에 전용 주차 안내가 없어 방문 전 확인",
     "closedWeekdays": [],
     "regularClosedDaysRaw": "없음",
@@ -28123,7 +28127,7 @@
       "max": null,
       "raw": null
     },
-    "parking": "unknown",
+    "parking": "available",
     "parkingDetail": "네이버 편의정보에는 주차 표기가 있으나 실제 방문 후기는 매장 주차 불가·인근 한일주차장 시간당 4,000원 안내로 상충해 방문 전 재확인",
     "closedWeekdays": [],
     "regularClosedDaysRaw": "없음",
