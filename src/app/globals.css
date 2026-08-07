@@ -195,6 +195,34 @@ body:has(.landing-page-reference):after{display:none}
 }
 @media(max-width:899px){
   .landing-page-reference .landing-crisp-copy{top:41.6%;transform:translateX(calc(-50% + 2px))}
-  .landing-page-reference .landing-crisp-entry{top:72.8%;gap:clamp(.8rem,4vw,1.5rem)}
+  .landing-page-reference .landing-crisp-entry{
+    top:68.5%;
+    width:min(82vw,260px);
+    flex-direction:column;
+    gap:.35rem;
+  }
+  .landing-page-reference .landing-crisp-cta{
+    width:100%;
+    max-width:100%;
+  }
   .landing-page-reference .landing-crisp-footer{right:0;bottom:max(5.3%,calc(env(safe-area-inset-bottom) + 1rem));left:0;width:100%;transform:none}
+}
+
+@media(max-width:540px){
+  .primary-filter-grid,
+  .restaurant-filter-grid{
+    width:100%;
+    min-width:0;
+    grid-template-columns:minmax(0,1fr);
+  }
+  .primary-filter-grid > *,
+  .restaurant-filter-grid > *{
+    min-width:0;
+  }
+  .primary-filter-grid .search-button,
+  .restaurant-filter-grid .search-button{
+    width:100%;
+    max-width:100%;
+    grid-column:1;
+  }
 }
