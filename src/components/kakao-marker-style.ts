@@ -8,6 +8,8 @@ export interface RestaurantMarkerImages {
   selected: KakaoMarkerImageInstance;
 }
 
+export type HallMarkerImages = RestaurantMarkerImages;
+
 function createPinDataUrl({ width, height, color }: (typeof RESTAURANT_MARKER_VISUALS)[keyof typeof RESTAURANT_MARKER_VISUALS]): string {
   const renderScale = 2;
   const canvas = document.createElement("canvas");
@@ -44,6 +46,14 @@ function createPinDataUrl({ width, height, color }: (typeof RESTAURANT_MARKER_VI
 }
 
 export function createRestaurantMarkerImages(maps: KakaoMapsNamespace): RestaurantMarkerImages {
+  return createMarkerImages(maps, "음식점 위치", "선택한 음식점 위치");
+}
+
+function createMarkerImages(
+  maps: KakaoMapsNamespace,
+  normalAlt: string,
+  selectedAlt: string,
+): RestaurantMarkerImages {
   const createImage = (visual: (typeof RESTAURANT_MARKER_VISUALS)[keyof typeof RESTAURANT_MARKER_VISUALS], alt: string) => (
     new maps.MarkerImage(
       createPinDataUrl(visual),
@@ -56,9 +66,13 @@ export function createRestaurantMarkerImages(maps: KakaoMapsNamespace): Restaura
   );
 
   return {
-    normal: createImage(RESTAURANT_MARKER_VISUALS.normal, "음식점 위치"),
-    selected: createImage(RESTAURANT_MARKER_VISUALS.selected, "선택한 음식점 위치"),
+    normal: createImage(RESTAURANT_MARKER_VISUALS.normal, normalAlt),
+    selected: createImage(RESTAURANT_MARKER_VISUALS.selected, selectedAlt),
   };
+}
+
+export function createHallMarkerImages(maps: KakaoMapsNamespace): HallMarkerImages {
+  return createMarkerImages(maps, "웨딩홀 위치", "선택한 웨딩홀 위치");
 }
 
 export function applyRestaurantMarkerSelection(
@@ -71,4 +85,12 @@ export function applyRestaurantMarkerSelection(
     entry.marker.setImage(selected ? images.selected : images.normal);
     entry.marker.setZIndex(selected ? 10 : 0);
   }
+}
+
+export function applyHallMarkerSelection(
+  entries: Iterable<[string, { marker: KakaoMarkerInstance }]>,
+  selectedId: string | null,
+  images: HallMarkerImages,
+): void {
+  applyRestaurantMarkerSelection(entries, selectedId, images);
 }

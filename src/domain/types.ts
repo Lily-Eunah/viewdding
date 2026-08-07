@@ -57,6 +57,11 @@ export interface HallRecord {
   website: string | null;
   instagram: string | null;
   mapUrl: string | null;
+  latitude?: number | null;
+  longitude?: number | null;
+  locationAddress?: string | null;
+  locationPlaceUrl?: string | null;
+  locationCheckedAt?: string | null;
   publicStatus: "public";
   lighting: LightingType;
   naturalLight: NaturalLight;
