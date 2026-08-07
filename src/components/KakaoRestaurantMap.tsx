@@ -4,6 +4,7 @@ import Script from "next/script";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { restaurantsWithinBounds } from "@/domain/restaurant-map";
 import type { RestaurantRecord } from "@/domain/restaurant-types";
+import styles from "./RestaurantMapEnhancements.module.css";
 
 interface MarkerEntry {
   marker: KakaoMarkerInstance;
@@ -33,6 +34,7 @@ export function KakaoRestaurantMap({
   const mapInstanceRef = useRef<KakaoMapInstance | null>(null);
   const markerEntriesRef = useRef(new Map<string, MarkerEntry>());
   const clustererRef = useRef<KakaoMarkerClustererInstance | null>(null);
+  const selectedOverlayRef = useRef<KakaoCustomOverlayInstance | null>(null);
   const [sdkReady, setSdkReady] = useState(false);
   const [scriptError, setScriptError] = useState(false);
   const mappableRestaurants = useMemo(
@@ -108,6 +110,31 @@ export function KakaoRestaurantMap({
 
     return () => maps.event.removeListener(map, "idle", updateVisibleRestaurants);
   }, [mappableRestaurants, sdkReady]);
+
+  useEffect(() => {
+    selectedOverlayRef.current?.setMap(null);
+    selectedOverlayRef.current = null;
+    const map = mapInstanceRef.current;
+    const maps = window.kakao?.maps;
+    if (!map || !maps || !selectedRestaurant || selectedRestaurant.latitude === null || selectedRestaurant.longitude === null) return;
+
+    const highlight = document.createElement("span");
+    highlight.className = styles.selectedMapPin;
+    highlight.setAttribute("aria-hidden", "true");
+    const overlay = new maps.CustomOverlay({
+      map,
+      position: new maps.LatLng(selectedRestaurant.latitude, selectedRestaurant.longitude),
+      content: highlight,
+      yAnchor: 1,
+      zIndex: 10,
+    });
+    selectedOverlayRef.current = overlay;
+
+    return () => {
+      overlay.setMap(null);
+      if (selectedOverlayRef.current === overlay) selectedOverlayRef.current = null;
+    };
+  }, [selectedRestaurant]);
 
   function focusRestaurant(restaurant: RestaurantRecord) {
     setSelectedId(restaurant.id);

@@ -26,6 +26,10 @@ interface KakaoMarkerClustererInstance {
   clear(): void;
 }
 
+interface KakaoCustomOverlayInstance {
+  setMap(map: KakaoMapInstance | null): void;
+}
+
 interface KakaoMapsNamespace {
   load(callback: () => void): void;
   LatLng: new (latitude: number, longitude: number) => KakaoLatLng;
@@ -38,6 +42,13 @@ interface KakaoMapsNamespace {
     averageCenter: boolean;
     minLevel: number;
   }) => KakaoMarkerClustererInstance;
+  CustomOverlay: new (options: {
+    map: KakaoMapInstance;
+    position: KakaoLatLng;
+    content: HTMLElement;
+    yAnchor: number;
+    zIndex: number;
+  }) => KakaoCustomOverlayInstance;
   event: {
     addListener(target: object, type: string, listener: () => void): void;
     removeListener(target: object, type: string, listener: () => void): void;

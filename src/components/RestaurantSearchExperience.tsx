@@ -4,8 +4,10 @@ import { useEffect, useMemo, useState } from "react";
 import { EMPTY_RESTAURANT_FILTERS, filterRestaurants } from "@/domain/restaurant-filter";
 import { isRestaurantCuisineCategory, RESTAURANT_CUISINE_CATEGORIES } from "@/domain/restaurant-cuisine";
 import type { RestaurantCuisineCategory } from "@/domain/restaurant-cuisine";
+import { restaurantAreasForDistrict } from "@/domain/restaurant-locations";
 import type { GatheringPurpose, RestaurantFilterState, RestaurantRecord, Weekday } from "@/domain/restaurant-types";
 import { KakaoRestaurantMap } from "./KakaoRestaurantMap";
+import styles from "./RestaurantMapEnhancements.module.css";
 import { RestaurantCard } from "./RestaurantCard";
 
 const WEEKDAYS: Array<{ value: Weekday; label: string }> = [
@@ -35,7 +37,7 @@ function queryFromFilters(filters: RestaurantFilterState, viewMode: ViewMode): s
   if (filters.weekday) params.set("weekday", filters.weekday);
   if (filters.cuisines.length > 0) params.set("cuisines", filters.cuisines.join(","));
   if (filters.budgetMax !== null) params.set("budget", String(filters.budgetMax));
-  if (filters.partySize !== null) params.set("people", String(filters.partySize));
+  if (filters.privateRoomOnly && filters.partySize !== null) params.set("people", String(filters.partySize));
   if (filters.courseOnly) params.set("course", "1");
   if (filters.privateRoomOnly) params.set("room", "1");
   if (filters.parkingOnly) params.set("parking", "1");
@@ -52,7 +54,7 @@ function cuisineCategoriesFrom(value: string | null): RestaurantCuisineCategory[
 
 function filterSelectionCount(filters: RestaurantFilterState): number {
   return Number(filters.weekday !== null) + filters.cuisines.length + Number(filters.budgetMax !== null)
-    + Number(filters.partySize !== null) + Number(filters.courseOnly) + Number(filters.privateRoomOnly)
+    + Number(filters.privateRoomOnly && filters.partySize !== null) + Number(filters.courseOnly) + Number(filters.privateRoomOnly)
     + Number(filters.parkingOnly) + Number(Boolean(filters.district)) + Number(Boolean(filters.area));
 }
 
@@ -66,7 +68,7 @@ function appliedFilterChips(filters: RestaurantFilterState): AppliedFilterChip[]
   });
   for (const cuisine of filters.cuisines) chips.push({ key: `cuisine:${cuisine}`, label: cuisine });
   if (filters.budgetMax !== null) chips.push({ key: "budget", label: `최대 ${(filters.budgetMax / 10000).toLocaleString("ko-KR")}만원` });
-  if (filters.partySize !== null) chips.push({ key: "people", label: `룸 ${filters.partySize}명` });
+  if (filters.privateRoomOnly && filters.partySize !== null) chips.push({ key: "people", label: `룸 ${filters.partySize}명` });
   if (filters.courseOnly) chips.push({ key: "course", label: "코스 가능" });
   if (filters.privateRoomOnly) chips.push({ key: "room", label: "룸 있음" });
   if (filters.parkingOnly) chips.push({ key: "parking", label: "주차 가능" });
@@ -88,6 +90,7 @@ export function RestaurantSearchExperience({
 
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
+    const privateRoomOnly = params.get("room") === "1";
     const parsed: RestaurantFilterState = {
       purpose: purposeFrom(params.get("purpose")),
       district: params.get("district") ?? "",
@@ -95,9 +98,9 @@ export function RestaurantSearchExperience({
       weekday: (params.get("weekday") as Weekday | null) ?? null,
       cuisines: cuisineCategoriesFrom(params.get("cuisines")),
       budgetMax: params.get("budget") ? Number(params.get("budget")) : null,
-      partySize: params.get("people") ? Number(params.get("people")) : null,
+      partySize: privateRoomOnly && params.get("people") ? Number(params.get("people")) : null,
       courseOnly: params.get("course") === "1",
-      privateRoomOnly: params.get("room") === "1",
+      privateRoomOnly,
       parkingOnly: params.get("parking") === "1",
     };
     setDraft(parsed);
@@ -129,8 +132,8 @@ export function RestaurantSearchExperience({
     [purposeRestaurants],
   );
   const areas = useMemo(
-    () => Array.from(new Set(purposeRestaurants.flatMap((restaurant) => [restaurant.area, restaurant.nearestStation]).filter((item): item is string => Boolean(item)))).sort((a, b) => a.localeCompare(b, "ko")),
-    [purposeRestaurants],
+    () => restaurantAreasForDistrict(purposeRestaurants, draft.district),
+    [draft.district, purposeRestaurants],
   );
   const results = useMemo(() => filterRestaurants(restaurants, applied), [applied, restaurants]);
   const mapRestaurants = useMemo(
@@ -174,7 +177,10 @@ export function RestaurantSearchExperience({
     else if (key === "budget") next.budgetMax = null;
     else if (key === "people") next.partySize = null;
     else if (key === "course") next.courseOnly = false;
-    else if (key === "room") next.privateRoomOnly = false;
+    else if (key === "room") {
+      next.privateRoomOnly = false;
+      next.partySize = null;
+    }
     else if (key === "parking") next.parkingOnly = false;
     commit(next);
   }
@@ -225,7 +231,7 @@ export function RestaurantSearchExperience({
           <button type="button" onClick={() => { setDraft(applied); setMobileFilterOpen(false); }} aria-label="필터 닫기">×</button>
         </div>
         <div className="restaurant-filter-grid">
-          <label className="field-label"><span>서울 구</span><select value={draft.district} onChange={(event) => setDraft({ ...draft, district: event.target.value })}><option value="">서울 전체</option>{districts.map((district) => <option key={district}>{district}</option>)}</select></label>
+          <label className="field-label"><span>서울 구</span><select value={draft.district} onChange={(event) => setDraft({ ...draft, district: event.target.value, area: "" })}><option value="">서울 전체</option>{districts.map((district) => <option key={district}>{district}</option>)}</select></label>
           <label className="field-label"><span>동네·역</span><select value={draft.area} onChange={(event) => setDraft({ ...draft, area: event.target.value })}><option value="">전체</option>{areas.map((area) => <option key={area}>{area}</option>)}</select></label>
           <label className="field-label"><span>방문 요일</span><select value={draft.weekday ?? ""} onChange={(event) => setDraft({ ...draft, weekday: (event.target.value || null) as Weekday | null })}><option value="">요일 전체</option>{WEEKDAYS.map((day) => <option key={day.value} value={day.value}>{day.label}</option>)}</select></label>
           <button className="search-button" type="submit">찾기</button>
@@ -233,12 +239,12 @@ export function RestaurantSearchExperience({
 
         <button className="detail-toggle" type="button" aria-expanded={detailOpen} onClick={() => setDetailOpen(!detailOpen)}>{detailOpen ? "−" : "+"} 상세 조건{selectedCount ? ` ${selectedCount}` : ""}</button>
         {detailOpen ? <div className="restaurant-detail-panel">
-          <fieldset className="restaurant-cuisine-field"><legend>음식 종류</legend><div className="option-row">{RESTAURANT_CUISINE_CATEGORIES.map((cuisine) => <button key={cuisine} type="button" className={draft.cuisines.includes(cuisine) ? "option is-selected" : "option"} aria-pressed={draft.cuisines.includes(cuisine)} onClick={() => setDraft({ ...draft, cuisines: toggleValue(draft.cuisines, cuisine) })}>{cuisine}</button>)}</div></fieldset>
+          <fieldset className={`restaurant-cuisine-field ${styles.cuisineField}`}><legend>음식 종류</legend><div className="option-row">{RESTAURANT_CUISINE_CATEGORIES.map((cuisine) => <button key={cuisine} type="button" className={draft.cuisines.includes(cuisine) ? "option is-selected" : "option"} aria-pressed={draft.cuisines.includes(cuisine)} onClick={() => setDraft({ ...draft, cuisines: toggleValue(draft.cuisines, cuisine) })}>{cuisine}</button>)}</div></fieldset>
           <label className="field-label"><span>1인 최대 예산</span><select value={draft.budgetMax ?? ""} onChange={(event) => setDraft({ ...draft, budgetMax: event.target.value ? Number(event.target.value) : null })}><option value="">가격 전체</option>{BUDGETS.map((budget) => <option key={budget} value={budget}>{budget.toLocaleString("ko-KR")}원</option>)}</select></label>
-          <label className="field-label"><span>룸 이용 인원</span><input type="number" min="1" placeholder="예: 6" value={draft.partySize ?? ""} onChange={(event) => setDraft({ ...draft, partySize: event.target.value ? Number(event.target.value) : null })} /></label>
+          {draft.privateRoomOnly ? <label className="field-label"><span>룸 이용 인원</span><input type="number" min="1" placeholder="예: 6" value={draft.partySize ?? ""} onChange={(event) => setDraft({ ...draft, partySize: event.target.value ? Number(event.target.value) : null })} /></label> : null}
           <fieldset className="restaurant-boolean-filters"><legend>필수 조건</legend><div className="option-row">
             <button type="button" className={draft.courseOnly ? "option is-selected" : "option"} aria-pressed={draft.courseOnly} onClick={() => setDraft({ ...draft, courseOnly: !draft.courseOnly })}>코스 가능</button>
-            <button type="button" className={draft.privateRoomOnly ? "option is-selected" : "option"} aria-pressed={draft.privateRoomOnly} onClick={() => setDraft({ ...draft, privateRoomOnly: !draft.privateRoomOnly })}>룸 있음</button>
+            <button type="button" className={draft.privateRoomOnly ? "option is-selected" : "option"} aria-pressed={draft.privateRoomOnly} onClick={() => setDraft({ ...draft, privateRoomOnly: !draft.privateRoomOnly, partySize: draft.privateRoomOnly ? null : draft.partySize })}>룸 있음</button>
             <button type="button" className={draft.parkingOnly ? "option is-selected" : "option"} aria-pressed={draft.parkingOnly} onClick={() => setDraft({ ...draft, parkingOnly: !draft.parkingOnly })}>주차 가능</button>
           </div></fieldset>
           <p className="missing-policy">선택한 요일이 정기 휴무인 음식점은 제외합니다. 휴무일을 확인하지 못한 곳은 ‘정보 확인 필요’로 분리합니다.</p>
