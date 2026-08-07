@@ -8,41 +8,29 @@ export const metadata: Metadata = {
 
 export default function HomePage() {
   return (
-    <section className="landing-page">
-      <div className="landing-background" aria-hidden="true" />
-
-      <header className="landing-header">
-        <Link className="landing-brand" href="/" aria-label="Viewdding 홈">
-          Viewdding
-        </Link>
-        <Link className="landing-guide-link" href="/methodology/">
-          Wedding Guide
-        </Link>
-      </header>
-
-      <div className="landing-copy">
-        <h1>WEDDING GUIDE</h1>
-        <p className="landing-subtitle">Every moment begins with a place.</p>
-        <p className="landing-description">
-          결혼식의 첫 장소부터 소중한 사람들과의 만남까지,<br className="landing-desktop-break" />
-          한곳에서 차분하게 찾아보세요.
-        </p>
-
-        <nav className="landing-actions" aria-label="Viewdding 서비스">
-          <Link className="landing-action" href="/search/">
-            <span>WEDDING VENUE</span>
-            <strong>웨딩홀 찾기</strong>
-            <i aria-hidden="true">→</i>
-          </Link>
-          <Link className="landing-action" href="/gatherings/">
-            <span>WEDDING GATHERING</span>
-            <strong>청첩장 모임·상견례 장소</strong>
-            <i aria-hidden="true">→</i>
+    <>
+      <a className="skip-link" href="#main-content">본문으로 바로가기</a>
+      <section id="main-content" className="landing-page landing-page-reference">
+        <img
+          src="/viewdding-home-clean-v63.png"
+          alt=""
+          aria-hidden="true"
+          className="landing-reference-image"
+          decoding="sync"
+          fetchPriority="high"
+        />
+        <header className="landing-crisp-brand" aria-label="Viewdding"><span>Viewdding</span></header>
+        <section className="landing-crisp-copy" aria-labelledby="landing-title">
+          <h1 id="landing-title">Wedding Archive</h1>
+          <p>결혼을 준비하는 모든 순간을,<br />하나의 기록으로 남겨요.</p>
+        </section>
+        <nav className="landing-crisp-entry" aria-label="웨딩홀 찾기 시작">
+          <Link className="landing-crisp-cta" href="/search/">
+            <span>Wedding Hall 둘러보기</span><span className="landing-crisp-arrow" aria-hidden="true">→</span>
           </Link>
         </nav>
-      </div>
-
-      <p className="landing-footer">VIEWDDING · FOR EVERY WEDDING MOMENT</p>
-    </section>
+        <p className="landing-crisp-footer">Viewdding · For every wedding moment</p>
+      </section>
+    </>
   );
 }
