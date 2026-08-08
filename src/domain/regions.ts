@@ -19,6 +19,11 @@ export const SIDO_OPTIONS: ReadonlyArray<{ value: Sido; label: string; shortLabe
   { value: "서울특별시", label: "서울특별시", shortLabel: "서울" },
   { value: "경기도", label: "경기도", shortLabel: "경기" },
   { value: "인천광역시", label: "인천광역시", shortLabel: "인천" },
+  { value: "부산광역시", label: "부산광역시", shortLabel: "부산" },
+  { value: "경상남도", label: "경상남도", shortLabel: "경남" },
+  { value: "대전광역시", label: "대전광역시", shortLabel: "대전" },
+  { value: "세종특별자치시", label: "세종특별자치시", shortLabel: "세종" },
+  { value: "대구광역시", label: "대구광역시", shortLabel: "대구" },
 ];
 
 const SEOUL_METRO_AREAS: Record<string, string> = {
@@ -51,6 +56,34 @@ const INCHEON_METRO_AREAS: Record<string, string> = {
   부평구: "부평·계양", 계양구: "부평·계양", 서해구: "청라·서해", 검단구: "검단",
 };
 
+const BUSAN_METRO_AREAS: Record<string, string> = {
+  중구: "부산 도심권", 서구: "부산 도심권", 동구: "부산 도심권", 영도구: "부산 도심권", 부산진구: "부산 도심권",
+  동래구: "부산 동부권", 연제구: "부산 동부권", 금정구: "부산 동부권",
+  남구: "해운대·수영", 수영구: "해운대·수영", 해운대구: "해운대·수영",
+  북구: "부산 서부권", 사상구: "부산 서부권", 사하구: "부산 서부권", 강서구: "부산 서부권",
+  기장군: "기장",
+};
+
+const GYEONGNAM_METRO_AREAS: Record<string, string> = {
+  창원시: "창원", 김해시: "김해·양산", 양산시: "김해·양산",
+  진주시: "진주·사천", 사천시: "진주·사천", 거제시: "거제·통영·고성", 통영시: "거제·통영·고성", 고성군: "거제·통영·고성",
+  밀양시: "밀양·창녕", 창녕군: "밀양·창녕", 남해군: "남해·하동", 하동군: "남해·하동",
+  거창군: "서북부 경남", 함양군: "서북부 경남", 합천군: "서북부 경남", 산청군: "서북부 경남",
+  함안군: "함안·의령", 의령군: "함안·의령",
+};
+
+const DAEJEON_METRO_AREAS: Record<string, string> = {
+  동구: "대전 도심권", 중구: "대전 도심권", 서구: "대전 도심권", 유성구: "대전 유성·대덕", 대덕구: "대전 유성·대덕",
+};
+
+const SEJONG_METRO_AREAS: Record<string, string> = { 세종시: "세종" };
+
+const DAEGU_METRO_AREAS: Record<string, string> = {
+  중구: "대구 도심권", 남구: "대구 도심권", 서구: "대구 도심권",
+  동구: "대구 동부권", 수성구: "대구 동부권", 북구: "대구 북부권", 군위군: "대구 북부권",
+  달서구: "대구 달서·달성", 달성군: "대구 달서·달성",
+};
+
 function definitions(
   sido: Sido,
   sigungus: string[],
@@ -72,6 +105,11 @@ export const REGION_DEFINITIONS: ReadonlyArray<RegionDefinition> = [
   ...definitions("서울특별시", Object.keys(SEOUL_METRO_AREAS), "11", SEOUL_METRO_AREAS),
   ...definitions("경기도", Object.keys(GYEONGGI_METRO_AREAS), "41", GYEONGGI_METRO_AREAS),
   ...definitions("인천광역시", Object.keys(INCHEON_METRO_AREAS), "28", INCHEON_METRO_AREAS),
+  ...definitions("부산광역시", Object.keys(BUSAN_METRO_AREAS), "26", BUSAN_METRO_AREAS),
+  ...definitions("경상남도", Object.keys(GYEONGNAM_METRO_AREAS), "48", GYEONGNAM_METRO_AREAS),
+  ...definitions("대전광역시", Object.keys(DAEJEON_METRO_AREAS), "30", DAEJEON_METRO_AREAS),
+  ...definitions("세종특별자치시", Object.keys(SEJONG_METRO_AREAS), "36", SEJONG_METRO_AREAS),
+  ...definitions("대구광역시", Object.keys(DAEGU_METRO_AREAS), "27", DAEGU_METRO_AREAS),
 ];
 
 const REGION_BY_KEY = new Map(
@@ -86,21 +124,27 @@ function sidoFromAddress(address: string): Sido | null {
   if (/^(?:서울|서울특별시)(?:\s|$)/.test(address)) return "서울특별시";
   if (/^(?:경기|경기도)(?:\s|$)/.test(address)) return "경기도";
   if (/^(?:인천|인천광역시)(?:\s|$)/.test(address)) return "인천광역시";
+  if (/^(?:부산|부산광역시)(?:\s|$)/.test(address)) return "부산광역시";
+  if (/^(?:경남|경상남도)(?:\s|$)/.test(address)) return "경상남도";
+  if (/^(?:대전|대전광역시)(?:\s|$)/.test(address)) return "대전광역시";
+  if (/^(?:세종|세종특별자치시)(?:\s|$)/.test(address)) return "세종특별자치시";
+  if (/^(?:대구|대구광역시)(?:\s|$)/.test(address)) return "대구광역시";
   return null;
 }
 
 function locationParts(sido: Sido, address: string, legacyDistrict: string): { sigungu: string; subdistrict: string | null } | null {
-  const withoutSido = address.replace(/^(?:서울특별시|서울|경기도|경기|인천광역시|인천)\s+/, "");
+  const withoutSido = address.replace(/^(?:서울특별시|서울|경기도|경기|인천광역시|인천|부산광역시|부산|경상남도|경남|대전광역시|대전|세종특별자치시|세종|대구광역시|대구)\s+/, "");
   if (sido === "서울특별시") {
     const sigungu = withoutSido.match(/^([가-힣]+구)(?:\s|$)/)?.[1]
       ?? legacyDistrict.match(/^([가-힣]+구)$/)?.[1];
     return sigungu ? { sigungu, subdistrict: null } : null;
   }
-  if (sido === "경기도") {
+  if (sido === "경기도" || sido === "경상남도") {
     const match = withoutSido.match(/^([가-힣]+(?:시|군))(?:\s+([가-힣]+구))?/)
       ?? legacyDistrict.match(/^([가-힣]+(?:시|군))(?:\s+([가-힣]+구))?/);
     return match ? { sigungu: match[1], subdistrict: match[2] ?? null } : null;
   }
+  if (sido === "세종특별자치시") return { sigungu: "세종시", subdistrict: null };
   const sigungu = withoutSido.match(/^([가-힣]+(?:구|군))(?:\s|$)/)?.[1]
     ?? legacyDistrict.match(/^([가-힣]+(?:구|군))$/)?.[1];
   return sigungu ? { sigungu, subdistrict: null } : null;
@@ -117,7 +161,10 @@ function inferSidoFromLegacyDistrict(legacyDistrict: string): Sido | null {
 
 export function resolveRegion(address: string | null | undefined, legacyDistrict = ""): RegionFields | null {
   const normalized = normalizedAddress(address);
-  const sido = sidoFromAddress(normalized) ?? inferSidoFromLegacyDistrict(legacyDistrict);
+  // The original Seoul master contains district-only rows. Preserve that legacy contract
+  // even after same-named districts from other cities are added to the registry.
+  const legacySeoulSido = !normalized && SEOUL_METRO_AREAS[legacyDistrict] ? "서울특별시" : null;
+  const sido = sidoFromAddress(normalized) ?? legacySeoulSido ?? inferSidoFromLegacyDistrict(legacyDistrict);
   if (!sido) return null;
   const parts = locationParts(sido, normalized, legacyDistrict);
   if (!parts) return null;
