@@ -1,8 +1,35 @@
 [
   {
+    "hallId": "H-GG-GP-20260808-003",
+    "url": "https://lh3.googleusercontent.com/-8f3h0Jk3ak-hBVFHZhD76FlIi_Sq6mbeGTsyec9towjEDYGx4NVEeu_WrR1NrG8Di4R9hZW7VNMDTXoayA0OuaO15-fkReg584LA_cEHUZ7683ZzGGb=s0",
+    "sourceUrl": "https://www.kwanseivista.com/",
+    "sourceType": "official_website",
+    "usageStatus": "official_source_linked",
+    "photoKind": "wedding_setup",
+    "checkedAt": "2026-08-08"
+  },
+  {
     "hallId": "H-GG-GP-20260808-004",
-    "url": "https://u.kyusoodang.co.kr/attachList/upload/hall/c20200327164035340/p20240310151750020/add20260629164334387.jpg",
+    "url": "https://u.kyusoodang.co.kr/attachList/upload/hall/c20240310120548190/p20240310142542450/img20260629161739447.jpg",
     "sourceUrl": "https://u.kyusoodang.co.kr/",
+    "sourceType": "official_website",
+    "usageStatus": "official_source_linked",
+    "photoKind": "wedding_setup",
+    "checkedAt": "2026-08-08"
+  },
+  {
+    "hallId": "H-GG-GP-20260808-008",
+    "url": "https://cdn.imweb.me/upload/S20250907d2448f5ab1c94/b80968ae3b6b2.png",
+    "sourceUrl": "https://www.lavieenlumi.co.kr/HouseWedding",
+    "sourceType": "official_website",
+    "usageStatus": "official_source_linked",
+    "photoKind": "wedding_setup",
+    "checkedAt": "2026-08-08"
+  },
+  {
+    "hallId": "H-GG-GP-20260808-009",
+    "url": "https://cdn.imweb.me/upload/S2019100712e1ffc1dc98c/9b245e784d309.png",
+    "sourceUrl": "https://seowonatrium.co.kr/63",
     "sourceType": "official_website",
     "usageStatus": "official_source_linked",
     "photoKind": "wedding_setup",
@@ -18,18 +45,81 @@
     "checkedAt": "2026-08-08"
   },
   {
-    "hallId": "H-GG-PA-20260808-005",
-    "url": "https://cdn.prod.website-files.com/66a1dde80b3b36e97bde40d9/682a7b5b58c44ce011cdc455_3F%20%EB%A3%A8%EC%B2%B4%ED%99%80.jpg",
-    "sourceUrl": "https://www.directwedding.co.kr/weddinghall/hall0490",
-    "sourceType": "public_listing",
-    "usageStatus": "public_source_linked",
+    "hallId": "H-GG-GP-20260808-012",
+    "url": "https://cdn.imweb.me/thumbnail/20231005/dc24361d376a8.png",
+    "sourceUrl": "https://wedding.firstgarden.co.kr/36",
+    "sourceType": "official_website",
+    "usageStatus": "official_source_linked",
+    "photoKind": "wedding_setup",
+    "checkedAt": "2026-08-08"
+  },
+  {
+    "hallId": "H-GG-GP-20260808-013",
+    "url": "https://cdn.imweb.me/thumbnail/20231005/55b2455dcfabf.png",
+    "sourceUrl": "https://wedding.firstgarden.co.kr/PartyGarden",
+    "sourceType": "official_website",
+    "usageStatus": "official_source_linked",
+    "photoKind": "wedding_setup",
+    "checkedAt": "2026-08-08"
+  },
+  {
+    "hallId": "H-GG-HO-20260808-001",
+    "url": "https://www.laviedor.com/wedding/images/photo01_s.jpg",
+    "sourceUrl": "https://www.laviedor.com/wedding/sub03.htm",
+    "sourceType": "official_website",
+    "usageStatus": "official_source_linked",
+    "photoKind": "wedding_setup",
+    "checkedAt": "2026-08-08"
+  },
+  {
+    "hallId": "H-GG-HO-20260808-002",
+    "url": "https://www.laviedor.com/wedding/images/wedding_img02_sm.jpg",
+    "sourceUrl": "https://www.laviedor.com/wedding/sub03.htm",
+    "sourceType": "official_website",
+    "usageStatus": "official_source_linked",
+    "photoKind": "wedding_setup",
+    "checkedAt": "2026-08-08"
+  },
+  {
+    "hallId": "H-GG-HO-20260808-003",
+    "url": "https://www.laviedor.com/wedding/images/wedding_img03_sm.jpg",
+    "sourceUrl": "https://www.laviedor.com/wedding/sub03.htm",
+    "sourceType": "official_website",
+    "usageStatus": "official_source_linked",
+    "photoKind": "wedding_setup",
+    "checkedAt": "2026-08-08"
+  },
+  {
+    "hallId": "H-GG-PA-20260808-007",
+    "url": "https://cdn.imweb.me/thumbnail/20230923/c26afb3824711.jpg",
+    "sourceUrl": "https://www.kookjewedding.co.kr/weddinghall",
+    "sourceType": "official_website",
+    "usageStatus": "official_source_linked",
     "photoKind": "wedding_setup",
     "checkedAt": "2026-08-08"
   },
   {
     "hallId": "H-GG-PA-20260808-013",
-    "url": "https://npalace.kr/data/editor/2605/ff57350ca9cc2e4e9e8823552d4ae225_1779955377_8343.png",
-    "sourceUrl": "https://npalace.kr/",
+    "url": "https://npalace.kr/img/weddinghall_img_01.jpg",
+    "sourceUrl": "https://npalace.kr/page/wedding/wedding_hall.php?me_code=20",
+    "sourceType": "official_website",
+    "usageStatus": "official_source_linked",
+    "photoKind": "wedding_setup",
+    "checkedAt": "2026-08-08"
+  },
+  {
+    "hallId": "H-GG-PA-20260808-014",
+    "url": "https://www.ohawedding.com/s/og_image.jpg?v=1786188760",
+    "sourceUrl": "https://www.ohawedding.com/6",
+    "sourceType": "official_website",
+    "usageStatus": "official_source_linked",
+    "photoKind": "wedding_setup",
+    "checkedAt": "2026-08-08"
+  },
+  {
+    "hallId": "H-GG-PA-20260808-016",
+    "url": "https://jhouse.co.kr/images/main/mv2.jpg",
+    "sourceUrl": "https://jhouse.co.kr/",
     "sourceType": "official_website",
     "usageStatus": "official_source_linked",
     "photoKind": "wedding_setup",
@@ -37,8 +127,8 @@
   },
   {
     "hallId": "H-GG-PA-20260808-017",
-    "url": "https://www.t-wedding.co.kr/attachList/upload/hall/c20251022132853167/p20251025100053217/pop20260302111603690.jpg",
-    "sourceUrl": "https://www.t-wedding.co.kr/",
+    "url": "https://www.t-wedding.co.kr/attachList/upload/hall/c20180421141000637/p20180421180352507/pop20260302125630480.jpg",
+    "sourceUrl": "https://www.t-wedding.co.kr/today/hall/",
     "sourceType": "official_website",
     "usageStatus": "official_source_linked",
     "photoKind": "wedding_setup",
@@ -46,8 +136,8 @@
   },
   {
     "hallId": "H-GG-PA-20260808-018",
-    "url": "https://www.t-wedding.co.kr/attachList/upload/hall/c20251022132853167/p20251025151728427/pop20260302120158533.jpg",
-    "sourceUrl": "https://www.t-wedding.co.kr/",
+    "url": "https://www.t-wedding.co.kr/attachList/upload/hall/c20180421140948530/p20180421141617590/pop20260302123801693.jpg",
+    "sourceUrl": "https://www.t-wedding.co.kr/together/hall/",
     "sourceType": "official_website",
     "usageStatus": "official_source_linked",
     "photoKind": "wedding_setup",
@@ -73,8 +163,8 @@
   },
   {
     "hallId": "H-GG-REST-20260808-036",
-    "url": "https://cdn.imweb.me/thumbnail/20260528/4c47ed8fa15c5.png",
-    "sourceUrl": "https://www.gwed.co.kr/",
+    "url": "https://cdn.imweb.me/upload/S20200713f809e3e625d7e/f50a59e995501.png",
+    "sourceUrl": "https://www.gwed.co.kr/Weddinghall",
     "sourceType": "official_website",
     "usageStatus": "official_source_linked",
     "photoKind": "wedding_setup",
@@ -82,8 +172,8 @@
   },
   {
     "hallId": "H-GG-REST-20260808-038",
-    "url": "https://cdn.imweb.me/thumbnail/20260724/173a27f913586.png",
-    "sourceUrl": "https://thereina.kr/",
+    "url": "https://cdn.imweb.me/upload/S202407240d0d794509ef9/959a673423a06.png",
+    "sourceUrl": "https://thereina.kr/44",
     "sourceType": "official_website",
     "usageStatus": "official_source_linked",
     "photoKind": "wedding_setup",
@@ -108,8 +198,17 @@
     "checkedAt": "2026-08-08"
   },
   {
+    "hallId": "H-GG-REST-20260808-043",
+    "url": "https://cdn.imweb.me/upload/S202510153a6ed5c4a63cf/31c6e1971092c.png",
+    "sourceUrl": "https://www.bonjour-garden.com/",
+    "sourceType": "official_website",
+    "usageStatus": "official_source_linked",
+    "photoKind": "wedding_setup",
+    "checkedAt": "2026-08-08"
+  },
+  {
     "hallId": "H-GG-REST-20260808-044",
-    "url": "https://www.pharosconvention.co.kr/attachList/upload/popup/pop20260423121732580.jpg",
+    "url": "https://www.pharosconvention.co.kr/attachList/upload/hall/c20240506173438310/p20240506173533937/img20240924194340310.jpg",
     "sourceUrl": "https://www.pharosconvention.co.kr/",
     "sourceType": "official_website",
     "usageStatus": "official_source_linked",
@@ -118,7 +217,7 @@
   },
   {
     "hallId": "H-GG-REST-20260808-047",
-    "url": "https://cdn.imweb.me/thumbnail/20260729/46aab6f38fba7.png",
+    "url": "https://cdn.imweb.me/upload/S202510283cc3f98d0e429/56919f4a51a5e.png",
     "sourceUrl": "https://thebloomhousewedding.kr/",
     "sourceType": "official_website",
     "usageStatus": "official_source_linked",
@@ -127,8 +226,8 @@
   },
   {
     "hallId": "H-GG-REST-20260808-048",
-    "url": "https://cdn.imweb.me/thumbnail/20250107/f5e142e12b210.jpg",
-    "sourceUrl": "https://www.thepartyumanyang.com/",
+    "url": "https://cdn.imweb.me/upload/S202412236c1ea50d66895/4c27eeabc1c5e.png",
+    "sourceUrl": "https://www.thepartyumanyang.com/Venue",
     "sourceType": "official_website",
     "usageStatus": "official_source_linked",
     "photoKind": "wedding_setup",
@@ -137,7 +236,7 @@
   {
     "hallId": "H-GG-REST-20260808-050",
     "url": "https://cdn.imweb.me/thumbnail/20250407/928a437170963.jpg",
-    "sourceUrl": "https://anyangvilladegd.com/",
+    "sourceUrl": "https://anyangvilladegd.com/GalleriaHall",
     "sourceType": "official_website",
     "usageStatus": "official_source_linked",
     "photoKind": "wedding_setup",
@@ -146,7 +245,7 @@
   {
     "hallId": "H-GG-REST-20260808-051",
     "url": "https://cdn.imweb.me/thumbnail/20250307/af2405f52be5a.jpg",
-    "sourceUrl": "https://anyangvilladegd.com/",
+    "sourceUrl": "https://anyangvilladegd.com/CrystalCastleHall",
     "sourceType": "official_website",
     "usageStatus": "official_source_linked",
     "photoKind": "wedding_setup",
@@ -163,7 +262,7 @@
   },
   {
     "hallId": "H-GG-REST-20260808-053",
-    "url": "https://www.withusay.co.kr/imgs/gnb/logow.png",
+    "url": "https://www.withusay.co.kr/attachList/upload/hall/c20230306140441730/p20230306140511613/img20251014170437110.jpg",
     "sourceUrl": "https://www.withusay.co.kr/wedding/meriel/",
     "sourceType": "official_website",
     "usageStatus": "official_source_linked",
@@ -172,8 +271,8 @@
   },
   {
     "hallId": "H-GG-REST-20260808-054",
-    "url": "https://cdn.imweb.me/thumbnail/20230512/daabaf4d71dc9.png",
-    "sourceUrl": "https://patiobella.com/48",
+    "url": "https://cdn.imweb.me/thumbnail/20250710/070aa69dda6ca.png",
+    "sourceUrl": "https://patiobella.com/49",
     "sourceType": "official_website",
     "usageStatus": "official_source_linked",
     "photoKind": "wedding_setup",
@@ -182,7 +281,7 @@
   {
     "hallId": "H-GG-REST-20260808-059",
     "url": "https://cdn.imweb.me/thumbnail/20250904/3961b8c436ffb.jpg",
-    "sourceUrl": "https://gdconvention.com/",
+    "sourceUrl": "https://gdconvention.com/grandballroomHall",
     "sourceType": "official_website",
     "usageStatus": "official_source_linked",
     "photoKind": "wedding_setup",
@@ -191,7 +290,7 @@
   {
     "hallId": "H-GG-REST-20260808-060",
     "url": "https://cdn.imweb.me/thumbnail/20250904/bcce99d47ac66.jpg",
-    "sourceUrl": "https://gdconvention.com/",
+    "sourceUrl": "https://gdconvention.com/GrandConventionHall",
     "sourceType": "official_website",
     "usageStatus": "official_source_linked",
     "photoKind": "wedding_setup",
@@ -200,7 +299,7 @@
   {
     "hallId": "H-GG-REST-20260808-061",
     "url": "https://cdn.imweb.me/thumbnail/20250904/092375feea8b0.jpg",
-    "sourceUrl": "https://gdconvention.com/",
+    "sourceUrl": "https://gdconvention.com/gracekellyhall",
     "sourceType": "official_website",
     "usageStatus": "official_source_linked",
     "photoKind": "wedding_setup",
@@ -208,8 +307,8 @@
   },
   {
     "hallId": "H-GG-REST-20260808-062",
-    "url": "https://cdn.imweb.me/thumbnail/20250227/d0afb398fe0bb.png",
-    "sourceUrl": "https://jmconvention.com/",
+    "url": "https://cdn.imweb.me/upload/S20250113c7995ae8da557/da638dcf572d0.png",
+    "sourceUrl": "https://jmconvention.com/weddinghall",
     "sourceType": "official_website",
     "usageStatus": "official_source_linked",
     "photoKind": "wedding_setup",
@@ -227,7 +326,7 @@
   {
     "hallId": "H-GG-SHG-20260808-001",
     "url": "https://w-square.kr/images/chapel-hall.webp",
-    "sourceUrl": "https://w-square.kr/",
+    "sourceUrl": "https://w-square.kr/facilities#chapel-hall",
     "sourceType": "official_website",
     "usageStatus": "official_source_linked",
     "photoKind": "wedding_setup",
@@ -235,25 +334,16 @@
   },
   {
     "hallId": "H-GG-SHG-20260808-002",
-    "url": "https://w-square.kr/images/logo.png",
-    "sourceUrl": "https://w-square.kr/",
+    "url": "https://w-square.kr/images/grace-hall.webp",
+    "sourceUrl": "https://w-square.kr/facilities#grace-hall",
     "sourceType": "official_website",
     "usageStatus": "official_source_linked",
     "photoKind": "wedding_setup",
     "checkedAt": "2026-08-08"
   },
   {
-    "hallId": "H-GG-SHG-20260808-007",
-    "url": "https://cdn.imweb.me/upload/S20240204aca494e0b4938/12442445ca4a3.jpg",
-    "sourceUrl": "https://yozmwedding.co.kr/venue/?bmode=view&idx=153053552",
-    "sourceType": "public_listing",
-    "usageStatus": "public_source_linked",
-    "photoKind": "wedding_setup",
-    "checkedAt": "2026-08-08"
-  },
-  {
     "hallId": "H-GG-SHG-20260808-010",
-    "url": "https://www.bundangn.co.kr/attachList/upload/hall/c20251007183025197/p20251009201619083/story20251027125540627.jpg",
+    "url": "https://www.bundangn.co.kr/attachList/upload/hall/c20251007183025197/p20251009201619083/img20251027130918473.jpg",
     "sourceUrl": "https://www.bundangn.co.kr/",
     "sourceType": "official_website",
     "usageStatus": "official_source_linked",
@@ -270,11 +360,11 @@
     "checkedAt": "2026-08-08"
   },
   {
-    "hallId": "H-GG-SHG-20260808-013",
-    "url": "https://cdn.imweb.me/upload/S20240204aca494e0b4938/12aef5c024645.jpg",
-    "sourceUrl": "https://yozmwedding.co.kr/venue/?bmode=view&idx=154694040",
-    "sourceType": "public_listing",
-    "usageStatus": "public_source_linked",
+    "hallId": "H-GG-SHG-20260808-012",
+    "url": "https://cdn.imweb.me/upload/S202509186d819841607aa/c511e14b341e4.png",
+    "sourceUrl": "https://www.ayeondang.com/Ayeondang",
+    "sourceType": "official_website",
+    "usageStatus": "official_source_linked",
     "photoKind": "wedding_setup",
     "checkedAt": "2026-08-08"
   },
@@ -288,11 +378,20 @@
     "checkedAt": "2026-08-08"
   },
   {
-    "hallId": "H-GG-SUW-20260808-005",
-    "url": "https://cdn.prod.website-files.com/66a1eeaa00f1c86c3dbae974/689afd8ff2a3b60d0524c818_%EB%8D%94%EB%A7%88%EB%A0%88%EB%B3%B4%20Screenshot%202025-08-12%20at%2017.37.40.avif",
-    "sourceUrl": "https://www.directwedding.co.kr/weddinghall/hall0127",
-    "sourceType": "public_listing",
-    "usageStatus": "public_source_linked",
+    "hallId": "H-GG-SUW-20260808-002",
+    "url": "https://cdn.imweb.me/thumbnail/20230808/1c0703ac91a6b.jpg",
+    "sourceUrl": "https://www.wiconvention.co.kr/Whall",
+    "sourceType": "official_website",
+    "usageStatus": "official_source_linked",
+    "photoKind": "wedding_setup",
+    "checkedAt": "2026-08-08"
+  },
+  {
+    "hallId": "H-GG-SUW-20260808-003",
+    "url": "https://cdn.imweb.me/thumbnail/20230808/2f8d6d82f9846.jpg",
+    "sourceUrl": "https://www.wiconvention.co.kr/Ihall",
+    "sourceType": "official_website",
+    "usageStatus": "official_source_linked",
     "photoKind": "wedding_setup",
     "checkedAt": "2026-08-08"
   },
@@ -306,11 +405,47 @@
     "checkedAt": "2026-08-08"
   },
   {
-    "hallId": "H-GG-SUW-20260808-020",
-    "url": "https://cdn.prod.website-files.com/66a1dde80b3b36e97bde40d9/685a08a68a336ffa66886887_Group%206%201.png",
-    "sourceUrl": "https://www.directwedding.co.kr/weddinghall/hall0316",
-    "sourceType": "public_listing",
-    "usageStatus": "public_source_linked",
+    "hallId": "H-GG-SUW-20260808-010",
+    "url": "https://www.ramadaplazasuwon.com/RamadaPlazaSuwon_common/images/homepage/wedding/grand_21.jpg",
+    "sourceUrl": "https://www.ramadaplazasuwon.com/view/viewLink.do?page=homepage%2FKOR%2Fwedding%2Fgrand",
+    "sourceType": "official_website",
+    "usageStatus": "official_source_linked",
+    "photoKind": "wedding_setup",
+    "checkedAt": "2026-08-08"
+  },
+  {
+    "hallId": "H-GG-SUW-20260808-011",
+    "url": "https://www.ramadaplazasuwon.com/RamadaPlazaSuwon_common/images/homepage/wedding/private_06.jpg",
+    "sourceUrl": "https://www.ramadaplazasuwon.com/view/viewLink.do?page=homepage%2FKOR%2Fwedding%2Fprivate",
+    "sourceType": "official_website",
+    "usageStatus": "official_source_linked",
+    "photoKind": "wedding_setup",
+    "checkedAt": "2026-08-08"
+  },
+  {
+    "hallId": "H-GG-SUW-20260808-013",
+    "url": "https://cdn.imweb.me/upload/S20260324761c8749f3374/aef0b19fa4bb7.png",
+    "sourceUrl": "https://lameld.com/raonmonde",
+    "sourceType": "official_website",
+    "usageStatus": "official_source_linked",
+    "photoKind": "wedding_setup",
+    "checkedAt": "2026-08-08"
+  },
+  {
+    "hallId": "H-GG-SUW-20260808-015",
+    "url": "https://www.myus.co.kr/attachList/upload/hall/c20240303170127823/p20240411181521790/img20260423132902990.jpg",
+    "sourceUrl": "https://www.myus.co.kr/wedding/hall/",
+    "sourceType": "official_website",
+    "usageStatus": "official_source_linked",
+    "photoKind": "wedding_setup",
+    "checkedAt": "2026-08-08"
+  },
+  {
+    "hallId": "H-GG-SUW-20260808-022",
+    "url": "https://www.partyumhouse.com/attachList/upload/hall/c20210504183535633/p20210506165408860/m20240922113533280.jpg",
+    "sourceUrl": "https://www.partyumhouse.com/view/wedding2F/",
+    "sourceType": "official_website",
+    "usageStatus": "official_source_linked",
     "photoKind": "wedding_setup",
     "checkedAt": "2026-08-08"
   },
@@ -343,8 +478,26 @@
   },
   {
     "hallId": "H-GG-YON-20260808-004",
-    "url": "https://cdn.imweb.me/thumbnail/20240411/75c6103f10166.jpg",
-    "sourceUrl": "https://www.lavidahouse.com/main123",
+    "url": "https://cdn.imweb.me/thumbnail/20240531/32bc29d28b439.png",
+    "sourceUrl": "https://www.lavidahouse.com/42",
+    "sourceType": "official_website",
+    "usageStatus": "official_source_linked",
+    "photoKind": "wedding_setup",
+    "checkedAt": "2026-08-08"
+  },
+  {
+    "hallId": "H-GG-YON-20260808-005",
+    "url": "https://cdn.imweb.me/thumbnail/20241223/cbf280a9549b4.jpg",
+    "sourceUrl": "https://www.riumhouse.com/35",
+    "sourceType": "official_website",
+    "usageStatus": "official_source_linked",
+    "photoKind": "wedding_setup",
+    "checkedAt": "2026-08-08"
+  },
+  {
+    "hallId": "H-GG-YON-20260808-006",
+    "url": "https://cdn.imweb.me/thumbnail/20241215/43caa890001b4.jpg",
+    "sourceUrl": "https://www.riumhouse.com/35",
     "sourceType": "official_website",
     "usageStatus": "official_source_linked",
     "photoKind": "wedding_setup",
@@ -361,8 +514,8 @@
   },
   {
     "hallId": "H-GG-YON-20260808-009",
-    "url": "https://www.itconvention.co.kr/attachList/upload/main/m20241201162632287.jpg",
-    "sourceUrl": "https://www.itconvention.co.kr/",
+    "url": "https://www.itconvention.co.kr/attachList/upload/hall/c20180708175041600/p20180710113027003/m20241201155233267.jpg",
+    "sourceUrl": "https://www.itconvention.co.kr/wedding/amore/",
     "sourceType": "official_website",
     "usageStatus": "official_source_linked",
     "photoKind": "wedding_setup",
@@ -370,8 +523,17 @@
   },
   {
     "hallId": "H-GG-YON-20260808-010",
-    "url": "https://www.itconvention.co.kr/attachList/upload/main/m20241201162812463.jpg",
-    "sourceUrl": "https://www.itconvention.co.kr/",
+    "url": "https://www.itconvention.co.kr/attachList/upload/hall/c20180708175041600/p20180710105539320/img20241201160903120.jpg",
+    "sourceUrl": "https://www.itconvention.co.kr/wedding/grace/",
+    "sourceType": "official_website",
+    "usageStatus": "official_source_linked",
+    "photoKind": "wedding_setup",
+    "checkedAt": "2026-08-08"
+  },
+  {
+    "hallId": "H-SEO-20260728-004",
+    "url": "https://www.hotelnaruseoul.com/wp-content/uploads/sites/18/2024/12/%EC%9B%A8%EB%94%A9_%EB%A7%88%EC%9D%B4%ED%81%AC%EB%A1%9C%EC%82%AC%EC%9D%B4%ED%8A%B8_%EB%8C%80%EC%A7%80-1-%EC%82%AC%EB%B3%B8.jpg",
+    "sourceUrl": "https://www.hotelnaruseoul.com/meetings-events/wedding-family-party/",
     "sourceType": "official_website",
     "usageStatus": "official_source_linked",
     "photoKind": "wedding_setup",
@@ -392,6 +554,15 @@
     "sourceUrl": "https://yozmwedding.co.kr/venue/?bmode=view&idx=18336034",
     "sourceType": "public_listing",
     "usageStatus": "public_source_linked",
+    "photoKind": "wedding_setup",
+    "checkedAt": "2026-08-08"
+  },
+  {
+    "hallId": "H-SEO-20260728-008",
+    "url": "https://www.ambatel.com/RES/PRODUCT/202305/web_namsan_07_20230525175649.jpg",
+    "sourceUrl": "https://www.ambatel.com/theambassador/seoul/KR/weddingList.do",
+    "sourceType": "official_website",
+    "usageStatus": "official_source_linked",
     "photoKind": "wedding_setup",
     "checkedAt": "2026-08-08"
   },
@@ -433,10 +604,10 @@
   },
   {
     "hallId": "H-SEO-20260728-017",
-    "url": "https://www.theraum.co.kr/_skin/raum_251230/img/logo/footer_logo.png",
-    "sourceUrl": "https://www.theraum.co.kr/content/content.php?cont=wedding",
-    "sourceType": "official_website",
-    "usageStatus": "official_source_linked",
+    "url": "https://cdn.imweb.me/upload/S20240204aca494e0b4938/7c933c8ec841b.png",
+    "sourceUrl": "https://yozmwedding.co.kr/60/?bmode=view&idx=144340406",
+    "sourceType": "public_listing",
+    "usageStatus": "public_source_linked",
     "photoKind": "wedding_setup",
     "checkedAt": "2026-08-08"
   },
@@ -469,7 +640,7 @@
   },
   {
     "hallId": "H-SEO-20260728-021",
-    "url": "https://cdn.imweb.me/upload/S20240204aca494e0b4938/530ddf79f3d1d.png",
+    "url": "https://cdn.imweb.me/upload/S20240204aca494e0b4938/b63ea528de9b5.jpg",
     "sourceUrl": "https://yozmwedding.co.kr/venue/?bmode=view&idx=18320744",
     "sourceType": "public_listing",
     "usageStatus": "public_source_linked",
@@ -495,33 +666,6 @@
     "checkedAt": "2026-08-08"
   },
   {
-    "hallId": "H-SEO-20260728-024",
-    "url": "https://wedding.seoulwomen.or.kr/app/uploads/2026/05/KakaoTalk_20260507_132011162-778x778-c-default.png",
-    "sourceUrl": "https://wedding.seoulwomen.or.kr/",
-    "sourceType": "official_website",
-    "usageStatus": "official_source_linked",
-    "photoKind": "wedding_setup",
-    "checkedAt": "2026-08-08"
-  },
-  {
-    "hallId": "H-SEO-20260728-026",
-    "url": "https://wedding.seoulwomen.or.kr/app/uploads/2026/02/%EA%B7%B8%EB%A0%88%EC%9D%B4%EC%8A%A4%EC%95%A4%EC%BD%94-%EC%8B%A0%EA%B7%9C-%EB%A1%9C%EA%B3%A0.png",
-    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities/372",
-    "sourceType": "official_website",
-    "usageStatus": "official_source_linked",
-    "photoKind": "wedding_setup",
-    "checkedAt": "2026-08-08"
-  },
-  {
-    "hallId": "H-SEO-20260728-027",
-    "url": "https://wedding.seoulwomen.or.kr/app/uploads/2026/05/KakaoTalk_20260507_132011162-778x778-c-default.png",
-    "sourceUrl": "https://wedding.seoulwomen.or.kr/",
-    "sourceType": "official_website",
-    "usageStatus": "official_source_linked",
-    "photoKind": "wedding_setup",
-    "checkedAt": "2026-08-08"
-  },
-  {
     "hallId": "H-SEO-20260728-028",
     "url": "https://cdn.imweb.me/upload/S20240204aca494e0b4938/57afe63819527.jpg",
     "sourceUrl": "https://yozmwedding.co.kr/venue/?bmode=view&idx=18410968",
@@ -532,7 +676,7 @@
   },
   {
     "hallId": "H-SEO-20260728-029",
-    "url": "https://cdn.imweb.me/upload/S20240204aca494e0b4938/501165f86bc24.jpg",
+    "url": "https://cdn.imweb.me/upload/S20240204aca494e0b4938/f639b99d7948b.jpg",
     "sourceUrl": "https://yozmwedding.co.kr/venue/?bmode=view&idx=144225890",
     "sourceType": "public_listing",
     "usageStatus": "public_source_linked",
@@ -541,10 +685,10 @@
   },
   {
     "hallId": "H-SEO-20260728-030",
-    "url": "https://cdn.imweb.me/upload/S20240204aca494e0b4938/eae80d64c48dc.jpg",
-    "sourceUrl": "https://yozmwedding.co.kr/60/?bmode=view&idx=167380298",
-    "sourceType": "public_listing",
-    "usageStatus": "public_source_linked",
+    "url": "https://www.sonofeliceconvention.com/homepage/images/sub/img_sapphire01.jpg",
+    "sourceUrl": "https://www.sonofeliceconvention.com/subMain/space.sc",
+    "sourceType": "official_website",
+    "usageStatus": "official_source_linked",
     "photoKind": "wedding_setup",
     "checkedAt": "2026-08-08"
   },
@@ -621,6 +765,15 @@
     "checkedAt": "2026-08-08"
   },
   {
+    "hallId": "H-SEO-20260728-040",
+    "url": "https://cache.marriott.com/is/image/marriotts7prod/fp-selfg-selfg-wedding-1-27447:Wide-Hor?wid=1336&fit=constrain",
+    "sourceUrl": "https://www.marriott.com/ko/hotels/selfg-four-points-seoul-gangnam/photos/",
+    "sourceType": "official_website",
+    "usageStatus": "official_source_linked",
+    "photoKind": "wedding_setup",
+    "checkedAt": "2026-08-08"
+  },
+  {
     "hallId": "H-SEO-20260728-041",
     "url": "https://cdn.imweb.me/upload/S20240204aca494e0b4938/79aa6c2b52b26.jpg",
     "sourceUrl": "https://yozmwedding.co.kr/venue/?bmode=view&idx=159244761",
@@ -644,6 +797,15 @@
     "sourceUrl": "https://yozmwedding.co.kr/60/?bmode=view&idx=164275550",
     "sourceType": "public_listing",
     "usageStatus": "public_source_linked",
+    "photoKind": "wedding_setup",
+    "checkedAt": "2026-08-08"
+  },
+  {
+    "hallId": "H-SEO-20260728-044",
+    "url": "https://homehmc.com/upfiles/oakwood_mall/20241008150213982_9611166255207834.jpg",
+    "sourceUrl": "https://homehmc.com/ko/oakwood-seoul-coex/banquets-and-events/weddings/",
+    "sourceType": "official_website",
+    "usageStatus": "official_source_linked",
     "photoKind": "wedding_setup",
     "checkedAt": "2026-08-08"
   },
@@ -747,6 +909,24 @@
     "checkedAt": "2026-08-08"
   },
   {
+    "hallId": "H-SEO-20260728-059",
+    "url": "https://wedding.seoulwomen.or.kr/app/uploads/2024/05/%EC%A0%84%EB%A9%B4-1-scaled.jpg",
+    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities/588",
+    "sourceType": "official_website",
+    "usageStatus": "official_source_linked",
+    "photoKind": "wedding_setup",
+    "checkedAt": "2026-08-08"
+  },
+  {
+    "hallId": "H-SEO-20260728-060",
+    "url": "https://wedding.seoulwomen.or.kr/app/uploads/2025/06/KakaoTalk_20250825_113739498-scaled.jpg",
+    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities/3192",
+    "sourceType": "official_website",
+    "usageStatus": "official_source_linked",
+    "photoKind": "wedding_setup",
+    "checkedAt": "2026-08-08"
+  },
+  {
     "hallId": "H-SEO-20260728-062",
     "url": "https://wedding.seoulwomen.or.kr/app/uploads/2025/06/%EC%9B%94%EB%93%9C%EC%BB%B5%EA%B3%B5%EC%9B%90-%ED%8F%89%ED%99%94%EC%9E%94%EB%94%94%EA%B4%91%EC%9E%A5%EC%B2%AB%EC%98%88%EC%8B%9D%EC%9D%B4%EB%B2%A4%ED%8A%B83-scaled.jpg",
     "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities/3480",
@@ -756,9 +936,18 @@
     "checkedAt": "2026-08-08"
   },
   {
-    "hallId": "H-SEO-20260728-065",
-    "url": "https://d3n14jmbdg5y6n.cloudfront.net/wp-content/uploads/2019/02/file-1.png",
-    "sourceUrl": "https://www.rysehotel.co.kr/ryse_wedding/",
+    "hallId": "H-SEO-20260728-063",
+    "url": "https://wedding.seoulwomen.or.kr/app/uploads/2025/06/%ED%8F%89%ED%99%94%EC%9D%98%EA%B3%B5%EC%9B%90-%EC%83%88%EB%A1%9D%EA%B2%B0%ED%98%BC%EC%8B%9D%EC%9E%A5.jpg",
+    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities/3206",
+    "sourceType": "official_website",
+    "usageStatus": "official_source_linked",
+    "photoKind": "wedding_setup",
+    "checkedAt": "2026-08-08"
+  },
+  {
+    "hallId": "H-SEO-20260728-064",
+    "url": "https://wedding.seoulwomen.or.kr/app/uploads/2025/06/8.%EC%84%9C%EA%B5%90%EC%8A%A4%ED%80%98%EC%96%B4.png",
+    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities/3210",
     "sourceType": "official_website",
     "usageStatus": "official_source_linked",
     "photoKind": "wedding_setup",
@@ -766,19 +955,10 @@
   },
   {
     "hallId": "H-SEO-20260728-066",
-    "url": "https://cdn.imweb.me/upload/S20240204aca494e0b4938/1c6aca1b91e80.png",
-    "sourceUrl": "https://yozmwedding.co.kr/79/?bmode=view&idx=164792402",
-    "sourceType": "public_listing",
-    "usageStatus": "public_source_linked",
-    "photoKind": "wedding_setup",
-    "checkedAt": "2026-08-08"
-  },
-  {
-    "hallId": "H-SEO-20260728-067",
-    "url": "https://cdn.imhttps//cdn.imweb.me/upload/S20240204aca494e0b4938/e6c1682fa0dbe.jpgweb.me/upload/S20240204aca494e0b4938/e6c1682fa0dbe.jpg",
-    "sourceUrl": "https://yozmwedding.co.kr/79/?bmode=view&idx=125529233",
-    "sourceType": "public_listing",
-    "usageStatus": "public_source_linked",
+    "url": "https://www.seoulgarden.co.kr/SeoulGarden_common/images/homepage/facilities/otherwed_01.jpg",
+    "sourceUrl": "https://www.seoulgarden.co.kr/view/viewLink.do?page=homepage%2FKOR%2Ffacilities%2Fwedding",
+    "sourceType": "official_website",
+    "usageStatus": "official_source_linked",
     "photoKind": "wedding_setup",
     "checkedAt": "2026-08-08"
   },
@@ -819,18 +999,27 @@
     "checkedAt": "2026-08-08"
   },
   {
-    "hallId": "H-SEO-20260728-074",
-    "url": "https://wedding.seoulwomen.or.kr/app/uploads/2026/05/KakaoTalk_20260507_132011162-778x778-c-default.png",
-    "sourceUrl": "https://wedding.seoulwomen.or.kr/",
+    "hallId": "H-SEO-20260728-075",
+    "url": "https://wedding.seoulwomen.or.kr/app/uploads/2025/06/%ED%98%B8%ED%98%84%EB%8B%B91-scaled.jpg",
+    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities/3189",
     "sourceType": "official_website",
     "usageStatus": "official_source_linked",
     "photoKind": "wedding_setup",
     "checkedAt": "2026-08-08"
   },
   {
-    "hallId": "H-SEO-20260728-075",
-    "url": "https://wedding.seoulwomen.or.kr/app/uploads/2025/02/%EB%A1%9C%EA%B3%A0-170x170-1.jpg",
-    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities/3189",
+    "hallId": "H-SEO-20260728-076",
+    "url": "https://wedding.seoulwomen.or.kr/app/uploads/2025/06/%EC%9E%A5%EC%B6%A9%EC%9E%90%EB%9D%BD-scaled.jpg",
+    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities/3190",
+    "sourceType": "official_website",
+    "usageStatus": "official_source_linked",
+    "photoKind": "wedding_setup",
+    "checkedAt": "2026-08-08"
+  },
+  {
+    "hallId": "H-SEO-20260728-077",
+    "url": "https://wedding.seoulwomen.or.kr/app/uploads/2025/06/7.%EC%B9%B4%ED%8E%98%EB%A7%88%EB%A3%A8-1024x577.png",
+    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities/3216",
     "sourceType": "official_website",
     "usageStatus": "official_source_linked",
     "photoKind": "wedding_setup",
@@ -855,6 +1044,15 @@
     "checkedAt": "2026-08-08"
   },
   {
+    "hallId": "H-SEO-20260728-081",
+    "url": "https://cache.marriott.com/is/image/marriotts7prod/cy-selsn-hanyang-room-wedding-11919:Wide-Hor?wid=1336&fit=constrain",
+    "sourceUrl": "https://www.marriott.com/ko/hotels/selsn-courtyard-seoul-myeongdong/photos/",
+    "sourceType": "official_website",
+    "usageStatus": "official_source_linked",
+    "photoKind": "wedding_setup",
+    "checkedAt": "2026-08-08"
+  },
+  {
     "hallId": "H-SEO-20260728-082",
     "url": "https://cdn.imweb.me/upload/S20240204aca494e0b4938/9f7c93fa147b1.jpg",
     "sourceUrl": "https://yozmwedding.co.kr/venue/?bmode=view&idx=19384893",
@@ -869,15 +1067,6 @@
     "sourceUrl": "https://yozmwedding.co.kr/venue/?bmode=view&idx=152817830",
     "sourceType": "public_listing",
     "usageStatus": "public_source_linked",
-    "photoKind": "wedding_setup",
-    "checkedAt": "2026-08-08"
-  },
-  {
-    "hallId": "H-SEO-20260728-086",
-    "url": "https://www.s-wed.co.kr/img/weddinghall-new/tab01.png",
-    "sourceUrl": "https://www.s-wed.co.kr/weddingHall/detail.htm?HallCode=WH08A01A0022",
-    "sourceType": "official_website",
-    "usageStatus": "official_source_linked",
     "photoKind": "wedding_setup",
     "checkedAt": "2026-08-08"
   },
@@ -954,15 +1143,6 @@
     "checkedAt": "2026-08-08"
   },
   {
-    "hallId": "H-SEO-20260729-096",
-    "url": "https://cdn.imweb.me/upload/S20240204aca494e0b4938/56282536989bf.jpg",
-    "sourceUrl": "https://yozmwedding.co.kr/venue/?bmode=view&idx=18228236",
-    "sourceType": "public_listing",
-    "usageStatus": "public_source_linked",
-    "photoKind": "wedding_setup",
-    "checkedAt": "2026-08-08"
-  },
-  {
     "hallId": "H-SEO-20260729-097",
     "url": "https://cdn.imweb.me/upload/S20240204aca494e0b4938/c07bcefe4931e.jpg",
     "sourceUrl": "https://yozmwedding.co.kr/79/?bmode=view&idx=125529233",
@@ -977,15 +1157,6 @@
     "sourceUrl": "https://yozmwedding.co.kr/venue/?bmode=view&idx=18921067",
     "sourceType": "public_listing",
     "usageStatus": "public_source_linked",
-    "photoKind": "wedding_setup",
-    "checkedAt": "2026-08-08"
-  },
-  {
-    "hallId": "H-SEO-20260729-100",
-    "url": "https://www.s-wed.co.kr/img/weddinghall-new/tab01.png",
-    "sourceUrl": "https://www.s-wed.co.kr/weddingHall/detail.htm?HallCode=WH08A01A0022",
-    "sourceType": "official_website",
-    "usageStatus": "official_source_linked",
     "photoKind": "wedding_setup",
     "checkedAt": "2026-08-08"
   },
@@ -1017,9 +1188,9 @@
     "checkedAt": "2026-08-08"
   },
   {
-    "hallId": "H-SEO-20260729-111",
-    "url": "https://d3n14jmbdg5y6n.cloudfront.net/wp-content/uploads/2019/02/1-1.jpg",
-    "sourceUrl": "https://www.rysehotel.co.kr/ryse_wedding/",
+    "hallId": "H-SEO-20260729-112",
+    "url": "https://cdn.imweb.me/upload/S202201183e9a686a2e5f0/d7538e3988058.png",
+    "sourceUrl": "https://www.rosenlime.com/rooftop_wedding",
     "sourceType": "official_website",
     "usageStatus": "official_source_linked",
     "photoKind": "wedding_setup",
@@ -1035,9 +1206,18 @@
     "checkedAt": "2026-08-08"
   },
   {
+    "hallId": "H-SEO-20260729-115",
+    "url": "https://kdwedding.co.kr/wp-content/uploads/2025/10/web-12-scaled.jpg",
+    "sourceUrl": "https://kdwedding.co.kr/hall/",
+    "sourceType": "official_website",
+    "usageStatus": "official_source_linked",
+    "photoKind": "wedding_setup",
+    "checkedAt": "2026-08-08"
+  },
+  {
     "hallId": "H-SEO-20260729-118",
-    "url": "https://wedding.seoulwomen.or.kr/app/uploads/2025/06/%EA%B3%B5%EC%97%B0%EC%A0%84%EC%8B%9C%ED%99%80.jpg",
-    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities",
+    "url": "https://wedding.seoulwomen.or.kr/app/uploads/2024/05/%EC%9E%A5%EB%AF%B8%EC%9B%90-230-scaled.jpg",
+    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities/549",
     "sourceType": "official_website",
     "usageStatus": "official_source_linked",
     "photoKind": "wedding_setup",
@@ -1045,7 +1225,7 @@
   },
   {
     "hallId": "H-SEO-20260729-119",
-    "url": "https://www.weddingcrowd.kr/img/icon/ic_share_kakaotalk.jpg",
+    "url": "https://www.weddingcrowd.kr/img/hall/benefit.jpg",
     "sourceUrl": "https://www.weddingcrowd.kr/hall/view.php?idx=415",
     "sourceType": "public_listing",
     "usageStatus": "public_source_linked",
@@ -1053,18 +1233,18 @@
     "checkedAt": "2026-08-08"
   },
   {
-    "hallId": "H-SEO-20260729-121",
-    "url": "https://cdn.prod.website-files.com/66a1dde80b3b36e97bde40d9/685a08a68a336ffa66886887_Group%206%201.png",
-    "sourceUrl": "https://www.directwedding.co.kr/weddinghall/hall0479",
-    "sourceType": "public_listing",
-    "usageStatus": "public_source_linked",
+    "hallId": "H-SEO-20260729-120",
+    "url": "https://storage.googleapis.com/cr-resource/image/a5e7d71783ddc98b29857ebc97c85165/sunwoongak/650/f7b0e6b2009510845a07288bdf246ca2.jpg?_1786186373",
+    "sourceUrl": "https://www.sunwoongak-kwedding.com/",
+    "sourceType": "official_website",
+    "usageStatus": "official_source_linked",
     "photoKind": "wedding_setup",
     "checkedAt": "2026-08-08"
   },
   {
     "hallId": "H-SEO-20260729-122",
-    "url": "https://wedding.seoulwomen.or.kr/app/uploads/2025/06/%EA%B3%B5%EC%97%B0%EC%A0%84%EC%8B%9C%ED%99%80.jpg",
-    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities",
+    "url": "https://wedding.seoulwomen.or.kr/app/uploads/2024/04/KakaoTalk_20231115_154804619_02_0.jpg",
+    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities/125",
     "sourceType": "official_website",
     "usageStatus": "official_source_linked",
     "photoKind": "wedding_setup",
@@ -1072,8 +1252,26 @@
   },
   {
     "hallId": "H-SEO-20260729-123",
-    "url": "https://wedding.seoulwomen.or.kr/app/uploads/2025/06/%EA%B3%B5%EC%97%B0%EC%A0%84%EC%8B%9C%ED%99%80.jpg",
-    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities",
+    "url": "https://wedding.seoulwomen.or.kr/app/uploads/2024/06/%EC%86%94%EB%B0%AD%EA%B7%BC%EB%A6%B0%EA%B3%B5%EC%9B%901.jpg",
+    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities/754",
+    "sourceType": "official_website",
+    "usageStatus": "official_source_linked",
+    "photoKind": "wedding_setup",
+    "checkedAt": "2026-08-08"
+  },
+  {
+    "hallId": "H-SEO-20260729-125",
+    "url": "https://cdn.imweb.me/upload/S20240809bde97c9a2e0bc/04ad2cb6bbad8.png",
+    "sourceUrl": "https://thenewwed.kr/RENOVHALL",
+    "sourceType": "official_website",
+    "usageStatus": "official_source_linked",
+    "photoKind": "wedding_setup",
+    "checkedAt": "2026-08-08"
+  },
+  {
+    "hallId": "H-SEO-20260729-127",
+    "url": "https://mayfield.co.kr/assets/images/wedding/wedding_visual_01_2.png",
+    "sourceUrl": "https://mayfield.co.kr/wedding/grand.html",
     "sourceType": "official_website",
     "usageStatus": "official_source_linked",
     "photoKind": "wedding_setup",
@@ -1099,8 +1297,8 @@
   },
   {
     "hallId": "H-SEO-20260729-130",
-    "url": "https://wedding.seoulwomen.or.kr/app/uploads/2025/06/%EA%B3%B5%EC%97%B0%EC%A0%84%EC%8B%9C%ED%99%80.jpg",
-    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities",
+    "url": "https://wedding.seoulwomen.or.kr/app/uploads/2024/06/KakaoTalk_20240901_221752653.jpg",
+    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities/758",
     "sourceType": "official_website",
     "usageStatus": "official_source_linked",
     "photoKind": "wedding_setup",
@@ -1108,8 +1306,8 @@
   },
   {
     "hallId": "H-SEO-20260729-131",
-    "url": "https://wedding.seoulwomen.or.kr/app/uploads/2025/06/%EA%B3%B5%EC%97%B0%EC%A0%84%EC%8B%9C%ED%99%80.jpg",
-    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities",
+    "url": "https://wedding.seoulwomen.or.kr/app/uploads/2025/06/%EA%B0%95%EC%84%9C%EA%B5%AC_%EC%84%9C%EC%9A%B8%EC%8B%9D%EB%AC%BC%EC%9B%90-%EC%82%AC%EC%83%89%EC%9D%98%EC%A0%95%EC%9B%90.png",
+    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities/3209",
     "sourceType": "official_website",
     "usageStatus": "official_source_linked",
     "photoKind": "wedding_setup",
@@ -1117,8 +1315,8 @@
   },
   {
     "hallId": "H-SEO-20260729-132",
-    "url": "https://wedding.seoulwomen.or.kr/app/uploads/2025/06/%EA%B3%B5%EC%97%B0%EC%A0%84%EC%8B%9C%ED%99%80.jpg",
-    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities",
+    "url": "https://wedding.seoulwomen.or.kr/app/uploads/2025/06/%EC%84%9C%EC%9A%B8%EC%8B%9D%EB%AC%BC%EC%9B%90-1.png",
+    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities/3201",
     "sourceType": "official_website",
     "usageStatus": "official_source_linked",
     "photoKind": "wedding_setup",
@@ -1126,8 +1324,8 @@
   },
   {
     "hallId": "H-SEO-20260729-133",
-    "url": "https://wedding.seoulwomen.or.kr/app/uploads/2025/06/%EA%B3%B5%EC%97%B0%EC%A0%84%EC%8B%9C%ED%99%80.jpg",
-    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities",
+    "url": "https://wedding.seoulwomen.or.kr/app/uploads/2025/06/12.%EC%96%B4%EC%9A%B8%EB%A6%BC%ED%94%8C%EB%9D%BC%EC%9E%90.png",
+    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities/3214",
     "sourceType": "official_website",
     "usageStatus": "official_source_linked",
     "photoKind": "wedding_setup",
@@ -1135,7 +1333,7 @@
   },
   {
     "hallId": "H-SEO-20260729-136",
-    "url": "https://www.snufacultyclub.com/assets/images/main/top_btn_pc.png",
+    "url": "https://www.snufacultyclub.com/uploads/rolling/1777018960_93fc7ad51bd8c5acba91.jpg",
     "sourceUrl": "https://www.snufacultyclub.com/",
     "sourceType": "official_website",
     "usageStatus": "official_source_linked",
@@ -1144,8 +1342,35 @@
   },
   {
     "hallId": "H-SEO-20260729-138",
-    "url": "https://wedding.seoulwomen.or.kr/app/uploads/2025/06/%EA%B3%B5%EC%97%B0%EC%A0%84%EC%8B%9C%ED%99%80.jpg",
-    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities",
+    "url": "https://wedding.seoulwomen.or.kr/app/uploads/2025/06/14.%EC%84%9C%EC%9A%B8%EC%8B%9C%EB%AF%BC%EB%8C%80%ED%95%99.png",
+    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities/3223",
+    "sourceType": "official_website",
+    "usageStatus": "official_source_linked",
+    "photoKind": "wedding_setup",
+    "checkedAt": "2026-08-08"
+  },
+  {
+    "hallId": "H-SEO-20260729-139",
+    "url": "https://app.walkerhill.com/assets/grandwalkerhillseoul/global/images/etc/pic_vistaW01.jpg",
+    "sourceUrl": "https://app.walkerhill.com/convention/Wedding",
+    "sourceType": "official_website",
+    "usageStatus": "official_source_linked",
+    "photoKind": "wedding_setup",
+    "checkedAt": "2026-08-08"
+  },
+  {
+    "hallId": "H-SEO-20260729-140",
+    "url": "https://app.walkerhill.com/assets/grandwalkerhillseoul/global/images/etc/pic_grandW02.jpg",
+    "sourceUrl": "https://app.walkerhill.com/convention/Wedding",
+    "sourceType": "official_website",
+    "usageStatus": "official_source_linked",
+    "photoKind": "wedding_setup",
+    "checkedAt": "2026-08-08"
+  },
+  {
+    "hallId": "H-SEO-20260729-141",
+    "url": "https://app.walkerhill.com/assets/grandwalkerhillseoul/global/images/etc/pic_astonW01.jpg",
+    "sourceUrl": "https://app.walkerhill.com/convention/Wedding",
     "sourceType": "official_website",
     "usageStatus": "official_source_linked",
     "photoKind": "wedding_setup",
@@ -1157,6 +1382,15 @@
     "sourceUrl": "https://thewedd.com/hall-227/",
     "sourceType": "public_listing",
     "usageStatus": "public_source_linked",
+    "photoKind": "wedding_setup",
+    "checkedAt": "2026-08-08"
+  },
+  {
+    "hallId": "H-SEO-20260729-144",
+    "url": "https://cdn.imweb.me/upload/S2025052038998f58f091c/b4106cf0f0c71.png",
+    "sourceUrl": "https://www.weddingsquare.co.kr/",
+    "sourceType": "official_website",
+    "usageStatus": "official_source_linked",
     "photoKind": "wedding_setup",
     "checkedAt": "2026-08-08"
   },
@@ -1189,8 +1423,8 @@
   },
   {
     "hallId": "H-SEO-20260729-148",
-    "url": "https://wedding.seoulwomen.or.kr/app/uploads/2025/06/%EA%B3%B5%EC%97%B0%EC%A0%84%EC%8B%9C%ED%99%80.jpg",
-    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities",
+    "url": "https://wedding.seoulwomen.or.kr/app/uploads/2025/06/15.%EA%B4%91%EC%A7%84%EA%B5%AC%EB%8C%80%EA%B0%95%EB%8B%B9.jpg",
+    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities/3218",
     "sourceType": "official_website",
     "usageStatus": "official_source_linked",
     "photoKind": "wedding_setup",
@@ -1207,8 +1441,8 @@
   },
   {
     "hallId": "H-SEO-20260729-150",
-    "url": "https://wedding.seoulwomen.or.kr/app/uploads/2025/06/%EA%B3%B5%EC%97%B0%EC%A0%84%EC%8B%9C%ED%99%80.jpg",
-    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities",
+    "url": "https://wedding.seoulwomen.or.kr/app/uploads/2025/06/%EC%96%B4%EB%A6%B0%EC%9D%B4%EB%8C%80%EA%B3%B5%EC%9B%90_2-scaled.jpg",
+    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities/3200",
     "sourceType": "official_website",
     "usageStatus": "official_source_linked",
     "photoKind": "wedding_setup",
@@ -1225,17 +1459,26 @@
   },
   {
     "hallId": "H-SEO-20260729-152",
-    "url": "https://thewedd.com/wp-content/uploads/2026/01/%EA%B5%AC%EB%A1%9C%EA%B5%AC%EB%8D%94%EB%A7%81%ED%81%AC%ED%98%B8%ED%85%94_23-1024x725.webp",
-    "sourceUrl": "https://thewedd.com/hall-75/",
-    "sourceType": "public_listing",
-    "usageStatus": "public_source_linked",
+    "url": "https://www.thelinkseoul.com/data/apms/background/link%20hall.jpg",
+    "sourceUrl": "https://www.thelinkseoul.com/bbs/page.php?hid=m02_02",
+    "sourceType": "official_website",
+    "usageStatus": "official_source_linked",
+    "photoKind": "wedding_setup",
+    "checkedAt": "2026-08-08"
+  },
+  {
+    "hallId": "H-SEO-20260729-156",
+    "url": "https://cdn.imweb.me/upload/S202505168c93021778743/a6bcea2ef7f17.png",
+    "sourceUrl": "https://sindorim.thebennevis.co.kr/",
+    "sourceType": "official_website",
+    "usageStatus": "official_source_linked",
     "photoKind": "wedding_setup",
     "checkedAt": "2026-08-08"
   },
   {
     "hallId": "H-SEO-20260729-160",
-    "url": "https://wedding.seoulwomen.or.kr/app/uploads/2025/06/%EA%B3%B5%EC%97%B0%EC%A0%84%EC%8B%9C%ED%99%80.jpg",
-    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities",
+    "url": "https://wedding.seoulwomen.or.kr/app/uploads/2025/06/%ED%91%B8%EB%A5%B8%EC%88%98%EB%AA%A9%EC%9B%90-%EC%9E%94%EB%94%94%EB%A7%88%EB%8B%B9-%EC%82%AC%EC%A7%841-4-scaled.jpg",
+    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities/3202",
     "sourceType": "official_website",
     "usageStatus": "official_source_linked",
     "photoKind": "wedding_setup",
@@ -1252,8 +1495,8 @@
   },
   {
     "hallId": "H-SEO-20260729-162",
-    "url": "https://wedding.seoulwomen.or.kr/app/uploads/2025/06/%EA%B3%B5%EC%97%B0%EC%A0%84%EC%8B%9C%ED%99%80.jpg",
-    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities",
+    "url": "https://wedding.seoulwomen.or.kr/app/uploads/2025/06/31.%EA%B8%88%EC%B2%9C%EA%B5%AC-%EB%85%B9%EC%83%89%EA%B4%91%EC%9E%A5-%EC%9E%94%EB%94%94%EB%A7%88%EB%8B%B9-scaled.jpg",
+    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities/3204",
     "sourceType": "official_website",
     "usageStatus": "official_source_linked",
     "photoKind": "wedding_setup",
@@ -1261,7 +1504,7 @@
   },
   {
     "hallId": "H-SEO-20260729-163",
-    "url": "https://cdn.imweb.me/thumbnail/20220725/e7f3092042e54.png",
+    "url": "https://cdn.imweb.me/thumbnail/20220725/648f544ce06a9.png",
     "sourceUrl": "https://bntconvention.com/hall",
     "sourceType": "official_website",
     "usageStatus": "official_source_linked",
@@ -1288,8 +1531,8 @@
   },
   {
     "hallId": "H-SEO-20260729-166",
-    "url": "https://wedding.seoulwomen.or.kr/app/uploads/2025/06/%EA%B3%B5%EC%97%B0%EC%A0%84%EC%8B%9C%ED%99%80.jpg",
-    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities",
+    "url": "https://wedding.seoulwomen.or.kr/app/uploads/2025/06/%ED%99%94%EB%9E%91%EB%8C%80-%EC%B2%A0%EB%8F%84-1.png",
+    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities/3205",
     "sourceType": "official_website",
     "usageStatus": "official_source_linked",
     "photoKind": "wedding_setup",
@@ -1297,8 +1540,8 @@
   },
   {
     "hallId": "H-SEO-20260729-167",
-    "url": "https://wedding.seoulwomen.or.kr/app/uploads/2025/06/%EA%B3%B5%EC%97%B0%EC%A0%84%EC%8B%9C%ED%99%80.jpg",
-    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities",
+    "url": "https://wedding.seoulwomen.or.kr/app/uploads/2024/05/KakaoTalk_20260122_110826782_01-scaled.jpg",
+    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities/407",
     "sourceType": "official_website",
     "usageStatus": "official_source_linked",
     "photoKind": "wedding_setup",
@@ -1306,8 +1549,8 @@
   },
   {
     "hallId": "H-SEO-20260729-168",
-    "url": "https://wedding.seoulwomen.or.kr/app/uploads/2025/06/%EA%B3%B5%EC%97%B0%EC%A0%84%EC%8B%9C%ED%99%80.jpg",
-    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities",
+    "url": "https://wedding.seoulwomen.or.kr/app/uploads/2024/06/temp_1717734107055.1608555041.jpeg",
+    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities/761",
     "sourceType": "official_website",
     "usageStatus": "official_source_linked",
     "photoKind": "wedding_setup",
@@ -1315,8 +1558,8 @@
   },
   {
     "hallId": "H-SEO-20260729-170",
-    "url": "https://wedding.seoulwomen.or.kr/app/uploads/2025/06/%EA%B3%B5%EC%97%B0%EC%A0%84%EC%8B%9C%ED%99%80.jpg",
-    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities",
+    "url": "https://wedding.seoulwomen.or.kr/app/uploads/2025/06/17.%EB%8F%84%EB%B4%89%EA%B5%AC%EC%B2%AD%EC%84%A0%EC%9D%B8%EB%B4%89%ED%99%80.jpg",
+    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities/3220",
     "sourceType": "official_website",
     "usageStatus": "official_source_linked",
     "photoKind": "wedding_setup",
@@ -1324,8 +1567,8 @@
   },
   {
     "hallId": "H-SEO-20260729-171",
-    "url": "https://wedding.seoulwomen.or.kr/app/uploads/2025/06/%EA%B3%B5%EC%97%B0%EC%A0%84%EC%8B%9C%ED%99%80.jpg",
-    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities",
+    "url": "https://wedding.seoulwomen.or.kr/app/uploads/2025/06/18.%EC%B4%88%EC%95%88%EC%82%B0%EA%B0%80%EB%93%9C%EB%8B%9D%EC%84%BC%ED%84%B0.jpg",
+    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities/3222",
     "sourceType": "official_website",
     "usageStatus": "official_source_linked",
     "photoKind": "wedding_setup",
@@ -1333,8 +1576,8 @@
   },
   {
     "hallId": "H-SEO-20260729-172",
-    "url": "https://wedding.seoulwomen.or.kr/app/uploads/2025/06/%EA%B3%B5%EC%97%B0%EC%A0%84%EC%8B%9C%ED%99%80.jpg",
-    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities",
+    "url": "https://wedding.seoulwomen.or.kr/app/uploads/2024/06/KakaoTalk_20240618_145911494_02-%ED%81%AC%EA%B2%8C-min.jpeg",
+    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities/760",
     "sourceType": "official_website",
     "usageStatus": "official_source_linked",
     "photoKind": "wedding_setup",
@@ -1378,8 +1621,8 @@
   },
   {
     "hallId": "H-SEO-20260729-178",
-    "url": "https://wedding.seoulwomen.or.kr/app/uploads/2025/06/%EA%B3%B5%EC%97%B0%EC%A0%84%EC%8B%9C%ED%99%80.jpg",
-    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities",
+    "url": "https://wedding.seoulwomen.or.kr/app/uploads/2024/05/KakaoTalk_20231115_154908018_02.jpg",
+    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities/486",
     "sourceType": "official_website",
     "usageStatus": "official_source_linked",
     "photoKind": "wedding_setup",
@@ -1387,8 +1630,8 @@
   },
   {
     "hallId": "H-SEO-20260729-179",
-    "url": "https://wedding.seoulwomen.or.kr/app/uploads/2025/06/%EA%B3%B5%EC%97%B0%EC%A0%84%EC%8B%9C%ED%99%80.jpg",
-    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities",
+    "url": "https://wedding.seoulwomen.or.kr/app/uploads/2025/12/KakaoTalk_20251203_140222055.jpg",
+    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities/436",
     "sourceType": "official_website",
     "usageStatus": "official_source_linked",
     "photoKind": "wedding_setup",
@@ -1405,8 +1648,8 @@
   },
   {
     "hallId": "H-SEO-20260729-183",
-    "url": "https://wedding.seoulwomen.or.kr/app/uploads/2025/06/%EA%B3%B5%EC%97%B0%EC%A0%84%EC%8B%9C%ED%99%80.jpg",
-    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities",
+    "url": "https://wedding.seoulwomen.or.kr/app/uploads/2024/05/%EC%8B%9C%EB%AF%BC%EC%95%88%EC%A0%84%EC%B2%B4%ED%97%98%EA%B4%803.jpg",
+    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities/474",
     "sourceType": "official_website",
     "usageStatus": "official_source_linked",
     "photoKind": "wedding_setup",
@@ -1414,8 +1657,8 @@
   },
   {
     "hallId": "H-SEO-20260729-184",
-    "url": "https://wedding.seoulwomen.or.kr/app/uploads/2025/06/%EA%B3%B5%EC%97%B0%EC%A0%84%EC%8B%9C%ED%99%80.jpg",
-    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities",
+    "url": "https://wedding.seoulwomen.or.kr/app/uploads/2024/05/KakaoTalk_20251001_111338926-scaled.jpg",
+    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities/520",
     "sourceType": "official_website",
     "usageStatus": "official_source_linked",
     "photoKind": "wedding_setup",
@@ -1423,19 +1666,19 @@
   },
   {
     "hallId": "H-SEO-20260729-185",
-    "url": "https://cdn.imweb.me/upload/S20240204aca494e0b4938/56282536989bf.jpg",
-    "sourceUrl": "https://yozmwedding.co.kr/venue/?bmode=view&idx=19808483",
-    "sourceType": "public_listing",
-    "usageStatus": "public_source_linked",
+    "url": "https://www.swissgrand.co.kr/wp-content/uploads/sites/103/2020/05/8.jpg",
+    "sourceUrl": "https://www.swissgrand.co.kr/ko/wedding-banquet/grand-ballroom/",
+    "sourceType": "official_website",
+    "usageStatus": "official_source_linked",
     "photoKind": "wedding_setup",
     "checkedAt": "2026-08-08"
   },
   {
     "hallId": "H-SEO-20260729-187",
-    "url": "https://cdn.imweb.me/upload/S20240204aca494e0b4938/56282536989bf.jpg",
-    "sourceUrl": "https://yozmwedding.co.kr/venue/?bmode=view&idx=19808483",
-    "sourceType": "public_listing",
-    "usageStatus": "public_source_linked",
+    "url": "https://www.swissgrand.co.kr/wp-content/uploads/sites/103/2020/05/%EC%9B%A8%EB%94%A9PDR1-scaled.jpg",
+    "sourceUrl": "https://www.swissgrand.co.kr/ko/wedding-banquet/pdr/",
+    "sourceType": "official_website",
+    "usageStatus": "official_source_linked",
     "photoKind": "wedding_setup",
     "checkedAt": "2026-08-08"
   },
@@ -1445,6 +1688,15 @@
     "sourceUrl": "https://yozmwedding.co.kr/venue/?bmode=view&idx=19808483",
     "sourceType": "public_listing",
     "usageStatus": "public_source_linked",
+    "photoKind": "wedding_setup",
+    "checkedAt": "2026-08-08"
+  },
+  {
+    "hallId": "H-SEO-20260729-189",
+    "url": "https://www.ysab.co.kr/upload/cover/thum_168465924473683000.jpg",
+    "sourceUrl": "https://www.ysab.co.kr/wedding.php?mid=m02_04",
+    "sourceType": "official_website",
+    "usageStatus": "official_source_linked",
     "photoKind": "wedding_setup",
     "checkedAt": "2026-08-08"
   },
@@ -1459,8 +1711,8 @@
   },
   {
     "hallId": "H-SEO-20260729-192",
-    "url": "https://wedding.seoulwomen.or.kr/app/uploads/2025/06/%EA%B3%B5%EC%97%B0%EC%A0%84%EC%8B%9C%ED%99%80.jpg",
-    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities",
+    "url": "https://wedding.seoulwomen.or.kr/app/uploads/2025/06/%EC%B2%AD%EB%85%84%EC%98%88%EC%88%A0%EC%B2%AD.jpg",
+    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities/3211",
     "sourceType": "official_website",
     "usageStatus": "official_source_linked",
     "photoKind": "wedding_setup",
@@ -1526,6 +1778,15 @@
     "sourceUrl": "https://yozmwedding.co.kr/venue/?bmode=view&idx=18304493",
     "sourceType": "public_listing",
     "usageStatus": "public_source_linked",
+    "photoKind": "wedding_setup",
+    "checkedAt": "2026-08-08"
+  },
+  {
+    "hallId": "H-SEO-20260729-203",
+    "url": "https://eltower.com/asset/images/main/img_hall1.jpg",
+    "sourceUrl": "https://eltower.com/",
+    "sourceType": "official_website",
+    "usageStatus": "official_source_linked",
     "photoKind": "wedding_setup",
     "checkedAt": "2026-08-08"
   },
@@ -1612,8 +1873,8 @@
   },
   {
     "hallId": "H-SEO-20260729-214",
-    "url": "https://wedding.seoulwomen.or.kr/app/uploads/2025/06/%EA%B3%B5%EC%97%B0%EC%A0%84%EC%8B%9C%ED%99%80.jpg",
-    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities",
+    "url": "https://wedding.seoulwomen.or.kr/app/uploads/2025/11/1760688088681-scaled.jpg",
+    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities/637",
     "sourceType": "official_website",
     "usageStatus": "official_source_linked",
     "photoKind": "wedding_setup",
@@ -1630,8 +1891,8 @@
   },
   {
     "hallId": "H-SEO-20260729-216",
-    "url": "https://wedding.seoulwomen.or.kr/app/uploads/2025/06/%EA%B3%B5%EC%97%B0%EC%A0%84%EC%8B%9C%ED%99%80.jpg",
-    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities",
+    "url": "https://wedding.seoulwomen.or.kr/app/uploads/2025/06/20-2.%EC%84%9C%EC%9A%B8%EA%B5%90%EB%8C%80%EC%82%AC%ED%96%A5%EA%B4%91%EC%9E%A5.jpg",
+    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities/3225",
     "sourceType": "official_website",
     "usageStatus": "official_source_linked",
     "photoKind": "wedding_setup",
@@ -1639,8 +1900,8 @@
   },
   {
     "hallId": "H-SEO-20260729-217",
-    "url": "https://wedding.seoulwomen.or.kr/app/uploads/2025/06/%EA%B3%B5%EC%97%B0%EC%A0%84%EC%8B%9C%ED%99%80.jpg",
-    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities",
+    "url": "https://wedding.seoulwomen.or.kr/app/uploads/2025/06/10.%EC%84%9C%EC%9A%B8%EB%AC%B8%ED%99%94%EC%98%88%EC%88%A0%EA%B5%90%EC%9C%A1%EC%84%BC%ED%84%B0%EC%84%9C%EC%B4%88.png",
+    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities/3212",
     "sourceType": "official_website",
     "usageStatus": "official_source_linked",
     "photoKind": "wedding_setup",
@@ -1648,8 +1909,8 @@
   },
   {
     "hallId": "H-SEO-20260729-218",
-    "url": "https://wedding.seoulwomen.or.kr/app/uploads/2025/06/%EA%B3%B5%EC%97%B0%EC%A0%84%EC%8B%9C%ED%99%80.jpg",
-    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities",
+    "url": "https://wedding.seoulwomen.or.kr/app/uploads/2024/05/KakaoTalk_20230825_092815774.jpg",
+    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities/487",
     "sourceType": "official_website",
     "usageStatus": "official_source_linked",
     "photoKind": "wedding_setup",
@@ -1657,7 +1918,7 @@
   },
   {
     "hallId": "H-SEO-20260729-219",
-    "url": "https://cdn.prod.website-files.com/66a1eeaa00f1c86c3dbae974/686f64708f8b4fbe733926b1_%EB%94%94%EB%85%B8%EC%B2%B4Screenshot%202025-07-10%20at%2015.56.27.avif",
+    "url": "https://cdn.prod.website-files.com/66a1eeaa00f1c86c3dbae974/686f646f99c3273e416e3e77_%EB%94%94%EB%85%B8%EC%B2%B4%20%EB%82%98%EB%B4%84%EC%A6%88Screenshot%202025-07-10%20at%2015.56.40.avif",
     "sourceUrl": "https://www.directwedding.co.kr/weddinghall/hall0160",
     "sourceType": "public_listing",
     "usageStatus": "public_source_linked",
@@ -1674,6 +1935,15 @@
     "checkedAt": "2026-08-08"
   },
   {
+    "hallId": "H-SEO-20260729-221",
+    "url": "https://thewedd.com/wp-content/uploads/2026/01/%EC%84%B1%EB%8F%99%EA%B5%AC%EB%B3%B4%ED%85%8C%EA%B0%80%EB%A7%88%EC%A7%80%EC%98%A4_04-1024x683.webp",
+    "sourceUrl": "https://thewedd.com/hall-221/",
+    "sourceType": "public_listing",
+    "usageStatus": "public_source_linked",
+    "photoKind": "wedding_setup",
+    "checkedAt": "2026-08-08"
+  },
+  {
     "hallId": "H-SEO-20260729-222",
     "url": "https://thewedd.com/wp-content/uploads/2026/01/%EC%84%B1%EB%8F%99%EA%B5%ACH%EC%8A%A4%ED%80%98%EC%96%B4%ED%95%9C%EC%96%91%EB%8C%80-%EB%8F%99%EB%AC%B8%ED%9A%8C%EA%B4%80_04.webp",
     "sourceUrl": "https://thewedd.com/hall-109-2/",
@@ -1684,8 +1954,8 @@
   },
   {
     "hallId": "H-SEO-20260729-223",
-    "url": "https://wedding.seoulwomen.or.kr/app/uploads/2025/06/%EA%B3%B5%EC%97%B0%EC%A0%84%EC%8B%9C%ED%99%80.jpg",
-    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities",
+    "url": "https://wedding.seoulwomen.or.kr/app/uploads/2024/05/KakaoTalk_20241021_202845489-768x1024.png",
+    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities/593",
     "sourceType": "official_website",
     "usageStatus": "official_source_linked",
     "photoKind": "wedding_setup",
@@ -1693,8 +1963,8 @@
   },
   {
     "hallId": "H-SEO-20260729-224",
-    "url": "https://wedding.seoulwomen.or.kr/app/uploads/2025/06/%EA%B3%B5%EC%97%B0%EC%A0%84%EC%8B%9C%ED%99%80.jpg",
-    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities",
+    "url": "https://wedding.seoulwomen.or.kr/app/uploads/2025/06/%EC%84%9C%EC%9A%B8%EC%88%B2-%EC%84%A4%EB%A0%98%EC%A0%95%EC%9B%901-1-1024x576.jpg",
+    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities/3199",
     "sourceType": "official_website",
     "usageStatus": "official_source_linked",
     "photoKind": "wedding_setup",
@@ -1719,18 +1989,9 @@
     "checkedAt": "2026-08-08"
   },
   {
-    "hallId": "H-SEO-20260729-229",
-    "url": "https://cdn.imweb.me/upload/S20250617bb376dcf6ff0e/61a26062c2afa.png",
-    "sourceUrl": "https://www.weddingsquare.co.kr/",
-    "sourceType": "official_website",
-    "usageStatus": "official_source_linked",
-    "photoKind": "wedding_setup",
-    "checkedAt": "2026-08-08"
-  },
-  {
     "hallId": "H-SEO-20260729-231",
-    "url": "https://wedding.seoulwomen.or.kr/app/uploads/2025/06/%EA%B3%B5%EC%97%B0%EC%A0%84%EC%8B%9C%ED%99%80.jpg",
-    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities",
+    "url": "https://wedding.seoulwomen.or.kr/app/uploads/2024/05/KakaoTalk_20230601_114220003_06.jpg",
+    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities/540",
     "sourceType": "official_website",
     "usageStatus": "official_source_linked",
     "photoKind": "wedding_setup",
@@ -1742,6 +2003,15 @@
     "sourceUrl": "https://thewedd.com/hall-19/",
     "sourceType": "public_listing",
     "usageStatus": "public_source_linked",
+    "photoKind": "wedding_setup",
+    "checkedAt": "2026-08-08"
+  },
+  {
+    "hallId": "H-SEO-20260729-233",
+    "url": "https://cdn.imweb.me/thumbnail/20250801/811b135c7e4c6.png",
+    "sourceUrl": "https://songpa.theconvention.co.kr/",
+    "sourceType": "official_website",
+    "usageStatus": "official_source_linked",
     "photoKind": "wedding_setup",
     "checkedAt": "2026-08-08"
   },
@@ -1809,6 +2079,15 @@
     "checkedAt": "2026-08-08"
   },
   {
+    "hallId": "H-SEO-20260729-254",
+    "url": "https://thewedd.com/wp-content/uploads/2026/01/%EC%97%AC%EC%9D%98%EB%8F%84%EC%9B%A8%EB%94%A9%EC%BB%A8%EB%B2%A4%EC%85%98-1024x609.jpg",
+    "sourceUrl": "https://thewedd.com/hall-212/",
+    "sourceType": "public_listing",
+    "usageStatus": "public_source_linked",
+    "photoKind": "wedding_setup",
+    "checkedAt": "2026-08-08"
+  },
+  {
     "hallId": "H-SEO-20260729-255",
     "url": "https://www.withus.kr/attachList/upload/hall/c20200914124437480/p20201012170149147/pop20240910170038640.jpg",
     "sourceUrl": "https://withus.kr/",
@@ -1836,18 +2115,18 @@
     "checkedAt": "2026-08-08"
   },
   {
-    "hallId": "H-SEO-20260729-264",
-    "url": "https://wedding.seoulwomen.or.kr/app/uploads/2025/06/%EA%B3%B5%EC%97%B0%EC%A0%84%EC%8B%9C%ED%99%80.jpg",
-    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities",
+    "hallId": "H-SEO-20260729-258",
+    "url": "https://cache.marriott.com/content/dam/marriott-renditions/SELCY/selcy-junior-ballroom-2307-hor-wide.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=375px:*",
+    "sourceUrl": "https://www.marriott.com/en-us/hotels/selcy-courtyard-seoul-times-square/photos/",
     "sourceType": "official_website",
     "usageStatus": "official_source_linked",
     "photoKind": "wedding_setup",
     "checkedAt": "2026-08-08"
   },
   {
-    "hallId": "H-SEO-20260729-265",
-    "url": "https://wedding.seoulwomen.or.kr/app/uploads/2025/06/%EA%B3%B5%EC%97%B0%EC%A0%84%EC%8B%9C%ED%99%80.jpg",
-    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities",
+    "hallId": "H-SEO-20260729-264",
+    "url": "https://wedding.seoulwomen.or.kr/app/uploads/2025/12/1000017771-1.jpg",
+    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities/395",
     "sourceType": "official_website",
     "usageStatus": "official_source_linked",
     "photoKind": "wedding_setup",
@@ -1855,8 +2134,8 @@
   },
   {
     "hallId": "H-SEO-20260729-266",
-    "url": "https://wedding.seoulwomen.or.kr/app/uploads/2025/06/%EA%B3%B5%EC%97%B0%EC%A0%84%EC%8B%9C%ED%99%80.jpg",
-    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities",
+    "url": "https://wedding.seoulwomen.or.kr/app/uploads/2024/05/KakaoTalk_20241114_110427282_03-scaled.jpg",
+    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities/527",
     "sourceType": "official_website",
     "usageStatus": "official_source_linked",
     "photoKind": "wedding_setup",
@@ -1864,8 +2143,8 @@
   },
   {
     "hallId": "H-SEO-20260729-267",
-    "url": "https://wedding.seoulwomen.or.kr/app/uploads/2025/06/%EA%B3%B5%EC%97%B0%EC%A0%84%EC%8B%9C%ED%99%80.jpg",
-    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities",
+    "url": "https://wedding.seoulwomen.or.kr/app/uploads/2025/06/13.%EC%98%81%EC%A4%91%EC%A2%85%ED%95%A9%EC%82%AC%ED%9A%8C%EB%B3%B5%EC%A7%80%EA%B4%80-1.png",
+    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities/3215",
     "sourceType": "official_website",
     "usageStatus": "official_source_linked",
     "photoKind": "wedding_setup",
@@ -1881,26 +2160,8 @@
     "checkedAt": "2026-08-08"
   },
   {
-    "hallId": "H-SEO-20260729-272",
-    "url": "https://cdn.imweb.me/upload/S20240204aca494e0b4938/ee67d27078b03.jpg",
-    "sourceUrl": "https://yozmwedding.co.kr/venue/?bmode=view&idx=152195291",
-    "sourceType": "public_listing",
-    "usageStatus": "public_source_linked",
-    "photoKind": "wedding_setup",
-    "checkedAt": "2026-08-08"
-  },
-  {
-    "hallId": "H-SEO-20260729-273",
-    "url": "https://cdn.imweb.me/upload/S20240204aca494e0b4938/ee67d27078b03.jpg",
-    "sourceUrl": "https://yozmwedding.co.kr/venue/?bmode=view&idx=152195291",
-    "sourceType": "public_listing",
-    "usageStatus": "public_source_linked",
-    "photoKind": "wedding_setup",
-    "checkedAt": "2026-08-08"
-  },
-  {
     "hallId": "H-SEO-20260729-276",
-    "url": "https://cdn.imweb.me/upload/S20240204aca494e0b4938/4ef405d8d573f.png",
+    "url": "https://cdn.imweb.me/upload/S20240204aca494e0b4938/11674c7072bb8.jpg",
     "sourceUrl": "https://yozmwedding.co.kr/venue/?bmode=view&idx=152252289",
     "sourceType": "public_listing",
     "usageStatus": "public_source_linked",
@@ -1945,8 +2206,8 @@
   },
   {
     "hallId": "H-SEO-20260729-281",
-    "url": "https://wedding.seoulwomen.or.kr/app/uploads/2025/06/%EA%B3%B5%EC%97%B0%EC%A0%84%EC%8B%9C%ED%99%80.jpg",
-    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities",
+    "url": "https://wedding.seoulwomen.or.kr/app/uploads/2025/06/%EC%9A%A9%EC%82%B0%EC%95%84%ED%8A%B8%ED%99%80-1.png",
+    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities/3219",
     "sourceType": "official_website",
     "usageStatus": "official_source_linked",
     "photoKind": "wedding_setup",
@@ -1954,8 +2215,8 @@
   },
   {
     "hallId": "H-SEO-20260729-284",
-    "url": "https://wedding.seoulwomen.or.kr/app/uploads/2025/06/%EA%B3%B5%EC%97%B0%EC%A0%84%EC%8B%9C%ED%99%80.jpg",
-    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities",
+    "url": "https://wedding.seoulwomen.or.kr/app/uploads/2025/06/11.%EC%84%9C%EC%9A%B8%EB%AC%B8%ED%99%94%EC%98%88%EC%88%A0%EA%B5%90%EC%9C%A1%EC%84%BC%ED%84%B0%EC%9D%80%ED%8F%89.png",
+    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities/3213",
     "sourceType": "official_website",
     "usageStatus": "official_source_linked",
     "photoKind": "wedding_setup",
@@ -1963,10 +2224,19 @@
   },
   {
     "hallId": "H-SEO-20260729-285",
-    "url": "https://wedding.seoulwomen.or.kr/app/uploads/2025/06/%EA%B3%B5%EC%97%B0%EC%A0%84%EC%8B%9C%ED%99%80.jpg",
-    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities",
+    "url": "https://wedding.seoulwomen.or.kr/app/uploads/2025/09/image01-2.png",
+    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities/1519",
     "sourceType": "official_website",
     "usageStatus": "official_source_linked",
+    "photoKind": "wedding_setup",
+    "checkedAt": "2026-08-08"
+  },
+  {
+    "hallId": "H-SEO-20260729-291",
+    "url": "https://thewedd.com/wp-content/uploads/2026/01/%EC%84%B1%EA%B7%A0%EA%B4%80%EC%BB%A8%EB%B2%A4%EC%85%98-1024x677.jpg",
+    "sourceUrl": "https://thewedd.com/hall-240/",
+    "sourceType": "public_listing",
+    "usageStatus": "public_source_linked",
     "photoKind": "wedding_setup",
     "checkedAt": "2026-08-08"
   },
@@ -1974,6 +2244,15 @@
     "hallId": "H-SEO-20260729-294",
     "url": "https://yhwedding.co.kr/attachList/upload/hall/c20201002175533993/p20201002181020067/add20241128171907837.jpg",
     "sourceUrl": "https://yhwedding.co.kr/",
+    "sourceType": "official_website",
+    "usageStatus": "official_source_linked",
+    "photoKind": "wedding_setup",
+    "checkedAt": "2026-08-08"
+  },
+  {
+    "hallId": "H-SEO-20260729-295",
+    "url": "https://www.hwcc.co.kr/attachList/upload/hall/c20220228192838943/p20220228193049450/img20260604103818173.jpg",
+    "sourceUrl": "https://www.hwcc.co.kr/wedding/grand/",
     "sourceType": "official_website",
     "usageStatus": "official_source_linked",
     "photoKind": "wedding_setup",
@@ -1990,8 +2269,8 @@
   },
   {
     "hallId": "H-SEO-20260729-298",
-    "url": "https://wedding.seoulwomen.or.kr/app/uploads/2025/06/%EA%B3%B5%EC%97%B0%EC%A0%84%EC%8B%9C%ED%99%80.jpg",
-    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities",
+    "url": "https://wedding.seoulwomen.or.kr/app/uploads/2025/06/21.%EB%B0%B1%EC%9D%B8%EC%A0%9C%EA%B0%80%EC%98%A5.jpg",
+    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities/3208",
     "sourceType": "official_website",
     "usageStatus": "official_source_linked",
     "photoKind": "wedding_setup",
@@ -1999,8 +2278,17 @@
   },
   {
     "hallId": "H-SEO-20260729-299",
-    "url": "https://wedding.seoulwomen.or.kr/app/uploads/2025/06/%EA%B3%B5%EC%97%B0%EC%A0%84%EC%8B%9C%ED%99%80.jpg",
-    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities",
+    "url": "https://wedding.seoulwomen.or.kr/app/uploads/2024/06/00-%ED%81%AC%EA%B2%8C-min.jpeg",
+    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities/753",
+    "sourceType": "official_website",
+    "usageStatus": "official_source_linked",
+    "photoKind": "wedding_setup",
+    "checkedAt": "2026-08-08"
+  },
+  {
+    "hallId": "H-SEO-20260729-300",
+    "url": "https://kdwedding.co.kr/wp-content/uploads/2025/10/web-1-scaled.jpg",
+    "sourceUrl": "https://kdwedding.co.kr/hall/",
     "sourceType": "official_website",
     "usageStatus": "official_source_linked",
     "photoKind": "wedding_setup",
@@ -2016,9 +2304,99 @@
     "checkedAt": "2026-08-08"
   },
   {
-    "hallId": "H-SEO-20260729-305",
-    "url": "https://cdn.imweb.me/upload/S20250617bb376dcf6ff0e/61a26062c2afa.png",
-    "sourceUrl": "https://www.weddingsquare.co.kr/",
+    "hallId": "H-SEO-20260729-303",
+    "url": "https://mayfield.co.kr/assets/images/wedding/wedding_visual_03_2.png",
+    "sourceUrl": "https://mayfield.co.kr/wedding/belltower.html",
+    "sourceType": "official_website",
+    "usageStatus": "official_source_linked",
+    "photoKind": "wedding_setup",
+    "checkedAt": "2026-08-08"
+  },
+  {
+    "hallId": "H-SEO-20260729-304",
+    "url": "https://mayfield.co.kr/assets/images/wedding/wedding_visual_04_1.png",
+    "sourceUrl": "https://mayfield.co.kr/wedding/atrium.html",
+    "sourceType": "official_website",
+    "usageStatus": "official_source_linked",
+    "photoKind": "wedding_setup",
+    "checkedAt": "2026-08-08"
+  },
+  {
+    "hallId": "H-SEO-20260729-307",
+    "url": "https://www.thelinkseoul.com/img/m0202_img02.jpg",
+    "sourceUrl": "https://www.thelinkseoul.com/bbs/page.php?hid=m02_03",
+    "sourceType": "official_website",
+    "usageStatus": "official_source_linked",
+    "photoKind": "wedding_setup",
+    "checkedAt": "2026-08-08"
+  },
+  {
+    "hallId": "H-SEO-20260729-308",
+    "url": "https://www.thelinkseoul.com/data/apms/background/plaza%20hall.jpg",
+    "sourceUrl": "https://www.thelinkseoul.com/bbs/page.php?hid=m02_04",
+    "sourceType": "official_website",
+    "usageStatus": "official_source_linked",
+    "photoKind": "wedding_setup",
+    "checkedAt": "2026-08-08"
+  },
+  {
+    "hallId": "H-SEO-20260729-309",
+    "url": "https://www.thelinkseoul.com/data/apms/background/garden%20hall_1018.jpg",
+    "sourceUrl": "https://www.thelinkseoul.com/bbs/page.php?hid=m02_05",
+    "sourceType": "official_website",
+    "usageStatus": "official_source_linked",
+    "photoKind": "wedding_setup",
+    "checkedAt": "2026-08-08"
+  },
+  {
+    "hallId": "H-SEO-20260729-310",
+    "url": "https://www.thelinkseoul.com/data/apms/background/%ED%99%94%EC%9D%B4%ED%8A%B8%20%ED%99%80%20%EB%A9%94%EC%9D%B8%20%EC%82%AC%EC%9D%B4%EC%A6%88%20last.jpg",
+    "sourceUrl": "https://www.thelinkseoul.com/bbs/page.php?hid=m02_06",
+    "sourceType": "official_website",
+    "usageStatus": "official_source_linked",
+    "photoKind": "wedding_setup",
+    "checkedAt": "2026-08-08"
+  },
+  {
+    "hallId": "H-SEO-20260729-314",
+    "url": "https://cdn.imweb.me/upload/S202505168c93021778743/019590757f9df.png",
+    "sourceUrl": "https://sindorim.thebennevis.co.kr/",
+    "sourceType": "official_website",
+    "usageStatus": "official_source_linked",
+    "photoKind": "wedding_setup",
+    "checkedAt": "2026-08-08"
+  },
+  {
+    "hallId": "H-SEO-20260729-315",
+    "url": "https://cdn.imweb.me/upload/S202505168c93021778743/a2c98604e567b.png",
+    "sourceUrl": "https://sindorim.thebennevis.co.kr/",
+    "sourceType": "official_website",
+    "usageStatus": "official_source_linked",
+    "photoKind": "wedding_setup",
+    "checkedAt": "2026-08-08"
+  },
+  {
+    "hallId": "H-SEO-20260729-320",
+    "url": "https://samcheonggak.or.kr/attachList/upload/hall/c20220424170637373/p20220425073750723/img20220425075201783.jpg",
+    "sourceUrl": "https://samcheonggak.or.kr/tour/cheongcheondang/",
+    "sourceType": "official_website",
+    "usageStatus": "official_source_linked",
+    "photoKind": "wedding_setup",
+    "checkedAt": "2026-08-08"
+  },
+  {
+    "hallId": "H-SEO-20260729-321",
+    "url": "https://samcheonggak.or.kr/attachList/upload/hall/c20220424170637373/p20220425105500080/img20220425110127677.jpg",
+    "sourceUrl": "https://samcheonggak.or.kr/tour/yuhajeong/",
+    "sourceType": "official_website",
+    "usageStatus": "official_source_linked",
+    "photoKind": "wedding_setup",
+    "checkedAt": "2026-08-08"
+  },
+  {
+    "hallId": "H-SEO-20260729-323",
+    "url": "https://cdn.imweb.me/thumbnail/20250801/71fe94a0f4da9.png",
+    "sourceUrl": "https://songpa.theconvention.co.kr/",
     "sourceType": "official_website",
     "usageStatus": "official_source_linked",
     "photoKind": "wedding_setup",
@@ -2061,6 +2439,24 @@
     "checkedAt": "2026-08-08"
   },
   {
+    "hallId": "H-SEO-20260729-337",
+    "url": "https://www.hwcc.co.kr/attachList/upload/hall/c20220301103155517/p20220301181307990/img20251217172615457.jpg",
+    "sourceUrl": "https://www.hwcc.co.kr/wedding/emerald/",
+    "sourceType": "official_website",
+    "usageStatus": "official_source_linked",
+    "photoKind": "wedding_setup",
+    "checkedAt": "2026-08-08"
+  },
+  {
+    "hallId": "H-SEO-20260729-338",
+    "url": "https://www.hwcc.co.kr/attachList/upload/hall/c20220228192838943/p20220301164617957/img20251217173459653.jpg",
+    "sourceUrl": "https://www.hwcc.co.kr/wedding/crystal/",
+    "sourceType": "official_website",
+    "usageStatus": "official_source_linked",
+    "photoKind": "wedding_setup",
+    "checkedAt": "2026-08-08"
+  },
+  {
     "hallId": "H-SEO-20260729-340",
     "url": "https://cdn.imweb.me/upload/S2024100788c40fba991cd/ea75821b96159.png",
     "sourceUrl": "https://thefirstwedding.com/139/?idx=72",
@@ -2088,6 +2484,15 @@
     "checkedAt": "2026-08-08"
   },
   {
+    "hallId": "H-SEO-20260730-002",
+    "url": "https://storage.googleapis.com/cr-resource/image/a09556ebd7121bce97f7bbb8eb2598c8/livoire/650/57f787c0c46a633243867d60dd141323.jpg?_1786186502",
+    "sourceUrl": "https://www.livoire.kr/",
+    "sourceType": "official_website",
+    "usageStatus": "official_source_linked",
+    "photoKind": "wedding_setup",
+    "checkedAt": "2026-08-08"
+  },
+  {
     "hallId": "H-SEO-20260730-005",
     "url": "https://arteseoul.kr/images/lumiere_1.jpg",
     "sourceUrl": "https://arteseoul.kr/",
@@ -2100,6 +2505,78 @@
     "hallId": "H-SEO-20260730-006",
     "url": "https://arteseoul.kr/images/arte_3.jpg",
     "sourceUrl": "https://arteseoul.kr/",
+    "sourceType": "official_website",
+    "usageStatus": "official_source_linked",
+    "photoKind": "wedding_setup",
+    "checkedAt": "2026-08-08"
+  },
+  {
+    "hallId": "H-SEO-20260808-001",
+    "url": "https://www.bellaluceseoul.co.kr/attachList/upload/hall/c20240314181727390/p20240619164104287/pop20240619164317657.jpg",
+    "sourceUrl": "https://www.bellaluceseoul.co.kr/view/floce",
+    "sourceType": "official_website",
+    "usageStatus": "official_source_linked",
+    "photoKind": "wedding_setup",
+    "checkedAt": "2026-08-08"
+  },
+  {
+    "hallId": "H-SEO-20260808-002",
+    "url": "https://www.bellaluceseoul.co.kr/attachList/upload/hall/c20240314181727390/p20240314181807943/pop20240721140201807.jpg",
+    "sourceUrl": "https://www.bellaluceseoul.co.kr/view/floce",
+    "sourceType": "official_website",
+    "usageStatus": "official_source_linked",
+    "photoKind": "wedding_setup",
+    "checkedAt": "2026-08-08"
+  },
+  {
+    "hallId": "H-SEO-20260808-003",
+    "url": "https://cdn.imweb.me/upload/S20240204aca494e0b4938/f2ed60678d8e3.png",
+    "sourceUrl": "https://yozmwedding.co.kr/venue/?bmode=view&idx=18336064",
+    "sourceType": "public_listing",
+    "usageStatus": "public_source_linked",
+    "photoKind": "wedding_setup",
+    "checkedAt": "2026-08-08"
+  },
+  {
+    "hallId": "H-SEO-20260808-004",
+    "url": "https://cdn.imweb.me/upload/S20240204aca494e0b4938/d67970895d811.jpg",
+    "sourceUrl": "https://yozmwedding.co.kr/venue/?bmode=view&idx=18410968",
+    "sourceType": "public_listing",
+    "usageStatus": "public_source_linked",
+    "photoKind": "wedding_setup",
+    "checkedAt": "2026-08-08"
+  },
+  {
+    "hallId": "H-SEO-20260808-005",
+    "url": "https://cache.marriott.com/is/image/marriotts7prod/ar-selag-outdoor-wedding-30222:Wide-Hor?wid=1336&fit=constrain",
+    "sourceUrl": "https://www.marriott.com/ko/hotels/selag-ac-hotel-seoul-gangnam/photos/",
+    "sourceType": "official_website",
+    "usageStatus": "official_source_linked",
+    "photoKind": "wedding_setup",
+    "checkedAt": "2026-08-08"
+  },
+  {
+    "hallId": "H-SEO-20260808-006",
+    "url": "https://shinsegae-prd-data.s3.ap-northeast-2.amazonaws.com/wp-content/uploads/2025/08/westin-chosun-seoul-wedding-concept_2.png",
+    "sourceUrl": "https://www.shinsegaegroupnewsroom.com/westin-chosun-seoul-wedding-concept/",
+    "sourceType": "official_website",
+    "usageStatus": "official_source_linked",
+    "photoKind": "wedding_setup",
+    "checkedAt": "2026-08-08"
+  },
+  {
+    "hallId": "H-SEO-20260808-007",
+    "url": "https://www.homehmc.com/upfiles/article/20240815025327_456399000.png",
+    "sourceUrl": "https://www.homehmc.com/ko/oakwood-seoul-coex/banquets-and-events/weddings/",
+    "sourceType": "official_website",
+    "usageStatus": "official_source_linked",
+    "photoKind": "wedding_setup",
+    "checkedAt": "2026-08-08"
+  },
+  {
+    "hallId": "H-SEO-20260808-008",
+    "url": "https://www.homehmc.com/upfiles/article/20240815022505_677527400.jpg",
+    "sourceUrl": "https://www.homehmc.com/ko/oakwood-seoul-coex/banquets-and-events/weddings/",
     "sourceType": "official_website",
     "usageStatus": "official_source_linked",
     "photoKind": "wedding_setup",

@@ -3,7 +3,8 @@ import discoveredPhotoSeedsJson from "./hall-photos.discovered.generated.json";
 import hallPhotoReplacementsJson from "./hall-photo-replacements.generated.json";
 import hallPhotoVerificationOverridesJson from "./hall-photo-verification.generated.json";
 import {
-  siblingDuplicateHallIds,
+  duplicatePhotoHallIds,
+  isKnownRejectedHallPhotoAsset,
   verificationForPhoto,
   type HallPhotoVerificationOverrides,
 } from "../domain/hall-photo-audit";
@@ -288,7 +289,7 @@ const photoSeedRows = Object.entries(allPhotoSeeds).map(([hallId, photo]) => ({
   hallId,
   url: photo.url,
 }));
-const duplicateHallIds = siblingDuplicateHallIds(hallsJson, photoSeedRows);
+const duplicateHallIds = duplicatePhotoHallIds(photoSeedRows);
 const verificationOverrides =
   hallPhotoVerificationOverridesJson as HallPhotoVerificationOverrides;
 
@@ -355,7 +356,8 @@ export function photosForHall(hallId: string): HallPhoto[] {
     .filter(
       (photo) =>
         publicUsageStatuses.has(photo.usageStatus) &&
-        photo.identityStatus === "hall_confirmed",
+        photo.identityStatus === "hall_confirmed" &&
+        !isKnownRejectedHallPhotoAsset(photo),
     )
     .sort((a, b) => Number(b.isPrimary) - Number(a.isPrimary));
 }

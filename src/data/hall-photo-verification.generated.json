@@ -1,214 +1,4 @@
 {
-  "H-GG-GP-20260808-004": {
-    "identityStatus": "hall_confirmed",
-    "verificationMethod": "official_single_hall_venue",
-    "verificationNote": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
-  },
-  "H-GG-GP-20260808-010": {
-    "identityStatus": "hall_confirmed",
-    "verificationMethod": "official_single_hall_venue",
-    "verificationNote": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
-  },
-  "H-GG-PA-20260808-005": {
-    "identityStatus": "hall_confirmed",
-    "verificationMethod": "public_named_listing",
-    "verificationNote": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
-  },
-  "H-GG-PA-20260808-013": {
-    "identityStatus": "hall_confirmed",
-    "verificationMethod": "official_single_hall_venue",
-    "verificationNote": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
-  },
-  "H-GG-PA-20260808-017": {
-    "identityStatus": "hall_confirmed",
-    "verificationMethod": "official_named_gallery",
-    "verificationNote": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
-  },
-  "H-GG-PA-20260808-018": {
-    "identityStatus": "hall_confirmed",
-    "verificationMethod": "official_named_gallery",
-    "verificationNote": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
-  },
-  "H-GG-REST-20260808-032": {
-    "identityStatus": "hall_confirmed",
-    "verificationMethod": "official_single_hall_venue",
-    "verificationNote": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
-  },
-  "H-GG-REST-20260808-034": {
-    "identityStatus": "hall_confirmed",
-    "verificationMethod": "official_single_hall_venue",
-    "verificationNote": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
-  },
-  "H-GG-REST-20260808-036": {
-    "identityStatus": "hall_confirmed",
-    "verificationMethod": "official_single_hall_venue",
-    "verificationNote": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
-  },
-  "H-GG-REST-20260808-038": {
-    "identityStatus": "hall_confirmed",
-    "verificationMethod": "official_single_hall_venue",
-    "verificationNote": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
-  },
-  "H-GG-REST-20260808-039": {
-    "identityStatus": "hall_confirmed",
-    "verificationMethod": "official_single_hall_venue",
-    "verificationNote": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
-  },
-  "H-GG-REST-20260808-041": {
-    "identityStatus": "hall_confirmed",
-    "verificationMethod": "official_single_hall_venue",
-    "verificationNote": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
-  },
-  "H-GG-REST-20260808-044": {
-    "identityStatus": "hall_confirmed",
-    "verificationMethod": "official_single_hall_venue",
-    "verificationNote": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
-  },
-  "H-GG-REST-20260808-047": {
-    "identityStatus": "hall_confirmed",
-    "verificationMethod": "official_single_hall_venue",
-    "verificationNote": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
-  },
-  "H-GG-REST-20260808-048": {
-    "identityStatus": "hall_confirmed",
-    "verificationMethod": "official_single_hall_venue",
-    "verificationNote": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
-  },
-  "H-GG-REST-20260808-050": {
-    "identityStatus": "hall_confirmed",
-    "verificationMethod": "official_named_gallery",
-    "verificationNote": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
-  },
-  "H-GG-REST-20260808-051": {
-    "identityStatus": "hall_confirmed",
-    "verificationMethod": "official_named_gallery",
-    "verificationNote": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
-  },
-  "H-GG-REST-20260808-052": {
-    "identityStatus": "hall_confirmed",
-    "verificationMethod": "official_named_gallery",
-    "verificationNote": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
-  },
-  "H-GG-REST-20260808-053": {
-    "identityStatus": "hall_confirmed",
-    "verificationMethod": "official_named_gallery",
-    "verificationNote": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
-  },
-  "H-GG-REST-20260808-054": {
-    "identityStatus": "hall_confirmed",
-    "verificationMethod": "official_single_hall_venue",
-    "verificationNote": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
-  },
-  "H-GG-REST-20260808-059": {
-    "identityStatus": "hall_confirmed",
-    "verificationMethod": "official_named_gallery",
-    "verificationNote": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
-  },
-  "H-GG-REST-20260808-060": {
-    "identityStatus": "hall_confirmed",
-    "verificationMethod": "official_named_gallery",
-    "verificationNote": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
-  },
-  "H-GG-REST-20260808-061": {
-    "identityStatus": "hall_confirmed",
-    "verificationMethod": "official_named_gallery",
-    "verificationNote": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
-  },
-  "H-GG-REST-20260808-062": {
-    "identityStatus": "hall_confirmed",
-    "verificationMethod": "official_single_hall_venue",
-    "verificationNote": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
-  },
-  "H-GG-REST-20260808-069": {
-    "identityStatus": "hall_confirmed",
-    "verificationMethod": "official_single_hall_venue",
-    "verificationNote": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
-  },
-  "H-GG-SHG-20260808-001": {
-    "identityStatus": "hall_confirmed",
-    "verificationMethod": "official_named_gallery",
-    "verificationNote": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
-  },
-  "H-GG-SHG-20260808-002": {
-    "identityStatus": "hall_confirmed",
-    "verificationMethod": "official_named_gallery",
-    "verificationNote": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
-  },
-  "H-GG-SHG-20260808-007": {
-    "identityStatus": "hall_confirmed",
-    "verificationMethod": "public_named_listing",
-    "verificationNote": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
-  },
-  "H-GG-SHG-20260808-010": {
-    "identityStatus": "hall_confirmed",
-    "verificationMethod": "official_named_gallery",
-    "verificationNote": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
-  },
-  "H-GG-SHG-20260808-011": {
-    "identityStatus": "hall_confirmed",
-    "verificationMethod": "official_named_gallery",
-    "verificationNote": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
-  },
-  "H-GG-SHG-20260808-013": {
-    "identityStatus": "hall_confirmed",
-    "verificationMethod": "public_named_listing",
-    "verificationNote": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
-  },
-  "H-GG-SUW-20260808-001": {
-    "identityStatus": "hall_confirmed",
-    "verificationMethod": "official_single_hall_venue",
-    "verificationNote": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
-  },
-  "H-GG-SUW-20260808-005": {
-    "identityStatus": "hall_confirmed",
-    "verificationMethod": "public_named_listing",
-    "verificationNote": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
-  },
-  "H-GG-SUW-20260808-008": {
-    "identityStatus": "hall_confirmed",
-    "verificationMethod": "official_single_hall_venue",
-    "verificationNote": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
-  },
-  "H-GG-SUW-20260808-020": {
-    "identityStatus": "hall_confirmed",
-    "verificationMethod": "public_named_listing",
-    "verificationNote": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
-  },
-  "H-GG-SUW-20260808-023": {
-    "identityStatus": "hall_confirmed",
-    "verificationMethod": "official_named_gallery",
-    "verificationNote": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
-  },
-  "H-GG-SUW-20260808-025": {
-    "identityStatus": "hall_confirmed",
-    "verificationMethod": "official_single_hall_venue",
-    "verificationNote": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
-  },
-  "H-GG-YON-20260808-002": {
-    "identityStatus": "hall_confirmed",
-    "verificationMethod": "official_single_hall_venue",
-    "verificationNote": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
-  },
-  "H-GG-YON-20260808-004": {
-    "identityStatus": "hall_confirmed",
-    "verificationMethod": "official_single_hall_venue",
-    "verificationNote": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
-  },
-  "H-GG-YON-20260808-008": {
-    "identityStatus": "hall_confirmed",
-    "verificationMethod": "official_single_hall_venue",
-    "verificationNote": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
-  },
-  "H-GG-YON-20260808-009": {
-    "identityStatus": "hall_confirmed",
-    "verificationMethod": "official_named_gallery",
-    "verificationNote": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
-  },
-  "H-GG-YON-20260808-010": {
-    "identityStatus": "hall_confirmed",
-    "verificationMethod": "official_named_gallery",
-    "verificationNote": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
-  },
   "H-SEO-20260728-006": {
     "identityStatus": "hall_confirmed",
     "verificationMethod": "public_named_listing",
@@ -241,7 +31,7 @@
   },
   "H-SEO-20260728-017": {
     "identityStatus": "hall_confirmed",
-    "verificationMethod": "official_named_gallery",
+    "verificationMethod": "public_named_listing",
     "verificationNote": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
   },
   "H-SEO-20260728-018": {
@@ -274,21 +64,6 @@
     "verificationMethod": "public_named_listing",
     "verificationNote": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
   },
-  "H-SEO-20260728-024": {
-    "identityStatus": "hall_confirmed",
-    "verificationMethod": "official_single_hall_venue",
-    "verificationNote": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
-  },
-  "H-SEO-20260728-026": {
-    "identityStatus": "hall_confirmed",
-    "verificationMethod": "official_single_hall_venue",
-    "verificationNote": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
-  },
-  "H-SEO-20260728-027": {
-    "identityStatus": "hall_confirmed",
-    "verificationMethod": "official_single_hall_venue",
-    "verificationNote": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
-  },
   "H-SEO-20260728-028": {
     "identityStatus": "hall_confirmed",
     "verificationMethod": "public_named_listing",
@@ -301,7 +76,7 @@
   },
   "H-SEO-20260728-030": {
     "identityStatus": "hall_confirmed",
-    "verificationMethod": "public_named_listing",
+    "verificationMethod": "official_single_hall_venue",
     "verificationNote": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
   },
   "H-SEO-20260728-031": {
@@ -419,20 +194,10 @@
     "verificationMethod": "official_single_hall_venue",
     "verificationNote": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
   },
-  "H-SEO-20260728-065": {
-    "identityStatus": "hall_confirmed",
-    "verificationMethod": "official_named_gallery",
-    "verificationNote": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
-  },
   "H-SEO-20260728-066": {
     "identityStatus": "hall_confirmed",
-    "verificationMethod": "public_named_listing",
+    "verificationMethod": "official_single_hall_venue",
     "verificationNote": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
-  },
-  "H-SEO-20260728-067": {
-    "identityStatus": "hall_confirmed",
-    "verificationMethod": "public_named_listing",
-    "verificationNote": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
   },
   "H-SEO-20260728-068": {
     "identityStatus": "hall_confirmed",
@@ -454,16 +219,6 @@
     "verificationMethod": "public_named_listing",
     "verificationNote": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
   },
-  "H-SEO-20260728-074": {
-    "identityStatus": "hall_confirmed",
-    "verificationMethod": "official_single_hall_venue",
-    "verificationNote": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
-  },
-  "H-SEO-20260728-075": {
-    "identityStatus": "hall_confirmed",
-    "verificationMethod": "official_single_hall_venue",
-    "verificationNote": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
-  },
   "H-SEO-20260728-078": {
     "identityStatus": "hall_confirmed",
     "verificationMethod": "official_named_gallery",
@@ -483,11 +238,6 @@
     "identityStatus": "hall_confirmed",
     "verificationMethod": "public_named_listing",
     "verificationNote": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
-  },
-  "H-SEO-20260728-086": {
-    "identityStatus": "hall_confirmed",
-    "verificationMethod": "official_named_gallery",
-    "verificationNote": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
   },
   "H-SEO-20260728-087": {
     "identityStatus": "hall_confirmed",
@@ -529,11 +279,6 @@
     "verificationMethod": "public_named_listing",
     "verificationNote": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
   },
-  "H-SEO-20260729-096": {
-    "identityStatus": "hall_confirmed",
-    "verificationMethod": "public_named_listing",
-    "verificationNote": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
-  },
   "H-SEO-20260729-097": {
     "identityStatus": "hall_confirmed",
     "verificationMethod": "public_named_listing",
@@ -542,11 +287,6 @@
   "H-SEO-20260729-098": {
     "identityStatus": "hall_confirmed",
     "verificationMethod": "public_named_listing",
-    "verificationNote": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
-  },
-  "H-SEO-20260729-100": {
-    "identityStatus": "hall_confirmed",
-    "verificationMethod": "official_named_gallery",
     "verificationNote": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
   },
   "H-SEO-20260729-101": {
@@ -564,40 +304,20 @@
     "verificationMethod": "public_named_listing",
     "verificationNote": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
   },
-  "H-SEO-20260729-111": {
-    "identityStatus": "hall_confirmed",
-    "verificationMethod": "official_named_gallery",
-    "verificationNote": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
-  },
   "H-SEO-20260729-113": {
     "identityStatus": "hall_confirmed",
     "verificationMethod": "official_named_gallery",
     "verificationNote": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
   },
-  "H-SEO-20260729-118": {
+  "H-SEO-20260729-115": {
     "identityStatus": "hall_confirmed",
-    "verificationMethod": "official_single_hall_venue",
-    "verificationNote": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+    "verificationMethod": "official_named_gallery",
+    "verificationNote": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
   },
   "H-SEO-20260729-119": {
     "identityStatus": "hall_confirmed",
     "verificationMethod": "public_named_listing",
     "verificationNote": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
-  },
-  "H-SEO-20260729-121": {
-    "identityStatus": "hall_confirmed",
-    "verificationMethod": "public_named_listing",
-    "verificationNote": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
-  },
-  "H-SEO-20260729-122": {
-    "identityStatus": "hall_confirmed",
-    "verificationMethod": "official_single_hall_venue",
-    "verificationNote": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
-  },
-  "H-SEO-20260729-123": {
-    "identityStatus": "hall_confirmed",
-    "verificationMethod": "official_single_hall_venue",
-    "verificationNote": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
   },
   "H-SEO-20260729-128": {
     "identityStatus": "hall_confirmed",
@@ -609,40 +329,30 @@
     "verificationMethod": "official_single_hall_venue",
     "verificationNote": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
   },
-  "H-SEO-20260729-130": {
+  "H-SEO-20260729-139": {
     "identityStatus": "hall_confirmed",
-    "verificationMethod": "official_single_hall_venue",
-    "verificationNote": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+    "verificationMethod": "official_named_gallery",
+    "verificationNote": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
   },
-  "H-SEO-20260729-131": {
+  "H-SEO-20260729-140": {
     "identityStatus": "hall_confirmed",
-    "verificationMethod": "official_single_hall_venue",
-    "verificationNote": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+    "verificationMethod": "official_hall_page",
+    "verificationNote": "공식 웨딩 페이지의 그랜드홀 사진 대체 텍스트와 섹션에서 홀명을 확인함."
   },
-  "H-SEO-20260729-132": {
+  "H-SEO-20260729-141": {
     "identityStatus": "hall_confirmed",
-    "verificationMethod": "official_single_hall_venue",
-    "verificationNote": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
-  },
-  "H-SEO-20260729-133": {
-    "identityStatus": "hall_confirmed",
-    "verificationMethod": "official_single_hall_venue",
-    "verificationNote": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
-  },
-  "H-SEO-20260729-136": {
-    "identityStatus": "hall_confirmed",
-    "verificationMethod": "official_single_hall_venue",
-    "verificationNote": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
-  },
-  "H-SEO-20260729-138": {
-    "identityStatus": "hall_confirmed",
-    "verificationMethod": "official_single_hall_venue",
-    "verificationNote": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+    "verificationMethod": "official_named_gallery",
+    "verificationNote": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
   },
   "H-SEO-20260729-142": {
     "identityStatus": "hall_confirmed",
     "verificationMethod": "public_named_listing",
     "verificationNote": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  "H-SEO-20260729-144": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_named_gallery",
+    "verificationNote": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
   },
   "H-SEO-20260729-145": {
     "identityStatus": "hall_confirmed",
@@ -659,17 +369,7 @@
     "verificationMethod": "public_named_listing",
     "verificationNote": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
   },
-  "H-SEO-20260729-148": {
-    "identityStatus": "hall_confirmed",
-    "verificationMethod": "official_single_hall_venue",
-    "verificationNote": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
-  },
   "H-SEO-20260729-149": {
-    "identityStatus": "hall_confirmed",
-    "verificationMethod": "official_single_hall_venue",
-    "verificationNote": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
-  },
-  "H-SEO-20260729-150": {
     "identityStatus": "hall_confirmed",
     "verificationMethod": "official_single_hall_venue",
     "verificationNote": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
@@ -679,24 +379,9 @@
     "verificationMethod": "official_single_hall_venue",
     "verificationNote": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
   },
-  "H-SEO-20260729-152": {
-    "identityStatus": "hall_confirmed",
-    "verificationMethod": "public_named_listing",
-    "verificationNote": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
-  },
-  "H-SEO-20260729-160": {
-    "identityStatus": "hall_confirmed",
-    "verificationMethod": "official_single_hall_venue",
-    "verificationNote": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
-  },
   "H-SEO-20260729-161": {
     "identityStatus": "hall_confirmed",
     "verificationMethod": "public_named_listing",
-    "verificationNote": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
-  },
-  "H-SEO-20260729-162": {
-    "identityStatus": "hall_confirmed",
-    "verificationMethod": "official_single_hall_venue",
     "verificationNote": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
   },
   "H-SEO-20260729-163": {
@@ -712,36 +397,6 @@
   "H-SEO-20260729-165": {
     "identityStatus": "hall_confirmed",
     "verificationMethod": "public_named_listing",
-    "verificationNote": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
-  },
-  "H-SEO-20260729-166": {
-    "identityStatus": "hall_confirmed",
-    "verificationMethod": "official_single_hall_venue",
-    "verificationNote": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
-  },
-  "H-SEO-20260729-167": {
-    "identityStatus": "hall_confirmed",
-    "verificationMethod": "official_single_hall_venue",
-    "verificationNote": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
-  },
-  "H-SEO-20260729-168": {
-    "identityStatus": "hall_confirmed",
-    "verificationMethod": "official_single_hall_venue",
-    "verificationNote": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
-  },
-  "H-SEO-20260729-170": {
-    "identityStatus": "hall_confirmed",
-    "verificationMethod": "official_single_hall_venue",
-    "verificationNote": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
-  },
-  "H-SEO-20260729-171": {
-    "identityStatus": "hall_confirmed",
-    "verificationMethod": "official_single_hall_venue",
-    "verificationNote": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
-  },
-  "H-SEO-20260729-172": {
-    "identityStatus": "hall_confirmed",
-    "verificationMethod": "official_single_hall_venue",
     "verificationNote": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
   },
   "H-SEO-20260729-173": {
@@ -764,40 +419,10 @@
     "verificationMethod": "public_named_listing",
     "verificationNote": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
   },
-  "H-SEO-20260729-178": {
-    "identityStatus": "hall_confirmed",
-    "verificationMethod": "official_single_hall_venue",
-    "verificationNote": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
-  },
-  "H-SEO-20260729-179": {
-    "identityStatus": "hall_confirmed",
-    "verificationMethod": "official_single_hall_venue",
-    "verificationNote": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
-  },
   "H-SEO-20260729-180": {
     "identityStatus": "hall_confirmed",
     "verificationMethod": "public_named_listing",
     "verificationNote": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
-  },
-  "H-SEO-20260729-183": {
-    "identityStatus": "hall_confirmed",
-    "verificationMethod": "official_single_hall_venue",
-    "verificationNote": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
-  },
-  "H-SEO-20260729-184": {
-    "identityStatus": "hall_confirmed",
-    "verificationMethod": "official_single_hall_venue",
-    "verificationNote": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
-  },
-  "H-SEO-20260729-185": {
-    "identityStatus": "hall_confirmed",
-    "verificationMethod": "public_named_listing",
-    "verificationNote": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
-  },
-  "H-SEO-20260729-187": {
-    "identityStatus": "hall_confirmed",
-    "verificationMethod": "public_named_listing",
-    "verificationNote": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
   },
   "H-SEO-20260729-188": {
     "identityStatus": "hall_confirmed",
@@ -805,11 +430,6 @@
     "verificationNote": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
   },
   "H-SEO-20260729-191": {
-    "identityStatus": "hall_confirmed",
-    "verificationMethod": "official_single_hall_venue",
-    "verificationNote": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
-  },
-  "H-SEO-20260729-192": {
     "identityStatus": "hall_confirmed",
     "verificationMethod": "official_single_hall_venue",
     "verificationNote": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
@@ -848,6 +468,11 @@
     "identityStatus": "hall_confirmed",
     "verificationMethod": "public_named_listing",
     "verificationNote": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  "H-SEO-20260729-203": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_named_gallery",
+    "verificationNote": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
   },
   "H-SEO-20260729-204": {
     "identityStatus": "hall_confirmed",
@@ -894,27 +519,7 @@
     "verificationMethod": "public_named_listing",
     "verificationNote": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
   },
-  "H-SEO-20260729-214": {
-    "identityStatus": "hall_confirmed",
-    "verificationMethod": "official_single_hall_venue",
-    "verificationNote": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
-  },
   "H-SEO-20260729-215": {
-    "identityStatus": "hall_confirmed",
-    "verificationMethod": "official_single_hall_venue",
-    "verificationNote": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
-  },
-  "H-SEO-20260729-216": {
-    "identityStatus": "hall_confirmed",
-    "verificationMethod": "official_single_hall_venue",
-    "verificationNote": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
-  },
-  "H-SEO-20260729-217": {
-    "identityStatus": "hall_confirmed",
-    "verificationMethod": "official_single_hall_venue",
-    "verificationNote": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
-  },
-  "H-SEO-20260729-218": {
     "identityStatus": "hall_confirmed",
     "verificationMethod": "official_single_hall_venue",
     "verificationNote": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
@@ -929,19 +534,14 @@
     "verificationMethod": "public_named_listing",
     "verificationNote": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
   },
-  "H-SEO-20260729-222": {
+  "H-SEO-20260729-221": {
     "identityStatus": "hall_confirmed",
     "verificationMethod": "public_named_listing",
     "verificationNote": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
   },
-  "H-SEO-20260729-223": {
+  "H-SEO-20260729-222": {
     "identityStatus": "hall_confirmed",
-    "verificationMethod": "official_single_hall_venue",
-    "verificationNote": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
-  },
-  "H-SEO-20260729-224": {
-    "identityStatus": "hall_confirmed",
-    "verificationMethod": "official_single_hall_venue",
+    "verificationMethod": "public_named_listing",
     "verificationNote": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
   },
   "H-SEO-20260729-225": {
@@ -953,16 +553,6 @@
     "identityStatus": "hall_confirmed",
     "verificationMethod": "official_named_gallery",
     "verificationNote": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
-  },
-  "H-SEO-20260729-229": {
-    "identityStatus": "hall_confirmed",
-    "verificationMethod": "official_named_gallery",
-    "verificationNote": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
-  },
-  "H-SEO-20260729-231": {
-    "identityStatus": "hall_confirmed",
-    "verificationMethod": "official_single_hall_venue",
-    "verificationNote": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
   },
   "H-SEO-20260729-232": {
     "identityStatus": "hall_confirmed",
@@ -1004,6 +594,11 @@
     "verificationMethod": "public_named_listing",
     "verificationNote": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
   },
+  "H-SEO-20260729-254": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "public_named_listing",
+    "verificationNote": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
   "H-SEO-20260729-255": {
     "identityStatus": "hall_confirmed",
     "verificationMethod": "official_named_gallery",
@@ -1019,40 +614,10 @@
     "verificationMethod": "public_named_listing",
     "verificationNote": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
   },
-  "H-SEO-20260729-264": {
-    "identityStatus": "hall_confirmed",
-    "verificationMethod": "official_single_hall_venue",
-    "verificationNote": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
-  },
-  "H-SEO-20260729-265": {
-    "identityStatus": "hall_confirmed",
-    "verificationMethod": "official_single_hall_venue",
-    "verificationNote": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
-  },
-  "H-SEO-20260729-266": {
-    "identityStatus": "hall_confirmed",
-    "verificationMethod": "official_single_hall_venue",
-    "verificationNote": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
-  },
-  "H-SEO-20260729-267": {
-    "identityStatus": "hall_confirmed",
-    "verificationMethod": "official_single_hall_venue",
-    "verificationNote": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
-  },
   "H-SEO-20260729-271": {
     "identityStatus": "hall_confirmed",
     "verificationMethod": "public_named_listing",
     "verificationNote": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
-  },
-  "H-SEO-20260729-272": {
-    "identityStatus": "hall_confirmed",
-    "verificationMethod": "public_named_listing",
-    "verificationNote": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
-  },
-  "H-SEO-20260729-273": {
-    "identityStatus": "hall_confirmed",
-    "verificationMethod": "public_named_listing",
-    "verificationNote": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
   },
   "H-SEO-20260729-276": {
     "identityStatus": "hall_confirmed",
@@ -1079,19 +644,9 @@
     "verificationMethod": "official_single_hall_venue",
     "verificationNote": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
   },
-  "H-SEO-20260729-281": {
+  "H-SEO-20260729-291": {
     "identityStatus": "hall_confirmed",
-    "verificationMethod": "official_single_hall_venue",
-    "verificationNote": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
-  },
-  "H-SEO-20260729-284": {
-    "identityStatus": "hall_confirmed",
-    "verificationMethod": "official_single_hall_venue",
-    "verificationNote": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
-  },
-  "H-SEO-20260729-285": {
-    "identityStatus": "hall_confirmed",
-    "verificationMethod": "official_single_hall_venue",
+    "verificationMethod": "public_named_listing",
     "verificationNote": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
   },
   "H-SEO-20260729-294": {
@@ -1104,25 +659,25 @@
     "verificationMethod": "official_single_hall_venue",
     "verificationNote": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
   },
-  "H-SEO-20260729-298": {
+  "H-SEO-20260729-300": {
     "identityStatus": "hall_confirmed",
-    "verificationMethod": "official_single_hall_venue",
-    "verificationNote": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
-  },
-  "H-SEO-20260729-299": {
-    "identityStatus": "hall_confirmed",
-    "verificationMethod": "official_single_hall_venue",
-    "verificationNote": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+    "verificationMethod": "official_named_gallery",
+    "verificationNote": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
   },
   "H-SEO-20260729-302": {
     "identityStatus": "hall_confirmed",
     "verificationMethod": "official_named_gallery",
     "verificationNote": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
   },
-  "H-SEO-20260729-305": {
+  "H-SEO-20260729-320": {
     "identityStatus": "hall_confirmed",
-    "verificationMethod": "official_named_gallery",
-    "verificationNote": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
+    "verificationMethod": "official_hall_page",
+    "verificationNote": "삼청각 공식 청천당 상세 페이지의 대표 공간 사진으로 확인함."
+  },
+  "H-SEO-20260729-321": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_hall_page",
+    "verificationNote": "삼청각 공식 유하정 상세 페이지의 대표 공간 사진으로 확인함."
   },
   "H-SEO-20260729-324": {
     "identityStatus": "hall_confirmed",
@@ -1168,5 +723,715 @@
     "identityStatus": "hall_confirmed",
     "verificationMethod": "official_named_gallery",
     "verificationNote": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
+  },
+  "H-SEO-20260728-081": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_hall_page",
+    "verificationNote": "메리어트 공식 갤러리에서 한양룸 웨딩 세팅 사진과 홀명을 확인함."
+  },
+  "H-SEO-20260728-008": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_named_gallery",
+    "verificationNote": "공식 사이트에서 홀명과 공간 사진의 직접 연결을 확인함."
+  },
+  "H-SEO-20260728-044": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_hall_page",
+    "verificationNote": "공식 사이트의 홀별 상세 페이지에서 홀명과 공간 사진을 함께 확인함."
+  },
+  "H-SEO-20260728-059": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_hall_page",
+    "verificationNote": "공식 사이트의 홀별 상세 페이지에서 홀명과 공간 사진을 함께 확인함."
+  },
+  "H-SEO-20260728-060": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_hall_page",
+    "verificationNote": "공식 사이트의 홀별 상세 페이지에서 홀명과 공간 사진을 함께 확인함."
+  },
+  "H-SEO-20260728-063": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_hall_page",
+    "verificationNote": "공식 사이트의 홀별 상세 페이지에서 홀명과 공간 사진을 함께 확인함."
+  },
+  "H-SEO-20260728-064": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_hall_page",
+    "verificationNote": "공식 사이트의 홀별 상세 페이지에서 홀명과 공간 사진을 함께 확인함."
+  },
+  "H-SEO-20260728-076": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_hall_page",
+    "verificationNote": "공식 사이트의 홀별 상세 페이지에서 홀명과 공간 사진을 함께 확인함."
+  },
+  "H-SEO-20260728-077": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_hall_page",
+    "verificationNote": "공식 사이트의 홀별 상세 페이지에서 홀명과 공간 사진을 함께 확인함."
+  },
+  "H-SEO-20260729-112": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_hall_page",
+    "verificationNote": "공식 사이트의 홀별 상세 페이지에서 홀명과 공간 사진을 함께 확인함."
+  },
+  "H-SEO-20260729-118": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_hall_page",
+    "verificationNote": "공식 사이트의 홀별 상세 페이지에서 홀명과 공간 사진을 함께 확인함."
+  },
+  "H-SEO-20260729-120": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_hall_page",
+    "verificationNote": "공식 사이트의 홀별 상세 페이지에서 홀명과 공간 사진을 함께 확인함."
+  },
+  "H-SEO-20260729-122": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_hall_page",
+    "verificationNote": "공식 사이트의 홀별 상세 페이지에서 홀명과 공간 사진을 함께 확인함."
+  },
+  "H-SEO-20260729-123": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_hall_page",
+    "verificationNote": "공식 사이트의 홀별 상세 페이지에서 홀명과 공간 사진을 함께 확인함."
+  },
+  "H-SEO-20260729-125": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_named_gallery",
+    "verificationNote": "공식 사이트에서 홀명과 공간 사진의 직접 연결을 확인함."
+  },
+  "H-SEO-20260729-127": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_hall_page",
+    "verificationNote": "공식 사이트의 홀별 상세 페이지에서 홀명과 공간 사진을 함께 확인함."
+  },
+  "H-SEO-20260729-130": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_hall_page",
+    "verificationNote": "공식 사이트의 홀별 상세 페이지에서 홀명과 공간 사진을 함께 확인함."
+  },
+  "H-SEO-20260729-131": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_hall_page",
+    "verificationNote": "공식 사이트의 홀별 상세 페이지에서 홀명과 공간 사진을 함께 확인함."
+  },
+  "H-SEO-20260729-132": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_hall_page",
+    "verificationNote": "공식 사이트의 홀별 상세 페이지에서 홀명과 공간 사진을 함께 확인함."
+  },
+  "H-SEO-20260729-133": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_hall_page",
+    "verificationNote": "공식 사이트의 홀별 상세 페이지에서 홀명과 공간 사진을 함께 확인함."
+  },
+  "H-SEO-20260729-138": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_hall_page",
+    "verificationNote": "공식 사이트의 홀별 상세 페이지에서 홀명과 공간 사진을 함께 확인함."
+  },
+  "H-SEO-20260729-148": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_hall_page",
+    "verificationNote": "공식 사이트의 홀별 상세 페이지에서 홀명과 공간 사진을 함께 확인함."
+  },
+  "H-SEO-20260729-150": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_hall_page",
+    "verificationNote": "공식 사이트의 홀별 상세 페이지에서 홀명과 공간 사진을 함께 확인함."
+  },
+  "H-SEO-20260729-152": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_hall_page",
+    "verificationNote": "공식 사이트의 홀별 상세 페이지에서 홀명과 공간 사진을 함께 확인함."
+  },
+  "H-SEO-20260729-156": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_named_gallery",
+    "verificationNote": "공식 사이트에서 홀명과 공간 사진의 직접 연결을 확인함."
+  },
+  "H-SEO-20260729-160": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_hall_page",
+    "verificationNote": "공식 사이트의 홀별 상세 페이지에서 홀명과 공간 사진을 함께 확인함."
+  },
+  "H-SEO-20260729-162": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_hall_page",
+    "verificationNote": "공식 사이트의 홀별 상세 페이지에서 홀명과 공간 사진을 함께 확인함."
+  },
+  "H-SEO-20260729-166": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_hall_page",
+    "verificationNote": "공식 사이트의 홀별 상세 페이지에서 홀명과 공간 사진을 함께 확인함."
+  },
+  "H-SEO-20260729-167": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_hall_page",
+    "verificationNote": "공식 사이트의 홀별 상세 페이지에서 홀명과 공간 사진을 함께 확인함."
+  },
+  "H-SEO-20260729-168": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_hall_page",
+    "verificationNote": "공식 사이트의 홀별 상세 페이지에서 홀명과 공간 사진을 함께 확인함."
+  },
+  "H-SEO-20260729-170": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_hall_page",
+    "verificationNote": "공식 사이트의 홀별 상세 페이지에서 홀명과 공간 사진을 함께 확인함."
+  },
+  "H-SEO-20260729-171": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_hall_page",
+    "verificationNote": "공식 사이트의 홀별 상세 페이지에서 홀명과 공간 사진을 함께 확인함."
+  },
+  "H-SEO-20260729-172": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_hall_page",
+    "verificationNote": "공식 사이트의 홀별 상세 페이지에서 홀명과 공간 사진을 함께 확인함."
+  },
+  "H-SEO-20260729-178": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_hall_page",
+    "verificationNote": "공식 사이트의 홀별 상세 페이지에서 홀명과 공간 사진을 함께 확인함."
+  },
+  "H-SEO-20260729-179": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_hall_page",
+    "verificationNote": "공식 사이트의 홀별 상세 페이지에서 홀명과 공간 사진을 함께 확인함."
+  },
+  "H-SEO-20260729-183": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_hall_page",
+    "verificationNote": "공식 사이트의 홀별 상세 페이지에서 홀명과 공간 사진을 함께 확인함."
+  },
+  "H-SEO-20260729-184": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_hall_page",
+    "verificationNote": "공식 사이트의 홀별 상세 페이지에서 홀명과 공간 사진을 함께 확인함."
+  },
+  "H-SEO-20260729-185": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_hall_page",
+    "verificationNote": "공식 사이트의 홀별 상세 페이지에서 홀명과 공간 사진을 함께 확인함."
+  },
+  "H-SEO-20260729-187": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_hall_page",
+    "verificationNote": "공식 사이트의 홀별 상세 페이지에서 홀명과 공간 사진을 함께 확인함."
+  },
+  "H-SEO-20260729-192": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_hall_page",
+    "verificationNote": "공식 사이트의 홀별 상세 페이지에서 홀명과 공간 사진을 함께 확인함."
+  },
+  "H-SEO-20260729-214": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_hall_page",
+    "verificationNote": "공식 사이트의 홀별 상세 페이지에서 홀명과 공간 사진을 함께 확인함."
+  },
+  "H-SEO-20260729-216": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_hall_page",
+    "verificationNote": "공식 사이트의 홀별 상세 페이지에서 홀명과 공간 사진을 함께 확인함."
+  },
+  "H-SEO-20260729-217": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_hall_page",
+    "verificationNote": "공식 사이트의 홀별 상세 페이지에서 홀명과 공간 사진을 함께 확인함."
+  },
+  "H-SEO-20260729-218": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_hall_page",
+    "verificationNote": "공식 사이트의 홀별 상세 페이지에서 홀명과 공간 사진을 함께 확인함."
+  },
+  "H-SEO-20260729-223": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_hall_page",
+    "verificationNote": "공식 사이트의 홀별 상세 페이지에서 홀명과 공간 사진을 함께 확인함."
+  },
+  "H-SEO-20260729-224": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_hall_page",
+    "verificationNote": "공식 사이트의 홀별 상세 페이지에서 홀명과 공간 사진을 함께 확인함."
+  },
+  "H-SEO-20260729-231": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_hall_page",
+    "verificationNote": "공식 사이트의 홀별 상세 페이지에서 홀명과 공간 사진을 함께 확인함."
+  },
+  "H-SEO-20260729-233": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_named_gallery",
+    "verificationNote": "공식 사이트에서 홀명과 공간 사진의 직접 연결을 확인함."
+  },
+  "H-SEO-20260729-258": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_single_hall_venue",
+    "verificationNote": "공식 사이트에서 홀명과 공간 사진의 직접 연결을 확인함."
+  },
+  "H-SEO-20260729-264": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_hall_page",
+    "verificationNote": "공식 사이트의 홀별 상세 페이지에서 홀명과 공간 사진을 함께 확인함."
+  },
+  "H-SEO-20260729-266": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_hall_page",
+    "verificationNote": "공식 사이트의 홀별 상세 페이지에서 홀명과 공간 사진을 함께 확인함."
+  },
+  "H-SEO-20260729-267": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_hall_page",
+    "verificationNote": "공식 사이트의 홀별 상세 페이지에서 홀명과 공간 사진을 함께 확인함."
+  },
+  "H-SEO-20260729-281": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_hall_page",
+    "verificationNote": "공식 사이트의 홀별 상세 페이지에서 홀명과 공간 사진을 함께 확인함."
+  },
+  "H-SEO-20260729-284": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_hall_page",
+    "verificationNote": "공식 사이트의 홀별 상세 페이지에서 홀명과 공간 사진을 함께 확인함."
+  },
+  "H-SEO-20260729-285": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_hall_page",
+    "verificationNote": "공식 사이트의 홀별 상세 페이지에서 홀명과 공간 사진을 함께 확인함."
+  },
+  "H-SEO-20260729-295": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_hall_page",
+    "verificationNote": "공식 사이트의 홀별 상세 페이지에서 홀명과 공간 사진을 함께 확인함."
+  },
+  "H-SEO-20260729-298": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_hall_page",
+    "verificationNote": "공식 사이트의 홀별 상세 페이지에서 홀명과 공간 사진을 함께 확인함."
+  },
+  "H-SEO-20260729-299": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_hall_page",
+    "verificationNote": "공식 사이트의 홀별 상세 페이지에서 홀명과 공간 사진을 함께 확인함."
+  },
+  "H-SEO-20260729-303": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_hall_page",
+    "verificationNote": "공식 사이트의 홀별 상세 페이지에서 홀명과 공간 사진을 함께 확인함."
+  },
+  "H-SEO-20260729-304": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_hall_page",
+    "verificationNote": "공식 사이트의 홀별 상세 페이지에서 홀명과 공간 사진을 함께 확인함."
+  },
+  "H-SEO-20260729-307": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_hall_page",
+    "verificationNote": "공식 사이트의 홀별 상세 페이지에서 홀명과 공간 사진을 함께 확인함."
+  },
+  "H-SEO-20260729-308": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_hall_page",
+    "verificationNote": "더링크호텔 공식 플라자홀 상세 페이지의 대표 사진으로 확인함."
+  },
+  "H-SEO-20260729-309": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_hall_page",
+    "verificationNote": "더링크호텔 공식 가든홀 상세 페이지의 대표 사진으로 확인함."
+  },
+  "H-SEO-20260729-310": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_hall_page",
+    "verificationNote": "공식 사이트의 홀별 상세 페이지에서 홀명과 공간 사진을 함께 확인함."
+  },
+  "H-SEO-20260729-314": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_named_gallery",
+    "verificationNote": "공식 사이트에서 홀명과 공간 사진의 직접 연결을 확인함."
+  },
+  "H-SEO-20260729-315": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_named_gallery",
+    "verificationNote": "공식 사이트에서 홀명과 공간 사진의 직접 연결을 확인함."
+  },
+  "H-SEO-20260729-323": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_named_gallery",
+    "verificationNote": "공식 사이트에서 홀명과 공간 사진의 직접 연결을 확인함."
+  },
+  "H-SEO-20260729-337": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_hall_page",
+    "verificationNote": "공식 사이트의 홀별 상세 페이지에서 홀명과 공간 사진을 함께 확인함."
+  },
+  "H-SEO-20260729-338": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_hall_page",
+    "verificationNote": "공식 사이트의 홀별 상세 페이지에서 홀명과 공간 사진을 함께 확인함."
+  },
+  "H-SEO-20260730-002": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_hall_page",
+    "verificationNote": "공식 사이트의 홀별 상세 페이지에서 홀명과 공간 사진을 함께 확인함."
+  },
+  "H-SEO-20260728-075": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_hall_page",
+    "verificationNote": "공식 사이트의 홀별 상세 페이지에서 홀명과 공간 사진을 함께 확인함."
+  },
+  "H-SEO-20260729-189": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_single_hall_venue",
+    "verificationNote": "공식 사이트에서 홀명과 공간 사진의 직접 연결을 확인함."
+  },
+  "H-GG-GP-20260808-008": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_hall_page",
+    "verificationNote": "공식 사이트의 홀별 상세 페이지에서 홀명과 공간 사진을 함께 확인함."
+  },
+  "H-GG-GP-20260808-009": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_single_hall_venue",
+    "verificationNote": "공식 사이트에서 홀명과 공간 사진의 직접 연결을 확인함."
+  },
+  "H-GG-GP-20260808-010": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_hall_page",
+    "verificationNote": "공식 사이트의 홀별 상세 페이지에서 홀명과 공간 사진을 함께 확인함."
+  },
+  "H-GG-GP-20260808-012": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_hall_page",
+    "verificationNote": "공식 사이트의 홀별 상세 페이지에서 홀명과 공간 사진을 함께 확인함."
+  },
+  "H-GG-GP-20260808-013": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_named_gallery",
+    "verificationNote": "공식 사이트에서 홀명과 공간 사진의 직접 연결을 확인함."
+  },
+  "H-GG-HO-20260808-001": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_hall_page",
+    "verificationNote": "라비돌 공식 웨딩 페이지의 야외가든 섹션 사진으로 확인함."
+  },
+  "H-GG-HO-20260808-002": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_hall_page",
+    "verificationNote": "라비돌 공식 웨딩 페이지의 로비홀 섹션 사진으로 확인함."
+  },
+  "H-GG-HO-20260808-003": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_hall_page",
+    "verificationNote": "라비돌 공식 웨딩 페이지의 그랜드볼룸 섹션 사진으로 확인함."
+  },
+  "H-GG-PA-20260808-007": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_hall_page",
+    "verificationNote": "공식 사이트의 홀별 상세 페이지에서 홀명과 공간 사진을 함께 확인함."
+  },
+  "H-GG-PA-20260808-013": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_single_hall_venue",
+    "verificationNote": "공식 사이트에서 홀명과 공간 사진의 직접 연결을 확인함."
+  },
+  "H-GG-PA-20260808-014": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_hall_page",
+    "verificationNote": "공식 사이트의 홀별 상세 페이지에서 홀명과 공간 사진을 함께 확인함."
+  },
+  "H-GG-PA-20260808-017": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_hall_page",
+    "verificationNote": "공식 사이트의 홀별 상세 페이지에서 홀명과 공간 사진을 함께 확인함."
+  },
+  "H-GG-PA-20260808-018": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_hall_page",
+    "verificationNote": "공식 사이트의 홀별 상세 페이지에서 홀명과 공간 사진을 함께 확인함."
+  },
+  "H-GG-REST-20260808-032": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_hall_page",
+    "verificationNote": "공식 사이트의 홀별 상세 페이지에서 홀명과 공간 사진을 함께 확인함."
+  },
+  "H-GG-REST-20260808-034": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_hall_page",
+    "verificationNote": "공식 사이트의 홀별 상세 페이지에서 홀명과 공간 사진을 함께 확인함."
+  },
+  "H-GG-REST-20260808-036": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_hall_page",
+    "verificationNote": "공식 사이트의 홀별 상세 페이지에서 홀명과 공간 사진을 함께 확인함."
+  },
+  "H-GG-REST-20260808-038": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_hall_page",
+    "verificationNote": "공식 사이트의 홀별 상세 페이지에서 홀명과 공간 사진을 함께 확인함."
+  },
+  "H-GG-REST-20260808-039": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_hall_page",
+    "verificationNote": "공식 사이트의 홀별 상세 페이지에서 홀명과 공간 사진을 함께 확인함."
+  },
+  "H-GG-REST-20260808-041": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_hall_page",
+    "verificationNote": "공식 사이트의 홀별 상세 페이지에서 홀명과 공간 사진을 함께 확인함."
+  },
+  "H-GG-REST-20260808-043": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_hall_page",
+    "verificationNote": "공식 사이트의 홀별 상세 페이지에서 홀명과 공간 사진을 함께 확인함."
+  },
+  "H-GG-REST-20260808-047": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_hall_page",
+    "verificationNote": "공식 사이트의 홀별 상세 페이지에서 홀명과 공간 사진을 함께 확인함."
+  },
+  "H-GG-REST-20260808-048": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_single_hall_venue",
+    "verificationNote": "공식 사이트에서 홀명과 공간 사진의 직접 연결을 확인함."
+  },
+  "H-GG-REST-20260808-052": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_hall_page",
+    "verificationNote": "공식 사이트의 홀별 상세 페이지에서 홀명과 공간 사진을 함께 확인함."
+  },
+  "H-GG-REST-20260808-053": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_hall_page",
+    "verificationNote": "공식 사이트의 홀별 상세 페이지에서 홀명과 공간 사진을 함께 확인함."
+  },
+  "H-GG-REST-20260808-054": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_single_hall_venue",
+    "verificationNote": "공식 사이트에서 홀명과 공간 사진의 직접 연결을 확인함."
+  },
+  "H-GG-REST-20260808-062": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_hall_page",
+    "verificationNote": "공식 사이트의 홀별 상세 페이지에서 홀명과 공간 사진을 함께 확인함."
+  },
+  "H-GG-REST-20260808-069": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_hall_page",
+    "verificationNote": "공식 사이트의 홀별 상세 페이지에서 홀명과 공간 사진을 함께 확인함."
+  },
+  "H-GG-SHG-20260808-001": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_hall_page",
+    "verificationNote": "W스퀘어 공식 시설 페이지의 채플홀 대표 사진으로 확인함."
+  },
+  "H-GG-SHG-20260808-002": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_hall_page",
+    "verificationNote": "W스퀘어 공식 시설 페이지의 그레이스홀 대표 사진으로 확인함."
+  },
+  "H-GG-SHG-20260808-010": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_named_gallery",
+    "verificationNote": "공식 사이트에서 홀명과 공간 사진의 직접 연결을 확인함."
+  },
+  "H-GG-SHG-20260808-011": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_named_gallery",
+    "verificationNote": "공식 사이트에서 홀명과 공간 사진의 직접 연결을 확인함."
+  },
+  "H-GG-SHG-20260808-012": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_single_hall_venue",
+    "verificationNote": "공식 사이트에서 홀명과 공간 사진의 직접 연결을 확인함."
+  },
+  "H-GG-SUW-20260808-001": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_single_hall_venue",
+    "verificationNote": "공식 사이트에서 홀명과 공간 사진의 직접 연결을 확인함."
+  },
+  "H-GG-SUW-20260808-008": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_hall_page",
+    "verificationNote": "공식 사이트의 홀별 상세 페이지에서 홀명과 공간 사진을 함께 확인함."
+  },
+  "H-GG-SUW-20260808-013": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_hall_page",
+    "verificationNote": "공식 사이트의 홀별 상세 페이지에서 홀명과 공간 사진을 함께 확인함."
+  },
+  "H-GG-SUW-20260808-015": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_single_hall_venue",
+    "verificationNote": "공식 사이트에서 홀명과 공간 사진의 직접 연결을 확인함."
+  },
+  "H-GG-SUW-20260808-022": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_hall_page",
+    "verificationNote": "공식 사이트의 홀별 상세 페이지에서 홀명과 공간 사진을 함께 확인함."
+  },
+  "H-GG-SUW-20260808-023": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_hall_page",
+    "verificationNote": "공식 사이트의 홀별 상세 페이지에서 홀명과 공간 사진을 함께 확인함."
+  },
+  "H-GG-SUW-20260808-025": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_hall_page",
+    "verificationNote": "공식 사이트의 홀별 상세 페이지에서 홀명과 공간 사진을 함께 확인함."
+  },
+  "H-GG-YON-20260808-002": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_single_hall_venue",
+    "verificationNote": "공식 사이트에서 홀명과 공간 사진의 직접 연결을 확인함."
+  },
+  "H-GG-YON-20260808-005": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_hall_page",
+    "verificationNote": "리움하우스 공식 페이지의 SPRING HALL 섹션 사진으로 확인함."
+  },
+  "H-GG-YON-20260808-006": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_hall_page",
+    "verificationNote": "리움하우스 공식 페이지의 SOUNDS HALL 섹션 사진으로 확인함."
+  },
+  "H-GG-YON-20260808-008": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_single_hall_venue",
+    "verificationNote": "공식 사이트에서 홀명과 공간 사진의 직접 연결을 확인함."
+  },
+  "H-GG-YON-20260808-009": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_named_gallery",
+    "verificationNote": "공식 사이트에서 홀명과 공간 사진의 직접 연결을 확인함."
+  },
+  "H-GG-YON-20260808-010": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_hall_page",
+    "verificationNote": "공식 사이트의 홀별 상세 페이지에서 홀명과 공간 사진을 함께 확인함."
+  },
+  "H-GG-REST-20260808-050": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_hall_page",
+    "verificationNote": "빌라드지디 안양 공식 갤러리아홀 페이지의 홀 사진으로 확인함."
+  },
+  "H-GG-REST-20260808-051": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_hall_page",
+    "verificationNote": "빌라드지디 안양 공식 크리스탈캐슬홀 페이지의 홀 사진으로 확인함."
+  },
+  "H-GG-REST-20260808-059": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_hall_page",
+    "verificationNote": "빌라드지디 안산 공식 그랜드볼룸홀 페이지의 홀 사진으로 확인함."
+  },
+  "H-GG-REST-20260808-060": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_hall_page",
+    "verificationNote": "빌라드지디 안산 공식 그랜드컨벤션홀 페이지의 홀 사진으로 확인함."
+  },
+  "H-GG-REST-20260808-061": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_hall_page",
+    "verificationNote": "빌라드지디 안산 공식 그레이스켈리홀 페이지의 홀 사진으로 확인함."
+  },
+  "H-GG-SUW-20260808-002": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_hall_page",
+    "verificationNote": "WI컨벤션 공식 W홀 페이지의 홀 사진으로 확인함."
+  },
+  "H-GG-SUW-20260808-003": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_hall_page",
+    "verificationNote": "WI컨벤션 공식 I홀 페이지의 홀 사진으로 확인함."
+  },
+  "H-GG-GP-20260808-003": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_hall_page",
+    "verificationNote": "관세비스타 공식 페이지의 잔디정원 섹션에 배치된 공간 사진으로 확인함."
+  },
+  "H-GG-PA-20260808-016": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_hall_page",
+    "verificationNote": "제이하우스 공식 홈페이지의 단독 J House Hall 전경 사진으로 확인함."
+  },
+  "H-GG-SUW-20260808-010": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_hall_page",
+    "verificationNote": "라마다프라자수원 공식 웨딩 그랜드볼룸 페이지의 홀 사진으로 확인함."
+  },
+  "H-GG-SUW-20260808-011": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_hall_page",
+    "verificationNote": "라마다프라자수원 공식 프라이빗 웨딩 페이지에서 토파즈홀 사진으로 확인함."
+  },
+  "H-GG-YON-20260808-004": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_hall_page",
+    "verificationNote": "하우스오브라비다 공식 네이처홀 페이지의 홀 전경 사진으로 확인함."
+  },
+  "H-SEO-20260808-001": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_hall_page",
+    "verificationNote": "벨라루체 서울점 공식 홀 안내에서 3층 루체홀 명칭과 해당 공간 사진을 함께 확인함."
+  },
+  "H-SEO-20260808-002": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_hall_page",
+    "verificationNote": "벨라루체 서울점 공식 홀 안내에서 7층 플로체홀 명칭과 해당 공간 사진을 함께 확인함."
+  },
+  "H-SEO-20260808-003": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "public_named_listing",
+    "verificationNote": "공개 웨딩 정보 페이지의 SAINT Hall 세인트홀 섹션에서 내부 전경 메인 이미지로 명시된 사진을 확인함."
+  },
+  "H-SEO-20260808-004": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "public_named_listing",
+    "verificationNote": "공개 웨딩 정보 페이지의 PARK - Wedding Hall 갤러리에서 파크홀 공간 사진으로 구분된 첫 이미지를 확인함."
+  },
+  "H-SEO-20260808-005": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_named_gallery",
+    "verificationNote": "메리어트 공식 사진 갤러리에서 클라우드(Kloud) - 야외 결혼식으로 명명된 사진을 확인함."
+  },
+  "H-SEO-20260808-006": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_hall_page",
+    "verificationNote": "신세계그룹 공식 뉴스룸의 웨스틴 조선 서울 라일락홀 전용 웨딩 콘셉트 기사에서 홀 사진을 확인함."
+  },
+  "H-SEO-20260808-007": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_named_gallery",
+    "verificationNote": "오크우드 공식 웨딩 페이지에서 프리미어 룸 명칭과 해당 공간 사진을 함께 확인함."
+  },
+  "H-SEO-20260808-008": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_named_gallery",
+    "verificationNote": "오크우드 공식 웨딩 페이지에서 오크 룸 명칭과 해당 공간 사진을 함께 확인함."
+  },
+  "H-GG-GP-20260808-004": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_named_gallery",
+    "verificationNote": "규수당 운정점 공식 홈페이지의 베일리홀 갤러리에서 버진로드·단상·하객석이 함께 보이는 예식 세팅 사진을 확인함."
+  },
+  "H-GG-REST-20260808-044": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_named_gallery",
+    "verificationNote": "파로스컨벤션 공식 홀 갤러리에서 버진로드·단상·하객석이 함께 보이는 예식 세팅 사진을 확인함."
+  },
+  "H-SEO-20260728-004": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_hall_page",
+    "verificationNote": "호텔 나루 공식 웨딩 페이지에서 나루 볼룸의 버진로드·단상·하객석이 함께 보이는 예식 세팅 사진을 확인함."
+  },
+  "H-SEO-20260728-040": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_named_gallery",
+    "verificationNote": "메리어트 공식 갤러리에서 미팅룸 1 웨딩으로 명명된 버진로드·단상·하객석 예식 세팅 사진을 확인함."
+  },
+  "H-SEO-20260729-136": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_named_gallery",
+    "verificationNote": "서울대학교 교수회관 공식 홈페이지의 웨딩 섹션에서 컨벤션홀 버진로드와 단상이 보이는 예식 세팅 사진을 확인함."
   }
 }
