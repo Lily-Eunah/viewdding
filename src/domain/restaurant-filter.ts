@@ -4,6 +4,7 @@ import type {
   RestaurantRecord,
 } from "./restaurant-types";
 import { categorizeRestaurantCuisines } from "./restaurant-cuisine";
+import { isRestaurantPublic } from "./restaurant-normalization";
 
 type MatchState = "match" | "unknown" | "mismatch";
 
@@ -97,7 +98,7 @@ export function filterRestaurants(restaurants: RestaurantRecord[], filters: Rest
   unknown: FilteredRestaurant[];
 } {
   const evaluated = restaurants
-    .filter((restaurant) => restaurant.active)
+    .filter(isRestaurantPublic)
     .map((restaurant) => evaluateRestaurant(restaurant, filters))
     .filter((restaurant): restaurant is FilteredRestaurant => restaurant !== null);
   const byRecency = (a: FilteredRestaurant, b: FilteredRestaurant) =>

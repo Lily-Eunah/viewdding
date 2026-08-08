@@ -14,7 +14,11 @@ import {
   type RestaurantEvidenceRecord,
   type RestaurantEvidenceSourceRow,
 } from "../src/domain/restaurant-evidence";
-import { normalizeRestaurantRow, type RestaurantSourceRow } from "../src/domain/restaurant-normalization";
+import {
+  isRestaurantPublic,
+  normalizeRestaurantRow,
+  type RestaurantSourceRow,
+} from "../src/domain/restaurant-normalization";
 import type { RestaurantRecord } from "../src/domain/restaurant-types";
 
 const scriptDir = path.dirname(fileURLToPath(import.meta.url));
@@ -121,9 +125,9 @@ const [sourceRows, evidenceSourceRows] = await Promise.all([
   fetchSheetRows<RestaurantSourceRow>(sheetName, "A1:AI1000"),
   fetchSheetRows<RestaurantEvidenceSourceRow>(evidenceSheetName, "A1:O2000"),
 ]);
-const normalizedRestaurants = sourceRows.flatMap((row) => {
+const publicRestaurants = sourceRows.flatMap((row) => {
   const restaurant = normalizeRestaurantRow(row);
-  return restaurant?.active ? [restaurant] : [];
+  return restaurant && isRestaurantPublic(restaurant) ? [restaurant] : [];
 });
 const geocodeCache = await loadGeocodeCache();
 let geocodingAvailable = Boolean(kakaoRestApiKey);
@@ -132,7 +136,7 @@ let cachedCoordinateCount = 0;
 let geocodedCoordinateCount = 0;
 
 const restaurants: RestaurantRecord[] = [];
-for (const restaurant of normalizedRestaurants) {
+for (const restaurant of publicRestaurants) {
   if (restaurant.latitude !== null && restaurant.longitude !== null) {
     sourceCoordinateCount += 1;
     restaurants.push(restaurant);
@@ -203,4 +207,4 @@ await fs.writeFile(metadataPath, `${JSON.stringify({
   districts: Array.from(new Set(restaurants.map((restaurant) => restaurant.district))).sort((a, b) => a.localeCompare(b, "ko")),
 }, null, 2)}\n`, "utf8");
 
-console.log(`Generated ${restaurants.length} active restaurants and ${evidence.length} evidence records from Google Sheet`);
+console.log(`Generated ${restaurants.length} public restaurants and ${evidence.length} evidence records from Google Sheet`);

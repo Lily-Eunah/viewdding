@@ -1,5 +1,9 @@
 import { describe, expect, it } from "vitest";
-import { normalizeClosedWeekdays, normalizeRestaurantRow } from "../src/domain/restaurant-normalization";
+import {
+  isRestaurantPublic,
+  normalizeClosedWeekdays,
+  normalizeRestaurantRow,
+} from "../src/domain/restaurant-normalization";
 
 describe("restaurant normalization", () => {
   it("normalizes weekly closure days", () => {
@@ -35,5 +39,12 @@ describe("restaurant normalization", () => {
       longitude: 127.1,
       active: true,
     });
+  });
+
+  it("publishes only rows that are both 공개가능 and active", () => {
+    expect(isRestaurantPublic({ status: "공개가능", active: true })).toBe(true);
+    expect(isRestaurantPublic({ status: "공개가능", active: false })).toBe(false);
+    expect(isRestaurantPublic({ status: "검토중", active: true })).toBe(false);
+    expect(isRestaurantPublic({ status: null, active: true })).toBe(false);
   });
 });

@@ -1,10 +1,14 @@
 import { describe, expect, it } from "vitest";
-import { EMPTY_RESTAURANT_FILTERS, evaluateRestaurant } from "../src/domain/restaurant-filter";
+import {
+  EMPTY_RESTAURANT_FILTERS,
+  evaluateRestaurant,
+  filterRestaurants,
+} from "../src/domain/restaurant-filter";
 import type { RestaurantRecord } from "../src/domain/restaurant-types";
 
 function restaurant(overrides: Partial<RestaurantRecord> = {}): RestaurantRecord {
   return {
-    id: "R1:invitation", sourceId: "R1", status: "공개후보", purpose: "invitation", name: "테스트",
+    id: "R1:invitation", sourceId: "R1", status: "공개가능", purpose: "invitation", name: "테스트",
     branch: null, cuisines: ["한식"], venueType: "한정식", district: "강남구", area: "강남역",
     address: null, nearestStation: "강남역", stationExit: null, walkingMinutes: 5,
     pricePerPerson: { min: 30000, max: 50000, raw: "30000~50000" }, lunchPriceMin: null, dinnerPriceMin: null,
@@ -53,5 +57,15 @@ describe("restaurant filter", () => {
       restaurant({ cuisines: ["파스타"], venueType: "한정식" }),
       { ...EMPTY_RESTAURANT_FILTERS, cuisines: ["한식"] },
     )).toBeNull();
+  });
+
+  it("never exposes a restaurant using only status or active", () => {
+    const results = filterRestaurants([
+      restaurant({ id: "public", status: "공개가능", active: true }),
+      restaurant({ id: "inactive", status: "공개가능", active: false }),
+      restaurant({ id: "review", status: "검토중", active: true }),
+    ], EMPTY_RESTAURANT_FILTERS);
+
+    expect([...results.matched, ...results.unknown].map((item) => item.restaurant.id)).toEqual(["public"]);
   });
 });

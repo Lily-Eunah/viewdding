@@ -1,17 +1,17 @@
 {
-  "generatedAt": "2026-08-07T15:44:15.607Z",
+  "generatedAt": "2026-08-08T06:30:22.344Z",
   "sourceSpreadsheetId": "1-aC-dMvSfVnBfzpTuqY2tWwzgdJ15aBoZ6KOomvJZD4",
   "sourceSheetName": "Restaurants",
   "evidenceSheetName": "Evidence",
   "sourceRows": 628,
-  "exportedRestaurants": 529,
+  "exportedRestaurants": 591,
   "sourceEvidenceRows": 1768,
-  "exportedEvidence": 1461,
+  "exportedEvidence": 1687,
   "coordinates": {
     "fromSheet": 0,
-    "fromCache": 529,
+    "fromCache": 590,
     "geocodedThisBuild": 0,
-    "missing": 0
+    "missing": 1
   },
   "districts": [
     "강남구",

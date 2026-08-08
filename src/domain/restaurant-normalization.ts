@@ -150,3 +150,9 @@ export function normalizeRestaurantRow(row: RestaurantSourceRow): RestaurantReco
     active,
   };
 }
+
+export function isRestaurantPublic(
+  restaurant: Pick<RestaurantRecord, "status" | "active">,
+): boolean {
+  return restaurant.status === "공개가능" && restaurant.active;
+}
