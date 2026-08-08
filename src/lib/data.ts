@@ -44,6 +44,7 @@ export const metadata = metadataJson;
 export const districts = metadata.districts;
 export const seoulHalls = halls.filter((hall) => hall.id.startsWith("H-SEO-"));
 export const gyeonggiHalls = halls.filter((hall) => hall.id.startsWith("H-GG-"));
+export const incheonHalls = halls.filter((hall) => hall.id.startsWith("H-IC-"));
 export const availableSidos = SIDO_OPTIONS
   .map((option) => option.value)
   .filter((sido) => halls.some((hall) => hall.sido === sido));
