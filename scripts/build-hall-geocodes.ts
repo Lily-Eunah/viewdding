@@ -8,11 +8,13 @@ import {
   type HallLocationSourceType,
 } from "../src/data/hall-location-overrides";
 import {
+  addressMatchesHallRegion,
   coordinatesFromKakao,
   selectKakaoVenueDocument,
   type HallVenueGeocode,
   type KakaoKeywordDocument,
 } from "../src/domain/hall-geocoding";
+import { resolveRegion, type RegionFields } from "../src/domain/regions";
 import {
   geocodeAddressCandidates,
   restaurantGeocodeFromDocument,
@@ -36,6 +38,7 @@ interface VenueSeed {
   venueId: string;
   venueName: string;
   district: string;
+  region: RegionFields;
   address: string | null;
   sourceUrl: string | null;
   sourceType: HallLocationSourceType | null;
@@ -74,7 +77,7 @@ async function geocodeAddress(seed: VenueSeed): Promise<HallVenueGeocode | null>
       ? restaurantGeocodeFromDocument(payload.documents[0], query)
       : null;
     if (!result) continue;
-    if (!result.matchedAddress.includes(seed.district)) continue;
+    if (!addressMatchesHallRegion(result.matchedAddress, seed.region)) continue;
     return {
       venueId: seed.venueId,
       venueName: seed.venueName,
@@ -103,7 +106,7 @@ async function geocodeKeyword(seed: VenueSeed): Promise<HallVenueGeocode | null>
   url.searchParams.set("query", query);
   url.searchParams.set("size", "5");
   const payload = await kakaoRequest<{ documents?: KakaoKeywordDocument[] }>(url);
-  const document = selectKakaoVenueDocument(venueSearchName, seed.district, payload.documents ?? []);
+  const document = selectKakaoVenueDocument(venueSearchName, seed.region, payload.documents ?? []);
   const coordinates = document ? coordinatesFromKakao(document.x, document.y) : null;
   if (!document || !coordinates) return null;
   return {
@@ -128,11 +131,16 @@ const venues = Array.from(
   (hallsJson as GeneratedHall[]).reduce((map, hall) => {
     const override = HALL_LOCATION_OVERRIDES[hall.venueId];
     if (!map.has(hall.venueId)) {
+      const district = override?.district ?? hall.district;
+      const address = override?.address ?? hall.address;
+      const region = resolveRegion(address, district);
+      if (!region) throw new Error(`지역을 정규화할 수 없습니다: ${hall.venueId} (${address ?? district})`);
       map.set(hall.venueId, {
         venueId: hall.venueId,
         venueName: hall.venueName,
-        district: override?.district ?? hall.district,
-        address: override?.address ?? hall.address,
+        district,
+        region,
+        address,
         sourceUrl: override?.sourceUrl ?? null,
         sourceType: override?.sourceType ?? null,
         searchQuery: override?.searchQuery ?? null,

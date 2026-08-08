@@ -1,0 +1,145 @@
+import type { HallRecord, Sido } from "./types";
+
+export interface RegionFields {
+  sido: Sido;
+  sigungu: string;
+  subdistrict: string | null;
+  regionCode: string;
+  metroArea: string;
+}
+
+interface RegionDefinition {
+  sido: Sido;
+  sigungu: string;
+  regionCode: string;
+  metroArea: string;
+}
+
+export const SIDO_OPTIONS: ReadonlyArray<{ value: Sido; label: string; shortLabel: string }> = [
+  { value: "서울특별시", label: "서울특별시", shortLabel: "서울" },
+  { value: "경기도", label: "경기도", shortLabel: "경기" },
+  { value: "인천광역시", label: "인천광역시", shortLabel: "인천" },
+];
+
+const SEOUL_METRO_AREAS: Record<string, string> = {
+  종로구: "서울 도심권", 중구: "서울 도심권", 용산구: "서울 도심권",
+  성동구: "서울 동북권", 광진구: "서울 동북권", 동대문구: "서울 동북권", 중랑구: "서울 동북권",
+  성북구: "서울 동북권", 강북구: "서울 동북권", 도봉구: "서울 동북권", 노원구: "서울 동북권",
+  은평구: "서울 서북권", 서대문구: "서울 서북권", 마포구: "서울 서북권",
+  양천구: "서울 서남권", 강서구: "서울 서남권", 구로구: "서울 서남권", 금천구: "서울 서남권",
+  영등포구: "서울 서남권", 동작구: "서울 서남권", 관악구: "서울 서남권",
+  서초구: "서울 동남권", 강남구: "서울 동남권", 송파구: "서울 동남권", 강동구: "서울 동남권",
+};
+
+const GYEONGGI_METRO_AREAS: Record<string, string> = {
+  수원시: "수원", 용인시: "용인", 화성시: "화성·오산", 오산시: "화성·오산",
+  고양시: "고양·일산·파주", 파주시: "고양·일산·파주",
+  평택시: "평택·안성", 안성시: "평택·안성",
+  성남시: "성남·하남·광주", 하남시: "성남·하남·광주", 광주시: "성남·하남·광주",
+  안양시: "안양·과천·군포·의왕", 과천시: "안양·과천·군포·의왕", 군포시: "안양·과천·군포·의왕", 의왕시: "안양·과천·군포·의왕",
+  부천시: "부천·광명", 광명시: "부천·광명",
+  안산시: "안산·시흥", 시흥시: "안산·시흥",
+  남양주시: "남양주·구리", 구리시: "남양주·구리",
+  의정부시: "의정부·양주·동두천", 양주시: "의정부·양주·동두천", 동두천시: "의정부·양주·동두천",
+  김포시: "김포", 이천시: "이천·여주·양평", 여주시: "이천·여주·양평", 양평군: "이천·여주·양평",
+  포천시: "경기 북부", 가평군: "경기 북부", 연천군: "경기 북부",
+};
+
+const INCHEON_METRO_AREAS: Record<string, string> = {
+  강화군: "강화", 옹진군: "인천 도서", 제물포구: "인천 원도심", 영종구: "영종",
+  미추홀구: "인천 원도심", 연수구: "송도·연수", 남동구: "남동",
+  부평구: "부평·계양", 계양구: "부평·계양", 서해구: "청라·서해", 검단구: "검단",
+};
+
+function definitions(
+  sido: Sido,
+  sigungus: string[],
+  codePrefix: string,
+  metroAreas: Record<string, string>,
+): RegionDefinition[] {
+  // 아래 객체의 key 순서는 공개된 regionCode와 연결된 append-only 레지스트리입니다.
+  // 표시명 변경은 같은 위치의 key만 바꾸고, 기존 항목을 재정렬하거나 사이에 삽입하지 않습니다.
+  return sigungus.map((sigungu, index) => ({
+    sido,
+    sigungu,
+    // Viewdding 내부 불변 ID입니다. 표시명이 바뀌어도 기존 ID는 재사용합니다.
+    regionCode: `VDD-${codePrefix}-${String(index + 1).padStart(3, "0")}`,
+    metroArea: metroAreas[sigungu],
+  }));
+}
+
+export const REGION_DEFINITIONS: ReadonlyArray<RegionDefinition> = [
+  ...definitions("서울특별시", Object.keys(SEOUL_METRO_AREAS), "11", SEOUL_METRO_AREAS),
+  ...definitions("경기도", Object.keys(GYEONGGI_METRO_AREAS), "41", GYEONGGI_METRO_AREAS),
+  ...definitions("인천광역시", Object.keys(INCHEON_METRO_AREAS), "28", INCHEON_METRO_AREAS),
+];
+
+const REGION_BY_KEY = new Map(
+  REGION_DEFINITIONS.map((region) => [`${region.sido}|${region.sigungu}`, region]),
+);
+
+function normalizedAddress(value: string | null | undefined): string {
+  return (value ?? "").normalize("NFKC").replace(/\s+/g, " ").trim();
+}
+
+function sidoFromAddress(address: string): Sido | null {
+  if (/^(?:서울|서울특별시)(?:\s|$)/.test(address)) return "서울특별시";
+  if (/^(?:경기|경기도)(?:\s|$)/.test(address)) return "경기도";
+  if (/^(?:인천|인천광역시)(?:\s|$)/.test(address)) return "인천광역시";
+  return null;
+}
+
+function locationParts(sido: Sido, address: string, legacyDistrict: string): { sigungu: string; subdistrict: string | null } | null {
+  const withoutSido = address.replace(/^(?:서울특별시|서울|경기도|경기|인천광역시|인천)\s+/, "");
+  if (sido === "서울특별시") {
+    const sigungu = withoutSido.match(/^([가-힣]+구)(?:\s|$)/)?.[1]
+      ?? legacyDistrict.match(/^([가-힣]+구)$/)?.[1];
+    return sigungu ? { sigungu, subdistrict: null } : null;
+  }
+  if (sido === "경기도") {
+    const match = withoutSido.match(/^([가-힣]+(?:시|군))(?:\s+([가-힣]+구))?/)
+      ?? legacyDistrict.match(/^([가-힣]+(?:시|군))(?:\s+([가-힣]+구))?/);
+    return match ? { sigungu: match[1], subdistrict: match[2] ?? null } : null;
+  }
+  const sigungu = withoutSido.match(/^([가-힣]+(?:구|군))(?:\s|$)/)?.[1]
+    ?? legacyDistrict.match(/^([가-힣]+(?:구|군))$/)?.[1];
+  return sigungu ? { sigungu, subdistrict: null } : null;
+}
+
+function inferSidoFromLegacyDistrict(legacyDistrict: string): Sido | null {
+  const matches = SIDO_OPTIONS
+    .map(({ value }) => value)
+    .filter((sido) => REGION_BY_KEY.has(`${sido}|${legacyDistrict.split(" ")[0]}`));
+  if (matches.length === 1) return matches[0];
+  if (/^[가-힣]+(?:시|군)(?:\s+[가-힣]+구)?$/.test(legacyDistrict)) return "경기도";
+  return null;
+}
+
+export function resolveRegion(address: string | null | undefined, legacyDistrict = ""): RegionFields | null {
+  const normalized = normalizedAddress(address);
+  const sido = sidoFromAddress(normalized) ?? inferSidoFromLegacyDistrict(legacyDistrict);
+  if (!sido) return null;
+  const parts = locationParts(sido, normalized, legacyDistrict);
+  if (!parts) return null;
+  const definition = REGION_BY_KEY.get(`${sido}|${parts.sigungu}`);
+  if (!definition) return null;
+  return {
+    sido,
+    sigungu: parts.sigungu,
+    subdistrict: parts.subdistrict,
+    regionCode: definition.regionCode,
+    metroArea: definition.metroArea,
+  };
+}
+
+export function regionDisplayName(region: Pick<RegionFields, "sigungu" | "subdistrict">): string {
+  return [region.sigungu, region.subdistrict].filter(Boolean).join(" ");
+}
+
+export function shortSidoLabel(sido: Sido): string {
+  return SIDO_OPTIONS.find((option) => option.value === sido)?.shortLabel ?? sido;
+}
+
+export function hallRegionLabel(hall: Pick<HallRecord, "sido" | "sigungu" | "subdistrict">): string {
+  return `${shortSidoLabel(hall.sido)} · ${regionDisplayName(hall)}`;
+}

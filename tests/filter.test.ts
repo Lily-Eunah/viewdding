@@ -4,7 +4,8 @@ import type { HallRecord } from "../src/domain/types";
 
 function hall(overrides: Partial<HallRecord> = {}): HallRecord {
   return {
-    id: "H-1", venueId: "V-1", venueName: "테스트", hallName: "홀", district: "강남구",
+    id: "H-1", venueId: "V-1", venueName: "테스트", hallName: "홀",
+    sido: "서울특별시", sigungu: "강남구", subdistrict: null, regionCode: "VDD-11-023", metroArea: "서울 동남권", district: "강남구",
     neighborhood: null, address: null, phone: null, website: null, instagram: null, mapUrl: null,
     publicStatus: "public", lighting: "bright", naturalLight: "yes", chapel: true, house: false,
     indoorOutdoor: "indoor", venueType: "professional_convention", ceremonyFormat: "separate",
@@ -22,6 +23,19 @@ describe("filter engine", () => {
     const transitional = hall({ lighting: "transitional" });
     expect(evaluateHall(transitional, { ...EMPTY_FILTERS, hallTypes: ["bright"] })?.state).toBe("match");
     expect(evaluateHall(transitional, { ...EMPTY_FILTERS, hallTypes: ["dark"] })?.state).toBe("match");
+  });
+
+  it("separates same-named districts by sido and sigungu", () => {
+    const seoul = hall({ sido: "서울특별시", sigungu: "중구", district: "중구" });
+    const incheon = hall({ sido: "인천광역시", sigungu: "중구", district: "중구", regionCode: "legacy-incheon-jung" });
+    const filters = { ...EMPTY_FILTERS, sido: "서울특별시" as const, sigungu: "중구" };
+    expect(evaluateHall(seoul, filters)?.state).toBe("match");
+    expect(evaluateHall(incheon, filters)).toBeNull();
+  });
+
+  it("matches a metro area independently from administrative filters", () => {
+    expect(evaluateHall(hall(), { ...EMPTY_FILTERS, metroArea: "서울 동남권" })?.state).toBe("match");
+    expect(evaluateHall(hall(), { ...EMPTY_FILTERS, metroArea: "수원" })).toBeNull();
   });
 
   it("uses OR inside a type group and AND across groups", () => {

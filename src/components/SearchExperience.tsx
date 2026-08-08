@@ -5,8 +5,9 @@ import Link from "next/link";
 import { X } from "@phosphor-icons/react";
 import { EMPTY_FILTERS, filterHalls } from "@/domain/filter";
 import { groupFilteredHallsByVenue } from "@/domain/hall-map";
-import type { CeremonyFormat, FilterState, HallTypeFilter, MealType } from "@/domain/types";
-import { gyeonggiDistricts, halls, seoulDistricts } from "@/lib/data";
+import { shortSidoLabel, SIDO_OPTIONS } from "@/domain/regions";
+import type { CeremonyFormat, FilterState, HallTypeFilter, MealType, Sido } from "@/domain/types";
+import { availableSidos, halls, metroAreas, sigunguBySido } from "@/lib/data";
 import { CEREMONY_OPTIONS, HALL_TYPE_GROUPS, INTERVAL_OPTIONS, MEAL_OPTIONS, hallTypeLabel } from "@/lib/labels";
 import { HallCard } from "./HallCard";
 import { KakaoHallMap } from "./KakaoHallMap";
@@ -27,7 +28,9 @@ function typeSummary(types: HallTypeFilter[]): string {
 function queryFromFilters(filters: FilterState, viewMode: ViewMode): string {
   const params = new URLSearchParams();
   if (viewMode === "map") params.set("view", "map");
-  if (filters.district) params.set("district", filters.district);
+  if (filters.sido) params.set("sido", filters.sido);
+  if (filters.sigungu) params.set("sigungu", filters.sigungu);
+  if (filters.metroArea) params.set("metro", filters.metroArea);
   if (filters.hallTypes.length) params.set("types", filters.hallTypes.join(","));
   if (filters.guests !== null) params.set("guests", String(filters.guests));
   if (filters.naturalLight) params.set("natural", "1");
@@ -38,7 +41,7 @@ function queryFromFilters(filters: FilterState, viewMode: ViewMode): string {
 }
 
 function filterSelectionCount(filters: FilterState): number {
-  return Number(Boolean(filters.district)) + filters.hallTypes.length + Number(filters.guests !== null)
+  return Number(Boolean(filters.sido || filters.sigungu || filters.metroArea)) + filters.hallTypes.length + Number(filters.guests !== null)
     + Number(filters.naturalLight) + filters.ceremonyFormats.length + Number(filters.intervalAtLeast !== null)
     + filters.meals.length;
 }
@@ -61,8 +64,19 @@ export function SearchExperience({
 
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
+    const legacyHall = halls.find((hall) => hall.district === params.get("district"));
+    const requestedSido = params.get("sido");
+    const sido = SIDO_OPTIONS.some((option) => option.value === requestedSido)
+      ? requestedSido as Sido
+      : legacyHall?.sido ?? "";
+    const requestedSigungu = params.get("sigungu") ?? legacyHall?.sigungu ?? "";
+    const sigungu = sido && sigunguBySido[sido].includes(requestedSigungu) ? requestedSigungu : "";
+    const requestedMetroArea = params.get("metro") ?? "";
+    const metroArea = metroAreas.includes(requestedMetroArea) ? requestedMetroArea : "";
     const parsed: FilterState = {
-      district: params.get("district") ?? "",
+      sido: metroArea ? "" : sido,
+      sigungu: metroArea ? "" : sigungu,
+      metroArea,
       hallTypes: (params.get("types")?.split(",").filter(Boolean) ?? []) as HallTypeFilter[],
       guests: params.get("guests") ? Number(params.get("guests")) : null,
       naturalLight: params.get("natural") === "1",
@@ -102,6 +116,9 @@ export function SearchExperience({
     () => groupFilteredHallsByVenue([...results.matched, ...results.unknown]),
     [results],
   );
+  const metroAreaCounts = useMemo(() => new Map(
+    metroAreas.map((metroArea) => [metroArea, new Set(halls.filter((hall) => hall.metroArea === metroArea).map((hall) => hall.venueId)).size]),
+  ), []);
   useEffect(() => setVisible(PAGE_SIZE), [applied]);
 
   const detailCount = Number(draft.guests !== null) + Number(draft.naturalLight) + draft.ceremonyFormats.length + Number(draft.intervalAtLeast !== null) + draft.meals.length;
@@ -120,7 +137,13 @@ export function SearchExperience({
   }
 
   const chips: Array<{ key: string; label: string; remove: () => void }> = [];
-  if (applied.district) chips.push({ key: "district", label: applied.district, remove: () => commit({ ...applied, district: "" }) });
+  if (applied.metroArea) {
+    chips.push({ key: "metro", label: applied.metroArea, remove: () => commit({ ...applied, metroArea: "" }) });
+  } else if (applied.sigungu && applied.sido) {
+    chips.push({ key: "sigungu", label: `${shortSidoLabel(applied.sido)} · ${applied.sigungu}`, remove: () => commit({ ...applied, sigungu: "" }) });
+  } else if (applied.sido) {
+    chips.push({ key: "sido", label: shortSidoLabel(applied.sido), remove: () => commit({ ...applied, sido: "", sigungu: "" }) });
+  }
   applied.hallTypes.forEach((type) => chips.push({ key: `type-${type}`, label: hallTypeLabel(type), remove: () => commit({ ...applied, hallTypes: applied.hallTypes.filter((item) => item !== type) }) }));
   if (applied.guests !== null) chips.push({ key: "guests", label: `${applied.guests}명`, remove: () => commit({ ...applied, guests: null }) });
   if (applied.naturalLight) chips.push({ key: "natural", label: "자연광 있음", remove: () => commit({ ...applied, naturalLight: false }) });
@@ -167,7 +190,8 @@ export function SearchExperience({
           </div>
         </div>
         <div className="primary-filter-grid">
-          <label className="field-label"><span>지역</span><select value={draft.district} onChange={(event) => setDraft({ ...draft, district: event.target.value })}><option value="">서울·경기 전체</option><optgroup label="서울">{seoulDistricts.map((district) => <option key={`seoul-${district}`}>{district}</option>)}</optgroup><optgroup label="경기">{gyeonggiDistricts.map((district) => <option key={`gyeonggi-${district}`}>{district}</option>)}</optgroup></select></label>
+          <label className="field-label"><span>시·도</span><select value={draft.sido} onChange={(event) => setDraft({ ...draft, sido: event.target.value as Sido | "", sigungu: "", metroArea: "" })}><option value="">수도권 전체</option>{SIDO_OPTIONS.map((option) => <option key={option.value} value={option.value} disabled={!availableSidos.includes(option.value)}>{option.label}{availableSidos.includes(option.value) ? "" : " · 준비 중"}</option>)}</select></label>
+          <label className="field-label"><span>시·군·구</span><select value={draft.sigungu} disabled={!draft.sido || sigunguBySido[draft.sido].length === 0} onChange={(event) => setDraft({ ...draft, sigungu: event.target.value, metroArea: "" })}><option value="">{draft.sido ? `${shortSidoLabel(draft.sido)} 전체` : "시·도를 먼저 선택"}</option>{draft.sido ? sigunguBySido[draft.sido].map((sigungu) => <option key={`${draft.sido}-${sigungu}`} value={sigungu}>{sigungu}</option>) : null}</select></label>
           <div className="type-picker">
             <span className="field-caption">웨딩홀 타입</span>
             <button className="field-button" type="button" aria-expanded={typeOpen} onClick={() => { setPickerTypes(draft.hallTypes); setTypeOpen(!typeOpen); }}>{typeSummary(draft.hallTypes)}</button>
@@ -178,6 +202,8 @@ export function SearchExperience({
           </div>
           <button className="search-button" type="submit">찾기</button>
         </div>
+
+        <fieldset className="metro-area-filter"><legend>생활권 빠른 선택</legend><div>{metroAreas.map((metroArea) => <button key={metroArea} type="button" className={draft.metroArea === metroArea ? "option is-selected" : "option"} aria-pressed={draft.metroArea === metroArea} onClick={() => setDraft({ ...draft, sido: "", sigungu: "", metroArea: draft.metroArea === metroArea ? "" : metroArea })}>{metroArea}<small>{metroAreaCounts.get(metroArea)}곳</small></button>)}</div></fieldset>
 
         <button className="detail-toggle" type="button" aria-expanded={detailOpen} onClick={() => setDetailOpen(!detailOpen)}>{detailOpen ? "−" : "+"} 상세 조건{detailCount ? ` ${detailCount}` : ""}</button>
         {detailOpen ? <div className="detail-panel">

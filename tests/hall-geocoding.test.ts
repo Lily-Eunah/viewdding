@@ -1,5 +1,6 @@
 import { describe, expect, it } from "vitest";
 import {
+  addressMatchesHallRegion,
   coordinatesFromKakao,
   normalizeVenueSearchText,
   selectKakaoVenueDocument,
@@ -44,7 +45,16 @@ describe("hall venue geocoding", () => {
     expect(selected?.id).toBe("gyeonggi");
   });
 
-  it("accepts Seoul and Gyeonggi coordinates and rejects distant regions", () => {
+  it("selects a name-matching place in Incheon", () => {
+    const selected = selectKakaoVenueDocument("테스트컨벤션", { sido: "인천광역시", sigungu: "부평구", subdistrict: null }, [
+      document({ id: "seoul", place_name: "테스트컨벤션", address_name: "서울 중구", road_address_name: "서울 중구 세종대로 1" }),
+      document({ id: "incheon", place_name: "테스트컨벤션", address_name: "인천 부평구 부평동 1", road_address_name: "인천 부평구 부평대로 1" }),
+    ]);
+    expect(selected?.id).toBe("incheon");
+    expect(addressMatchesHallRegion("인천광역시 부평구 부평대로 1", { sido: "인천광역시", sigungu: "부평구", subdistrict: null })).toBe(true);
+  });
+
+  it("accepts capital-area coordinates and rejects distant regions", () => {
     expect(coordinatesFromKakao("127.02", "37.51")).toEqual({ latitude: 37.51, longitude: 127.02 });
     expect(coordinatesFromKakao("127.20", "37.24")).toEqual({ latitude: 37.24, longitude: 127.2 });
     expect(coordinatesFromKakao("129.07", "35.17")).toBeNull();

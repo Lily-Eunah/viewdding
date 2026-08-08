@@ -14,6 +14,7 @@ import {
   parseNumericRange,
   splitTags,
 } from "../src/domain/normalization";
+import { resolveRegion } from "../src/domain/regions";
 import type { HallRecord } from "../src/domain/types";
 
 const scriptDir = path.dirname(fileURLToPath(import.meta.url));
@@ -50,17 +51,23 @@ function normalizedDistrict(venue: RowObject): string {
   const address = text(venue["도로명주소"]);
   const gyeonggi = address?.match(/^(?:경기|경기도)\s+([가-힣]+(?:시|군))(?:\s+([가-힣]+구))?/);
   if (gyeonggi) return [gyeonggi[1], gyeonggi[2]].filter(Boolean).join(" ");
+  const metroDistrict = address?.match(/^(?:서울|서울특별시|인천|인천광역시)\s+([가-힣]+(?:구|군))/);
+  if (metroDistrict) return metroDistrict[1];
   return text(venue["자치구"]) ?? "지역 확인 필요";
 }
 
 function toHall(row: RowObject, venue: RowObject): HallRecord {
   const ceremonyFormat = normalizeCeremonyFormat(row["예식 형태"], row["식사 유형"]);
+  const district = normalizedDistrict(venue);
+  const address = text(venue["도로명주소"]);
+  const region = resolveRegion(address, district);
+  if (!region) throw new Error(`지역을 정규화할 수 없습니다: ${String(row.hall_id)} (${address ?? district})`);
   return {
     id: String(row.hall_id), venueId: String(row.venue_id),
     venueName: text(venue["공식 업체명"]) ?? text(venue["브랜드명"]) ?? "업체명 확인 필요",
     hallName: text(row["공식 홀명"]) ?? "홀명 확인 필요",
-    district: normalizedDistrict(venue), neighborhood: text(venue["행정동"]),
-    address: text(venue["도로명주소"]), phone: text(venue["대표 전화"]), website: text(venue["공식 홈페이지"]),
+    ...region, district, neighborhood: text(venue["행정동"]),
+    address, phone: text(venue["대표 전화"]), website: text(venue["공식 홈페이지"]),
     instagram: text(venue["공식 인스타그램"]), mapUrl: text(venue["지도 URL"]), publicStatus: "public",
     lighting: normalizeLighting(row["공간 조도"]), naturalLight: normalizeNaturalLight(row["자연광"]),
     chapel: normalizeBoolean(row["채플 스타일"]), house: normalizeBoolean(row["하우스 스타일"]),
@@ -109,7 +116,7 @@ await fs.writeFile(metadataPath, `${JSON.stringify({ generatedAt: new Date().toI
   sourceFiles: [path.basename(masterPath), ...regionalSource.sourceFiles], sourceInspectFile: path.basename(inspectPath),
   regionalSourceGeneratedAt: regionalSource.generatedAt, sourceHallRows: hallRows.length, publicHallRows: publicRows.length,
   exportedHalls: halls.length, missingVenueIds: Array.from(missingVenues),
-  regions: ["서울", "경기"],
+  regions: Array.from(new Set(halls.map((hall) => hall.sido))),
   districts: Array.from(new Set(halls.map((hall) => hall.district))).sort((a, b) => a.localeCompare(b, "ko")) }, null, 2)}\n`, "utf8");
 console.log(`Generated ${halls.length} public halls from Seoul and ${regionalSource.sourceFiles.length} Gyeonggi masters`);
 if (missingVenues.size > 0) console.warn(`Skipped missing venues: ${Array.from(missingVenues).join(", ")}`);

@@ -1,3 +1,5 @@
+import type { RegionFields } from "./regions";
+
 export interface KakaoKeywordDocument {
   id: string;
   place_name: string;
@@ -32,7 +34,7 @@ export function normalizeVenueSearchText(value: string): string {
     .normalize("NFKC")
     .toLowerCase()
     .replace(/\([^)]*\)|\[[^\]]*\]/g, "")
-    .replace(/(?:웨딩홀|웨딩|컨벤션|호텔|예식장|서울특별시|서울시|경기도|경기)/g, "")
+    .replace(/(?:웨딩홀|웨딩|컨벤션|호텔|예식장|서울특별시|서울시|경기도|경기|인천광역시|인천시|인천)/g, "")
     .replace(/[^a-z0-9가-힣]/g, "");
 }
 
@@ -62,21 +64,42 @@ export function venueNameSimilarity(left: string, right: string): number {
 
 export function selectKakaoVenueDocument(
   venueName: string,
-  district: string,
+  region: Pick<RegionFields, "sido" | "sigungu" | "subdistrict"> | string,
   documents: KakaoKeywordDocument[],
 ): KakaoKeywordDocument | null {
   const ranked = documents
     .map((document) => {
       const address = document.road_address_name || document.address_name;
-      const inServiceArea = /^(?:서울|서울특별시|경기|경기도)\s/.test(address);
-      const inDistrict = address.includes(district);
+      const inServiceArea = isCapitalAreaAddress(address);
+      const inRegion = typeof region === "string"
+        ? address.includes(region)
+        : addressMatchesHallRegion(address, region);
       const similarity = venueNameSimilarity(venueName, document.place_name);
-      const score = similarity + Number(inDistrict) * 0.35 + Number(inServiceArea) * 0.15;
-      return { document, inServiceArea, inDistrict, similarity, score };
+      const score = similarity + Number(inRegion) * 0.35 + Number(inServiceArea) * 0.15;
+      return { document, inServiceArea, inRegion, similarity, score };
     })
-    .filter((candidate) => candidate.inServiceArea && candidate.inDistrict && candidate.similarity >= 0.34)
+    .filter((candidate) => candidate.inServiceArea && candidate.inRegion && candidate.similarity >= 0.34)
     .sort((left, right) => right.score - left.score);
   return ranked[0]?.document ?? null;
+}
+
+export function isCapitalAreaAddress(address: string): boolean {
+  return /^(?:서울|서울특별시|경기|경기도|인천|인천광역시)(?:\s|$)/.test(address.trim());
+}
+
+export function addressMatchesHallRegion(
+  address: string,
+  region: Pick<RegionFields, "sido" | "sigungu" | "subdistrict">,
+): boolean {
+  const sidoPattern = region.sido === "서울특별시"
+    ? /^(?:서울|서울특별시)(?:\s|$)/
+    : region.sido === "경기도"
+      ? /^(?:경기|경기도)(?:\s|$)/
+      : /^(?:인천|인천광역시)(?:\s|$)/;
+  const normalized = address.trim();
+  return sidoPattern.test(normalized)
+    && normalized.includes(region.sigungu)
+    && (!region.subdistrict || normalized.includes(region.subdistrict));
 }
 
 export function coordinatesFromKakao(x: string, y: string): { latitude: number; longitude: number } | null {

@@ -20,6 +20,8 @@ export type HallTypeFilter =
   | "professional"
   | "public";
 
+export type Sido = "서울특별시" | "경기도" | "인천광역시";
+
 export interface NumericRange {
   min: number | null;
   max: number | null;
@@ -66,6 +68,12 @@ export interface HallRecord {
   venueId: string;
   venueName: string;
   hallName: string;
+  sido: Sido;
+  sigungu: string;
+  subdistrict: string | null;
+  regionCode: string;
+  metroArea: string;
+  /** @deprecated 화면 표시 호환용입니다. 지역 식별과 필터에는 구조화 필드를 사용하세요. */
   district: string;
   neighborhood: string | null;
   address: string | null;
@@ -116,7 +124,9 @@ export interface HallRecord {
 }
 
 export interface FilterState {
-  district: string;
+  sido: Sido | "";
+  sigungu: string;
+  metroArea: string;
   hallTypes: HallTypeFilter[];
   guests: number | null;
   naturalLight: boolean;

@@ -4,7 +4,8 @@ import { hallMatchesSeoCollection, HALL_SEO_SLUGS, isHallSeoSlug } from "../src/
 
 function hall(overrides: Partial<HallRecord> = {}): HallRecord {
   return {
-    id: "H-1", venueId: "V-1", venueName: "테스트 예식장", hallName: "테스트홀", district: "강남구",
+    id: "H-1", venueId: "V-1", venueName: "테스트 예식장", hallName: "테스트홀",
+    sido: "서울특별시", sigungu: "강남구", subdistrict: null, regionCode: "VDD-11-023", metroArea: "서울 동남권", district: "강남구",
     neighborhood: null, address: null, phone: null, website: null, instagram: null, mapUrl: null,
     publicStatus: "public", lighting: "bright", naturalLight: "yes", chapel: false, house: false,
     indoorOutdoor: "indoor", venueType: "professional_convention", ceremonyFormat: "separate",

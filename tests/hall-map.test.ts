@@ -4,7 +4,8 @@ import type { FilteredHall, HallRecord } from "../src/domain/types";
 
 function hall(overrides: Partial<HallRecord> = {}): HallRecord {
   return {
-    id: "H-1", venueId: "V-1", venueName: "테스트 웨딩홀", hallName: "그랜드홀", district: "강남구",
+    id: "H-1", venueId: "V-1", venueName: "테스트 웨딩홀", hallName: "그랜드홀",
+    sido: "서울특별시", sigungu: "강남구", subdistrict: null, regionCode: "VDD-11-023", metroArea: "서울 동남권", district: "강남구",
     neighborhood: null, address: "서울 강남구 테스트로 1", phone: null, website: null, instagram: null, mapUrl: null,
     latitude: 37.51, longitude: 127.03, publicStatus: "public", lighting: "bright", naturalLight: "yes",
     chapel: false, house: false, indoorOutdoor: "indoor", venueType: "professional_convention", ceremonyFormat: "separate",

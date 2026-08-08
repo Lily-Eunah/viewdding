@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { FavoriteButton } from "@/components/FavoriteButton";
 import { HallPhotoMedia } from "@/components/HallPhotoMedia";
+import { hallRegionLabel, regionDisplayName, shortSidoLabel } from "@/domain/regions";
 import { getHall, halls } from "@/lib/data";
 import { ceremonyLabel, hallTags, mealLabels, rangeLabel } from "@/lib/labels";
 
@@ -10,13 +11,17 @@ export function generateStaticParams() { return halls.map((hall) => ({ id: hall.
 
 export async function generateMetadata({ params }: { params: Promise<{ id: string }> }): Promise<Metadata> {
   const hall = getHall((await params).id);
-  return hall ? { title: `${hall.venueName} ${hall.hallName}`, description: `${hall.district} ${hall.venueName} ${hall.hallName}의 수용인원, 예식 간격, 홀 분류와 출처 정보입니다.` } : {};
+  return hall ? { title: `${hall.venueName} ${hall.hallName}`, description: `${hallRegionLabel(hall)} ${hall.venueName} ${hall.hallName}의 수용인원, 예식 간격, 홀 분류와 출처 정보입니다.` } : {};
 }
 
 export default async function HallDetailPage({ params }: { params: Promise<{ id: string }> }) {
   const hall = getHall((await params).id);
   if (!hall) notFound();
-  const isGyeonggi = hall.id.startsWith("H-GG-");
+  const regionHref = hall.sido === "서울특별시"
+    ? "/seoul/wedding-halls/"
+    : hall.sido === "경기도"
+      ? "/gyeonggi/wedding-halls/"
+      : `/search/?sido=${encodeURIComponent(hall.sido)}`;
   const displayAddress = hall.locationAddress ?? hall.address;
   const facts = [
     ["최대 수용", rangeLabel(hall.capacity)], ["최소 보증", rangeLabel(hall.guarantee)],
@@ -31,7 +36,7 @@ export default async function HallDetailPage({ params }: { params: Promise<{ id:
   ];
   return (
     <article className="detail-page">
-      <nav className="breadcrumb"><Link href={isGyeonggi ? "/gyeonggi/wedding-halls/" : "/seoul/wedding-halls/"}>{isGyeonggi ? "경기 웨딩홀" : "서울 웨딩홀"}</Link><span>›</span><span>{hall.district}</span></nav>
+      <nav className="breadcrumb"><Link href={regionHref}>{shortSidoLabel(hall.sido)} 웨딩홀</Link><span>›</span><span>{regionDisplayName(hall)}</span></nav>
       {hall.photos && hall.photos.length > 0 ? <section className="hall-photo-gallery" aria-label={`${hall.venueName} ${hall.hallName} 공식 사진`}>{hall.photos.map((photo) => <HallPhotoMedia key={photo.id} photo={photo} variant="detail" />)}</section> : null}
       <header className="detail-header"><div><p className="eyebrow">{hall.venueName}</p><h1>{hall.hallName}</h1><p>{hall.district}{displayAddress ? ` · ${displayAddress}` : ""}</p><div className="chip-row">{hallTags(hall).map((tag) => <span className="chip" key={tag}>{tag}</span>)}</div></div><FavoriteButton hallId={hall.id} /></header>
       <dl className="fact-grid">{facts.map(([label, value]) => <div key={label}><dt>{label}</dt><dd>{value}</dd></div>)}</dl>
