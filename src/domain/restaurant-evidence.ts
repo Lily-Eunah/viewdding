@@ -92,7 +92,12 @@ export function normalizeRestaurantEvidenceRow(
   };
 }
 
-export function isVisitReviewEvidence(evidence: RestaurantEvidenceRecord): boolean {
-  return /블로그|카페|후기|리뷰/.test(evidence.sourceType)
-    && !/검색\s*결과|장소\s*정보/.test(evidence.sourceType);
+export function isBlogReviewEvidence(evidence: RestaurantEvidenceRecord): boolean {
+  if (!/블로그|티스토리/.test(evidence.sourceType) || /미러/.test(evidence.sourceType)) return false;
+  try {
+    const hostname = new URL(evidence.url).hostname.toLowerCase();
+    return !hostname.startsWith("search.");
+  } catch {
+    return false;
+  }
 }

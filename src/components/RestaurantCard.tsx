@@ -15,7 +15,14 @@ export function RestaurantCard({ restaurant, unknownReasons = [] }: { restaurant
     <article className="restaurant-card">
       <div>
         <div className="restaurant-card-heading">
-          <div><p className="eyebrow">{gatheringPurposeLabel(restaurant)}</p><h3>{restaurant.name}{restaurant.branch ? ` ${restaurant.branch}` : ""}</h3></div>
+          <div>
+            <p className="eyebrow">{gatheringPurposeLabel(restaurant)}</p>
+            <h3>
+              <Link className="restaurant-card-primary-link" href={`/restaurants/${restaurantSlug(restaurant)}/`}>
+                {restaurant.name}{restaurant.branch ? ` ${restaurant.branch}` : ""}
+              </Link>
+            </h3>
+          </div>
           <span className="purpose-badge">{restaurant.district}</span>
         </div>
         <p className="hall-location">{restaurant.area ?? restaurant.district} · {restaurantStationLabel(restaurant)}</p>
@@ -37,7 +44,6 @@ export function RestaurantCard({ restaurant, unknownReasons = [] }: { restaurant
           <div><dt>최근 확인</dt><dd>{restaurant.verifiedAt ?? "확인 필요"}</dd></div>
         </dl>
         <div className="restaurant-links">
-          <Link className="restaurant-detail-link" href={`/restaurants/${restaurantSlug(restaurant)}/`}>상세보기</Link>
           {restaurant.naverMapUrl ? <a href={restaurant.naverMapUrl} target="_blank" rel="noreferrer">네이버 지도</a> : null}
           {restaurant.kakaoMapUrl ? <a href={restaurant.kakaoMapUrl} target="_blank" rel="noreferrer">카카오맵</a> : null}
         </div>

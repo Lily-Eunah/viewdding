@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import {
-  isVisitReviewEvidence,
+  isBlogReviewEvidence,
   normalizeRestaurantEvidenceRow,
 } from "../src/domain/restaurant-evidence";
 
@@ -26,7 +26,7 @@ describe("restaurant evidence normalization", () => {
       sponsored: "no",
       companionTypes: ["친구", "회사동료"],
     });
-    expect(evidence && isVisitReviewEvidence(evidence)).toBe(true);
+    expect(evidence && isBlogReviewEvidence(evidence)).toBe(true);
   });
 
   it("keeps map search evidence out of visit reviews", () => {
@@ -36,17 +36,37 @@ describe("restaurant evidence normalization", () => {
       source_url: "https://map.kakao.com/?q=restaurant",
     });
 
-    expect(evidence && isVisitReviewEvidence(evidence)).toBe(false);
+    expect(evidence && isBlogReviewEvidence(evidence)).toBe(false);
   });
 
-  it("includes review-only map evidence", () => {
+  it("keeps map reviews out of blog reviews", () => {
     const evidence = normalizeRestaurantEvidenceRow({
       ...baseRow,
       source_type: "카카오맵 후기",
       source_url: "https://place.map.kakao.com/123",
     });
 
-    expect(evidence && isVisitReviewEvidence(evidence)).toBe(true);
+    expect(evidence && isBlogReviewEvidence(evidence)).toBe(false);
+  });
+
+  it("keeps blog search-result links out of blog reviews", () => {
+    const evidence = normalizeRestaurantEvidenceRow({
+      ...baseRow,
+      source_type: "네이버 검색·블로그",
+      source_url: "https://search.naver.com/search.naver?query=restaurant",
+    });
+
+    expect(evidence && isBlogReviewEvidence(evidence)).toBe(false);
+  });
+
+  it("includes original Tistory blog posts", () => {
+    const evidence = normalizeRestaurantEvidenceRow({
+      ...baseRow,
+      source_type: "티스토리",
+      source_url: "https://example.tistory.com/123",
+    });
+
+    expect(evidence && isBlogReviewEvidence(evidence)).toBe(true);
   });
 
   it("normalizes family meeting and unknown sponsorship", () => {

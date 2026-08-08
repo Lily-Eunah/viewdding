@@ -22,6 +22,20 @@ export function restaurantPriceLabel(restaurant: RestaurantRecord): string {
   return "확인 필요";
 }
 
+export function restaurantMealMinimumLabel(
+  restaurant: Pick<RestaurantRecord, "lunchPriceMin" | "dinnerPriceMin">,
+): string | null {
+  const { lunchPriceMin, dinnerPriceMin } = restaurant;
+  if (lunchPriceMin === null && dinnerPriceMin === null) return null;
+  if (lunchPriceMin !== null && lunchPriceMin === dinnerPriceMin) {
+    return `점심·저녁 ${won(lunchPriceMin)}`;
+  }
+  return [
+    lunchPriceMin !== null ? `점심 ${won(lunchPriceMin)}` : null,
+    dinnerPriceMin !== null ? `저녁 ${won(dinnerPriceMin)}` : null,
+  ].filter((value): value is string => value !== null).join(" · ");
+}
+
 export function restaurantRoomLabel(restaurant: RestaurantRecord): string {
   if (restaurant.privateRoom === "no") return "룸 없음";
   const { min, max } = restaurant.roomCapacity;
