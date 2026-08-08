@@ -37086,5 +37086,1365 @@
     "companionTypes": [
       "확인불가"
     ]
+  },
+  {
+    "id": "E1928",
+    "restaurantSourceId": "R685",
+    "purpose": "invitation",
+    "purposeLabel": "청모이용증거",
+    "keyword": "청모",
+    "sourceType": "개인후기",
+    "title": "[병점, 동탄] 청모 리뷰 2탄",
+    "url": "https://www.diningcode.com/profile.php?rid=y8uN0nGFEsJy",
+    "publishedAt": "2025-12-12",
+    "summary": "병점 백미가에서 회사 동기들과 실제 청모를 진행한 일정과 평가가 명시됨",
+    "platform": "DiningCode 사용자후기",
+    "sponsored": "no",
+    "confidence": "높음",
+    "duplicateGroup": "백미가-청모-20251212",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "회사동료"
+    ]
+  },
+  {
+    "id": "E1929",
+    "restaurantSourceId": "R685",
+    "purpose": null,
+    "purposeLabel": "운영정보",
+    "keyword": "영업시간·주소·전화",
+    "sourceType": "플랫폼정보",
+    "title": "백미가 병점점 식당정보",
+    "url": "https://www.diningcode.com/profile.php?rid=y8uN0nGFEsJy",
+    "publishedAt": null,
+    "summary": "주소, 전화, 매일 12:00~00:30 영업과 최근 리뷰 확인",
+    "platform": "DiningCode",
+    "sponsored": "no",
+    "confidence": "높음",
+    "duplicateGroup": "백미가-운영",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1930",
+    "restaurantSourceId": "R685",
+    "purpose": null,
+    "purposeLabel": "메뉴·가격",
+    "keyword": "양꼬치·양갈비",
+    "sourceType": "개인후기",
+    "title": "병점 양꼬치 백미가 방문기",
+    "url": "https://hicomputing.tistory.com/4363",
+    "publishedAt": null,
+    "summary": "양꼬치·양갈비 메뉴 구성과 매장 이용 정보 교차확인",
+    "platform": "티스토리",
+    "sponsored": "no",
+    "confidence": "중간",
+    "duplicateGroup": "백미가-메뉴",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1931",
+    "restaurantSourceId": "R686",
+    "purpose": "invitation",
+    "purposeLabel": "청모이용증거",
+    "keyword": "청모",
+    "sourceType": "개인후기",
+    "title": "[병점, 동탄] 청모 리뷰 2탄",
+    "url": "https://www.diningcode.com/profile.php?rid=y8uN0nGFEsJy",
+    "publishedAt": "2025-12-12",
+    "summary": "대학 친구들과 대동생막창 동탄역본점에서 청모 1차를 진행한 기록",
+    "platform": "DiningCode 사용자후기",
+    "sponsored": "no",
+    "confidence": "높음",
+    "duplicateGroup": "대동생막창-청모-20251212",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "친구"
+    ]
+  },
+  {
+    "id": "E1932",
+    "restaurantSourceId": "R686",
+    "purpose": null,
+    "purposeLabel": "운영정보",
+    "keyword": "영업시간·주차",
+    "sourceType": "플랫폼정보",
+    "title": "대동생막창 동탄역본점 식당정보",
+    "url": "https://www.diningcode.com/profile.php?rid=GYas9yssBgQW",
+    "publishedAt": null,
+    "summary": "주소, 영업시간, 일요일 휴무, 주차지원과 최근 영업 리뷰 확인",
+    "platform": "DiningCode",
+    "sponsored": "no",
+    "confidence": "높음",
+    "duplicateGroup": "대동생막창-운영",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1933",
+    "restaurantSourceId": "R686",
+    "purpose": null,
+    "purposeLabel": "메뉴·가격",
+    "keyword": "막창·세트",
+    "sourceType": "개인후기",
+    "title": "동탄역 대동생막창 방문기",
+    "url": "https://hctrip.tistory.com/115",
+    "publishedAt": "2025-04-01",
+    "summary": "2인·4인 세트와 주요 고기 메뉴 가격 및 매장 이용 정보 교차확인",
+    "platform": "티스토리",
+    "sponsored": "no",
+    "confidence": "중간",
+    "duplicateGroup": "대동생막창-메뉴",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1934",
+    "restaurantSourceId": "R687",
+    "purpose": "invitation",
+    "purposeLabel": "청모이용증거",
+    "keyword": "청모",
+    "sourceType": "개인후기",
+    "title": "[병점, 동탄] 청모 리뷰 2탄",
+    "url": "https://www.diningcode.com/profile.php?rid=y8uN0nGFEsJy",
+    "publishedAt": "2025-12-12",
+    "summary": "대학 친구 청모의 2차 장소로 비스트로슈토를 이용하고 사시미·파스타를 평가한 기록",
+    "platform": "DiningCode 사용자후기",
+    "sponsored": "no",
+    "confidence": "높음",
+    "duplicateGroup": "비스트로슈토-청모-20251212",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "친구"
+    ]
+  },
+  {
+    "id": "E1935",
+    "restaurantSourceId": "R687",
+    "purpose": null,
+    "purposeLabel": "운영정보",
+    "keyword": "영업시간·주차",
+    "sourceType": "플랫폼정보",
+    "title": "비스트로슈토 식당정보",
+    "url": "https://www.diningcode.com/profile.php?rid=ZB5utNFKrZt7",
+    "publishedAt": null,
+    "summary": "주소, 평일·토요일 영업시간, 일요일 휴무와 3시간30분 주차지원 확인",
+    "platform": "DiningCode",
+    "sponsored": "no",
+    "confidence": "높음",
+    "duplicateGroup": "비스트로슈토-운영",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1936",
+    "restaurantSourceId": "R687",
+    "purpose": null,
+    "purposeLabel": "메뉴·시설",
+    "keyword": "사시미·파스타·좌석",
+    "sourceType": "플랫폼정보",
+    "title": "비스트로슈토 메뉴 및 매장정보",
+    "url": "https://www.diningcode.com/profile.php?rid=ZB5utNFKrZt7",
+    "publishedAt": null,
+    "summary": "사시미 인원별 가격, 파스타 가격대와 4~5테이블 규모 확인",
+    "platform": "DiningCode",
+    "sponsored": "no",
+    "confidence": "높음",
+    "duplicateGroup": "비스트로슈토-메뉴",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1937",
+    "restaurantSourceId": "R688",
+    "purpose": "invitation",
+    "purposeLabel": "청모이용증거",
+    "keyword": "청모",
+    "sourceType": "개인후기",
+    "title": "[병점, 동탄] 청모 리뷰 2탄",
+    "url": "https://www.diningcode.com/profile.php?rid=y8uN0nGFEsJy",
+    "publishedAt": "2025-12-12",
+    "summary": "가까운 회사 동료 모임의 청모 장소로 닭나무집 동탄점을 이용한 기록",
+    "platform": "DiningCode 사용자후기",
+    "sponsored": "no",
+    "confidence": "높음",
+    "duplicateGroup": "닭나무집-청모-20251212",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "회사동료"
+    ]
+  },
+  {
+    "id": "E1938",
+    "restaurantSourceId": "R688",
+    "purpose": null,
+    "purposeLabel": "운영정보",
+    "keyword": "영업시간·주차",
+    "sourceType": "플랫폼정보",
+    "title": "닭나무집 동탄점 식당정보",
+    "url": "https://www.diningcode.com/profile.php?rid=lWMVVPstAXJf",
+    "publishedAt": null,
+    "summary": "주소, 매일 영업·브레이크타임, 건물 2시간 무료 주차와 넓은 좌석 확인",
+    "platform": "DiningCode",
+    "sponsored": "no",
+    "confidence": "높음",
+    "duplicateGroup": "닭나무집-운영",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1939",
+    "restaurantSourceId": "R688",
+    "purpose": null,
+    "purposeLabel": "공식정보",
+    "keyword": "브랜드·메뉴",
+    "sourceType": "공식사이트",
+    "title": "닭나무집 공식 홈페이지",
+    "url": "https://chickentreehouse.com/",
+    "publishedAt": null,
+    "summary": "공식 브랜드 운영과 대표 닭구이·닭매운탕 메뉴 확인",
+    "platform": "닭나무집",
+    "sponsored": "no",
+    "confidence": "높음",
+    "duplicateGroup": "닭나무집-공식",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1940",
+    "restaurantSourceId": "R689",
+    "purpose": "invitation",
+    "purposeLabel": "청모이용증거",
+    "keyword": "청모 3회",
+    "sourceType": "개인후기",
+    "title": "병점족발 맛집 야들야들한 보약족발 병점동탄점(청모 장소 추천)",
+    "url": "https://www.diningcode.com/profile.php?rid=BzzRQ62ftqQx",
+    "publishedAt": "2026-03-23",
+    "summary": "작성자가 실제 청모로 세 차례 방문했다고 명시하고 분위기와 공간 구성을 평가",
+    "platform": "DiningCode 수집 블로그후기",
+    "sponsored": "no",
+    "confidence": "높음",
+    "duplicateGroup": "야들보약족발-청모-20260323",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1941",
+    "restaurantSourceId": "R689",
+    "purpose": null,
+    "purposeLabel": "운영정보",
+    "keyword": "주소·영업시간·전화",
+    "sourceType": "플랫폼정보",
+    "title": "야들야들한 보약족발 식당정보",
+    "url": "https://www.diningcode.com/profile.php?rid=BzzRQ62ftqQx",
+    "publishedAt": null,
+    "summary": "병점동로 92, 매일 17:00~01:00, 예약과 연락처 확인",
+    "platform": "DiningCode",
+    "sponsored": "no",
+    "confidence": "높음",
+    "duplicateGroup": "야들보약족발-운영",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1942",
+    "restaurantSourceId": "R689",
+    "purpose": null,
+    "purposeLabel": "메뉴·주차",
+    "keyword": "족발·보쌈·주차",
+    "sourceType": "개인후기",
+    "title": "병점 족발맛집 야들야들한 보약족발 병점동탄점",
+    "url": "https://cks880305.tistory.com/95",
+    "publishedAt": null,
+    "summary": "족발·보쌈 메뉴 구성과 병점 중심상가 방문 정보 교차확인",
+    "platform": "티스토리",
+    "sponsored": "no",
+    "confidence": "중간",
+    "duplicateGroup": "야들보약족발-메뉴",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1943",
+    "restaurantSourceId": "R690",
+    "purpose": "invitation",
+    "purposeLabel": "청모이용증거",
+    "keyword": "청모",
+    "sourceType": "개인후기",
+    "title": "2025년 2월 셋째 주 먹부림 언니 오빠 청모 모임",
+    "url": "https://www.diningcode.com/profile.php?rid=KRsLiRcZWwJA",
+    "publishedAt": "2025-02-24",
+    "summary": "언니·오빠 청모 모임에서 솥뚜껑 삼겹살과 낮술을 이용한 기록",
+    "platform": "DiningCode 수집 블로그후기",
+    "sponsored": "no",
+    "confidence": "높음",
+    "duplicateGroup": "황금돼지-청모-20250224",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1944",
+    "restaurantSourceId": "R690",
+    "purpose": null,
+    "purposeLabel": "운영정보",
+    "keyword": "주소·영업시간·전화",
+    "sourceType": "플랫폼정보",
+    "title": "황금돼지솥뚜껑삼겹살 식당정보",
+    "url": "https://www.diningcode.com/profile.php?rid=KRsLiRcZWwJA",
+    "publishedAt": null,
+    "summary": "병점동로 98, 14:00~00:30 영업, 연락처와 현재 운영 확인",
+    "platform": "DiningCode",
+    "sponsored": "no",
+    "confidence": "높음",
+    "duplicateGroup": "황금돼지-운영",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1945",
+    "restaurantSourceId": "R690",
+    "purpose": null,
+    "purposeLabel": "메뉴·시설",
+    "keyword": "고기 가격·테이블",
+    "sourceType": "플랫폼정보",
+    "title": "황금돼지솥뚜껑삼겹살 메뉴정보",
+    "url": "https://www.diningcode.com/profile.php?rid=KRsLiRcZWwJA",
+    "publishedAt": null,
+    "summary": "삼겹살·목살·모둠 가격과 10테이블 규모, 매장 앞 주차 정보 확인",
+    "platform": "DiningCode",
+    "sponsored": "no",
+    "confidence": "높음",
+    "duplicateGroup": "황금돼지-메뉴",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1946",
+    "restaurantSourceId": "R691",
+    "purpose": "invitation",
+    "purposeLabel": "청모이용증거",
+    "keyword": "청첩장 모임",
+    "sourceType": "개인후기",
+    "title": "오산 구룡돼지마을 돼지갈비가 맛있는 오산 동네맛집",
+    "url": "https://www.diningcode.com/profile.php?rid=53q47uy8Fhdm",
+    "publishedAt": "2026-01-28",
+    "summary": "고양이 모임 친구들이 청첩장을 받기 위해 방문해 식사한 실제 기록",
+    "platform": "DiningCode 수집 블로그후기",
+    "sponsored": "no",
+    "confidence": "높음",
+    "duplicateGroup": "구룡돼지마을-청모-20260128",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "친구"
+    ]
+  },
+  {
+    "id": "E1947",
+    "restaurantSourceId": "R691",
+    "purpose": null,
+    "purposeLabel": "운영정보",
+    "keyword": "주소·영업시간·휴무",
+    "sourceType": "플랫폼정보",
+    "title": "구룡돼지마을 식당정보",
+    "url": "https://www.diningcode.com/profile.php?rid=53q47uy8Fhdm",
+    "publishedAt": null,
+    "summary": "오산 원동 주소, 11:00~22:00 영업과 월요일 휴무·브레이크타임 확인",
+    "platform": "DiningCode",
+    "sponsored": "no",
+    "confidence": "높음",
+    "duplicateGroup": "구룡돼지마을-운영",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1948",
+    "restaurantSourceId": "R691",
+    "purpose": null,
+    "purposeLabel": "메뉴·시설",
+    "keyword": "돼지갈비·좌석·주차",
+    "sourceType": "플랫폼정보",
+    "title": "구룡돼지마을 메뉴 및 방문정보",
+    "url": "https://www.diningcode.com/profile.php?rid=53q47uy8Fhdm",
+    "publishedAt": null,
+    "summary": "돼지갈비 18,000원, 테이블석과 전용주차장 부재 정보를 확인",
+    "platform": "DiningCode",
+    "sponsored": "no",
+    "confidence": "높음",
+    "duplicateGroup": "구룡돼지마을-메뉴",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1949",
+    "restaurantSourceId": "R692",
+    "purpose": "invitation",
+    "purposeLabel": "청모이용증거",
+    "keyword": "청첩장 모임",
+    "sourceType": "개인후기",
+    "title": "오산 파스타 맛집 비다벨로 청첩장 모임 위해 방문했어요",
+    "url": "https://www.diningcode.com/profile.php?rid=kEYoyd0kBD1M",
+    "publishedAt": "2026-01-08",
+    "summary": "결혼을 앞둔 친구가 청첩장을 전달하며 점심을 산 실제 모임 기록",
+    "platform": "DiningCode 수집 블로그후기",
+    "sponsored": "no",
+    "confidence": "높음",
+    "duplicateGroup": "비다벨로-청모-20260108",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "친구"
+    ]
+  },
+  {
+    "id": "E1950",
+    "restaurantSourceId": "R692",
+    "purpose": null,
+    "purposeLabel": "운영정보",
+    "keyword": "주소·영업시간·주차",
+    "sourceType": "플랫폼정보",
+    "title": "비다벨로 오산직영점 식당정보",
+    "url": "https://www.diningcode.com/profile.php?rid=kEYoyd0kBD1M",
+    "publishedAt": null,
+    "summary": "오산대역 인근 주소, 11:00~21:20 영업과 브레이크타임·무료주차 확인",
+    "platform": "DiningCode",
+    "sponsored": "no",
+    "confidence": "높음",
+    "duplicateGroup": "비다벨로-운영",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1951",
+    "restaurantSourceId": "R692",
+    "purpose": null,
+    "purposeLabel": "메뉴·시설",
+    "keyword": "파스타·스테이크·좌석",
+    "sourceType": "플랫폼정보",
+    "title": "비다벨로 오산직영점 메뉴정보",
+    "url": "https://www.diningcode.com/profile.php?rid=kEYoyd0kBD1M",
+    "publishedAt": null,
+    "summary": "파스타 16,000원대, 스테이크 25,000원과 넓게 배치된 소규모 테이블 확인",
+    "platform": "DiningCode",
+    "sponsored": "no",
+    "confidence": "높음",
+    "duplicateGroup": "비다벨로-메뉴",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1952",
+    "restaurantSourceId": "R693",
+    "purpose": "invitation",
+    "purposeLabel": "청모이용증거",
+    "keyword": "집들이 겸 청첩장 모임",
+    "sourceType": "개인후기",
+    "title": "오산 원동 양꼬치 맛집 향양꼬치에서 양꼬치와 지삼선 먹고왔어요",
+    "url": "https://syuttangduck.tistory.com/entry/%EC%98%A4%EC%82%B0-%EC%9B%90%EB%8F%99-%EC%96%91%EA%BC%AC%EC%B9%98-%EB%A7%9B%EC%A7%91-%ED%96%A5%EC%96%91%EA%BC%AC%EC%B9%98%EC%97%90%EC%84%9C-%EC%96%91%EA%BC%AC%EC%B9%98%EC%99%80-%EC%A7%80%EC%82%BC%EC%84%A0-%EB%A8%B9%EA%B3%A0%EC%99%94%EC%96%B4%EC%9A%94",
+    "publishedAt": "2023-12-20",
+    "summary": "오산 신혼집 집들이와 청첩장 모임을 겸해 친구와 방문한 실제 기록",
+    "platform": "티스토리",
+    "sponsored": "no",
+    "confidence": "높음",
+    "duplicateGroup": "향양꼬치-청모-20231220",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "친구"
+    ]
+  },
+  {
+    "id": "E1953",
+    "restaurantSourceId": "R693",
+    "purpose": null,
+    "purposeLabel": "운영정보",
+    "keyword": "주소·영업시간·휴무",
+    "sourceType": "플랫폼정보",
+    "title": "향양꼬치 식당정보",
+    "url": "https://www.diningcode.com/profile.php?rid=MUxDf9TdaNR4",
+    "publishedAt": null,
+    "summary": "오산 원동 주소, 13:00~01:00 영업과 둘째·넷째 월요일 휴무 확인",
+    "platform": "DiningCode",
+    "sponsored": "no",
+    "confidence": "높음",
+    "duplicateGroup": "향양꼬치-운영",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1954",
+    "restaurantSourceId": "R693",
+    "purpose": null,
+    "purposeLabel": "메뉴·시설",
+    "keyword": "양꼬치·지삼선·단체석",
+    "sourceType": "플랫폼정보",
+    "title": "향양꼬치 메뉴 및 매장정보",
+    "url": "https://www.diningcode.com/profile.php?rid=MUxDf9TdaNR4",
+    "publishedAt": null,
+    "summary": "양꼬치 14,000원, 지삼선 13,000원과 넓은 테이블·칸막이 정보 확인",
+    "platform": "DiningCode",
+    "sponsored": "no",
+    "confidence": "높음",
+    "duplicateGroup": "향양꼬치-메뉴",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1955",
+    "restaurantSourceId": "R694",
+    "purpose": "invitation",
+    "purposeLabel": "청모이용증거",
+    "keyword": "친구 청첩장 모임",
+    "sourceType": "개인후기",
+    "title": "동탄 모임하기 좋은 뇨끼맛집 리옹",
+    "url": "https://pandarank.net/contents/697d6adff44fdc74649ccea9",
+    "publishedAt": "2026-01-31",
+    "summary": "친구 결혼을 앞두고 리옹 동탄 본점을 예약해 실제 청첩장 모임으로 방문한 기록",
+    "platform": "판다랭크",
+    "sponsored": "no",
+    "confidence": "높음",
+    "duplicateGroup": "리옹본점-청모-20260131",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "친구"
+    ]
+  },
+  {
+    "id": "E1956",
+    "restaurantSourceId": "R694",
+    "purpose": null,
+    "purposeLabel": "운영정보",
+    "keyword": "주소·영업시간·전화",
+    "sourceType": "플랫폼정보",
+    "title": "리옹 식당정보",
+    "url": "https://www.diningcode.com/profile.php?rid=X9jwnJcjnBh4",
+    "publishedAt": null,
+    "summary": "영천동 주소, 11:00~21:20 영업, 브레이크타임과 전화번호 확인",
+    "platform": "DiningCode",
+    "sponsored": "no",
+    "confidence": "높음",
+    "duplicateGroup": "리옹본점-운영",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1957",
+    "restaurantSourceId": "R694",
+    "purpose": null,
+    "purposeLabel": "메뉴·시설",
+    "keyword": "뇨끼·파스타·스테이크·주차",
+    "sourceType": "플랫폼정보",
+    "title": "리옹 메뉴 및 매장정보",
+    "url": "https://www.diningcode.com/profile.php?rid=X9jwnJcjnBh4",
+    "publishedAt": null,
+    "summary": "뇨끼 21,500원, 파스타 20,500원대, 스테이크 39,500원과 주차·예약 정보 확인",
+    "platform": "DiningCode",
+    "sponsored": "no",
+    "confidence": "높음",
+    "duplicateGroup": "리옹본점-메뉴",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1958",
+    "restaurantSourceId": "R695",
+    "purpose": "invitation",
+    "purposeLabel": "청모이용증거",
+    "keyword": "친구 청첩장 모임",
+    "sourceType": "개인후기",
+    "title": "파주 탄현 야당역 맛집 추천 – 친구와 청첩장 모임에 딱! 훈장골 파주점",
+    "url": "https://creamystar.tistory.com/1838",
+    "publishedAt": "2025-10-30",
+    "summary": "친구들과 청첩장을 들고 훈장골 파주점에서 실제 모임을 진행한 기록",
+    "platform": "티스토리",
+    "sponsored": "no",
+    "confidence": "높음",
+    "duplicateGroup": "훈장골파주점-청모-20251030",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "친구"
+    ]
+  },
+  {
+    "id": "E1959",
+    "restaurantSourceId": "R695",
+    "purpose": null,
+    "purposeLabel": "운영정보",
+    "keyword": "주소·영업시간·전화·룸·주차",
+    "sourceType": "플랫폼정보",
+    "title": "훈장골 식당정보",
+    "url": "https://www.diningcode.com/profile.php?rid=qLXBkhsnzw2Y",
+    "publishedAt": null,
+    "summary": "동패동 주소, 11:00~22:00 영업, 개별룸과 무료주차 확인",
+    "platform": "DiningCode",
+    "sponsored": "no",
+    "confidence": "높음",
+    "duplicateGroup": "훈장골파주점-운영",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1960",
+    "restaurantSourceId": "R695",
+    "purpose": null,
+    "purposeLabel": "메뉴·시설",
+    "keyword": "갈비·점심특선·개별룸",
+    "sourceType": "플랫폼정보",
+    "title": "훈장골 메뉴 및 시설정보",
+    "url": "https://www.diningcode.com/profile.php?rid=qLXBkhsnzw2Y",
+    "publishedAt": null,
+    "summary": "점심특선 20,000원부터 돼지양념구이 23,000원, 소왕갈비 48,000원과 개별룸 확인",
+    "platform": "DiningCode",
+    "sponsored": "no",
+    "confidence": "높음",
+    "duplicateGroup": "훈장골파주점-메뉴",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1961",
+    "restaurantSourceId": "R696",
+    "purpose": "invitation",
+    "purposeLabel": "청모이용증거",
+    "keyword": "지인 청첩장 모임",
+    "sourceType": "개인후기",
+    "title": "파주 야당역 스페인 음식점 라까냐 청첩장 모임 후기",
+    "url": "https://creamystar.tistory.com/1716",
+    "publishedAt": "2025-08-20",
+    "summary": "야당역 인근 지인들과 라까냐에서 실제 청첩장 모임을 진행한 기록",
+    "platform": "티스토리",
+    "sponsored": "no",
+    "confidence": "높음",
+    "duplicateGroup": "라까냐-청모-20250820",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "친구"
+    ]
+  },
+  {
+    "id": "E1962",
+    "restaurantSourceId": "R696",
+    "purpose": null,
+    "purposeLabel": "운영정보",
+    "keyword": "주소·영업시간·휴무·주차",
+    "sourceType": "플랫폼정보",
+    "title": "라까냐 식당정보",
+    "url": "https://www.diningcode.com/profile.php?rid=sZpSvkiNEbME",
+    "publishedAt": null,
+    "summary": "야당동 주소, 평일·주말 영업시간, 전화와 무료주차 확인",
+    "platform": "DiningCode",
+    "sponsored": "no",
+    "confidence": "높음",
+    "duplicateGroup": "라까냐-운영",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1963",
+    "restaurantSourceId": "R696",
+    "purpose": null,
+    "purposeLabel": "메뉴·시설",
+    "keyword": "빠에야·깔도소·세트·테라스",
+    "sourceType": "플랫폼정보",
+    "title": "라까냐 메뉴 및 매장정보",
+    "url": "https://www.diningcode.com/profile.php?rid=sZpSvkiNEbME",
+    "publishedAt": null,
+    "summary": "감바스 16,000원, 2인 세트 50,500원부터와 테라스·무료주차 확인",
+    "platform": "DiningCode",
+    "sponsored": "no",
+    "confidence": "높음",
+    "duplicateGroup": "라까냐-메뉴",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1964",
+    "restaurantSourceId": "R697",
+    "purpose": "invitation",
+    "purposeLabel": "청모이용증거",
+    "keyword": "동창 첫 청첩장 모임",
+    "sourceType": "개인후기",
+    "title": "청모 했어요 – 빕스 롯데백화점 일산점",
+    "url": "https://www.diningcode.com/profile.php?rid=nVz8E7xYY1dV",
+    "publishedAt": null,
+    "summary": "20년 이상 알고 지낸 초·중·고 동창들과 첫 청첩장 모임으로 실제 방문한 기록",
+    "platform": "네이버블로그·DiningCode",
+    "sponsored": "no",
+    "confidence": "중간",
+    "duplicateGroup": "빕스일산점-청모",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "친구"
+    ]
+  },
+  {
+    "id": "E1965",
+    "restaurantSourceId": "R697",
+    "purpose": null,
+    "purposeLabel": "운영정보",
+    "keyword": "주소·영업시간·전화·주차",
+    "sourceType": "플랫폼정보",
+    "title": "빕스 롯데백화점 일산점 식당정보",
+    "url": "https://www.diningcode.com/profile.php?rid=nVz8E7xYY1dV",
+    "publishedAt": null,
+    "summary": "정발산역 연결 주소, 평일·주말 영업시간, 전화와 무료주차 확인",
+    "platform": "DiningCode",
+    "sponsored": "no",
+    "confidence": "높음",
+    "duplicateGroup": "빕스일산점-운영",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1966",
+    "restaurantSourceId": "R697",
+    "purpose": null,
+    "purposeLabel": "메뉴·시설",
+    "keyword": "샐러드바·단체좌석·주차",
+    "sourceType": "플랫폼정보",
+    "title": "빕스 롯데백화점 일산점 메뉴 및 시설정보",
+    "url": "https://www.diningcode.com/profile.php?rid=nVz8E7xYY1dV",
+    "publishedAt": null,
+    "summary": "성인 샐러드바 평일 런치 39,700원·디너 및 주말 49,700원, 넓은 좌석과 주차 확인",
+    "platform": "DiningCode",
+    "sponsored": "no",
+    "confidence": "높음",
+    "duplicateGroup": "빕스일산점-메뉴",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1967",
+    "restaurantSourceId": "R698",
+    "purpose": "invitation",
+    "purposeLabel": "청모이용증거",
+    "keyword": "친구 청첩장 모임",
+    "sourceType": "개인후기",
+    "title": "이경양식당 청모장소 방문 후기",
+    "url": "https://www.diningcode.com/profile.php?rid=HMBa1axqf4Ou",
+    "publishedAt": null,
+    "summary": "청첩장 모임으로 방문했고 주변에도 3~4인 모임 방문객이 많았다는 실제 이용 기록",
+    "platform": "네이버블로그·DiningCode",
+    "sponsored": "no",
+    "confidence": "중간",
+    "duplicateGroup": "이경양식당-청모",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "친구"
+    ]
+  },
+  {
+    "id": "E1968",
+    "restaurantSourceId": "R698",
+    "purpose": null,
+    "purposeLabel": "운영정보",
+    "keyword": "주소·영업시간·접근·주차",
+    "sourceType": "플랫폼정보",
+    "title": "이경양식당 식당정보",
+    "url": "https://www.diningcode.com/profile.php?rid=HMBa1axqf4Ou",
+    "publishedAt": null,
+    "summary": "산두로 167-25 1층, 풍산역 1번 출구 도보 5~7분, 11:00~21:00·브레이크 16:00~17:00, 전용 주차장 없음",
+    "platform": "DiningCode",
+    "sponsored": "no",
+    "confidence": "높음",
+    "duplicateGroup": "이경양식당-운영",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1969",
+    "restaurantSourceId": "R698",
+    "purpose": null,
+    "purposeLabel": "메뉴·시설",
+    "keyword": "메뉴·분위기·웨이팅",
+    "sourceType": "플랫폼정보",
+    "title": "이경양식당 메뉴 및 모임정보",
+    "url": "https://www.diningcode.com/profile.php?rid=HMBa1axqf4Ou",
+    "publishedAt": null,
+    "summary": "솥밥 16,000원대와 파스타·스테이크 공유 메뉴, 인기 시간대 웨이팅과 다소 북적이는 분위기 확인",
+    "platform": "DiningCode",
+    "sponsored": "no",
+    "confidence": "높음",
+    "duplicateGroup": "이경양식당-메뉴",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1970",
+    "restaurantSourceId": "R699",
+    "purpose": "invitation",
+    "purposeLabel": "청모이용증거",
+    "keyword": "친구 청모",
+    "sourceType": "개인후기",
+    "title": "스시이담 친구 청모 방문 후기",
+    "url": "https://www.diningcode.com/profile.php?rid=ogp7KnjfZuxQ",
+    "publishedAt": null,
+    "summary": "친구 청모로 방문해 이담특선과 새우튀김을 주문한 실제 이용 기록",
+    "platform": "네이버블로그·DiningCode",
+    "sponsored": "no",
+    "confidence": "중간",
+    "duplicateGroup": "스시이담-청모",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "친구"
+    ]
+  },
+  {
+    "id": "E1971",
+    "restaurantSourceId": "R699",
+    "purpose": null,
+    "purposeLabel": "운영정보",
+    "keyword": "주소·영업시간·전화·주차",
+    "sourceType": "플랫폼정보",
+    "title": "스시이담 식당정보",
+    "url": "https://www.diningcode.com/profile.php?rid=ogp7KnjfZuxQ",
+    "publishedAt": null,
+    "summary": "일산로380번길 5-11 1층, 11:00~21:30·브레이크 15:00~17:00, 0507-1327-2860, 주차 가능",
+    "platform": "DiningCode",
+    "sponsored": "no",
+    "confidence": "높음",
+    "duplicateGroup": "스시이담-운영",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1972",
+    "restaurantSourceId": "R699",
+    "purpose": null,
+    "purposeLabel": "메뉴·시설",
+    "keyword": "특선초밥·예약·콜키지",
+    "sourceType": "플랫폼정보",
+    "title": "스시이담 메뉴 및 시설정보",
+    "url": "https://www.diningcode.com/profile.php?rid=ogp7KnjfZuxQ",
+    "publishedAt": null,
+    "summary": "이담 30,000원, 이담특선 38,000원 수준, 예약석과 콜키지프리 운영 확인",
+    "platform": "DiningCode",
+    "sponsored": "no",
+    "confidence": "높음",
+    "duplicateGroup": "스시이담-메뉴",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1973",
+    "restaurantSourceId": "R700",
+    "purpose": "invitation",
+    "purposeLabel": "청모이용증거",
+    "keyword": "친척 청첩장 모임",
+    "sourceType": "개인후기",
+    "title": "탐라돗 일산백석점 청모 방문 후기",
+    "url": "https://www.diningcode.com/profile.php?rid=AugQqKLwRaWT",
+    "publishedAt": null,
+    "summary": "이모를 포함한 친척들과 청첩장 모임으로 다시 방문한 실제 이용 기록",
+    "platform": "네이버블로그·DiningCode",
+    "sponsored": "no",
+    "confidence": "중간",
+    "duplicateGroup": "탐라돗백석-청모",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "친척"
+    ]
+  },
+  {
+    "id": "E1974",
+    "restaurantSourceId": "R700",
+    "purpose": null,
+    "purposeLabel": "운영정보",
+    "keyword": "주소·영업시간·전화·주차",
+    "sourceType": "플랫폼정보",
+    "title": "탐라돗 일산백석점 식당정보",
+    "url": "https://www.diningcode.com/profile.php?rid=AugQqKLwRaWT",
+    "publishedAt": null,
+    "summary": "호수로 358-26 203동 113·114호, 15:00~22:50, 일요일 휴무, 0507-1402-1374, 건물 내 주차 가능",
+    "platform": "DiningCode",
+    "sponsored": "no",
+    "confidence": "높음",
+    "duplicateGroup": "탐라돗백석-운영",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1975",
+    "restaurantSourceId": "R700",
+    "purpose": null,
+    "purposeLabel": "메뉴·시설",
+    "keyword": "가격·별관·단체수용",
+    "sourceType": "플랫폼정보",
+    "title": "탐라돗 일산백석점 메뉴 및 단체정보",
+    "url": "https://www.diningcode.com/profile.php?rid=AugQqKLwRaWT",
+    "publishedAt": null,
+    "summary": "오겹살·목살 18,000원, 항정살 20,000원 수준이며 3관 약 6테이블·24명 단체 예약 가능 정보 확인",
+    "platform": "DiningCode",
+    "sponsored": "no",
+    "confidence": "높음",
+    "duplicateGroup": "탐라돗백석-시설",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1976",
+    "restaurantSourceId": "R701",
+    "purpose": "invitation",
+    "purposeLabel": "청모이용증거",
+    "keyword": "친구 6인 청모",
+    "sourceType": "개인후기",
+    "title": "오반 킨텍스 청모 방문 후기",
+    "url": "https://www.diningcode.com/profile.php?rid=jALEQq2SOrj2",
+    "publishedAt": null,
+    "summary": "각지에서 오는 친구들과 6인이 오반을 청모 장소로 정해 여러 공유 안주를 주문한 실제 방문 기록",
+    "platform": "네이버블로그·DiningCode",
+    "sponsored": "no",
+    "confidence": "중간",
+    "duplicateGroup": "오반킨텍스-청모",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "친구"
+    ]
+  },
+  {
+    "id": "E1977",
+    "restaurantSourceId": "R701",
+    "purpose": null,
+    "purposeLabel": "운영정보",
+    "keyword": "주소·영업시간·전화·주차",
+    "sourceType": "플랫폼정보",
+    "title": "오반 킨텍스 식당정보",
+    "url": "https://www.diningcode.com/profile.php?rid=jALEQq2SOrj2",
+    "publishedAt": null,
+    "summary": "킨텍스로 240 GIFC몰 1층 132호, 17:00~01:00·라스트오더 00:00, 070-8211-0916, 주차 가능",
+    "platform": "DiningCode",
+    "sponsored": "no",
+    "confidence": "높음",
+    "duplicateGroup": "오반킨텍스-운영",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1978",
+    "restaurantSourceId": "R701",
+    "purpose": null,
+    "purposeLabel": "메뉴·시설",
+    "keyword": "공유안주·전통주·좌석",
+    "sourceType": "플랫폼정보",
+    "title": "오반 킨텍스 메뉴 및 모임정보",
+    "url": "https://www.diningcode.com/profile.php?rid=jALEQq2SOrj2",
+    "publishedAt": null,
+    "summary": "차돌양지수육 30,000원, 백합술찜파스타 24,000원 등 공유 메뉴와 전통주, 6인 이용·아담한 홀 확인",
+    "platform": "DiningCode",
+    "sponsored": "no",
+    "confidence": "높음",
+    "duplicateGroup": "오반킨텍스-메뉴",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1979",
+    "restaurantSourceId": "R702",
+    "purpose": "invitation",
+    "purposeLabel": "청모이용증거",
+    "keyword": "친구 6인 청첩장 모임",
+    "sourceType": "개인후기",
+    "title": "도쿠리 대화역 청첩장 모임 후기",
+    "url": "https://www.diningcode.com/profile.php?rid=Tv9kq8FPk2Vd",
+    "publishedAt": null,
+    "summary": "친구 6인이 청첩장 모임으로 방문해 꼬치·나베·유린기 등을 주문한 실제 이용 기록",
+    "platform": "네이버블로그·DiningCode",
+    "sponsored": "no",
+    "confidence": "중간",
+    "duplicateGroup": "도쿠리대화-청모",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "친구"
+    ]
+  },
+  {
+    "id": "E1980",
+    "restaurantSourceId": "R702",
+    "purpose": null,
+    "purposeLabel": "운영정보",
+    "keyword": "주소·영업시간·전화·접근",
+    "sourceType": "플랫폼정보",
+    "title": "도쿠리 대화역 식당정보",
+    "url": "https://www.diningcode.com/profile.php?rid=Tv9kq8FPk2Vd",
+    "publishedAt": null,
+    "summary": "중앙로 1575 1층 105호, 대화역 3번 출구 앞, 화~일 14:30~02:00·월요일 휴무, 0507-1481-9299",
+    "platform": "DiningCode",
+    "sponsored": "no",
+    "confidence": "높음",
+    "duplicateGroup": "도쿠리대화-운영",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1981",
+    "restaurantSourceId": "R702",
+    "purpose": null,
+    "purposeLabel": "메뉴·시설",
+    "keyword": "꼬치·나베·6인좌석",
+    "sourceType": "플랫폼정보",
+    "title": "도쿠리 대화역 메뉴 및 좌석정보",
+    "url": "https://www.diningcode.com/profile.php?rid=Tv9kq8FPk2Vd",
+    "publishedAt": null,
+    "summary": "모둠꼬치 22,900~25,900원대, 김치우동나베 19,900원이며 6인 좌석과 아담한 매장 규모 확인",
+    "platform": "DiningCode",
+    "sponsored": "no",
+    "confidence": "높음",
+    "duplicateGroup": "도쿠리대화-메뉴",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1982",
+    "restaurantSourceId": "R703",
+    "purpose": "invitation",
+    "purposeLabel": "청모이용증거",
+    "keyword": "중학교 동창 청첩장 모임",
+    "sourceType": "개인후기",
+    "title": "술있는테이블 동창 청모 후기",
+    "url": "https://greenseedsecret.tistory.com/entry/%EC%9D%BC%EC%82%B0-%EC%B2%AD%EC%B2%A9%EC%9E%A5-%EB%AA%A8%EC%9E%84-%EC%9E%A5%EC%86%8C-%EC%B6%94%EC%B2%9C-%EC%88%A0%EC%9E%88%EB%8A%94-%ED%85%8C%EC%9D%B4%EB%B8%94",
+    "publishedAt": null,
+    "summary": "중학교 동창 9명이 사전 예약 후 실제 청첩장 모임을 진행하고 1인 약 35,111원을 지출한 기록",
+    "platform": "행복교과서·Tistory",
+    "sponsored": "no",
+    "confidence": "높음",
+    "duplicateGroup": "술있는테이블-청모",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "친구"
+    ]
+  },
+  {
+    "id": "E1983",
+    "restaurantSourceId": "R703",
+    "purpose": null,
+    "purposeLabel": "운영정보",
+    "keyword": "주소·영업시간·전화·현재인원",
+    "sourceType": "플랫폼정보",
+    "title": "술있는테이블 현재 식당정보",
+    "url": "https://www.diningcode.com/profile.php?rid=KnC9eWhCSSXm",
+    "publishedAt": null,
+    "summary": "일현로41번길 8-9 1층, 매일 18:00~03:00·라스트오더 02:00, 0507-1334-0540, 최근 최대 6인 안내",
+    "platform": "DiningCode",
+    "sponsored": "no",
+    "confidence": "높음",
+    "duplicateGroup": "술있는테이블-운영",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1984",
+    "restaurantSourceId": "R703",
+    "purpose": null,
+    "purposeLabel": "메뉴·시설",
+    "keyword": "사시미·나베·안쪽좌석",
+    "sourceType": "플랫폼정보",
+    "title": "술있는테이블 메뉴 및 좌석정보",
+    "url": "https://www.diningcode.com/profile.php?rid=KnC9eWhCSSXm",
+    "publishedAt": null,
+    "summary": "나가사키짬뽕 18,000원, 새우튀김 17,000원, 해물짬뽕 19,000원 등 다양한 안주와 안쪽 좌석 확인",
+    "platform": "DiningCode",
+    "sponsored": "no",
+    "confidence": "높음",
+    "duplicateGroup": "술있는테이블-메뉴",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1985",
+    "restaurantSourceId": "R704",
+    "purpose": "invitation",
+    "purposeLabel": "청모이용증거",
+    "keyword": "친구 청첩장 모임",
+    "sourceType": "개인후기",
+    "title": "미래회관 파주야당점 친구 청모 후기",
+    "url": "https://www.diningcode.com/profile.php?rid=62tpK1hrspVl",
+    "publishedAt": null,
+    "summary": "친구 청첩장 모임으로 방문해 조용한 분위기·직원 구이·콜키지프리를 이용한 실제 기록",
+    "platform": "네이버블로그·DiningCode",
+    "sponsored": "no",
+    "confidence": "중간",
+    "duplicateGroup": "미래회관야당-청모",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "친구"
+    ]
+  },
+  {
+    "id": "E1986",
+    "restaurantSourceId": "R704",
+    "purpose": null,
+    "purposeLabel": "운영정보",
+    "keyword": "주소·영업시간·전화·주차",
+    "sourceType": "플랫폼정보",
+    "title": "미래회관 파주야당점 식당정보",
+    "url": "https://www.diningcode.com/profile.php?rid=62tpK1hrspVl",
+    "publishedAt": null,
+    "summary": "소리천로 25 유은타워 7차 2층 217호, 화~토 17:00~23:00, 0507-1480-7531, 무료주차 안내",
+    "platform": "DiningCode",
+    "sponsored": "no",
+    "confidence": "높음",
+    "duplicateGroup": "미래회관야당-운영",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1987",
+    "restaurantSourceId": "R704",
+    "purpose": null,
+    "purposeLabel": "메뉴·시설",
+    "keyword": "세트·직원구이·콜키지",
+    "sourceType": "플랫폼정보",
+    "title": "미래회관 파주야당점 메뉴 및 시설정보",
+    "url": "https://www.diningcode.com/profile.php?rid=62tpK1hrspVl",
+    "publishedAt": null,
+    "summary": "미래세트 3~4인 84,000원, 2인 세트 49,000원, 직원 구이와 콜키지무료 확인",
+    "platform": "DiningCode",
+    "sponsored": "no",
+    "confidence": "높음",
+    "duplicateGroup": "미래회관야당-시설",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1988",
+    "restaurantSourceId": "R705",
+    "purpose": "invitation",
+    "purposeLabel": "청모이용증거",
+    "keyword": "친구 청모",
+    "sourceType": "개인후기",
+    "title": "포근 파주야당점 친구 청모 후기",
+    "url": "https://www.diningcode.com/profile.php?rid=HTAzSVvIGVNy",
+    "publishedAt": null,
+    "summary": "친구 청모로 방문해 모츠나베·명란파스타·후토마키 등을 주문한 실제 이용 기록",
+    "platform": "네이버블로그·DiningCode",
+    "sponsored": "no",
+    "confidence": "중간",
+    "duplicateGroup": "포근야당-청모",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "친구"
+    ]
+  },
+  {
+    "id": "E1989",
+    "restaurantSourceId": "R705",
+    "purpose": null,
+    "purposeLabel": "운영정보",
+    "keyword": "주소·영업시간·전화·접근",
+    "sourceType": "플랫폼정보",
+    "title": "포근 파주야당점 식당정보",
+    "url": "https://www.diningcode.com/profile.php?rid=HTAzSVvIGVNy",
+    "publishedAt": null,
+    "summary": "경의로 1114 에펠타워 2층 201호, 야당역 2번 출구 도보 약 8분, 0507-1481-1068, 건물주차 지원",
+    "platform": "DiningCode",
+    "sponsored": "no",
+    "confidence": "높음",
+    "duplicateGroup": "포근야당-운영",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1990",
+    "restaurantSourceId": "R705",
+    "purpose": null,
+    "purposeLabel": "메뉴·시설",
+    "keyword": "나베·파스타·통창·좌석",
+    "sourceType": "플랫폼정보",
+    "title": "포근 파주야당점 메뉴 및 시설정보",
+    "url": "https://www.diningcode.com/profile.php?rid=HTAzSVvIGVNy",
+    "publishedAt": null,
+    "summary": "모츠나베 28,000원, 명란파스타 16,000원, 후토마키 24,500원과 통창·넓은 테이블 간격 확인",
+    "platform": "DiningCode",
+    "sponsored": "no",
+    "confidence": "높음",
+    "duplicateGroup": "포근야당-메뉴",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1991",
+    "restaurantSourceId": "R706",
+    "purpose": "invitation",
+    "purposeLabel": "청모이용증거",
+    "keyword": "운정 청모 목적 방문·예약혜택",
+    "sourceType": "개인후기·매장혜택",
+    "title": "업스테어키친 파주운정본점 청모 후기",
+    "url": "https://www.diningcode.com/profile.php?rid=RFrgVnZMjHvP",
+    "publishedAt": null,
+    "summary": "청첩장 모임을 위한 운정 식당으로 방문·소개한 후기와 청첩장 모임 예약 5% 할인 안내 확인",
+    "platform": "네이버블로그·DiningCode",
+    "sponsored": "no",
+    "confidence": "중간",
+    "duplicateGroup": "업스테어키친운정-청모",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "친구"
+    ]
+  },
+  {
+    "id": "E1992",
+    "restaurantSourceId": "R706",
+    "purpose": null,
+    "purposeLabel": "운영정보",
+    "keyword": "주소·영업시간·전화·주차",
+    "sourceType": "플랫폼정보",
+    "title": "업스테어키친 파주운정본점 식당정보",
+    "url": "https://www.diningcode.com/profile.php?rid=RFrgVnZMjHvP",
+    "publishedAt": null,
+    "summary": "청암로17번길 35 라온프라자 4층 403호, 11:30~21:30·브레이크 15:00~17:00, 0507-1421-1510, 무료주차",
+    "platform": "DiningCode",
+    "sponsored": "no",
+    "confidence": "높음",
+    "duplicateGroup": "업스테어키친운정-운영",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1993",
+    "restaurantSourceId": "R706",
+    "purpose": null,
+    "purposeLabel": "메뉴·시설",
+    "keyword": "공유코스·6인이용·예약",
+    "sourceType": "플랫폼정보",
+    "title": "업스테어키친 파주운정본점 메뉴 및 좌석정보",
+    "url": "https://www.diningcode.com/profile.php?rid=RFrgVnZMjHvP",
+    "publishedAt": null,
+    "summary": "2인 공유코스 82,000원 수준이며 6인이 코스 2세트와 파스타·뇨끼를 추가한 이용 사례, 네이버예약 확인",
+    "platform": "DiningCode",
+    "sponsored": "no",
+    "confidence": "높음",
+    "duplicateGroup": "업스테어키친운정-메뉴",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1994",
+    "restaurantSourceId": "R707",
+    "purpose": "family_meeting",
+    "purposeLabel": "상견례이용증거",
+    "keyword": "상견례·단독룸",
+    "sourceType": "플랫폼정보",
+    "title": "장어명가지중해 상견례·룸 정보",
+    "url": "https://www.siksinhot.com/P/482582",
+    "publishedAt": null,
+    "summary": "상견례 용도를 명시하고 2~24인 단독룸과 예약 가능, 임진강 통창 전망을 안내",
+    "platform": "식신",
+    "sponsored": "no",
+    "confidence": "높음",
+    "duplicateGroup": "장어명가지중해-상견례",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "부모님"
+    ]
+  },
+  {
+    "id": "E1995",
+    "restaurantSourceId": "R707",
+    "purpose": null,
+    "purposeLabel": "운영정보",
+    "keyword": "주소·전화·휴무·주차",
+    "sourceType": "지역플랫폼",
+    "title": "장어명가지중해 운영정보",
+    "url": "https://megojigo.com/foodmap/14951",
+    "publishedAt": null,
+    "summary": "방촌로 1447, 031-952-0880, 연중무휴, 넓은 주차장과 최대 300인 수용 정보를 확인",
+    "platform": "메고지고",
+    "sponsored": "no",
+    "confidence": "높음",
+    "duplicateGroup": "장어명가지중해-운영",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
   }
 ]
