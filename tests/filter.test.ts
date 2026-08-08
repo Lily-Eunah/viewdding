@@ -34,8 +34,24 @@ describe("filter engine", () => {
   });
 
   it("matches a metro area independently from administrative filters", () => {
-    expect(evaluateHall(hall(), { ...EMPTY_FILTERS, metroArea: "서울 동남권" })?.state).toBe("match");
-    expect(evaluateHall(hall(), { ...EMPTY_FILTERS, metroArea: "수원" })).toBeNull();
+    expect(evaluateHall(hall(), { ...EMPTY_FILTERS, metroAreas: ["서울 동남권"] })?.state).toBe("match");
+    expect(evaluateHall(hall(), { ...EMPTY_FILTERS, metroAreas: ["수원"] })).toBeNull();
+  });
+
+  it("uses OR across administrative regions and multiple metro areas", () => {
+    const northernSeoul = hall({ sido: "서울특별시", sigungu: "은평구", metroArea: "서울 서북권" });
+    const goyang = hall({ sido: "경기도", sigungu: "고양시", metroArea: "고양·일산·파주" });
+    const suwon = hall({ sido: "경기도", sigungu: "수원시", metroArea: "수원" });
+    const filters = {
+      ...EMPTY_FILTERS,
+      sido: "서울특별시" as const,
+      sigungu: "은평구",
+      metroAreas: ["고양·일산·파주"],
+    };
+
+    expect(evaluateHall(northernSeoul, filters)?.state).toBe("match");
+    expect(evaluateHall(goyang, filters)?.state).toBe("match");
+    expect(evaluateHall(suwon, filters)).toBeNull();
   });
 
   it("uses OR inside a type group and AND across groups", () => {

@@ -13,6 +13,15 @@ import { HallCard } from "./HallCard";
 import { KakaoHallMap } from "./KakaoHallMap";
 
 const PAGE_SIZE = 24;
+const NORTH_SEOUL_AREAS = ["서울 서북권", "서울 동북권"];
+const FEATURED_METRO_AREAS = [
+  "서울 서북권",
+  "서울 동북권",
+  "고양·일산·파주",
+  "의정부·양주·동두천",
+  "남양주·구리",
+  "서울 도심권",
+];
 type ViewMode = "list" | "map";
 
 function toggleValue<T>(values: T[], value: T): T[] {
@@ -30,7 +39,7 @@ function queryFromFilters(filters: FilterState, viewMode: ViewMode): string {
   if (viewMode === "map") params.set("view", "map");
   if (filters.sido) params.set("sido", filters.sido);
   if (filters.sigungu) params.set("sigungu", filters.sigungu);
-  if (filters.metroArea) params.set("metro", filters.metroArea);
+  filters.metroAreas.forEach((metroArea) => params.append("metro", metroArea));
   if (filters.hallTypes.length) params.set("types", filters.hallTypes.join(","));
   if (filters.guests !== null) params.set("guests", String(filters.guests));
   if (filters.naturalLight) params.set("natural", "1");
@@ -41,7 +50,7 @@ function queryFromFilters(filters: FilterState, viewMode: ViewMode): string {
 }
 
 function filterSelectionCount(filters: FilterState): number {
-  return Number(Boolean(filters.sido || filters.sigungu || filters.metroArea)) + filters.hallTypes.length + Number(filters.guests !== null)
+  return Number(Boolean(filters.sido || filters.sigungu)) + filters.metroAreas.length + filters.hallTypes.length + Number(filters.guests !== null)
     + Number(filters.naturalLight) + filters.ceremonyFormats.length + Number(filters.intervalAtLeast !== null)
     + filters.meals.length;
 }
@@ -61,6 +70,8 @@ export function SearchExperience({
   const [visible, setVisible] = useState(PAGE_SIZE);
   const [viewMode, setViewMode] = useState<ViewMode>("list");
   const [mobileFilterOpen, setMobileFilterOpen] = useState(false);
+  const [metroExpanded, setMetroExpanded] = useState(false);
+  const [regionOpen, setRegionOpen] = useState(false);
 
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
@@ -71,12 +82,12 @@ export function SearchExperience({
       : legacyHall?.sido ?? "";
     const requestedSigungu = params.get("sigungu") ?? legacyHall?.sigungu ?? "";
     const sigungu = sido && sigunguBySido[sido].includes(requestedSigungu) ? requestedSigungu : "";
-    const requestedMetroArea = params.get("metro") ?? "";
-    const metroArea = metroAreas.includes(requestedMetroArea) ? requestedMetroArea : "";
+    const requestedMetroAreas = params.getAll("metro").flatMap((value) => value.split(","));
+    const selectedMetroAreas = Array.from(new Set(requestedMetroAreas.filter((metroArea) => metroAreas.includes(metroArea))));
     const parsed: FilterState = {
-      sido: metroArea ? "" : sido,
-      sigungu: metroArea ? "" : sigungu,
-      metroArea,
+      sido,
+      sigungu,
+      metroAreas: selectedMetroAreas,
       hallTypes: (params.get("types")?.split(",").filter(Boolean) ?? []) as HallTypeFilter[],
       guests: params.get("guests") ? Number(params.get("guests")) : null,
       naturalLight: params.get("natural") === "1",
@@ -88,6 +99,8 @@ export function SearchExperience({
     setApplied(parsed);
     setPickerTypes(parsed.hallTypes);
     setViewMode(params.get("view") === "map" ? "map" : "list");
+    setRegionOpen(Boolean(parsed.sido));
+    setMetroExpanded(selectedMetroAreas.some((metroArea) => !FEATURED_METRO_AREAS.includes(metroArea)));
     if (parsed.guests || parsed.naturalLight || parsed.ceremonyFormats.length || parsed.intervalAtLeast || parsed.meals.length) setDetailOpen(true);
   }, []);
 
@@ -100,7 +113,7 @@ export function SearchExperience({
     if (!mobileFilterOpen) return;
     const closeOnEscape = (event: KeyboardEvent) => {
       if (event.key === "Escape") {
-        setDraft({ ...applied, hallTypes: [...applied.hallTypes], ceremonyFormats: [...applied.ceremonyFormats], meals: [...applied.meals] });
+        setDraft({ ...applied, metroAreas: [...applied.metroAreas], hallTypes: [...applied.hallTypes], ceremonyFormats: [...applied.ceremonyFormats], meals: [...applied.meals] });
         setPickerTypes(applied.hallTypes);
         setTypeOpen(false);
         setMobileFilterOpen(false);
@@ -119,6 +132,10 @@ export function SearchExperience({
   const metroAreaCounts = useMemo(() => new Map(
     metroAreas.map((metroArea) => [metroArea, new Set(halls.filter((hall) => hall.metroArea === metroArea).map((hall) => hall.venueId)).size]),
   ), []);
+  const northSeoulCount = useMemo(
+    () => new Set(halls.filter((hall) => NORTH_SEOUL_AREAS.includes(hall.metroArea)).map((hall) => hall.venueId)).size,
+    [],
+  );
   useEffect(() => setVisible(PAGE_SIZE), [applied]);
 
   const detailCount = Number(draft.guests !== null) + Number(draft.naturalLight) + draft.ceremonyFormats.length + Number(draft.intervalAtLeast !== null) + draft.meals.length;
@@ -129,6 +146,24 @@ export function SearchExperience({
     window.history.replaceState(null, "", `${window.location.pathname}${query ? `?${query}` : ""}`);
   }
 
+  function updateFilters(next: FilterState) {
+    if (mobileFilterOpen) setDraft(next);
+    else commit(next);
+  }
+
+  function toggleMetroArea(metroArea: string) {
+    updateFilters({ ...draft, metroAreas: toggleValue(draft.metroAreas, metroArea) });
+  }
+
+  function toggleNorthSeoul() {
+    const selected = NORTH_SEOUL_AREAS.every((metroArea) => draft.metroAreas.includes(metroArea));
+    const metroAreasWithoutNorth = draft.metroAreas.filter((metroArea) => !NORTH_SEOUL_AREAS.includes(metroArea));
+    updateFilters({
+      ...draft,
+      metroAreas: selected ? metroAreasWithoutNorth : [...metroAreasWithoutNorth, ...NORTH_SEOUL_AREAS],
+    });
+  }
+
   function switchViewMode(nextViewMode: ViewMode) {
     setViewMode(nextViewMode);
     setMobileFilterOpen(false);
@@ -137,9 +172,12 @@ export function SearchExperience({
   }
 
   const chips: Array<{ key: string; label: string; remove: () => void }> = [];
-  if (applied.metroArea) {
-    chips.push({ key: "metro", label: applied.metroArea, remove: () => commit({ ...applied, metroArea: "" }) });
-  } else if (applied.sigungu && applied.sido) {
+  applied.metroAreas.forEach((metroArea) => chips.push({
+    key: `metro-${metroArea}`,
+    label: metroArea,
+    remove: () => commit({ ...applied, metroAreas: applied.metroAreas.filter((item) => item !== metroArea) }),
+  }));
+  if (applied.sigungu && applied.sido) {
     chips.push({ key: "sigungu", label: `${shortSidoLabel(applied.sido)} · ${applied.sigungu}`, remove: () => commit({ ...applied, sigungu: "" }) });
   } else if (applied.sido) {
     chips.push({ key: "sido", label: shortSidoLabel(applied.sido), remove: () => commit({ ...applied, sido: "", sigungu: "" }) });
@@ -155,6 +193,13 @@ export function SearchExperience({
   const appliedCount = filterSelectionCount(applied);
   const total = results.matched.length + results.unknown.length;
   const draftTotal = draftResults.matched.length + draftResults.unknown.length;
+  const northSeoulSelected = NORTH_SEOUL_AREAS.every((metroArea) => draft.metroAreas.includes(metroArea));
+  const visibleMetroAreas = metroExpanded
+    ? metroAreas
+    : FEATURED_METRO_AREAS.filter((metroArea) => metroAreas.includes(metroArea));
+  const directRegionSummary = draft.sigungu && draft.sido
+    ? `${shortSidoLabel(draft.sido)} · ${draft.sigungu}`
+    : draft.sido ? `${shortSidoLabel(draft.sido)} 전체` : "시·도와 시·군·구 선택";
 
   return (
     <section className={`search-experience${compact ? " is-compact" : ""}${viewMode === "map" ? " is-map-mode" : ""}${mobileFilterOpen ? " is-mobile-filter-open" : ""}`}>
@@ -169,7 +214,7 @@ export function SearchExperience({
         </div>
       ) : null}
 
-      {viewMode === "map" && mobileFilterOpen ? <button type="button" className="mobile-filter-backdrop" aria-label="필터 닫기" onClick={() => { setDraft({ ...applied, hallTypes: [...applied.hallTypes], ceremonyFormats: [...applied.ceremonyFormats], meals: [...applied.meals] }); setPickerTypes(applied.hallTypes); setTypeOpen(false); setMobileFilterOpen(false); }} /> : null}
+      {viewMode === "map" && mobileFilterOpen ? <button type="button" className="mobile-filter-backdrop" aria-label="필터 닫기" onClick={() => { setDraft({ ...applied, metroAreas: [...applied.metroAreas], hallTypes: [...applied.hallTypes], ceremonyFormats: [...applied.ceremonyFormats], meals: [...applied.meals] }); setPickerTypes(applied.hallTypes); setTypeOpen(false); setMobileFilterOpen(false); }} /> : null}
 
       <form
         className="search-panel"
@@ -185,33 +230,48 @@ export function SearchExperience({
         <div className="mobile-filter-sheet-header">
           <strong>FILTER</strong>
           <div className="mobile-filter-sheet-actions">
-            {selectedCount > 0 ? <button type="button" className="mobile-filter-reset" onClick={() => { setDraft({ ...EMPTY_FILTERS, hallTypes: [], ceremonyFormats: [], meals: [] }); setPickerTypes([]); setTypeOpen(false); }}>초기화</button> : null}
-            <button type="button" className="mobile-filter-close" onClick={() => { setDraft({ ...applied, hallTypes: [...applied.hallTypes], ceremonyFormats: [...applied.ceremonyFormats], meals: [...applied.meals] }); setPickerTypes(applied.hallTypes); setTypeOpen(false); setMobileFilterOpen(false); }} aria-label="필터 닫기" title="필터 닫기"><X aria-hidden="true" size={20} /></button>
+            {selectedCount > 0 ? <button type="button" className="mobile-filter-reset" onClick={() => { setDraft({ ...EMPTY_FILTERS, metroAreas: [], hallTypes: [], ceremonyFormats: [], meals: [] }); setPickerTypes([]); setTypeOpen(false); }}>초기화</button> : null}
+            <button type="button" className="mobile-filter-close" onClick={() => { setDraft({ ...applied, metroAreas: [...applied.metroAreas], hallTypes: [...applied.hallTypes], ceremonyFormats: [...applied.ceremonyFormats], meals: [...applied.meals] }); setPickerTypes(applied.hallTypes); setTypeOpen(false); setMobileFilterOpen(false); }} aria-label="필터 닫기" title="필터 닫기"><X aria-hidden="true" size={20} /></button>
           </div>
         </div>
-        <div className="primary-filter-grid">
-          <label className="field-label"><span>시·도</span><select value={draft.sido} onChange={(event) => setDraft({ ...draft, sido: event.target.value as Sido | "", sigungu: "", metroArea: "" })}><option value="">수도권 전체</option>{SIDO_OPTIONS.map((option) => <option key={option.value} value={option.value} disabled={!availableSidos.includes(option.value)}>{option.label}{availableSidos.includes(option.value) ? "" : " · 준비 중"}</option>)}</select></label>
-          <label className="field-label"><span>시·군·구</span><select value={draft.sigungu} disabled={!draft.sido || sigunguBySido[draft.sido].length === 0} onChange={(event) => setDraft({ ...draft, sigungu: event.target.value, metroArea: "" })}><option value="">{draft.sido ? `${shortSidoLabel(draft.sido)} 전체` : "시·도를 먼저 선택"}</option>{draft.sido ? sigunguBySido[draft.sido].map((sigungu) => <option key={`${draft.sido}-${sigungu}`} value={sigungu}>{sigungu}</option>) : null}</select></label>
+        <fieldset className="metro-area-filter">
+          <legend>지역 · 여러 곳 선택 가능</legend>
+          <p className="filter-helper">생활권을 함께 고르면 선택한 지역의 웨딩홀을 모두 보여드려요.</p>
+          <div className="metro-area-options">
+            <button type="button" className={northSeoulSelected ? "option is-selected" : "option"} aria-pressed={northSeoulSelected} onClick={toggleNorthSeoul}>서울 북부 전체<small>{northSeoulCount}곳</small></button>
+            {visibleMetroAreas.map((metroArea) => <button key={metroArea} type="button" className={draft.metroAreas.includes(metroArea) ? "option is-selected" : "option"} aria-pressed={draft.metroAreas.includes(metroArea)} onClick={() => toggleMetroArea(metroArea)}>{metroArea}<small>{metroAreaCounts.get(metroArea)}곳</small></button>)}
+          </div>
+          <button className="metro-area-more" type="button" aria-expanded={metroExpanded} onClick={() => setMetroExpanded(!metroExpanded)}>{metroExpanded ? "추천 생활권만 보기" : `전체 생활권 ${metroAreas.length}개 보기`}</button>
+        </fieldset>
+
+        <div className="secondary-filter-grid">
+          <div className="region-picker">
+            <span className="field-caption">행정구역으로 직접 선택</span>
+            <button className="field-button" type="button" aria-expanded={regionOpen} onClick={() => setRegionOpen(!regionOpen)}>{directRegionSummary}</button>
+          </div>
           <div className="type-picker">
             <span className="field-caption">웨딩홀 타입</span>
             <button className="field-button" type="button" aria-expanded={typeOpen} onClick={() => { setPickerTypes(draft.hallTypes); setTypeOpen(!typeOpen); }}>{typeSummary(draft.hallTypes)}</button>
             {typeOpen ? <div className="type-picker-panel">
               {HALL_TYPE_GROUPS.map((group) => <fieldset key={group.label}><legend>{group.label}</legend><div className="option-row">{group.options.map((option) => <button key={option.value} type="button" className={pickerTypes.includes(option.value) ? "option is-selected" : "option"} aria-pressed={pickerTypes.includes(option.value)} onClick={() => setPickerTypes(toggleValue(pickerTypes, option.value))}>{option.label}</button>)}</div></fieldset>)}
-              <button type="button" className="complete-button" onClick={() => { setDraft({ ...draft, hallTypes: pickerTypes }); setTypeOpen(false); }}>선택 완료</button>
+              <button type="button" className="complete-button" onClick={() => { updateFilters({ ...draft, hallTypes: pickerTypes }); setTypeOpen(false); }}>선택 완료</button>
             </div> : null}
           </div>
-          <button className="search-button" type="submit">찾기</button>
         </div>
 
-        <fieldset className="metro-area-filter"><legend>생활권 빠른 선택</legend><div>{metroAreas.map((metroArea) => <button key={metroArea} type="button" className={draft.metroArea === metroArea ? "option is-selected" : "option"} aria-pressed={draft.metroArea === metroArea} onClick={() => setDraft({ ...draft, sido: "", sigungu: "", metroArea: draft.metroArea === metroArea ? "" : metroArea })}>{metroArea}<small>{metroAreaCounts.get(metroArea)}곳</small></button>)}</div></fieldset>
+        {regionOpen ? <div className="region-direct-panel">
+          <label className="field-label"><span>시·도</span><select value={draft.sido} onChange={(event) => updateFilters({ ...draft, sido: event.target.value as Sido | "", sigungu: "" })}><option value="">선택 안 함</option>{SIDO_OPTIONS.map((option) => <option key={option.value} value={option.value} disabled={!availableSidos.includes(option.value)}>{option.label}{availableSidos.includes(option.value) ? "" : " · 준비 중"}</option>)}</select></label>
+          <label className="field-label"><span>시·군·구</span><select value={draft.sigungu} disabled={!draft.sido || sigunguBySido[draft.sido].length === 0} onChange={(event) => updateFilters({ ...draft, sigungu: event.target.value })}><option value="">{draft.sido ? `${shortSidoLabel(draft.sido)} 전체` : "시·도를 먼저 선택"}</option>{draft.sido ? sigunguBySido[draft.sido].map((sigungu) => <option key={`${draft.sido}-${sigungu}`} value={sigungu}>{sigungu}</option>) : null}</select></label>
+          <p>생활권과 함께 선택하면 해당 지역들을 모두 검색합니다.</p>
+        </div> : null}
 
         <button className="detail-toggle" type="button" aria-expanded={detailOpen} onClick={() => setDetailOpen(!detailOpen)}>{detailOpen ? "−" : "+"} 상세 조건{detailCount ? ` ${detailCount}` : ""}</button>
         {detailOpen ? <div className="detail-panel">
-          <label className="detail-field"><span>예상 하객 수</span><input type="number" min="1" placeholder="예: 200" value={draft.guests ?? ""} onChange={(event) => setDraft({ ...draft, guests: event.target.value ? Number(event.target.value) : null })} /></label>
-          <fieldset><legend>자연광</legend><button type="button" className={draft.naturalLight ? "option is-selected" : "option"} aria-pressed={draft.naturalLight} onClick={() => setDraft({ ...draft, naturalLight: !draft.naturalLight })}>자연광 있음</button></fieldset>
-          <fieldset><legend>예식 형태</legend><div className="option-row">{CEREMONY_OPTIONS.map((option) => <button key={option.value} type="button" className={draft.ceremonyFormats.includes(option.value) ? "option is-selected" : "option"} onClick={() => setDraft({ ...draft, ceremonyFormats: toggleValue(draft.ceremonyFormats, option.value) })}>{option.label}</button>)}</div></fieldset>
-          <fieldset><legend>예식 간격</legend><div className="option-row">{INTERVAL_OPTIONS.map((interval) => <button key={interval} type="button" className={draft.intervalAtLeast === interval ? "option is-selected" : "option"} onClick={() => setDraft({ ...draft, intervalAtLeast: draft.intervalAtLeast === interval ? null : interval })}>{interval}분 이상</button>)}</div></fieldset>
-          <fieldset className="detail-wide"><legend>식사 유형</legend><div className="option-row">{MEAL_OPTIONS.map((option) => <button key={option.value} type="button" className={draft.meals.includes(option.value) ? "option is-selected" : "option"} onClick={() => setDraft({ ...draft, meals: toggleValue(draft.meals, option.value) })}>{option.label}</button>)}</div></fieldset>
+          <label className="detail-field"><span>예상 하객 수</span><input type="number" min="1" placeholder="예: 200" value={draft.guests ?? ""} onChange={(event) => updateFilters({ ...draft, guests: event.target.value ? Number(event.target.value) : null })} /></label>
+          <fieldset><legend>자연광</legend><button type="button" className={draft.naturalLight ? "option is-selected" : "option"} aria-pressed={draft.naturalLight} onClick={() => updateFilters({ ...draft, naturalLight: !draft.naturalLight })}>자연광 있음</button></fieldset>
+          <fieldset><legend>예식 형태</legend><div className="option-row">{CEREMONY_OPTIONS.map((option) => <button key={option.value} type="button" className={draft.ceremonyFormats.includes(option.value) ? "option is-selected" : "option"} onClick={() => updateFilters({ ...draft, ceremonyFormats: toggleValue(draft.ceremonyFormats, option.value) })}>{option.label}</button>)}</div></fieldset>
+          <fieldset><legend>예식 간격</legend><div className="option-row">{INTERVAL_OPTIONS.map((interval) => <button key={interval} type="button" className={draft.intervalAtLeast === interval ? "option is-selected" : "option"} onClick={() => updateFilters({ ...draft, intervalAtLeast: draft.intervalAtLeast === interval ? null : interval })}>{interval}분 이상</button>)}</div></fieldset>
+          <fieldset className="detail-wide"><legend>식사 유형</legend><div className="option-row">{MEAL_OPTIONS.map((option) => <button key={option.value} type="button" className={draft.meals.includes(option.value) ? "option is-selected" : "option"} onClick={() => updateFilters({ ...draft, meals: toggleValue(draft.meals, option.value) })}>{option.label}</button>)}</div></fieldset>
           <p className="missing-policy">값이 없는 홀은 제외하지 않고 ‘정보 확인이 필요한 홀’로 분리합니다. <Link href="/methodology/">분류 기준 보기</Link></p>
         </div> : null}
         <button className="mobile-filter-apply" type="submit">{selectedCount ? `${draftTotal}개 홀 보기` : "전체 웨딩홀 보기"}</button>
@@ -220,7 +280,7 @@ export function SearchExperience({
       <div id="search-results" className="results-heading">
         <div className="applied-chips">{chips.map((chip) => <button key={chip.key} type="button" aria-label={`${chip.label} 필터 해제`} onClick={chip.remove}>{chip.label}<span className="filter-chip-remove" aria-hidden="true">해제</span></button>)}</div>
         <div className="result-heading-row">
-          <div className="result-summary"><strong>조건 확인 {results.matched.length}개 홀</strong><span>정보 미확인 {results.unknown.length}개 · 총 {total}개 홀</span></div>
+          <div className="result-summary" aria-live="polite"><strong>조건 확인 {results.matched.length}개 홀</strong><span>정보 미확인 {results.unknown.length}개 · 총 {total}개 홀</span></div>
           <div className="result-view-switch" role="group" aria-label="결과 보기 방식">
             <button type="button" className={viewMode === "list" ? "is-selected" : ""} aria-pressed={viewMode === "list"} onClick={() => switchViewMode("list")}>목록</button>
             <button type="button" className={viewMode === "map" ? "is-selected" : ""} aria-pressed={viewMode === "map"} onClick={() => switchViewMode("map")}>지도</button>

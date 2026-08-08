@@ -85,9 +85,16 @@ function matchMeals(hall: HallRecord, selected: MealType[]): MatchState {
 export function evaluateHall(hall: HallRecord, filters: FilterState): FilteredHall | null {
   const checks: Array<{ state: MatchState; reason: string }> = [];
 
-  if (filters.sido) checks.push({ state: hall.sido === filters.sido ? "match" : "mismatch", reason: "시·도" });
-  if (filters.sigungu) checks.push({ state: hall.sigungu === filters.sigungu ? "match" : "mismatch", reason: "시·군·구" });
-  if (filters.metroArea) checks.push({ state: hall.metroArea === filters.metroArea ? "match" : "mismatch", reason: "생활권" });
+  const locationMatches: boolean[] = [];
+  if (filters.sigungu && filters.sido) {
+    locationMatches.push(hall.sido === filters.sido && hall.sigungu === filters.sigungu);
+  } else if (filters.sido) {
+    locationMatches.push(hall.sido === filters.sido);
+  }
+  if (filters.metroAreas.length > 0) locationMatches.push(filters.metroAreas.includes(hall.metroArea));
+  if (locationMatches.length > 0) {
+    checks.push({ state: locationMatches.some(Boolean) ? "match" : "mismatch", reason: "지역" });
+  }
 
   for (const group of TYPE_GROUPS) {
     const selected = filters.hallTypes.filter((type) => group.includes(type));
@@ -136,7 +143,7 @@ export function filterHalls(halls: HallRecord[], filters: FilterState): {
 export const EMPTY_FILTERS: FilterState = {
   sido: "",
   sigungu: "",
-  metroArea: "",
+  metroAreas: [],
   hallTypes: [],
   guests: null,
   naturalLight: false,
