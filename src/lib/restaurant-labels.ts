@@ -36,6 +36,18 @@ export function restaurantMealMinimumLabel(
   ].filter((value): value is string => value !== null).join(" · ");
 }
 
+export function restaurantCompanionVisitLabel(companion: string): string {
+  const normalized = companion.trim();
+  const lastCharacter = normalized.at(-1);
+  if (!lastCharacter) return "동행 정보";
+
+  const codePoint = lastCharacter.charCodeAt(0);
+  if (codePoint < 0xac00 || codePoint > 0xd7a3) return `동행 · ${normalized}`;
+
+  const hasFinalConsonant = (codePoint - 0xac00) % 28 !== 0;
+  return `${normalized}${hasFinalConsonant ? "과" : "와"} 방문`;
+}
+
 export function restaurantRoomLabel(restaurant: RestaurantRecord): string {
   if (restaurant.privateRoom === "no") return "룸 없음";
   const { min, max } = restaurant.roomCapacity;

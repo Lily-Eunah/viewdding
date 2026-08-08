@@ -5,6 +5,7 @@ import { isBlogReviewEvidence, type RestaurantEvidenceRecord } from "@/domain/re
 import {
   gatheringPurposeLabel,
   restaurantClosedDaysLabel,
+  restaurantCompanionVisitLabel,
   restaurantMealMinimumLabel,
   restaurantName,
   restaurantParkingLabel,
@@ -128,21 +129,22 @@ export default async function RestaurantDetailPage({ params }: { params: Promise
           <div className="restaurant-review-list">
             {reviews.map((review) => (
               <article className="restaurant-review-card" key={review.id}>
-                <div className="restaurant-review-meta">
-                  <span>{review.platform ?? review.sourceType}</span>
-                  {review.publishedAt ? <time dateTime={review.publishedAt}>{review.publishedAt}</time> : null}
-                  {review.sponsored !== "unknown" ? (
-                    <span className={`sponsorship-label is-${review.sponsored}`}>{sponsorshipLabel(review.sponsored)}</span>
-                  ) : null}
-                </div>
-                <h3>{review.title ?? "블로그 후기"}</h3>
-                {review.summary ? <p>{review.summary}</p> : null}
-                {review.companionTypes.length > 0 ? (
-                  <div className="restaurant-review-companions">
-                    {review.companionTypes.map((companion) => <span key={companion}>{companion}</span>)}
+                <a className="restaurant-review-card-link" href={review.url}>
+                  <div className="restaurant-review-meta">
+                    <span>{review.platform ?? review.sourceType}</span>
+                    {review.publishedAt ? <time dateTime={review.publishedAt}>{review.publishedAt}</time> : null}
+                    {review.sponsored !== "unknown" ? (
+                      <span className={`sponsorship-label is-${review.sponsored}`}>{sponsorshipLabel(review.sponsored)}</span>
+                    ) : null}
+                    {review.companionTypes.map((companion) => (
+                      <span className="restaurant-companion-label" key={companion}>
+                        {restaurantCompanionVisitLabel(companion)}
+                      </span>
+                    ))}
                   </div>
-                ) : null}
-                <a href={review.url} target="_blank" rel="noreferrer">후기 원문 보기</a>
+                  <h3>{review.title ?? "블로그 후기"}</h3>
+                  {review.summary ? <p>{review.summary}</p> : null}
+                </a>
               </article>
             ))}
           </div>

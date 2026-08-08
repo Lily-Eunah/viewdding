@@ -1,5 +1,8 @@
 import { describe, expect, it } from "vitest";
-import { restaurantMealMinimumLabel } from "../src/lib/restaurant-labels";
+import {
+  restaurantCompanionVisitLabel,
+  restaurantMealMinimumLabel,
+} from "../src/lib/restaurant-labels";
 
 describe("restaurant meal minimum label", () => {
   it("combines matching lunch and dinner prices", () => {
@@ -19,5 +22,19 @@ describe("restaurant meal minimum label", () => {
 
   it("returns no label when both prices are unavailable", () => {
     expect(restaurantMealMinimumLabel({ lunchPriceMin: null, dinnerPriceMin: null })).toBeNull();
+  });
+});
+
+describe("restaurant companion visit label", () => {
+  it("uses 와 after a companion type without a final consonant", () => {
+    expect(restaurantCompanionVisitLabel("친구")).toBe("친구와 방문");
+  });
+
+  it("uses 과 after a companion type with a final consonant", () => {
+    expect(restaurantCompanionVisitLabel("가족")).toBe("가족과 방문");
+  });
+
+  it("uses a neutral label for non-Korean companion types", () => {
+    expect(restaurantCompanionVisitLabel("CEO")).toBe("동행 · CEO");
   });
 });
