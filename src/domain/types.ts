@@ -124,9 +124,8 @@ export interface HallRecord {
 }
 
 export interface FilterState {
-  sido: Sido | "";
-  sigungu: string;
-  metroAreas: string[];
+  sidos: Sido[];
+  regionCodes: string[];
   hallTypes: HallTypeFilter[];
   guests: number | null;
   naturalLight: boolean;

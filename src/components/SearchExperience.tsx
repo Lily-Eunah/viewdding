@@ -5,23 +5,15 @@ import Link from "next/link";
 import { X } from "@phosphor-icons/react";
 import { EMPTY_FILTERS, filterHalls } from "@/domain/filter";
 import { groupFilteredHallsByVenue } from "@/domain/hall-map";
-import { shortSidoLabel, SIDO_OPTIONS } from "@/domain/regions";
+import { REGION_DEFINITIONS, shortSidoLabel, SIDO_OPTIONS } from "@/domain/regions";
 import type { CeremonyFormat, FilterState, HallTypeFilter, MealType, Sido } from "@/domain/types";
-import { availableSidos, halls, metroAreas, sigunguBySido } from "@/lib/data";
+import { availableSidos, halls, sigunguBySido } from "@/lib/data";
 import { CEREMONY_OPTIONS, HALL_TYPE_GROUPS, INTERVAL_OPTIONS, MEAL_OPTIONS, hallTypeLabel } from "@/lib/labels";
 import { HallCard } from "./HallCard";
 import { KakaoHallMap } from "./KakaoHallMap";
 
 const PAGE_SIZE = 24;
-const NORTH_SEOUL_AREAS = ["서울 서북권", "서울 동북권"];
-const FEATURED_METRO_AREAS = [
-  "서울 서북권",
-  "서울 동북권",
-  "고양·일산·파주",
-  "의정부·양주·동두천",
-  "남양주·구리",
-  "서울 도심권",
-];
+const REGION_BY_CODE = new Map(REGION_DEFINITIONS.map((region) => [region.regionCode, region]));
 type ViewMode = "list" | "map";
 
 function toggleValue<T>(values: T[], value: T): T[] {
@@ -37,9 +29,8 @@ function typeSummary(types: HallTypeFilter[]): string {
 function queryFromFilters(filters: FilterState, viewMode: ViewMode): string {
   const params = new URLSearchParams();
   if (viewMode === "map") params.set("view", "map");
-  if (filters.sido) params.set("sido", filters.sido);
-  if (filters.sigungu) params.set("sigungu", filters.sigungu);
-  filters.metroAreas.forEach((metroArea) => params.append("metro", metroArea));
+  filters.sidos.forEach((sido) => params.append("sido", sido));
+  filters.regionCodes.forEach((regionCode) => params.append("region", regionCode));
   if (filters.hallTypes.length) params.set("types", filters.hallTypes.join(","));
   if (filters.guests !== null) params.set("guests", String(filters.guests));
   if (filters.naturalLight) params.set("natural", "1");
@@ -50,9 +41,24 @@ function queryFromFilters(filters: FilterState, viewMode: ViewMode): string {
 }
 
 function filterSelectionCount(filters: FilterState): number {
-  return Number(Boolean(filters.sido || filters.sigungu)) + filters.metroAreas.length + filters.hallTypes.length + Number(filters.guests !== null)
+  return filters.sidos.length + filters.regionCodes.length + filters.hallTypes.length + Number(filters.guests !== null)
     + Number(filters.naturalLight) + filters.ceremonyFormats.length + Number(filters.intervalAtLeast !== null)
     + filters.meals.length;
+}
+
+function regionLabel(regionCode: string): string {
+  const region = REGION_BY_CODE.get(regionCode);
+  return region ? `${shortSidoLabel(region.sido)} · ${region.sigungu}` : regionCode;
+}
+
+function locationSummary(filters: FilterState): string {
+  const labels = [
+    ...filters.sidos.map((sido) => `${shortSidoLabel(sido)} 전체`),
+    ...filters.regionCodes.map(regionLabel),
+  ];
+  if (labels.length === 0) return "수도권 전체";
+  if (labels.length === 1) return labels[0];
+  return `${labels[0]} 외 ${labels.length - 1}개`;
 }
 
 export function SearchExperience({
@@ -70,24 +76,42 @@ export function SearchExperience({
   const [visible, setVisible] = useState(PAGE_SIZE);
   const [viewMode, setViewMode] = useState<ViewMode>("list");
   const [mobileFilterOpen, setMobileFilterOpen] = useState(false);
-  const [metroExpanded, setMetroExpanded] = useState(false);
   const [regionOpen, setRegionOpen] = useState(false);
+  const [activeSido, setActiveSido] = useState<Sido>("서울특별시");
 
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
     const legacyHall = halls.find((hall) => hall.district === params.get("district"));
-    const requestedSido = params.get("sido");
-    const sido = SIDO_OPTIONS.some((option) => option.value === requestedSido)
-      ? requestedSido as Sido
-      : legacyHall?.sido ?? "";
-    const requestedSigungu = params.get("sigungu") ?? legacyHall?.sigungu ?? "";
-    const sigungu = sido && sigunguBySido[sido].includes(requestedSigungu) ? requestedSigungu : "";
+    const requestedSidos = Array.from(new Set(
+      params.getAll("sido").flatMap((value) => value.split(","))
+        .filter((value): value is Sido => SIDO_OPTIONS.some((option) => option.value === value)),
+    ));
+    const requestedRegionCodes = params.getAll("region").flatMap((value) => value.split(","))
+      .filter((regionCode) => REGION_BY_CODE.has(regionCode));
+    const legacySigungu = params.get("sigungu") ?? legacyHall?.sigungu ?? "";
+    const legacySido = requestedSidos[0] ?? legacyHall?.sido;
+    const legacyRegionCode = legacySido && legacySigungu
+      ? REGION_DEFINITIONS.find((region) => region.sido === legacySido && region.sigungu === legacySigungu)?.regionCode
+      : legacyHall?.regionCode;
     const requestedMetroAreas = params.getAll("metro").flatMap((value) => value.split(","));
-    const selectedMetroAreas = Array.from(new Set(requestedMetroAreas.filter((metroArea) => metroAreas.includes(metroArea))));
+    const legacyMetroRegionCodes = REGION_DEFINITIONS
+      .filter((region) => requestedMetroAreas.includes(region.metroArea) && halls.some((hall) => hall.regionCode === region.regionCode))
+      .map((region) => region.regionCode);
+    const hasSpecificLegacyRegion = Boolean(legacyRegionCode && legacySigungu);
+    const sidos = hasSpecificLegacyRegion && legacySido
+      ? requestedSidos.filter((sido) => sido !== legacySido)
+      : requestedSidos;
+    const regionCodes = Array.from(new Set([
+      ...requestedRegionCodes,
+      ...(legacyRegionCode ? [legacyRegionCode] : []),
+      ...legacyMetroRegionCodes,
+    ])).filter((regionCode) => {
+      const region = REGION_BY_CODE.get(regionCode);
+      return region ? !sidos.includes(region.sido) : false;
+    });
     const parsed: FilterState = {
-      sido,
-      sigungu,
-      metroAreas: selectedMetroAreas,
+      sidos,
+      regionCodes,
       hallTypes: (params.get("types")?.split(",").filter(Boolean) ?? []) as HallTypeFilter[],
       guests: params.get("guests") ? Number(params.get("guests")) : null,
       naturalLight: params.get("natural") === "1",
@@ -99,8 +123,8 @@ export function SearchExperience({
     setApplied(parsed);
     setPickerTypes(parsed.hallTypes);
     setViewMode(params.get("view") === "map" ? "map" : "list");
-    setRegionOpen(Boolean(parsed.sido));
-    setMetroExpanded(selectedMetroAreas.some((metroArea) => !FEATURED_METRO_AREAS.includes(metroArea)));
+    setRegionOpen(parsed.sidos.length > 0 || parsed.regionCodes.length > 0);
+    setActiveSido(parsed.sidos[0] ?? REGION_BY_CODE.get(parsed.regionCodes[0])?.sido ?? "서울특별시");
     if (parsed.guests || parsed.naturalLight || parsed.ceremonyFormats.length || parsed.intervalAtLeast || parsed.meals.length) setDetailOpen(true);
   }, []);
 
@@ -113,7 +137,7 @@ export function SearchExperience({
     if (!mobileFilterOpen) return;
     const closeOnEscape = (event: KeyboardEvent) => {
       if (event.key === "Escape") {
-        setDraft({ ...applied, metroAreas: [...applied.metroAreas], hallTypes: [...applied.hallTypes], ceremonyFormats: [...applied.ceremonyFormats], meals: [...applied.meals] });
+        setDraft({ ...applied, sidos: [...applied.sidos], regionCodes: [...applied.regionCodes], hallTypes: [...applied.hallTypes], ceremonyFormats: [...applied.ceremonyFormats], meals: [...applied.meals] });
         setPickerTypes(applied.hallTypes);
         setTypeOpen(false);
         setMobileFilterOpen(false);
@@ -129,13 +153,18 @@ export function SearchExperience({
     () => groupFilteredHallsByVenue([...results.matched, ...results.unknown]),
     [results],
   );
-  const metroAreaCounts = useMemo(() => new Map(
-    metroAreas.map((metroArea) => [metroArea, new Set(halls.filter((hall) => hall.metroArea === metroArea).map((hall) => hall.venueId)).size]),
+  const regionVenueCounts = useMemo(() => new Map(
+    REGION_DEFINITIONS.map((region) => [
+      region.regionCode,
+      new Set(halls.filter((hall) => hall.regionCode === region.regionCode).map((hall) => hall.venueId)).size,
+    ]),
   ), []);
-  const northSeoulCount = useMemo(
-    () => new Set(halls.filter((hall) => NORTH_SEOUL_AREAS.includes(hall.metroArea)).map((hall) => hall.venueId)).size,
-    [],
-  );
+  const sidoVenueCounts = useMemo(() => new Map(
+    SIDO_OPTIONS.map(({ value }) => [
+      value,
+      new Set(halls.filter((hall) => hall.sido === value).map((hall) => hall.venueId)).size,
+    ]),
+  ), []);
   useEffect(() => setVisible(PAGE_SIZE), [applied]);
 
   const detailCount = Number(draft.guests !== null) + Number(draft.naturalLight) + draft.ceremonyFormats.length + Number(draft.intervalAtLeast !== null) + draft.meals.length;
@@ -151,16 +180,23 @@ export function SearchExperience({
     else commit(next);
   }
 
-  function toggleMetroArea(metroArea: string) {
-    updateFilters({ ...draft, metroAreas: toggleValue(draft.metroAreas, metroArea) });
-  }
-
-  function toggleNorthSeoul() {
-    const selected = NORTH_SEOUL_AREAS.every((metroArea) => draft.metroAreas.includes(metroArea));
-    const metroAreasWithoutNorth = draft.metroAreas.filter((metroArea) => !NORTH_SEOUL_AREAS.includes(metroArea));
+  function toggleSido(sido: Sido) {
+    const selected = draft.sidos.includes(sido);
     updateFilters({
       ...draft,
-      metroAreas: selected ? metroAreasWithoutNorth : [...metroAreasWithoutNorth, ...NORTH_SEOUL_AREAS],
+      sidos: selected ? draft.sidos.filter((item) => item !== sido) : [...draft.sidos, sido],
+      regionCodes: selected
+        ? draft.regionCodes
+        : draft.regionCodes.filter((regionCode) => REGION_BY_CODE.get(regionCode)?.sido !== sido),
+    });
+  }
+
+  function toggleRegionCode(regionCode: string) {
+    const sido = REGION_BY_CODE.get(regionCode)?.sido;
+    updateFilters({
+      ...draft,
+      sidos: sido ? draft.sidos.filter((item) => item !== sido) : draft.sidos,
+      regionCodes: toggleValue(draft.regionCodes, regionCode),
     });
   }
 
@@ -172,16 +208,16 @@ export function SearchExperience({
   }
 
   const chips: Array<{ key: string; label: string; remove: () => void }> = [];
-  applied.metroAreas.forEach((metroArea) => chips.push({
-    key: `metro-${metroArea}`,
-    label: metroArea,
-    remove: () => commit({ ...applied, metroAreas: applied.metroAreas.filter((item) => item !== metroArea) }),
+  applied.sidos.forEach((sido) => chips.push({
+    key: `sido-${sido}`,
+    label: `${shortSidoLabel(sido)} 전체`,
+    remove: () => commit({ ...applied, sidos: applied.sidos.filter((item) => item !== sido) }),
   }));
-  if (applied.sigungu && applied.sido) {
-    chips.push({ key: "sigungu", label: `${shortSidoLabel(applied.sido)} · ${applied.sigungu}`, remove: () => commit({ ...applied, sigungu: "" }) });
-  } else if (applied.sido) {
-    chips.push({ key: "sido", label: shortSidoLabel(applied.sido), remove: () => commit({ ...applied, sido: "", sigungu: "" }) });
-  }
+  applied.regionCodes.forEach((regionCode) => chips.push({
+    key: `region-${regionCode}`,
+    label: regionLabel(regionCode),
+    remove: () => commit({ ...applied, regionCodes: applied.regionCodes.filter((item) => item !== regionCode) }),
+  }));
   applied.hallTypes.forEach((type) => chips.push({ key: `type-${type}`, label: hallTypeLabel(type), remove: () => commit({ ...applied, hallTypes: applied.hallTypes.filter((item) => item !== type) }) }));
   if (applied.guests !== null) chips.push({ key: "guests", label: `${applied.guests}명`, remove: () => commit({ ...applied, guests: null }) });
   if (applied.naturalLight) chips.push({ key: "natural", label: "자연광 있음", remove: () => commit({ ...applied, naturalLight: false }) });
@@ -193,13 +229,21 @@ export function SearchExperience({
   const appliedCount = filterSelectionCount(applied);
   const total = results.matched.length + results.unknown.length;
   const draftTotal = draftResults.matched.length + draftResults.unknown.length;
-  const northSeoulSelected = NORTH_SEOUL_AREAS.every((metroArea) => draft.metroAreas.includes(metroArea));
-  const visibleMetroAreas = metroExpanded
-    ? metroAreas
-    : FEATURED_METRO_AREAS.filter((metroArea) => metroAreas.includes(metroArea));
-  const directRegionSummary = draft.sigungu && draft.sido
-    ? `${shortSidoLabel(draft.sido)} · ${draft.sigungu}`
-    : draft.sido ? `${shortSidoLabel(draft.sido)} 전체` : "시·도와 시·군·구 선택";
+  const draftLocationChips = [
+    ...draft.sidos.map((sido) => ({
+      key: `draft-sido-${sido}`,
+      label: `${shortSidoLabel(sido)} 전체`,
+      remove: () => toggleSido(sido),
+    })),
+    ...draft.regionCodes.map((regionCode) => ({
+      key: `draft-region-${regionCode}`,
+      label: regionLabel(regionCode),
+      remove: () => toggleRegionCode(regionCode),
+    })),
+  ];
+  const activeSidoRegionCodes = sigunguBySido[activeSido]
+    .map((sigungu) => REGION_DEFINITIONS.find((region) => region.sido === activeSido && region.sigungu === sigungu)?.regionCode)
+    .filter((regionCode): regionCode is string => Boolean(regionCode) && (regionVenueCounts.get(regionCode ?? "") ?? 0) > 0);
 
   return (
     <section className={`search-experience${compact ? " is-compact" : ""}${viewMode === "map" ? " is-map-mode" : ""}${mobileFilterOpen ? " is-mobile-filter-open" : ""}`}>
@@ -214,7 +258,7 @@ export function SearchExperience({
         </div>
       ) : null}
 
-      {viewMode === "map" && mobileFilterOpen ? <button type="button" className="mobile-filter-backdrop" aria-label="필터 닫기" onClick={() => { setDraft({ ...applied, metroAreas: [...applied.metroAreas], hallTypes: [...applied.hallTypes], ceremonyFormats: [...applied.ceremonyFormats], meals: [...applied.meals] }); setPickerTypes(applied.hallTypes); setTypeOpen(false); setMobileFilterOpen(false); }} /> : null}
+      {viewMode === "map" && mobileFilterOpen ? <button type="button" className="mobile-filter-backdrop" aria-label="필터 닫기" onClick={() => { setDraft({ ...applied, sidos: [...applied.sidos], regionCodes: [...applied.regionCodes], hallTypes: [...applied.hallTypes], ceremonyFormats: [...applied.ceremonyFormats], meals: [...applied.meals] }); setPickerTypes(applied.hallTypes); setTypeOpen(false); setMobileFilterOpen(false); }} /> : null}
 
       <form
         className="search-panel"
@@ -230,24 +274,14 @@ export function SearchExperience({
         <div className="mobile-filter-sheet-header">
           <strong>FILTER</strong>
           <div className="mobile-filter-sheet-actions">
-            {selectedCount > 0 ? <button type="button" className="mobile-filter-reset" onClick={() => { setDraft({ ...EMPTY_FILTERS, metroAreas: [], hallTypes: [], ceremonyFormats: [], meals: [] }); setPickerTypes([]); setTypeOpen(false); }}>초기화</button> : null}
-            <button type="button" className="mobile-filter-close" onClick={() => { setDraft({ ...applied, metroAreas: [...applied.metroAreas], hallTypes: [...applied.hallTypes], ceremonyFormats: [...applied.ceremonyFormats], meals: [...applied.meals] }); setPickerTypes(applied.hallTypes); setTypeOpen(false); setMobileFilterOpen(false); }} aria-label="필터 닫기" title="필터 닫기"><X aria-hidden="true" size={20} /></button>
+            {selectedCount > 0 ? <button type="button" className="mobile-filter-reset" onClick={() => { setDraft({ ...EMPTY_FILTERS, sidos: [], regionCodes: [], hallTypes: [], ceremonyFormats: [], meals: [] }); setPickerTypes([]); setTypeOpen(false); }}>초기화</button> : null}
+            <button type="button" className="mobile-filter-close" onClick={() => { setDraft({ ...applied, sidos: [...applied.sidos], regionCodes: [...applied.regionCodes], hallTypes: [...applied.hallTypes], ceremonyFormats: [...applied.ceremonyFormats], meals: [...applied.meals] }); setPickerTypes(applied.hallTypes); setTypeOpen(false); setMobileFilterOpen(false); }} aria-label="필터 닫기" title="필터 닫기"><X aria-hidden="true" size={20} /></button>
           </div>
         </div>
-        <fieldset className="metro-area-filter">
-          <legend>지역 · 여러 곳 선택 가능</legend>
-          <p className="filter-helper">생활권을 함께 고르면 선택한 지역의 웨딩홀을 모두 보여드려요.</p>
-          <div className="metro-area-options">
-            <button type="button" className={northSeoulSelected ? "option is-selected" : "option"} aria-pressed={northSeoulSelected} onClick={toggleNorthSeoul}>서울 북부 전체<small>{northSeoulCount}곳</small></button>
-            {visibleMetroAreas.map((metroArea) => <button key={metroArea} type="button" className={draft.metroAreas.includes(metroArea) ? "option is-selected" : "option"} aria-pressed={draft.metroAreas.includes(metroArea)} onClick={() => toggleMetroArea(metroArea)}>{metroArea}<small>{metroAreaCounts.get(metroArea)}곳</small></button>)}
-          </div>
-          <button className="metro-area-more" type="button" aria-expanded={metroExpanded} onClick={() => setMetroExpanded(!metroExpanded)}>{metroExpanded ? "추천 생활권만 보기" : `전체 생활권 ${metroAreas.length}개 보기`}</button>
-        </fieldset>
-
         <div className="secondary-filter-grid">
           <div className="region-picker">
-            <span className="field-caption">행정구역으로 직접 선택</span>
-            <button className="field-button" type="button" aria-expanded={regionOpen} onClick={() => setRegionOpen(!regionOpen)}>{directRegionSummary}</button>
+            <span className="field-caption">지역 · 여러 곳 선택 가능</span>
+            <button className="field-button" type="button" aria-expanded={regionOpen} onClick={() => setRegionOpen(!regionOpen)}>{locationSummary(draft)}</button>
           </div>
           <div className="type-picker">
             <span className="field-caption">웨딩홀 타입</span>
@@ -259,10 +293,28 @@ export function SearchExperience({
           </div>
         </div>
 
-        {regionOpen ? <div className="region-direct-panel">
-          <label className="field-label"><span>시·도</span><select value={draft.sido} onChange={(event) => updateFilters({ ...draft, sido: event.target.value as Sido | "", sigungu: "" })}><option value="">선택 안 함</option>{SIDO_OPTIONS.map((option) => <option key={option.value} value={option.value} disabled={!availableSidos.includes(option.value)}>{option.label}{availableSidos.includes(option.value) ? "" : " · 준비 중"}</option>)}</select></label>
-          <label className="field-label"><span>시·군·구</span><select value={draft.sigungu} disabled={!draft.sido || sigunguBySido[draft.sido].length === 0} onChange={(event) => updateFilters({ ...draft, sigungu: event.target.value })}><option value="">{draft.sido ? `${shortSidoLabel(draft.sido)} 전체` : "시·도를 먼저 선택"}</option>{draft.sido ? sigunguBySido[draft.sido].map((sigungu) => <option key={`${draft.sido}-${sigungu}`} value={sigungu}>{sigungu}</option>) : null}</select></label>
-          <p>생활권과 함께 선택하면 해당 지역들을 모두 검색합니다.</p>
+        {draftLocationChips.length > 0 ? <div className="draft-location-chips" aria-label="선택한 지역">{draftLocationChips.map((chip) => <button key={chip.key} type="button" aria-label={`${chip.label} 지역 해제`} onClick={chip.remove}>{chip.label}<span aria-hidden="true">해제</span></button>)}</div> : null}
+
+        {regionOpen ? <div className="region-multi-panel">
+          <div className="region-sido-tabs" role="tablist" aria-label="시·도 선택">
+            {SIDO_OPTIONS.map((option) => {
+              const selectedInSido = Number(draft.sidos.includes(option.value))
+                + draft.regionCodes.filter((regionCode) => REGION_BY_CODE.get(regionCode)?.sido === option.value).length;
+              const available = availableSidos.includes(option.value);
+              return <button key={option.value} type="button" role="tab" aria-selected={activeSido === option.value} disabled={!available} className={activeSido === option.value ? "is-selected" : ""} onClick={() => setActiveSido(option.value)}>{option.shortLabel}{selectedInSido ? ` ${selectedInSido}` : ""}{available ? "" : " · 준비 중"}</button>;
+            })}
+          </div>
+          <div className="region-option-panel" role="tabpanel">
+            <div className="region-option-heading"><strong>{activeSido}</strong><span>원하는 지역을 여러 곳 고를 수 있어요.</span></div>
+            <div className="region-option-grid">
+              <button type="button" className={draft.sidos.includes(activeSido) ? "region-option is-selected" : "region-option"} aria-pressed={draft.sidos.includes(activeSido)} onClick={() => toggleSido(activeSido)}><span>{shortSidoLabel(activeSido)} 전체</span><small>예식장 {sidoVenueCounts.get(activeSido) ?? 0}곳</small></button>
+              {activeSidoRegionCodes.map((regionCode) => {
+                const region = REGION_BY_CODE.get(regionCode);
+                return <button key={regionCode} type="button" className={draft.regionCodes.includes(regionCode) ? "region-option is-selected" : "region-option"} aria-pressed={draft.regionCodes.includes(regionCode)} onClick={() => toggleRegionCode(regionCode)}><span>{region?.sigungu ?? regionCode}</span><small>예식장 {regionVenueCounts.get(regionCode) ?? 0}곳</small></button>;
+              })}
+            </div>
+          </div>
+          <button className="region-panel-close" type="button" onClick={() => setRegionOpen(false)}>지역 선택 닫기</button>
         </div> : null}
 
         <button className="detail-toggle" type="button" aria-expanded={detailOpen} onClick={() => setDetailOpen(!detailOpen)}>{detailOpen ? "−" : "+"} 상세 조건{detailCount ? ` ${detailCount}` : ""}</button>

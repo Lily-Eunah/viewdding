@@ -85,15 +85,9 @@ function matchMeals(hall: HallRecord, selected: MealType[]): MatchState {
 export function evaluateHall(hall: HallRecord, filters: FilterState): FilteredHall | null {
   const checks: Array<{ state: MatchState; reason: string }> = [];
 
-  const locationMatches: boolean[] = [];
-  if (filters.sigungu && filters.sido) {
-    locationMatches.push(hall.sido === filters.sido && hall.sigungu === filters.sigungu);
-  } else if (filters.sido) {
-    locationMatches.push(hall.sido === filters.sido);
-  }
-  if (filters.metroAreas.length > 0) locationMatches.push(filters.metroAreas.includes(hall.metroArea));
-  if (locationMatches.length > 0) {
-    checks.push({ state: locationMatches.some(Boolean) ? "match" : "mismatch", reason: "지역" });
+  if (filters.sidos.length > 0 || filters.regionCodes.length > 0) {
+    const locationMatch = filters.sidos.includes(hall.sido) || filters.regionCodes.includes(hall.regionCode);
+    checks.push({ state: locationMatch ? "match" : "mismatch", reason: "지역" });
   }
 
   for (const group of TYPE_GROUPS) {
@@ -141,9 +135,8 @@ export function filterHalls(halls: HallRecord[], filters: FilterState): {
 }
 
 export const EMPTY_FILTERS: FilterState = {
-  sido: "",
-  sigungu: "",
-  metroAreas: [],
+  sidos: [],
+  regionCodes: [],
   hallTypes: [],
   guests: null,
   naturalLight: false,
