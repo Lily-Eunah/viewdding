@@ -10,6 +10,7 @@ export function AppHeader() {
       <nav className="site-links" aria-label="서비스 메뉴">
         <Link href="/search/">Wedding Hall</Link>
         <Link href="/gatherings/">Gathering</Link>
+        <Link href="/methodology/">Info</Link>
       </nav>
     </header>
   );
