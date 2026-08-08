@@ -3,6 +3,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import gyeonggiSourceJson from "../src/data/gyeonggi-halls.source.generated.json";
 import incheonSourceJson from "../src/data/incheon-halls.source.generated.json";
+import capitalExpansionSourceJson from "../src/data/capital-expansion-halls.source.generated.json";
 import {
   cleanText,
   normalizeBoolean,
@@ -89,7 +90,7 @@ function toHall(row: RowObject, venue: RowObject): HallRecord {
 
 const inspectPath = masterPath.endsWith(".ndjson") ? masterPath : `${masterPath}.inspect.ndjson`;
 const inspectContents = await fs.readFile(inspectPath, "utf8");
-const regionalSources = [gyeonggiSourceJson, incheonSourceJson] as RegionalSource[];
+const regionalSources = [gyeonggiSourceJson, incheonSourceJson, capitalExpansionSourceJson] as RegionalSource[];
 const regionalSourceFiles = regionalSources.flatMap((source) => source.sourceFiles);
 const venueRows = [
   ...tableRowsFromInspect(inspectContents, "01_업체"),

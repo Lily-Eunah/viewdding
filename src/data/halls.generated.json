@@ -31697,7 +31697,7 @@
     "id": "H-IC-P1-20260808-014",
     "venueId": "V-IC-P1-20260808-008",
     "venueName": "샤펠드미앙",
-    "hallName": "단독홀(고유명칭 미공개)",
+    "hallName": "샤펠드미앙",
     "sido": "인천광역시",
     "sigungu": "남동구",
     "subdistrict": null,
@@ -32321,6 +32321,2104 @@
       "ceremonyFormat": "동시예식",
       "mealType": null,
       "venueType": "컨벤션"
+    }
+  },
+  {
+    "id": "H-CAP-X1-20260808-001",
+    "venueId": "V-CAP-X1-20260808-001",
+    "venueName": "CN웨딩홀 계산점",
+    "hallName": "베르테홀",
+    "sido": "인천광역시",
+    "sigungu": "계양구",
+    "subdistrict": null,
+    "regionCode": "VDD-28-009",
+    "metroArea": "부평·계양",
+    "district": "계양구",
+    "neighborhood": "계산동",
+    "address": "인천광역시 계양구 경명대로 1108",
+    "phone": "032-546-0070",
+    "website": "https://www.cngyesan.com/",
+    "instagram": null,
+    "mapUrl": null,
+    "publicStatus": "public",
+    "lighting": "bright",
+    "naturalLight": "partial",
+    "chapel": false,
+    "house": true,
+    "indoorOutdoor": "indoor",
+    "venueType": "professional_convention",
+    "ceremonyFormat": "separate",
+    "meals": [],
+    "seated": {
+      "min": 250,
+      "max": 250,
+      "raw": 250
+    },
+    "capacity": {
+      "min": null,
+      "max": null,
+      "raw": null
+    },
+    "guarantee": {
+      "min": null,
+      "max": null,
+      "raw": null
+    },
+    "interval": {
+      "min": null,
+      "max": null,
+      "raw": null
+    },
+    "ceremonyTime": null,
+    "virginRoad": "35m",
+    "ceilingHeight": "10m",
+    "featureTags": [
+      "2층",
+      "그리너리",
+      "야외 하우스 무드"
+    ],
+    "classificationEvidence": "공식 홀 페이지가 2층 250석, 10m 천고, 35m 버진로드와 야외 하우스웨딩 무드를 명시함.",
+    "confidence": "A-strong",
+    "classificationCheckedAt": "2026-08-08",
+    "detailCheckedAt": "2026-08-08",
+    "sourceId": "S-20260808-CAP-X1-001",
+    "sourceUrl": "https://www.cngyesan.com/myboard/myboard1",
+    "sourceType": "공식홈페이지",
+    "raw": {
+      "representativeClassification": "하우스웨딩홀",
+      "lighting": "밝음",
+      "naturalLight": "부분",
+      "ceremonyFormat": "분리예식",
+      "mealType": null,
+      "venueType": "전문웨딩홀"
+    }
+  },
+  {
+    "id": "H-CAP-X1-20260808-002",
+    "venueId": "V-CAP-X1-20260808-001",
+    "venueName": "CN웨딩홀 계산점",
+    "hallName": "라비엔홀",
+    "sido": "인천광역시",
+    "sigungu": "계양구",
+    "subdistrict": null,
+    "regionCode": "VDD-28-009",
+    "metroArea": "부평·계양",
+    "district": "계양구",
+    "neighborhood": "계산동",
+    "address": "인천광역시 계양구 경명대로 1108",
+    "phone": "032-546-0070",
+    "website": "https://www.cngyesan.com/",
+    "instagram": null,
+    "mapUrl": null,
+    "publicStatus": "public",
+    "lighting": "dark",
+    "naturalLight": "no",
+    "chapel": false,
+    "house": false,
+    "indoorOutdoor": "indoor",
+    "venueType": "professional_convention",
+    "ceremonyFormat": "separate",
+    "meals": [],
+    "seated": {
+      "min": 200,
+      "max": 200,
+      "raw": 200
+    },
+    "capacity": {
+      "min": null,
+      "max": null,
+      "raw": null
+    },
+    "guarantee": {
+      "min": null,
+      "max": null,
+      "raw": null
+    },
+    "interval": {
+      "min": null,
+      "max": null,
+      "raw": null
+    },
+    "ceremonyTime": null,
+    "virginRoad": null,
+    "ceilingHeight": null,
+    "featureTags": [
+      "4층",
+      "호텔식",
+      "다크톤"
+    ],
+    "classificationEvidence": "공식 홀 페이지가 4층 200석 라비엔홀을 별도 소개하고 호텔식 다크 무드를 확인할 수 있음.",
+    "confidence": "A",
+    "classificationCheckedAt": "2026-08-08",
+    "detailCheckedAt": "2026-08-08",
+    "sourceId": "S-20260808-CAP-X1-001",
+    "sourceUrl": "https://www.cngyesan.com/myboard/myboard3",
+    "sourceType": "공식홈페이지",
+    "raw": {
+      "representativeClassification": "어두운 홀",
+      "lighting": "어두움",
+      "naturalLight": "N",
+      "ceremonyFormat": "분리예식",
+      "mealType": null,
+      "venueType": "전문웨딩홀"
+    }
+  },
+  {
+    "id": "H-CAP-X1-20260808-003",
+    "venueId": "V-CAP-X1-20260808-001",
+    "venueName": "CN웨딩홀 계산점",
+    "hallName": "미엘르홀",
+    "sido": "인천광역시",
+    "sigungu": "계양구",
+    "subdistrict": null,
+    "regionCode": "VDD-28-009",
+    "metroArea": "부평·계양",
+    "district": "계양구",
+    "neighborhood": "계산동",
+    "address": "인천광역시 계양구 경명대로 1108",
+    "phone": "032-546-0070",
+    "website": "https://www.cngyesan.com/",
+    "instagram": null,
+    "mapUrl": null,
+    "publicStatus": "public",
+    "lighting": "dark",
+    "naturalLight": "no",
+    "chapel": false,
+    "house": false,
+    "indoorOutdoor": "indoor",
+    "venueType": "professional_convention",
+    "ceremonyFormat": "separate",
+    "meals": [],
+    "seated": {
+      "min": 250,
+      "max": 250,
+      "raw": 250
+    },
+    "capacity": {
+      "min": null,
+      "max": null,
+      "raw": null
+    },
+    "guarantee": {
+      "min": null,
+      "max": null,
+      "raw": null
+    },
+    "interval": {
+      "min": null,
+      "max": null,
+      "raw": null
+    },
+    "ceremonyTime": null,
+    "virginRoad": "23m",
+    "ceilingHeight": "10m",
+    "featureTags": [
+      "5층",
+      "호텔식",
+      "대형 샹들리에"
+    ],
+    "classificationEvidence": "공식 홀 페이지가 5층 250석, 10m 천고, 23m 버진로드의 호텔식 홀을 별도 안내함.",
+    "confidence": "A-strong",
+    "classificationCheckedAt": "2026-08-08",
+    "detailCheckedAt": "2026-08-08",
+    "sourceId": "S-20260808-CAP-X1-001",
+    "sourceUrl": "https://www.cngyesan.com/shop_contents/myboard_list.htm?myboard_code=myboard2",
+    "sourceType": "공식홈페이지",
+    "raw": {
+      "representativeClassification": "어두운 홀",
+      "lighting": "어두움",
+      "naturalLight": "N",
+      "ceremonyFormat": "분리예식",
+      "mealType": null,
+      "venueType": "전문웨딩홀"
+    }
+  },
+  {
+    "id": "H-CAP-X1-20260808-004",
+    "venueId": "V-CAP-X1-20260808-002",
+    "venueName": "호텔 카리스",
+    "hallName": "더라파엘",
+    "sido": "인천광역시",
+    "sigungu": "계양구",
+    "subdistrict": null,
+    "regionCode": "VDD-28-009",
+    "metroArea": "부평·계양",
+    "district": "계양구",
+    "neighborhood": "작전동",
+    "address": "인천광역시 계양구 계양대로 28",
+    "phone": "032-556-0880",
+    "website": "https://incheon.wedding/collections/weddinghall-charis/",
+    "instagram": null,
+    "mapUrl": null,
+    "publicStatus": "public",
+    "lighting": "dark",
+    "naturalLight": "no",
+    "chapel": false,
+    "house": false,
+    "indoorOutdoor": "indoor",
+    "venueType": "hotel",
+    "ceremonyFormat": "separate",
+    "meals": [],
+    "seated": {
+      "min": null,
+      "max": null,
+      "raw": null
+    },
+    "capacity": {
+      "min": null,
+      "max": null,
+      "raw": null
+    },
+    "guarantee": {
+      "min": null,
+      "max": null,
+      "raw": null
+    },
+    "interval": {
+      "min": null,
+      "max": null,
+      "raw": null
+    },
+    "ceremonyTime": null,
+    "virginRoad": null,
+    "ceilingHeight": null,
+    "featureTags": [
+      "13층",
+      "호텔 웨딩",
+      "단독 운영"
+    ],
+    "classificationEvidence": "현행 판매 채널이 13층 더라파엘을 별도 홀로 안내하고 어두운 호텔 웨딩 무드를 확인함.",
+    "confidence": "B-strong",
+    "classificationCheckedAt": "2026-08-08",
+    "detailCheckedAt": "2026-08-08",
+    "sourceId": "S-20260808-CAP-X1-002",
+    "sourceUrl": "https://incheon.wedding/collections/weddinghall-charis/",
+    "sourceType": "현행판매채널",
+    "raw": {
+      "representativeClassification": "호텔 홀",
+      "lighting": "어두움",
+      "naturalLight": "N",
+      "ceremonyFormat": "분리예식",
+      "mealType": null,
+      "venueType": "호텔"
+    }
+  },
+  {
+    "id": "H-CAP-X1-20260808-005",
+    "venueId": "V-CAP-X1-20260808-002",
+    "venueName": "호텔 카리스",
+    "hallName": "더벨라지오",
+    "sido": "인천광역시",
+    "sigungu": "계양구",
+    "subdistrict": null,
+    "regionCode": "VDD-28-009",
+    "metroArea": "부평·계양",
+    "district": "계양구",
+    "neighborhood": "작전동",
+    "address": "인천광역시 계양구 계양대로 28",
+    "phone": "032-556-0880",
+    "website": "https://incheon.wedding/collections/weddinghall-charis/",
+    "instagram": null,
+    "mapUrl": null,
+    "publicStatus": "public",
+    "lighting": "bright",
+    "naturalLight": "partial",
+    "chapel": true,
+    "house": true,
+    "indoorOutdoor": "indoor",
+    "venueType": "hotel",
+    "ceremonyFormat": "separate",
+    "meals": [],
+    "seated": {
+      "min": null,
+      "max": null,
+      "raw": null
+    },
+    "capacity": {
+      "min": null,
+      "max": null,
+      "raw": null
+    },
+    "guarantee": {
+      "min": null,
+      "max": null,
+      "raw": null
+    },
+    "interval": {
+      "min": null,
+      "max": null,
+      "raw": null
+    },
+    "ceremonyTime": null,
+    "virginRoad": null,
+    "ceilingHeight": "11m",
+    "featureTags": [
+      "15층",
+      "돔 채플",
+      "11m 천고"
+    ],
+    "classificationEvidence": "현행 판매 채널이 15층 더벨라지오를 별도 판매하고 11m 돔 천고의 밝은 채플 무드를 안내함.",
+    "confidence": "B-strong",
+    "classificationCheckedAt": "2026-08-08",
+    "detailCheckedAt": "2026-08-08",
+    "sourceId": "S-20260808-CAP-X1-002",
+    "sourceUrl": "https://incheon.wedding/collections/weddinghall-charis/",
+    "sourceType": "현행판매채널",
+    "raw": {
+      "representativeClassification": "채플 홀",
+      "lighting": "밝음",
+      "naturalLight": "부분",
+      "ceremonyFormat": "분리예식",
+      "mealType": null,
+      "venueType": "호텔"
+    }
+  },
+  {
+    "id": "H-CAP-X1-20260808-006",
+    "venueId": "V-CAP-X1-20260808-003",
+    "venueName": "아시아드웨딩컨벤션",
+    "hallName": "비아벨라홀",
+    "sido": "인천광역시",
+    "sigungu": "서해구",
+    "subdistrict": null,
+    "regionCode": "VDD-28-010",
+    "metroArea": "청라·서해",
+    "district": "서해구",
+    "neighborhood": "연희동",
+    "address": "인천광역시 서해구 염곡로 725 인천아시아드주경기장 3번 게이트",
+    "phone": "032-765-6000",
+    "website": "https://www.asiadwed.co.kr/",
+    "instagram": null,
+    "mapUrl": null,
+    "publicStatus": "public",
+    "lighting": "dark",
+    "naturalLight": "no",
+    "chapel": false,
+    "house": false,
+    "indoorOutdoor": "indoor",
+    "venueType": "professional_convention",
+    "ceremonyFormat": "separate",
+    "meals": [],
+    "seated": {
+      "min": null,
+      "max": null,
+      "raw": null
+    },
+    "capacity": {
+      "min": null,
+      "max": null,
+      "raw": null
+    },
+    "guarantee": {
+      "min": null,
+      "max": null,
+      "raw": null
+    },
+    "interval": {
+      "min": null,
+      "max": null,
+      "raw": null
+    },
+    "ceremonyTime": null,
+    "virginRoad": null,
+    "ceilingHeight": "12m",
+    "featureTags": [
+      "2026년 8월 오픈",
+      "딥톤",
+      "높은 천고"
+    ],
+    "classificationEvidence": "공식 홈페이지가 2026년 8월 그랜드 오픈, 12m 천고의 비아벨라홀을 현재 예약 상품으로 안내함.",
+    "confidence": "A",
+    "classificationCheckedAt": "2026-08-08",
+    "detailCheckedAt": "2026-08-08",
+    "sourceId": "S-20260808-CAP-X1-003",
+    "sourceUrl": "https://www.asiadwed.co.kr/wedding/viabella/",
+    "sourceType": "공식홈페이지",
+    "raw": {
+      "representativeClassification": "어두운 홀",
+      "lighting": "어두움",
+      "naturalLight": "N",
+      "ceremonyFormat": "분리예식",
+      "mealType": null,
+      "venueType": "컨벤션"
+    }
+  },
+  {
+    "id": "H-CAP-X1-20260808-007",
+    "venueId": "V-CAP-X1-20260808-003",
+    "venueName": "아시아드웨딩컨벤션",
+    "hallName": "그레이스홀",
+    "sido": "인천광역시",
+    "sigungu": "서해구",
+    "subdistrict": null,
+    "regionCode": "VDD-28-010",
+    "metroArea": "청라·서해",
+    "district": "서해구",
+    "neighborhood": "연희동",
+    "address": "인천광역시 서해구 염곡로 725 인천아시아드주경기장 3번 게이트",
+    "phone": "032-765-6000",
+    "website": "https://www.asiadwed.co.kr/",
+    "instagram": null,
+    "mapUrl": null,
+    "publicStatus": "public",
+    "lighting": "dark",
+    "naturalLight": "no",
+    "chapel": false,
+    "house": false,
+    "indoorOutdoor": "indoor",
+    "venueType": "professional_convention",
+    "ceremonyFormat": "separate",
+    "meals": [],
+    "seated": {
+      "min": null,
+      "max": null,
+      "raw": null
+    },
+    "capacity": {
+      "min": null,
+      "max": null,
+      "raw": null
+    },
+    "guarantee": {
+      "min": null,
+      "max": null,
+      "raw": null
+    },
+    "interval": {
+      "min": null,
+      "max": null,
+      "raw": null
+    },
+    "ceremonyTime": null,
+    "virginRoad": "30m",
+    "ceilingHeight": null,
+    "featureTags": [
+      "블랙 호텔 무드",
+      "높은 천고"
+    ],
+    "classificationEvidence": "공식 홀 페이지가 30m 버진로드와 웅장한 블랙 호텔·컨벤션 무드를 명시함.",
+    "confidence": "A",
+    "classificationCheckedAt": "2026-08-08",
+    "detailCheckedAt": "2026-08-08",
+    "sourceId": "S-20260808-CAP-X1-003",
+    "sourceUrl": "https://www.asiadwed.co.kr/wedding/grace/",
+    "sourceType": "공식홈페이지",
+    "raw": {
+      "representativeClassification": "어두운 홀",
+      "lighting": "어두움",
+      "naturalLight": "N",
+      "ceremonyFormat": "분리예식",
+      "mealType": null,
+      "venueType": "컨벤션"
+    }
+  },
+  {
+    "id": "H-CAP-X1-20260808-008",
+    "venueId": "V-CAP-X1-20260808-003",
+    "venueName": "아시아드웨딩컨벤션",
+    "hallName": "브릴리에홀",
+    "sido": "인천광역시",
+    "sigungu": "서해구",
+    "subdistrict": null,
+    "regionCode": "VDD-28-010",
+    "metroArea": "청라·서해",
+    "district": "서해구",
+    "neighborhood": "연희동",
+    "address": "인천광역시 서해구 염곡로 725 인천아시아드주경기장 3번 게이트",
+    "phone": "032-765-6000",
+    "website": "https://www.asiadwed.co.kr/",
+    "instagram": null,
+    "mapUrl": null,
+    "publicStatus": "public",
+    "lighting": "bright",
+    "naturalLight": "partial",
+    "chapel": false,
+    "house": true,
+    "indoorOutdoor": "indoor",
+    "venueType": "professional_convention",
+    "ceremonyFormat": "separate",
+    "meals": [],
+    "seated": {
+      "min": null,
+      "max": null,
+      "raw": null
+    },
+    "capacity": {
+      "min": null,
+      "max": null,
+      "raw": null
+    },
+    "guarantee": {
+      "min": null,
+      "max": null,
+      "raw": null
+    },
+    "interval": {
+      "min": null,
+      "max": null,
+      "raw": null
+    },
+    "ceremonyTime": null,
+    "virginRoad": null,
+    "ceilingHeight": null,
+    "featureTags": [
+      "프라이빗",
+      "가든 무드",
+      "그리너리"
+    ],
+    "classificationEvidence": "공식 홀 페이지가 브릴리에홀을 별도 웨딩 공간으로 안내하고 프라이빗 하우스·가든 무드를 명시함.",
+    "confidence": "A",
+    "classificationCheckedAt": "2026-08-08",
+    "detailCheckedAt": "2026-08-08",
+    "sourceId": "S-20260808-CAP-X1-003",
+    "sourceUrl": "https://www.asiadwed.co.kr/wedding/briller/",
+    "sourceType": "공식홈페이지",
+    "raw": {
+      "representativeClassification": "하우스웨딩홀",
+      "lighting": "밝음",
+      "naturalLight": "부분",
+      "ceremonyFormat": "분리예식",
+      "mealType": null,
+      "venueType": "컨벤션"
+    }
+  },
+  {
+    "id": "H-CAP-X1-20260808-009",
+    "venueId": "V-CAP-X1-20260808-004",
+    "venueName": "파라다이스시티",
+    "hallName": "그랜드 볼룸",
+    "sido": "인천광역시",
+    "sigungu": "영종구",
+    "subdistrict": null,
+    "regionCode": "VDD-28-004",
+    "metroArea": "영종",
+    "district": "영종구",
+    "neighborhood": "운서동",
+    "address": "인천광역시 영종구 영종해안남로321번길 186",
+    "phone": "032-729-2280",
+    "website": "https://www.p-city.com/front/wedding",
+    "instagram": null,
+    "mapUrl": null,
+    "publicStatus": "public",
+    "lighting": "dark",
+    "naturalLight": "no",
+    "chapel": false,
+    "house": false,
+    "indoorOutdoor": "indoor",
+    "venueType": "hotel",
+    "ceremonyFormat": "simultaneous",
+    "meals": [],
+    "seated": {
+      "min": 540,
+      "max": 540,
+      "raw": 540
+    },
+    "capacity": {
+      "min": 600,
+      "max": 600,
+      "raw": 600
+    },
+    "guarantee": {
+      "min": null,
+      "max": null,
+      "raw": null
+    },
+    "interval": {
+      "min": null,
+      "max": null,
+      "raw": null
+    },
+    "ceremonyTime": null,
+    "virginRoad": "37m",
+    "ceilingHeight": "8m",
+    "featureTags": [
+      "890㎡",
+      "대형 호텔 웨딩"
+    ],
+    "classificationEvidence": "공식 웨딩 안내가 890㎡ 그랜드 볼룸, 연회 540명과 37m 버진로드·8m 천고를 명시함.",
+    "confidence": "A-strong",
+    "classificationCheckedAt": "2026-08-08",
+    "detailCheckedAt": "2026-08-08",
+    "sourceId": "S-20260808-CAP-X1-004",
+    "sourceUrl": "https://www.p-city.com/front/wedding",
+    "sourceType": "공식홈페이지",
+    "raw": {
+      "representativeClassification": "호텔 홀",
+      "lighting": "어두움",
+      "naturalLight": "N",
+      "ceremonyFormat": "동시예식",
+      "mealType": null,
+      "venueType": "호텔"
+    }
+  },
+  {
+    "id": "H-CAP-X1-20260808-010",
+    "venueId": "V-CAP-X1-20260808-004",
+    "venueName": "파라다이스시티",
+    "hallName": "사파이어",
+    "sido": "인천광역시",
+    "sigungu": "영종구",
+    "subdistrict": null,
+    "regionCode": "VDD-28-004",
+    "metroArea": "영종",
+    "district": "영종구",
+    "neighborhood": "운서동",
+    "address": "인천광역시 영종구 영종해안남로321번길 186",
+    "phone": "032-729-2280",
+    "website": "https://www.p-city.com/front/wedding",
+    "instagram": null,
+    "mapUrl": null,
+    "publicStatus": "public",
+    "lighting": "unknown",
+    "naturalLight": "unknown",
+    "chapel": false,
+    "house": false,
+    "indoorOutdoor": "indoor",
+    "venueType": "hotel",
+    "ceremonyFormat": "simultaneous",
+    "meals": [],
+    "seated": {
+      "min": null,
+      "max": null,
+      "raw": null
+    },
+    "capacity": {
+      "min": 150,
+      "max": 150,
+      "raw": 150
+    },
+    "guarantee": {
+      "min": null,
+      "max": null,
+      "raw": null
+    },
+    "interval": {
+      "min": null,
+      "max": null,
+      "raw": null
+    },
+    "ceremonyTime": null,
+    "virginRoad": null,
+    "ceilingHeight": null,
+    "featureTags": [
+      "호텔 스몰웨딩",
+      "100~150명"
+    ],
+    "classificationEvidence": "공식 웨딩 안내가 사파이어를 100~150명 규모의 별도 웨딩 공간으로 안내함. 조도는 공식 설명 부족으로 미확인.",
+    "confidence": "A",
+    "classificationCheckedAt": "2026-08-08",
+    "detailCheckedAt": "2026-08-08",
+    "sourceId": "S-20260808-CAP-X1-004",
+    "sourceUrl": "https://www.p-city.com/front/wedding",
+    "sourceType": "공식홈페이지",
+    "raw": {
+      "representativeClassification": "호텔 홀",
+      "lighting": null,
+      "naturalLight": null,
+      "ceremonyFormat": "동시예식",
+      "mealType": null,
+      "venueType": "호텔"
+    }
+  },
+  {
+    "id": "H-CAP-X1-20260808-011",
+    "venueId": "V-CAP-X1-20260808-004",
+    "venueName": "파라다이스시티",
+    "hallName": "에메랄드",
+    "sido": "인천광역시",
+    "sigungu": "영종구",
+    "subdistrict": null,
+    "regionCode": "VDD-28-004",
+    "metroArea": "영종",
+    "district": "영종구",
+    "neighborhood": "운서동",
+    "address": "인천광역시 영종구 영종해안남로321번길 186",
+    "phone": "032-729-2280",
+    "website": "https://www.p-city.com/front/wedding",
+    "instagram": null,
+    "mapUrl": null,
+    "publicStatus": "public",
+    "lighting": "unknown",
+    "naturalLight": "unknown",
+    "chapel": false,
+    "house": false,
+    "indoorOutdoor": "indoor",
+    "venueType": "hotel",
+    "ceremonyFormat": "simultaneous",
+    "meals": [],
+    "seated": {
+      "min": null,
+      "max": null,
+      "raw": null
+    },
+    "capacity": {
+      "min": 100,
+      "max": 100,
+      "raw": 100
+    },
+    "guarantee": {
+      "min": null,
+      "max": null,
+      "raw": null
+    },
+    "interval": {
+      "min": null,
+      "max": null,
+      "raw": null
+    },
+    "ceremonyTime": null,
+    "virginRoad": null,
+    "ceilingHeight": null,
+    "featureTags": [
+      "호텔 스몰웨딩",
+      "70~100명"
+    ],
+    "classificationEvidence": "공식 웨딩 안내가 에메랄드를 70~100명 규모의 별도 웨딩 공간으로 안내함. 조도는 공식 설명 부족으로 미확인.",
+    "confidence": "A",
+    "classificationCheckedAt": "2026-08-08",
+    "detailCheckedAt": "2026-08-08",
+    "sourceId": "S-20260808-CAP-X1-004",
+    "sourceUrl": "https://www.p-city.com/front/wedding",
+    "sourceType": "공식홈페이지",
+    "raw": {
+      "representativeClassification": "호텔 홀",
+      "lighting": null,
+      "naturalLight": null,
+      "ceremonyFormat": "동시예식",
+      "mealType": null,
+      "venueType": "호텔"
+    }
+  },
+  {
+    "id": "H-CAP-X1-20260808-012",
+    "venueId": "V-CAP-X1-20260808-004",
+    "venueName": "파라다이스시티",
+    "hallName": "체스가든",
+    "sido": "인천광역시",
+    "sigungu": "영종구",
+    "subdistrict": null,
+    "regionCode": "VDD-28-004",
+    "metroArea": "영종",
+    "district": "영종구",
+    "neighborhood": "운서동",
+    "address": "인천광역시 영종구 영종해안남로321번길 186",
+    "phone": "032-729-2280",
+    "website": "https://www.p-city.com/front/wedding",
+    "instagram": null,
+    "mapUrl": null,
+    "publicStatus": "public",
+    "lighting": "bright",
+    "naturalLight": "yes",
+    "chapel": false,
+    "house": true,
+    "indoorOutdoor": "outdoor",
+    "venueType": "hotel",
+    "ceremonyFormat": "simultaneous",
+    "meals": [],
+    "seated": {
+      "min": null,
+      "max": null,
+      "raw": null
+    },
+    "capacity": {
+      "min": 200,
+      "max": 200,
+      "raw": 200
+    },
+    "guarantee": {
+      "min": null,
+      "max": null,
+      "raw": null
+    },
+    "interval": {
+      "min": null,
+      "max": null,
+      "raw": null
+    },
+    "ceremonyTime": null,
+    "virginRoad": null,
+    "ceilingHeight": null,
+    "featureTags": [
+      "야외 정원",
+      "150~200명",
+      "목적지형"
+    ],
+    "classificationEvidence": "공식 웨딩 안내가 체스가든을 150~200명 규모의 야외 정원 웨딩 공간으로 안내함.",
+    "confidence": "A-strong",
+    "classificationCheckedAt": "2026-08-08",
+    "detailCheckedAt": "2026-08-08",
+    "sourceId": "S-20260808-CAP-X1-004",
+    "sourceUrl": "https://www.p-city.com/front/wedding",
+    "sourceType": "공식홈페이지",
+    "raw": {
+      "representativeClassification": "야외웨딩홀",
+      "lighting": "밝음",
+      "naturalLight": "Y",
+      "ceremonyFormat": "동시예식",
+      "mealType": null,
+      "venueType": "호텔"
+    }
+  },
+  {
+    "id": "H-CAP-X1-20260808-013",
+    "venueId": "V-CAP-X1-20260808-005",
+    "venueName": "네스트호텔",
+    "hallName": "바움홀",
+    "sido": "인천광역시",
+    "sigungu": "영종구",
+    "subdistrict": null,
+    "regionCode": "VDD-28-004",
+    "metroArea": "영종",
+    "district": "영종구",
+    "neighborhood": "운서동",
+    "address": "인천광역시 영종구 영종해안남로 19-5",
+    "phone": "032-743-9010",
+    "website": "https://www.nesthotel.co.kr/include/banquet/wedding.asp",
+    "instagram": null,
+    "mapUrl": null,
+    "publicStatus": "public",
+    "lighting": "bright",
+    "naturalLight": "partial",
+    "chapel": false,
+    "house": true,
+    "indoorOutdoor": "indoor",
+    "venueType": "hotel",
+    "ceremonyFormat": "simultaneous",
+    "meals": [],
+    "seated": {
+      "min": null,
+      "max": null,
+      "raw": null
+    },
+    "capacity": {
+      "min": 360,
+      "max": 360,
+      "raw": 360
+    },
+    "guarantee": {
+      "min": 50,
+      "max": 50,
+      "raw": 50
+    },
+    "interval": {
+      "min": null,
+      "max": null,
+      "raw": null
+    },
+    "ceremonyTime": null,
+    "virginRoad": null,
+    "ceilingHeight": null,
+    "featureTags": [
+      "스몰·중형 웨딩",
+      "자연 친화"
+    ],
+    "classificationEvidence": "공식 웨딩 페이지가 바움홀을 50~360명, 최소 보증 50명의 실내 웨딩 공간으로 별도 안내함.",
+    "confidence": "A",
+    "classificationCheckedAt": "2026-08-08",
+    "detailCheckedAt": "2026-08-08",
+    "sourceId": "S-20260808-CAP-X1-005",
+    "sourceUrl": "https://www.nesthotel.co.kr/include/banquet/wedding.asp",
+    "sourceType": "공식홈페이지",
+    "raw": {
+      "representativeClassification": "호텔 홀",
+      "lighting": "밝음",
+      "naturalLight": "부분",
+      "ceremonyFormat": "동시예식",
+      "mealType": null,
+      "venueType": "호텔"
+    }
+  },
+  {
+    "id": "H-CAP-X1-20260808-014",
+    "venueId": "V-CAP-X1-20260808-005",
+    "venueName": "네스트호텔",
+    "hallName": "가든",
+    "sido": "인천광역시",
+    "sigungu": "영종구",
+    "subdistrict": null,
+    "regionCode": "VDD-28-004",
+    "metroArea": "영종",
+    "district": "영종구",
+    "neighborhood": "운서동",
+    "address": "인천광역시 영종구 영종해안남로 19-5",
+    "phone": "032-743-9010",
+    "website": "https://www.nesthotel.co.kr/include/banquet/wedding.asp",
+    "instagram": null,
+    "mapUrl": null,
+    "publicStatus": "public",
+    "lighting": "bright",
+    "naturalLight": "yes",
+    "chapel": false,
+    "house": true,
+    "indoorOutdoor": "outdoor",
+    "venueType": "hotel",
+    "ceremonyFormat": "simultaneous",
+    "meals": [],
+    "seated": {
+      "min": 110,
+      "max": 110,
+      "raw": 110
+    },
+    "capacity": {
+      "min": null,
+      "max": null,
+      "raw": null
+    },
+    "guarantee": {
+      "min": 100,
+      "max": 100,
+      "raw": 100
+    },
+    "interval": {
+      "min": null,
+      "max": null,
+      "raw": null
+    },
+    "ceremonyTime": null,
+    "virginRoad": null,
+    "ceilingHeight": null,
+    "featureTags": [
+      "야외 가든",
+      "목적지형",
+      "스몰웨딩"
+    ],
+    "classificationEvidence": "공식 웨딩 페이지가 가든웨딩을 착석 110명과 최소 보증 100명의 별도 상품으로 안내함.",
+    "confidence": "A-strong",
+    "classificationCheckedAt": "2026-08-08",
+    "detailCheckedAt": "2026-08-08",
+    "sourceId": "S-20260808-CAP-X1-005",
+    "sourceUrl": "https://www.nesthotel.co.kr/include/banquet/wedding.asp",
+    "sourceType": "공식홈페이지",
+    "raw": {
+      "representativeClassification": "야외웨딩홀",
+      "lighting": "밝음",
+      "naturalLight": "Y",
+      "ceremonyFormat": "동시예식",
+      "mealType": null,
+      "venueType": "호텔"
+    }
+  },
+  {
+    "id": "H-CAP-X1-20260808-015",
+    "venueId": "V-CAP-X1-20260808-006",
+    "venueName": "그랜드 하얏트 인천",
+    "hallName": "더 볼룸",
+    "sido": "인천광역시",
+    "sigungu": "영종구",
+    "subdistrict": null,
+    "regionCode": "VDD-28-004",
+    "metroArea": "영종",
+    "district": "영종구",
+    "neighborhood": "운서동",
+    "address": "인천광역시 영종구 영종해안남로321번길 208",
+    "phone": "032-745-1234",
+    "website": "https://www.hyatt.com/grand-hyatt/en-US/inche-grand-hyatt-incheon/weddings",
+    "instagram": null,
+    "mapUrl": null,
+    "publicStatus": "public",
+    "lighting": "dark",
+    "naturalLight": "no",
+    "chapel": false,
+    "house": false,
+    "indoorOutdoor": "indoor",
+    "venueType": "hotel",
+    "ceremonyFormat": "simultaneous",
+    "meals": [],
+    "seated": {
+      "min": 540,
+      "max": 540,
+      "raw": 540
+    },
+    "capacity": {
+      "min": null,
+      "max": null,
+      "raw": null
+    },
+    "guarantee": {
+      "min": null,
+      "max": null,
+      "raw": null
+    },
+    "interval": {
+      "min": null,
+      "max": null,
+      "raw": null
+    },
+    "ceremonyTime": null,
+    "virginRoad": null,
+    "ceilingHeight": null,
+    "featureTags": [
+      "대형 호텔 웨딩",
+      "890㎡"
+    ],
+    "classificationEvidence": "하얏트 공식 웨딩 페이지가 더 볼룸을 연회 540명 규모의 대표 실내 웨딩 공간으로 안내함.",
+    "confidence": "A",
+    "classificationCheckedAt": "2026-08-08",
+    "detailCheckedAt": "2026-08-08",
+    "sourceId": "S-20260808-CAP-X1-006",
+    "sourceUrl": "https://www.hyatt.com/grand-hyatt/en-US/inche-grand-hyatt-incheon/weddings",
+    "sourceType": "공식홈페이지",
+    "raw": {
+      "representativeClassification": "호텔 홀",
+      "lighting": "어두움",
+      "naturalLight": "N",
+      "ceremonyFormat": "동시예식",
+      "mealType": null,
+      "venueType": "호텔"
+    }
+  },
+  {
+    "id": "H-CAP-X1-20260808-016",
+    "venueId": "V-CAP-X1-20260808-006",
+    "venueName": "그랜드 하얏트 인천",
+    "hallName": "테라스 가든",
+    "sido": "인천광역시",
+    "sigungu": "영종구",
+    "subdistrict": null,
+    "regionCode": "VDD-28-004",
+    "metroArea": "영종",
+    "district": "영종구",
+    "neighborhood": "운서동",
+    "address": "인천광역시 영종구 영종해안남로321번길 208",
+    "phone": "032-745-1234",
+    "website": "https://www.hyatt.com/grand-hyatt/en-US/inche-grand-hyatt-incheon/weddings",
+    "instagram": null,
+    "mapUrl": null,
+    "publicStatus": "public",
+    "lighting": "bright",
+    "naturalLight": "yes",
+    "chapel": false,
+    "house": true,
+    "indoorOutdoor": "outdoor",
+    "venueType": "hotel",
+    "ceremonyFormat": "simultaneous",
+    "meals": [],
+    "seated": {
+      "min": null,
+      "max": null,
+      "raw": null
+    },
+    "capacity": {
+      "min": 180,
+      "max": 180,
+      "raw": 180
+    },
+    "guarantee": {
+      "min": null,
+      "max": null,
+      "raw": null
+    },
+    "interval": {
+      "min": null,
+      "max": null,
+      "raw": null
+    },
+    "ceremonyTime": null,
+    "virginRoad": null,
+    "ceilingHeight": null,
+    "featureTags": [
+      "야외 정원",
+      "180명",
+      "목적지형"
+    ],
+    "classificationEvidence": "하얏트 공식 웨딩 페이지가 테라스 가든을 180명 규모의 야외 웨딩 공간으로 안내함.",
+    "confidence": "A-strong",
+    "classificationCheckedAt": "2026-08-08",
+    "detailCheckedAt": "2026-08-08",
+    "sourceId": "S-20260808-CAP-X1-006",
+    "sourceUrl": "https://www.hyatt.com/grand-hyatt/en-US/inche-grand-hyatt-incheon/weddings",
+    "sourceType": "공식홈페이지",
+    "raw": {
+      "representativeClassification": "야외웨딩홀",
+      "lighting": "밝음",
+      "naturalLight": "Y",
+      "ceremonyFormat": "동시예식",
+      "mealType": null,
+      "venueType": "호텔"
+    }
+  },
+  {
+    "id": "H-CAP-X1-20260808-017",
+    "venueId": "V-CAP-X1-20260808-007",
+    "venueName": "하버파크호텔",
+    "hallName": "그랜드 볼룸",
+    "sido": "인천광역시",
+    "sigungu": "제물포구",
+    "subdistrict": null,
+    "regionCode": "VDD-28-003",
+    "metroArea": "인천 원도심",
+    "district": "제물포구",
+    "neighborhood": "항동3가",
+    "address": "인천광역시 제물포구 제물량로 217",
+    "phone": "032-770-9700",
+    "website": "https://www.harborparkhotel.com/view/viewLink.do?page=homepage%2FKOR%2Fbanquet%2Fwedding",
+    "instagram": null,
+    "mapUrl": null,
+    "publicStatus": "public",
+    "lighting": "unknown",
+    "naturalLight": "unknown",
+    "chapel": false,
+    "house": false,
+    "indoorOutdoor": "indoor",
+    "venueType": "hotel",
+    "ceremonyFormat": "simultaneous",
+    "meals": [],
+    "seated": {
+      "min": null,
+      "max": null,
+      "raw": null
+    },
+    "capacity": {
+      "min": 400,
+      "max": 400,
+      "raw": 400
+    },
+    "guarantee": {
+      "min": null,
+      "max": null,
+      "raw": null
+    },
+    "interval": {
+      "min": null,
+      "max": null,
+      "raw": null
+    },
+    "ceremonyTime": null,
+    "virginRoad": null,
+    "ceilingHeight": null,
+    "featureTags": [
+      "2층",
+      "호텔 웨딩",
+      "최대 400명"
+    ],
+    "classificationEvidence": "공식 웨딩 가이드가 2층 그랜드 볼룸과 웨딩 최대 400명을 명시함. 조도는 공식 설명 부족으로 미확인.",
+    "confidence": "A",
+    "classificationCheckedAt": "2026-08-08",
+    "detailCheckedAt": "2026-08-08",
+    "sourceId": "S-20260808-CAP-X1-007",
+    "sourceUrl": "https://www.harborparkhotel.com/view/viewLink.do?page=homepage%2FKOR%2Fbanquet%2Fwedding",
+    "sourceType": "공식홈페이지",
+    "raw": {
+      "representativeClassification": "호텔 홀",
+      "lighting": null,
+      "naturalLight": null,
+      "ceremonyFormat": "동시예식",
+      "mealType": null,
+      "venueType": "호텔"
+    }
+  },
+  {
+    "id": "H-CAP-X1-20260808-018",
+    "venueId": "V-CAP-X1-20260808-007",
+    "venueName": "하버파크호텔",
+    "hallName": "가든 웨딩",
+    "sido": "인천광역시",
+    "sigungu": "제물포구",
+    "subdistrict": null,
+    "regionCode": "VDD-28-003",
+    "metroArea": "인천 원도심",
+    "district": "제물포구",
+    "neighborhood": "항동3가",
+    "address": "인천광역시 제물포구 제물량로 217",
+    "phone": "032-770-9700",
+    "website": "https://www.harborparkhotel.com/view/viewLink.do?page=homepage%2FKOR%2Fbanquet%2Fwedding",
+    "instagram": null,
+    "mapUrl": null,
+    "publicStatus": "public",
+    "lighting": "bright",
+    "naturalLight": "yes",
+    "chapel": false,
+    "house": true,
+    "indoorOutdoor": "outdoor",
+    "venueType": "hotel",
+    "ceremonyFormat": "simultaneous",
+    "meals": [],
+    "seated": {
+      "min": null,
+      "max": null,
+      "raw": null
+    },
+    "capacity": {
+      "min": null,
+      "max": null,
+      "raw": null
+    },
+    "guarantee": {
+      "min": null,
+      "max": null,
+      "raw": null
+    },
+    "interval": {
+      "min": null,
+      "max": null,
+      "raw": null
+    },
+    "ceremonyTime": null,
+    "virginRoad": null,
+    "ceilingHeight": null,
+    "featureTags": [
+      "4층",
+      "야외 정원",
+      "개항장형"
+    ],
+    "classificationEvidence": "공식 웨딩 페이지와 가이드가 4층 야외 가든웨딩을 별도 상품으로 안내함.",
+    "confidence": "A-strong",
+    "classificationCheckedAt": "2026-08-08",
+    "detailCheckedAt": "2026-08-08",
+    "sourceId": "S-20260808-CAP-X1-007",
+    "sourceUrl": "https://www.harborparkhotel.com/view/viewLink.do?page=homepage%2FKOR%2Fbanquet%2Fwedding",
+    "sourceType": "공식홈페이지",
+    "raw": {
+      "representativeClassification": "야외웨딩홀",
+      "lighting": "밝음",
+      "naturalLight": "Y",
+      "ceremonyFormat": "동시예식",
+      "mealType": null,
+      "venueType": "호텔"
+    }
+  },
+  {
+    "id": "H-CAP-X1-20260808-019",
+    "venueId": "V-CAP-X1-20260808-008",
+    "venueName": "스페이스566 웨딩컨벤션",
+    "hallName": "스페이스566 웨딩홀",
+    "sido": "경기도",
+    "sigungu": "김포시",
+    "subdistrict": null,
+    "regionCode": "VDD-41-025",
+    "metroArea": "김포",
+    "district": "김포시",
+    "neighborhood": "감정동",
+    "address": "경기도 김포시 검단로 910 5층",
+    "phone": "031-988-2566",
+    "website": "https://space566.com/HOME",
+    "instagram": null,
+    "mapUrl": null,
+    "publicStatus": "public",
+    "lighting": "unknown",
+    "naturalLight": "unknown",
+    "chapel": false,
+    "house": true,
+    "indoorOutdoor": "indoor",
+    "venueType": "professional_convention",
+    "ceremonyFormat": "separate",
+    "meals": [],
+    "seated": {
+      "min": null,
+      "max": null,
+      "raw": null
+    },
+    "capacity": {
+      "min": null,
+      "max": null,
+      "raw": null
+    },
+    "guarantee": {
+      "min": null,
+      "max": null,
+      "raw": null
+    },
+    "interval": {
+      "min": null,
+      "max": null,
+      "raw": null
+    },
+    "ceremonyTime": null,
+    "virginRoad": null,
+    "ceilingHeight": "7m",
+    "featureTags": [
+      "5층",
+      "단독홀",
+      "스몰웨딩"
+    ],
+    "classificationEvidence": "공식·현행 예약 채널이 5층 7m 천고의 단독 웨딩홀을 안내함. 별도 고유 홀명과 조도는 확인되지 않아 업체명과 미확인값을 사용함.",
+    "confidence": "B-strong",
+    "classificationCheckedAt": "2026-08-08",
+    "detailCheckedAt": "2026-08-08",
+    "sourceId": "S-20260808-CAP-X1-008",
+    "sourceUrl": "https://space566.com/HOME",
+    "sourceType": "공식홈페이지",
+    "raw": {
+      "representativeClassification": "컨벤션홀",
+      "lighting": null,
+      "naturalLight": null,
+      "ceremonyFormat": "분리예식",
+      "mealType": null,
+      "venueType": "전문웨딩홀"
+    }
+  },
+  {
+    "id": "H-CAP-X1-20260808-020",
+    "venueId": "V-CAP-X1-20260808-009",
+    "venueName": "그랑파사쥬 웨딩&파티",
+    "hallName": "시엠프레홀",
+    "sido": "경기도",
+    "sigungu": "하남시",
+    "subdistrict": null,
+    "regionCode": "VDD-41-010",
+    "metroArea": "성남·하남·광주",
+    "district": "하남시",
+    "neighborhood": "망월동",
+    "address": "경기도 하남시 미사강변중앙로 180",
+    "phone": "031-793-7455",
+    "website": "https://www.weddingbook.com/weddinghall/5a8e41c2-9d4f-11ee-8d53-023379a10fd2",
+    "instagram": null,
+    "mapUrl": null,
+    "publicStatus": "public",
+    "lighting": "bright",
+    "naturalLight": "yes",
+    "chapel": false,
+    "house": true,
+    "indoorOutdoor": "indoor",
+    "venueType": "professional_convention",
+    "ceremonyFormat": "separate",
+    "meals": [
+      "buffet"
+    ],
+    "seated": {
+      "min": 150,
+      "max": 150,
+      "raw": 150
+    },
+    "capacity": {
+      "min": null,
+      "max": null,
+      "raw": null
+    },
+    "guarantee": {
+      "min": null,
+      "max": null,
+      "raw": null
+    },
+    "interval": {
+      "min": 120,
+      "max": 120,
+      "raw": 120
+    },
+    "ceremonyTime": null,
+    "virginRoad": null,
+    "ceilingHeight": null,
+    "featureTags": [
+      "자연광",
+      "단독홀",
+      "2시간 간격"
+    ],
+    "classificationEvidence": "현행 판매 채널이 자연광이 들어오는 단독 시엠프레홀, 150석과 120분 예식 간격을 안내함.",
+    "confidence": "B-strong",
+    "classificationCheckedAt": "2026-08-08",
+    "detailCheckedAt": "2026-08-08",
+    "sourceId": "S-20260808-CAP-X1-009",
+    "sourceUrl": "https://www.weddingbook.com/weddinghall/5a8e41c2-9d4f-11ee-8d53-023379a10fd2",
+    "sourceType": "현행판매채널",
+    "raw": {
+      "representativeClassification": "하우스웨딩홀",
+      "lighting": "밝음",
+      "naturalLight": "Y",
+      "ceremonyFormat": "분리예식",
+      "mealType": "뷔페",
+      "venueType": "전문웨딩홀"
+    }
+  },
+  {
+    "id": "H-CAP-X1-20260808-021",
+    "venueId": "V-CAP-X1-20260808-010",
+    "venueName": "다온컨벤션",
+    "hallName": "다온홀",
+    "sido": "경기도",
+    "sigungu": "포천시",
+    "subdistrict": null,
+    "regionCode": "VDD-41-029",
+    "metroArea": "경기 북부",
+    "district": "포천시",
+    "neighborhood": "하성북리",
+    "address": "경기도 포천시 군내면 호국로 1578",
+    "phone": "031-536-1888",
+    "website": "https://www.directwedding.co.kr/weddinghall/hall0499",
+    "instagram": null,
+    "mapUrl": null,
+    "publicStatus": "public",
+    "lighting": "bright",
+    "naturalLight": "yes",
+    "chapel": false,
+    "house": true,
+    "indoorOutdoor": "indoor",
+    "venueType": "professional_convention",
+    "ceremonyFormat": "separate",
+    "meals": [],
+    "seated": {
+      "min": 200,
+      "max": 200,
+      "raw": 200
+    },
+    "capacity": {
+      "min": null,
+      "max": null,
+      "raw": null
+    },
+    "guarantee": {
+      "min": null,
+      "max": null,
+      "raw": null
+    },
+    "interval": {
+      "min": 120,
+      "max": 120,
+      "raw": 120
+    },
+    "ceremonyTime": null,
+    "virginRoad": null,
+    "ceilingHeight": null,
+    "featureTags": [
+      "통유리",
+      "숲 전망",
+      "2시간 간격"
+    ],
+    "classificationEvidence": "현행 판매 채널이 통유리 숲 전망의 밝은 실내 다온홀, 200석과 120분 예식 간격을 명시함.",
+    "confidence": "B-strong",
+    "classificationCheckedAt": "2026-08-08",
+    "detailCheckedAt": "2026-08-08",
+    "sourceId": "S-20260808-CAP-X1-010",
+    "sourceUrl": "https://www.directwedding.co.kr/weddinghall/hall0499",
+    "sourceType": "현행판매채널",
+    "raw": {
+      "representativeClassification": "밝은 홀",
+      "lighting": "밝음",
+      "naturalLight": "Y",
+      "ceremonyFormat": "분리예식",
+      "mealType": null,
+      "venueType": "전문웨딩홀"
+    }
+  },
+  {
+    "id": "H-CAP-X1-20260808-022",
+    "venueId": "V-CAP-X1-20260808-010",
+    "venueName": "다온컨벤션",
+    "hallName": "포레스트홀",
+    "sido": "경기도",
+    "sigungu": "포천시",
+    "subdistrict": null,
+    "regionCode": "VDD-41-029",
+    "metroArea": "경기 북부",
+    "district": "포천시",
+    "neighborhood": "하성북리",
+    "address": "경기도 포천시 군내면 호국로 1578",
+    "phone": "031-536-1888",
+    "website": "https://www.directwedding.co.kr/weddinghall/hall0499",
+    "instagram": null,
+    "mapUrl": null,
+    "publicStatus": "public",
+    "lighting": "bright",
+    "naturalLight": "yes",
+    "chapel": false,
+    "house": true,
+    "indoorOutdoor": "outdoor",
+    "venueType": "professional_convention",
+    "ceremonyFormat": "separate",
+    "meals": [],
+    "seated": {
+      "min": null,
+      "max": null,
+      "raw": null
+    },
+    "capacity": {
+      "min": null,
+      "max": null,
+      "raw": null
+    },
+    "guarantee": {
+      "min": null,
+      "max": null,
+      "raw": null
+    },
+    "interval": {
+      "min": null,
+      "max": null,
+      "raw": null
+    },
+    "ceremonyTime": null,
+    "virginRoad": null,
+    "ceilingHeight": null,
+    "featureTags": [
+      "야외 정원",
+      "숲",
+      "하우스웨딩"
+    ],
+    "classificationEvidence": "현행 판매 채널이 포레스트홀을 다온홀과 별도 판매하는 야외 정원·하우스웨딩 공간으로 안내함.",
+    "confidence": "B-strong",
+    "classificationCheckedAt": "2026-08-08",
+    "detailCheckedAt": "2026-08-08",
+    "sourceId": "S-20260808-CAP-X1-010",
+    "sourceUrl": "https://www.directwedding.co.kr/weddinghall/hall0499",
+    "sourceType": "현행판매채널",
+    "raw": {
+      "representativeClassification": "야외웨딩홀",
+      "lighting": "밝음",
+      "naturalLight": "Y",
+      "ceremonyFormat": "분리예식",
+      "mealType": null,
+      "venueType": "전문웨딩홀"
+    }
+  },
+  {
+    "id": "H-CAP-X1-20260808-023",
+    "venueId": "V-CAP-X1-20260808-011",
+    "venueName": "벨루체웨딩",
+    "hallName": "벨루체 웨딩홀",
+    "sido": "경기도",
+    "sigungu": "동두천시",
+    "subdistrict": null,
+    "regionCode": "VDD-41-024",
+    "metroArea": "의정부·양주·동두천",
+    "district": "동두천시",
+    "neighborhood": "지행동",
+    "address": "경기도 동두천시 동두천로 119 지행역프라자 6·7층",
+    "phone": "031-862-2500",
+    "website": "https://www.bellucewedding.com/",
+    "instagram": null,
+    "mapUrl": null,
+    "publicStatus": "public",
+    "lighting": "bright",
+    "naturalLight": "yes",
+    "chapel": false,
+    "house": true,
+    "indoorOutdoor": "indoor",
+    "venueType": "professional_convention",
+    "ceremonyFormat": "separate",
+    "meals": [
+      "buffet"
+    ],
+    "seated": {
+      "min": 150,
+      "max": 150,
+      "raw": 150
+    },
+    "capacity": {
+      "min": null,
+      "max": null,
+      "raw": null
+    },
+    "guarantee": {
+      "min": null,
+      "max": null,
+      "raw": null
+    },
+    "interval": {
+      "min": 90,
+      "max": 90,
+      "raw": 90
+    },
+    "ceremonyTime": null,
+    "virginRoad": null,
+    "ceilingHeight": null,
+    "featureTags": [
+      "6·7층",
+      "자연광",
+      "단독홀"
+    ],
+    "classificationEvidence": "공식 홈페이지와 현행 판매 채널이 자연광 단독홀, 100~150석과 90분 간격을 안내함. 별도 고유 홀명은 확인되지 않음.",
+    "confidence": "B-strong",
+    "classificationCheckedAt": "2026-08-08",
+    "detailCheckedAt": "2026-08-08",
+    "sourceId": "S-20260808-CAP-X1-011",
+    "sourceUrl": "https://www.bellucewedding.com/",
+    "sourceType": "공식홈페이지",
+    "raw": {
+      "representativeClassification": "하우스웨딩홀",
+      "lighting": "밝음",
+      "naturalLight": "Y",
+      "ceremonyFormat": "분리예식",
+      "mealType": "뷔페",
+      "venueType": "전문웨딩홀"
+    }
+  },
+  {
+    "id": "H-CAP-X1-20260808-024",
+    "venueId": "V-CAP-X1-20260808-012",
+    "venueName": "썬밸리호텔 여주",
+    "hallName": "그랜드볼룸",
+    "sido": "경기도",
+    "sigungu": "여주시",
+    "subdistrict": null,
+    "regionCode": "VDD-41-027",
+    "metroArea": "이천·여주·양평",
+    "district": "여주시",
+    "neighborhood": "연양동",
+    "address": "경기도 여주시 강변유원지길 45",
+    "phone": "02-3660-3003",
+    "website": "https://www.sunvalley.co.kr/hotel/hotel/wedding_price",
+    "instagram": null,
+    "mapUrl": null,
+    "publicStatus": "public",
+    "lighting": "unknown",
+    "naturalLight": "unknown",
+    "chapel": false,
+    "house": false,
+    "indoorOutdoor": "indoor",
+    "venueType": "hotel",
+    "ceremonyFormat": "simultaneous",
+    "meals": [
+      "buffet"
+    ],
+    "seated": {
+      "min": null,
+      "max": null,
+      "raw": null
+    },
+    "capacity": {
+      "min": null,
+      "max": null,
+      "raw": null
+    },
+    "guarantee": {
+      "min": 100,
+      "max": 100,
+      "raw": 100
+    },
+    "interval": {
+      "min": null,
+      "max": null,
+      "raw": null
+    },
+    "ceremonyTime": null,
+    "virginRoad": null,
+    "ceilingHeight": null,
+    "featureTags": [
+      "호텔 웨딩",
+      "2026·2027 가격 공개"
+    ],
+    "classificationEvidence": "공식 가격 페이지가 그랜드볼룸 웨딩과 최소 보증 100명을 현재 명시함. 조도는 공식 설명 부족으로 미확인.",
+    "confidence": "A",
+    "classificationCheckedAt": "2026-08-08",
+    "detailCheckedAt": "2026-08-08",
+    "sourceId": "S-20260808-CAP-X1-012",
+    "sourceUrl": "https://www.sunvalley.co.kr/hotel/hotel/wedding_price",
+    "sourceType": "공식홈페이지",
+    "raw": {
+      "representativeClassification": "호텔 홀",
+      "lighting": null,
+      "naturalLight": null,
+      "ceremonyFormat": "동시예식",
+      "mealType": "뷔페",
+      "venueType": "호텔"
+    }
+  },
+  {
+    "id": "H-CAP-X1-20260808-025",
+    "venueId": "V-CAP-X1-20260808-013",
+    "venueName": "감고당",
+    "hallName": "감고당 전통혼례마당",
+    "sido": "경기도",
+    "sigungu": "여주시",
+    "subdistrict": null,
+    "regionCode": "VDD-41-027",
+    "metroArea": "이천·여주·양평",
+    "district": "여주시",
+    "neighborhood": "능현동",
+    "address": "경기도 여주시 명성로 71",
+    "phone": "070-4102-6991",
+    "website": "https://share.gg.go.kr/facilityListO/view?eshare=1&facilityId=F0001&instiCode=1270016",
+    "instagram": null,
+    "mapUrl": null,
+    "publicStatus": "public",
+    "lighting": "bright",
+    "naturalLight": "yes",
+    "chapel": false,
+    "house": true,
+    "indoorOutdoor": "outdoor",
+    "venueType": "public",
+    "ceremonyFormat": "separate",
+    "meals": [],
+    "seated": {
+      "min": null,
+      "max": null,
+      "raw": null
+    },
+    "capacity": {
+      "min": 250,
+      "max": 250,
+      "raw": 250
+    },
+    "guarantee": {
+      "min": null,
+      "max": null,
+      "raw": null
+    },
+    "interval": {
+      "min": null,
+      "max": null,
+      "raw": null
+    },
+    "ceremonyTime": null,
+    "virginRoad": null,
+    "ceilingHeight": null,
+    "featureTags": [
+      "한옥",
+      "야외",
+      "공공 대관"
+    ],
+    "classificationEvidence": "경기도 공식 공유서비스가 감고당 전통혼례마당과 수용 인원 250명을 현재 명시함.",
+    "confidence": "A-strong",
+    "classificationCheckedAt": "2026-08-08",
+    "detailCheckedAt": "2026-08-08",
+    "sourceId": "S-20260808-CAP-X1-013",
+    "sourceUrl": "https://share.gg.go.kr/facilityListO/view?eshare=1&facilityId=F0001&instiCode=1270016",
+    "sourceType": "공식홈페이지",
+    "raw": {
+      "representativeClassification": "전통혼례홀",
+      "lighting": "밝음",
+      "naturalLight": "Y",
+      "ceremonyFormat": "전통혼례·분리예식",
+      "mealType": null,
+      "venueType": "공공·대관"
+    }
+  },
+  {
+    "id": "H-CAP-X1-20260808-026",
+    "venueId": "V-CAP-X1-20260808-014",
+    "venueName": "메종드라무르",
+    "hallName": "메종드라무르",
+    "sido": "경기도",
+    "sigungu": "양평군",
+    "subdistrict": null,
+    "regionCode": "VDD-41-028",
+    "metroArea": "이천·여주·양평",
+    "district": "양평군",
+    "neighborhood": "양근리",
+    "address": "경기도 양평군 양평읍 역전길 22 2층",
+    "phone": "031-775-5800",
+    "website": "https://maisondelamour.kr/",
+    "instagram": null,
+    "mapUrl": null,
+    "publicStatus": "public",
+    "lighting": "unknown",
+    "naturalLight": "unknown",
+    "chapel": false,
+    "house": false,
+    "indoorOutdoor": "indoor",
+    "venueType": "professional_convention",
+    "ceremonyFormat": "separate",
+    "meals": [],
+    "seated": {
+      "min": null,
+      "max": null,
+      "raw": null
+    },
+    "capacity": {
+      "min": null,
+      "max": null,
+      "raw": null
+    },
+    "guarantee": {
+      "min": null,
+      "max": null,
+      "raw": null
+    },
+    "interval": {
+      "min": null,
+      "max": null,
+      "raw": null
+    },
+    "ceremonyTime": null,
+    "virginRoad": null,
+    "ceilingHeight": null,
+    "featureTags": [
+      "단독홀",
+      "샹들리에",
+      "2026 리브랜딩"
+    ],
+    "classificationEvidence": "공식 홀 페이지가 단독 판매 공간을 확인하지만 별도 고유 홀명과 조도 설명이 없어 업체명을 홀명으로 사용하고 조도는 미확인으로 유지함.",
+    "confidence": "A",
+    "classificationCheckedAt": "2026-08-08",
+    "detailCheckedAt": "2026-08-08",
+    "sourceId": "S-20260808-CAP-X1-014",
+    "sourceUrl": "https://maisondelamour.kr/hall/",
+    "sourceType": "공식홈페이지",
+    "raw": {
+      "representativeClassification": "컨벤션홀",
+      "lighting": null,
+      "naturalLight": null,
+      "ceremonyFormat": "분리예식",
+      "mealType": null,
+      "venueType": "전문웨딩홀"
+    }
+  },
+  {
+    "id": "H-CAP-X1-20260808-027",
+    "venueId": "V-CAP-X1-20260808-015",
+    "venueName": "소노휴 양평",
+    "hallName": "소노휴 양평 웨딩홀",
+    "sido": "경기도",
+    "sigungu": "양평군",
+    "subdistrict": null,
+    "regionCode": "VDD-41-028",
+    "metroArea": "이천·여주·양평",
+    "district": "양평군",
+    "neighborhood": "공세리",
+    "address": "경기도 양평군 개군면 신내길7번길 55",
+    "phone": "1588-4888",
+    "website": "https://mice.sonohotelsresorts.com/daemyung.front.saupjang.yangpyung.weddingFacility.ds/dmparse.dm?menuNo=04",
+    "instagram": null,
+    "mapUrl": null,
+    "publicStatus": "public",
+    "lighting": "unknown",
+    "naturalLight": "unknown",
+    "chapel": false,
+    "house": false,
+    "indoorOutdoor": "indoor",
+    "venueType": "hotel",
+    "ceremonyFormat": "simultaneous",
+    "meals": [],
+    "seated": {
+      "min": null,
+      "max": null,
+      "raw": null
+    },
+    "capacity": {
+      "min": null,
+      "max": null,
+      "raw": null
+    },
+    "guarantee": {
+      "min": null,
+      "max": null,
+      "raw": null
+    },
+    "interval": {
+      "min": null,
+      "max": null,
+      "raw": null
+    },
+    "ceremonyTime": null,
+    "virginRoad": null,
+    "ceilingHeight": null,
+    "featureTags": [
+      "리조트 웨딩",
+      "목적지형"
+    ],
+    "classificationEvidence": "소노 공식 MICE 페이지가 양평 웨딩 시설을 현재 안내하나 별도 고유 홀명과 조도 설명은 없어 일반명과 미확인값을 사용함.",
+    "confidence": "A",
+    "classificationCheckedAt": "2026-08-08",
+    "detailCheckedAt": "2026-08-08",
+    "sourceId": "S-20260808-CAP-X1-015",
+    "sourceUrl": "https://mice.sonohotelsresorts.com/daemyung.front.saupjang.yangpyung.weddingFacility.ds/dmparse.dm?menuNo=04",
+    "sourceType": "공식홈페이지",
+    "raw": {
+      "representativeClassification": "호텔 홀",
+      "lighting": null,
+      "naturalLight": null,
+      "ceremonyFormat": "동시예식",
+      "mealType": null,
+      "venueType": "호텔"
+    }
+  },
+  {
+    "id": "H-CAP-X1-20260808-028",
+    "venueId": "V-CAP-X1-20260808-016",
+    "venueName": "의왕시청",
+    "hallName": "의왕시청 2층 대회의실",
+    "sido": "경기도",
+    "sigungu": "의왕시",
+    "subdistrict": null,
+    "regionCode": "VDD-41-015",
+    "metroArea": "안양·과천·군포·의왕",
+    "district": "의왕시",
+    "neighborhood": "고천동",
+    "address": "경기도 의왕시 시청로 11 본관 2층",
+    "phone": "031-345-2114",
+    "website": "https://share.gg.go.kr/facilityListO/view?eshare=1&facilityId=F0009&instiCode=1250001",
+    "instagram": null,
+    "mapUrl": null,
+    "publicStatus": "public",
+    "lighting": "unknown",
+    "naturalLight": "unknown",
+    "chapel": false,
+    "house": false,
+    "indoorOutdoor": "indoor",
+    "venueType": "public",
+    "ceremonyFormat": "separate",
+    "meals": [],
+    "seated": {
+      "min": null,
+      "max": null,
+      "raw": null
+    },
+    "capacity": {
+      "min": 150,
+      "max": 150,
+      "raw": 150
+    },
+    "guarantee": {
+      "min": null,
+      "max": null,
+      "raw": null
+    },
+    "interval": {
+      "min": null,
+      "max": null,
+      "raw": null
+    },
+    "ceremonyTime": null,
+    "virginRoad": null,
+    "ceilingHeight": null,
+    "featureTags": [
+      "공공 대관",
+      "주말·공휴일",
+      "취사 불가"
+    ],
+    "classificationEvidence": "경기도 공식 공유서비스가 본관 2층 대회의실을 2월~11월 주말·공휴일 웨딩홀로 운영하고 수용 인원 150명을 명시함.",
+    "confidence": "A-strong",
+    "classificationCheckedAt": "2026-08-08",
+    "detailCheckedAt": "2026-08-08",
+    "sourceId": "S-20260808-CAP-X1-016",
+    "sourceUrl": "https://share.gg.go.kr/facilityListO/view?eshare=1&facilityId=F0009&instiCode=1250001",
+    "sourceType": "공식홈페이지",
+    "raw": {
+      "representativeClassification": "공공예식홀",
+      "lighting": null,
+      "naturalLight": null,
+      "ceremonyFormat": "분리예식",
+      "mealType": null,
+      "venueType": "공공·대관"
+    }
+  },
+  {
+    "id": "H-CAP-X1-20260808-029",
+    "venueId": "V-CAP-X1-20260808-017",
+    "venueName": "과지초당",
+    "hallName": "과지초당 공공웨딩",
+    "sido": "경기도",
+    "sigungu": "과천시",
+    "subdistrict": null,
+    "regionCode": "VDD-41-013",
+    "metroArea": "안양·과천·군포·의왕",
+    "district": "과천시",
+    "neighborhood": "주암동",
+    "address": "경기도 과천시 추사로 78 추사박물관",
+    "phone": "02-2150-3652",
+    "website": "https://www.gccity.go.kr/gcyouth/bizPrgrm/view.do?mId=0300000000&sn=27",
+    "instagram": null,
+    "mapUrl": null,
+    "publicStatus": "public",
+    "lighting": "bright",
+    "naturalLight": "yes",
+    "chapel": false,
+    "house": true,
+    "indoorOutdoor": "outdoor",
+    "venueType": "public",
+    "ceremonyFormat": "separate",
+    "meals": [],
+    "seated": {
+      "min": null,
+      "max": null,
+      "raw": null
+    },
+    "capacity": {
+      "min": 50,
+      "max": 50,
+      "raw": 50
+    },
+    "guarantee": {
+      "min": null,
+      "max": null,
+      "raw": null
+    },
+    "interval": {
+      "min": null,
+      "max": null,
+      "raw": null
+    },
+    "ceremonyTime": null,
+    "virginRoad": null,
+    "ceilingHeight": null,
+    "featureTags": [
+      "한옥",
+      "야외",
+      "2026 공공웨딩"
+    ],
+    "classificationEvidence": "과천시 공식 2026 공공웨딩 사업이 과지초당 예식 신청과 50명 규모 지원을 현재 안내함.",
+    "confidence": "A-strong",
+    "classificationCheckedAt": "2026-08-08",
+    "detailCheckedAt": "2026-08-08",
+    "sourceId": "S-20260808-CAP-X1-017",
+    "sourceUrl": "https://www.gccity.go.kr/gcyouth/bizPrgrm/view.do?mId=0300000000&sn=27",
+    "sourceType": "공식홈페이지",
+    "raw": {
+      "representativeClassification": "전통혼례홀",
+      "lighting": "밝음",
+      "naturalLight": "Y",
+      "ceremonyFormat": "분리예식",
+      "mealType": null,
+      "venueType": "공공·대관"
+    }
+  },
+  {
+    "id": "H-CAP-X1-20260808-030",
+    "venueId": "V-CAP-X1-20260808-018",
+    "venueName": "과천문화원",
+    "hallName": "과천문화원 야외무대",
+    "sido": "경기도",
+    "sigungu": "과천시",
+    "subdistrict": null,
+    "regionCode": "VDD-41-013",
+    "metroArea": "안양·과천·군포·의왕",
+    "district": "과천시",
+    "neighborhood": "문원동",
+    "address": "경기도 과천시 문원로 40-1",
+    "phone": "02-3679-1414",
+    "website": "https://www.gccity.go.kr/gcyouth/bizPrgrm/view.do?mId=0300000000&sn=27",
+    "instagram": null,
+    "mapUrl": null,
+    "publicStatus": "public",
+    "lighting": "bright",
+    "naturalLight": "yes",
+    "chapel": false,
+    "house": true,
+    "indoorOutdoor": "outdoor",
+    "venueType": "public",
+    "ceremonyFormat": "separate",
+    "meals": [],
+    "seated": {
+      "min": null,
+      "max": null,
+      "raw": null
+    },
+    "capacity": {
+      "min": 50,
+      "max": 50,
+      "raw": 50
+    },
+    "guarantee": {
+      "min": null,
+      "max": null,
+      "raw": null
+    },
+    "interval": {
+      "min": null,
+      "max": null,
+      "raw": null
+    },
+    "ceremonyTime": null,
+    "virginRoad": null,
+    "ceilingHeight": null,
+    "featureTags": [
+      "야외무대",
+      "2026 공공웨딩",
+      "공공 대관"
+    ],
+    "classificationEvidence": "과천시 공식 2026 공공웨딩 사업이 과천문화원 야외무대 예식 신청과 50명 규모 지원을 현재 안내함.",
+    "confidence": "A-strong",
+    "classificationCheckedAt": "2026-08-08",
+    "detailCheckedAt": "2026-08-08",
+    "sourceId": "S-20260808-CAP-X1-018",
+    "sourceUrl": "https://www.gccity.go.kr/gcyouth/bizPrgrm/view.do?mId=0300000000&sn=27",
+    "sourceType": "공식홈페이지",
+    "raw": {
+      "representativeClassification": "야외웨딩홀",
+      "lighting": "밝음",
+      "naturalLight": "Y",
+      "ceremonyFormat": "분리예식",
+      "mealType": null,
+      "venueType": "공공·대관"
     }
   }
 ]

@@ -17,7 +17,7 @@ function isActivePath(pathname: string, paths: readonly string[]): boolean {
 }
 
 export function BottomNav() {
-  const pathname = usePathname();
+  const pathname = usePathname() ?? "";
 
   return (
     <nav className="bottom-nav" aria-label="주요 메뉴">
