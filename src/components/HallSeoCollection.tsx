@@ -6,14 +6,13 @@ import {
   collectionUpdatedAt,
   collectionVenueCount,
   getHallSeoConfig,
+  HALL_SEO_COLLECTION_ORDER,
   hallSeoPath,
   hallSeoSearchHref,
   type HallSeoCollectionKey,
 } from "@/lib/hall-seo";
 
 const BASE_URL = "https://viewdding.com";
-const RELATED_KEYS: HallSeoCollectionKey[] = ["all", "bright", "dark", "chapel", "outdoor"];
-
 function displayDate(value: string): string {
   return value.replaceAll("-", ".");
 }
@@ -98,7 +97,7 @@ export function HallSeoCollection({ collectionKey }: { collectionKey: HallSeoCol
         </div>
       </section>
       <nav className="seo-related-links" aria-label="서울 웨딩홀 유형별 목록">
-        {RELATED_KEYS.filter((key) => key !== collectionKey).map((key) => {
+        {HALL_SEO_COLLECTION_ORDER.filter((key) => key !== collectionKey).map((key) => {
           const relatedConfig = getHallSeoConfig(key);
           return <Link key={key} href={hallSeoPath(key)}>{relatedConfig.heading}</Link>;
         })}

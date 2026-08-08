@@ -1,9 +1,11 @@
 import type { HallRecord, HallTypeFilter } from "@/domain/types";
 
-export const HALL_SEO_SLUGS = ["bright", "dark", "chapel", "outdoor"] as const;
+export const HALL_SEO_SLUGS = ["bright", "outdoor", "dark", "chapel"] as const;
 
 export type HallSeoSlug = (typeof HALL_SEO_SLUGS)[number];
 export type HallSeoCollectionKey = "all" | HallSeoSlug;
+
+export const HALL_SEO_COLLECTION_ORDER: readonly HallSeoCollectionKey[] = ["all", ...HALL_SEO_SLUGS];
 
 export type HallSeoConfig = {
   key: HallSeoCollectionKey;

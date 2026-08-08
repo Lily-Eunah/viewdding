@@ -1,12 +1,10 @@
 import type { MetadataRoute } from "next";
 import { halls, metadata as hallMetadata } from "@/lib/data";
-import { hallSeoPath, type HallSeoCollectionKey } from "@/lib/hall-seo";
+import { HALL_SEO_COLLECTION_ORDER, hallSeoPath } from "@/lib/hall-seo";
 import { restaurantSlug } from "@/lib/restaurant-routes";
 import { metadata as restaurantMetadata, restaurants } from "@/lib/restaurants";
 
 const BASE_URL = "https://viewdding.com";
-const COLLECTION_KEYS: HallSeoCollectionKey[] = ["all", "bright", "dark", "chapel", "outdoor"];
-
 export const dynamic = "force-static";
 
 function absolute(path: string): string {
@@ -20,7 +18,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: absolute("/gatherings/"), lastModified: restaurantMetadata.generatedAt, changeFrequency: "weekly", priority: 0.8 },
     { url: absolute("/methodology/"), lastModified: hallMetadata.generatedAt, changeFrequency: "monthly", priority: 0.4 },
   ];
-  const collectionPages: MetadataRoute.Sitemap = COLLECTION_KEYS.map((key) => ({
+  const collectionPages: MetadataRoute.Sitemap = HALL_SEO_COLLECTION_ORDER.map((key) => ({
     url: absolute(hallSeoPath(key)),
     lastModified: hallMetadata.generatedAt,
     changeFrequency: "weekly",

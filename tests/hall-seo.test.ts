@@ -19,7 +19,7 @@ function hall(overrides: Partial<HallRecord> = {}): HallRecord {
 
 describe("hall SEO collections", () => {
   it("supports only the published type slugs", () => {
-    expect(HALL_SEO_SLUGS).toEqual(["bright", "dark", "chapel", "outdoor"]);
+    expect(HALL_SEO_SLUGS).toEqual(["bright", "outdoor", "dark", "chapel"]);
     expect(isHallSeoSlug("bright")).toBe(true);
     expect(isHallSeoSlug("hotel")).toBe(false);
   });
