@@ -2,6 +2,7 @@
 
 import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
+import { X } from "@phosphor-icons/react";
 import { EMPTY_FILTERS, filterHalls } from "@/domain/filter";
 import { groupFilteredHallsByVenue } from "@/domain/hall-map";
 import type { CeremonyFormat, FilterState, HallTypeFilter, MealType } from "@/domain/types";
@@ -84,13 +85,19 @@ export function SearchExperience({
   useEffect(() => {
     if (!mobileFilterOpen) return;
     const closeOnEscape = (event: KeyboardEvent) => {
-      if (event.key === "Escape") setMobileFilterOpen(false);
+      if (event.key === "Escape") {
+        setDraft({ ...applied, hallTypes: [...applied.hallTypes], ceremonyFormats: [...applied.ceremonyFormats], meals: [...applied.meals] });
+        setPickerTypes(applied.hallTypes);
+        setTypeOpen(false);
+        setMobileFilterOpen(false);
+      }
     };
     window.addEventListener("keydown", closeOnEscape);
     return () => window.removeEventListener("keydown", closeOnEscape);
-  }, [mobileFilterOpen]);
+  }, [applied, mobileFilterOpen]);
 
   const results = useMemo(() => filterHalls(halls, applied), [applied]);
+  const draftResults = useMemo(() => filterHalls(halls, draft), [draft]);
   const mapVenues = useMemo(
     () => groupFilteredHallsByVenue([...results.matched, ...results.unknown]),
     [results],
@@ -124,6 +131,7 @@ export function SearchExperience({
   const selectedCount = filterSelectionCount(draft);
   const appliedCount = filterSelectionCount(applied);
   const total = results.matched.length + results.unknown.length;
+  const draftTotal = draftResults.matched.length + draftResults.unknown.length;
 
   return (
     <section className={`search-experience${compact ? " is-compact" : ""}${viewMode === "map" ? " is-map-mode" : ""}${mobileFilterOpen ? " is-mobile-filter-open" : ""}`}>
@@ -134,11 +142,11 @@ export function SearchExperience({
             <div className="mobile-map-title">웨딩홀 지도</div>
             <button type="button" className="mobile-map-filter-button" aria-expanded={mobileFilterOpen} onClick={() => { setDetailOpen(true); setMobileFilterOpen(true); }}>필터{appliedCount ? ` ${appliedCount}` : ""}</button>
           </div>
-          {chips.length > 0 ? <div className="mobile-map-filter-chips" aria-label="적용된 필터">{chips.map((chip) => <button key={chip.key} type="button" onClick={chip.remove}>{chip.label} <span aria-hidden="true">×</span></button>)}</div> : null}
+          {chips.length > 0 ? <div className="mobile-map-filter-chips" aria-label="적용된 필터">{chips.map((chip) => <button key={chip.key} type="button" aria-label={`${chip.label} 필터 해제`} onClick={chip.remove}>{chip.label} <span className="filter-chip-remove" aria-hidden="true">해제</span></button>)}</div> : null}
         </div>
       ) : null}
 
-      {viewMode === "map" && mobileFilterOpen ? <button type="button" className="mobile-filter-backdrop" aria-label="필터 닫기" onClick={() => setMobileFilterOpen(false)} /> : null}
+      {viewMode === "map" && mobileFilterOpen ? <button type="button" className="mobile-filter-backdrop" aria-label="필터 닫기" onClick={() => { setDraft({ ...applied, hallTypes: [...applied.hallTypes], ceremonyFormats: [...applied.ceremonyFormats], meals: [...applied.meals] }); setPickerTypes(applied.hallTypes); setTypeOpen(false); setMobileFilterOpen(false); }} /> : null}
 
       <form
         className="search-panel"
@@ -152,8 +160,11 @@ export function SearchExperience({
         }}
       >
         <div className="mobile-filter-sheet-header">
-          <div><span>FILTER</span><strong>조건 선택</strong></div>
-          <button type="button" onClick={() => { setDraft(applied); setPickerTypes(applied.hallTypes); setMobileFilterOpen(false); }} aria-label="필터 닫기">×</button>
+          <strong>FILTER</strong>
+          <div className="mobile-filter-sheet-actions">
+            {selectedCount > 0 ? <button type="button" className="mobile-filter-reset" onClick={() => { setDraft({ ...EMPTY_FILTERS, hallTypes: [], ceremonyFormats: [], meals: [] }); setPickerTypes([]); setTypeOpen(false); }}>초기화</button> : null}
+            <button type="button" className="mobile-filter-close" onClick={() => { setDraft({ ...applied, hallTypes: [...applied.hallTypes], ceremonyFormats: [...applied.ceremonyFormats], meals: [...applied.meals] }); setPickerTypes(applied.hallTypes); setTypeOpen(false); setMobileFilterOpen(false); }} aria-label="필터 닫기" title="필터 닫기"><X aria-hidden="true" size={20} /></button>
+          </div>
         </div>
         <div className="primary-filter-grid">
           <label className="field-label"><span>서울 구</span><select value={draft.district} onChange={(event) => setDraft({ ...draft, district: event.target.value })}><option value="">서울 전체</option>{districts.map((district) => <option key={district}>{district}</option>)}</select></label>
@@ -177,11 +188,11 @@ export function SearchExperience({
           <fieldset className="detail-wide"><legend>식사 유형</legend><div className="option-row">{MEAL_OPTIONS.map((option) => <button key={option.value} type="button" className={draft.meals.includes(option.value) ? "option is-selected" : "option"} onClick={() => setDraft({ ...draft, meals: toggleValue(draft.meals, option.value) })}>{option.label}</button>)}</div></fieldset>
           <p className="missing-policy">값이 없는 홀은 제외하지 않고 ‘정보 확인이 필요한 홀’로 분리합니다. <Link href="/methodology/">분류 기준 보기</Link></p>
         </div> : null}
-        <button className="mobile-filter-apply" type="submit">{selectedCount ? `${selectedCount}개 조건 적용` : "전체 웨딩홀 보기"}</button>
+        <button className="mobile-filter-apply" type="submit">{selectedCount ? `${draftTotal}개 홀 보기` : "전체 웨딩홀 보기"}</button>
       </form>
 
       <div id="search-results" className="results-heading">
-        <div className="applied-chips">{chips.map((chip) => <button key={chip.key} type="button" onClick={chip.remove}>{chip.label} ×</button>)}</div>
+        <div className="applied-chips">{chips.map((chip) => <button key={chip.key} type="button" aria-label={`${chip.label} 필터 해제`} onClick={chip.remove}>{chip.label}<span className="filter-chip-remove" aria-hidden="true">해제</span></button>)}</div>
         <div className="result-heading-row">
           <div className="result-summary"><strong>조건 확인 {results.matched.length}개 홀</strong><span>정보 미확인 {results.unknown.length}개 · 총 {total}개 홀</span></div>
           <div className="result-view-switch" role="group" aria-label="결과 보기 방식">

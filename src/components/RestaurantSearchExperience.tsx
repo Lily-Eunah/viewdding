@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
+import { X } from "@phosphor-icons/react";
 import { EMPTY_RESTAURANT_FILTERS, filterRestaurants } from "@/domain/restaurant-filter";
 import { isRestaurantCuisineCategory, RESTAURANT_CUISINE_CATEGORIES } from "@/domain/restaurant-cuisine";
 import type { RestaurantCuisineCategory } from "@/domain/restaurant-cuisine";
@@ -117,11 +118,14 @@ export function RestaurantSearchExperience({
   useEffect(() => {
     if (!mobileFilterOpen) return;
     const closeOnEscape = (event: KeyboardEvent) => {
-      if (event.key === "Escape") setMobileFilterOpen(false);
+      if (event.key === "Escape") {
+        setDraft({ ...applied, cuisines: [...applied.cuisines] });
+        setMobileFilterOpen(false);
+      }
     };
     window.addEventListener("keydown", closeOnEscape);
     return () => window.removeEventListener("keydown", closeOnEscape);
-  }, [mobileFilterOpen]);
+  }, [applied, mobileFilterOpen]);
 
   const purposeRestaurants = useMemo(
     () => restaurants.filter((restaurant) => restaurant.purpose === draft.purpose),
@@ -136,12 +140,14 @@ export function RestaurantSearchExperience({
     [draft.district, purposeRestaurants],
   );
   const results = useMemo(() => filterRestaurants(restaurants, applied), [applied, restaurants]);
+  const draftResults = useMemo(() => filterRestaurants(restaurants, draft), [draft, restaurants]);
   const mapRestaurants = useMemo(
     () => [...results.matched, ...results.unknown].map((item) => item.restaurant),
     [results],
   );
   const activeFilterChips = useMemo(() => appliedFilterChips(applied), [applied]);
   const total = results.matched.length + results.unknown.length;
+  const draftTotal = draftResults.matched.length + draftResults.unknown.length;
 
   function replaceUrl(filters: RestaurantFilterState, nextViewMode: ViewMode = viewMode) {
     window.history.replaceState(null, "", `${window.location.pathname}?${queryFromFilters(filters, nextViewMode)}`);
@@ -202,13 +208,13 @@ export function RestaurantSearchExperience({
           </div>
           {activeFilterChips.length > 0 ? (
             <div className="mobile-map-filter-chips" aria-label="적용된 필터">
-              {activeFilterChips.map((chip) => <button key={chip.key} type="button" onClick={() => clearAppliedFilter(chip.key)}>{chip.label} <span aria-hidden="true">×</span></button>)}
+              {activeFilterChips.map((chip) => <button key={chip.key} type="button" aria-label={`${chip.label} 필터 해제`} onClick={() => clearAppliedFilter(chip.key)}>{chip.label} <span className="filter-chip-remove" aria-hidden="true">해제</span></button>)}
             </div>
           ) : null}
         </div>
       ) : null}
 
-      {viewMode === "map" && mobileFilterOpen ? <button type="button" className="mobile-filter-backdrop" aria-label="필터 닫기" onClick={() => setMobileFilterOpen(false)} /> : null}
+      {viewMode === "map" && mobileFilterOpen ? <button type="button" className="mobile-filter-backdrop" aria-label="필터 닫기" onClick={() => { setDraft({ ...applied, cuisines: [...applied.cuisines] }); setMobileFilterOpen(false); }} /> : null}
 
       <div className="purpose-toggle" role="radiogroup" aria-label="모임 종류">
         <button type="button" role="radio" aria-checked={draft.purpose === "invitation"} className={draft.purpose === "invitation" ? "is-selected" : ""} onClick={() => switchPurpose("invitation")}>청첩장 모임</button>
@@ -227,8 +233,11 @@ export function RestaurantSearchExperience({
         }}
       >
         <div className="mobile-filter-sheet-header">
-          <div><span>FILTER</span><strong>조건 선택</strong></div>
-          <button type="button" onClick={() => { setDraft(applied); setMobileFilterOpen(false); }} aria-label="필터 닫기">×</button>
+          <strong>FILTER</strong>
+          <div className="mobile-filter-sheet-actions">
+            {selectedCount > 0 ? <button type="button" className="mobile-filter-reset" onClick={() => setDraft({ ...EMPTY_RESTAURANT_FILTERS, purpose: draft.purpose, cuisines: [] })}>초기화</button> : null}
+            <button type="button" className="mobile-filter-close" onClick={() => { setDraft({ ...applied, cuisines: [...applied.cuisines] }); setMobileFilterOpen(false); }} aria-label="필터 닫기" title="필터 닫기"><X aria-hidden="true" size={20} /></button>
+          </div>
         </div>
         <div className="restaurant-filter-grid">
           <label className="field-label"><span>서울 구</span><select value={draft.district} onChange={(event) => setDraft({ ...draft, district: event.target.value, area: "" })}><option value="">서울 전체</option>{districts.map((district) => <option key={district}>{district}</option>)}</select></label>
@@ -251,7 +260,7 @@ export function RestaurantSearchExperience({
           </div></fieldset>
           <p className="missing-policy">선택한 요일이 정기 휴무인 음식점은 제외합니다. 휴무일을 확인하지 못한 곳은 ‘정보 확인 필요’로 분리합니다.</p>
         </div> : null}
-        <button className="mobile-filter-apply" type="submit">{selectedCount ? `${selectedCount}개 조건 적용` : "전체 음식점 보기"}</button>
+        <button className="mobile-filter-apply" type="submit">{selectedCount ? `${draftTotal}개 장소 보기` : "전체 음식점 보기"}</button>
       </form>
 
       <div id="restaurant-results" className="results-heading">
