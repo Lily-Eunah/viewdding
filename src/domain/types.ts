@@ -20,7 +20,15 @@ export type HallTypeFilter =
   | "professional"
   | "public";
 
-export type Sido = "서울특별시" | "경기도" | "인천광역시";
+export type Sido =
+  | "서울특별시"
+  | "부산광역시"
+  | "대구광역시"
+  | "인천광역시"
+  | "대전광역시"
+  | "세종특별자치시"
+  | "경기도"
+  | "경상남도";
 
 export interface NumericRange {
   min: number | null;

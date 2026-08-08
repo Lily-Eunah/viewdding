@@ -34,7 +34,7 @@ export function normalizeVenueSearchText(value: string): string {
     .normalize("NFKC")
     .toLowerCase()
     .replace(/\([^)]*\)|\[[^\]]*\]/g, "")
-    .replace(/(?:웨딩홀|웨딩|컨벤션|호텔|예식장|서울특별시|서울시|경기도|경기|인천광역시|인천시|인천)/g, "")
+    .replace(/(?:웨딩홀|웨딩|컨벤션|호텔|예식장|서울특별시|서울시|경기도|경기|인천광역시|인천시|인천|부산광역시|부산시|부산|경상남도|경남|대전광역시|대전시|대전|세종특별자치시|세종시|세종|대구광역시|대구시|대구)/g, "")
     .replace(/[^a-z0-9가-힣]/g, "");
 }
 
@@ -70,7 +70,7 @@ export function selectKakaoVenueDocument(
   const ranked = documents
     .map((document) => {
       const address = document.road_address_name || document.address_name;
-      const inServiceArea = isCapitalAreaAddress(address);
+      const inServiceArea = isSupportedRegionAddress(address);
       const inRegion = typeof region === "string"
         ? address.includes(region)
         : addressMatchesHallRegion(address, region);
@@ -83,22 +83,30 @@ export function selectKakaoVenueDocument(
   return ranked[0]?.document ?? null;
 }
 
-export function isCapitalAreaAddress(address: string): boolean {
-  return /^(?:서울|서울특별시|경기|경기도|인천|인천광역시)(?:\s|$)/.test(address.trim());
+export function isSupportedRegionAddress(address: string): boolean {
+  return /^(?:서울|서울특별시|경기|경기도|인천|인천광역시|부산|부산광역시|경남|경상남도|대전|대전광역시|세종|세종특별자치시|대구|대구광역시)(?:\s|$)/.test(address.trim());
 }
+
+/** @deprecated Use isSupportedRegionAddress for the nationwide expansion. */
+export const isCapitalAreaAddress = isSupportedRegionAddress;
 
 export function addressMatchesHallRegion(
   address: string,
   region: Pick<RegionFields, "sido" | "sigungu" | "subdistrict">,
 ): boolean {
-  const sidoPattern = region.sido === "서울특별시"
-    ? /^(?:서울|서울특별시)(?:\s|$)/
-    : region.sido === "경기도"
-      ? /^(?:경기|경기도)(?:\s|$)/
-      : /^(?:인천|인천광역시)(?:\s|$)/;
+  const sidoPattern: Record<RegionFields["sido"], RegExp> = {
+    서울특별시: /^(?:서울|서울특별시)(?:\s|$)/,
+    경기도: /^(?:경기|경기도)(?:\s|$)/,
+    인천광역시: /^(?:인천|인천광역시)(?:\s|$)/,
+    부산광역시: /^(?:부산|부산광역시)(?:\s|$)/,
+    경상남도: /^(?:경남|경상남도)(?:\s|$)/,
+    대전광역시: /^(?:대전|대전광역시)(?:\s|$)/,
+    세종특별자치시: /^(?:세종|세종특별자치시)(?:\s|$)/,
+    대구광역시: /^(?:대구|대구광역시)(?:\s|$)/,
+  };
   const normalized = address.trim();
-  return sidoPattern.test(normalized)
-    && normalized.includes(region.sigungu)
+  return sidoPattern[region.sido].test(normalized)
+    && (region.sido === "세종특별자치시" || normalized.includes(region.sigungu))
     && (!region.subdistrict || normalized.includes(region.subdistrict));
 }
 
@@ -106,6 +114,6 @@ export function coordinatesFromKakao(x: string, y: string): { latitude: number; 
   const latitude = Number(y);
   const longitude = Number(x);
   if (!Number.isFinite(latitude) || !Number.isFinite(longitude)) return null;
-  if (latitude < 36.8 || latitude > 38.3 || longitude < 126.2 || longitude > 128.0) return null;
+  if (latitude < 33 || latitude > 39 || longitude < 124 || longitude > 132) return null;
   return { latitude, longitude };
 }

@@ -56,7 +56,7 @@ function locationSummary(filters: FilterState): string {
     ...filters.sidos.map((sido) => `${shortSidoLabel(sido)} 전체`),
     ...filters.regionCodes.map(regionLabel),
   ];
-  if (labels.length === 0) return "수도권 전체";
+  if (labels.length === 0) return "전체 지역";
   if (labels.length === 1) return labels[0];
   return `${labels[0]} 외 ${labels.length - 1}개`;
 }

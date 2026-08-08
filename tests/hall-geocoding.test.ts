@@ -54,9 +54,16 @@ describe("hall venue geocoding", () => {
     expect(addressMatchesHallRegion("인천광역시 부평구 부평대로 1", { sido: "인천광역시", sigungu: "부평구", subdistrict: null })).toBe(true);
   });
 
-  it("accepts capital-area coordinates and rejects distant regions", () => {
+  it("accepts supported Korean coordinates and rejects coordinates outside Korea", () => {
     expect(coordinatesFromKakao("127.02", "37.51")).toEqual({ latitude: 37.51, longitude: 127.02 });
     expect(coordinatesFromKakao("127.20", "37.24")).toEqual({ latitude: 37.24, longitude: 127.2 });
-    expect(coordinatesFromKakao("129.07", "35.17")).toBeNull();
+    expect(coordinatesFromKakao("129.07", "35.17")).toEqual({ latitude: 35.17, longitude: 129.07 });
+    expect(coordinatesFromKakao("140.00", "35.17")).toBeNull();
+  });
+
+  it("matches new regional addresses", () => {
+    expect(addressMatchesHallRegion("부산광역시 해운대구 해운대해변로 296", { sido: "부산광역시", sigungu: "해운대구", subdistrict: null })).toBe(true);
+    expect(addressMatchesHallRegion("경상남도 창원시 성산구 중앙대로 1", { sido: "경상남도", sigungu: "창원시", subdistrict: "성산구" })).toBe(true);
+    expect(addressMatchesHallRegion("세종특별자치시 다솜3로 6", { sido: "세종특별자치시", sigungu: "세종시", subdistrict: null })).toBe(true);
   });
 });
