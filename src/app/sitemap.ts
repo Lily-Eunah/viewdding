@@ -24,6 +24,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     changeFrequency: "weekly",
     priority: key === "all" ? 0.95 : 0.9,
   }));
+  collectionPages.push({
+    url: absolute("/gyeonggi/wedding-halls/"),
+    lastModified: hallMetadata.generatedAt,
+    changeFrequency: "weekly",
+    priority: 0.95,
+  });
   const hallPages: MetadataRoute.Sitemap = halls.map((hall) => ({
     url: absolute(`/halls/${hall.id}/`),
     lastModified: hall.detailCheckedAt ?? hall.classificationCheckedAt ?? hall.locationCheckedAt ?? hallMetadata.generatedAt,

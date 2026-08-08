@@ -16,6 +16,7 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
 export default async function HallDetailPage({ params }: { params: Promise<{ id: string }> }) {
   const hall = getHall((await params).id);
   if (!hall) notFound();
+  const isGyeonggi = hall.id.startsWith("H-GG-");
   const displayAddress = hall.locationAddress ?? hall.address;
   const facts = [
     ["최대 수용", rangeLabel(hall.capacity)], ["최소 보증", rangeLabel(hall.guarantee)],
@@ -30,7 +31,7 @@ export default async function HallDetailPage({ params }: { params: Promise<{ id:
   ];
   return (
     <article className="detail-page">
-      <nav className="breadcrumb"><Link href="/search/">서울 웨딩홀</Link><span>›</span><span>{hall.district}</span></nav>
+      <nav className="breadcrumb"><Link href={isGyeonggi ? "/gyeonggi/wedding-halls/" : "/seoul/wedding-halls/"}>{isGyeonggi ? "경기 웨딩홀" : "서울 웨딩홀"}</Link><span>›</span><span>{hall.district}</span></nav>
       {hall.photos && hall.photos.length > 0 ? <section className="hall-photo-gallery" aria-label={`${hall.venueName} ${hall.hallName} 공식 사진`}>{hall.photos.map((photo) => <HallPhotoMedia key={photo.id} photo={photo} variant="detail" />)}</section> : null}
       <header className="detail-header"><div><p className="eyebrow">{hall.venueName}</p><h1>{hall.hallName}</h1><p>{hall.district}{displayAddress ? ` · ${displayAddress}` : ""}</p><div className="chip-row">{hallTags(hall).map((tag) => <span className="chip" key={tag}>{tag}</span>)}</div></div><FavoriteButton hallId={hall.id} /></header>
       <dl className="fact-grid">{facts.map(([label, value]) => <div key={label}><dt>{label}</dt><dd>{value}</dd></div>)}</dl>

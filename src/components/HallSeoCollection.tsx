@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { HallCard } from "@/components/HallCard";
-import { halls, metadata } from "@/lib/data";
+import { metadata, seoulHalls } from "@/lib/data";
 import {
   collectionHalls,
   collectionUpdatedAt,
@@ -19,7 +19,7 @@ function displayDate(value: string): string {
 
 export function HallSeoCollection({ collectionKey }: { collectionKey: HallSeoCollectionKey }) {
   const config = getHallSeoConfig(collectionKey);
-  const collection = collectionHalls(halls, collectionKey);
+  const collection = collectionHalls(seoulHalls, collectionKey);
   const venueCount = collectionVenueCount(collection);
   const updatedAt = collectionUpdatedAt(collection, metadata.generatedAt);
   const canonicalPath = hallSeoPath(collectionKey);

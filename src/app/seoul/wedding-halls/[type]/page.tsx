@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { HallSeoCollection } from "@/components/HallSeoCollection";
-import { halls } from "@/lib/data";
+import { seoulHalls } from "@/lib/data";
 import {
   collectionHalls,
   collectionVenueCount,
@@ -23,7 +23,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { type } = await params;
   if (!isHallSeoSlug(type)) return {};
   const config = getHallSeoConfig(type);
-  const collection = collectionHalls(halls, type);
+  const collection = collectionHalls(seoulHalls, type);
   const venueCount = collectionVenueCount(collection);
   const title = `${config.titleLabel} ${collection.length}개`;
   const description = `${config.searchTerms}을 모았습니다. 서울 ${venueCount}개 예식장의 ${collection.length}개 개별홀을 지역, 수용인원과 예식 조건별로 비교해 보세요.`;

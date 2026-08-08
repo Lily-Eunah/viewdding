@@ -32,7 +32,7 @@ export function normalizeVenueSearchText(value: string): string {
     .normalize("NFKC")
     .toLowerCase()
     .replace(/\([^)]*\)|\[[^\]]*\]/g, "")
-    .replace(/(?:웨딩홀|웨딩|컨벤션|호텔|예식장|서울특별시|서울시)/g, "")
+    .replace(/(?:웨딩홀|웨딩|컨벤션|호텔|예식장|서울특별시|서울시|경기도|경기)/g, "")
     .replace(/[^a-z0-9가-힣]/g, "");
 }
 
@@ -68,13 +68,13 @@ export function selectKakaoVenueDocument(
   const ranked = documents
     .map((document) => {
       const address = document.road_address_name || document.address_name;
-      const inSeoul = /^(?:서울|서울특별시)\s/.test(address);
+      const inServiceArea = /^(?:서울|서울특별시|경기|경기도)\s/.test(address);
       const inDistrict = address.includes(district);
       const similarity = venueNameSimilarity(venueName, document.place_name);
-      const score = similarity + Number(inDistrict) * 0.35 + Number(inSeoul) * 0.15;
-      return { document, inSeoul, inDistrict, similarity, score };
+      const score = similarity + Number(inDistrict) * 0.35 + Number(inServiceArea) * 0.15;
+      return { document, inServiceArea, inDistrict, similarity, score };
     })
-    .filter((candidate) => candidate.inSeoul && candidate.inDistrict && candidate.similarity >= 0.34)
+    .filter((candidate) => candidate.inServiceArea && candidate.inDistrict && candidate.similarity >= 0.34)
     .sort((left, right) => right.score - left.score);
   return ranked[0]?.document ?? null;
 }
@@ -83,6 +83,6 @@ export function coordinatesFromKakao(x: string, y: string): { latitude: number; 
   const latitude = Number(y);
   const longitude = Number(x);
   if (!Number.isFinite(latitude) || !Number.isFinite(longitude)) return null;
-  if (latitude < 37.3 || latitude > 37.75 || longitude < 126.7 || longitude > 127.25) return null;
+  if (latitude < 36.8 || latitude > 38.3 || longitude < 126.2 || longitude > 128.0) return null;
   return { latitude, longitude };
 }

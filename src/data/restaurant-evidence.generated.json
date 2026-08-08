@@ -33726,5 +33726,3365 @@
     "companionTypes": [
       "친구"
     ]
+  },
+  {
+    "id": "E1760",
+    "restaurantSourceId": "R629",
+    "purpose": "invitation",
+    "purposeLabel": "청모",
+    "keyword": "영향 가산점",
+    "sourceType": "네이버 블로그",
+    "title": "영향 가산점 실제 청첩장 모임 방문 후기",
+    "url": "https://blog.naver.com/rlaalstjs42/224092084836",
+    "publishedAt": null,
+    "summary": "가산동에서 청첩장 모임 장소로 직접 이용한 양식 레스토랑 방문 후기",
+    "platform": "네이버 블로그",
+    "sponsored": "unknown",
+    "confidence": "high",
+    "duplicateGroup": "R629-A",
+    "collectedAt": "2026-08-07",
+    "companionTypes": [
+      "친구"
+    ]
+  },
+  {
+    "id": "E1761",
+    "restaurantSourceId": "R629",
+    "purpose": "invitation",
+    "purposeLabel": "청모",
+    "keyword": "영향 가산점",
+    "sourceType": "네이버지도",
+    "title": "영향 가산점 네이버지도",
+    "url": "https://map.naver.com/p/search/%EC%98%81%ED%96%A5%20%EA%B0%80%EC%82%B0%EB%8F%99",
+    "publishedAt": null,
+    "summary": "네이버지도에서 동일 상호·지점의 장소 페이지를 확인",
+    "platform": "네이버지도",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R629-B",
+    "collectedAt": "2026-08-07",
+    "companionTypes": [
+      "친구"
+    ]
+  },
+  {
+    "id": "E1762",
+    "restaurantSourceId": "R629",
+    "purpose": "invitation",
+    "purposeLabel": "청모",
+    "keyword": "영향 가산점",
+    "sourceType": "카카오맵",
+    "title": "영향 가산점 카카오맵",
+    "url": "https://map.kakao.com/?q=%EC%98%81%ED%96%A5%20%EA%B0%80%EC%82%B0%EB%8F%99",
+    "publishedAt": null,
+    "summary": "카카오맵에서 동일 상호·주소·업종과 리뷰 205를 확인",
+    "platform": "카카오맵",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R629-C",
+    "collectedAt": "2026-08-07",
+    "companionTypes": [
+      "친구"
+    ]
+  },
+  {
+    "id": "E1763",
+    "restaurantSourceId": "R630",
+    "purpose": "invitation",
+    "purposeLabel": "청모",
+    "keyword": "라체나 1907 석계점",
+    "sourceType": "네이버 블로그",
+    "title": "라체나 1907 석계점 실제 청첩장 모임 방문 후기",
+    "url": "https://blog.naver.com/sweetmarin/223714975000",
+    "publishedAt": null,
+    "summary": "토요일 저녁 청첩 모임으로 예약해 실제 방문한 석계역 파스타 후기",
+    "platform": "네이버 블로그",
+    "sponsored": "unknown",
+    "confidence": "high",
+    "duplicateGroup": "R630-A",
+    "collectedAt": "2026-08-07",
+    "companionTypes": [
+      "친구"
+    ]
+  },
+  {
+    "id": "E1764",
+    "restaurantSourceId": "R630",
+    "purpose": "invitation",
+    "purposeLabel": "청모",
+    "keyword": "라체나 1907 석계점",
+    "sourceType": "네이버지도",
+    "title": "라체나 1907 석계점 네이버지도",
+    "url": "https://map.naver.com/p/search/%EB%9D%BC%EC%B2%B4%EB%82%981907%20%EC%84%9D%EA%B3%84",
+    "publishedAt": null,
+    "summary": "네이버지도에서 동일 상호·지점의 장소 페이지를 확인",
+    "platform": "네이버지도",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R630-B",
+    "collectedAt": "2026-08-07",
+    "companionTypes": [
+      "친구"
+    ]
+  },
+  {
+    "id": "E1765",
+    "restaurantSourceId": "R630",
+    "purpose": "invitation",
+    "purposeLabel": "청모",
+    "keyword": "라체나 1907 석계점",
+    "sourceType": "카카오맵",
+    "title": "라체나 1907 석계점 카카오맵",
+    "url": "https://map.kakao.com/?q=%EB%9D%BC%EC%B2%B4%EB%82%981907%20%EC%84%9D%EA%B3%84",
+    "publishedAt": null,
+    "summary": "카카오맵에서 동일 상호·주소·업종과 리뷰 130를 확인",
+    "platform": "카카오맵",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R630-C",
+    "collectedAt": "2026-08-07",
+    "companionTypes": [
+      "친구"
+    ]
+  },
+  {
+    "id": "E1766",
+    "restaurantSourceId": "R631",
+    "purpose": "invitation",
+    "purposeLabel": "청모",
+    "keyword": "시오램 신촌점",
+    "sourceType": "네이버 블로그",
+    "title": "시오램 신촌점 실제 청첩장 모임 방문 후기",
+    "url": "https://blog.naver.com/bbs2149/224037979366",
+    "publishedAt": null,
+    "summary": "회사 인연들과 진행한 22번째 청모로 구워주는 양갈비를 실제 이용한 후기",
+    "platform": "네이버 블로그",
+    "sponsored": "unknown",
+    "confidence": "high",
+    "duplicateGroup": "R631-A",
+    "collectedAt": "2026-08-07",
+    "companionTypes": [
+      "직장동료"
+    ]
+  },
+  {
+    "id": "E1767",
+    "restaurantSourceId": "R631",
+    "purpose": "invitation",
+    "purposeLabel": "청모",
+    "keyword": "시오램 신촌점",
+    "sourceType": "네이버지도",
+    "title": "시오램 신촌점 네이버지도",
+    "url": "https://map.naver.com/p/search/%EC%8B%9C%EC%98%A4%EB%9E%A8%20%EC%8B%A0%EC%B4%8C",
+    "publishedAt": null,
+    "summary": "네이버지도에서 동일 상호·지점의 장소 페이지를 확인",
+    "platform": "네이버지도",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R631-B",
+    "collectedAt": "2026-08-07",
+    "companionTypes": [
+      "직장동료"
+    ]
+  },
+  {
+    "id": "E1768",
+    "restaurantSourceId": "R631",
+    "purpose": "invitation",
+    "purposeLabel": "청모",
+    "keyword": "시오램 신촌점",
+    "sourceType": "카카오맵",
+    "title": "시오램 신촌점 카카오맵",
+    "url": "https://map.kakao.com/?q=%EC%8B%9C%EC%98%A4%EB%9E%A8%20%EC%8B%A0%EC%B4%8C",
+    "publishedAt": null,
+    "summary": "카카오맵에서 동일 상호·주소·업종과 리뷰 58를 확인",
+    "platform": "카카오맵",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R631-C",
+    "collectedAt": "2026-08-07",
+    "companionTypes": [
+      "직장동료"
+    ]
+  },
+  {
+    "id": "E1769",
+    "restaurantSourceId": "R632",
+    "purpose": "family_meeting",
+    "purposeLabel": "상견례",
+    "keyword": "쿤광교 실제 이용 후기",
+    "sourceType": "리뷰 플랫폼",
+    "title": "다이닝코드 실제 상견례 후기",
+    "url": "https://www.diningcode.com/profile.php?rid=YluxNGqauaMN",
+    "publishedAt": null,
+    "summary": "교 코스를 예약해 양가 상견례를 실제 진행했으며 전 좌석 룸·주차·코스 가격을 확인",
+    "platform": "다이닝코드",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R632-A",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "부모님"
+    ]
+  },
+  {
+    "id": "E1770",
+    "restaurantSourceId": "R632",
+    "purpose": null,
+    "purposeLabel": "장소검증",
+    "keyword": "쿤광교 주소·가격·운영",
+    "sourceType": "네이버지도",
+    "title": "쿤광교 네이버지도",
+    "url": "https://map.naver.com/p/search/%EC%BF%A4%EA%B4%91%EA%B5%90",
+    "publishedAt": null,
+    "summary": "동일 상호·주소의 현재 장소 정보와 메뉴·운영 여부 확인",
+    "platform": "네이버지도",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R632-B",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1771",
+    "restaurantSourceId": "R632",
+    "purpose": null,
+    "purposeLabel": "장소검증",
+    "keyword": "쿤광교 주소·운영",
+    "sourceType": "카카오맵",
+    "title": "쿤광교 카카오맵",
+    "url": "https://map.kakao.com/?q=%EC%BF%A4%EA%B4%91%EA%B5%90",
+    "publishedAt": null,
+    "summary": "동일 상호·주소의 현재 장소 존재 여부 교차 확인",
+    "platform": "카카오맵",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R632-C",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1772",
+    "restaurantSourceId": "R633",
+    "purpose": "family_meeting",
+    "purposeLabel": "상견례",
+    "keyword": "행궁정찬 실제 이용 후기",
+    "sourceType": "리뷰 플랫폼",
+    "title": "다이닝코드 실제 상견례 후기",
+    "url": "https://www.diningcode.com/profile.php?rid=Uteiujo7u2fU",
+    "publishedAt": null,
+    "summary": "광교 행궁정찬에서 실제 상견례로 룸과 행궁진찬 코스를 이용한 후기",
+    "platform": "다이닝코드",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R633-A",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "부모님"
+    ]
+  },
+  {
+    "id": "E1773",
+    "restaurantSourceId": "R633",
+    "purpose": null,
+    "purposeLabel": "장소검증",
+    "keyword": "행궁정찬 주소·가격·운영",
+    "sourceType": "네이버지도",
+    "title": "행궁정찬 네이버지도",
+    "url": "https://map.naver.com/p/search/%ED%96%89%EA%B6%81%EC%A0%95%EC%B0%AC",
+    "publishedAt": null,
+    "summary": "동일 상호·주소의 현재 장소 정보와 메뉴·운영 여부 확인",
+    "platform": "네이버지도",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R633-B",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1774",
+    "restaurantSourceId": "R633",
+    "purpose": null,
+    "purposeLabel": "장소검증",
+    "keyword": "행궁정찬 주소·운영",
+    "sourceType": "카카오맵",
+    "title": "행궁정찬 카카오맵",
+    "url": "https://map.kakao.com/?q=%ED%96%89%EA%B6%81%EC%A0%95%EC%B0%AC",
+    "publishedAt": null,
+    "summary": "동일 상호·주소의 현재 장소 존재 여부 교차 확인",
+    "platform": "카카오맵",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R633-C",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1775",
+    "restaurantSourceId": "R634",
+    "purpose": "family_meeting",
+    "purposeLabel": "상견례",
+    "keyword": "우설화 신영통점 실제 이용 후기",
+    "sourceType": "리뷰 플랫폼",
+    "title": "다이닝코드 실제 상견례 코스 후기",
+    "url": "https://www.diningcode.com/profile.php?rid=nU7lV1ZW9at4",
+    "publishedAt": null,
+    "summary": "상견례 코스와 룸 세팅을 실제 이용하고 주차·가격·예약 팁을 정리한 후기",
+    "platform": "다이닝코드",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R634-A",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "부모님"
+    ]
+  },
+  {
+    "id": "E1776",
+    "restaurantSourceId": "R634",
+    "purpose": null,
+    "purposeLabel": "장소검증",
+    "keyword": "우설화 신영통점 주소·가격·운영",
+    "sourceType": "네이버지도",
+    "title": "우설화 신영통점 네이버지도",
+    "url": "https://map.naver.com/p/search/%EC%9A%B0%EC%84%A4%ED%99%94%20%EC%8B%A0%EC%98%81%ED%86%B5%EC%A0%90",
+    "publishedAt": null,
+    "summary": "동일 상호·주소의 현재 장소 정보와 메뉴·운영 여부 확인",
+    "platform": "네이버지도",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R634-B",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1777",
+    "restaurantSourceId": "R634",
+    "purpose": null,
+    "purposeLabel": "장소검증",
+    "keyword": "우설화 신영통점 주소·운영",
+    "sourceType": "카카오맵",
+    "title": "우설화 신영통점 카카오맵",
+    "url": "https://map.kakao.com/?q=%EC%9A%B0%EC%84%A4%ED%99%94%20%EC%8B%A0%EC%98%81%ED%86%B5%EC%A0%90",
+    "publishedAt": null,
+    "summary": "동일 상호·주소의 현재 장소 존재 여부 교차 확인",
+    "platform": "카카오맵",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R634-C",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1778",
+    "restaurantSourceId": "R635",
+    "purpose": "invitation",
+    "purposeLabel": "청모",
+    "keyword": "탐라담 수원역점 실제 이용 후기",
+    "sourceType": "리뷰 플랫폼",
+    "title": "다이닝코드 실제 청첩장 모임 후기",
+    "url": "https://www.diningcode.com/profile.php?rid=6zI8JBD9jVaw",
+    "publishedAt": null,
+    "summary": "수원역에서 동기들과 청첩장 모임을 진행하고 네이버 예약으로 실제 방문한 후기",
+    "platform": "다이닝코드",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R635-A",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "친구"
+    ]
+  },
+  {
+    "id": "E1779",
+    "restaurantSourceId": "R635",
+    "purpose": null,
+    "purposeLabel": "장소검증",
+    "keyword": "탐라담 수원역점 주소·가격·운영",
+    "sourceType": "네이버지도",
+    "title": "탐라담 수원역점 네이버지도",
+    "url": "https://map.naver.com/p/search/%ED%83%90%EB%9D%BC%EB%8B%B4%20%EC%88%98%EC%9B%90%EC%97%AD%EC%A0%90",
+    "publishedAt": null,
+    "summary": "동일 상호·주소의 현재 장소 정보와 메뉴·운영 여부 확인",
+    "platform": "네이버지도",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R635-B",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1780",
+    "restaurantSourceId": "R635",
+    "purpose": null,
+    "purposeLabel": "장소검증",
+    "keyword": "탐라담 수원역점 주소·운영",
+    "sourceType": "카카오맵",
+    "title": "탐라담 수원역점 카카오맵",
+    "url": "https://map.kakao.com/?q=%ED%83%90%EB%9D%BC%EB%8B%B4%20%EC%88%98%EC%9B%90%EC%97%AD%EC%A0%90",
+    "publishedAt": null,
+    "summary": "동일 상호·주소의 현재 장소 존재 여부 교차 확인",
+    "platform": "카카오맵",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R635-C",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1781",
+    "restaurantSourceId": "R636",
+    "purpose": "invitation",
+    "purposeLabel": "청모",
+    "keyword": "갱스덕 실제 이용 후기",
+    "sourceType": "리뷰 플랫폼",
+    "title": "다이닝코드 실제 청첩장 모임 후기",
+    "url": "https://www.diningcode.com/profile.php?rid=lBm2vi35EJRj",
+    "publishedAt": null,
+    "summary": "친구 청첩장 모임으로 예약해 북경오리 반 마리와 동파육을 실제 주문한 내돈내산 후기",
+    "platform": "다이닝코드",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R636-A",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "친구"
+    ]
+  },
+  {
+    "id": "E1782",
+    "restaurantSourceId": "R636",
+    "purpose": null,
+    "purposeLabel": "장소검증",
+    "keyword": "갱스덕 주소·가격·운영",
+    "sourceType": "네이버지도",
+    "title": "갱스덕 네이버지도",
+    "url": "https://map.naver.com/p/search/%EA%B0%B1%EC%8A%A4%EB%8D%95",
+    "publishedAt": null,
+    "summary": "동일 상호·주소의 현재 장소 정보와 메뉴·운영 여부 확인",
+    "platform": "네이버지도",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R636-B",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1783",
+    "restaurantSourceId": "R636",
+    "purpose": null,
+    "purposeLabel": "장소검증",
+    "keyword": "갱스덕 주소·운영",
+    "sourceType": "카카오맵",
+    "title": "갱스덕 카카오맵",
+    "url": "https://map.kakao.com/?q=%EA%B0%B1%EC%8A%A4%EB%8D%95",
+    "publishedAt": null,
+    "summary": "동일 상호·주소의 현재 장소 존재 여부 교차 확인",
+    "platform": "카카오맵",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R636-C",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1784",
+    "restaurantSourceId": "R637",
+    "purpose": "invitation",
+    "purposeLabel": "청모",
+    "keyword": "테네스 더 포레스트 신동 실제 청첩장 모임",
+    "sourceType": "리뷰 플랫폼",
+    "title": "테네스 더 포레스트 신동 실제 청모 후기",
+    "url": "https://www.diningcode.com/profile.php?rid=gOMCpQl9w3KK",
+    "publishedAt": null,
+    "summary": "절친의 청첩장 모임으로 예약 방문해 청첩장을 받고 파스타·리조또·스테이크를 이용한 후기",
+    "platform": "다이닝코드",
+    "sponsored": "unknown",
+    "confidence": "high",
+    "duplicateGroup": "R637-A",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "친구"
+    ]
+  },
+  {
+    "id": "E1785",
+    "restaurantSourceId": "R637",
+    "purpose": null,
+    "purposeLabel": "장소검증",
+    "keyword": "테네스 더 포레스트 신동 주소·가격·운영",
+    "sourceType": "네이버지도",
+    "title": "테네스 더 포레스트 신동 네이버지도",
+    "url": "https://map.naver.com/p/search/%ED%85%8C%EB%84%A4%EC%8A%A4%20%EB%8D%94%20%ED%8F%AC%EB%A0%88%EC%8A%A4%ED%8A%B8%20%EC%8B%A0%EB%8F%99",
+    "publishedAt": null,
+    "summary": "동일 상호·주소의 현재 장소 정보와 메뉴·영업 여부 확인",
+    "platform": "네이버지도",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R637-B",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1786",
+    "restaurantSourceId": "R637",
+    "purpose": null,
+    "purposeLabel": "장소검증",
+    "keyword": "테네스 더 포레스트 신동 주소·운영",
+    "sourceType": "카카오맵",
+    "title": "테네스 더 포레스트 신동 카카오맵",
+    "url": "https://map.kakao.com/?q=%ED%85%8C%EB%84%A4%EC%8A%A4%20%EB%8D%94%20%ED%8F%AC%EB%A0%88%EC%8A%A4%ED%8A%B8%20%EC%8B%A0%EB%8F%99",
+    "publishedAt": null,
+    "summary": "동일 상호·주소의 현재 장소 존재 여부 교차 확인",
+    "platform": "카카오맵",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R637-C",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1787",
+    "restaurantSourceId": "R638",
+    "purpose": "invitation",
+    "purposeLabel": "청모",
+    "keyword": "삐딱 수원인계점 실제 청첩장 모임",
+    "sourceType": "리뷰 플랫폼",
+    "title": "삐딱 수원인계점 실제 청모 후기",
+    "url": "https://www.diningcode.com/profile.php?rid=JFMVnqxLFXsk",
+    "publishedAt": null,
+    "summary": "인계동 청첩장 모임으로 네이버 예약 후 넓은 좌석에서 실제 이용한 내돈내산 후기",
+    "platform": "다이닝코드",
+    "sponsored": "unknown",
+    "confidence": "high",
+    "duplicateGroup": "R638-A",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "친구"
+    ]
+  },
+  {
+    "id": "E1788",
+    "restaurantSourceId": "R638",
+    "purpose": null,
+    "purposeLabel": "장소검증",
+    "keyword": "삐딱 수원인계점 주소·가격·운영",
+    "sourceType": "네이버지도",
+    "title": "삐딱 수원인계점 네이버지도",
+    "url": "https://map.naver.com/p/search/%EC%82%90%EB%94%B1%20%EC%88%98%EC%9B%90%EC%9D%B8%EA%B3%84%EC%A0%90",
+    "publishedAt": null,
+    "summary": "동일 상호·주소의 현재 장소 정보와 메뉴·영업 여부 확인",
+    "platform": "네이버지도",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R638-B",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1789",
+    "restaurantSourceId": "R638",
+    "purpose": null,
+    "purposeLabel": "장소검증",
+    "keyword": "삐딱 수원인계점 주소·운영",
+    "sourceType": "카카오맵",
+    "title": "삐딱 수원인계점 카카오맵",
+    "url": "https://map.kakao.com/?q=%EC%82%90%EB%94%B1%20%EC%88%98%EC%9B%90%EC%9D%B8%EA%B3%84%EC%A0%90",
+    "publishedAt": null,
+    "summary": "동일 상호·주소의 현재 장소 존재 여부 교차 확인",
+    "platform": "카카오맵",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R638-C",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1790",
+    "restaurantSourceId": "R639",
+    "purpose": "invitation",
+    "purposeLabel": "청모",
+    "keyword": "운무 본점 실제 청첩장 모임",
+    "sourceType": "리뷰 플랫폼",
+    "title": "운무 본점 실제 청모 후기",
+    "url": "https://www.diningcode.com/profile.php?rid=eBZF6dSLq732",
+    "publishedAt": null,
+    "summary": "친구 청모로 캐치테이블 예약 후 커튼 분리 좌석에서 한식 안주와 전통주를 이용한 후기",
+    "platform": "다이닝코드",
+    "sponsored": "unknown",
+    "confidence": "high",
+    "duplicateGroup": "R639-A",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "친구"
+    ]
+  },
+  {
+    "id": "E1791",
+    "restaurantSourceId": "R639",
+    "purpose": null,
+    "purposeLabel": "장소검증",
+    "keyword": "운무 본점 주소·가격·운영",
+    "sourceType": "네이버지도",
+    "title": "운무 본점 네이버지도",
+    "url": "https://map.naver.com/p/search/%EC%9A%B4%EB%AC%B4%20%EB%B3%B8%EC%A0%90",
+    "publishedAt": null,
+    "summary": "동일 상호·주소의 현재 장소 정보와 메뉴·영업 여부 확인",
+    "platform": "네이버지도",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R639-B",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1792",
+    "restaurantSourceId": "R639",
+    "purpose": null,
+    "purposeLabel": "장소검증",
+    "keyword": "운무 본점 주소·운영",
+    "sourceType": "카카오맵",
+    "title": "운무 본점 카카오맵",
+    "url": "https://map.kakao.com/?q=%EC%9A%B4%EB%AC%B4%20%EB%B3%B8%EC%A0%90",
+    "publishedAt": null,
+    "summary": "동일 상호·주소의 현재 장소 존재 여부 교차 확인",
+    "platform": "카카오맵",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R639-C",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1793",
+    "restaurantSourceId": "R640",
+    "purpose": "invitation",
+    "purposeLabel": "청모",
+    "keyword": "라온 아시안 다이닝 실제 청첩장 모임",
+    "sourceType": "리뷰 플랫폼",
+    "title": "라온 아시안 다이닝 실제 청모 후기",
+    "url": "https://www.diningcode.com/profile.php?rid=RqCYeB9FnQS4",
+    "publishedAt": null,
+    "summary": "친구 청첩장 모임으로 방문해 동파육·육회·명란 파스타 등을 이용한 방문자 리뷰",
+    "platform": "다이닝코드",
+    "sponsored": "unknown",
+    "confidence": "high",
+    "duplicateGroup": "R640-A",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "친구"
+    ]
+  },
+  {
+    "id": "E1794",
+    "restaurantSourceId": "R640",
+    "purpose": null,
+    "purposeLabel": "장소검증",
+    "keyword": "라온 아시안 다이닝 주소·가격·운영",
+    "sourceType": "네이버지도",
+    "title": "라온 아시안 다이닝 네이버지도",
+    "url": "https://map.naver.com/p/search/%EB%9D%BC%EC%98%A8%20%EC%95%84%EC%8B%9C%EC%95%88%20%EB%8B%A4%EC%9D%B4%EB%8B%9D",
+    "publishedAt": null,
+    "summary": "동일 상호·주소의 현재 장소 정보와 메뉴·영업 여부 확인",
+    "platform": "네이버지도",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R640-B",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1795",
+    "restaurantSourceId": "R640",
+    "purpose": null,
+    "purposeLabel": "장소검증",
+    "keyword": "라온 아시안 다이닝 주소·운영",
+    "sourceType": "카카오맵",
+    "title": "라온 아시안 다이닝 카카오맵",
+    "url": "https://map.kakao.com/?q=%EB%9D%BC%EC%98%A8%20%EC%95%84%EC%8B%9C%EC%95%88%20%EB%8B%A4%EC%9D%B4%EB%8B%9D",
+    "publishedAt": null,
+    "summary": "동일 상호·주소의 현재 장소 존재 여부 교차 확인",
+    "platform": "카카오맵",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R640-C",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1796",
+    "restaurantSourceId": "R641",
+    "purpose": "invitation",
+    "purposeLabel": "청모",
+    "keyword": "꾸석지돌판한우 수원인계점 실제 청첩장 모임",
+    "sourceType": "리뷰 플랫폼",
+    "title": "꾸석지돌판한우 수원인계점 실제 청모 후기",
+    "url": "https://www.diningcode.com/profile.php?rid=mvjEgxGJgQEK",
+    "publishedAt": null,
+    "summary": "결혼하는 친구 청첩장 모임으로 방문해 직원이 구워주는 한우를 이용한 후기",
+    "platform": "다이닝코드",
+    "sponsored": "unknown",
+    "confidence": "high",
+    "duplicateGroup": "R641-A",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "친구"
+    ]
+  },
+  {
+    "id": "E1797",
+    "restaurantSourceId": "R641",
+    "purpose": null,
+    "purposeLabel": "장소검증",
+    "keyword": "꾸석지돌판한우 수원인계점 주소·가격·운영",
+    "sourceType": "네이버지도",
+    "title": "꾸석지돌판한우 수원인계점 네이버지도",
+    "url": "https://map.naver.com/p/search/%EA%BE%B8%EC%84%9D%EC%A7%80%EB%8F%8C%ED%8C%90%ED%95%9C%EC%9A%B0%20%EC%88%98%EC%9B%90%EC%9D%B8%EA%B3%84%EC%A0%90",
+    "publishedAt": null,
+    "summary": "동일 상호·주소의 현재 장소 정보와 메뉴·영업 여부 확인",
+    "platform": "네이버지도",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R641-B",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1798",
+    "restaurantSourceId": "R641",
+    "purpose": null,
+    "purposeLabel": "장소검증",
+    "keyword": "꾸석지돌판한우 수원인계점 주소·운영",
+    "sourceType": "카카오맵",
+    "title": "꾸석지돌판한우 수원인계점 카카오맵",
+    "url": "https://map.kakao.com/?q=%EA%BE%B8%EC%84%9D%EC%A7%80%EB%8F%8C%ED%8C%90%ED%95%9C%EC%9A%B0%20%EC%88%98%EC%9B%90%EC%9D%B8%EA%B3%84%EC%A0%90",
+    "publishedAt": null,
+    "summary": "동일 상호·주소의 현재 장소 존재 여부 교차 확인",
+    "platform": "카카오맵",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R641-C",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1799",
+    "restaurantSourceId": "R642",
+    "purpose": "invitation",
+    "purposeLabel": "청모",
+    "keyword": "복개천그릴 실제 청첩장 모임",
+    "sourceType": "리뷰 플랫폼",
+    "title": "복개천그릴 실제 청모 후기",
+    "url": "https://www.diningcode.com/profile.php?rid=jqb5xT7wBXad",
+    "publishedAt": null,
+    "summary": "친구 청모로 실제 방문해 이베리코 구이와 모임을 진행한 수원 인계동 생활권 후기",
+    "platform": "다이닝코드",
+    "sponsored": "unknown",
+    "confidence": "high",
+    "duplicateGroup": "R642-A",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "친구"
+    ]
+  },
+  {
+    "id": "E1800",
+    "restaurantSourceId": "R642",
+    "purpose": null,
+    "purposeLabel": "장소검증",
+    "keyword": "복개천그릴 주소·가격·운영",
+    "sourceType": "네이버지도",
+    "title": "복개천그릴 네이버지도",
+    "url": "https://map.naver.com/p/search/%EB%B3%B5%EA%B0%9C%EC%B2%9C%EA%B7%B8%EB%A6%B4",
+    "publishedAt": null,
+    "summary": "동일 상호·주소의 현재 장소 정보와 메뉴·영업 여부 확인",
+    "platform": "네이버지도",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R642-B",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1801",
+    "restaurantSourceId": "R642",
+    "purpose": null,
+    "purposeLabel": "장소검증",
+    "keyword": "복개천그릴 주소·운영",
+    "sourceType": "카카오맵",
+    "title": "복개천그릴 카카오맵",
+    "url": "https://map.kakao.com/?q=%EB%B3%B5%EA%B0%9C%EC%B2%9C%EA%B7%B8%EB%A6%B4",
+    "publishedAt": null,
+    "summary": "동일 상호·주소의 현재 장소 존재 여부 교차 확인",
+    "platform": "카카오맵",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R642-C",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1802",
+    "restaurantSourceId": "R643",
+    "purpose": null,
+    "purposeLabel": "실사용검증",
+    "keyword": "경복궁 수원점 실제 상견례",
+    "sourceType": "블로그·방문후기",
+    "title": "경복궁 수원점 상견례 실제 방문 후기",
+    "url": "https://www.diningcode.com/profile.php?rid=lZSfTmvkfBeI",
+    "publishedAt": null,
+    "summary": "양가 부모님이 참석한 6인 상견례를 진행하고 전화 예약·예약금·룸 이용 경험을 남긴 후기",
+    "platform": "다이닝코드 수집 방문후기",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R643-A",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "부모님"
+    ]
+  },
+  {
+    "id": "E1803",
+    "restaurantSourceId": "R643",
+    "purpose": null,
+    "purposeLabel": "실사용검증",
+    "keyword": "경복궁 수원점 9인 상견례",
+    "sourceType": "블로그·방문후기",
+    "title": "경복궁 수원점 9인 상견례 후기",
+    "url": "https://www.diningcode.com/profile.php?rid=lZSfTmvkfBeI",
+    "publishedAt": null,
+    "summary": "부모님 포함 9명이 실제 상견례를 진행하고 상견례 코스와 상차림을 이용한 후기",
+    "platform": "다이닝코드 수집 방문후기",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R643-B",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "부모님"
+    ]
+  },
+  {
+    "id": "E1804",
+    "restaurantSourceId": "R643",
+    "purpose": null,
+    "purposeLabel": "장소검증",
+    "keyword": "경복궁 수원점 주소·운영",
+    "sourceType": "맛집정보",
+    "title": "경복궁 수원점 상세정보",
+    "url": "https://www.diningcode.com/profile.php?rid=lZSfTmvkfBeI",
+    "publishedAt": null,
+    "summary": "주소·영업시간·개별룸·주차·현재 상견례 코스 가격을 교차 확인",
+    "platform": "다이닝코드",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R643-C",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1805",
+    "restaurantSourceId": "R644",
+    "purpose": null,
+    "purposeLabel": "실사용검증",
+    "keyword": "긴자 수원인계점 실제 상견례",
+    "sourceType": "블로그·방문후기",
+    "title": "긴자 수원인계점 상견례 후기",
+    "url": "https://www.diningcode.com/profile.php?rid=looLe0WeAJlO",
+    "publishedAt": null,
+    "summary": "실제로 상견례를 진행하고 주말 가족특선 코스와 개별룸을 이용한 후기",
+    "platform": "다이닝코드 수집 방문후기",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R644-A",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "부모님"
+    ]
+  },
+  {
+    "id": "E1806",
+    "restaurantSourceId": "R644",
+    "purpose": null,
+    "purposeLabel": "시설검증",
+    "keyword": "긴자 수원인계점 개별룸·주차",
+    "sourceType": "맛집정보",
+    "title": "긴자 수원인계점 상세정보",
+    "url": "https://www.diningcode.com/profile.php?rid=looLe0WeAJlO",
+    "publishedAt": null,
+    "summary": "개별룸·무료주차·발렛과 매일 영업시간, 코스 가격대를 확인",
+    "platform": "다이닝코드",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R644-B",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1807",
+    "restaurantSourceId": "R644",
+    "purpose": null,
+    "purposeLabel": "장소검증",
+    "keyword": "긴자 수원인계점 주소",
+    "sourceType": "카카오맵",
+    "title": "긴자 수원인계점 카카오맵",
+    "url": "https://map.kakao.com/?q=%EA%B8%B4%EC%9E%90%20%EC%88%98%EC%9B%90%EC%9D%B8%EA%B3%84%EC%A0%90",
+    "publishedAt": null,
+    "summary": "동일 상호·주소의 현재 장소 존재 여부를 교차 확인",
+    "platform": "카카오맵",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R644-C",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1808",
+    "restaurantSourceId": "R645",
+    "purpose": null,
+    "purposeLabel": "실사용검증",
+    "keyword": "삿뽀로 수원점 실제 상견례",
+    "sourceType": "블로그·방문후기",
+    "title": "삿뽀로 수원점 상견례 후기",
+    "url": "https://www.diningcode.com/profile.php?rid=HrebVBzjJpuP",
+    "publishedAt": null,
+    "summary": "양가 부모님과 실제 상견례를 진행하고 제철 디너 코스와 독립룸을 이용한 후기",
+    "platform": "다이닝코드 수집 방문후기",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R645-A",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "부모님"
+    ]
+  },
+  {
+    "id": "E1809",
+    "restaurantSourceId": "R645",
+    "purpose": null,
+    "purposeLabel": "시설검증",
+    "keyword": "삿뽀로 수원점 룸·주차",
+    "sourceType": "맛집정보",
+    "title": "삿뽀로 수원점 상세정보",
+    "url": "https://www.diningcode.com/profile.php?rid=HrebVBzjJpuP",
+    "publishedAt": null,
+    "summary": "대부분 룸으로 구성된 좌석·평일과 주말 영업시간·최대 3시간 무료 주차를 확인",
+    "platform": "다이닝코드",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R645-B",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1810",
+    "restaurantSourceId": "R645",
+    "purpose": null,
+    "purposeLabel": "장소검증",
+    "keyword": "삿뽀로 수원점 주소",
+    "sourceType": "카카오맵",
+    "title": "삿뽀로 수원점 카카오맵",
+    "url": "https://map.kakao.com/?q=%EC%82%BF%EB%BD%80%EB%A1%9C%20%EC%88%98%EC%9B%90%EC%A0%90",
+    "publishedAt": null,
+    "summary": "동일 상호·주소의 현재 장소 존재 여부를 교차 확인",
+    "platform": "카카오맵",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R645-C",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1811",
+    "restaurantSourceId": "R646",
+    "purpose": null,
+    "purposeLabel": "실사용검증",
+    "keyword": "루베르데 광교 실제 청모",
+    "sourceType": "블로그·방문후기",
+    "title": "루베르데 광교 청첩장 모임 후기",
+    "url": "https://www.diningcode.com/profile.php?rid=jper04mET8uR",
+    "publishedAt": null,
+    "summary": "친구·지인에게 청첩장을 전달하거나 받은 실제 모임 방문 후기",
+    "platform": "다이닝코드 수집 방문후기",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R646-A",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "친구"
+    ]
+  },
+  {
+    "id": "E1812",
+    "restaurantSourceId": "R646",
+    "purpose": null,
+    "purposeLabel": "시설검증",
+    "keyword": "루베르데 광교 메뉴·좌석·운영",
+    "sourceType": "맛집정보",
+    "title": "루베르데 광교 상세정보",
+    "url": "https://www.diningcode.com/profile.php?rid=jper04mET8uR",
+    "publishedAt": null,
+    "summary": "주소·영업시간·메뉴·예약·주차와 모임 좌석 정보를 확인",
+    "platform": "다이닝코드",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R646-B",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1813",
+    "restaurantSourceId": "R646",
+    "purpose": null,
+    "purposeLabel": "장소검증",
+    "keyword": "루베르데 광교 주소",
+    "sourceType": "카카오맵",
+    "title": "루베르데 광교 카카오맵",
+    "url": "https://map.kakao.com/?q=%EB%A3%A8%EB%B2%A0%EB%A5%B4%EB%8D%B0%20%EA%B4%91%EA%B5%90",
+    "publishedAt": null,
+    "summary": "동일 상호·주소의 현재 장소 존재 여부를 교차 확인",
+    "platform": "카카오맵",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R646-C",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1814",
+    "restaurantSourceId": "R647",
+    "purpose": null,
+    "purposeLabel": "실사용검증",
+    "keyword": "작은바와 서양면집 수원역신로데오점 실제 청모",
+    "sourceType": "블로그·방문후기",
+    "title": "작은바와 서양면집 수원역신로데오점 청첩장 모임 후기",
+    "url": "https://www.diningcode.com/profile.php?rid=DaSggSeW1ck3",
+    "publishedAt": null,
+    "summary": "친구·지인에게 청첩장을 전달하거나 받은 실제 모임 방문 후기",
+    "platform": "다이닝코드 수집 방문후기",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R647-A",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "친구"
+    ]
+  },
+  {
+    "id": "E1815",
+    "restaurantSourceId": "R647",
+    "purpose": null,
+    "purposeLabel": "시설검증",
+    "keyword": "작은바와 서양면집 수원역신로데오점 메뉴·좌석·운영",
+    "sourceType": "맛집정보",
+    "title": "작은바와 서양면집 수원역신로데오점 상세정보",
+    "url": "https://www.diningcode.com/profile.php?rid=DaSggSeW1ck3",
+    "publishedAt": null,
+    "summary": "주소·영업시간·메뉴·예약·주차와 모임 좌석 정보를 확인",
+    "platform": "다이닝코드",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R647-B",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1816",
+    "restaurantSourceId": "R647",
+    "purpose": null,
+    "purposeLabel": "장소검증",
+    "keyword": "작은바와 서양면집 수원역신로데오점 주소",
+    "sourceType": "카카오맵",
+    "title": "작은바와 서양면집 수원역신로데오점 카카오맵",
+    "url": "https://map.kakao.com/?q=%EC%9E%91%EC%9D%80%EB%B0%94%EC%99%80%20%EC%84%9C%EC%96%91%EB%A9%B4%EC%A7%91%20%EC%88%98%EC%9B%90%EC%97%AD%EC%8B%A0%EB%A1%9C%EB%8D%B0%EC%98%A4%EC%A0%90",
+    "publishedAt": null,
+    "summary": "동일 상호·주소의 현재 장소 존재 여부를 교차 확인",
+    "platform": "카카오맵",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R647-C",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1817",
+    "restaurantSourceId": "R648",
+    "purpose": null,
+    "purposeLabel": "실사용검증",
+    "keyword": "고반식당 망포역점 실제 청모",
+    "sourceType": "블로그·방문후기",
+    "title": "고반식당 망포역점 청첩장 모임 후기",
+    "url": "https://www.diningcode.com/profile.php?rid=DJkIEcfZsmya",
+    "publishedAt": null,
+    "summary": "회사 동료 대상 실제 청첩장 모임으로 방문한 후기",
+    "platform": "다이닝코드 수집 방문후기",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R648-A",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "회사동료"
+    ]
+  },
+  {
+    "id": "E1818",
+    "restaurantSourceId": "R648",
+    "purpose": null,
+    "purposeLabel": "시설검증",
+    "keyword": "고반식당 망포역점 메뉴·좌석·운영",
+    "sourceType": "맛집정보",
+    "title": "고반식당 망포역점 상세정보",
+    "url": "https://www.diningcode.com/profile.php?rid=DJkIEcfZsmya",
+    "publishedAt": null,
+    "summary": "주소·영업시간·메뉴·예약·주차와 모임 좌석 정보를 확인",
+    "platform": "다이닝코드",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R648-B",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1819",
+    "restaurantSourceId": "R648",
+    "purpose": null,
+    "purposeLabel": "장소검증",
+    "keyword": "고반식당 망포역점 주소",
+    "sourceType": "카카오맵",
+    "title": "고반식당 망포역점 카카오맵",
+    "url": "https://map.kakao.com/?q=%EA%B3%A0%EB%B0%98%EC%8B%9D%EB%8B%B9%20%EB%A7%9D%ED%8F%AC%EC%97%AD%EC%A0%90",
+    "publishedAt": null,
+    "summary": "동일 상호·주소의 현재 장소 존재 여부를 교차 확인",
+    "platform": "카카오맵",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R648-C",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1820",
+    "restaurantSourceId": "R649",
+    "purpose": null,
+    "purposeLabel": "실사용검증",
+    "keyword": "그래니살룬 영통점 실제 청모",
+    "sourceType": "블로그·방문후기",
+    "title": "그래니살룬 영통점 청첩장 모임 후기",
+    "url": "https://www.diningcode.com/profile.php?rid=iN27XFk6LTgc",
+    "publishedAt": null,
+    "summary": "친구·지인에게 청첩장을 전달하거나 받은 실제 모임 방문 후기",
+    "platform": "다이닝코드 수집 방문후기",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R649-A",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "친구"
+    ]
+  },
+  {
+    "id": "E1821",
+    "restaurantSourceId": "R649",
+    "purpose": null,
+    "purposeLabel": "시설검증",
+    "keyword": "그래니살룬 영통점 메뉴·좌석·운영",
+    "sourceType": "맛집정보",
+    "title": "그래니살룬 영통점 상세정보",
+    "url": "https://www.diningcode.com/profile.php?rid=iN27XFk6LTgc",
+    "publishedAt": null,
+    "summary": "주소·영업시간·메뉴·예약·주차와 모임 좌석 정보를 확인",
+    "platform": "다이닝코드",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R649-B",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1822",
+    "restaurantSourceId": "R649",
+    "purpose": null,
+    "purposeLabel": "장소검증",
+    "keyword": "그래니살룬 영통점 주소",
+    "sourceType": "카카오맵",
+    "title": "그래니살룬 영통점 카카오맵",
+    "url": "https://map.kakao.com/?q=%EA%B7%B8%EB%9E%98%EB%8B%88%EC%82%B4%EB%A3%AC%20%EC%98%81%ED%86%B5%EC%A0%90",
+    "publishedAt": null,
+    "summary": "동일 상호·주소의 현재 장소 존재 여부를 교차 확인",
+    "platform": "카카오맵",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R649-C",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1823",
+    "restaurantSourceId": "R650",
+    "purpose": null,
+    "purposeLabel": "실사용검증",
+    "keyword": "화옥 본점 실제 청모",
+    "sourceType": "블로그·방문후기",
+    "title": "화옥 본점 청첩장 모임 후기",
+    "url": "https://www.diningcode.com/profile.php?rid=ghK2DHCqj3Xk",
+    "publishedAt": null,
+    "summary": "친구·지인에게 청첩장을 전달하거나 받은 실제 모임 방문 후기",
+    "platform": "다이닝코드 수집 방문후기",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R650-A",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "친구"
+    ]
+  },
+  {
+    "id": "E1824",
+    "restaurantSourceId": "R650",
+    "purpose": null,
+    "purposeLabel": "시설검증",
+    "keyword": "화옥 본점 메뉴·좌석·운영",
+    "sourceType": "맛집정보",
+    "title": "화옥 본점 상세정보",
+    "url": "https://www.diningcode.com/profile.php?rid=ghK2DHCqj3Xk",
+    "publishedAt": null,
+    "summary": "주소·영업시간·메뉴·예약·주차와 모임 좌석 정보를 확인",
+    "platform": "다이닝코드",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R650-B",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1825",
+    "restaurantSourceId": "R650",
+    "purpose": null,
+    "purposeLabel": "장소검증",
+    "keyword": "화옥 본점 주소",
+    "sourceType": "카카오맵",
+    "title": "화옥 본점 카카오맵",
+    "url": "https://map.kakao.com/?q=%ED%99%94%EC%98%A5%20%EB%B3%B8%EC%A0%90",
+    "publishedAt": null,
+    "summary": "동일 상호·주소의 현재 장소 존재 여부를 교차 확인",
+    "platform": "카카오맵",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R650-C",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1826",
+    "restaurantSourceId": "R651",
+    "purpose": null,
+    "purposeLabel": "실사용검증",
+    "keyword": "아리랑집 권선시장점 실제 청모",
+    "sourceType": "블로그·방문후기",
+    "title": "아리랑집 권선시장점 청첩장 모임 후기",
+    "url": "https://www.diningcode.com/profile.php?rid=qGsutYB30Muv",
+    "publishedAt": null,
+    "summary": "친구·지인에게 청첩장을 전달하거나 받은 실제 모임 방문 후기",
+    "platform": "다이닝코드 수집 방문후기",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R651-A",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "친구"
+    ]
+  },
+  {
+    "id": "E1827",
+    "restaurantSourceId": "R651",
+    "purpose": null,
+    "purposeLabel": "시설검증",
+    "keyword": "아리랑집 권선시장점 메뉴·좌석·운영",
+    "sourceType": "맛집정보",
+    "title": "아리랑집 권선시장점 상세정보",
+    "url": "https://www.diningcode.com/profile.php?rid=qGsutYB30Muv",
+    "publishedAt": null,
+    "summary": "주소·영업시간·메뉴·예약·주차와 모임 좌석 정보를 확인",
+    "platform": "다이닝코드",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R651-B",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1828",
+    "restaurantSourceId": "R651",
+    "purpose": null,
+    "purposeLabel": "장소검증",
+    "keyword": "아리랑집 권선시장점 주소",
+    "sourceType": "카카오맵",
+    "title": "아리랑집 권선시장점 카카오맵",
+    "url": "https://map.kakao.com/?q=%EC%95%84%EB%A6%AC%EB%9E%91%EC%A7%91%20%EA%B6%8C%EC%84%A0%EC%8B%9C%EC%9E%A5%EC%A0%90",
+    "publishedAt": null,
+    "summary": "동일 상호·주소의 현재 장소 존재 여부를 교차 확인",
+    "platform": "카카오맵",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R651-C",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1829",
+    "restaurantSourceId": "R652",
+    "purpose": null,
+    "purposeLabel": "실사용검증",
+    "keyword": "Shun 율전동점 실제 청모",
+    "sourceType": "블로그·방문후기",
+    "title": "Shun 율전동점 청첩장 모임 후기",
+    "url": "https://www.diningcode.com/profile.php?rid=aOimTdi6EMx1",
+    "publishedAt": null,
+    "summary": "친구·지인에게 청첩장을 전달하거나 받은 실제 모임 방문 후기",
+    "platform": "다이닝코드 수집 방문후기",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R652-A",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "친구"
+    ]
+  },
+  {
+    "id": "E1830",
+    "restaurantSourceId": "R652",
+    "purpose": null,
+    "purposeLabel": "시설검증",
+    "keyword": "Shun 율전동점 메뉴·좌석·운영",
+    "sourceType": "맛집정보",
+    "title": "Shun 율전동점 상세정보",
+    "url": "https://www.diningcode.com/profile.php?rid=aOimTdi6EMx1",
+    "publishedAt": null,
+    "summary": "주소·영업시간·메뉴·예약·주차와 모임 좌석 정보를 확인",
+    "platform": "다이닝코드",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R652-B",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1831",
+    "restaurantSourceId": "R652",
+    "purpose": null,
+    "purposeLabel": "장소검증",
+    "keyword": "Shun 율전동점 주소",
+    "sourceType": "카카오맵",
+    "title": "Shun 율전동점 카카오맵",
+    "url": "https://map.kakao.com/?q=Shun%20%EC%9C%A8%EC%A0%84%EB%8F%99%EC%A0%90",
+    "publishedAt": null,
+    "summary": "동일 상호·주소의 현재 장소 존재 여부를 교차 확인",
+    "platform": "카카오맵",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R652-C",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1832",
+    "restaurantSourceId": "R653",
+    "purpose": null,
+    "purposeLabel": "실사용검증",
+    "keyword": "호박꽃 인계점 실제 청모",
+    "sourceType": "블로그·방문후기",
+    "title": "호박꽃 인계점 청첩장 모임 후기",
+    "url": "https://www.diningcode.com/profile.php?rid=9J1tiVE8b54z",
+    "publishedAt": null,
+    "summary": "친구·지인에게 청첩장을 전달하거나 받은 실제 모임 방문 후기",
+    "platform": "다이닝코드 수집 방문후기",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R653-A",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "친구"
+    ]
+  },
+  {
+    "id": "E1833",
+    "restaurantSourceId": "R653",
+    "purpose": null,
+    "purposeLabel": "시설검증",
+    "keyword": "호박꽃 인계점 메뉴·좌석·운영",
+    "sourceType": "맛집정보",
+    "title": "호박꽃 인계점 상세정보",
+    "url": "https://www.diningcode.com/profile.php?rid=9J1tiVE8b54z",
+    "publishedAt": null,
+    "summary": "주소·영업시간·메뉴·예약·주차와 모임 좌석 정보를 확인",
+    "platform": "다이닝코드",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R653-B",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1834",
+    "restaurantSourceId": "R653",
+    "purpose": null,
+    "purposeLabel": "장소검증",
+    "keyword": "호박꽃 인계점 주소",
+    "sourceType": "카카오맵",
+    "title": "호박꽃 인계점 카카오맵",
+    "url": "https://map.kakao.com/?q=%ED%98%B8%EB%B0%95%EA%BD%83%20%EC%9D%B8%EA%B3%84%EC%A0%90",
+    "publishedAt": null,
+    "summary": "동일 상호·주소의 현재 장소 존재 여부를 교차 확인",
+    "platform": "카카오맵",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R653-C",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1835",
+    "restaurantSourceId": "R654",
+    "purpose": null,
+    "purposeLabel": "실사용검증",
+    "keyword": "박경규 항아리보쌈 망포본점 실제 청모",
+    "sourceType": "블로그·방문후기",
+    "title": "박경규 항아리보쌈 망포본점 청첩장 모임 후기",
+    "url": "https://www.diningcode.com/profile.php?rid=n8LMZKdGFf5e",
+    "publishedAt": null,
+    "summary": "친구·지인에게 청첩장을 전달하거나 받은 실제 모임 방문 후기",
+    "platform": "다이닝코드 수집 방문후기",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R654-A",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "친구"
+    ]
+  },
+  {
+    "id": "E1836",
+    "restaurantSourceId": "R654",
+    "purpose": null,
+    "purposeLabel": "시설검증",
+    "keyword": "박경규 항아리보쌈 망포본점 메뉴·좌석·운영",
+    "sourceType": "맛집정보",
+    "title": "박경규 항아리보쌈 망포본점 상세정보",
+    "url": "https://www.diningcode.com/profile.php?rid=n8LMZKdGFf5e",
+    "publishedAt": null,
+    "summary": "주소·영업시간·메뉴·예약·주차와 모임 좌석 정보를 확인",
+    "platform": "다이닝코드",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R654-B",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1837",
+    "restaurantSourceId": "R654",
+    "purpose": null,
+    "purposeLabel": "장소검증",
+    "keyword": "박경규 항아리보쌈 망포본점 주소",
+    "sourceType": "카카오맵",
+    "title": "박경규 항아리보쌈 망포본점 카카오맵",
+    "url": "https://map.kakao.com/?q=%EB%B0%95%EA%B2%BD%EA%B7%9C%20%ED%95%AD%EC%95%84%EB%A6%AC%EB%B3%B4%EC%8C%88%20%EB%A7%9D%ED%8F%AC%EB%B3%B8%EC%A0%90",
+    "publishedAt": null,
+    "summary": "동일 상호·주소의 현재 장소 존재 여부를 교차 확인",
+    "platform": "카카오맵",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R654-C",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1838",
+    "restaurantSourceId": "R655",
+    "purpose": null,
+    "purposeLabel": "실사용검증",
+    "keyword": "태양부양꼬치 광교점 실제 청모",
+    "sourceType": "블로그·방문후기",
+    "title": "태양부양꼬치 광교점 청첩장 모임 후기",
+    "url": "https://www.diningcode.com/profile.php?rid=BT5J1klqT92M",
+    "publishedAt": null,
+    "summary": "친구·지인에게 청첩장을 전달하거나 받은 실제 모임 방문 후기",
+    "platform": "다이닝코드 수집 방문후기",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R655-A",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "친구"
+    ]
+  },
+  {
+    "id": "E1839",
+    "restaurantSourceId": "R655",
+    "purpose": null,
+    "purposeLabel": "시설검증",
+    "keyword": "태양부양꼬치 광교점 메뉴·좌석·운영",
+    "sourceType": "맛집정보",
+    "title": "태양부양꼬치 광교점 상세정보",
+    "url": "https://www.diningcode.com/profile.php?rid=BT5J1klqT92M",
+    "publishedAt": null,
+    "summary": "주소·영업시간·메뉴·예약·주차와 모임 좌석 정보를 확인",
+    "platform": "다이닝코드",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R655-B",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1840",
+    "restaurantSourceId": "R655",
+    "purpose": null,
+    "purposeLabel": "장소검증",
+    "keyword": "태양부양꼬치 광교점 주소",
+    "sourceType": "카카오맵",
+    "title": "태양부양꼬치 광교점 카카오맵",
+    "url": "https://map.kakao.com/?q=%ED%83%9C%EC%96%91%EB%B6%80%EC%96%91%EA%BC%AC%EC%B9%98%20%EA%B4%91%EA%B5%90%EC%A0%90",
+    "publishedAt": null,
+    "summary": "동일 상호·주소의 현재 장소 존재 여부를 교차 확인",
+    "platform": "카카오맵",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R655-C",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1841",
+    "restaurantSourceId": "R656",
+    "purpose": null,
+    "purposeLabel": "실사용검증",
+    "keyword": "FAFAS 율전동점 실제 청모",
+    "sourceType": "블로그·방문후기",
+    "title": "FAFAS 율전동점 청첩장 모임 후기",
+    "url": "https://www.diningcode.com/profile.php?rid=iSa6SyT8ChN5",
+    "publishedAt": null,
+    "summary": "친구·지인에게 청첩장을 전달하거나 받은 실제 모임 방문 후기",
+    "platform": "다이닝코드 수집 방문후기",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R656-A",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "친구"
+    ]
+  },
+  {
+    "id": "E1842",
+    "restaurantSourceId": "R656",
+    "purpose": null,
+    "purposeLabel": "시설검증",
+    "keyword": "FAFAS 율전동점 메뉴·좌석·운영",
+    "sourceType": "맛집정보",
+    "title": "FAFAS 율전동점 상세정보",
+    "url": "https://www.diningcode.com/profile.php?rid=iSa6SyT8ChN5",
+    "publishedAt": null,
+    "summary": "주소·영업시간·메뉴·예약·주차와 모임 좌석 정보를 확인",
+    "platform": "다이닝코드",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R656-B",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1843",
+    "restaurantSourceId": "R656",
+    "purpose": null,
+    "purposeLabel": "장소검증",
+    "keyword": "FAFAS 율전동점 주소",
+    "sourceType": "카카오맵",
+    "title": "FAFAS 율전동점 카카오맵",
+    "url": "https://map.kakao.com/?q=FAFAS%20%EC%9C%A8%EC%A0%84%EB%8F%99%EC%A0%90",
+    "publishedAt": null,
+    "summary": "동일 상호·주소의 현재 장소 존재 여부를 교차 확인",
+    "platform": "카카오맵",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R656-C",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1844",
+    "restaurantSourceId": "R657",
+    "purpose": "invitation",
+    "purposeLabel": "청모",
+    "keyword": "인더트립 청모",
+    "sourceType": "방문자리뷰",
+    "title": "인더트립 실제 청모 방문 리뷰",
+    "url": "https://www.diningcode.com/profile.php?rid=ChHFmiiIqE5Z",
+    "publishedAt": null,
+    "summary": "친구 청첩모임과 별도 청모 방문 리뷰 2건, 조용하고 격식 있는 분위기 확인",
+    "platform": "다이닝코드",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R657-A",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "친구"
+    ]
+  },
+  {
+    "id": "E1845",
+    "restaurantSourceId": "R657",
+    "purpose": null,
+    "purposeLabel": "시설검증",
+    "keyword": "인더트립 영업 메뉴 주차",
+    "sourceType": "매장정보",
+    "title": "인더트립 현재 매장 정보",
+    "url": "https://www.diningcode.com/profile.php?rid=ChHFmiiIqE5Z",
+    "publishedAt": null,
+    "summary": "주소·영업시간·메뉴 가격과 매장 앞 2대 및 인근 공영주차장 정보 확인",
+    "platform": "다이닝코드",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R657-B",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1846",
+    "restaurantSourceId": "R657",
+    "purpose": null,
+    "purposeLabel": "장소검증",
+    "keyword": "인더트립 용인 주소",
+    "sourceType": "카카오맵",
+    "title": "인더트립 카카오맵",
+    "url": "https://map.kakao.com/?q=%EC%9D%B8%EB%8D%94%ED%8A%B8%EB%A6%BD%20%EC%9A%A9%EC%9D%B8",
+    "publishedAt": null,
+    "summary": "동일 상호·주소의 현재 장소 존재 여부 교차 확인",
+    "platform": "카카오맵",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R657-C",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1847",
+    "restaurantSourceId": "R658",
+    "purpose": "invitation",
+    "purposeLabel": "청모",
+    "keyword": "미가훠궈 청첩장 모임",
+    "sourceType": "블로그후기",
+    "title": "미가훠궈양고기 실제 청모 후기",
+    "url": "https://www.diningcode.com/profile.php?rid=4h8tIy59WSMo",
+    "publishedAt": null,
+    "summary": "친구 3인의 청첩장 모임으로 훠궈를 선택해 방문한 내용 확인",
+    "platform": "다이닝코드",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R658-A",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "친구"
+    ]
+  },
+  {
+    "id": "E1848",
+    "restaurantSourceId": "R658",
+    "purpose": null,
+    "purposeLabel": "시설검증",
+    "keyword": "미가훠궈 영업 단체 주차",
+    "sourceType": "매장정보",
+    "title": "미가훠궈양고기 현재 매장 정보",
+    "url": "https://www.diningcode.com/profile.php?rid=4h8tIy59WSMo",
+    "publishedAt": null,
+    "summary": "주소·영업시간·단체 이용·예약·주차와 메뉴 가격 확인",
+    "platform": "다이닝코드",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R658-B",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1849",
+    "restaurantSourceId": "R658",
+    "purpose": null,
+    "purposeLabel": "장소검증",
+    "keyword": "미가훠궈양고기 주소",
+    "sourceType": "카카오맵",
+    "title": "미가훠궈양고기 카카오맵",
+    "url": "https://place.map.kakao.com/12065307",
+    "publishedAt": null,
+    "summary": "동일 상호·주소의 현재 장소 존재 여부 교차 확인",
+    "platform": "카카오맵",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R658-C",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1850",
+    "restaurantSourceId": "R659",
+    "purpose": "invitation",
+    "purposeLabel": "청모",
+    "keyword": "모두포차 청첩장 모임",
+    "sourceType": "블로그후기",
+    "title": "모두포차 실제 청모 2차 후기",
+    "url": "https://www.diningcode.com/profile.php?rid=HvoLIUNDK4ar",
+    "publishedAt": null,
+    "summary": "동백에서 1차 식사 후 청첩장 모임 2차로 실제 방문한 내용 확인",
+    "platform": "다이닝코드",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R659-A",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "친구"
+    ]
+  },
+  {
+    "id": "E1851",
+    "restaurantSourceId": "R659",
+    "purpose": null,
+    "purposeLabel": "시설검증",
+    "keyword": "모두포차 영업 메뉴 규모",
+    "sourceType": "매장정보",
+    "title": "모두포차 현재 매장 정보",
+    "url": "https://www.diningcode.com/profile.php?rid=HvoLIUNDK4ar",
+    "publishedAt": null,
+    "summary": "주소·매일 17시~02시 영업·안주 가격과 소규모 테이블 구성 확인",
+    "platform": "다이닝코드",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R659-B",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1852",
+    "restaurantSourceId": "R659",
+    "purpose": null,
+    "purposeLabel": "장소검증",
+    "keyword": "모두포차 용인동백 주소",
+    "sourceType": "카카오맵",
+    "title": "모두포차 카카오맵",
+    "url": "https://map.kakao.com/?q=%EB%AA%A8%EB%91%90%ED%8F%AC%EC%B0%A8%20%EC%9A%A9%EC%9D%B8%EB%8F%99%EB%B0%B1",
+    "publishedAt": null,
+    "summary": "동일 상호·주소의 현재 장소 존재 여부 교차 확인",
+    "platform": "카카오맵",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R659-C",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1853",
+    "restaurantSourceId": "R660",
+    "purpose": "family_meeting",
+    "purposeLabel": "상견례",
+    "keyword": "호생원 상견례 후기",
+    "sourceType": "블로그후기",
+    "title": "호생원 실제 상견례 후기",
+    "url": "https://www.diningcode.com/profile.php?rid=NMl0rJYeRH0a",
+    "publishedAt": null,
+    "summary": "10인 상견례를 단독룸에서 진행하고 화조도 6만원 코스·전용 세팅·주차를 이용한 후기 확인",
+    "platform": "다이닝코드",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R660-A",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "부모님"
+    ]
+  },
+  {
+    "id": "E1854",
+    "restaurantSourceId": "R660",
+    "purpose": null,
+    "purposeLabel": "시설검증",
+    "keyword": "호생원 룸 코스 주차",
+    "sourceType": "매장정보",
+    "title": "호생원 현재 매장 정보",
+    "url": "https://www.diningcode.com/profile.php?rid=NMl0rJYeRH0a",
+    "publishedAt": null,
+    "summary": "주소·매일 영업·개별 및 대형룸·코스 가격·무료주차 확인",
+    "platform": "다이닝코드",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R660-B",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1855",
+    "restaurantSourceId": "R660",
+    "purpose": null,
+    "purposeLabel": "장소검증",
+    "keyword": "호생원 용인 주소",
+    "sourceType": "카카오맵",
+    "title": "호생원 카카오맵",
+    "url": "https://map.kakao.com/?q=%ED%98%B8%EC%83%9D%EC%9B%90%20%EC%9A%A9%EC%9D%B8",
+    "publishedAt": null,
+    "summary": "동일 상호·주소의 현재 장소 존재 여부 교차 확인",
+    "platform": "카카오맵",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R660-C",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1856",
+    "restaurantSourceId": "R661",
+    "purpose": "family_meeting",
+    "purposeLabel": "상견례",
+    "keyword": "다이닝 류 상견례 후기",
+    "sourceType": "블로그후기",
+    "title": "다이닝 류 실제 상견례 후기",
+    "url": "https://www.diningcode.com/profile.php?rid=XbebQZvEjsQY",
+    "publishedAt": null,
+    "summary": "룸식당에서 러빙 코스로 실제 상견례를 진행하고 음식·격식 있는 세팅을 평가한 후기 확인",
+    "platform": "다이닝코드",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R661-A",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "부모님"
+    ]
+  },
+  {
+    "id": "E1857",
+    "restaurantSourceId": "R661",
+    "purpose": null,
+    "purposeLabel": "시설검증",
+    "keyword": "다이닝 류 코스 발렛 영업",
+    "sourceType": "매장정보",
+    "title": "다이닝 류 현재 매장 정보",
+    "url": "https://www.diningcode.com/profile.php?rid=XbebQZvEjsQY",
+    "publishedAt": null,
+    "summary": "주소·영업시간·5.5만~16만원 코스·프라이빗 좌석·발렛 확인",
+    "platform": "다이닝코드",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R661-B",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1858",
+    "restaurantSourceId": "R661",
+    "purpose": null,
+    "purposeLabel": "장소검증",
+    "keyword": "다이닝 류 용인 주소",
+    "sourceType": "카카오맵",
+    "title": "다이닝 류 카카오맵",
+    "url": "https://map.kakao.com/?q=%EB%8B%A4%EC%9D%B4%EB%8B%9D%20%EB%A5%98%20%EC%9A%A9%EC%9D%B8",
+    "publishedAt": null,
+    "summary": "동일 상호·주소의 현재 장소 존재 여부 교차 확인",
+    "platform": "카카오맵",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R661-C",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1859",
+    "restaurantSourceId": "R662",
+    "purpose": "family_meeting",
+    "purposeLabel": "상견례",
+    "keyword": "용인 로움 상견례 후기",
+    "sourceType": "블로그후기",
+    "title": "한정식 로움 실제 상견례 후기",
+    "url": "https://cydiary.com/%EC%83%81%EA%B2%AC%EB%A1%80-%ED%9B%84%EA%B8%B0-%EC%9A%A9%EC%9D%B8-%EB%A1%9C%EC%9B%80-%ED%95%9C%EC%A0%95%EC%8B%9D/",
+    "publishedAt": null,
+    "summary": "양가 상견례 장소로 직접 선택해 여러 룸 중 예약·이용한 후기 확인",
+    "platform": "CyDiary",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R662-A",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "부모님"
+    ]
+  },
+  {
+    "id": "E1860",
+    "restaurantSourceId": "R662",
+    "purpose": null,
+    "purposeLabel": "시설검증",
+    "keyword": "한정식 로움 주소 메뉴 룸",
+    "sourceType": "매장정보",
+    "title": "한정식 로움 현재 매장 정보",
+    "url": "https://www.tabling.co.kr/place/677ccfa466de5f0698849a6b",
+    "publishedAt": null,
+    "summary": "현재 주소와 정식·교자상·수라상·궁중상 가격대 및 룸 이용 정보 확인",
+    "platform": "테이블링",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R662-B",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1861",
+    "restaurantSourceId": "R662",
+    "purpose": null,
+    "purposeLabel": "장소검증",
+    "keyword": "한정식 로움 용인 주소",
+    "sourceType": "카카오맵",
+    "title": "한정식 로움 카카오맵",
+    "url": "https://map.kakao.com/?q=%ED%95%9C%EC%A0%95%EC%8B%9D%20%EB%A1%9C%EC%9B%80%20%EC%9A%A9%EC%9D%B8",
+    "publishedAt": null,
+    "summary": "동일 상호·주소의 현재 장소 존재 여부 교차 확인",
+    "platform": "카카오맵",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R662-C",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1862",
+    "restaurantSourceId": "R663",
+    "purpose": "invitation",
+    "purposeLabel": "청모",
+    "keyword": "달팽이부엌 청모",
+    "sourceType": "블로그후기",
+    "title": "달팽이부엌 실제 청모 후기",
+    "url": "https://www.diningcode.com/profile.php?rid=Z23QemH2F7sC",
+    "publishedAt": null,
+    "summary": "죽전·보정에서 청모를 위해 방문한 소규모 비스트로 후기 확인",
+    "platform": "다이닝코드",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R663-A",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "친구"
+    ]
+  },
+  {
+    "id": "E1863",
+    "restaurantSourceId": "R663",
+    "purpose": null,
+    "purposeLabel": "시설검증",
+    "keyword": "달팽이부엌 영업 메뉴 규모",
+    "sourceType": "매장정보",
+    "title": "달팽이부엌 현재 매장 정보",
+    "url": "https://www.diningcode.com/profile.php?rid=Z23QemH2F7sC",
+    "publishedAt": null,
+    "summary": "주소·요일별 영업시간·파스타와 스테이크 가격·소형 매장과 예약 권장 정보 확인",
+    "platform": "다이닝코드",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R663-B",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1864",
+    "restaurantSourceId": "R663",
+    "purpose": null,
+    "purposeLabel": "장소검증",
+    "keyword": "달팽이부엌 보정동 주소",
+    "sourceType": "카카오맵",
+    "title": "달팽이부엌 카카오맵",
+    "url": "https://map.kakao.com/?q=%EB%8B%AC%ED%8C%BD%EC%9D%B4%EB%B6%80%EC%97%8C%20%EB%B3%B4%EC%A0%95%EB%8F%99",
+    "publishedAt": null,
+    "summary": "동일 상호·주소의 현재 장소 존재 여부 교차 확인",
+    "platform": "카카오맵",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R663-C",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1865",
+    "restaurantSourceId": "R664",
+    "purpose": "invitation",
+    "purposeLabel": "청모",
+    "keyword": "다빈 보정동 청모",
+    "sourceType": "블로그후기",
+    "title": "다빈 실제 청모 내돈내산 후기",
+    "url": "https://www.diningcode.com/profile.php?rid=IBa6UXtgsBe6",
+    "publishedAt": null,
+    "summary": "친구들에게 청첩장을 건네는 청모로 방문해 음식·분위기·테이블 간격을 만족한 후기 확인",
+    "platform": "다이닝코드",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R664-A",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "친구"
+    ]
+  },
+  {
+    "id": "E1866",
+    "restaurantSourceId": "R664",
+    "purpose": null,
+    "purposeLabel": "시설검증",
+    "keyword": "다빈 영업 메뉴 단체예약 주차",
+    "sourceType": "매장정보",
+    "title": "다빈 현재 매장 정보",
+    "url": "https://www.diningcode.com/profile.php?rid=IBa6UXtgsBe6",
+    "publishedAt": null,
+    "summary": "주소·영업시간·파스타 가격·단체예약·매장 앞 2대 주차정보 확인",
+    "platform": "다이닝코드",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R664-B",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1867",
+    "restaurantSourceId": "R664",
+    "purpose": null,
+    "purposeLabel": "장소검증",
+    "keyword": "다빈 보정동 주소",
+    "sourceType": "카카오맵",
+    "title": "다빈 카카오맵",
+    "url": "https://map.kakao.com/?q=%EB%8B%A4%EB%B9%88%20%EB%B3%B4%EC%A0%95%EB%8F%99",
+    "publishedAt": null,
+    "summary": "동일 상호·주소의 현재 장소 존재 여부 교차 확인",
+    "platform": "카카오맵",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R664-C",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1868",
+    "restaurantSourceId": "R665",
+    "purpose": "invitation",
+    "purposeLabel": "청모",
+    "keyword": "보정족발 청모",
+    "sourceType": "블로그후기",
+    "title": "보정족발 실제 청모 기록",
+    "url": "https://www.diningcode.com/profile.php?rid=P60gjq7l0tWy",
+    "publishedAt": null,
+    "summary": "지인의 결혼을 축하하는 청모로 방문한 기록 확인",
+    "platform": "다이닝코드",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R665-A",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "친구"
+    ]
+  },
+  {
+    "id": "E1869",
+    "restaurantSourceId": "R665",
+    "purpose": null,
+    "purposeLabel": "시설검증",
+    "keyword": "보정족발 단체 예약 주차 영업",
+    "sourceType": "매장정보",
+    "title": "보정족발 현재 매장 정보",
+    "url": "https://www.diningcode.com/profile.php?rid=P60gjq7l0tWy",
+    "publishedAt": null,
+    "summary": "주소·영업시간·족발과 보쌈·단체석·예약·무료주차정보 확인",
+    "platform": "다이닝코드",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R665-B",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1870",
+    "restaurantSourceId": "R665",
+    "purpose": null,
+    "purposeLabel": "장소검증",
+    "keyword": "보정족발 주소",
+    "sourceType": "카카오맵",
+    "title": "보정족발 카카오맵",
+    "url": "https://map.kakao.com/?q=%EB%B3%B4%EC%A0%95%EC%A1%B1%EB%B0%9C",
+    "publishedAt": null,
+    "summary": "동일 상호·주소의 현재 장소 존재 여부 교차 확인",
+    "platform": "카카오맵",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R665-C",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1871",
+    "restaurantSourceId": "R666",
+    "purpose": "family_meeting",
+    "purposeLabel": "상견례",
+    "keyword": "연지한정식 상견례 후기",
+    "sourceType": "블로그후기",
+    "title": "연지 실제 상견례 후기",
+    "url": "https://www.diningcode.com/profile.php?rid=KFuP7nI1O8Ye",
+    "publishedAt": null,
+    "summary": "양가 부모님과 수라상으로 실제 상견례를 진행하고 개별룸·주차·음식에 만족한 후기 확인",
+    "platform": "다이닝코드",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R666-A",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "부모님"
+    ]
+  },
+  {
+    "id": "E1872",
+    "restaurantSourceId": "R666",
+    "purpose": null,
+    "purposeLabel": "시설검증",
+    "keyword": "연지 개별룸 코스 주차 영업",
+    "sourceType": "매장정보",
+    "title": "연지 현재 매장 정보",
+    "url": "https://www.diningcode.com/profile.php?rid=KFuP7nI1O8Ye",
+    "publishedAt": null,
+    "summary": "주소·매일 영업·개별 및 대형룸·2.2만~7.5만원 메뉴·무료주차 확인",
+    "platform": "다이닝코드",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R666-B",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1873",
+    "restaurantSourceId": "R666",
+    "purpose": null,
+    "purposeLabel": "장소검증",
+    "keyword": "연지한정식 용인 주소",
+    "sourceType": "카카오맵",
+    "title": "연지 카카오맵",
+    "url": "https://map.kakao.com/?q=%EC%97%B0%EC%A7%80%ED%95%9C%EC%A0%95%EC%8B%9D%20%EC%9A%A9%EC%9D%B8",
+    "publishedAt": null,
+    "summary": "동일 상호·주소의 현재 장소 존재 여부 교차 확인",
+    "platform": "카카오맵",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R666-C",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1874",
+    "restaurantSourceId": "R667",
+    "purpose": "family_meeting",
+    "purposeLabel": "상견례",
+    "keyword": "가오리와방패연 상견례 후기",
+    "sourceType": "블로그후기",
+    "title": "가오리와방패연 실제 상견례 후기",
+    "url": "https://www.diningcode.com/profile.php?rid=tFwmh4PRy1jq",
+    "publishedAt": null,
+    "summary": "성인 9인이 매화나무 39,000원 코스로 실제 상견례를 진행하고 대성공으로 평가",
+    "platform": "다이닝코드",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R667-A",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "부모님"
+    ]
+  },
+  {
+    "id": "E1875",
+    "restaurantSourceId": "R667",
+    "purpose": null,
+    "purposeLabel": "시설검증",
+    "keyword": "가오리와방패연 룸 코스 주차 영업",
+    "sourceType": "매장정보",
+    "title": "가오리와방패연 현재 매장 정보",
+    "url": "https://www.diningcode.com/profile.php?rid=tFwmh4PRy1jq",
+    "publishedAt": null,
+    "summary": "주소·매일 영업·2층 전체 룸·3.9만~5.9만원 코스·무료주차와 단체 수용 확인",
+    "platform": "다이닝코드",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R667-B",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1876",
+    "restaurantSourceId": "R667",
+    "purpose": null,
+    "purposeLabel": "장소검증",
+    "keyword": "가오리와방패연 용인 주소",
+    "sourceType": "카카오맵",
+    "title": "가오리와방패연 카카오맵",
+    "url": "https://map.kakao.com/?q=%EA%B0%80%EC%98%A4%EB%A6%AC%EC%99%80%EB%B0%A9%ED%8C%A8%EC%97%B0%20%EC%9A%A9%EC%9D%B8",
+    "publishedAt": null,
+    "summary": "동일 상호·주소 현재 장소 교차 확인",
+    "platform": "카카오맵",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R667-C",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1877",
+    "restaurantSourceId": "R668",
+    "purpose": "invitation",
+    "purposeLabel": "청모",
+    "keyword": "139 오리골 실제 이용 후기",
+    "sourceType": "블로그후기",
+    "title": "139 오리골 실제 청모 후기",
+    "url": "https://www.diningcode.com/profile.php?rid=P71D9EyF3djF",
+    "publishedAt": null,
+    "summary": "친구들과 실제 청모를 진행하며 청첩장을 전달했고 주말 예약 후 생오리구이를 이용",
+    "platform": "다이닝코드",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R668-A",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "친구"
+    ]
+  },
+  {
+    "id": "E1878",
+    "restaurantSourceId": "R668",
+    "purpose": null,
+    "purposeLabel": "시설검증",
+    "keyword": "139 오리골 영업 메뉴 주차",
+    "sourceType": "매장정보",
+    "title": "139 오리골 현재 매장 정보",
+    "url": "https://www.diningcode.com/profile.php?rid=P71D9EyF3djF",
+    "publishedAt": null,
+    "summary": "포곡읍 주소·11:40~22:00·오리 한 마리 6만~7만원·매장 앞 및 공영주차장 확인",
+    "platform": "다이닝코드",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R668-B",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1879",
+    "restaurantSourceId": "R668",
+    "purpose": null,
+    "purposeLabel": "장소검증",
+    "keyword": "139 오리골 용인 주소",
+    "sourceType": "카카오맵",
+    "title": "139 오리골 카카오맵",
+    "url": "https://map.kakao.com/?q=139%20%EC%98%A4%EB%A6%AC%EA%B3%A8%20%EC%9A%A9%EC%9D%B8",
+    "publishedAt": null,
+    "summary": "동일 상호·용인 주소의 현재 장소 교차 확인",
+    "platform": "카카오맵",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R668-C",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1880",
+    "restaurantSourceId": "R669",
+    "purpose": "invitation",
+    "purposeLabel": "청모",
+    "keyword": "부엉이산장 기흥구청점 실제 이용 후기",
+    "sourceType": "블로그후기",
+    "title": "부엉이산장 기흥구청점 실제 청모 후기",
+    "url": "https://www.diningcode.com/profile.php?rid=almwj8n7kxs9",
+    "publishedAt": null,
+    "summary": "지인 3명이 항정수육·김치보쌈과 반반전으로 실제 청첩장 모임 진행",
+    "platform": "다이닝코드",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R669-A",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "친구"
+    ]
+  },
+  {
+    "id": "E1881",
+    "restaurantSourceId": "R669",
+    "purpose": null,
+    "purposeLabel": "시설검증",
+    "keyword": "부엉이산장 기흥구청점 영업 메뉴 주차",
+    "sourceType": "매장정보",
+    "title": "부엉이산장 기흥구청점 현재 매장 정보",
+    "url": "https://www.diningcode.com/profile.php?rid=almwj8n7kxs9",
+    "publishedAt": null,
+    "summary": "구갈동 주소·늦은 영업·1.5만~3.1만원 안주·단체 이용과 건물 주차 확인",
+    "platform": "다이닝코드",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R669-B",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1882",
+    "restaurantSourceId": "R669",
+    "purpose": null,
+    "purposeLabel": "장소검증",
+    "keyword": "부엉이산장 기흥구청점 용인 주소",
+    "sourceType": "카카오맵",
+    "title": "부엉이산장 기흥구청점 카카오맵",
+    "url": "https://map.kakao.com/?q=%EB%B6%80%EC%97%89%EC%9D%B4%EC%82%B0%EC%9E%A5%20%EA%B8%B0%ED%9D%A5%EA%B5%AC%EC%B2%AD%EC%A0%90%20%EC%9A%A9%EC%9D%B8",
+    "publishedAt": null,
+    "summary": "동일 상호·용인 주소의 현재 장소 교차 확인",
+    "platform": "카카오맵",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R669-C",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1883",
+    "restaurantSourceId": "R670",
+    "purpose": "invitation",
+    "purposeLabel": "청모",
+    "keyword": "코델리아 실제 이용 후기",
+    "sourceType": "블로그후기",
+    "title": "코델리아 실제 청모 후기",
+    "url": "https://www.diningcode.com/profile.php?rid=JfwAPZXBVSH8",
+    "publishedAt": null,
+    "summary": "친구 청첩장 모임으로 실제 방문한 후기와 조용한 분위기·식사 만족 확인",
+    "platform": "다이닝코드",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R670-A",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "친구"
+    ]
+  },
+  {
+    "id": "E1884",
+    "restaurantSourceId": "R670",
+    "purpose": null,
+    "purposeLabel": "시설검증",
+    "keyword": "코델리아 영업 메뉴 주차",
+    "sourceType": "매장정보",
+    "title": "코델리아 현재 매장 정보",
+    "url": "https://www.diningcode.com/profile.php?rid=JfwAPZXBVSH8",
+    "publishedAt": null,
+    "summary": "김량장동 CGV 12층·11:00~22:00·브레이크타임·지하주차와 단체 이용 확인",
+    "platform": "다이닝코드",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R670-B",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1885",
+    "restaurantSourceId": "R670",
+    "purpose": null,
+    "purposeLabel": "장소검증",
+    "keyword": "코델리아 용인 주소",
+    "sourceType": "카카오맵",
+    "title": "코델리아 카카오맵",
+    "url": "https://map.kakao.com/?q=%EC%BD%94%EB%8D%B8%EB%A6%AC%EC%95%84%20%EC%9A%A9%EC%9D%B8",
+    "publishedAt": null,
+    "summary": "동일 상호·용인 주소의 현재 장소 교차 확인",
+    "platform": "카카오맵",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R670-C",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1886",
+    "restaurantSourceId": "R671",
+    "purpose": "family_meeting",
+    "purposeLabel": "상견례",
+    "keyword": "들꽃 실제 이용 후기",
+    "sourceType": "블로그후기",
+    "title": "들꽃 실제 상견례 후기",
+    "url": "https://www.diningcode.com/profile.php?rid=HhCVmIqv6Wbe",
+    "publishedAt": null,
+    "summary": "양가 8명이 꽃다지 39,000원 코스로 실제 상견례를 진행하고 마무리한 후기 확인",
+    "platform": "다이닝코드",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R671-A",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "부모님"
+    ]
+  },
+  {
+    "id": "E1887",
+    "restaurantSourceId": "R671",
+    "purpose": null,
+    "purposeLabel": "시설검증",
+    "keyword": "들꽃 영업 메뉴 주차",
+    "sourceType": "매장정보",
+    "title": "들꽃 현재 매장 정보",
+    "url": "https://www.diningcode.com/profile.php?rid=HhCVmIqv6Wbe",
+    "publishedAt": null,
+    "summary": "2026년 역북동 확장 이전·11:30~21:00·1.9만~4.9만원 코스·룸과 무료주차 확인",
+    "platform": "다이닝코드",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R671-B",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1888",
+    "restaurantSourceId": "R671",
+    "purpose": null,
+    "purposeLabel": "장소검증",
+    "keyword": "들꽃 용인 주소",
+    "sourceType": "카카오맵",
+    "title": "들꽃 카카오맵",
+    "url": "https://map.kakao.com/?q=%EB%93%A4%EA%BD%83%20%EC%9A%A9%EC%9D%B8",
+    "publishedAt": null,
+    "summary": "동일 상호·용인 주소의 현재 장소 교차 확인",
+    "platform": "카카오맵",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R671-C",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1889",
+    "restaurantSourceId": "R672",
+    "purpose": "invitation",
+    "purposeLabel": "청모",
+    "keyword": "치에스타 실제 청첩장 모임",
+    "sourceType": "블로그후기",
+    "title": "치에스타 실제 청첩장 모임 후기",
+    "url": "https://www.diningcode.com/profile.php?rid=Vjh6d9BimYLL",
+    "publishedAt": "2026-01-25",
+    "summary": "죽전 치에스타에서 청첩장 모임을 진행하며 전복리조또·피자·알리오올리오를 주문한 실제 이용 후기 확인",
+    "platform": "다이닝코드",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R672-A",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "친구"
+    ]
+  },
+  {
+    "id": "E1890",
+    "restaurantSourceId": "R672",
+    "purpose": null,
+    "purposeLabel": "시설검증",
+    "keyword": "치에스타 영업 메뉴 주차",
+    "sourceType": "매장정보",
+    "title": "치에스타 현재 매장 정보",
+    "url": "https://www.diningcode.com/profile.php?rid=Vjh6d9BimYLL",
+    "publishedAt": null,
+    "summary": "주소·11:00~21:30 영업·브레이크타임·1.8만~3.8만원대 메뉴와 건물 앞 약 3대 주차 정보 확인",
+    "platform": "다이닝코드",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R672-B",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1891",
+    "restaurantSourceId": "R672",
+    "purpose": null,
+    "purposeLabel": "장소검증",
+    "keyword": "치에스타 보정동 주소",
+    "sourceType": "카카오맵",
+    "title": "치에스타 카카오맵",
+    "url": "https://map.kakao.com/?q=%EC%B9%98%EC%97%90%EC%8A%A4%ED%83%80%20%EB%B3%B4%EC%A0%95%EB%8F%99",
+    "publishedAt": null,
+    "summary": "동일 상호·보정동 주소의 현재 장소 교차 확인",
+    "platform": "카카오맵",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R672-C",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1892",
+    "restaurantSourceId": "R673",
+    "purpose": "invitation",
+    "purposeLabel": "청모",
+    "keyword": "수뿌레닭갈비 죽전점 실제 청첩장 모임",
+    "sourceType": "블로그후기",
+    "title": "수뿌레닭갈비 죽전점 실제 청첩장 모임 후기",
+    "url": "https://www.where-locals-go.com/restaurants/31",
+    "publishedAt": "2026-03-25",
+    "summary": "연이어 진행한 청첩장 모임 중 한식 메뉴를 선택해 친구와 소금·양념 숯불닭갈비를 실제 이용한 후기 확인",
+    "platform": "Where Locals Go",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R673-A",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "친구"
+    ]
+  },
+  {
+    "id": "E1893",
+    "restaurantSourceId": "R673",
+    "purpose": null,
+    "purposeLabel": "시설검증",
+    "keyword": "수뿌레닭갈비 죽전점 영업 메뉴 주차",
+    "sourceType": "매장정보",
+    "title": "수뿌레닭갈비 죽전점 현재 매장 정보",
+    "url": "https://www.diningcode.com/profile.php?rid=twutu3ZYGGpq",
+    "publishedAt": null,
+    "summary": "주소·월~토 11:00~22:00·일요일 휴무·1.5만원 숯불닭갈비·예약 가능·무료주차 확인",
+    "platform": "다이닝코드",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R673-B",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1894",
+    "restaurantSourceId": "R673",
+    "purpose": null,
+    "purposeLabel": "장소검증",
+    "keyword": "수뿌레닭갈비 죽전점 주소",
+    "sourceType": "카카오맵",
+    "title": "수뿌레닭갈비 죽전점 카카오맵",
+    "url": "https://map.kakao.com/?q=%EC%88%98%EB%BF%8C%EB%A0%88%EB%8B%AD%EA%B0%88%EB%B9%84%20%EC%A3%BD%EC%A0%84%EC%A0%90",
+    "publishedAt": null,
+    "summary": "동일 상호·죽전로27번길 주소의 현재 장소 교차 확인",
+    "platform": "카카오맵",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R673-C",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1895",
+    "restaurantSourceId": "R674",
+    "purpose": "invitation",
+    "purposeLabel": "청모",
+    "keyword": "산뜨락 실제 청모 이용",
+    "sourceType": "방문자리뷰",
+    "title": "산뜨락 청모 방문자 리뷰",
+    "url": "https://www.diningcode.com/profile.php?rid=Ab5TzR2Tu8m3",
+    "publishedAt": "2024-08-13",
+    "summary": "산뜨락정식을 이용한 방문자가 방문 목적을 청모로 직접 표시하고 맛·정갈함·넓은 주차장을 긍정 평가",
+    "platform": "다이닝코드",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R674-A",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1896",
+    "restaurantSourceId": "R674",
+    "purpose": null,
+    "purposeLabel": "시설검증",
+    "keyword": "산뜨락 영업 메뉴 룸 주차",
+    "sourceType": "매장정보",
+    "title": "산뜨락 현재 매장 정보",
+    "url": "https://www.diningcode.com/profile.php?rid=Ab5TzR2Tu8m3",
+    "publishedAt": null,
+    "summary": "주소·11:00~21:00 영업·2.7만~6.7만원 정식·개별룸과 대형룸·무료주차 확인",
+    "platform": "다이닝코드",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R674-B",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1897",
+    "restaurantSourceId": "R674",
+    "purpose": null,
+    "purposeLabel": "장소검증",
+    "keyword": "산뜨락 수지 주소",
+    "sourceType": "카카오맵",
+    "title": "산뜨락 카카오맵",
+    "url": "https://map.kakao.com/?q=%EC%82%B0%EB%9C%A8%EB%9D%BD%20%EC%88%98%EC%A7%80",
+    "publishedAt": null,
+    "summary": "동일 상호·신봉2로 180 주소의 현재 장소 교차 확인",
+    "platform": "카카오맵",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R674-C",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1898",
+    "restaurantSourceId": "R675",
+    "purpose": "family_meeting",
+    "purposeLabel": "상견례",
+    "keyword": "긴자 용인죽전역점 실제 상견례",
+    "sourceType": "리뷰집계",
+    "title": "긴자 용인죽전역점 상견례 진행 사례",
+    "url": "https://www.siksinhot.com/P/1076235",
+    "publishedAt": null,
+    "summary": "프라이빗룸에서 상견례가 실제 진행되고 상견례 테이블 세팅과 2시간 무료주차가 제공된 사례 확인",
+    "platform": "식신",
+    "sponsored": "no",
+    "confidence": "medium",
+    "duplicateGroup": "R675-A",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "부모님"
+    ]
+  },
+  {
+    "id": "E1899",
+    "restaurantSourceId": "R675",
+    "purpose": null,
+    "purposeLabel": "시설검증",
+    "keyword": "긴자 용인죽전역점 메뉴 룸 주차",
+    "sourceType": "매장정보",
+    "title": "긴자 용인죽전역점 현재 매장 정보",
+    "url": "https://www.siksinhot.com/P/1076235",
+    "publishedAt": null,
+    "summary": "주소·2.9만~9.5만원 코스·예약 가능·개별룸·단체테이블·넉넉한 주차공간 확인",
+    "platform": "식신",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R675-B",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1900",
+    "restaurantSourceId": "R675",
+    "purpose": null,
+    "purposeLabel": "장소검증",
+    "keyword": "긴자 용인죽전역점 주소와 접근성",
+    "sourceType": "방문후기",
+    "title": "긴자 용인죽전역점 가족 방문 후기",
+    "url": "https://shelly9.tistory.com/entry/%E2%98%86%EC%A3%BD%EC%A0%84-%EA%B8%B4%EC%9E%90-%EB%B0%A9%EB%AC%B8%EA%B8%B0-%E2%80%93-%EA%B0%80%EC%A1%B1%EA%B3%BC-%ED%95%A8%EA%BB%98%ED%95%9C-%ED%8A%B9%EB%B3%84%ED%95%9C-%EC%83%9D%EC%9D%BC-%EC%9D%BC%EC%8B%9D-%EC%BD%94%EC%8A%A4-%EC%9A%94%EB%A6%AC",
+    "publishedAt": "2025-06-01",
+    "summary": "죽전역 2번 출구 도보 3~5분·효성해링턴플레이스 지하주차장·프라이빗룸 이용 확인",
+    "platform": "Tistory",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R675-C",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "가족"
+    ]
+  },
+  {
+    "id": "E1901",
+    "restaurantSourceId": "R676",
+    "purpose": "family_meeting",
+    "purposeLabel": "상견례",
+    "keyword": "서예정식 실제 상견례",
+    "sourceType": "개인후기",
+    "title": "용인 상견례장소 서예정식 보리굴비맛집",
+    "url": "https://running-crew.tistory.com/34",
+    "publishedAt": "2023-01-06",
+    "summary": "양가 부모님과 실제 상견례를 진행했고 통창 단독룸·테이블 세팅을 이용해 편안하게 마쳤다고 기록",
+    "platform": "Tistory",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R676-A",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "부모님"
+    ]
+  },
+  {
+    "id": "E1902",
+    "restaurantSourceId": "R676",
+    "purpose": null,
+    "purposeLabel": "시설검증",
+    "keyword": "서예정식 현재 영업 메뉴 룸",
+    "sourceType": "리뷰집계",
+    "title": "서예정식 - 용인 추어탕, 보리굴비 맛집",
+    "url": "https://www.diningcode.com/profile.php?rid=rJGWLgMfkdUC",
+    "publishedAt": null,
+    "summary": "현재 주소·10:30~21:00 영업·1.9만원 서예반상·무료주차·개별룸 정보 확인",
+    "platform": "다이닝코드",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R676-B",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1903",
+    "restaurantSourceId": "R676",
+    "purpose": null,
+    "purposeLabel": "장소검증",
+    "keyword": "서예정식 주소 주차 예약",
+    "sourceType": "매장정보",
+    "title": "서예정식 최신 장소 정보",
+    "url": "https://peton.me/bbs/board.php?bo_table=addPlace&page=1546&sod=asc&sop=and&sst=wr_hit&wr_id=234622",
+    "publishedAt": "2026-02-23",
+    "summary": "주소·전화·매일 영업·단체 이용·예약·유아의자·주차와 현재 운영 정보 확인",
+    "platform": "펫온",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R676-C",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1904",
+    "restaurantSourceId": "R677",
+    "purpose": "family_meeting",
+    "purposeLabel": "상견례",
+    "keyword": "우루루 광교상현점 실제 상견례",
+    "sourceType": "개인후기",
+    "title": "결혼 준비 (2) - 상견례 / 식당 예약하기",
+    "url": "https://rubylosey.tistory.com/94",
+    "publishedAt": "2025-04-15",
+    "summary": "성인 10명과 어린이 2명이 룸에서 런치 A코스로 실제 상견례를 진행한 기록 확인; 음식 제공 속도 불만도 명시",
+    "platform": "Tistory",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R677-A",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "부모님"
+    ]
+  },
+  {
+    "id": "E1905",
+    "restaurantSourceId": "R677",
+    "purpose": null,
+    "purposeLabel": "시설검증",
+    "keyword": "우루루 광교상현점 영업 메뉴 룸 주차",
+    "sourceType": "리뷰집계",
+    "title": "우루루 광교상현점 - 광교 중식, 베이징덕 맛집",
+    "url": "https://www.diningcode.com/profile.php?rid=t24sv73wXrIC",
+    "publishedAt": null,
+    "summary": "주소·매일 11:00~21:30 영업·중식 코스·프라이빗룸·지하주차장과 현재 메뉴 가격 확인",
+    "platform": "다이닝코드",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R677-B",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1906",
+    "restaurantSourceId": "R677",
+    "purpose": null,
+    "purposeLabel": "장소검증",
+    "keyword": "우루루 광교상현점 현재 사업장",
+    "sourceType": "사업자정보",
+    "title": "우루루 광교상현점 사업자 현재 상태",
+    "url": "https://bizno.net/article/7298502799",
+    "publishedAt": null,
+    "summary": "광교 U-TOWER 1층 117~130호 주소와 사업자 계속 상태 확인",
+    "platform": "비즈노",
+    "sponsored": "no",
+    "confidence": "medium",
+    "duplicateGroup": "R677-C",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1907",
+    "restaurantSourceId": "R678",
+    "purpose": "invitation",
+    "purposeLabel": "청모",
+    "keyword": "용두동나정순할매쭈꾸미집 실제 청첩장 모임",
+    "sourceType": "개인후기",
+    "title": "구성역 맛집 추천 용두동나정순할매쭈꾸미집 내돈내산 찐후기",
+    "url": "https://www.diningcode.com/profile.php?rid=67QifTkijc98",
+    "publishedAt": "2026-07-16",
+    "summary": "친구와 구성역에서 청첩장 모임을 하다 직접 방문했고 맛과 분위기에 만족한 내돈내산 기록 확인",
+    "platform": "네이버 블로그·다이닝코드",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R678-A",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "친구"
+    ]
+  },
+  {
+    "id": "E1908",
+    "restaurantSourceId": "R678",
+    "purpose": null,
+    "purposeLabel": "시설검증",
+    "keyword": "용두동나정순할매쭈꾸미집 영업 메뉴 주차",
+    "sourceType": "리뷰집계",
+    "title": "용두동나정순할매쭈꾸미집 - 용인 쭈꾸미 맛집",
+    "url": "https://www.diningcode.com/profile.php?rid=67QifTkijc98",
+    "publishedAt": null,
+    "summary": "주소·10:00~22:00 영업·쭈꾸미 1.3만~1.5만원·구성역 접근·주차와 첫째 일요일 휴무 정보 확인",
+    "platform": "다이닝코드",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R678-B",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1909",
+    "restaurantSourceId": "R678",
+    "purpose": null,
+    "purposeLabel": "장소검증",
+    "keyword": "용두동나정순할매쭈꾸미집 현재 운영",
+    "sourceType": "매장정보",
+    "title": "용두동나정순할매쭈꾸미집 운영·가격·평가 정보",
+    "url": "https://restaurantguru.com/%EC%9A%A9%EB%91%90%EB%8F%99%EB%82%98%EC%A0%95%EC%88%9C%ED%95%A0%EB%A7%A4%EC%AD%88%EA%BE%B8%EB%AF%B8%EC%A7%91-Yongin-si",
+    "publishedAt": "2026-03-25",
+    "summary": "마북동 주소·전화·영업 상태·1만~2만원대·Google 평점 4.1과 예약 가능 정보 확인",
+    "platform": "Restaurant Guru",
+    "sponsored": "no",
+    "confidence": "medium",
+    "duplicateGroup": "R678-C",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1910",
+    "restaurantSourceId": "R679",
+    "purpose": "invitation",
+    "purposeLabel": "청모",
+    "keyword": "청담동샤브 AK&기흥점 실제 청첩장 전달 모임",
+    "sourceType": "개인후기",
+    "title": "기흥 AK 청담동샤브 다녀왔어요. 청첩장 받으면서 먹은 점심",
+    "url": "https://www.diningcode.com/profile.php?rid=w8yv0OanM1c1",
+    "publishedAt": "2026-05-20",
+    "summary": "친구에게 직접 청첩장을 받으며 점심을 먹었고 깔끔한 매장·차분한 분위기·음식과 대화 편의에 만족한 방문 기록 확인",
+    "platform": "네이버 블로그·다이닝코드",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R679-A",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "친구"
+    ]
+  },
+  {
+    "id": "E1911",
+    "restaurantSourceId": "R679",
+    "purpose": null,
+    "purposeLabel": "장소검증",
+    "keyword": "청담동샤브 AK&기흥점 공식 매장",
+    "sourceType": "공식",
+    "title": "청담동샤브 가족점 AK&기흥점",
+    "url": "https://www.cddshabu.co.kr/",
+    "publishedAt": null,
+    "summary": "브랜드 공식 가족점 목록에서 경기 용인시 기흥구 기흥역로 63 상가동 4층 주소와 0507-1363-8327 전화번호 확인",
+    "platform": "청담동샤브",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R679-B",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1912",
+    "restaurantSourceId": "R679",
+    "purpose": null,
+    "purposeLabel": "시설검증",
+    "keyword": "청담동샤브 AK&기흥점 메뉴 가격 주차",
+    "sourceType": "개인후기",
+    "title": "1인 샤브 편백찜 전문 청담동샤브 기흥AK&기흥점",
+    "url": "https://moranipigi.tistory.com/364?category=1197736",
+    "publishedAt": "2024-06-13",
+    "summary": "1인 샤브·스키야키·편백찜 구성과 1만1900~1만4900원 가격대, 각자 먹기 편한 1인 상차림 확인",
+    "platform": "티스토리",
+    "sponsored": "no",
+    "confidence": "medium",
+    "duplicateGroup": "R679-C",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1913",
+    "restaurantSourceId": "R680",
+    "purpose": "invitation",
+    "purposeLabel": "청모",
+    "keyword": "루다식탁 실제 동탄 청모",
+    "sourceType": "개인후기",
+    "title": "동탄 청모 내돈내산 맛집 루다식탁 솔직후기",
+    "url": "https://www.diningcode.com/profile.php?rid=Cl5rFFY2owB1",
+    "publishedAt": "2026-01-18",
+    "summary": "여러 달 이어진 실제 청모 중 동탄역 루다식탁을 방문했고 3명이 파스타·뇨끼·스테이크를 먹은 내돈내산 기록 확인",
+    "platform": "네이버 블로그·다이닝코드",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R680-A",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "친구"
+    ]
+  },
+  {
+    "id": "E1914",
+    "restaurantSourceId": "R680",
+    "purpose": null,
+    "purposeLabel": "시설검증",
+    "keyword": "루다식탁 영업 가격 주차",
+    "sourceType": "리뷰집계",
+    "title": "루다식탁 - 동탄역 파스타 뇨끼 맛집",
+    "url": "https://www.diningcode.com/profile.php?rid=Cl5rFFY2owB1",
+    "publishedAt": null,
+    "summary": "동탄역로 102 앨리스빌 2층 위치·월요일 휴무·영업시간·2시간 주차·4~5개 테이블·1인당 약 2만원대 정보 확인",
+    "platform": "다이닝코드",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R680-B",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1915",
+    "restaurantSourceId": "R680",
+    "purpose": null,
+    "purposeLabel": "장소검증",
+    "keyword": "루다식탁 현재 주소",
+    "sourceType": "사업자정보",
+    "title": "루다식탁 기업정보",
+    "url": "https://m.albamon.com/jobs/detail-company/dntqaxOlNOM-vkGekMXu7w%3D%3D",
+    "publishedAt": null,
+    "summary": "화성시 오산동 동탄역린스트라우스 앨리스빌상가 2층 2023호의 현재 사업장 주소 확인",
+    "platform": "알바몬",
+    "sponsored": "no",
+    "confidence": "medium",
+    "duplicateGroup": "R680-C",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1916",
+    "restaurantSourceId": "R681",
+    "purpose": "invitation",
+    "purposeLabel": "청모",
+    "keyword": "풍뉴 동탄역점 실제 청모",
+    "sourceType": "개인후기",
+    "title": "동탄역 술집 풍뉴 분위기 좋은 청모 맛집",
+    "url": "https://www.diningcode.com/profile.php?rid=6oBmmO2Bpu0F",
+    "publishedAt": "2026-02-07",
+    "summary": "동탄 거주 친구와 청모하기 위해 직접 방문했고 음식 분위기와 모임 적합성을 긍정적으로 기록",
+    "platform": "네이버 블로그·다이닝코드",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R681-A",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "친구"
+    ]
+  },
+  {
+    "id": "E1917",
+    "restaurantSourceId": "R681",
+    "purpose": null,
+    "purposeLabel": "시설검증",
+    "keyword": "풍뉴 동탄역점 현재 영업 메뉴 룸",
+    "sourceType": "리뷰집계",
+    "title": "풍뉴 동탄역점 - 동탄역 요리주점 술집 맛집",
+    "url": "https://www.diningcode.com/profile.php?rid=6oBmmO2Bpu0F",
+    "publishedAt": null,
+    "summary": "동탄대로 446 주소·17:00~23:00 영업·대표 메뉴 1.9만~4.1만원·단체룸·그란비아스타 주차 정보 확인",
+    "platform": "다이닝코드",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R681-B",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1918",
+    "restaurantSourceId": "R681",
+    "purpose": null,
+    "purposeLabel": "장소검증",
+    "keyword": "풍뉴 동탄역점 공식 채널",
+    "sourceType": "공식SNS",
+    "title": "풍뉴 동탄역점 공식 인스타그램",
+    "url": "https://www.instagram.com/pungnew_dongtan/",
+    "publishedAt": null,
+    "summary": "매장 공식 SNS 채널과 현재 운영 홍보 창구 확인",
+    "platform": "풍뉴 동탄역점",
+    "sponsored": "no",
+    "confidence": "medium",
+    "duplicateGroup": "R681-C",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1919",
+    "restaurantSourceId": "R682",
+    "purpose": "invitation",
+    "purposeLabel": "청모",
+    "keyword": "잡채 실제 동탄역 청모",
+    "sourceType": "개인후기",
+    "title": "결혼준비 동탄역 청모 하기 좋은 이자카야 잡채",
+    "url": "https://www.diningcode.com/profile.php?rid=g4efTx7c3H4s",
+    "publishedAt": "2026-03-26",
+    "summary": "스몰웨딩에 초대한 가장 친한 친구 4명과 동탄역에서 실제 청모를 진행하고 맛·분위기·재방문 의사를 긍정적으로 기록",
+    "platform": "네이버 블로그·다이닝코드",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R682-A",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "친구"
+    ]
+  },
+  {
+    "id": "E1920",
+    "restaurantSourceId": "R682",
+    "purpose": null,
+    "purposeLabel": "시설검증",
+    "keyword": "잡채 현재 영업 메뉴 주차",
+    "sourceType": "리뷰집계",
+    "title": "잡채 - 동탄역 이자카야 맛집",
+    "url": "https://www.diningcode.com/profile.php?rid=g4efTx7c3H4s",
+    "publishedAt": null,
+    "summary": "동탄오산로 29 주소·17:30~24:00 영업·1.9만~4.8만원 메뉴·예약·주차 정보를 확인",
+    "platform": "다이닝코드",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R682-B",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1921",
+    "restaurantSourceId": "R682",
+    "purpose": null,
+    "purposeLabel": "장소검증",
+    "keyword": "잡채 현재 사업장",
+    "sourceType": "사업자정보",
+    "title": "동탄 이자카야 잡채 홀서버·홀매니저 모집",
+    "url": "https://m.jobkorea.co.kr/Recruit/GI_Read/47997941?sc=1",
+    "publishedAt": "2025-11-06",
+    "summary": "동탄오산로 29 1층 A117~119호의 현재 사업장 주소와 운영 인력 채용 기록 확인",
+    "platform": "잡코리아",
+    "sponsored": "no",
+    "confidence": "medium",
+    "duplicateGroup": "R682-C",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1922",
+    "restaurantSourceId": "R683",
+    "purpose": "invitation",
+    "purposeLabel": "청모",
+    "keyword": "태산화로 실제 청첩장 모임",
+    "sourceType": "개인후기",
+    "title": "동탄역 태산화로 후기 청첩장 모임·회식 장소",
+    "url": "https://www.diningcode.com/profile.php?rid=ggslHd50Uh9q",
+    "publishedAt": "2026-03-05",
+    "summary": "4명이 청첩장 모임으로 직접 방문해 돼지갈비·막창·껍데기 등을 먹고 접근성·주차·모임 적합성을 긍정적으로 평가",
+    "platform": "네이버 블로그·다이닝코드",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R683-A",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "친구"
+    ]
+  },
+  {
+    "id": "E1923",
+    "restaurantSourceId": "R683",
+    "purpose": null,
+    "purposeLabel": "시설검증",
+    "keyword": "태산화로 현재 영업 가격 주차",
+    "sourceType": "리뷰집계",
+    "title": "태산화로 - 동탄역 돼지갈비 막창 맛집",
+    "url": "https://www.diningcode.com/profile.php?rid=ggslHd50Uh9q",
+    "publishedAt": null,
+    "summary": "동탄역로 124 주소·17:00~24:00 영업·일요일 휴무·1.6만~3만원 메뉴·지하주차장 정보를 확인",
+    "platform": "다이닝코드",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R683-B",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1924",
+    "restaurantSourceId": "R683",
+    "purpose": null,
+    "purposeLabel": "장소검증",
+    "keyword": "태산화로 현 주소",
+    "sourceType": "매장정보",
+    "title": "태산화로 - 화성시 오산동",
+    "url": "https://www.siksinhot.com/P/1582018",
+    "publishedAt": null,
+    "summary": "동탄역 윤정프라자 114호 주소와 초벌·직접 구이 방식의 현재 매장 정보 확인",
+    "platform": "식신",
+    "sponsored": "no",
+    "confidence": "medium",
+    "duplicateGroup": "R683-C",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1925",
+    "restaurantSourceId": "R684",
+    "purpose": "invitation",
+    "purposeLabel": "청모",
+    "keyword": "속초오징어어시장 동탄역점 실제 청모",
+    "sourceType": "개인후기",
+    "title": "동탄 모임 하기 좋은 넓고 맛있는 횟집 추천",
+    "url": "https://www.diningcode.com/profile.php?rid=3BOCscis8YOk",
+    "publishedAt": "2024-07-14",
+    "summary": "회사 동갑 동기 6명이 실제 청첩장 모임으로 방문해 회·튀김·매운탕을 먹고 넓은 매장과 단체 이용을 긍정적으로 기록",
+    "platform": "네이버 블로그·다이닝코드",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R684-A",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "회사동료"
+    ]
+  },
+  {
+    "id": "E1926",
+    "restaurantSourceId": "R684",
+    "purpose": null,
+    "purposeLabel": "시설검증",
+    "keyword": "속초오징어어시장 동탄역점 현재 영업 메뉴",
+    "sourceType": "리뷰집계",
+    "title": "속초오징어어시장 - 동탄역 횟집 오징어회 맛집",
+    "url": "https://www.diningcode.com/profile.php?rid=3BOCscis8YOk",
+    "publishedAt": null,
+    "summary": "동탄오산로 82 주소·평일 15시/주말 11시부터 23시 영업·2.1만~7.5만원 메뉴·예약·주차 정보를 확인",
+    "platform": "다이닝코드",
+    "sponsored": "no",
+    "confidence": "high",
+    "duplicateGroup": "R684-B",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
+  },
+  {
+    "id": "E1927",
+    "restaurantSourceId": "R684",
+    "purpose": null,
+    "purposeLabel": "장소검증",
+    "keyword": "속초오징어어시장 동탄역점 최근 운영",
+    "sourceType": "개인후기",
+    "title": "동탄 속초오징어어시장 동탄역점 방어회 후기",
+    "url": "https://jedo1124.tistory.com/61",
+    "publishedAt": "2026-03-08",
+    "summary": "최근 방문 후기에서 동탄오산로 82 주소·평일과 주말 영업시간·지하주차장·제철회 운영을 재확인",
+    "platform": "티스토리",
+    "sponsored": "no",
+    "confidence": "medium",
+    "duplicateGroup": "R684-C",
+    "collectedAt": "2026-08-08",
+    "companionTypes": [
+      "확인불가"
+    ]
   }
 ]

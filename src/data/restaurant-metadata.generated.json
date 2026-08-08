@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-08-08T06:30:22.344Z",
+  "generatedAt": "2026-08-08T08:32:34.994Z",
   "sourceSpreadsheetId": "1-aC-dMvSfVnBfzpTuqY2tWwzgdJ15aBoZ6KOomvJZD4",
   "sourceSheetName": "Restaurants",
   "evidenceSheetName": "Evidence",
-  "sourceRows": 628,
-  "exportedRestaurants": 591,
-  "sourceEvidenceRows": 1768,
-  "exportedEvidence": 1687,
+  "sourceRows": 681,
+  "exportedRestaurants": 647,
+  "sourceEvidenceRows": 1927,
+  "exportedEvidence": 1855,
   "coordinates": {
     "fromSheet": 0,
-    "fromCache": 590,
+    "fromCache": 646,
     "geocodedThisBuild": 0,
     "missing": 1
   },
@@ -32,12 +32,20 @@
     "성동구",
     "성북구",
     "송파구",
+    "수원시 권선구",
+    "수원시 영통구",
+    "수원시 장안구",
+    "수원시 팔달구",
     "양천구",
     "영등포구",
     "용산구",
+    "용인시 기흥구",
+    "용인시 수지구",
+    "용인시 처인구",
     "은평구",
     "종로구",
     "중구",
-    "중랑구"
+    "중랑구",
+    "화성시 동탄구"
   ]
 }

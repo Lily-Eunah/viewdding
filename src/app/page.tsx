@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Viewdding | 결혼 준비를 위한 장소 찾기",
-  description: "서울 웨딩홀과 청첩장 모임·상견례 장소를 조건별로 찾아보세요.",
+  description: "서울·경기 웨딩홀과 청첩장 모임·상견례 장소를 조건별로 찾아보세요.",
 };
 
 export default function HomePage() {

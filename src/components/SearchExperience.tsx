@@ -6,7 +6,7 @@ import { X } from "@phosphor-icons/react";
 import { EMPTY_FILTERS, filterHalls } from "@/domain/filter";
 import { groupFilteredHallsByVenue } from "@/domain/hall-map";
 import type { CeremonyFormat, FilterState, HallTypeFilter, MealType } from "@/domain/types";
-import { districts, halls } from "@/lib/data";
+import { gyeonggiDistricts, halls, seoulDistricts } from "@/lib/data";
 import { CEREMONY_OPTIONS, HALL_TYPE_GROUPS, INTERVAL_OPTIONS, MEAL_OPTIONS, hallTypeLabel } from "@/lib/labels";
 import { HallCard } from "./HallCard";
 import { KakaoHallMap } from "./KakaoHallMap";
@@ -167,7 +167,7 @@ export function SearchExperience({
           </div>
         </div>
         <div className="primary-filter-grid">
-          <label className="field-label"><span>서울 구</span><select value={draft.district} onChange={(event) => setDraft({ ...draft, district: event.target.value })}><option value="">서울 전체</option>{districts.map((district) => <option key={district}>{district}</option>)}</select></label>
+          <label className="field-label"><span>지역</span><select value={draft.district} onChange={(event) => setDraft({ ...draft, district: event.target.value })}><option value="">서울·경기 전체</option><optgroup label="서울">{seoulDistricts.map((district) => <option key={`seoul-${district}`}>{district}</option>)}</optgroup><optgroup label="경기">{gyeonggiDistricts.map((district) => <option key={`gyeonggi-${district}`}>{district}</option>)}</optgroup></select></label>
           <div className="type-picker">
             <span className="field-caption">웨딩홀 타입</span>
             <button className="field-button" type="button" aria-expanded={typeOpen} onClick={() => { setPickerTypes(draft.hallTypes); setTypeOpen(!typeOpen); }}>{typeSummary(draft.hallTypes)}</button>

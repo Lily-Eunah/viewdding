@@ -36,8 +36,17 @@ describe("hall venue geocoding", () => {
     expect(selected?.id).toBe("correct");
   });
 
-  it("rejects coordinates outside the Seoul service bounds", () => {
+  it("selects a name-matching place in the requested Gyeonggi district", () => {
+    const selected = selectKakaoVenueDocument("테스트컨벤션", "수원시 팔달구", [
+      document({ id: "seoul", place_name: "테스트컨벤션", address_name: "서울 강남구", road_address_name: "서울 강남구 테헤란로 1" }),
+      document({ id: "gyeonggi", place_name: "테스트컨벤션", address_name: "경기 수원시 팔달구 인계동 1", road_address_name: "경기 수원시 팔달구 효원로 1" }),
+    ]);
+    expect(selected?.id).toBe("gyeonggi");
+  });
+
+  it("accepts Seoul and Gyeonggi coordinates and rejects distant regions", () => {
     expect(coordinatesFromKakao("127.02", "37.51")).toEqual({ latitude: 37.51, longitude: 127.02 });
+    expect(coordinatesFromKakao("127.20", "37.24")).toEqual({ latitude: 37.24, longitude: 127.2 });
     expect(coordinatesFromKakao("129.07", "35.17")).toBeNull();
   });
 });

@@ -1,0 +1,4452 @@
+[
+  {
+    "hallId": "H-GG-GP-20260808-003",
+    "venueId": "V-GG-GP-20260808-005",
+    "venueName": "관세비스타",
+    "hallName": "잔디정원",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": null,
+    "reason": "확인 가능한 홀 사진을 자동 발견하지 못함."
+  },
+  {
+    "hallId": "H-GG-GP-20260808-004",
+    "venueId": "V-GG-GP-20260808-006",
+    "venueName": "규수당 운정점",
+    "hallName": "베일리홀",
+    "result": "confirmed",
+    "sourceUrl": "https://u.kyusoodang.co.kr/",
+    "photoUrl": "https://u.kyusoodang.co.kr/attachList/upload/hall/c20200327164035340/p20240310151750020/add20260629164334387.jpg",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-GG-GP-20260808-005",
+    "venueId": "V-GG-GP-20260808-007",
+    "venueName": "그래머시 킨텍스",
+    "hallName": "그랜드볼룸",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": null,
+    "reason": "확인 가능한 홀 사진을 자동 발견하지 못함."
+  },
+  {
+    "hallId": "H-GG-GP-20260808-006",
+    "venueId": "V-GG-GP-20260808-007",
+    "venueName": "그래머시 킨텍스",
+    "hallName": "아네스홀",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": null,
+    "reason": "확인 가능한 홀 사진을 자동 발견하지 못함."
+  },
+  {
+    "hallId": "H-GG-GP-20260808-007",
+    "venueId": "V-GG-GP-20260808-009",
+    "venueName": "더테라스웨딩&파티",
+    "hallName": "루프탑 가든·하우스홀",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": null,
+    "reason": "확인 가능한 홀 사진을 자동 발견하지 못함."
+  },
+  {
+    "hallId": "H-GG-GP-20260808-008",
+    "venueId": "V-GG-GP-20260808-010",
+    "venueName": "라비앙루미",
+    "hallName": "라비앙루미 단독홀",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": null,
+    "reason": "확인 가능한 홀 사진을 자동 발견하지 못함."
+  },
+  {
+    "hallId": "H-GG-GP-20260808-009",
+    "venueId": "V-GG-GP-20260808-014",
+    "venueName": "서원아트리움",
+    "hallName": "야외가든홀",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": null,
+    "reason": "확인 가능한 홀 사진을 자동 발견하지 못함."
+  },
+  {
+    "hallId": "H-GG-GP-20260808-010",
+    "venueId": "V-GG-GP-20260808-015",
+    "venueName": "센트리움웨딩홀",
+    "hallName": "센트리움 단독홀",
+    "result": "confirmed",
+    "sourceUrl": "https://centrium-wedding.com/",
+    "photoUrl": "https://centrium-wedding.com/wp-content/uploads/2025/06/pop20240509122842563.png",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-GG-GP-20260808-011",
+    "venueId": "V-GG-GP-20260808-019",
+    "venueName": "웨스턴빌리프",
+    "hallName": "비스타홀",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": null,
+    "reason": "확인 가능한 홀 사진을 자동 발견하지 못함."
+  },
+  {
+    "hallId": "H-GG-GP-20260808-012",
+    "venueId": "V-GG-GP-20260808-022",
+    "venueName": "퍼스트가든 가우디움웨딩홀",
+    "hallName": "가우디움홀",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": null,
+    "reason": "확인 가능한 홀 사진을 자동 발견하지 못함."
+  },
+  {
+    "hallId": "H-GG-GP-20260808-013",
+    "venueId": "V-GG-GP-20260808-022",
+    "venueName": "퍼스트가든 가우디움웨딩홀",
+    "hallName": "파티가든",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": null,
+    "reason": "확인 가능한 홀 사진을 자동 발견하지 못함."
+  },
+  {
+    "hallId": "H-GG-GP-20260808-015",
+    "venueId": "V-GG-GP-20260808-024",
+    "venueName": "해스밀래 웨딩",
+    "hallName": "해스밀래 야외예식장",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": null,
+    "reason": "확인 가능한 홀 사진을 자동 발견하지 못함."
+  },
+  {
+    "hallId": "H-GG-HO-20260808-001",
+    "venueId": "V-GG-HO-20260808-002",
+    "venueName": "라비돌호텔앤리조트 웨딩",
+    "hallName": "야외가든",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": null,
+    "reason": "확인 가능한 홀 사진을 자동 발견하지 못함."
+  },
+  {
+    "hallId": "H-GG-HO-20260808-002",
+    "venueId": "V-GG-HO-20260808-002",
+    "venueName": "라비돌호텔앤리조트 웨딩",
+    "hallName": "로비홀",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": null,
+    "reason": "확인 가능한 홀 사진을 자동 발견하지 못함."
+  },
+  {
+    "hallId": "H-GG-HO-20260808-003",
+    "venueId": "V-GG-HO-20260808-002",
+    "venueName": "라비돌호텔앤리조트 웨딩",
+    "hallName": "그랜드 볼룸",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": null,
+    "reason": "확인 가능한 홀 사진을 자동 발견하지 못함."
+  },
+  {
+    "hallId": "H-GG-HO-20260808-005",
+    "venueId": "V-GG-HO-20260808-004",
+    "venueName": "벨라노떼웨딩",
+    "hallName": "사파이어홀",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": null,
+    "reason": "확인 가능한 홀 사진을 자동 발견하지 못함."
+  },
+  {
+    "hallId": "H-GG-HO-20260808-006",
+    "venueId": "V-GG-HO-20260808-004",
+    "venueName": "벨라노떼웨딩",
+    "hallName": "에메랄드홀",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": null,
+    "reason": "확인 가능한 홀 사진을 자동 발견하지 못함."
+  },
+  {
+    "hallId": "H-GG-HO-20260808-009",
+    "venueId": "V-GG-HO-20260808-010",
+    "venueName": "컨벤션더힐",
+    "hallName": "아트홀",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": null,
+    "reason": "확인 가능한 홀 사진을 자동 발견하지 못함."
+  },
+  {
+    "hallId": "H-GG-HO-20260808-011",
+    "venueId": "V-GG-HO-20260808-011",
+    "venueName": "희온포레",
+    "hallName": "희온재",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": null,
+    "reason": "확인 가능한 홀 사진을 자동 발견하지 못함."
+  },
+  {
+    "hallId": "H-GG-HO-20260808-012",
+    "venueId": "V-GG-HO-20260808-011",
+    "venueName": "희온포레",
+    "hallName": "더글라스가든",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": null,
+    "reason": "확인 가능한 홀 사진을 자동 발견하지 못함."
+  },
+  {
+    "hallId": "H-GG-PA-20260808-003",
+    "venueId": "V-GG-PA-20260808-001",
+    "venueName": "JNJ아트컨벤션",
+    "hallName": "제이포레",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": null,
+    "reason": "확인 가능한 홀 사진을 자동 발견하지 못함."
+  },
+  {
+    "hallId": "H-GG-PA-20260808-004",
+    "venueId": "V-GG-PA-20260808-002",
+    "venueName": "SG웨딩컨벤션",
+    "hallName": "라베아툼홀",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": null,
+    "reason": "확인 가능한 홀 사진을 자동 발견하지 못함."
+  },
+  {
+    "hallId": "H-GG-PA-20260808-005",
+    "venueId": "V-GG-PA-20260808-002",
+    "venueName": "SG웨딩컨벤션",
+    "hallName": "에메랄드홀",
+    "result": "confirmed",
+    "sourceUrl": "https://www.directwedding.co.kr/weddinghall/hall0490",
+    "photoUrl": "https://cdn.prod.website-files.com/66a1dde80b3b36e97bde40d9/682a7b5b58c44ce011cdc455_3F%20%EB%A3%A8%EC%B2%B4%ED%99%80.jpg",
+    "reason": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
+  },
+  {
+    "hallId": "H-GG-PA-20260808-006",
+    "venueId": "V-GG-PA-20260808-002",
+    "venueName": "SG웨딩컨벤션",
+    "hallName": "크리스탈홀",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": null,
+    "reason": "확인 가능한 홀 사진을 자동 발견하지 못함."
+  },
+  {
+    "hallId": "H-GG-PA-20260808-007",
+    "venueId": "V-GG-PA-20260808-003",
+    "venueName": "국제웨딩컨벤션",
+    "hallName": "라루스홀",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": null,
+    "reason": "확인 가능한 홀 사진을 자동 발견하지 못함."
+  },
+  {
+    "hallId": "H-GG-PA-20260808-013",
+    "venueId": "V-GG-PA-20260808-014",
+    "venueName": "엔팰리스 컨벤션",
+    "hallName": "블리스홀",
+    "result": "confirmed",
+    "sourceUrl": "https://npalace.kr/",
+    "photoUrl": "https://npalace.kr/data/editor/2605/ff57350ca9cc2e4e9e8823552d4ae225_1779955377_8343.png",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-GG-PA-20260808-014",
+    "venueId": "V-GG-PA-20260808-016",
+    "venueName": "오하하우스웨딩",
+    "hallName": "오하 하우스홀",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": null,
+    "reason": "확인 가능한 홀 사진을 자동 발견하지 못함."
+  },
+  {
+    "hallId": "H-GG-PA-20260808-015",
+    "venueId": "V-GG-PA-20260808-017",
+    "venueName": "웨딩아티움",
+    "hallName": "웨딩아티움 단독홀",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": null,
+    "reason": "확인 가능한 홀 사진을 자동 발견하지 못함."
+  },
+  {
+    "hallId": "H-GG-PA-20260808-016",
+    "venueId": "V-GG-PA-20260808-018",
+    "venueName": "제이하우스",
+    "hallName": "J House Hall",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": null,
+    "reason": "확인 가능한 홀 사진을 자동 발견하지 못함."
+  },
+  {
+    "hallId": "H-GG-PA-20260808-017",
+    "venueId": "V-GG-PA-20260808-019",
+    "venueName": "티웨딩 평택",
+    "hallName": "투데이홀",
+    "result": "confirmed",
+    "sourceUrl": "https://www.t-wedding.co.kr/",
+    "photoUrl": "https://www.t-wedding.co.kr/attachList/upload/hall/c20251022132853167/p20251025100053217/pop20260302111603690.jpg",
+    "reason": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
+  },
+  {
+    "hallId": "H-GG-PA-20260808-018",
+    "venueId": "V-GG-PA-20260808-019",
+    "venueName": "티웨딩 평택",
+    "hallName": "투게더홀",
+    "result": "confirmed",
+    "sourceUrl": "https://www.t-wedding.co.kr/",
+    "photoUrl": "https://www.t-wedding.co.kr/attachList/upload/hall/c20251022132853167/p20251025151728427/pop20260302120158533.jpg",
+    "reason": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
+  },
+  {
+    "hallId": "H-GG-REST-20260808-027",
+    "venueId": "V-GG-REST-20260808-001",
+    "venueName": "경민컨벤션웨딩홀",
+    "hallName": "그레이스홀",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": null,
+    "reason": "확인 가능한 홀 사진을 자동 발견하지 못함."
+  },
+  {
+    "hallId": "H-GG-REST-20260808-028",
+    "venueId": "V-GG-REST-20260808-001",
+    "venueName": "경민컨벤션웨딩홀",
+    "hallName": "아모리스홀",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": null,
+    "reason": "확인 가능한 홀 사진을 자동 발견하지 못함."
+  },
+  {
+    "hallId": "H-GG-REST-20260808-029",
+    "venueId": "V-GG-REST-20260808-001",
+    "venueName": "경민컨벤션웨딩홀",
+    "hallName": "그랜드볼룸",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": null,
+    "reason": "확인 가능한 홀 사진을 자동 발견하지 못함."
+  },
+  {
+    "hallId": "H-GG-REST-20260808-030",
+    "venueId": "V-GG-REST-20260808-004",
+    "venueName": "웨딩더낙원",
+    "hallName": "베일리홀",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": null,
+    "reason": "확인 가능한 홀 사진을 자동 발견하지 못함."
+  },
+  {
+    "hallId": "H-GG-REST-20260808-031",
+    "venueId": "V-GG-REST-20260808-004",
+    "venueName": "웨딩더낙원",
+    "hallName": "샬롬홀",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": null,
+    "reason": "확인 가능한 홀 사진을 자동 발견하지 못함."
+  },
+  {
+    "hallId": "H-GG-REST-20260808-032",
+    "venueId": "V-GG-REST-20260808-017",
+    "venueName": "그랜드워커힐 애스톤하우스",
+    "hallName": "애스톤하우스",
+    "result": "confirmed",
+    "sourceUrl": "https://www.walkerhill.com/convention/Wedding",
+    "photoUrl": "https://www.walkerhill.com/assets/grandwalkerhillseoul/global/images/etc/pic_astonW01.jpg",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-GG-REST-20260808-033",
+    "venueId": "V-GG-REST-20260808-033",
+    "venueName": "더베니르",
+    "hallName": "베니르홀",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": null,
+    "reason": "확인 가능한 홀 사진을 자동 발견하지 못함."
+  },
+  {
+    "hallId": "H-GG-REST-20260808-034",
+    "venueId": "V-GG-REST-20260808-038",
+    "venueName": "루시아웨딩홀",
+    "hallName": "루시아홀",
+    "result": "confirmed",
+    "sourceUrl": "https://www.luciawedding.co.kr/",
+    "photoUrl": "https://www.luciawedding.co.kr/attachList/upload/hall/c20241222130400117/p20251030171146580/img20251030171217347.jpg",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-GG-REST-20260808-035",
+    "venueId": "V-GG-REST-20260808-052",
+    "venueName": "광명무역센터컨벤션",
+    "hallName": "그랜드볼룸",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": null,
+    "reason": "확인 가능한 홀 사진을 자동 발견하지 못함."
+  },
+  {
+    "hallId": "H-GG-REST-20260808-036",
+    "venueId": "V-GG-REST-20260808-053",
+    "venueName": "광명역사컨벤션",
+    "hallName": "단독웨딩홀",
+    "result": "confirmed",
+    "sourceUrl": "https://www.gwed.co.kr/",
+    "photoUrl": "https://cdn.imweb.me/thumbnail/20260528/4c47ed8fa15c5.png",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-GG-REST-20260808-037",
+    "venueId": "V-GG-REST-20260808-054",
+    "venueName": "아이벡스컨벤션",
+    "hallName": "아이벡스홀",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": null,
+    "reason": "확인 가능한 홀 사진을 자동 발견하지 못함."
+  },
+  {
+    "hallId": "H-GG-REST-20260808-038",
+    "venueId": "V-GG-REST-20260808-002",
+    "venueName": "더레이나웨딩홀",
+    "hallName": "더레이나 단독홀",
+    "result": "confirmed",
+    "sourceUrl": "https://thereina.kr/",
+    "photoUrl": "https://cdn.imweb.me/thumbnail/20260724/173a27f913586.png",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-GG-REST-20260808-039",
+    "venueId": "V-GG-REST-20260808-003",
+    "venueName": "아일랜드캐슬 웨딩홀",
+    "hallName": "그랜드볼룸",
+    "result": "confirmed",
+    "sourceUrl": "https://island-castle.com/theme/sample117/html/wedding.php",
+    "photoUrl": "https://island-castle.com/theme/sample117/img/sub/weding_img02.jpg",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-GG-REST-20260808-041",
+    "venueId": "V-GG-REST-20260808-005",
+    "venueName": "웨딩팰리스",
+    "hallName": "메인홀",
+    "result": "confirmed",
+    "sourceUrl": "https://www.wedding-palace.co.kr/",
+    "photoUrl": "https://cdn.imweb.me/upload/S20230907182b292b1e1ce/1a070e801fbae.jpg",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-GG-REST-20260808-043",
+    "venueId": "V-GG-REST-20260808-012",
+    "venueName": "봉쥬르가든",
+    "hallName": "봉쥬르가든",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": null,
+    "reason": "확인 가능한 홀 사진을 자동 발견하지 못함."
+  },
+  {
+    "hallId": "H-GG-REST-20260808-044",
+    "venueId": "V-GG-REST-20260808-015",
+    "venueName": "파로스컨벤션",
+    "hallName": "파로스 웨딩홀",
+    "result": "confirmed",
+    "sourceUrl": "https://www.pharosconvention.co.kr/",
+    "photoUrl": "https://www.pharosconvention.co.kr/attachList/upload/popup/pop20260423121732580.jpg",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-GG-REST-20260808-047",
+    "venueId": "V-GG-REST-20260808-021",
+    "venueName": "더블룸하우스웨딩",
+    "hallName": "더블룸하우스 단독홀",
+    "result": "confirmed",
+    "sourceUrl": "https://thebloomhousewedding.kr/",
+    "photoUrl": "https://cdn.imweb.me/thumbnail/20260729/46aab6f38fba7.png",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-GG-REST-20260808-048",
+    "venueId": "V-GG-REST-20260808-022",
+    "venueName": "더파티움 안양",
+    "hallName": "브리에홀",
+    "result": "confirmed",
+    "sourceUrl": "https://www.thepartyumanyang.com/",
+    "photoUrl": "https://cdn.imweb.me/thumbnail/20250107/f5e142e12b210.jpg",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-GG-REST-20260808-050",
+    "venueId": "V-GG-REST-20260808-024",
+    "venueName": "빌라드지디 안양",
+    "hallName": "갤러리아홀",
+    "result": "confirmed",
+    "sourceUrl": "https://anyangvilladegd.com/",
+    "photoUrl": "https://cdn.imweb.me/thumbnail/20250407/928a437170963.jpg",
+    "reason": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
+  },
+  {
+    "hallId": "H-GG-REST-20260808-051",
+    "venueId": "V-GG-REST-20260808-024",
+    "venueName": "빌라드지디 안양",
+    "hallName": "크리스탈캐슬홀",
+    "result": "confirmed",
+    "sourceUrl": "https://anyangvilladegd.com/",
+    "photoUrl": "https://cdn.imweb.me/thumbnail/20250307/af2405f52be5a.jpg",
+    "reason": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
+  },
+  {
+    "hallId": "H-GG-REST-20260808-052",
+    "venueId": "V-GG-REST-20260808-026",
+    "venueName": "웨딩그룹 위더스 안양",
+    "hallName": "벨라홀",
+    "result": "confirmed",
+    "sourceUrl": "https://www.withusay.co.kr/wedding/bella/",
+    "photoUrl": "https://www.withusay.co.kr/attachList/upload/hall/c20230306124536560/p20230306124653517/img20251014170330860.jpg",
+    "reason": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
+  },
+  {
+    "hallId": "H-GG-REST-20260808-053",
+    "venueId": "V-GG-REST-20260808-026",
+    "venueName": "웨딩그룹 위더스 안양",
+    "hallName": "메리엘홀",
+    "result": "confirmed",
+    "sourceUrl": "https://www.withusay.co.kr/wedding/meriel/",
+    "photoUrl": "https://www.withusay.co.kr/imgs/gnb/logow.png",
+    "reason": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
+  },
+  {
+    "hallId": "H-GG-REST-20260808-054",
+    "venueId": "V-GG-REST-20260808-028",
+    "venueName": "파티오벨라",
+    "hallName": "마리에가든홀",
+    "result": "confirmed",
+    "sourceUrl": "https://patiobella.com/48",
+    "photoUrl": "https://cdn.imweb.me/thumbnail/20230512/daabaf4d71dc9.png",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-GG-REST-20260808-055",
+    "venueId": "V-GG-REST-20260808-030",
+    "venueName": "AW컨벤션 안산",
+    "hallName": "그랜드볼룸",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": null,
+    "reason": "확인 가능한 홀 사진을 자동 발견하지 못함."
+  },
+  {
+    "hallId": "H-GG-REST-20260808-056",
+    "venueId": "V-GG-REST-20260808-030",
+    "venueName": "AW컨벤션 안산",
+    "hallName": "파티오볼룸",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": null,
+    "reason": "확인 가능한 홀 사진을 자동 발견하지 못함."
+  },
+  {
+    "hallId": "H-GG-REST-20260808-057",
+    "venueId": "V-GG-REST-20260808-030",
+    "venueName": "AW컨벤션 안산",
+    "hallName": "테라스볼룸",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": null,
+    "reason": "확인 가능한 홀 사진을 자동 발견하지 못함."
+  },
+  {
+    "hallId": "H-GG-REST-20260808-058",
+    "venueId": "V-GG-REST-20260808-034",
+    "venueName": "더루체컨벤션",
+    "hallName": "헤리티지홀",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": null,
+    "reason": "확인 가능한 홀 사진을 자동 발견하지 못함."
+  },
+  {
+    "hallId": "H-GG-REST-20260808-059",
+    "venueId": "V-GG-REST-20260808-035",
+    "venueName": "빌라드지디 안산",
+    "hallName": "그랜드볼룸홀",
+    "result": "confirmed",
+    "sourceUrl": "https://gdconvention.com/",
+    "photoUrl": "https://cdn.imweb.me/thumbnail/20250904/3961b8c436ffb.jpg",
+    "reason": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
+  },
+  {
+    "hallId": "H-GG-REST-20260808-060",
+    "venueId": "V-GG-REST-20260808-035",
+    "venueName": "빌라드지디 안산",
+    "hallName": "그랜드컨벤션홀",
+    "result": "confirmed",
+    "sourceUrl": "https://gdconvention.com/",
+    "photoUrl": "https://cdn.imweb.me/thumbnail/20250904/bcce99d47ac66.jpg",
+    "reason": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
+  },
+  {
+    "hallId": "H-GG-REST-20260808-061",
+    "venueId": "V-GG-REST-20260808-035",
+    "venueName": "빌라드지디 안산",
+    "hallName": "그레이스켈리홀",
+    "result": "confirmed",
+    "sourceUrl": "https://gdconvention.com/",
+    "photoUrl": "https://cdn.imweb.me/thumbnail/20250904/092375feea8b0.jpg",
+    "reason": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
+  },
+  {
+    "hallId": "H-GG-REST-20260808-062",
+    "venueId": "V-GG-REST-20260808-036",
+    "venueName": "제이엠컨벤션",
+    "hallName": "메리골드홀",
+    "result": "confirmed",
+    "sourceUrl": "https://jmconvention.com/",
+    "photoUrl": "https://cdn.imweb.me/thumbnail/20250227/d0afb398fe0bb.png",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-GG-REST-20260808-063",
+    "venueId": "V-GG-REST-20260808-039",
+    "venueName": "호텔스퀘어웨딩홀",
+    "hallName": "그랜드볼룸",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": null,
+    "reason": "확인 가능한 홀 사진을 자동 발견하지 못함."
+  },
+  {
+    "hallId": "H-GG-REST-20260808-069",
+    "venueId": "V-GG-REST-20260808-044",
+    "venueName": "라비에벨웨딩",
+    "hallName": "오페라홀",
+    "result": "confirmed",
+    "sourceUrl": "https://www.lbwedding.co.kr/wedding/lobby/",
+    "photoUrl": "https://www.lbwedding.co.kr/attachList/upload/hall/c20210125130431510/p20210125141500457/m20240305170148800.jpg",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-GG-REST-20260808-075",
+    "venueId": "V-GG-REST-20260808-064",
+    "venueName": "빌라드아모르 이천",
+    "hallName": "르 블랑 포레",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": null,
+    "reason": "확인 가능한 홀 사진을 자동 발견하지 못함."
+  },
+  {
+    "hallId": "H-GG-REST-20260808-076",
+    "venueId": "V-GG-REST-20260808-064",
+    "venueName": "빌라드아모르 이천",
+    "hallName": "르 블루 씨엘",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": null,
+    "reason": "확인 가능한 홀 사진을 자동 발견하지 못함."
+  },
+  {
+    "hallId": "H-GG-SHG-20260808-001",
+    "venueId": "V-GG-SHG-20260808-001",
+    "venueName": "W스퀘어컨벤션",
+    "hallName": "채플홀",
+    "result": "confirmed",
+    "sourceUrl": "https://w-square.kr/",
+    "photoUrl": "https://w-square.kr/images/chapel-hall.webp",
+    "reason": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
+  },
+  {
+    "hallId": "H-GG-SHG-20260808-002",
+    "venueId": "V-GG-SHG-20260808-001",
+    "venueName": "W스퀘어컨벤션",
+    "hallName": "그레이스홀",
+    "result": "confirmed",
+    "sourceUrl": "https://w-square.kr/",
+    "photoUrl": "https://w-square.kr/images/logo.png",
+    "reason": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
+  },
+  {
+    "hallId": "H-GG-SHG-20260808-004",
+    "venueId": "V-GG-SHG-20260808-004",
+    "venueName": "더메리든",
+    "hallName": "더메리든 단독홀",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": null,
+    "reason": "확인 가능한 홀 사진을 자동 발견하지 못함."
+  },
+  {
+    "hallId": "H-GG-SHG-20260808-005",
+    "venueId": "V-GG-SHG-20260808-005",
+    "venueName": "더바실리움",
+    "hallName": "더바실리움",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": null,
+    "reason": "확인 가능한 홀 사진을 자동 발견하지 못함."
+  },
+  {
+    "hallId": "H-GG-SHG-20260808-006",
+    "venueId": "V-GG-SHG-20260808-006",
+    "venueName": "동서울웨딩컨벤션",
+    "hallName": "동서울웨딩컨벤션 단독홀",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": null,
+    "reason": "확인 가능한 홀 사진을 자동 발견하지 못함."
+  },
+  {
+    "hallId": "H-GG-SHG-20260808-007",
+    "venueId": "V-GG-SHG-20260808-007",
+    "venueName": "라온제나 분당",
+    "hallName": "플로렌스홀",
+    "result": "confirmed",
+    "sourceUrl": "https://yozmwedding.co.kr/venue/?bmode=view&idx=153053552",
+    "photoUrl": "https://cdn.imweb.me/upload/S20240204aca494e0b4938/12442445ca4a3.jpg",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-GG-SHG-20260808-008",
+    "venueId": "V-GG-SHG-20260808-009",
+    "venueName": "메종디탈리",
+    "hallName": "메종디탈리 단독홀",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": null,
+    "reason": "확인 가능한 홀 사진을 자동 발견하지 못함."
+  },
+  {
+    "hallId": "H-GG-SHG-20260808-009",
+    "venueId": "V-GG-SHG-20260808-010",
+    "venueName": "밀리토피아호텔 바이마린 웨딩센터",
+    "hallName": "그랜드볼룸",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": null,
+    "reason": "확인 가능한 홀 사진을 자동 발견하지 못함."
+  },
+  {
+    "hallId": "H-GG-SHG-20260808-010",
+    "venueId": "V-GG-SHG-20260808-012",
+    "venueName": "분당앤스퀘어",
+    "hallName": "컨벤션홀",
+    "result": "confirmed",
+    "sourceUrl": "https://www.bundangn.co.kr/",
+    "photoUrl": "https://www.bundangn.co.kr/attachList/upload/hall/c20251007183025197/p20251009201619083/story20251027125540627.jpg",
+    "reason": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
+  },
+  {
+    "hallId": "H-GG-SHG-20260808-011",
+    "venueId": "V-GG-SHG-20260808-012",
+    "venueName": "분당앤스퀘어",
+    "hallName": "아모르홀",
+    "result": "confirmed",
+    "sourceUrl": "https://www.bundangn.co.kr/",
+    "photoUrl": "https://www.bundangn.co.kr/attachList/upload/popup/pop20260504110922887.jpg",
+    "reason": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
+  },
+  {
+    "hallId": "H-GG-SHG-20260808-012",
+    "venueId": "V-GG-SHG-20260808-016",
+    "venueName": "아연당",
+    "hallName": "아연당 한옥웨딩",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": null,
+    "reason": "확인 가능한 홀 사진을 자동 발견하지 못함."
+  },
+  {
+    "hallId": "H-GG-SHG-20260808-013",
+    "venueId": "V-GG-SHG-20260808-018",
+    "venueName": "제이니힐",
+    "hallName": "제이니힐 야외베뉴",
+    "result": "confirmed",
+    "sourceUrl": "https://yozmwedding.co.kr/venue/?bmode=view&idx=154694040",
+    "photoUrl": "https://cdn.imweb.me/upload/S20240204aca494e0b4938/12aef5c024645.jpg",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-GG-SUW-20260808-001",
+    "venueId": "V-GG-SUW-20260808-001",
+    "venueName": "SY컨벤션",
+    "hallName": "플레르홀",
+    "result": "confirmed",
+    "sourceUrl": "https://syconvention.co.kr/",
+    "photoUrl": "https://syconvention.co.kr/attachList/upload/hall/c20231127080356313/p20240114113217190/pop20250411162348980.jpg",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-GG-SUW-20260808-002",
+    "venueId": "V-GG-SUW-20260808-002",
+    "venueName": "WI컨벤션",
+    "hallName": "W홀",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": null,
+    "reason": "확인 가능한 홀 사진을 자동 발견하지 못함."
+  },
+  {
+    "hallId": "H-GG-SUW-20260808-003",
+    "venueId": "V-GG-SUW-20260808-002",
+    "venueName": "WI컨벤션",
+    "hallName": "I홀",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": null,
+    "reason": "확인 가능한 홀 사진을 자동 발견하지 못함."
+  },
+  {
+    "hallId": "H-GG-SUW-20260808-005",
+    "venueId": "V-GG-SUW-20260808-004",
+    "venueName": "더마레보호텔&웨딩",
+    "hallName": "더마레보 웨딩홀",
+    "result": "confirmed",
+    "sourceUrl": "https://www.directwedding.co.kr/weddinghall/hall0127",
+    "photoUrl": "https://cdn.prod.website-files.com/66a1eeaa00f1c86c3dbae974/689afd8ff2a3b60d0524c818_%EB%8D%94%EB%A7%88%EB%A0%88%EB%B3%B4%20Screenshot%202025-08-12%20at%2017.37.40.avif",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-GG-SUW-20260808-008",
+    "venueId": "V-GG-SUW-20260808-007",
+    "venueName": "더아리엘",
+    "hallName": "스카이가든 웨딩홀",
+    "result": "confirmed",
+    "sourceUrl": "https://thearielsuwon.com/wedding",
+    "photoUrl": "https://cdn.prod.website-files.com/68ef4d6bae4675dfb93fd020/694fc17b419b75bf7559cb7e_44%20(1).webp",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-GG-SUW-20260808-010",
+    "venueId": "V-GG-SUW-20260808-009",
+    "venueName": "라마다프라자수원호텔 웨딩",
+    "hallName": "그랜드볼룸",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": null,
+    "reason": "확인 가능한 홀 사진을 자동 발견하지 못함."
+  },
+  {
+    "hallId": "H-GG-SUW-20260808-011",
+    "venueId": "V-GG-SUW-20260808-009",
+    "venueName": "라마다프라자수원호텔 웨딩",
+    "hallName": "토파즈홀",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": null,
+    "reason": "확인 가능한 홀 사진을 자동 발견하지 못함."
+  },
+  {
+    "hallId": "H-GG-SUW-20260808-013",
+    "venueId": "V-GG-SUW-20260808-011",
+    "venueName": "라온몽드",
+    "hallName": "라온몽드",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": null,
+    "reason": "확인 가능한 홀 사진을 자동 발견하지 못함."
+  },
+  {
+    "hallId": "H-GG-SUW-20260808-014",
+    "venueId": "V-GG-SUW-20260808-012",
+    "venueName": "루클라비",
+    "hallName": "루클라비홀",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": null,
+    "reason": "확인 가능한 홀 사진을 자동 발견하지 못함."
+  },
+  {
+    "hallId": "H-GG-SUW-20260808-015",
+    "venueId": "V-GG-SUW-20260808-013",
+    "venueName": "마이어스웨딩 수원점",
+    "hallName": "그레이스홀",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": null,
+    "reason": "확인 가능한 홀 사진을 자동 발견하지 못함."
+  },
+  {
+    "hallId": "H-GG-SUW-20260808-016",
+    "venueId": "V-GG-SUW-20260808-014",
+    "venueName": "메리빌리아 더프레스티지",
+    "hallName": "가든홀",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": null,
+    "reason": "확인 가능한 홀 사진을 자동 발견하지 못함."
+  },
+  {
+    "hallId": "H-GG-SUW-20260808-017",
+    "venueId": "V-GG-SUW-20260808-014",
+    "venueName": "메리빌리아 더프레스티지",
+    "hallName": "컨벤션홀",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": null,
+    "reason": "확인 가능한 홀 사진을 자동 발견하지 못함."
+  },
+  {
+    "hallId": "H-GG-SUW-20260808-020",
+    "venueId": "V-GG-SUW-20260808-017",
+    "venueName": "아인스웨딩&파티하우스",
+    "hallName": "아인스홀",
+    "result": "confirmed",
+    "sourceUrl": "https://www.directwedding.co.kr/weddinghall/hall0316",
+    "photoUrl": "https://cdn.prod.website-files.com/66a1dde80b3b36e97bde40d9/685a08a68a336ffa66886887_Group%206%201.png",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-GG-SUW-20260808-022",
+    "venueId": "V-GG-SUW-20260808-019",
+    "venueName": "파티움하우스 수원",
+    "hallName": "그레이스켈리홀",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": null,
+    "reason": "확인 가능한 홀 사진을 자동 발견하지 못함."
+  },
+  {
+    "hallId": "H-GG-SUW-20260808-023",
+    "venueId": "V-GG-SUW-20260808-019",
+    "venueName": "파티움하우스 수원",
+    "hallName": "파티움홀",
+    "result": "confirmed",
+    "sourceUrl": "https://www.partyumhouse.com/",
+    "photoUrl": "https://www.partyumhouse.com/attachList/upload/popup/pop20251019193608357.jpg",
+    "reason": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
+  },
+  {
+    "hallId": "H-GG-SUW-20260808-025",
+    "venueId": "V-GG-SUW-20260808-021",
+    "venueName": "노보텔 앰배서더 수원",
+    "hallName": "샴페인홀",
+    "result": "confirmed",
+    "sourceUrl": "https://www.ambatel.com/novotel/suwon/kr/weddingView.do?wedding_contents_seq=27",
+    "photoUrl": "https://www.ambatel.com/RES/PRODUCT/202405/1216x608_4_20240522091445.jpg",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-GG-YON-20260808-002",
+    "venueId": "V-GG-YON-20260808-003",
+    "venueName": "누에바파밀리아",
+    "hallName": "Nueva Familia Hall",
+    "result": "confirmed",
+    "sourceUrl": "https://www.nuevafamilia.co.kr/",
+    "photoUrl": "https://www.nuevafamilia.co.kr/img/main/place_img02.jpg",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-GG-YON-20260808-004",
+    "venueId": "V-GG-YON-20260808-006",
+    "venueName": "하우스오브라비다",
+    "hallName": "네이처홀",
+    "result": "confirmed",
+    "sourceUrl": "https://www.lavidahouse.com/main123",
+    "photoUrl": "https://cdn.imweb.me/thumbnail/20240411/75c6103f10166.jpg",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-GG-YON-20260808-005",
+    "venueId": "V-GG-YON-20260808-009",
+    "venueName": "리움하우스웨딩 더프리미엄 용인점",
+    "hallName": "스프링홀",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": null,
+    "reason": "확인 가능한 홀 사진을 자동 발견하지 못함."
+  },
+  {
+    "hallId": "H-GG-YON-20260808-006",
+    "venueId": "V-GG-YON-20260808-009",
+    "venueName": "리움하우스웨딩 더프리미엄 용인점",
+    "hallName": "사운즈홀",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": null,
+    "reason": "확인 가능한 홀 사진을 자동 발견하지 못함."
+  },
+  {
+    "hallId": "H-GG-YON-20260808-008",
+    "venueId": "V-GG-YON-20260808-013",
+    "venueName": "솔스퀘어컨벤션",
+    "hallName": "프리미에르홀",
+    "result": "confirmed",
+    "sourceUrl": "https://www.solconvention.co.kr/",
+    "photoUrl": "https://www.solconvention.co.kr/attachList/upload/hall/c20250707151521550/p20250707163402850/pop20250707172844333.jpg",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-GG-YON-20260808-009",
+    "venueId": "V-GG-YON-20260808-016",
+    "venueName": "아이티컨벤션",
+    "hallName": "아모르홀",
+    "result": "confirmed",
+    "sourceUrl": "https://www.itconvention.co.kr/",
+    "photoUrl": "https://www.itconvention.co.kr/attachList/upload/main/m20241201162632287.jpg",
+    "reason": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
+  },
+  {
+    "hallId": "H-GG-YON-20260808-010",
+    "venueId": "V-GG-YON-20260808-016",
+    "venueName": "아이티컨벤션",
+    "hallName": "그레이스홀",
+    "result": "confirmed",
+    "sourceUrl": "https://www.itconvention.co.kr/",
+    "photoUrl": "https://www.itconvention.co.kr/attachList/upload/main/m20241201162812463.jpg",
+    "reason": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260728-001",
+    "venueId": "V-SEO-20260728-001",
+    "venueName": "빌라드지디 청담",
+    "hallName": "에스파체",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": "https://cdn.imweb.me/upload/S20200508a1f500ca054db/7927b3bc642c6.png",
+    "reason": "공개 페이지에서 사진과 개별 홀명을 연결하는 근거를 자동 확인하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260728-002",
+    "venueId": "V-SEO-20260728-001",
+    "venueName": "빌라드지디 청담",
+    "hallName": "앙피레",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": "https://cdn.imweb.me/upload/S20200508a1f500ca054db/f990d1d98f92a.png",
+    "reason": "공개 페이지에서 사진과 개별 홀명을 연결하는 근거를 자동 확인하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260728-004",
+    "venueId": "V-SEO-20260728-003",
+    "venueName": "호텔 나루 서울 엠갤러리 앰배서더",
+    "hallName": "나루 볼룸",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": "https://www.hotelnaruseoul.com/wp-content/uploads/sites/18/2023/02/NR-MG-Naru-Ballroom-round-wall_logo-2200x1200.jpg",
+    "reason": "공개 페이지에서 사진과 개별 홀명을 연결하는 근거를 자동 확인하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260728-005",
+    "venueId": "V-SEO-20260728-004",
+    "venueName": "월드컵컨벤션",
+    "hallName": "임페리얼볼룸",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": "https://weddingcrowd.kr/data/hall/2408/20240821044310_816681_%EB%8C%80%ED%91%9C_%EC%8D%B8%EB%84%A4%EC%9D%BC%EC%82%AC%EC%9D%B4%EC%A6%88.jpg",
+    "reason": "공개 페이지에서 사진과 개별 홀명을 연결하는 근거를 자동 확인하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260728-006",
+    "venueId": "V-SEO-20260728-004",
+    "venueName": "월드컵컨벤션",
+    "hallName": "그랜드볼룸",
+    "result": "confirmed",
+    "sourceUrl": "https://weddingcrowd.kr/hall/view.php?idx=1705",
+    "photoUrl": "https://weddingcrowd.kr/data/community/2502/thumb-20250219050934_165170_5_352x320.png",
+    "reason": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260728-007",
+    "venueId": "V-SEO-20260728-005",
+    "venueName": "앰배서더 서울 풀만",
+    "hallName": "그랜드볼룸",
+    "result": "confirmed",
+    "sourceUrl": "https://yozmwedding.co.kr/venue/?bmode=view&idx=18336034",
+    "photoUrl": "https://cdn.imweb.me/upload/S20240204aca494e0b4938/4abfc67a7d910.jpg",
+    "reason": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260728-008",
+    "venueId": "V-SEO-20260728-005",
+    "venueName": "앰배서더 서울 풀만",
+    "hallName": "남산룸",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": null,
+    "reason": "확인 가능한 홀 사진을 자동 발견하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260728-009",
+    "venueId": "V-SEO-20260728-006",
+    "venueName": "서울신라호텔",
+    "hallName": "다이너스티",
+    "result": "confirmed",
+    "sourceUrl": "https://www.shillahotels.com/ko/theshilla/seoul/meetingEvent/event/grandballroom.do",
+    "photoUrl": "https://www.shillahotels.com/hbcimages/260528/20260528222328_80eda37f-bc62-4405-adcb-46a3602a1f00.jpg",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260728-014",
+    "venueId": "V-SEO-20260728-080",
+    "venueName": "라움",
+    "hallName": "마제스틱 볼룸",
+    "result": "confirmed",
+    "sourceUrl": "https://www.theraum.co.kr/content/content.php?cont=wedding",
+    "photoUrl": "https://www.theraum.co.kr/_skin/raum_251230/img/etc/w_pond_01.jpg",
+    "reason": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260728-015",
+    "venueId": "V-SEO-20260728-080",
+    "venueName": "라움",
+    "hallName": "그라스가든",
+    "result": "confirmed",
+    "sourceUrl": "https://www.theraum.co.kr/content/content.php?cont=wedding",
+    "photoUrl": "https://www.theraum.co.kr/_skin/raum_251230/img/etc/w_majestic_01.jpg",
+    "reason": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260728-016",
+    "venueId": "V-SEO-20260728-080",
+    "venueName": "라움",
+    "hallName": "폰드가든",
+    "result": "confirmed",
+    "sourceUrl": "https://www.theraum.co.kr/content/content.php?cont=wedding",
+    "photoUrl": "https://www.theraum.co.kr/_skin/raum_251230/img/etc/w_chamber_01.jpg",
+    "reason": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260728-017",
+    "venueId": "V-SEO-20260728-080",
+    "venueName": "라움",
+    "hallName": "체임버홀",
+    "result": "confirmed",
+    "sourceUrl": "https://www.theraum.co.kr/content/content.php?cont=wedding",
+    "photoUrl": "https://www.theraum.co.kr/_skin/raum_251230/img/logo/footer_logo.png",
+    "reason": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260728-018",
+    "venueId": "V-SEO-20260728-081",
+    "venueName": "DMC타워웨딩",
+    "hallName": "그랜드볼룸홀",
+    "result": "confirmed",
+    "sourceUrl": "https://yozmwedding.co.kr/venue/?bmode=view&idx=18947710",
+    "photoUrl": "https://cdn.imweb.me/upload/S20240204aca494e0b4938/9d4d5742b6af3.jpg",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260728-019",
+    "venueId": "V-SEO-20260728-082",
+    "venueName": "오펠리스 웨딩컨벤션",
+    "hallName": "라비제홀",
+    "result": "confirmed",
+    "sourceUrl": "https://www.ofelis.com/",
+    "photoUrl": "https://www.ofelis.com/attachList/upload/hall/c20250524111749200/p20250524115548703/pop20250930154849010.jpg",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260728-020",
+    "venueId": "V-SEO-20260728-079",
+    "venueName": "메리스에이프럴 하우스웨딩홀",
+    "hallName": "메리홀",
+    "result": "confirmed",
+    "sourceUrl": "https://marysapril.co.kr/",
+    "photoUrl": "https://cdn.imweb.me/thumbnail/20210722/7f2022fb8c51f.png",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260728-021",
+    "venueId": "V-SEO-20260728-023",
+    "venueName": "노블발렌티 삼성",
+    "hallName": "Chapel Hall",
+    "result": "confirmed",
+    "sourceUrl": "https://yozmwedding.co.kr/venue/?bmode=view&idx=18320744",
+    "photoUrl": "https://cdn.imweb.me/upload/S20240204aca494e0b4938/530ddf79f3d1d.png",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260728-022",
+    "venueId": "V-SEO-20260728-028",
+    "venueName": "아모리스 역삼점(GS타워)",
+    "hallName": "AMORIS GS TOWER",
+    "result": "confirmed",
+    "sourceUrl": "https://yozmwedding.co.kr/venue/?bmode=view&idx=18305533",
+    "photoUrl": "https://cdn.imweb.me/upload/S20240204aca494e0b4938/2b1695faae3ec.jpg",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260728-023",
+    "venueId": "V-SEO-20260728-024",
+    "venueName": "삼원가든",
+    "hallName": "본관 정원 가든웨딩",
+    "result": "confirmed",
+    "sourceUrl": "https://yozmwedding.co.kr/venue/?bmode=view&idx=144813354",
+    "photoUrl": "https://cdn.imweb.me/upload/S20240204aca494e0b4938/74b17532d51d7.jpg",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260728-024",
+    "venueId": "V-SEO-20260728-009",
+    "venueName": "서울물재생시설공단(마루공원)",
+    "hallName": "마루공원 야외 예식공간",
+    "result": "confirmed",
+    "sourceUrl": "https://wedding.seoulwomen.or.kr/",
+    "photoUrl": "https://wedding.seoulwomen.or.kr/app/uploads/2026/05/KakaoTalk_20260507_132011162-778x778-c-default.png",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260728-025",
+    "venueId": "V-SEO-20260728-010",
+    "venueName": "압구정 루프탑 웨딩홀",
+    "hallName": "압구정 루프탑 웨딩홀 대표 예식공간",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": null,
+    "reason": "확인 가능한 홀 사진을 자동 발견하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260728-026",
+    "venueId": "V-SEO-20260728-011",
+    "venueName": "SETEC(컨벤션)",
+    "hallName": "SETEC 컨벤션홀",
+    "result": "confirmed",
+    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities/372",
+    "photoUrl": "https://wedding.seoulwomen.or.kr/app/uploads/2026/02/%EA%B7%B8%EB%A0%88%EC%9D%B4%EC%8A%A4%EC%95%A4%EC%BD%94-%EC%8B%A0%EA%B7%9C-%EB%A1%9C%EA%B3%A0.png",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260728-027",
+    "venueId": "V-SEO-20260728-012",
+    "venueName": "서울주택도시공사 대강당홀",
+    "hallName": "서울주택도시공사 대강당홀",
+    "result": "confirmed",
+    "sourceUrl": "https://wedding.seoulwomen.or.kr/",
+    "photoUrl": "https://wedding.seoulwomen.or.kr/app/uploads/2026/05/KakaoTalk_20260507_132011162-778x778-c-default.png",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260728-028",
+    "venueId": "V-SEO-20260728-013",
+    "venueName": "파크루안",
+    "hallName": "파크루안 대표 예식공간",
+    "result": "confirmed",
+    "sourceUrl": "https://yozmwedding.co.kr/venue/?bmode=view&idx=18410968",
+    "photoUrl": "https://cdn.imweb.me/upload/S20240204aca494e0b4938/57afe63819527.jpg",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260728-029",
+    "venueId": "V-SEO-20260728-014",
+    "venueName": "그래머시코엑스",
+    "hallName": "그랜드 볼룸",
+    "result": "confirmed",
+    "sourceUrl": "https://yozmwedding.co.kr/venue/?bmode=view&idx=144225890",
+    "photoUrl": "https://cdn.imweb.me/upload/S20240204aca494e0b4938/501165f86bc24.jpg",
+    "reason": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260728-030",
+    "venueId": "V-SEO-20260728-015",
+    "venueName": "소노펠리체컨벤션",
+    "hallName": "다이아몬드홀",
+    "result": "confirmed",
+    "sourceUrl": "https://yozmwedding.co.kr/60/?bmode=view&idx=167380298",
+    "photoUrl": "https://cdn.imweb.me/upload/S20240204aca494e0b4938/eae80d64c48dc.jpg",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260728-031",
+    "venueId": "V-SEO-20260728-016",
+    "venueName": "더청담",
+    "hallName": "노블레스",
+    "result": "confirmed",
+    "sourceUrl": "https://yozmwedding.co.kr/venue/?bmode=view&idx=18309103",
+    "photoUrl": "https://cdn.imweb.me/upload/S20240204aca494e0b4938/ed1788acd98ca.png",
+    "reason": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260728-032",
+    "venueId": "V-SEO-20260728-017",
+    "venueName": "강남마리아쥬스퀘어",
+    "hallName": "가든 하우스웨딩 공간",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": null,
+    "reason": "확인 가능한 홀 사진을 자동 발견하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260728-033",
+    "venueId": "V-SEO-20260728-018",
+    "venueName": "세인트메리엘",
+    "hallName": "세인트메리엘 대표 예식공간",
+    "result": "confirmed",
+    "sourceUrl": "https://yozmwedding.co.kr/venue/?bmode=view&idx=18336064",
+    "photoUrl": "https://cdn.imweb.me/upload/S20240204aca494e0b4938/b968e649cd270.png",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260728-034",
+    "venueId": "V-SEO-20260728-019",
+    "venueName": "상록아트홀",
+    "hallName": "아트홀",
+    "result": "confirmed",
+    "sourceUrl": "https://yozmwedding.co.kr/venue/?bmode=view&idx=18237022",
+    "photoUrl": "https://cdn.imweb.me/upload/S20240204aca494e0b4938/f9161e064937b.jpg",
+    "reason": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260728-035",
+    "venueId": "V-SEO-20260728-020",
+    "venueName": "아펠가모 선릉",
+    "hallName": "아펠가모 선릉 대표 예식공간",
+    "result": "confirmed",
+    "sourceUrl": "https://yozmwedding.co.kr/venue/?bmode=view&idx=18318374",
+    "photoUrl": "https://cdn.imweb.me/upload/S20240204aca494e0b4938/36c2b50d562c1.jpg",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260728-036",
+    "venueId": "V-SEO-20260728-021",
+    "venueName": "노보텔 앰배서더 서울 강남",
+    "hallName": "샴페인홀",
+    "result": "confirmed",
+    "sourceUrl": "https://yozmwedding.co.kr/venue/?bmode=view&idx=144340743",
+    "photoUrl": "https://cdn.imweb.me/upload/S20240204aca494e0b4938/25d23667a2abe.jpg",
+    "reason": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260728-037",
+    "venueId": "V-SEO-20260728-022",
+    "venueName": "노블발렌티 대치",
+    "hallName": "노블발렌티 대치 대표 예식공간",
+    "result": "confirmed",
+    "sourceUrl": "https://yozmwedding.co.kr/venue/?bmode=view&idx=167501399",
+    "photoUrl": "https://cdn.imweb.me/upload/S20240204aca494e0b4938/de69535ca5310.jpg",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260728-038",
+    "venueId": "V-SEO-20260728-025",
+    "venueName": "셀럽앤어셈",
+    "hallName": "셀럽앤어셈 대표 예식공간",
+    "result": "confirmed",
+    "sourceUrl": "https://yozmwedding.co.kr/60/?bmode=view&idx=18421663",
+    "photoUrl": "https://cdn.imweb.me/upload/S20240204aca494e0b4938/6d103c1dacea0.jpg",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260728-039",
+    "venueId": "V-SEO-20260728-026",
+    "venueName": "그랜드힐컨벤션",
+    "hallName": "플로리아홀",
+    "result": "confirmed",
+    "sourceUrl": "https://yozmwedding.co.kr/60/?bmode=view&idx=18423167",
+    "photoUrl": "https://cdn.imweb.me/upload/S20240204aca494e0b4938/d6631f7c39993.jpg",
+    "reason": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260728-040",
+    "venueId": "V-SEO-20260728-027",
+    "venueName": "포포인츠 바이 쉐라톤 서울 강남",
+    "hallName": "미팅룸 1",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": "https://cache.marriott.com/content/dam/marriott-renditions/SELFG/selfg-meeting-room-3074-hor-feat.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=1920px:*",
+    "reason": "공개 페이지에서 사진과 개별 홀명을 연결하는 근거를 자동 확인하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260728-041",
+    "venueId": "V-SEO-20260728-029",
+    "venueName": "르비르모어 선릉",
+    "hallName": "클리타홀",
+    "result": "confirmed",
+    "sourceUrl": "https://yozmwedding.co.kr/venue/?bmode=view&idx=159244761",
+    "photoUrl": "https://cdn.imweb.me/upload/S20240204aca494e0b4938/79aa6c2b52b26.jpg",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260728-042",
+    "venueId": "V-SEO-20260728-030",
+    "venueName": "빌라드지디 수서",
+    "hallName": "르씨엘 홀",
+    "result": "confirmed",
+    "sourceUrl": "https://yozmwedding.co.kr/venue/?bmode=view&idx=18307248",
+    "photoUrl": "https://cdn.imweb.me/upload/S20240204aca494e0b4938/866862521e170.jpg",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260728-043",
+    "venueId": "V-SEO-20260728-031",
+    "venueName": "루클라비 더화이트",
+    "hallName": "루클라비 더화이트 대표 예식공간",
+    "result": "confirmed",
+    "sourceUrl": "https://yozmwedding.co.kr/60/?bmode=view&idx=164275550",
+    "photoUrl": "https://cdn.imweb.me/upload/S20240204aca494e0b4938/a689cc58aec97.jpg",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260728-044",
+    "venueId": "V-SEO-20260728-032",
+    "venueName": "오크우드 프리미어 코엑스센터",
+    "hallName": "프라이빗 웨딩 공간",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": null,
+    "reason": "확인 가능한 홀 사진을 자동 발견하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260728-045",
+    "venueId": "V-SEO-20260728-033",
+    "venueName": "호텔 리베라",
+    "hallName": "베르사이유홀",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": "https://cdn.imweb.me/thumbnail/20250123/e5b7ffa970836.png",
+    "reason": "공개 페이지에서 사진과 개별 홀명을 연결하는 근거를 자동 확인하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260728-046",
+    "venueId": "V-SEO-20260728-034",
+    "venueName": "아르베웨딩(구.벨라비타)",
+    "hallName": "라피네 홀",
+    "result": "confirmed",
+    "sourceUrl": "https://yozmwedding.co.kr/venue/?bmode=view&idx=144858644",
+    "photoUrl": "https://cdn.imweb.me/upload/S20240204aca494e0b4938/f338a8d95036b.jpg",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260728-047",
+    "venueId": "V-SEO-20260728-035",
+    "venueName": "온즈드롬 도산",
+    "hallName": "온즈드롬 도산 대표 예식공간",
+    "result": "confirmed",
+    "sourceUrl": "https://wedytor.co.kr/venue",
+    "photoUrl": "https://wedytor.co.kr/upload/venues/138/main/38307d70370d2b07e8807657ea44e86d.jpeg",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260728-048",
+    "venueId": "V-SEO-20260728-036",
+    "venueName": "더베일리하우스 삼성",
+    "hallName": "더베일리하우스 삼성 대표 예식공간",
+    "result": "confirmed",
+    "sourceUrl": "https://yozmwedding.co.kr/venue/?bmode=view&idx=18411289",
+    "photoUrl": "https://cdn.imweb.me/upload/S20240204aca494e0b4938/86a257a1c8898.jpg",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260728-049",
+    "venueId": "V-SEO-20260728-037",
+    "venueName": "빌라드지디 논현",
+    "hallName": "빌라드지디 논현 대표 예식공간",
+    "result": "confirmed",
+    "sourceUrl": "https://yozmwedding.co.kr/venue/?bmode=view&idx=144834538",
+    "photoUrl": "https://cdn.imweb.me/upload/S20240204aca494e0b4938/dca53b5ef4310.jpg",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260728-050",
+    "venueId": "V-SEO-20260728-038",
+    "venueName": "토브헤세드",
+    "hallName": "토브헤세드 대표 예식공간",
+    "result": "confirmed",
+    "sourceUrl": "https://yozmwedding.co.kr/60/?bmode=view&idx=18442138",
+    "photoUrl": "https://cdn.imweb.me/upload/S20240204aca494e0b4938/b3431b6f33b4a.jpg",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260728-051",
+    "venueId": "V-SEO-20260728-039",
+    "venueName": "AC 호텔 바이 메리어트 서울 강남",
+    "hallName": "AC 호텔 바이 메리어트 서울 강남 대표 예식공간",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": null,
+    "reason": "확인 가능한 홀 사진을 자동 발견하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260728-052",
+    "venueId": "V-SEO-20260728-040",
+    "venueName": "더채플 앳 대치",
+    "hallName": "더채플 앳 대치 대표 예식공간",
+    "result": "confirmed",
+    "sourceUrl": "https://thewedd.com/hall-170/",
+    "photoUrl": "https://thewedd.com/wp-content/uploads/2026/01/%EA%B0%95%EB%82%A8%EA%B5%AC%EB%8D%94%EC%B1%84%ED%94%8C%EC%95%B3%EB%8C%80%EC%B9%98.webp",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260728-053",
+    "venueId": "V-SEO-20260728-041",
+    "venueName": "엘리에나호텔",
+    "hallName": "컨벤션홀",
+    "result": "confirmed",
+    "sourceUrl": "https://yozmwedding.co.kr/venue/?bmode=view&idx=18228236",
+    "photoUrl": "https://cdn.imweb.me/upload/S20240204aca494e0b4938/17c7880cc70f6.jpg",
+    "reason": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260728-054",
+    "venueId": "V-SEO-20260728-042",
+    "venueName": "보코 서울 강남",
+    "hallName": "볼룸",
+    "result": "confirmed",
+    "sourceUrl": "https://yozmwedding.co.kr/venue/?bmode=view&idx=144822831",
+    "photoUrl": "https://cdn.imweb.me/upload/S20240204aca494e0b4938/83af31f6f6044.jpg",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260728-055",
+    "venueId": "V-SEO-20260728-043",
+    "venueName": "조선 팰리스 서울 강남",
+    "hallName": "더 그레이트 홀",
+    "result": "confirmed",
+    "sourceUrl": "https://yozmwedding.co.kr/venue/?bmode=view&idx=145278901",
+    "photoUrl": "https://cdn.imweb.me/upload/S20240204aca494e0b4938/2eeaba00481e3.jpg",
+    "reason": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260728-056",
+    "venueId": "V-SEO-20260728-044",
+    "venueName": "더컨벤션 신사",
+    "hallName": "그랜드볼룸",
+    "result": "confirmed",
+    "sourceUrl": "https://yozmwedding.co.kr/venue/?bmode=view&idx=144293884",
+    "photoUrl": "https://cdn.imweb.me/upload/S20240204aca494e0b4938/26d1382b8c323.jpg",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260728-057",
+    "venueId": "V-SEO-20260728-045",
+    "venueName": "안다즈 서울 강남",
+    "hallName": "비욘드 더 글라스",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": null,
+    "reason": "확인 가능한 홀 사진을 자동 발견하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260728-058",
+    "venueId": "V-SEO-20260728-046",
+    "venueName": "트라디노이",
+    "hallName": "트라디노이 대표 예식공간",
+    "result": "confirmed",
+    "sourceUrl": "https://yozmwedding.co.kr/venue/?bmode=view&idx=168489596",
+    "photoUrl": "https://cdn.imweb.me/upload/S20240204aca494e0b4938/9dfbae590d6f4.jpeg",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260728-059",
+    "venueId": "V-SEO-20260728-047",
+    "venueName": "문화비축기지(야외무대)",
+    "hallName": "문화비축기지 야외 예식공간",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": "https://wedding.seoulwomen.or.kr/app/uploads/2024/05/%EC%8B%9D%EC%9E%A5-scaled.jpg",
+    "reason": "공개 페이지에서 사진과 개별 홀명을 연결하는 근거를 자동 확인하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260728-060",
+    "venueId": "V-SEO-20260728-048",
+    "venueName": "서울수상레포츠센터 루프탑 웨딩홀",
+    "hallName": "서울수상레포츠센터 루프탑 웨딩홀 대표 예식공간",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": "https://wedding.seoulwomen.or.kr/app/uploads/2025/06/%EA%B2%8C%EC%8B%9C1-scaled.jpg",
+    "reason": "공개 페이지에서 사진과 개별 홀명을 연결하는 근거를 자동 확인하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260728-061",
+    "venueId": "V-SEO-20260728-049",
+    "venueName": "망원 루프탑 웨딩홀",
+    "hallName": "망원 루프탑 웨딩홀 대표 예식공간",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": null,
+    "reason": "확인 가능한 홀 사진을 자동 발견하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260728-062",
+    "venueId": "V-SEO-20260728-050",
+    "venueName": "월드컵공원 평화잔디광장",
+    "hallName": "평화잔디광장",
+    "result": "confirmed",
+    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities/3480",
+    "photoUrl": "https://wedding.seoulwomen.or.kr/app/uploads/2025/06/%EC%9B%94%EB%93%9C%EC%BB%B5%EA%B3%B5%EC%9B%90-%ED%8F%89%ED%99%94%EC%9E%94%EB%94%94%EA%B4%91%EC%9E%A5%EC%B2%AB%EC%98%88%EC%8B%9D%EC%9D%B4%EB%B2%A4%ED%8A%B83-scaled.jpg",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260728-063",
+    "venueId": "V-SEO-20260728-051",
+    "venueName": "월드컵공원 평화의 공원(새록결혼식)",
+    "hallName": "월드컵공원 평화의 공원(새록결혼식) 대표 예식공간",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": null,
+    "reason": "확인 가능한 홀 사진을 자동 발견하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260728-064",
+    "venueId": "V-SEO-20260728-052",
+    "venueName": "서교생활문화센터 서교스퀘어",
+    "hallName": "서교스퀘어 블랙박스공연장",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": "https://wedding.seoulwomen.or.kr/app/uploads/2025/06/8.%EC%84%9C%EA%B5%90%EC%8A%A4%ED%80%98%EC%96%B4.png",
+    "reason": "공개 페이지에서 사진과 개별 홀명을 연결하는 근거를 자동 확인하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260728-065",
+    "venueId": "V-SEO-20260728-053",
+    "venueName": "라이즈 오토그래프 컬렉션",
+    "hallName": "라이즈 스페이스",
+    "result": "confirmed",
+    "sourceUrl": "https://www.rysehotel.co.kr/ryse_wedding/",
+    "photoUrl": "https://d3n14jmbdg5y6n.cloudfront.net/wp-content/uploads/2019/02/file-1.png",
+    "reason": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260728-066",
+    "venueId": "V-SEO-20260728-054",
+    "venueName": "서울가든호텔",
+    "hallName": "그랜드 볼룸",
+    "result": "confirmed",
+    "sourceUrl": "https://yozmwedding.co.kr/79/?bmode=view&idx=164792402",
+    "photoUrl": "https://cdn.imweb.me/upload/S20240204aca494e0b4938/1c6aca1b91e80.png",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260728-067",
+    "venueId": "V-SEO-20260728-055",
+    "venueName": "웨딩시그니처",
+    "hallName": "트리니티홀",
+    "result": "confirmed",
+    "sourceUrl": "https://yozmwedding.co.kr/79/?bmode=view&idx=125529233",
+    "photoUrl": "https://cdn.imhttps//cdn.imweb.me/upload/S20240204aca494e0b4938/e6c1682fa0dbe.jpgweb.me/upload/S20240204aca494e0b4938/e6c1682fa0dbe.jpg",
+    "reason": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260728-068",
+    "venueId": "V-SEO-20260728-056",
+    "venueName": "케이터틀",
+    "hallName": "컨벤션홀",
+    "result": "confirmed",
+    "sourceUrl": "https://yozmwedding.co.kr/venue/?bmode=view&idx=18921067",
+    "photoUrl": "https://cdn.imweb.me/upload/S20240204aca494e0b4938/def566465cd38.jpg",
+    "reason": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260728-069",
+    "venueId": "V-SEO-20260728-057",
+    "venueName": "스탠포드호텔",
+    "hallName": "그랜드 볼룸",
+    "result": "confirmed",
+    "sourceUrl": "https://yozmwedding.co.kr/79/?bmode=view&idx=164792616",
+    "photoUrl": "https://cdn.imweb.me/upload/S20240204aca494e0b4938/ac790e902a2ff.jpg",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260728-070",
+    "venueId": "V-SEO-20260728-058",
+    "venueName": "아펠가모 공덕",
+    "hallName": "라로브홀",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": "https://friendzimg.weddingfriendz.com/partner/692_gongdeok_01_weddinghall_b02-3.jpg",
+    "reason": "공개 페이지에서 사진과 개별 홀명을 연결하는 근거를 자동 확인하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260728-071",
+    "venueId": "V-SEO-20260728-059",
+    "venueName": "이룸웨딩컨벤션",
+    "hallName": "스마일홀",
+    "result": "confirmed",
+    "sourceUrl": "https://yozmwedding.co.kr/venue/?bmode=view&idx=18907026",
+    "photoUrl": "https://cdn.imweb.me/upload/S20240204aca494e0b4938/5c359bf656106.jpg",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260728-072",
+    "venueId": "V-SEO-20260728-060",
+    "venueName": "온즈드롬 합정",
+    "hallName": "온즈드롬 합정 대표 예식공간",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": null,
+    "reason": "확인 가능한 홀 사진을 자동 발견하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260728-073",
+    "venueId": "V-SEO-20260728-061",
+    "venueName": "아만티 호텔 서울",
+    "hallName": "아만티 호텔 서울 대표 예식공간",
+    "result": "confirmed",
+    "sourceUrl": "https://yozmwedding.co.kr/venue/?bmode=view&idx=153002795",
+    "photoUrl": "https://cdn.imweb.me/upload/S20240204aca494e0b4938/86e05da55aa16.jpg",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260728-074",
+    "venueId": "V-SEO-20260728-062",
+    "venueName": "서울도시건축전시관",
+    "hallName": "서울도시건축전시관 야외 예식공간",
+    "result": "confirmed",
+    "sourceUrl": "https://wedding.seoulwomen.or.kr/",
+    "photoUrl": "https://wedding.seoulwomen.or.kr/app/uploads/2026/05/KakaoTalk_20260507_132011162-778x778-c-default.png",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260728-075",
+    "venueId": "V-SEO-20260728-063",
+    "venueName": "남산호현당",
+    "hallName": "남산호현당 대표 예식공간",
+    "result": "confirmed",
+    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities/3189",
+    "photoUrl": "https://wedding.seoulwomen.or.kr/app/uploads/2025/02/%EB%A1%9C%EA%B3%A0-170x170-1.jpg",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260728-076",
+    "venueId": "V-SEO-20260728-064",
+    "venueName": "남산 장충 웨딩가든(하우스커피)",
+    "hallName": "남산 장충 웨딩가든(하우스커피)",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": "https://wedding.seoulwomen.or.kr/app/uploads/2025/06/%EC%9E%A5%EC%B6%A9%EC%9E%90%EB%9D%BD-scaled.jpg",
+    "reason": "공개 페이지에서 사진과 개별 홀명을 연결하는 근거를 자동 확인하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260728-077",
+    "venueId": "V-SEO-20260728-065",
+    "venueName": "카페마루 웨딩홀",
+    "hallName": "카페마루 웨딩홀 대표 예식공간",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": "https://wedding.seoulwomen.or.kr/app/uploads/2025/06/7.%EC%B9%B4%ED%8E%98%EB%A7%88%EB%A3%A8-1024x577.png",
+    "reason": "공개 페이지에서 사진과 개별 홀명을 연결하는 근거를 자동 확인하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260728-078",
+    "venueId": "V-SEO-20260728-066",
+    "venueName": "로즈앤라임(RNL)",
+    "hallName": "Gallery B1",
+    "result": "confirmed",
+    "sourceUrl": "https://www.rosenlime.com/rnl",
+    "photoUrl": "https://cdn.imweb.me/upload/S202201183e9a686a2e5f0/4847c25416efc.png",
+    "reason": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260728-080",
+    "venueId": "V-SEO-20260728-068",
+    "venueName": "노보텔 앰배서더 서울 동대문",
+    "hallName": "그랜드볼룸 라온",
+    "result": "confirmed",
+    "sourceUrl": "https://ambatel.com/novotel/dongdaemun/ko/weddingView.do?wedding_contents_seq=63",
+    "photoUrl": "https://ambatel.com/RES/PRODUCT/202602/novoteldongdaemunwedding_88_20260223110204.png",
+    "reason": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260728-081",
+    "venueId": "V-SEO-20260728-069",
+    "venueName": "코트야드 바이 메리어트 서울 명동",
+    "hallName": "한양룸",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": null,
+    "reason": "확인 가능한 홀 사진을 자동 발견하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260728-082",
+    "venueId": "V-SEO-20260728-070",
+    "venueName": "라비두스",
+    "hallName": "그랜드 라 베네",
+    "result": "confirmed",
+    "sourceUrl": "https://yozmwedding.co.kr/venue/?bmode=view&idx=19384893",
+    "photoUrl": "https://cdn.imweb.me/upload/S20240204aca494e0b4938/9f7c93fa147b1.jpg",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260728-083",
+    "venueId": "V-SEO-20260728-071",
+    "venueName": "한국의집(한옥웨딩)",
+    "hallName": "중정 전통혼례 공간",
+    "result": "confirmed",
+    "sourceUrl": "https://yozmwedding.co.kr/venue/?bmode=view&idx=152817830",
+    "photoUrl": "https://cdn.imweb.me/upload/S20240204aca494e0b4938/6e4d9ecdc93a3.jpg",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260728-084",
+    "venueId": "V-SEO-20260728-072",
+    "venueName": "레스케이프 호텔",
+    "hallName": "공식 웨딩홀 미확인",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": null,
+    "reason": "확인 가능한 홀 사진을 자동 발견하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260728-085",
+    "venueId": "V-SEO-20260728-073",
+    "venueName": "웨스틴 조선 서울",
+    "hallName": "웨스틴 조선 서울 대표 예식공간",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": "https://gjb.josunhotel.com/static/home/images/josunhotel_og.png",
+    "reason": "공개 페이지에서 사진과 개별 홀명을 연결하는 근거를 자동 확인하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260728-086",
+    "venueId": "V-SEO-20260728-074",
+    "venueName": "PJ호텔",
+    "hallName": "뮤즈홀",
+    "result": "confirmed",
+    "sourceUrl": "https://www.s-wed.co.kr/weddingHall/detail.htm?HallCode=WH08A01A0022",
+    "photoUrl": "https://www.s-wed.co.kr/img/weddinghall-new/tab01.png",
+    "reason": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260728-087",
+    "venueId": "V-SEO-20260728-075",
+    "venueName": "마렌지나인",
+    "hallName": "마렌지나인 웨딩홀",
+    "result": "confirmed",
+    "sourceUrl": "https://yozmwedding.co.kr/venue/?bmode=view&idx=168804271",
+    "photoUrl": "https://cdn.imweb.me/upload/S20240204aca494e0b4938/670eff0b0d781.png",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260728-088",
+    "venueId": "V-SEO-20260728-076",
+    "venueName": "아벤티움 서울",
+    "hallName": "채플홀",
+    "result": "confirmed",
+    "sourceUrl": "https://yozmwedding.co.kr/venue/?bmode=view&idx=154100803",
+    "photoUrl": "https://cdn.imweb.me/upload/S20240204aca494e0b4938/f9b97fcef1ce1.jpg",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260728-089",
+    "venueId": "V-SEO-20260728-077",
+    "venueName": "온즈드롬 명동",
+    "hallName": "온즈드롬 명동 대표 예식공간",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": null,
+    "reason": "확인 가능한 홀 사진을 자동 발견하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260728-090",
+    "venueId": "V-SEO-20260728-078",
+    "venueName": "엘뷔하우스",
+    "hallName": "피에스타 홀",
+    "result": "confirmed",
+    "sourceUrl": "https://yozmwedding.co.kr/venue/?bmode=view&idx=152813558",
+    "photoUrl": "https://cdn.imweb.me/upload/S20240204aca494e0b4938/e6a05d169bc9e.jpg",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260728-091",
+    "venueId": "V-SEO-20260728-083",
+    "venueName": "루이비스웨딩 중구점",
+    "hallName": "단독 웨딩홀",
+    "result": "confirmed",
+    "sourceUrl": "https://www.weddex.com/html/wedding/wedding_search_view.html?company_cd=10728",
+    "photoUrl": "https://www.weddex.com/files/company/10728/15325821701853809335b595919dfbaa.jpg",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-092",
+    "venueId": "V-SEO-20260728-019",
+    "venueName": "상록아트홀",
+    "hallName": "그랜드볼룸",
+    "result": "confirmed",
+    "sourceUrl": "https://yozmwedding.co.kr/venue/?bmode=view&idx=18237022",
+    "photoUrl": "https://cdn.imweb.me/upload/S20240204aca494e0b4938/e849501963f5c.jpg",
+    "reason": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-093",
+    "venueId": "V-SEO-20260728-026",
+    "venueName": "그랜드힐컨벤션",
+    "hallName": "사브리나홀",
+    "result": "confirmed",
+    "sourceUrl": "https://yozmwedding.co.kr/60/?bmode=view&idx=18423167",
+    "photoUrl": "https://cdn.imweb.me/upload/S20240204aca494e0b4938/358a8ff572c67.jpg",
+    "reason": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-094",
+    "venueId": "V-SEO-20260728-026",
+    "venueName": "그랜드힐컨벤션",
+    "hallName": "그랜드볼룸홀",
+    "result": "confirmed",
+    "sourceUrl": "https://yozmwedding.co.kr/60/?bmode=view&idx=18423167",
+    "photoUrl": "https://cdn.imweb.me/upload/S20240204aca494e0b4938/24bb0278b56b1.jpg",
+    "reason": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-095",
+    "venueId": "V-SEO-20260728-041",
+    "venueName": "엘리에나호텔",
+    "hallName": "임페리얼홀",
+    "result": "confirmed",
+    "sourceUrl": "https://yozmwedding.co.kr/venue/?bmode=view&idx=18228236",
+    "photoUrl": "https://cdn.imweb.me/upload/S20240204aca494e0b4938/8e21472b13f83.jpg",
+    "reason": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-096",
+    "venueId": "V-SEO-20260728-041",
+    "venueName": "엘리에나호텔",
+    "hallName": "그랜드볼룸",
+    "result": "confirmed",
+    "sourceUrl": "https://yozmwedding.co.kr/venue/?bmode=view&idx=18228236",
+    "photoUrl": "https://cdn.imweb.me/upload/S20240204aca494e0b4938/56282536989bf.jpg",
+    "reason": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-097",
+    "venueId": "V-SEO-20260728-055",
+    "venueName": "웨딩시그니처",
+    "hallName": "아너스홀",
+    "result": "confirmed",
+    "sourceUrl": "https://yozmwedding.co.kr/79/?bmode=view&idx=125529233",
+    "photoUrl": "https://cdn.imweb.me/upload/S20240204aca494e0b4938/c07bcefe4931e.jpg",
+    "reason": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-098",
+    "venueId": "V-SEO-20260728-056",
+    "venueName": "케이터틀",
+    "hallName": "라페네트레홀",
+    "result": "confirmed",
+    "sourceUrl": "https://yozmwedding.co.kr/venue/?bmode=view&idx=18921067",
+    "photoUrl": "https://cdn.imweb.me/upload/S20240204aca494e0b4938/4163a2a0c66d7.jpg",
+    "reason": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-099",
+    "venueId": "V-SEO-20260728-058",
+    "venueName": "아펠가모 공덕",
+    "hallName": "마리에홀",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": "https://friendzimg.weddingfriendz.com/partner/692_gongdeok_01_weddinghall_b02-3.jpg",
+    "reason": "공개 페이지에서 사진과 개별 홀명을 연결하는 근거를 자동 확인하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260729-100",
+    "venueId": "V-SEO-20260728-074",
+    "venueName": "PJ호텔",
+    "hallName": "헤스티아홀",
+    "result": "confirmed",
+    "sourceUrl": "https://www.s-wed.co.kr/weddingHall/detail.htm?HallCode=WH08A01A0022",
+    "photoUrl": "https://www.s-wed.co.kr/img/weddinghall-new/tab01.png",
+    "reason": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-101",
+    "venueId": "V-SEO-20260728-033",
+    "venueName": "호텔 리베라",
+    "hallName": "몽블랑홀",
+    "result": "confirmed",
+    "sourceUrl": "https://yozmwedding.co.kr/venue/?bmode=view&idx=145270863",
+    "photoUrl": "https://cdn.imweb.me/upload/S20240204aca494e0b4938/7286a1ecd515c.png",
+    "reason": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-102",
+    "venueId": "V-SEO-20260728-021",
+    "venueName": "노보텔 앰배서더 서울 강남",
+    "hallName": "보르도홀",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": null,
+    "reason": "확인 가능한 홀 사진을 자동 발견하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260729-103",
+    "venueId": "V-SEO-20260728-014",
+    "venueName": "그래머시코엑스",
+    "hallName": "ASEM 볼룸",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": "https://cdn.imweb.me/thumbnail/20250121/3a11eab1dc9d1.jpg",
+    "reason": "공개 페이지에서 사진과 개별 홀명을 연결하는 근거를 자동 확인하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260729-104",
+    "venueId": "V-SEO-20260728-016",
+    "venueName": "더청담",
+    "hallName": "에메랄드 & 사파이어",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": "https://thecheongdam.com/wp-content/uploads/2025/06/%EB%A1%9C%EB%B9%842-1024x683.jpg",
+    "reason": "공개 페이지에서 사진과 개별 홀명을 연결하는 근거를 자동 확인하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260729-105",
+    "venueId": "V-SEO-20260728-016",
+    "venueName": "더청담",
+    "hallName": "더 돔",
+    "result": "confirmed",
+    "sourceUrl": "https://yozmwedding.co.kr/venue/?bmode=view&idx=18309103",
+    "photoUrl": "https://cdn.imweb.me/upload/S20240204aca494e0b4938/ae2e07647c55a.png",
+    "reason": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-106",
+    "venueId": "V-SEO-20260728-043",
+    "venueName": "조선 팰리스 서울 강남",
+    "hallName": "로얄 챔버",
+    "result": "confirmed",
+    "sourceUrl": "https://yozmwedding.co.kr/venue/?bmode=view&idx=145278901",
+    "photoUrl": "https://cdn.imweb.me/upload/S20240204aca494e0b4938/8755d3b5c8867.jpg",
+    "reason": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-107",
+    "venueId": "V-SEO-20260728-045",
+    "venueName": "안다즈 서울 강남",
+    "hallName": "안다즈 스튜디오 III",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": null,
+    "reason": "확인 가능한 홀 사진을 자동 발견하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260729-108",
+    "venueId": "V-SEO-20260728-045",
+    "venueName": "안다즈 서울 강남",
+    "hallName": "안다즈 스튜디오 I",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": null,
+    "reason": "확인 가능한 홀 사진을 자동 발견하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260729-109",
+    "venueId": "V-SEO-20260728-045",
+    "venueName": "안다즈 서울 강남",
+    "hallName": "강남 펜트하우스",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": null,
+    "reason": "확인 가능한 홀 사진을 자동 발견하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260729-110",
+    "venueId": "V-SEO-20260728-045",
+    "venueName": "안다즈 서울 강남",
+    "hallName": "스카이 테라스 스위트",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": null,
+    "reason": "확인 가능한 홀 사진을 자동 발견하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260729-111",
+    "venueId": "V-SEO-20260728-053",
+    "venueName": "라이즈 오토그래프 컬렉션",
+    "hallName": "사이드 노트 클럽",
+    "result": "confirmed",
+    "sourceUrl": "https://www.rysehotel.co.kr/ryse_wedding/",
+    "photoUrl": "https://d3n14jmbdg5y6n.cloudfront.net/wp-content/uploads/2019/02/1-1.jpg",
+    "reason": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-112",
+    "venueId": "V-SEO-20260728-066",
+    "venueName": "로즈앤라임(RNL)",
+    "hallName": "6F 루프탑 가든라운지",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": "https://cdn.imweb.me/thumbnail/20220124/2c33de8e05e4d.jpg",
+    "reason": "공개 페이지에서 사진과 개별 홀명을 연결하는 근거를 자동 확인하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260729-113",
+    "venueId": "V-SEO-20260728-068",
+    "venueName": "노보텔 앰배서더 서울 동대문",
+    "hallName": "미팅룸 D 스몰 웨딩",
+    "result": "confirmed",
+    "sourceUrl": "https://ambatel.com/novotel/dongdaemun/ko/weddingView.do?wedding_contents_seq=106",
+    "photoUrl": "https://ambatel.com/RES/PRODUCT/202602/novoteldongdaemunwedding_33_20260223111554.png",
+    "reason": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-114",
+    "venueId": "V-SEO-20260728-069",
+    "venueName": "코트야드 바이 메리어트 서울 명동",
+    "hallName": "테라스 194",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": null,
+    "reason": "확인 가능한 홀 사진을 자동 발견하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260729-115",
+    "venueId": "V-SEO-20260729-001",
+    "venueName": "강동웨딩홀 KDW",
+    "hallName": "마이더스홀",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": "https://cdn.imweb.me/upload/S201909247b3439bdb6070/bd3ab481cf2fe.png",
+    "reason": "공개 페이지에서 사진과 개별 홀명을 연결하는 근거를 자동 확인하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260729-116",
+    "venueId": "V-SEO-20260729-002",
+    "venueName": "루벨",
+    "hallName": "루벨홀",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": null,
+    "reason": "확인 가능한 홀 사진을 자동 발견하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260729-117",
+    "venueId": "V-SEO-20260729-003",
+    "venueName": "스테이지28",
+    "hallName": "메모리가든",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": null,
+    "reason": "확인 가능한 홀 사진을 자동 발견하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260729-118",
+    "venueId": "V-SEO-20260729-004",
+    "venueName": "한강공원 광나루 장미원",
+    "hallName": "한강공원 광나루 장미원",
+    "result": "confirmed",
+    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities",
+    "photoUrl": "https://wedding.seoulwomen.or.kr/app/uploads/2025/06/%EA%B3%B5%EC%97%B0%EC%A0%84%EC%8B%9C%ED%99%80.jpg",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-119",
+    "venueId": "V-SEO-20260729-005",
+    "venueName": "더빅토리아웨딩파티",
+    "hallName": "빅토리아홀",
+    "result": "confirmed",
+    "sourceUrl": "https://www.weddingcrowd.kr/hall/view.php?idx=415",
+    "photoUrl": "https://www.weddingcrowd.kr/img/icon/ic_share_kakaotalk.jpg",
+    "reason": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-120",
+    "venueId": "V-SEO-20260729-006",
+    "venueName": "선운각",
+    "hallName": "선운각 야외마당",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": "https://storage.googleapis.com/cr-resource/image/a5e7d71783ddc98b29857ebc97c85165/sunwoongak/650/f7b0e6b2009510845a07288bdf246ca2.jpg?_1786074423",
+    "reason": "공개 페이지에서 사진과 개별 홀명을 연결하는 근거를 자동 확인하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260729-121",
+    "venueId": "V-SEO-20260729-007",
+    "venueName": "안토",
+    "hallName": "그랜드볼룸",
+    "result": "confirmed",
+    "sourceUrl": "https://www.directwedding.co.kr/weddinghall/hall0479",
+    "photoUrl": "https://cdn.prod.website-files.com/66a1dde80b3b36e97bde40d9/685a08a68a336ffa66886887_Group%206%201.png",
+    "reason": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-122",
+    "venueId": "V-SEO-20260729-008",
+    "venueName": "북서울 꿈의숲 창녕위궁재사",
+    "hallName": "북서울 꿈의숲 창녕위궁재사",
+    "result": "confirmed",
+    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities",
+    "photoUrl": "https://wedding.seoulwomen.or.kr/app/uploads/2025/06/%EA%B3%B5%EC%97%B0%EC%A0%84%EC%8B%9C%ED%99%80.jpg",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-123",
+    "venueId": "V-SEO-20260729-009",
+    "venueName": "솔밭근린공원",
+    "hallName": "솔밭근린공원",
+    "result": "confirmed",
+    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities",
+    "photoUrl": "https://wedding.seoulwomen.or.kr/app/uploads/2025/06/%EA%B3%B5%EC%97%B0%EC%A0%84%EC%8B%9C%ED%99%80.jpg",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-124",
+    "venueId": "V-SEO-20260729-010",
+    "venueName": "더 베뉴지 서울",
+    "hallName": "그랜드홀",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": null,
+    "reason": "확인 가능한 홀 사진을 자동 발견하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260729-125",
+    "venueId": "V-SEO-20260729-011",
+    "venueName": "더뉴컨벤션웨딩",
+    "hallName": "르노브홀",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": "https://cdn.imweb.me/upload/S20240809bde97c9a2e0bc/04ad2cb6bbad8.png",
+    "reason": "공개 페이지에서 사진과 개별 홀명을 연결하는 근거를 자동 확인하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260729-126",
+    "venueId": "V-SEO-20260729-012",
+    "venueName": "루이비스 컨벤션 강서점",
+    "hallName": "세인트그레이스홀",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": null,
+    "reason": "확인 가능한 홀 사진을 자동 발견하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260729-127",
+    "venueId": "V-SEO-20260729-013",
+    "venueName": "메이필드호텔",
+    "hallName": "메이필드볼룸",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": null,
+    "reason": "확인 가능한 홀 사진을 자동 발견하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260729-128",
+    "venueId": "V-SEO-20260729-014",
+    "venueName": "보타닉파크 웨딩",
+    "hallName": "오키드홀",
+    "result": "confirmed",
+    "sourceUrl": "https://www.botanicparkwedding.com/",
+    "photoUrl": "https://cdn.imweb.me/upload/S202008047761c947ed7cc/7f211969ba2cc.jpg",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-129",
+    "venueId": "V-SEO-20260729-015",
+    "venueName": "코트야드 메리어트 서울 보타닉 파크",
+    "hallName": "포레스트 볼룸",
+    "result": "confirmed",
+    "sourceUrl": "https://www.marriott.com/en-us/hotels/selcs-courtyard-seoul-botanic-park/events/",
+    "photoUrl": "https://cache.marriott.com/content/dam/marriott-renditions/SELCS/selcs-garden-0071-hor-feat.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=1920px:*",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-130",
+    "venueId": "V-SEO-20260729-016",
+    "venueName": "마곡광장 썬큰마당",
+    "hallName": "마곡광장 썬큰마당",
+    "result": "confirmed",
+    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities",
+    "photoUrl": "https://wedding.seoulwomen.or.kr/app/uploads/2025/06/%EA%B3%B5%EC%97%B0%EC%A0%84%EC%8B%9C%ED%99%80.jpg",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-131",
+    "venueId": "V-SEO-20260729-017",
+    "venueName": "서울식물원 사색의 정원",
+    "hallName": "서울식물원 사색의 정원",
+    "result": "confirmed",
+    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities",
+    "photoUrl": "https://wedding.seoulwomen.or.kr/app/uploads/2025/06/%EA%B3%B5%EC%97%B0%EC%A0%84%EC%8B%9C%ED%99%80.jpg",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-132",
+    "venueId": "V-SEO-20260729-018",
+    "venueName": "서울식물원 잔디마당",
+    "hallName": "서울식물원 잔디마당",
+    "result": "confirmed",
+    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities",
+    "photoUrl": "https://wedding.seoulwomen.or.kr/app/uploads/2025/06/%EA%B3%B5%EC%97%B0%EC%A0%84%EC%8B%9C%ED%99%80.jpg",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-133",
+    "venueId": "V-SEO-20260729-019",
+    "venueName": "어울림플라자 공연장",
+    "hallName": "어울림플라자 공연장",
+    "result": "confirmed",
+    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities",
+    "photoUrl": "https://wedding.seoulwomen.or.kr/app/uploads/2025/06/%EA%B3%B5%EC%97%B0%EC%A0%84%EC%8B%9C%ED%99%80.jpg",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-134",
+    "venueId": "V-SEO-20260729-020",
+    "venueName": "그레이스파티",
+    "hallName": "그레이스홀",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": null,
+    "reason": "확인 가능한 홀 사진을 자동 발견하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260729-135",
+    "venueId": "V-SEO-20260729-021",
+    "venueName": "서울대 연구공원 웨딩홀",
+    "hallName": "연구공원 웨딩홀",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": null,
+    "reason": "확인 가능한 홀 사진을 자동 발견하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260729-136",
+    "venueId": "V-SEO-20260729-022",
+    "venueName": "서울대학교 교수회관",
+    "hallName": "컨벤션홀",
+    "result": "confirmed",
+    "sourceUrl": "https://www.snufacultyclub.com/",
+    "photoUrl": "https://www.snufacultyclub.com/assets/images/main/top_btn_pc.png",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-137",
+    "venueId": "V-SEO-20260729-023",
+    "venueName": "서울대학교 호암교수회관",
+    "hallName": "무궁화홀",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": null,
+    "reason": "확인 가능한 홀 사진을 자동 발견하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260729-138",
+    "venueId": "V-SEO-20260729-024",
+    "venueName": "서울시민대학 다시가는 캠퍼스",
+    "hallName": "서울시민대학 다시가는 캠퍼스",
+    "result": "confirmed",
+    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities",
+    "photoUrl": "https://wedding.seoulwomen.or.kr/app/uploads/2025/06/%EA%B3%B5%EC%97%B0%EC%A0%84%EC%8B%9C%ED%99%80.jpg",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-139",
+    "venueId": "V-SEO-20260729-025",
+    "venueName": "그랜드 워커힐 서울",
+    "hallName": "비스타홀",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": "https://cdn.imweb.me/upload/S20240204aca494e0b4938/b12485b91d0db.png",
+    "reason": "공개 페이지에서 사진과 개별 홀명을 연결하는 근거를 자동 확인하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260729-140",
+    "venueId": "V-SEO-20260729-025",
+    "venueName": "그랜드 워커힐 서울",
+    "hallName": "그랜드홀",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": "https://cdn.imweb.me/upload/S20240204aca494e0b4938/b12485b91d0db.png",
+    "reason": "공개 페이지에서 사진과 개별 홀명을 연결하는 근거를 자동 확인하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260729-141",
+    "venueId": "V-SEO-20260729-025",
+    "venueName": "그랜드 워커힐 서울",
+    "hallName": "애스톤하우스",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": "https://cdn.imweb.me/upload/S20240204aca494e0b4938/b12485b91d0db.png",
+    "reason": "공개 페이지에서 사진과 개별 홀명을 연결하는 근거를 자동 확인하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260729-142",
+    "venueId": "V-SEO-20260729-026",
+    "venueName": "까사그랑데 센트로",
+    "hallName": "에떼르노홀",
+    "result": "confirmed",
+    "sourceUrl": "https://thewedd.com/hall-227/",
+    "photoUrl": "https://thewedd.com/wp-content/uploads/2026/01/%EA%B4%91%EC%A7%84%EA%B5%AC%EA%B9%8C%EC%82%AC%EA%B7%B8%EB%9E%91%EB%8D%B0-%EC%84%BC%ED%8A%B8%EB%A1%9C_04-1024x683.webp",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-143",
+    "venueId": "V-SEO-20260729-027",
+    "venueName": "스타시티아트홀",
+    "hallName": "아트홀",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": null,
+    "reason": "확인 가능한 홀 사진을 자동 발견하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260729-144",
+    "venueId": "V-SEO-20260729-028",
+    "venueName": "웨딩스퀘어 강변",
+    "hallName": "루시드홀",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": "https://cdn.imweb.me/upload/S2025052038998f58f091c/b4106cf0f0c71.png",
+    "reason": "공개 페이지에서 사진과 개별 홀명을 연결하는 근거를 자동 확인하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260729-145",
+    "venueId": "V-SEO-20260729-029",
+    "venueName": "하우스 오브 더 라움",
+    "hallName": "아마리스홀",
+    "result": "confirmed",
+    "sourceUrl": "https://yozmwedding.co.kr/85/?bmode=view&idx=166454066",
+    "photoUrl": "https://cdn.imweb.me/upload/S20240204aca494e0b4938/5ad802fe4bec5.jpg",
+    "reason": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-146",
+    "venueId": "V-SEO-20260729-029",
+    "venueName": "하우스 오브 더 라움",
+    "hallName": "벨루스홀",
+    "result": "confirmed",
+    "sourceUrl": "https://yozmwedding.co.kr/85/?bmode=view&idx=166454066",
+    "photoUrl": "https://cdn.imweb.me/upload/S20240204aca494e0b4938/99895bac438ff.jpg",
+    "reason": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-147",
+    "venueId": "V-SEO-20260729-030",
+    "venueName": "KU컨벤션웨딩홀",
+    "hallName": "컨벤션홀",
+    "result": "confirmed",
+    "sourceUrl": "https://thewedd.com/hall-128/",
+    "photoUrl": "https://thewedd.com/wp-content/uploads/2026/01/%EA%B4%91%EC%A7%84%EA%B5%ACKU%EC%BB%A8%EB%B2%A4%EC%85%98%EC%9B%A8%EB%94%A9%ED%99%80_04-1024x576.webp",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-148",
+    "venueId": "V-SEO-20260729-031",
+    "venueName": "광진구청 대강당홀",
+    "hallName": "광진구청 대강당홀",
+    "result": "confirmed",
+    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities",
+    "photoUrl": "https://wedding.seoulwomen.or.kr/app/uploads/2025/06/%EA%B3%B5%EC%97%B0%EC%A0%84%EC%8B%9C%ED%99%80.jpg",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-149",
+    "venueId": "V-SEO-20260729-032",
+    "venueName": "뚝섬 루프탑 웨딩홀",
+    "hallName": "뚝섬 루프탑 웨딩홀",
+    "result": "confirmed",
+    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities",
+    "photoUrl": "https://wedding.seoulwomen.or.kr/app/uploads/2025/06/KakaoTalk_20250804_173348018-scaled.jpg",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-150",
+    "venueId": "V-SEO-20260729-033",
+    "venueName": "어린이대공원 포시즌가든",
+    "hallName": "어린이대공원 포시즌가든",
+    "result": "confirmed",
+    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities",
+    "photoUrl": "https://wedding.seoulwomen.or.kr/app/uploads/2025/06/%EA%B3%B5%EC%97%B0%EC%A0%84%EC%8B%9C%ED%99%80.jpg",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-151",
+    "venueId": "V-SEO-20260729-034",
+    "venueName": "구로 엘컨벤션",
+    "hallName": "컨벤션홀",
+    "result": "confirmed",
+    "sourceUrl": "https://lconvention.co.kr/",
+    "photoUrl": "https://lconvention.co.kr/wp-content/plugins/instagram-feed/img/placeholder.png",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-152",
+    "venueId": "V-SEO-20260729-035",
+    "venueName": "더링크호텔",
+    "hallName": "링크홀",
+    "result": "confirmed",
+    "sourceUrl": "https://thewedd.com/hall-75/",
+    "photoUrl": "https://thewedd.com/wp-content/uploads/2026/01/%EA%B5%AC%EB%A1%9C%EA%B5%AC%EB%8D%94%EB%A7%81%ED%81%AC%ED%98%B8%ED%85%94_23-1024x725.webp",
+    "reason": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-153",
+    "venueId": "V-SEO-20260729-036",
+    "venueName": "더세인트",
+    "hallName": "그랜드볼룸",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": "https://thewedd.com/wp-content/uploads/2026/01/%EA%B5%AC%EB%A1%9C%EA%B5%AC%EB%8D%94%EC%84%B8%EC%9D%B8%ED%8A%B8-The-Saint_16-1024x683.webp",
+    "reason": "공개 페이지에서 사진과 개별 홀명을 연결하는 근거를 자동 확인하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260729-154",
+    "venueId": "V-SEO-20260729-037",
+    "venueName": "라마다서울신도림",
+    "hallName": "그랜드볼룸",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": "https://thewedd.com/wp-content/uploads/2026/01/%EA%B5%AC%EB%A1%9C%EA%B5%AC%EB%9D%BC%EB%A7%88%EB%8B%A4%EC%84%9C%EC%9A%B8%EC%8B%A0%EB%8F%84%EB%A6%BC_13-1024x565.webp",
+    "reason": "공개 페이지에서 사진과 개별 홀명을 연결하는 근거를 자동 확인하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260729-155",
+    "venueId": "V-SEO-20260729-038",
+    "venueName": "명품웨딩 프로포즈",
+    "hallName": "더드림홀",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": null,
+    "reason": "확인 가능한 홀 사진을 자동 발견하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260729-156",
+    "venueId": "V-SEO-20260729-039",
+    "venueName": "웨스턴베니비스 신도림",
+    "hallName": "다이너스티홀",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": "https://thewedd.com/wp-content/uploads/2026/01/%EA%B5%AC%EB%A1%9C%EA%B5%AC%EC%9B%A8%EC%8A%A4%ED%84%B4%EB%B2%A0%EB%8B%88%EB%B9%84%EC%8A%A4-%EC%8B%A0%EB%8F%84%EB%A6%BC_05.webp",
+    "reason": "공개 페이지에서 사진과 개별 홀명을 연결하는 근거를 자동 확인하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260729-157",
+    "venueId": "V-SEO-20260729-040",
+    "venueName": "제이오스티엘",
+    "hallName": "제이오스티엘홀",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": "https://cdn.imweb.me/thumbnail/20251031/0409e1070df92.jpg",
+    "reason": "공개 페이지에서 사진과 개별 홀명을 연결하는 근거를 자동 확인하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260729-158",
+    "venueId": "V-SEO-20260729-041",
+    "venueName": "지타워컨벤션",
+    "hallName": "그랜드볼룸",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": null,
+    "reason": "확인 가능한 홀 사진을 자동 발견하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260729-159",
+    "venueId": "V-SEO-20260729-042",
+    "venueName": "테크노마트웨딩시티",
+    "hallName": "베니치아홀",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": "https://thewedd.com/wp-content/uploads/2026/03/%EA%B5%AC%EB%A1%9C%EA%B5%AC%ED%85%8C%ED%81%AC%EB%85%B8%EB%A7%88%ED%8A%B8%EC%9B%A8%EB%94%A9%EC%8B%9C%ED%8B%B0_13.webp",
+    "reason": "공개 페이지에서 사진과 개별 홀명을 연결하는 근거를 자동 확인하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260729-160",
+    "venueId": "V-SEO-20260729-043",
+    "venueName": "푸른수목원 잔디마당",
+    "hallName": "푸른수목원 잔디마당",
+    "result": "confirmed",
+    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities",
+    "photoUrl": "https://wedding.seoulwomen.or.kr/app/uploads/2025/06/%EA%B3%B5%EC%97%B0%EC%A0%84%EC%8B%9C%ED%99%80.jpg",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-161",
+    "venueId": "V-SEO-20260729-044",
+    "venueName": "마벨리에 시흥점",
+    "hallName": "마벨리에홀",
+    "result": "confirmed",
+    "sourceUrl": "https://thewedd.com/hall-79/",
+    "photoUrl": "https://thewedd.com/wp-content/uploads/2026/01/%EA%B8%88%EC%B2%9C%EA%B5%AC%EB%A7%88%EB%B2%A8%EB%A6%AC%EC%97%90-%EC%8B%9C%ED%9D%A5%EC%A0%90_11.webp",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-162",
+    "venueId": "V-SEO-20260729-045",
+    "venueName": "금천구 녹색광장 잔디마당",
+    "hallName": "금천구 녹색광장 잔디마당",
+    "result": "confirmed",
+    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities",
+    "photoUrl": "https://wedding.seoulwomen.or.kr/app/uploads/2025/06/%EA%B3%B5%EC%97%B0%EC%A0%84%EC%8B%9C%ED%99%80.jpg",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-163",
+    "venueId": "V-SEO-20260729-046",
+    "venueName": "비엔티컨벤션",
+    "hallName": "단독홀",
+    "result": "confirmed",
+    "sourceUrl": "https://bntconvention.com/hall",
+    "photoUrl": "https://cdn.imweb.me/thumbnail/20220725/e7f3092042e54.png",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-164",
+    "venueId": "V-SEO-20260729-047",
+    "venueName": "테라리움 서울",
+    "hallName": "테라리움홀",
+    "result": "confirmed",
+    "sourceUrl": "https://thewedd.com/hall-127/",
+    "photoUrl": "https://thewedd.com/wp-content/uploads/2026/01/%EB%85%B8%EC%9B%90%EA%B5%AC%ED%85%8C%EB%9D%BC%EB%A6%AC%EC%9B%80-%EC%84%9C%EC%9A%B8_11-1024x683.webp",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-165",
+    "venueId": "V-SEO-20260729-048",
+    "venueName": "JW컨벤션웨딩홀",
+    "hallName": "단독홀",
+    "result": "confirmed",
+    "sourceUrl": "https://yozmwedding.co.kr/venue/?bmode=view&idx=19001145",
+    "photoUrl": "https://cdn.imweb.me/upload/S20240204aca494e0b4938/5ea8056abfacf.jpg",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-166",
+    "venueId": "V-SEO-20260729-049",
+    "venueName": "노원구 화랑대 철도공원",
+    "hallName": "노원구 화랑대 철도공원",
+    "result": "confirmed",
+    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities",
+    "photoUrl": "https://wedding.seoulwomen.or.kr/app/uploads/2025/06/%EA%B3%B5%EC%97%B0%EC%A0%84%EC%8B%9C%ED%99%80.jpg",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-167",
+    "venueId": "V-SEO-20260729-050",
+    "venueName": "북서울미술관 썬큰가든·별광장",
+    "hallName": "북서울미술관 썬큰가든·별광장",
+    "result": "confirmed",
+    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities",
+    "photoUrl": "https://wedding.seoulwomen.or.kr/app/uploads/2025/06/%EA%B3%B5%EC%97%B0%EC%A0%84%EC%8B%9C%ED%99%80.jpg",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-168",
+    "venueId": "V-SEO-20260729-051",
+    "venueName": "불암산 힐링타운 철쭉동산",
+    "hallName": "불암산 힐링타운 철쭉동산",
+    "result": "confirmed",
+    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities",
+    "photoUrl": "https://wedding.seoulwomen.or.kr/app/uploads/2025/06/%EA%B3%B5%EC%97%B0%EC%A0%84%EC%8B%9C%ED%99%80.jpg",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-169",
+    "venueId": "V-SEO-20260729-052",
+    "venueName": "메이다이닝",
+    "hallName": "메이다이닝 가든",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": null,
+    "reason": "확인 가능한 홀 사진을 자동 발견하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260729-170",
+    "venueId": "V-SEO-20260729-053",
+    "venueName": "도봉구청 선인봉홀",
+    "hallName": "도봉구청 선인봉홀",
+    "result": "confirmed",
+    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities",
+    "photoUrl": "https://wedding.seoulwomen.or.kr/app/uploads/2025/06/%EA%B3%B5%EC%97%B0%EC%A0%84%EC%8B%9C%ED%99%80.jpg",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-171",
+    "venueId": "V-SEO-20260729-054",
+    "venueName": "초안산 가드닝센터",
+    "hallName": "초안산 가드닝센터",
+    "result": "confirmed",
+    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities",
+    "photoUrl": "https://wedding.seoulwomen.or.kr/app/uploads/2025/06/%EA%B3%B5%EC%97%B0%EC%A0%84%EC%8B%9C%ED%99%80.jpg",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-172",
+    "venueId": "V-SEO-20260729-055",
+    "venueName": "초안산 하늘꽃정원",
+    "hallName": "초안산 하늘꽃정원",
+    "result": "confirmed",
+    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities",
+    "photoUrl": "https://wedding.seoulwomen.or.kr/app/uploads/2025/06/%EA%B3%B5%EC%97%B0%EC%A0%84%EC%8B%9C%ED%99%80.jpg",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-173",
+    "venueId": "V-SEO-20260729-056",
+    "venueName": "더모임",
+    "hallName": "그레이스홀",
+    "result": "confirmed",
+    "sourceUrl": "https://yozmwedding.co.kr/80/?bmode=view&idx=153076860",
+    "photoUrl": "https://cdn.imweb.me/upload/S20240204aca494e0b4938/168accbcb2289.jpg",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-174",
+    "venueId": "V-SEO-20260729-057",
+    "venueName": "벨라루체웨딩홀 서울점",
+    "hallName": "벨라루체홀",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": null,
+    "reason": "확인 가능한 홀 사진을 자동 발견하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260729-175",
+    "venueId": "V-SEO-20260729-058",
+    "venueName": "세종대왕기념관 궁중의례원",
+    "hallName": "초례청",
+    "result": "confirmed",
+    "sourceUrl": "https://thewedd.com/hall-114/",
+    "photoUrl": "https://thewedd.com/wp-content/uploads/2026/01/%EB%8F%99%EB%8C%80%EB%AC%B8%EA%B5%AC%EC%84%B8%EC%A2%85%EB%8C%80%EC%99%95%EA%B8%B0%EB%85%90%EA%B4%80-%EA%B6%81%EC%A4%91%EC%9D%98%EB%A1%80%EC%9B%90_16.webp",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-176",
+    "venueId": "V-SEO-20260729-059",
+    "venueName": "L65호텔웨딩컨벤션",
+    "hallName": "가든홀",
+    "result": "confirmed",
+    "sourceUrl": "https://yozmwedding.co.kr/venue/?bmode=view&idx=149990111",
+    "photoUrl": "https://cdn.imweb.me/upload/S20240204aca494e0b4938/2a65c48860339.jpg",
+    "reason": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-177",
+    "venueId": "V-SEO-20260729-059",
+    "venueName": "L65호텔웨딩컨벤션",
+    "hallName": "컨벤션홀",
+    "result": "confirmed",
+    "sourceUrl": "https://yozmwedding.co.kr/venue/?bmode=view&idx=149990111",
+    "photoUrl": "https://cdn.imweb.me/upload/S20240204aca494e0b4938/a3fa6e9dc8b47.jpg",
+    "reason": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-178",
+    "venueId": "V-SEO-20260729-060",
+    "venueName": "서울시립대 자작마루",
+    "hallName": "서울시립대 자작마루",
+    "result": "confirmed",
+    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities",
+    "photoUrl": "https://wedding.seoulwomen.or.kr/app/uploads/2025/06/%EA%B3%B5%EC%97%B0%EC%A0%84%EC%8B%9C%ED%99%80.jpg",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-179",
+    "venueId": "V-SEO-20260729-061",
+    "venueName": "서울한방진흥센터 야외마당",
+    "hallName": "서울한방진흥센터 야외마당",
+    "result": "confirmed",
+    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities",
+    "photoUrl": "https://wedding.seoulwomen.or.kr/app/uploads/2025/06/%EA%B3%B5%EC%97%B0%EC%A0%84%EC%8B%9C%ED%99%80.jpg",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-180",
+    "venueId": "V-SEO-20260729-062",
+    "venueName": "더에스비웨딩컨벤션",
+    "hallName": "그랜드볼룸",
+    "result": "confirmed",
+    "sourceUrl": "https://thewedd.com/hall-201/",
+    "photoUrl": "https://thewedd.com/wp-content/uploads/2026/01/%EB%8D%94%EC%97%90%EC%8A%A4%EB%B9%84%EC%9B%A8%EB%94%A9%ED%99%80-1024x611.jpg",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-181",
+    "venueId": "V-SEO-20260729-063",
+    "venueName": "마리앤코 동작스카이",
+    "hallName": "파티홀",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": "https://thewedd.com/wp-content/uploads/2026/01/%EB%8F%99%EC%9E%91%EA%B5%AC%EB%A7%88%EB%A6%AC%EC%95%A4%EC%BD%94-%EB%8F%99%EC%9E%91%EC%8A%A4%EC%B9%B4%EC%9D%B4_13.webp",
+    "reason": "공개 페이지에서 사진과 개별 홀명을 연결하는 근거를 자동 확인하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260729-182",
+    "venueId": "V-SEO-20260729-064",
+    "venueName": "플로렌스 보라매점",
+    "hallName": "카라홀",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": "https://thewedd.com/wp-content/uploads/2026/01/%EB%8F%99%EC%9E%91%EA%B5%AC%ED%94%8C%EB%A1%9C%EB%A0%8C%EC%8A%A4-%EB%B3%B4%EB%9D%BC%EB%A7%A4%EC%A0%90_13.webp",
+    "reason": "공개 페이지에서 사진과 개별 홀명을 연결하는 근거를 자동 확인하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260729-183",
+    "venueId": "V-SEO-20260729-065",
+    "venueName": "보라매시민안전체험관 다목적홀",
+    "hallName": "보라매시민안전체험관 다목적홀",
+    "result": "confirmed",
+    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities",
+    "photoUrl": "https://wedding.seoulwomen.or.kr/app/uploads/2025/06/%EA%B3%B5%EC%97%B0%EC%A0%84%EC%8B%9C%ED%99%80.jpg",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-184",
+    "venueId": "V-SEO-20260729-066",
+    "venueName": "서울여성플라자 피움서울",
+    "hallName": "서울여성플라자 피움서울",
+    "result": "confirmed",
+    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities",
+    "photoUrl": "https://wedding.seoulwomen.or.kr/app/uploads/2025/06/%EA%B3%B5%EC%97%B0%EC%A0%84%EC%8B%9C%ED%99%80.jpg",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-185",
+    "venueId": "V-SEO-20260729-067",
+    "venueName": "스위스 그랜드 호텔",
+    "hallName": "그랜드볼룸",
+    "result": "confirmed",
+    "sourceUrl": "https://yozmwedding.co.kr/venue/?bmode=view&idx=19808483",
+    "photoUrl": "https://cdn.imweb.me/upload/S20240204aca494e0b4938/56282536989bf.jpg",
+    "reason": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-186",
+    "venueId": "V-SEO-20260729-067",
+    "venueName": "스위스 그랜드 호텔",
+    "hallName": "컨벤션 에메랄드",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": "https://cdn.imweb.me/thumbnail/20240417/4c10a73a5488c.jpg",
+    "reason": "공개 페이지에서 사진과 개별 홀명을 연결하는 근거를 자동 확인하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260729-187",
+    "venueId": "V-SEO-20260729-067",
+    "venueName": "스위스 그랜드 호텔",
+    "hallName": "PDR",
+    "result": "confirmed",
+    "sourceUrl": "https://yozmwedding.co.kr/venue/?bmode=view&idx=19808483",
+    "photoUrl": "https://cdn.imweb.me/upload/S20240204aca494e0b4938/56282536989bf.jpg",
+    "reason": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-188",
+    "venueId": "V-SEO-20260729-067",
+    "venueName": "스위스 그랜드 호텔",
+    "hallName": "로터스힐",
+    "result": "confirmed",
+    "sourceUrl": "https://yozmwedding.co.kr/venue/?bmode=view&idx=19808483",
+    "photoUrl": "https://cdn.imweb.me/upload/S20240204aca494e0b4938/55c1bb1311c7d.png",
+    "reason": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-189",
+    "venueId": "V-SEO-20260729-068",
+    "venueName": "연세대학교 동문회관",
+    "hallName": "그랜드볼룸",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": null,
+    "reason": "확인 가능한 홀 사진을 자동 발견하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260729-191",
+    "venueId": "V-SEO-20260729-070",
+    "venueName": "서대문 안산 잔디마당",
+    "hallName": "서대문 안산 잔디마당",
+    "result": "confirmed",
+    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities",
+    "photoUrl": "https://wedding.seoulwomen.or.kr/app/uploads/2025/06/30.%EC%84%9C%EB%8C%80%EB%AC%B8%EC%95%88%EC%82%B0%EC%9E%94%EB%94%94%EB%A7%88%EB%8B%B9.png",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-192",
+    "venueId": "V-SEO-20260729-071",
+    "venueName": "청년예술청 SAPY",
+    "hallName": "청년예술청 SAPY",
+    "result": "confirmed",
+    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities",
+    "photoUrl": "https://wedding.seoulwomen.or.kr/app/uploads/2025/06/%EA%B3%B5%EC%97%B0%EC%A0%84%EC%8B%9C%ED%99%80.jpg",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-193",
+    "venueId": "V-SEO-20260729-072",
+    "venueName": "더리버사이드호텔",
+    "hallName": "콘서트홀",
+    "result": "confirmed",
+    "sourceUrl": "https://yozmwedding.co.kr/venue/?bmode=view&idx=18674969",
+    "photoUrl": "https://cdn.imweb.me/upload/S20240204aca494e0b4938/4c27027401dec.jpg",
+    "reason": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-194",
+    "venueId": "V-SEO-20260729-072",
+    "venueName": "더리버사이드호텔",
+    "hallName": "노벨라홀",
+    "result": "confirmed",
+    "sourceUrl": "https://yozmwedding.co.kr/venue/?bmode=view&idx=18674969",
+    "photoUrl": "https://cdn.imweb.me/upload/S20240204aca494e0b4938/1ad39b155fdc9.png",
+    "reason": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-195",
+    "venueId": "V-SEO-20260729-072",
+    "venueName": "더리버사이드호텔",
+    "hallName": "몽블랑홀",
+    "result": "confirmed",
+    "sourceUrl": "https://yozmwedding.co.kr/venue/?bmode=view&idx=18674969",
+    "photoUrl": "https://cdn.imweb.me/upload/S20240204aca494e0b4938/ba004cf9958bd.png",
+    "reason": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-196",
+    "venueId": "V-SEO-20260729-073",
+    "venueName": "더컨벤션 반포점",
+    "hallName": "단독홀",
+    "result": "confirmed",
+    "sourceUrl": "https://yozmwedding.co.kr/venue/?bmode=view&idx=150563480",
+    "photoUrl": "https://cdn.imweb.me/upload/S20240204aca494e0b4938/abefec63d987d.jpg",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-197",
+    "venueId": "V-SEO-20260729-074",
+    "venueName": "더화이트베일",
+    "hallName": "W홀",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": "https://cdn.imweb.me/thumbnail/20240228/a038649574ce3.jpg",
+    "reason": "공개 페이지에서 사진과 개별 홀명을 연결하는 근거를 자동 확인하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260729-198",
+    "venueId": "V-SEO-20260729-074",
+    "venueName": "더화이트베일",
+    "hallName": "V홀",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": "https://cdn.imweb.me/thumbnail/20240228/a038649574ce3.jpg",
+    "reason": "공개 페이지에서 사진과 개별 홀명을 연결하는 근거를 자동 확인하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260729-199",
+    "venueId": "V-SEO-20260729-074",
+    "venueName": "더화이트베일",
+    "hallName": "화이트베일홀",
+    "result": "confirmed",
+    "sourceUrl": "https://thewhiteveil.co.kr/WhiteVeilHall",
+    "photoUrl": "https://cdn.imweb.me/thumbnail/20260506/e3a6d4444a48e.png",
+    "reason": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-200",
+    "venueId": "V-SEO-20260729-075",
+    "venueName": "세인트메리스 강남",
+    "hallName": "세인트메리스홀",
+    "result": "confirmed",
+    "sourceUrl": "https://www.saintmaries.co.kr/",
+    "photoUrl": "https://cdn.imweb.me/thumbnail/20260703/1a40ccf2e59b8.png",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-201",
+    "venueId": "V-SEO-20260729-076",
+    "venueName": "아펠가모 반포점",
+    "hallName": "단독홀(고유명칭 미공개)",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": null,
+    "reason": "확인 가능한 홀 사진을 자동 발견하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260729-202",
+    "venueId": "V-SEO-20260729-077",
+    "venueName": "엘블레스",
+    "hallName": "다이아몬드홀",
+    "result": "confirmed",
+    "sourceUrl": "https://yozmwedding.co.kr/venue/?bmode=view&idx=18304493",
+    "photoUrl": "https://cdn.imweb.me/upload/S20240204aca494e0b4938/a50a3e77897ef.jpg",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-203",
+    "venueId": "V-SEO-20260729-078",
+    "venueName": "엘타워",
+    "hallName": "그랜드홀",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": "https://eltower.com/asset/images/main/img_visual1.jpg",
+    "reason": "공개 페이지에서 사진과 개별 홀명을 연결하는 근거를 자동 확인하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260729-204",
+    "venueId": "V-SEO-20260729-078",
+    "venueName": "엘타워",
+    "hallName": "그레이스홀",
+    "result": "confirmed",
+    "sourceUrl": "https://yozmwedding.co.kr/venue/?bmode=view&idx=150881960",
+    "photoUrl": "https://cdn.imweb.me/upload/S20240204aca494e0b4938/c19978ec89938.jpg",
+    "reason": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-205",
+    "venueId": "V-SEO-20260729-078",
+    "venueName": "엘타워",
+    "hallName": "오르체홀",
+    "result": "confirmed",
+    "sourceUrl": "https://yozmwedding.co.kr/venue/?bmode=view&idx=150881960",
+    "photoUrl": "https://cdn.imweb.me/upload/S20240204aca494e0b4938/81b242b56bfd2.jpg",
+    "reason": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-206",
+    "venueId": "V-SEO-20260729-079",
+    "venueName": "오드힐 하우스",
+    "hallName": "오드힐 하우스",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": null,
+    "reason": "확인 가능한 홀 사진을 자동 발견하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260729-207",
+    "venueId": "V-SEO-20260729-080",
+    "venueName": "플렌티 컨벤션",
+    "hallName": "컨벤션홀",
+    "result": "confirmed",
+    "sourceUrl": "https://yozmwedding.co.kr/venue/?bmode=view&idx=149084640",
+    "photoUrl": "https://cdn.imweb.me/upload/S20240204aca494e0b4938/472f8403f444e.jpg",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-208",
+    "venueId": "V-SEO-20260729-081",
+    "venueName": "플로팅아일랜드",
+    "hallName": "컨벤션홀",
+    "result": "confirmed",
+    "sourceUrl": "https://yozmwedding.co.kr/venue/?bmode=view&idx=149923928",
+    "photoUrl": "https://cdn.imweb.me/upload/S20240204aca494e0b4938/9563fd2e0dfab.jpg",
+    "reason": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-209",
+    "venueId": "V-SEO-20260729-081",
+    "venueName": "플로팅아일랜드",
+    "hallName": "마리나파크",
+    "result": "confirmed",
+    "sourceUrl": "https://yozmwedding.co.kr/venue/?bmode=view&idx=149923928",
+    "photoUrl": "https://cdn.imweb.me/upload/S20240204aca494e0b4938/f589379aa73ba.jpg",
+    "reason": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-210",
+    "venueId": "V-SEO-20260729-082",
+    "venueName": "한국교총MW컨벤션",
+    "hallName": "컨벤션홀",
+    "result": "confirmed",
+    "sourceUrl": "https://yozmwedding.co.kr/venue/?bmode=view&idx=18410671",
+    "photoUrl": "https://cdn.imweb.me/upload/S20240204aca494e0b4938/0154fad6f4be5.jpg",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-211",
+    "venueId": "V-SEO-20260729-083",
+    "venueName": "헤이스가든",
+    "hallName": "헤이스가든",
+    "result": "confirmed",
+    "sourceUrl": "https://yozmwedding.co.kr/venue/?bmode=view&idx=149930730",
+    "photoUrl": "https://cdn.imweb.me/upload/S20240204aca494e0b4938/46dc69e9239ef.png",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-212",
+    "venueId": "V-SEO-20260729-084",
+    "venueName": "aT 포레",
+    "hallName": "그랜드홀",
+    "result": "confirmed",
+    "sourceUrl": "https://yozmwedding.co.kr/venue/?bmode=view&idx=150628753",
+    "photoUrl": "https://cdn.imweb.me/upload/S20240204aca494e0b4938/4ef405d8d573f.png",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-213",
+    "venueId": "V-SEO-20260729-085",
+    "venueName": "JW메리어트호텔서울",
+    "hallName": "그랜드 볼룸",
+    "result": "confirmed",
+    "sourceUrl": "https://yozmwedding.co.kr/60/?bmode=view&idx=151936909",
+    "photoUrl": "https://cdn.imweb.me/upload/S20240204aca494e0b4938/6c899e8f6bed1.jpg",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-214",
+    "venueId": "V-SEO-20260729-086",
+    "venueName": "매헌시민의숲",
+    "hallName": "매헌시민의숲",
+    "result": "confirmed",
+    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities",
+    "photoUrl": "https://wedding.seoulwomen.or.kr/app/uploads/2025/06/%EA%B3%B5%EC%97%B0%EC%A0%84%EC%8B%9C%ED%99%80.jpg",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-215",
+    "venueId": "V-SEO-20260729-087",
+    "venueName": "서울교육대학교 그랜드홀",
+    "hallName": "서울교육대학교 그랜드홀",
+    "result": "confirmed",
+    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities",
+    "photoUrl": "https://wedding.seoulwomen.or.kr/app/uploads/2025/06/%EC%84%9C%EC%9A%B8%EA%B5%90%EB%8C%80-%EA%B7%B8%EB%9E%9C%EB%93%9C%ED%99%80.png",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-216",
+    "venueId": "V-SEO-20260729-088",
+    "venueName": "서울교육대학교 사향광장",
+    "hallName": "서울교육대학교 사향광장",
+    "result": "confirmed",
+    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities",
+    "photoUrl": "https://wedding.seoulwomen.or.kr/app/uploads/2025/06/%EA%B3%B5%EC%97%B0%EC%A0%84%EC%8B%9C%ED%99%80.jpg",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-217",
+    "venueId": "V-SEO-20260729-089",
+    "venueName": "서울문화예술교육센터 서초",
+    "hallName": "서울문화예술교육센터 서초",
+    "result": "confirmed",
+    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities",
+    "photoUrl": "https://wedding.seoulwomen.or.kr/app/uploads/2025/06/%EA%B3%B5%EC%97%B0%EC%A0%84%EC%8B%9C%ED%99%80.jpg",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-218",
+    "venueId": "V-SEO-20260729-090",
+    "venueName": "서울시 인재개발원 인재홀",
+    "hallName": "서울시 인재개발원 인재홀",
+    "result": "confirmed",
+    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities",
+    "photoUrl": "https://wedding.seoulwomen.or.kr/app/uploads/2025/06/%EA%B3%B5%EC%97%B0%EC%A0%84%EC%8B%9C%ED%99%80.jpg",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-219",
+    "venueId": "V-SEO-20260729-091",
+    "venueName": "디노체컨벤션",
+    "hallName": "아트홀",
+    "result": "confirmed",
+    "sourceUrl": "https://www.directwedding.co.kr/weddinghall/hall0160",
+    "photoUrl": "https://cdn.prod.website-files.com/66a1eeaa00f1c86c3dbae974/686f64708f8b4fbe733926b1_%EB%94%94%EB%85%B8%EC%B2%B4Screenshot%202025-07-10%20at%2015.56.27.avif",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-220",
+    "venueId": "V-SEO-20260729-092",
+    "venueName": "레노스블랑쉬",
+    "hallName": "블랑쉬홀",
+    "result": "confirmed",
+    "sourceUrl": "https://thewedd.com/hall-110/",
+    "photoUrl": "https://thewedd.com/wp-content/uploads/2026/01/%EC%84%B1%EB%8F%99%EA%B5%AC%EB%A0%88%EB%85%B8%EC%8A%A4%EB%B8%94%EB%9E%91%EC%89%AC_12-1024x768.webp",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-221",
+    "venueId": "V-SEO-20260729-093",
+    "venueName": "보테가마지오",
+    "hallName": "로스타뇨홀",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": "https://thewedd.com/wp-content/uploads/2026/01/%EC%84%B1%EB%8F%99%EA%B5%AC%EB%B3%B4%ED%85%8C%EA%B0%80%EB%A7%88%EC%A7%80%EC%98%A4_04-1024x683.webp",
+    "reason": "공개 페이지에서 사진과 개별 홀명을 연결하는 근거를 자동 확인하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260729-222",
+    "venueId": "V-SEO-20260729-094",
+    "venueName": "H스퀘어(한양대 동문회관)",
+    "hallName": "헤리티지홀",
+    "result": "confirmed",
+    "sourceUrl": "https://thewedd.com/hall-109-2/",
+    "photoUrl": "https://thewedd.com/wp-content/uploads/2026/01/%EC%84%B1%EB%8F%99%EA%B5%ACH%EC%8A%A4%ED%80%98%EC%96%B4%ED%95%9C%EC%96%91%EB%8C%80-%EB%8F%99%EB%AC%B8%ED%9A%8C%EA%B4%80_04.webp",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-223",
+    "venueId": "V-SEO-20260729-095",
+    "venueName": "서울새활용플라자",
+    "hallName": "서울새활용플라자",
+    "result": "confirmed",
+    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities",
+    "photoUrl": "https://wedding.seoulwomen.or.kr/app/uploads/2025/06/%EA%B3%B5%EC%97%B0%EC%A0%84%EC%8B%9C%ED%99%80.jpg",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-224",
+    "venueId": "V-SEO-20260729-096",
+    "venueName": "서울숲 설렘정원",
+    "hallName": "서울숲 설렘정원",
+    "result": "confirmed",
+    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities",
+    "photoUrl": "https://wedding.seoulwomen.or.kr/app/uploads/2025/06/%EA%B3%B5%EC%97%B0%EC%A0%84%EC%8B%9C%ED%99%80.jpg",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-225",
+    "venueId": "V-SEO-20260729-097",
+    "venueName": "서울숲 포플러정원",
+    "hallName": "서울숲 포플러정원",
+    "result": "confirmed",
+    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities",
+    "photoUrl": "https://wedding.seoulwomen.or.kr/app/uploads/2026/02/KakaoTalk_20260629_132237743_01-scaled.jpg",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-226",
+    "venueId": "V-SEO-20260729-098",
+    "venueName": "르한스",
+    "hallName": "르한스(야외웨딩)",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": null,
+    "reason": "확인 가능한 홀 사진을 자동 발견하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260729-227",
+    "venueId": "V-SEO-20260729-099",
+    "venueName": "삼청각",
+    "hallName": "일화당",
+    "result": "confirmed",
+    "sourceUrl": "https://samcheonggak.or.kr/",
+    "photoUrl": "https://samcheonggak.or.kr/attachList/upload/hall/c20220424170637373/p20220425073750723/pop20220425075142660.jpg",
+    "reason": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-228",
+    "venueId": "V-SEO-20260729-100",
+    "venueName": "아리랑힐 호텔 동대문",
+    "hallName": "아리움홀",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": "https://thewedd.com/wp-content/uploads/2026/01/%EC%84%B1%EB%B6%81%EA%B5%AC%EC%95%84%EB%A6%AC%EB%9E%91%ED%9E%90-%ED%98%B8%ED%85%94-%EB%8F%99%EB%8C%80%EB%AC%B8_05-1024x682.webp",
+    "reason": "공개 페이지에서 사진과 개별 홀명을 연결하는 근거를 자동 확인하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260729-229",
+    "venueId": "V-SEO-20260729-101",
+    "venueName": "웨딩스퀘어 성북",
+    "hallName": "그레이스홀",
+    "result": "confirmed",
+    "sourceUrl": "https://www.weddingsquare.co.kr/",
+    "photoUrl": "https://cdn.imweb.me/upload/S20250617bb376dcf6ff0e/61a26062c2afa.png",
+    "reason": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-230",
+    "venueId": "V-SEO-20260729-102",
+    "venueName": "포레스트원웨딩",
+    "hallName": "포레스트원홀",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": null,
+    "reason": "확인 가능한 홀 사진을 자동 발견하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260729-231",
+    "venueId": "V-SEO-20260729-103",
+    "venueName": "성북 예향재",
+    "hallName": "성북 예향재",
+    "result": "confirmed",
+    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities",
+    "photoUrl": "https://wedding.seoulwomen.or.kr/app/uploads/2025/06/%EA%B3%B5%EC%97%B0%EC%A0%84%EC%8B%9C%ED%99%80.jpg",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-232",
+    "venueId": "V-SEO-20260729-104",
+    "venueName": "더베네치아",
+    "hallName": "베네치아홀",
+    "result": "confirmed",
+    "sourceUrl": "https://thewedd.com/hall-19/",
+    "photoUrl": "https://thewedd.com/wp-content/uploads/2026/01/%EC%86%A1%ED%8C%8C%EA%B5%AC%EB%8D%94%EB%B2%A0%EB%84%A4%EC%B9%98%EC%95%84_15-1024x631.webp",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-233",
+    "venueId": "V-SEO-20260729-105",
+    "venueName": "더컨벤션 송파문정점",
+    "hallName": "그랜드볼룸",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": "https://thewedd.com/wp-content/uploads/2026/01/%EC%86%A1%ED%8C%8C%EA%B5%AC%EB%8D%94%EC%BB%A8%EB%B2%A4%EC%85%98-%EC%9E%A0%EC%8B%A4%EC%A0%90%EA%B5%90%ED%86%B5%ED%9A%8C%EA%B4%80_22.webp",
+    "reason": "공개 페이지에서 사진과 개별 홀명을 연결하는 근거를 자동 확인하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260729-234",
+    "venueId": "V-SEO-20260729-106",
+    "venueName": "더컨벤션 잠실점",
+    "hallName": "아모르홀",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": "https://cdn.imweb.me/upload/S20250425eab1d6cf334e4/b4e2e9345acbe.png",
+    "reason": "공개 페이지에서 사진과 개별 홀명을 연결하는 근거를 자동 확인하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260729-235",
+    "venueId": "V-SEO-20260729-107",
+    "venueName": "라브르 에드니아",
+    "hallName": "라브르 에드니아",
+    "result": "confirmed",
+    "sourceUrl": "https://thewedd.com/hall-34/",
+    "photoUrl": "https://thewedd.com/wp-content/uploads/2026/01/%EC%97%90%EB%93%9C%EB%8B%88%EC%95%84%EC%9B%A8%EB%94%A9%ED%99%80-1024x643.jpg",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-236",
+    "venueId": "V-SEO-20260729-108",
+    "venueName": "라비니움",
+    "hallName": "리츄얼홀",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": null,
+    "reason": "확인 가능한 홀 사진을 자동 발견하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260729-237",
+    "venueId": "V-SEO-20260729-109",
+    "venueName": "루이비스컨벤션 송파문정점",
+    "hallName": "아모리스홀",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": "https://thewedd.com/wp-content/uploads/2026/01/%EC%86%A1%ED%8C%8C%EA%B5%AC%EB%A3%A8%EC%9D%B4%EB%B9%84%EC%8A%A4%EC%BB%A8%EB%B2%A4%EC%85%98-%EC%86%A1%ED%8C%8C%EB%AC%B8%EC%A0%95%EC%A0%90_12.webp",
+    "reason": "공개 페이지에서 사진과 개별 홀명을 연결하는 근거를 자동 확인하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260729-238",
+    "venueId": "V-SEO-20260729-110",
+    "venueName": "서울올림픽파크텔",
+    "hallName": "올림피아홀",
+    "result": "confirmed",
+    "sourceUrl": "https://thewedd.com/hall-195/",
+    "photoUrl": "https://thewedd.com/wp-content/uploads/2026/01/%EC%86%A1%ED%8C%8C%EA%B5%AC%EC%84%9C%EC%9A%B8%EC%98%AC%EB%A6%BC%ED%94%BD%ED%8C%8C%ED%81%AC%ED%85%94_04.webp",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-239",
+    "venueId": "V-SEO-20260729-111",
+    "venueName": "서울웨딩타워",
+    "hallName": "서울웨딩타워 단독홀",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": "https://thewedd.com/wp-content/uploads/2026/01/%EC%86%A1%ED%8C%8C%EA%B5%AC%EC%84%9C%EC%9A%B8%EC%9B%A8%EB%94%A9%ED%83%80%EC%9B%8C_05-1024x683.webp",
+    "reason": "공개 페이지에서 사진과 개별 홀명을 연결하는 근거를 자동 확인하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260729-240",
+    "venueId": "V-SEO-20260729-112",
+    "venueName": "소피텔 앰배서더 서울",
+    "hallName": "그랜드 볼룸 방돔",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": null,
+    "reason": "확인 가능한 홀 사진을 자동 발견하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260729-241",
+    "venueId": "V-SEO-20260729-113",
+    "venueName": "스카이가든 웨딩홀",
+    "hallName": "스카이가든홀",
+    "result": "confirmed",
+    "sourceUrl": "https://yozmwedding.co.kr/venue/?bmode=view&idx=150907134",
+    "photoUrl": "https://cdn.imweb.me/upload/S20240204aca494e0b4938/f34b71d5038a9.jpg",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-242",
+    "venueId": "V-SEO-20260729-114",
+    "venueName": "시그니엘 서울",
+    "hallName": "그랜드 볼룸",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": null,
+    "reason": "확인 가능한 홀 사진을 자동 발견하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260729-243",
+    "venueId": "V-SEO-20260729-115",
+    "venueName": "아펠가모 잠실점",
+    "hallName": "그랜드볼룸",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": null,
+    "reason": "확인 가능한 홀 사진을 자동 발견하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260729-244",
+    "venueId": "V-SEO-20260729-116",
+    "venueName": "엘로라 인 가든",
+    "hallName": "엘로라홀",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": null,
+    "reason": "확인 가능한 홀 사진을 자동 발견하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260729-245",
+    "venueId": "V-SEO-20260729-117",
+    "venueName": "호텔 파크하비오",
+    "hallName": "콘서트홀",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": "https://thewedd.com/wp-content/uploads/2026/01/%EC%86%A1%ED%8C%8C%EA%B5%AC%ED%98%B8%ED%85%94%ED%8C%8C%ED%81%AC%ED%95%98%EB%B9%84%EC%98%A4_05.webp",
+    "reason": "공개 페이지에서 사진과 개별 홀명을 연결하는 근거를 자동 확인하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260729-246",
+    "venueId": "V-SEO-20260729-118",
+    "venueName": "잠실 루프탑 웨딩홀",
+    "hallName": "잠실 루프탑 웨딩홀",
+    "result": "confirmed",
+    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities",
+    "photoUrl": "https://wedding.seoulwomen.or.kr/app/uploads/2025/06/%EB%A3%A8%ED%94%84%ED%83%911-scaled.jpg",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-247",
+    "venueId": "V-SEO-20260729-119",
+    "venueName": "한성백제박물관 하늘정원 루프탑",
+    "hallName": "한성백제박물관 하늘정원 루프탑",
+    "result": "confirmed",
+    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities",
+    "photoUrl": "https://wedding.seoulwomen.or.kr/app/uploads/2025/06/%ED%95%9C%EC%84%B1%EB%B0%B1%EC%A0%9C1-1.jpeg",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-248",
+    "venueId": "V-SEO-20260729-120",
+    "venueName": "로프트가든344",
+    "hallName": "메인홀",
+    "result": "confirmed",
+    "sourceUrl": "https://thewedd.com/hall-83/",
+    "photoUrl": "https://thewedd.com/wp-content/uploads/2026/01/%EC%96%91%EC%B2%9C%EA%B5%AC%EB%A1%9C%ED%94%84%ED%8A%B8%EA%B0%80%EB%93%A0344_11.webp",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-249",
+    "venueId": "V-SEO-20260729-121",
+    "venueName": "공군호텔",
+    "hallName": "그랜드볼룸",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": "https://thewedd.com/wp-content/uploads/2026/01/%EC%98%81%EB%93%B1%ED%8F%AC%EA%B5%AC%EA%B3%B5%EA%B5%B0%ED%98%B8%ED%85%94_04.webp",
+    "reason": "공개 페이지에서 사진과 개별 홀명을 연결하는 근거를 자동 확인하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260729-250",
+    "venueId": "V-SEO-20260729-122",
+    "venueName": "글래드호텔",
+    "hallName": "블룸홀",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": "https://thewedd.com/wp-content/uploads/2026/01/%EC%98%81%EB%93%B1%ED%8F%AC%EA%B5%AC%EA%B8%80%EB%9E%98%EB%93%9C%ED%98%B8%ED%85%94_05.webp",
+    "reason": "공개 페이지에서 사진과 개별 홀명을 연결하는 근거를 자동 확인하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260729-251",
+    "venueId": "V-SEO-20260729-123",
+    "venueName": "더베르G",
+    "hallName": "더베르G홀",
+    "result": "confirmed",
+    "sourceUrl": "https://thewedd.com/hall-205/",
+    "photoUrl": "https://thewedd.com/wp-content/uploads/2026/01/%EB%8D%94%EB%B2%A0%EB%A5%B4%EC%A7%80%EC%9B%A8%EB%94%A9%ED%99%80-1024x538.jpg",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-252",
+    "venueId": "V-SEO-20260729-124",
+    "venueName": "더컨벤션 영등포점",
+    "hallName": "그랜드볼룸",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": "https://thewedd.com/wp-content/uploads/2026/01/%EC%98%81%EB%93%B1%ED%8F%AC%EA%B5%AC%EB%8D%94%EC%BB%A8%EB%B2%A4%EC%85%98-%EC%98%81%EB%93%B1%ED%8F%AC%EC%A0%90_11.webp",
+    "reason": "공개 페이지에서 사진과 개별 홀명을 연결하는 근거를 자동 확인하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260729-253",
+    "venueId": "V-SEO-20260729-125",
+    "venueName": "라피쥬웨딩 한국거래소점",
+    "hallName": "컨퍼런스홀",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": "https://thewedd.com/wp-content/uploads/2026/01/%EC%98%81%EB%93%B1%ED%8F%AC%EA%B5%AC%EB%9D%BC%ED%94%BC%EC%A5%AC%EC%9B%A8%EB%94%A9-%ED%95%9C%EA%B5%AD%EA%B1%B0%EB%9E%98%EC%86%8C%EC%A0%90_04.webp",
+    "reason": "공개 페이지에서 사진과 개별 홀명을 연결하는 근거를 자동 확인하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260729-254",
+    "venueId": "V-SEO-20260729-126",
+    "venueName": "여의도웨딩컨벤션(KT빌딩)",
+    "hallName": "그랜드볼룸",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": "https://thewedd.com/wp-content/uploads/2026/01/%EC%97%AC%EC%9D%98%EB%8F%84%EC%9B%A8%EB%94%A9%EC%BB%A8%EB%B2%A4%EC%85%98.jpg",
+    "reason": "공개 페이지에서 사진과 개별 홀명을 연결하는 근거를 자동 확인하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260729-255",
+    "venueId": "V-SEO-20260729-127",
+    "venueName": "웨딩그룹위더스 영등포",
+    "hallName": "메리엘컨벤션",
+    "result": "confirmed",
+    "sourceUrl": "https://withus.kr/",
+    "photoUrl": "https://www.withus.kr/attachList/upload/hall/c20200914124437480/p20201012170149147/pop20240910170038640.jpg",
+    "reason": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-256",
+    "venueId": "V-SEO-20260729-128",
+    "venueName": "웨스턴베니비스 영등포",
+    "hallName": "그랜드볼룸",
+    "result": "confirmed",
+    "sourceUrl": "https://thewedd.com/hall-66/",
+    "photoUrl": "https://thewedd.com/wp-content/uploads/2026/01/%EC%98%81%EB%93%B1%ED%8F%AC%EA%B5%AC%EC%9B%A8%EC%8A%A4%ED%84%B4%EB%B2%A0%EB%8B%88%EB%B9%84%EC%8A%A4-%EC%98%81%EB%93%B1%ED%8F%AC_05-1024x542.webp",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-257",
+    "venueId": "V-SEO-20260729-129",
+    "venueName": "켄싱턴호텔 여의도",
+    "hallName": "센트럴파크홀",
+    "result": "confirmed",
+    "sourceUrl": "https://thewedd.com/hall-72/",
+    "photoUrl": "https://thewedd.com/wp-content/uploads/2026/01/%EC%98%81%EB%93%B1%ED%8F%AC%EA%B5%AC%EC%BC%84%EC%8B%B1%ED%84%B4%ED%98%B8%ED%85%94-%EC%97%AC%EC%9D%98%EB%8F%84_05-1024x683.webp",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-258",
+    "venueId": "V-SEO-20260729-130",
+    "venueName": "코트야드 메리어트 서울 타임스퀘어",
+    "hallName": "코트야드룸",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": null,
+    "reason": "확인 가능한 홀 사진을 자동 발견하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260729-259",
+    "venueId": "V-SEO-20260729-131",
+    "venueName": "콘래드 서울",
+    "hallName": "그랜드 볼룸",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": null,
+    "reason": "확인 가능한 홀 사진을 자동 발견하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260729-260",
+    "venueId": "V-SEO-20260729-131",
+    "venueName": "콘래드 서울",
+    "hallName": "파크 볼룸",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": null,
+    "reason": "확인 가능한 홀 사진을 자동 발견하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260729-261",
+    "venueId": "V-SEO-20260729-132",
+    "venueName": "페어몬트 앰배서더 서울",
+    "hallName": "그랜드 볼룸",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": null,
+    "reason": "확인 가능한 홀 사진을 자동 발견하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260729-262",
+    "venueId": "V-SEO-20260729-133",
+    "venueName": "플로렌스 오목교점",
+    "hallName": "카라홀",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": "https://thewedd.com/wp-content/uploads/2026/01/%EC%98%81%EB%93%B1%ED%8F%AC%EA%B5%AC%ED%94%8C%EB%A1%9C%EB%A0%8C%EC%8A%A4-%EC%98%A4%EB%AA%A9%EA%B5%90%EC%A0%90_05.webp",
+    "reason": "공개 페이지에서 사진과 개별 홀명을 연결하는 근거를 자동 확인하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260729-263",
+    "venueId": "V-SEO-20260729-134",
+    "venueName": "FKI플라자",
+    "hallName": "그랜드볼룸",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": null,
+    "reason": "확인 가능한 홀 사진을 자동 발견하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260729-264",
+    "venueId": "V-SEO-20260729-135",
+    "venueName": "선유도공원 원형무대",
+    "hallName": "선유도공원 원형무대",
+    "result": "confirmed",
+    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities",
+    "photoUrl": "https://wedding.seoulwomen.or.kr/app/uploads/2025/06/%EA%B3%B5%EC%97%B0%EC%A0%84%EC%8B%9C%ED%99%80.jpg",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-265",
+    "venueId": "V-SEO-20260729-136",
+    "venueName": "여의도 루프탑 웨딩홀",
+    "hallName": "여의도 루프탑 웨딩홀",
+    "result": "confirmed",
+    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities",
+    "photoUrl": "https://wedding.seoulwomen.or.kr/app/uploads/2025/06/%EA%B3%B5%EC%97%B0%EC%A0%84%EC%8B%9C%ED%99%80.jpg",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-266",
+    "venueId": "V-SEO-20260729-137",
+    "venueName": "여의도 한강공원 물빛무대",
+    "hallName": "여의도 한강공원 물빛무대",
+    "result": "confirmed",
+    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities",
+    "photoUrl": "https://wedding.seoulwomen.or.kr/app/uploads/2025/06/%EA%B3%B5%EC%97%B0%EC%A0%84%EC%8B%9C%ED%99%80.jpg",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-267",
+    "venueId": "V-SEO-20260729-138",
+    "venueName": "영중종합사회복지관 5층 체육관",
+    "hallName": "영중종합사회복지관 5층 체육관",
+    "result": "confirmed",
+    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities",
+    "photoUrl": "https://wedding.seoulwomen.or.kr/app/uploads/2025/06/%EA%B3%B5%EC%97%B0%EC%A0%84%EC%8B%9C%ED%99%80.jpg",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-268",
+    "venueId": "V-SEO-20260729-139",
+    "venueName": "그랜드 하얏트 서울",
+    "hallName": "그랜드 볼룸",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": "https://cdn.imweb.me/upload/S20240204aca494e0b4938/d915853a7ff58.png",
+    "reason": "공개 페이지에서 사진과 개별 홀명을 연결하는 근거를 자동 확인하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260729-269",
+    "venueId": "V-SEO-20260729-139",
+    "venueName": "그랜드 하얏트 서울",
+    "hallName": "그랜드 살롱",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": "https://cdn.imweb.me/upload/S20240204aca494e0b4938/d915853a7ff58.png",
+    "reason": "공개 페이지에서 사진과 개별 홀명을 연결하는 근거를 자동 확인하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260729-270",
+    "venueId": "V-SEO-20260729-139",
+    "venueName": "그랜드 하얏트 서울",
+    "hallName": "워터폴 가든",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": "https://cdn.imweb.me/upload/S20240204aca494e0b4938/d915853a7ff58.png",
+    "reason": "공개 페이지에서 사진과 개별 홀명을 연결하는 근거를 자동 확인하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260729-271",
+    "venueId": "V-SEO-20260729-140",
+    "venueName": "남산예술원 웨딩홀",
+    "hallName": "가든홀",
+    "result": "confirmed",
+    "sourceUrl": "https://yozmwedding.co.kr/venue/?bmode=view&idx=19023649",
+    "photoUrl": "https://cdn.imweb.me/upload/S20240204aca494e0b4938/4fe3385b1f705.jpg",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-272",
+    "venueId": "V-SEO-20260729-141",
+    "venueName": "로얄파크컨벤션",
+    "hallName": "파크홀",
+    "result": "confirmed",
+    "sourceUrl": "https://yozmwedding.co.kr/venue/?bmode=view&idx=152195291",
+    "photoUrl": "https://cdn.imweb.me/upload/S20240204aca494e0b4938/ee67d27078b03.jpg",
+    "reason": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-273",
+    "venueId": "V-SEO-20260729-141",
+    "venueName": "로얄파크컨벤션",
+    "hallName": "로얄홀",
+    "result": "confirmed",
+    "sourceUrl": "https://yozmwedding.co.kr/venue/?bmode=view&idx=152195291",
+    "photoUrl": "https://cdn.imweb.me/upload/S20240204aca494e0b4938/ee67d27078b03.jpg",
+    "reason": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-274",
+    "venueId": "V-SEO-20260729-142",
+    "venueName": "몬드리안 서울 이태원",
+    "hallName": "그랜드볼룸",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": null,
+    "reason": "확인 가능한 홀 사진을 자동 발견하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260729-275",
+    "venueId": "V-SEO-20260729-143",
+    "venueName": "서울드래곤시티",
+    "hallName": "그랜드볼룸 한라",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": null,
+    "reason": "확인 가능한 홀 사진을 자동 발견하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260729-276",
+    "venueId": "V-SEO-20260729-144",
+    "venueName": "아이오유 레스토랑",
+    "hallName": "단독홀",
+    "result": "confirmed",
+    "sourceUrl": "https://yozmwedding.co.kr/venue/?bmode=view&idx=152252289",
+    "photoUrl": "https://cdn.imweb.me/upload/S20240204aca494e0b4938/4ef405d8d573f.png",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-277",
+    "venueId": "V-SEO-20260729-145",
+    "venueName": "앨리스몽드 남산점",
+    "hallName": "앨리스몽드",
+    "result": "confirmed",
+    "sourceUrl": "https://yozmwedding.co.kr/venue/?bmode=view&idx=152504324",
+    "photoUrl": "https://cdn.imweb.me/upload/S20240204aca494e0b4938/13438c2b162ce.png",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-278",
+    "venueId": "V-SEO-20260729-146",
+    "venueName": "틸티드한남",
+    "hallName": "단독홀",
+    "result": "confirmed",
+    "sourceUrl": "https://yozmwedding.co.kr/venue/?bmode=view&idx=18336016",
+    "photoUrl": "https://cdn.imweb.me/upload/S20240204aca494e0b4938/27ee5d5c7f931.jpg",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-279",
+    "venueId": "V-SEO-20260729-147",
+    "venueName": "남산 한남 웨딩가든",
+    "hallName": "남산 한남 웨딩가든",
+    "result": "confirmed",
+    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities",
+    "photoUrl": "https://wedding.seoulwomen.or.kr/app/uploads/2025/06/%EB%82%A8%EC%82%B0-%ED%95%9C%EB%82%A8-%EC%9B%A8%EB%94%A9%EA%B0%80%EB%93%A0-scaled.jpg",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-280",
+    "venueId": "V-SEO-20260729-148",
+    "venueName": "용산가족공원 연못광장",
+    "hallName": "용산가족공원 연못광장",
+    "result": "confirmed",
+    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities",
+    "photoUrl": "https://wedding.seoulwomen.or.kr/app/uploads/2025/07/3.jpg",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-281",
+    "venueId": "V-SEO-20260729-149",
+    "venueName": "용산아트홀 전시장",
+    "hallName": "용산아트홀 전시장",
+    "result": "confirmed",
+    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities",
+    "photoUrl": "https://wedding.seoulwomen.or.kr/app/uploads/2025/06/%EA%B3%B5%EC%97%B0%EC%A0%84%EC%8B%9C%ED%99%80.jpg",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-282",
+    "venueId": "V-SEO-20260729-150",
+    "venueName": "라피쥬웨딩 예서헌점",
+    "hallName": "예서헌",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": null,
+    "reason": "확인 가능한 홀 사진을 자동 발견하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260729-283",
+    "venueId": "V-SEO-20260729-151",
+    "venueName": "은평한옥마을",
+    "hallName": "한옥 예식공간",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": "https://cdn.imweb.me/upload/S20240204aca494e0b4938/ebb7dddc8bcf2.png",
+    "reason": "공개 페이지에서 사진과 개별 홀명을 연결하는 근거를 자동 확인하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260729-284",
+    "venueId": "V-SEO-20260729-152",
+    "venueName": "서울문화예술교육센터 은평",
+    "hallName": "서울문화예술교육센터 은평",
+    "result": "confirmed",
+    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities",
+    "photoUrl": "https://wedding.seoulwomen.or.kr/app/uploads/2025/06/%EA%B3%B5%EC%97%B0%EC%A0%84%EC%8B%9C%ED%99%80.jpg",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-285",
+    "venueId": "V-SEO-20260729-153",
+    "venueName": "은평역사한옥박물관 은평마당",
+    "hallName": "은평역사한옥박물관 은평마당",
+    "result": "confirmed",
+    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities",
+    "photoUrl": "https://wedding.seoulwomen.or.kr/app/uploads/2025/06/%EA%B3%B5%EC%97%B0%EC%A0%84%EC%8B%9C%ED%99%80.jpg",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-286",
+    "venueId": "V-SEO-20260729-154",
+    "venueName": "두가헌 삼청",
+    "hallName": "단독 예식공간",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": null,
+    "reason": "확인 가능한 홀 사진을 자동 발견하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260729-287",
+    "venueId": "V-SEO-20260729-155",
+    "venueName": "라피쥬웨딩 인사점",
+    "hallName": "단독홀",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": null,
+    "reason": "확인 가능한 홀 사진을 자동 발견하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260729-288",
+    "venueId": "V-SEO-20260729-156",
+    "venueName": "락고재",
+    "hallName": "단독 예식공간",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": null,
+    "reason": "확인 가능한 홀 사진을 자동 발견하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260729-289",
+    "venueId": "V-SEO-20260729-157",
+    "venueName": "북촌유담헌",
+    "hallName": "단독 예식공간",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": null,
+    "reason": "확인 가능한 홀 사진을 자동 발견하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260729-290",
+    "venueId": "V-SEO-20260729-158",
+    "venueName": "석파랑",
+    "hallName": "단독 예식공간",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": null,
+    "reason": "확인 가능한 홀 사진을 자동 발견하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260729-291",
+    "venueId": "V-SEO-20260729-159",
+    "venueName": "성균관컨벤션",
+    "hallName": "그랜드홀",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": "https://thewedd.com/wp-content/uploads/2026/01/%EC%84%B1%EA%B7%A0%EA%B4%80%EC%BB%A8%EB%B2%A4%EC%85%98.jpg",
+    "reason": "공개 페이지에서 사진과 개별 홀명을 연결하는 근거를 자동 확인하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260729-292",
+    "venueId": "V-SEO-20260729-160",
+    "venueName": "아델라베일리",
+    "hallName": "아델라베일리 루프탑",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": null,
+    "reason": "확인 가능한 홀 사진을 자동 발견하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260729-293",
+    "venueId": "V-SEO-20260729-161",
+    "venueName": "아펠가모 광화문",
+    "hallName": "단독홀(고유명칭 미공개)",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": null,
+    "reason": "확인 가능한 홀 사진을 자동 발견하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260729-294",
+    "venueId": "V-SEO-20260729-162",
+    "venueName": "한국기독교연합회관",
+    "hallName": "아가페홀",
+    "result": "confirmed",
+    "sourceUrl": "https://yhwedding.co.kr/",
+    "photoUrl": "https://yhwedding.co.kr/attachList/upload/hall/c20201002175533993/p20201002181020067/add20241128171907837.jpg",
+    "reason": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-295",
+    "venueId": "V-SEO-20260729-163",
+    "venueName": "HW컨벤션센터",
+    "hallName": "그랜드볼룸",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": "https://thewedd.com/wp-content/uploads/2026/01/hw%EC%BB%A8%EB%B2%A4%EC%85%98%EC%9B%A8%EB%94%A9%ED%99%80.jpg",
+    "reason": "공개 페이지에서 사진과 개별 홀명을 연결하는 근거를 자동 확인하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260729-296",
+    "venueId": "V-SEO-20260729-164",
+    "venueName": "JW메리어트 동대문 스퀘어 서울",
+    "hallName": "그랜드 볼룸",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": null,
+    "reason": "확인 가능한 홀 사진을 자동 발견하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260729-297",
+    "venueId": "V-SEO-20260729-165",
+    "venueName": "SW컨벤션센터",
+    "hallName": "노블레스홀",
+    "result": "confirmed",
+    "sourceUrl": "https://www.weddex.co.kr/hall_info/?bmode=view&idx=16137198",
+    "photoUrl": "https://cdn.imweb.me/upload/S2023081600ec63241e765/eb67f3cbb6565.jpg",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-298",
+    "venueId": "V-SEO-20260729-166",
+    "venueName": "백인제가옥",
+    "hallName": "백인제가옥",
+    "result": "confirmed",
+    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities",
+    "photoUrl": "https://wedding.seoulwomen.or.kr/app/uploads/2025/06/%EA%B3%B5%EC%97%B0%EC%A0%84%EC%8B%9C%ED%99%80.jpg",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-299",
+    "venueId": "V-SEO-20260729-167",
+    "venueName": "세종문화회관 예인마당",
+    "hallName": "세종문화회관 예인마당",
+    "result": "confirmed",
+    "sourceUrl": "https://wedding.seoulwomen.or.kr/facilities",
+    "photoUrl": "https://wedding.seoulwomen.or.kr/app/uploads/2025/06/%EA%B3%B5%EC%97%B0%EC%A0%84%EC%8B%9C%ED%99%80.jpg",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-300",
+    "venueId": "V-SEO-20260729-001",
+    "venueName": "강동웨딩홀 KDW",
+    "hallName": "블랙스톤홀",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": "https://cdn.imweb.me/upload/S201909247b3439bdb6070/bd3ab481cf2fe.png",
+    "reason": "공개 페이지에서 사진과 개별 홀명을 연결하는 근거를 자동 확인하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260729-301",
+    "venueId": "V-SEO-20260729-005",
+    "venueName": "더빅토리아웨딩파티",
+    "hallName": "하늘정원홀",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": "https://www.weddingcrowd.kr/data/hall/2409/20240912050452_667954_%EC%8D%B8%EB%84%A4%EC%9D%BC.jpg",
+    "reason": "공개 페이지에서 사진과 개별 홀명을 연결하는 근거를 자동 확인하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260729-302",
+    "venueId": "V-SEO-20260729-011",
+    "venueName": "더뉴컨벤션웨딩",
+    "hallName": "더뉴홀",
+    "result": "confirmed",
+    "sourceUrl": "https://thenewwed.kr/",
+    "photoUrl": "https://cdn.imweb.me/thumbnail/20260707/a6539bb669eab.png",
+    "reason": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-303",
+    "venueId": "V-SEO-20260729-013",
+    "venueName": "메이필드호텔",
+    "hallName": "벨타워가든",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": null,
+    "reason": "확인 가능한 홀 사진을 자동 발견하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260729-304",
+    "venueId": "V-SEO-20260729-013",
+    "venueName": "메이필드호텔",
+    "hallName": "아트리움",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": null,
+    "reason": "확인 가능한 홀 사진을 자동 발견하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260729-305",
+    "venueId": "V-SEO-20260729-028",
+    "venueName": "웨딩스퀘어 강변",
+    "hallName": "그레이스홀",
+    "result": "confirmed",
+    "sourceUrl": "https://www.weddingsquare.co.kr/",
+    "photoUrl": "https://cdn.imweb.me/upload/S20250617bb376dcf6ff0e/61a26062c2afa.png",
+    "reason": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-306",
+    "venueId": "V-SEO-20260729-028",
+    "venueName": "웨딩스퀘어 강변",
+    "hallName": "아모르홀",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": "https://cdn.imweb.me/upload/S20250617bb376dcf6ff0e/b99a488fd92db.png",
+    "reason": "공개 페이지에서 사진과 개별 홀명을 연결하는 근거를 자동 확인하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260729-307",
+    "venueId": "V-SEO-20260729-035",
+    "venueName": "더링크호텔",
+    "hallName": "베일리홀",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": "https://thewedd.com/wp-content/uploads/2026/01/%EA%B5%AC%EB%A1%9C%EA%B5%AC%EB%8D%94%EB%A7%81%ED%81%AC%ED%98%B8%ED%85%94_23-1024x725.webp",
+    "reason": "공개 페이지에서 사진과 개별 홀명을 연결하는 근거를 자동 확인하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260729-308",
+    "venueId": "V-SEO-20260729-035",
+    "venueName": "더링크호텔",
+    "hallName": "플라자홀",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": "https://thewedd.com/wp-content/uploads/2026/01/%EA%B5%AC%EB%A1%9C%EA%B5%AC%EB%8D%94%EB%A7%81%ED%81%AC%ED%98%B8%ED%85%94_23-1024x725.webp",
+    "reason": "공개 페이지에서 사진과 개별 홀명을 연결하는 근거를 자동 확인하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260729-309",
+    "venueId": "V-SEO-20260729-035",
+    "venueName": "더링크호텔",
+    "hallName": "가든홀",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": "https://thewedd.com/wp-content/uploads/2026/01/%EA%B5%AC%EB%A1%9C%EA%B5%AC%EB%8D%94%EB%A7%81%ED%81%AC%ED%98%B8%ED%85%94_23-1024x725.webp",
+    "reason": "공개 페이지에서 사진과 개별 홀명을 연결하는 근거를 자동 확인하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260729-310",
+    "venueId": "V-SEO-20260729-035",
+    "venueName": "더링크호텔",
+    "hallName": "화이트홀",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": "https://thewedd.com/wp-content/uploads/2026/01/%EA%B5%AC%EB%A1%9C%EA%B5%AC%EB%8D%94%EB%A7%81%ED%81%AC%ED%98%B8%ED%85%94_23-1024x725.webp",
+    "reason": "공개 페이지에서 사진과 개별 홀명을 연결하는 근거를 자동 확인하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260729-311",
+    "venueId": "V-SEO-20260729-036",
+    "venueName": "더세인트",
+    "hallName": "파노라마홀",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": "https://thewedd.com/wp-content/uploads/2026/01/%EA%B5%AC%EB%A1%9C%EA%B5%AC%EB%8D%94%EC%84%B8%EC%9D%B8%ED%8A%B8-The-Saint_16-1024x683.webp",
+    "reason": "공개 페이지에서 사진과 개별 홀명을 연결하는 근거를 자동 확인하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260729-312",
+    "venueId": "V-SEO-20260729-037",
+    "venueName": "라마다서울신도림",
+    "hallName": "세인트그레이스홀",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": "https://thewedd.com/wp-content/uploads/2026/01/%EA%B5%AC%EB%A1%9C%EA%B5%AC%EB%9D%BC%EB%A7%88%EB%8B%A4%EC%84%9C%EC%9A%B8%EC%8B%A0%EB%8F%84%EB%A6%BC_13-1024x565.webp",
+    "reason": "공개 페이지에서 사진과 개별 홀명을 연결하는 근거를 자동 확인하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260729-313",
+    "venueId": "V-SEO-20260729-037",
+    "venueName": "라마다서울신도림",
+    "hallName": "스카이가든홀",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": "https://thewedd.com/wp-content/uploads/2026/01/%EA%B5%AC%EB%A1%9C%EA%B5%AC%EB%9D%BC%EB%A7%88%EB%8B%A4%EC%84%9C%EC%9A%B8%EC%8B%A0%EB%8F%84%EB%A6%BC_13-1024x565.webp",
+    "reason": "공개 페이지에서 사진과 개별 홀명을 연결하는 근거를 자동 확인하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260729-314",
+    "venueId": "V-SEO-20260729-039",
+    "venueName": "웨스턴베니비스 신도림",
+    "hallName": "그레이스홀",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": "https://thewedd.com/wp-content/uploads/2026/01/%EA%B5%AC%EB%A1%9C%EA%B5%AC%EC%9B%A8%EC%8A%A4%ED%84%B4%EB%B2%A0%EB%8B%88%EB%B9%84%EC%8A%A4-%EC%8B%A0%EB%8F%84%EB%A6%BC_05.webp",
+    "reason": "공개 페이지에서 사진과 개별 홀명을 연결하는 근거를 자동 확인하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260729-315",
+    "venueId": "V-SEO-20260729-039",
+    "venueName": "웨스턴베니비스 신도림",
+    "hallName": "아스타홀",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": "https://thewedd.com/wp-content/uploads/2026/01/%EA%B5%AC%EB%A1%9C%EA%B5%AC%EC%9B%A8%EC%8A%A4%ED%84%B4%EB%B2%A0%EB%8B%88%EB%B9%84%EC%8A%A4-%EC%8B%A0%EB%8F%84%EB%A6%BC_05.webp",
+    "reason": "공개 페이지에서 사진과 개별 홀명을 연결하는 근거를 자동 확인하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260729-316",
+    "venueId": "V-SEO-20260729-042",
+    "venueName": "테크노마트웨딩시티",
+    "hallName": "아모르홀",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": "https://thewedd.com/wp-content/uploads/2026/03/%EA%B5%AC%EB%A1%9C%EA%B5%AC%ED%85%8C%ED%81%AC%EB%85%B8%EB%A7%88%ED%8A%B8%EC%9B%A8%EB%94%A9%EC%8B%9C%ED%8B%B0_13.webp",
+    "reason": "공개 페이지에서 사진과 개별 홀명을 연결하는 근거를 자동 확인하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260729-317",
+    "venueId": "V-SEO-20260729-042",
+    "venueName": "테크노마트웨딩시티",
+    "hallName": "스타티스홀",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": "https://thewedd.com/wp-content/uploads/2026/03/%EA%B5%AC%EB%A1%9C%EA%B5%AC%ED%85%8C%ED%81%AC%EB%85%B8%EB%A7%88%ED%8A%B8%EC%9B%A8%EB%94%A9%EC%8B%9C%ED%8B%B0_13.webp",
+    "reason": "공개 페이지에서 사진과 개별 홀명을 연결하는 근거를 자동 확인하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260729-318",
+    "venueId": "V-SEO-20260729-063",
+    "venueName": "마리앤코 동작스카이",
+    "hallName": "루프탑B",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": "https://thewedd.com/wp-content/uploads/2026/01/%EB%8F%99%EC%9E%91%EA%B5%AC%EB%A7%88%EB%A6%AC%EC%95%A4%EC%BD%94-%EB%8F%99%EC%9E%91%EC%8A%A4%EC%B9%B4%EC%9D%B4_13.webp",
+    "reason": "공개 페이지에서 사진과 개별 홀명을 연결하는 근거를 자동 확인하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260729-319",
+    "venueId": "V-SEO-20260729-064",
+    "venueName": "플로렌스 보라매점",
+    "hallName": "코스모스홀",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": "https://thewedd.com/wp-content/uploads/2026/01/%EB%8F%99%EC%9E%91%EA%B5%AC%ED%94%8C%EB%A1%9C%EB%A0%8C%EC%8A%A4-%EB%B3%B4%EB%9D%BC%EB%A7%A4%EC%A0%90_13.webp",
+    "reason": "공개 페이지에서 사진과 개별 홀명을 연결하는 근거를 자동 확인하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260729-320",
+    "venueId": "V-SEO-20260729-099",
+    "venueName": "삼청각",
+    "hallName": "청천당",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": "https://samcheonggak.or.kr/attachList/upload/hall/c20220424170637373/p20220424171149967/pop20220424172844787.jpg",
+    "reason": "공개 페이지에서 사진과 개별 홀명을 연결하는 근거를 자동 확인하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260729-321",
+    "venueId": "V-SEO-20260729-099",
+    "venueName": "삼청각",
+    "hallName": "유하정",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": "https://samcheonggak.or.kr/attachList/upload/hall/c20220424170637373/p20220424171149967/pop20220424172844787.jpg",
+    "reason": "공개 페이지에서 사진과 개별 홀명을 연결하는 근거를 자동 확인하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260729-322",
+    "venueId": "V-SEO-20260729-101",
+    "venueName": "웨딩스퀘어 성북",
+    "hallName": "아모르홀",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": "https://cdn.imweb.me/upload/S20250617bb376dcf6ff0e/4ef05128a92da.png",
+    "reason": "공개 페이지에서 사진과 개별 홀명을 연결하는 근거를 자동 확인하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260729-323",
+    "venueId": "V-SEO-20260729-105",
+    "venueName": "더컨벤션 송파문정점",
+    "hallName": "아모르홀",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": "https://thewedd.com/wp-content/uploads/2026/01/%EC%86%A1%ED%8C%8C%EA%B5%AC%EB%8D%94%EC%BB%A8%EB%B2%A4%EC%85%98-%EC%9E%A0%EC%8B%A4%EC%A0%90%EA%B5%90%ED%86%B5%ED%9A%8C%EA%B4%80_22.webp",
+    "reason": "공개 페이지에서 사진과 개별 홀명을 연결하는 근거를 자동 확인하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260729-324",
+    "venueId": "V-SEO-20260729-106",
+    "venueName": "더컨벤션 잠실점",
+    "hallName": "그랜드볼룸",
+    "result": "confirmed",
+    "sourceUrl": "https://banpo.theconvention.co.kr/",
+    "photoUrl": "https://cdn.imweb.me/upload/S20250318986c88d762e31/9c21133e81fda.png",
+    "reason": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-325",
+    "venueId": "V-SEO-20260729-108",
+    "venueName": "라비니움",
+    "hallName": "블룸홀",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": null,
+    "reason": "확인 가능한 홀 사진을 자동 발견하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260729-326",
+    "venueId": "V-SEO-20260729-109",
+    "venueName": "루이비스컨벤션 송파문정점",
+    "hallName": "그레이스홀",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": "https://thewedd.com/wp-content/uploads/2026/01/%EC%86%A1%ED%8C%8C%EA%B5%AC%EB%A3%A8%EC%9D%B4%EB%B9%84%EC%8A%A4%EC%BB%A8%EB%B2%A4%EC%85%98-%EC%86%A1%ED%8C%8C%EB%AC%B8%EC%A0%95%EC%A0%90_12.webp",
+    "reason": "공개 페이지에서 사진과 개별 홀명을 연결하는 근거를 자동 확인하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260729-327",
+    "venueId": "V-SEO-20260729-117",
+    "venueName": "호텔 파크하비오",
+    "hallName": "노벨라홀",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": "https://thewedd.com/wp-content/uploads/2026/01/%EC%86%A1%ED%8C%8C%EA%B5%AC%ED%98%B8%ED%85%94%ED%8C%8C%ED%81%AC%ED%95%98%EB%B9%84%EC%98%A4_05.webp",
+    "reason": "공개 페이지에서 사진과 개별 홀명을 연결하는 근거를 자동 확인하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260729-328",
+    "venueId": "V-SEO-20260729-117",
+    "venueName": "호텔 파크하비오",
+    "hallName": "몽블랑홀",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": "https://thewedd.com/wp-content/uploads/2026/01/%EC%86%A1%ED%8C%8C%EA%B5%AC%ED%98%B8%ED%85%94%ED%8C%8C%ED%81%AC%ED%95%98%EB%B9%84%EC%98%A4_05.webp",
+    "reason": "공개 페이지에서 사진과 개별 홀명을 연결하는 근거를 자동 확인하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260729-329",
+    "venueId": "V-SEO-20260729-121",
+    "venueName": "공군호텔",
+    "hallName": "컨벤션홀",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": "https://thewedd.com/wp-content/uploads/2026/01/%EC%98%81%EB%93%B1%ED%8F%AC%EA%B5%AC%EA%B3%B5%EA%B5%B0%ED%98%B8%ED%85%94_04.webp",
+    "reason": "공개 페이지에서 사진과 개별 홀명을 연결하는 근거를 자동 확인하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260729-330",
+    "venueId": "V-SEO-20260729-124",
+    "venueName": "더컨벤션 영등포점",
+    "hallName": "다이너스티홀",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": "https://thewedd.com/wp-content/uploads/2026/01/%EC%98%81%EB%93%B1%ED%8F%AC%EA%B5%AC%EB%8D%94%EC%BB%A8%EB%B2%A4%EC%85%98-%EC%98%81%EB%93%B1%ED%8F%AC%EC%A0%90_11.webp",
+    "reason": "공개 페이지에서 사진과 개별 홀명을 연결하는 근거를 자동 확인하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260729-331",
+    "venueId": "V-SEO-20260729-127",
+    "venueName": "웨딩그룹위더스 영등포",
+    "hallName": "펠리체홀",
+    "result": "confirmed",
+    "sourceUrl": "https://withus.kr/",
+    "photoUrl": "https://www.withus.kr/attachList/upload/hall/c20200914124437480/p20201012170149147/pop20250409110334743.jpg",
+    "reason": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-332",
+    "venueId": "V-SEO-20260729-127",
+    "venueName": "웨딩그룹위더스 영등포",
+    "hallName": "엘린홀",
+    "result": "confirmed",
+    "sourceUrl": "https://withus.kr/",
+    "photoUrl": "https://www.withus.kr/attachList/upload/hall/c20200914124437480/p20201012170149147/pop20250708151752153.jpg",
+    "reason": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-333",
+    "venueId": "V-SEO-20260729-127",
+    "venueName": "웨딩그룹위더스 영등포",
+    "hallName": "아모르홀",
+    "result": "confirmed",
+    "sourceUrl": "https://withus.kr/",
+    "photoUrl": "https://withus.kr/attachList/upload/hall/c20200914124437480/p20201012172350837/pop20240910165905143.jpg",
+    "reason": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-334",
+    "venueId": "V-SEO-20260729-133",
+    "venueName": "플로렌스 오목교점",
+    "hallName": "코스모스홀",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": "https://thewedd.com/wp-content/uploads/2026/01/%EC%98%81%EB%93%B1%ED%8F%AC%EA%B5%AC%ED%94%8C%EB%A1%9C%EB%A0%8C%EC%8A%A4-%EC%98%A4%EB%AA%A9%EA%B5%90%EC%A0%90_05.webp",
+    "reason": "공개 페이지에서 사진과 개별 홀명을 연결하는 근거를 자동 확인하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260729-335",
+    "venueId": "V-SEO-20260729-133",
+    "venueName": "플로렌스 오목교점",
+    "hallName": "튤립홀",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": "https://thewedd.com/wp-content/uploads/2026/01/%EC%98%81%EB%93%B1%ED%8F%AC%EA%B5%AC%ED%94%8C%EB%A1%9C%EB%A0%8C%EC%8A%A4-%EC%98%A4%EB%AA%A9%EA%B5%90%EC%A0%90_05.webp",
+    "reason": "공개 페이지에서 사진과 개별 홀명을 연결하는 근거를 자동 확인하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260729-336",
+    "venueId": "V-SEO-20260729-142",
+    "venueName": "몬드리안 서울 이태원",
+    "hallName": "보태니컬 가든 홀",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": null,
+    "reason": "확인 가능한 홀 사진을 자동 발견하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260729-337",
+    "venueId": "V-SEO-20260729-163",
+    "venueName": "HW컨벤션센터",
+    "hallName": "에메랄드홀",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": "https://thewedd.com/wp-content/uploads/2026/01/hw%EC%BB%A8%EB%B2%A4%EC%85%98%EC%9B%A8%EB%94%A9%ED%99%80.jpg",
+    "reason": "공개 페이지에서 사진과 개별 홀명을 연결하는 근거를 자동 확인하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260729-338",
+    "venueId": "V-SEO-20260729-163",
+    "venueName": "HW컨벤션센터",
+    "hallName": "크리스탈홀",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": "https://thewedd.com/wp-content/uploads/2026/01/hw%EC%BB%A8%EB%B2%A4%EC%85%98%EC%9B%A8%EB%94%A9%ED%99%80.jpg",
+    "reason": "공개 페이지에서 사진과 개별 홀명을 연결하는 근거를 자동 확인하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260729-339",
+    "venueId": "V-SEO-20260729-007",
+    "venueName": "안토",
+    "hallName": "루프탑",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": null,
+    "reason": "확인 가능한 홀 사진을 자동 발견하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260729-340",
+    "venueId": "V-SEO-20260729-038",
+    "venueName": "명품웨딩 프로포즈",
+    "hallName": "글로리홀",
+    "result": "confirmed",
+    "sourceUrl": "https://thefirstwedding.com/139/?idx=72",
+    "photoUrl": "https://cdn.imweb.me/upload/S2024100788c40fba991cd/ea75821b96159.png",
+    "reason": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260729-341",
+    "venueId": "V-SEO-20260729-162",
+    "venueName": "한국기독교연합회관",
+    "hallName": "그레이스홀",
+    "result": "confirmed",
+    "sourceUrl": "https://yhwedding.co.kr/",
+    "photoUrl": "https://yhwedding.co.kr/attachList/upload/hall/c20201002175533993/p20201002181020067/add20250907145749447.jpg",
+    "reason": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260730-001",
+    "venueId": "V-SEO-20260730-001",
+    "venueName": "루나스가든",
+    "hallName": "루나스가든",
+    "result": "confirmed",
+    "sourceUrl": "https://lunasgarden.co.kr/",
+    "photoUrl": "https://lunasgarden.co.kr/images/main_01.jpg",
+    "reason": "단일 홀 업체 페이지에서 예식 공간 이미지와 홀 정체성을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260730-002",
+    "venueId": "V-SEO-20260730-002",
+    "venueName": "리보아르",
+    "hallName": "리보아르",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": "https://storage.googleapis.com/cr-resource/image/a09556ebd7121bce97f7bbb8eb2598c8/livoire/650/57f787c0c46a633243867d60dd141323.jpg?_1786076806",
+    "reason": "공개 페이지에서 사진과 개별 홀명을 연결하는 근거를 자동 확인하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260730-003",
+    "venueId": "V-SEO-20260730-003",
+    "venueName": "베뉴비안",
+    "hallName": "에메랄드홀",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": null,
+    "reason": "확인 가능한 홀 사진을 자동 발견하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260730-004",
+    "venueId": "V-SEO-20260730-004",
+    "venueName": "브라이튼하우스",
+    "hallName": "브라이튼하우스",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": null,
+    "reason": "확인 가능한 홀 사진을 자동 발견하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260730-005",
+    "venueId": "V-SEO-20260730-005",
+    "venueName": "아르떼서울",
+    "hallName": "루미에르홀",
+    "result": "confirmed",
+    "sourceUrl": "https://arteseoul.kr/",
+    "photoUrl": "https://arteseoul.kr/images/lumiere_1.jpg",
+    "reason": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260730-006",
+    "venueId": "V-SEO-20260730-005",
+    "venueName": "아르떼서울",
+    "hallName": "아르떼홀",
+    "result": "confirmed",
+    "sourceUrl": "https://arteseoul.kr/",
+    "photoUrl": "https://arteseoul.kr/images/arte_3.jpg",
+    "reason": "페이지의 이미지 설명 또는 인접 섹션에서 공식 홀명을 확인함."
+  },
+  {
+    "hallId": "H-SEO-20260730-008",
+    "venueId": "V-SEO-20260730-007",
+    "venueName": "아르테스웨딩",
+    "hallName": "아르테스홀",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": null,
+    "reason": "확인 가능한 홀 사진을 자동 발견하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260730-009",
+    "venueId": "V-SEO-20260730-003",
+    "venueName": "베뉴비안",
+    "hallName": "사파이어홀",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": null,
+    "reason": "확인 가능한 홀 사진을 자동 발견하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260730-010",
+    "venueId": "V-SEO-20260730-008",
+    "venueName": "베라카채플",
+    "hallName": "베라카채플",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": null,
+    "reason": "확인 가능한 홀 사진을 자동 발견하지 못함."
+  },
+  {
+    "hallId": "H-SEO-20260730-011",
+    "venueId": "V-SEO-20260730-009",
+    "venueName": "시어터웨딩 라무르",
+    "hallName": "시어터웨딩 라무르",
+    "result": "needs_review",
+    "sourceUrl": null,
+    "photoUrl": "https://pub-049f4e2bdf9a4e2f9708260ffdec7388.r2.dev/wp-content/uploads/2026/07/%EC%B4%88%EC%9D%B4%EC%8A%A4%ED%99%80.jpg",
+    "reason": "공개 페이지에서 사진과 개별 홀명을 연결하는 근거를 자동 확인하지 못함."
+  }
+]

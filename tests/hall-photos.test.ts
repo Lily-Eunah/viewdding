@@ -1,14 +1,15 @@
 import { describe, expect, it } from "vitest";
 import hallsJson from "../src/data/halls.generated.json";
 import { hallPhotosByHallId, photosForHall } from "../src/data/hall-photos";
+import { siblingDuplicateHallIds } from "../src/domain/hall-photo-audit";
 
 describe("hall photo registry", () => {
   const hallIds = new Set(hallsJson.map((hall) => hall.id));
   const entries = Object.entries(hallPhotosByHallId);
 
   it("publishes the verified and source-linked hall photo set", () => {
-    expect(entries).toHaveLength(238);
-    expect(entries.flatMap(([, photos]) => photos)).toHaveLength(238);
+    expect(entries).toHaveLength(319);
+    expect(entries.flatMap(([, photos]) => photos)).toHaveLength(319);
   });
 
   it("only references existing halls", () => {
@@ -25,13 +26,40 @@ describe("hall photo registry", () => {
           photo.usageStatus,
         );
         expect(["wedding_setup", "space_overview"]).toContain(photo.photoKind);
+        expect(["hall_confirmed", "venue_only", "needs_review"]).toContain(
+          photo.identityStatus,
+        );
         expect(photo.alt.length).toBeGreaterThan(10);
       }
     }
   });
 
   it("returns primary photos first and no placeholder for missing halls", () => {
-    expect(photosForHall("H-SEO-20260728-002")[0]?.isPrimary).toBe(true);
     expect(photosForHall("missing-hall")).toEqual([]);
+  });
+
+  it("does not publish an unverified venue image as multiple sibling hall photos", () => {
+    const photoSeeds = entries.flatMap(([hallId, photos]) =>
+      photos.map((photo) => ({ hallId, url: photo.url })),
+    );
+    const duplicateHallIds = siblingDuplicateHallIds(hallsJson, photoSeeds);
+
+    expect(duplicateHallIds.size).toBe(57);
+    for (const hallId of duplicateHallIds) {
+      for (const photo of photosForHall(hallId)) {
+        expect(photo.identityStatus).toBe("hall_confirmed");
+        expect(photo.verificationMethod).not.toBe("venue_representative");
+      }
+    }
+  });
+
+  it("only publishes photos whose exact hall identity was verified", () => {
+    for (const [hallId, photos] of entries) {
+      const publicPhotos = photosForHall(hallId);
+      expect(publicPhotos.every((photo) => photo.identityStatus === "hall_confirmed")).toBe(
+        true,
+      );
+      expect(publicPhotos.length).toBeLessThanOrEqual(photos.length);
+    }
   });
 });

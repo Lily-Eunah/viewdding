@@ -35,6 +35,10 @@ export const halls: HallRecord[] = (hallsJson as GeneratedHallRecord[]).map((hal
 }));
 export const metadata = metadataJson;
 export const districts = metadata.districts;
+export const seoulHalls = halls.filter((hall) => hall.id.startsWith("H-SEO-"));
+export const gyeonggiHalls = halls.filter((hall) => hall.id.startsWith("H-GG-"));
+export const seoulDistricts = Array.from(new Set(seoulHalls.map((hall) => hall.district))).sort((a, b) => a.localeCompare(b, "ko"));
+export const gyeonggiDistricts = Array.from(new Set(gyeonggiHalls.map((hall) => hall.district))).sort((a, b) => a.localeCompare(b, "ko"));
 
 export function getHall(id: string): HallRecord | undefined {
   return halls.find((hall) => hall.id === id);

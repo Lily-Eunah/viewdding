@@ -32,6 +32,19 @@ export type HallPhotoUsageStatus =
   | "partner_provided"
   | "licensed";
 
+export type HallPhotoIdentityStatus =
+  | "hall_confirmed"
+  | "venue_only"
+  | "needs_review";
+
+export type HallPhotoVerificationMethod =
+  | "official_hall_page"
+  | "official_named_gallery"
+  | "official_single_hall_venue"
+  | "public_named_listing"
+  | "venue_representative"
+  | "unreviewed";
+
 export interface HallPhoto {
   id: string;
   url: string;
@@ -40,6 +53,9 @@ export interface HallPhoto {
   sourceType: "official_website" | "official_social" | "public_listing" | "partner";
   usageStatus: HallPhotoUsageStatus;
   photoKind: "wedding_setup" | "space_overview";
+  identityStatus: HallPhotoIdentityStatus;
+  verificationMethod: HallPhotoVerificationMethod;
+  verificationNote: string;
   checkedAt: string;
   alt: string;
   isPrimary: boolean;

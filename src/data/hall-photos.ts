@@ -1,5 +1,12 @@
 import hallsJson from "./halls.generated.json";
 import discoveredPhotoSeedsJson from "./hall-photos.discovered.generated.json";
+import hallPhotoReplacementsJson from "./hall-photo-replacements.generated.json";
+import hallPhotoVerificationOverridesJson from "./hall-photo-verification.generated.json";
+import {
+  siblingDuplicateHallIds,
+  verificationForPhoto,
+  type HallPhotoVerificationOverrides,
+} from "../domain/hall-photo-audit";
 import type { HallPhoto } from "@/domain/types";
 
 // Images remain hosted by their source pages. A linked source status does not
@@ -13,6 +20,8 @@ type DiscoveredPhotoSeed = OfficialPhotoSeed &
   Pick<HallPhoto, "sourceType" | "usageStatus" | "checkedAt"> & {
     hallId: string;
   };
+
+type ReplacementPhotoSeed = DiscoveredPhotoSeed;
 
 const officialPhotoSeeds: Readonly<Record<string, OfficialPhotoSeed>> = {
   "H-SEO-20260728-002": {
@@ -268,10 +277,20 @@ const officialPhotoSeeds: Readonly<Record<string, OfficialPhotoSeed>> = {
 };
 
 const discoveredPhotoSeeds = discoveredPhotoSeedsJson as DiscoveredPhotoSeed[];
+const replacementPhotoSeeds = hallPhotoReplacementsJson as ReplacementPhotoSeed[];
 const allPhotoSeeds: Readonly<Record<string, OfficialPhotoSeed | DiscoveredPhotoSeed>> = {
   ...officialPhotoSeeds,
   ...Object.fromEntries(discoveredPhotoSeeds.map(({ hallId, ...photo }) => [hallId, photo])),
+  ...Object.fromEntries(replacementPhotoSeeds.map(({ hallId, ...photo }) => [hallId, photo])),
 };
+
+const photoSeedRows = Object.entries(allPhotoSeeds).map(([hallId, photo]) => ({
+  hallId,
+  url: photo.url,
+}));
+const duplicateHallIds = siblingDuplicateHallIds(hallsJson, photoSeedRows);
+const verificationOverrides =
+  hallPhotoVerificationOverridesJson as HallPhotoVerificationOverrides;
 
 const hallLabelsById = new Map(
   hallsJson.map((hall) => [
@@ -299,6 +318,11 @@ export const hallPhotosByHallId: Readonly<Record<string, readonly HallPhoto[]>> 
         photo.photoKind === "wedding_setup"
           ? "\uc608\uc2dd \uc138\ud305 \uc804\uacbd"
           : "\uacf5\uac04 \uc804\uacbd";
+      const verification = verificationForPhoto(
+        hallId,
+        duplicateHallIds,
+        verificationOverrides,
+      );
 
       return [
         hallId,
@@ -306,6 +330,7 @@ export const hallPhotosByHallId: Readonly<Record<string, readonly HallPhoto[]>> 
           {
             id: `P-${hallId}-01`,
             ...photo,
+            ...verification,
             sourceName,
             alt: `${venueName} ${hallName} ${altSuffix}`,
             sourceType,
@@ -327,6 +352,10 @@ const publicUsageStatuses = new Set<HallPhoto["usageStatus"]>([
 
 export function photosForHall(hallId: string): HallPhoto[] {
   return [...(hallPhotosByHallId[hallId] ?? [])]
-    .filter((photo) => publicUsageStatuses.has(photo.usageStatus))
+    .filter(
+      (photo) =>
+        publicUsageStatuses.has(photo.usageStatus) &&
+        photo.identityStatus === "hall_confirmed",
+    )
     .sort((a, b) => Number(b.isPrimary) - Number(a.isPrimary));
 }

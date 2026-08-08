@@ -7,6 +7,7 @@
     "dev": "next dev",
     "data:build": "tsx scripts/build-data.ts && npm run data:hall-geocodes && npm run data:restaurants",
     "data:hall-geocodes": "tsx scripts/build-hall-geocodes.ts",
+    "data:hall-photo-audit": "tsx scripts/build-hall-photo-audit.ts",
     "data:restaurants": "tsx scripts/build-restaurants.ts",
     "sites:stage": "tsx scripts/stage-sites.ts",
     "sites:build": "npm run build && npm run sites:stage",
