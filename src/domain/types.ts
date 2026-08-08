@@ -68,6 +68,10 @@ export interface HallRecord {
   venueId: string;
   venueName: string;
   hallName: string;
+  hallNameStatus?: "official" | "single_unnamed" | "unverified";
+  hallNameSourceUrl?: string | null;
+  hallNameCheckedAt?: string | null;
+  hallNameEvidence?: string | null;
   sido: Sido;
   sigungu: string;
   subdistrict: string | null;

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-08T14:21:38.464Z",
+  "generatedAt": "2026-08-08T14:39:42.544Z",
   "sourceFile": "Viewdding_서울_웨딩홀_Master_운영본_20260731.xlsx",
   "sourceFiles": [
     "Viewdding_서울_웨딩홀_Master_운영본_20260731.xlsx",
@@ -17,11 +17,11 @@
   "regionalSourceGeneratedAt": {
     "Viewdding_고양파주_웨딩홀_Master_폐업역검색보완본_20260808_v3.xlsx, Viewdding_나머지경기도생활권_웨딩홀_Master_폐업역검색보완본_20260808_v5.xlsx, Viewdding_성남하남광주_웨딩홀_Master_폐업역검색보완본_20260808_v3.xlsx, Viewdding_수원_웨딩홀_Master_폐업역검색보완본_20260808_v3.xlsx, Viewdding_용인_웨딩홀_Master_폐업역검색보완본_20260808_v3.xlsx, Viewdding_평택안성_웨딩홀_Master_폐업역검색보완본_20260808_v3.xlsx, Viewdding_화성오산_웨딩홀_Master_폐업역검색보완본_20260808_v3.xlsx": "2026-08-08T08:21:29.492Z",
     "Viewdding_인천1차_웨딩홀_Master_운영본_20260808.xlsx": "2026-08-08T13:11:44.633Z",
-    "Viewdding_수도권후속확장_웨딩홀_Master_운영본_20260808.xlsx": "2026-08-08T14:14:22.417Z"
+    "Viewdding_수도권후속확장_웨딩홀_Master_운영본_20260808.xlsx": "2026-08-08T14:13:07.177Z"
   },
   "sourceHallRows": 510,
   "publicHallRows": 497,
-  "exportedHalls": 497,
+  "exportedHalls": 505,
   "missingVenueIds": [],
   "regions": [
     "서울특별시",

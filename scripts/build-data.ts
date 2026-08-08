@@ -4,6 +4,7 @@ import { fileURLToPath } from "node:url";
 import gyeonggiSourceJson from "../src/data/gyeonggi-halls.source.generated.json";
 import incheonSourceJson from "../src/data/incheon-halls.source.generated.json";
 import capitalExpansionSourceJson from "../src/data/capital-expansion-halls.source.generated.json";
+import { applyHallNameAudit } from "../src/data/hall-name-audit";
 import {
   cleanText,
   normalizeBoolean,
@@ -107,11 +108,12 @@ const duplicateHallIds = publicRows
   .filter((hallId, index, values) => values.indexOf(hallId) !== index);
 if (duplicateHallIds.length > 0) throw new Error(`중복 hall_id: ${Array.from(new Set(duplicateHallIds)).join(", ")}`);
 const missingVenues = new Set<string>();
-const halls = publicRows.flatMap((row) => {
+const sourceHalls = publicRows.flatMap((row) => {
   const venue = venues.get(String(row.venue_id));
   if (!venue) { missingVenues.add(String(row.venue_id)); return []; }
   return [toHall(row, venue)];
 });
+const halls = applyHallNameAudit(sourceHalls);
 
 await fs.mkdir(path.dirname(outputPath), { recursive: true });
 await fs.writeFile(outputPath, `${JSON.stringify(halls, null, 2)}\n`, "utf8");
