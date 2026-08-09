@@ -6,6 +6,7 @@ import incheonSourceJson from "../src/data/incheon-halls.source.generated.json";
 import capitalExpansionSourceJson from "../src/data/capital-expansion-halls.source.generated.json";
 import { applyHallNameAudit } from "../src/data/hall-name-audit";
 import regionalExpansionSourceJson from "../src/data/regional-expansion-halls.source.generated.json";
+import nationalFollowupSourceJson from "../src/data/national-followup-halls.source.generated.json";
 import {
   cleanText,
   normalizeBoolean,
@@ -55,10 +56,10 @@ function normalizedDistrict(venue: RowObject): string {
   const address = text(venue["도로명주소"]);
   const gyeonggi = address?.match(/^(?:경기|경기도)\s+([가-힣]+(?:시|군))(?:\s+([가-힣]+구))?/);
   if (gyeonggi) return [gyeonggi[1], gyeonggi[2]].filter(Boolean).join(" ");
-  const province = address?.match(/^(?:경남|경상남도)\s+([가-힣]+(?:시|군))(?:\s+([가-힣]+구))?/);
+  const province = address?.match(/^(?:경남|경상남도|충남|충청남도|충북|충청북도|제주|제주특별자치도|전북|전라북도|전북특별자치도)\s+([가-힣]+(?:시|군))(?:\s+([가-힣]+구))?/);
   if (province) return [province[1], province[2]].filter(Boolean).join(" ");
   if (/^(?:세종|세종특별자치시)(?:\s|$)/.test(address ?? "")) return "세종시";
-  const metroDistrict = address?.match(/^(?:서울|서울특별시|인천|인천광역시|부산|부산광역시|대전|대전광역시|대구|대구광역시)\s+([가-힣]+(?:구|군))/);
+  const metroDistrict = address?.match(/^(?:서울|서울특별시|인천|인천광역시|부산|부산광역시|대전|대전광역시|대구|대구광역시|광주|광주광역시|울산|울산광역시)\s+([가-힣]+(?:구|군))/);
   if (metroDistrict) return metroDistrict[1];
   return text(venue["자치구"]) ?? "지역 확인 필요";
 }
@@ -95,7 +96,7 @@ function toHall(row: RowObject, venue: RowObject): HallRecord {
 
 const inspectPath = masterPath.endsWith(".ndjson") ? masterPath : `${masterPath}.inspect.ndjson`;
 const inspectContents = await fs.readFile(inspectPath, "utf8");
-const regionalSources = [gyeonggiSourceJson, incheonSourceJson, capitalExpansionSourceJson, regionalExpansionSourceJson] as RegionalSource[];
+const regionalSources = [gyeonggiSourceJson, incheonSourceJson, capitalExpansionSourceJson, regionalExpansionSourceJson, nationalFollowupSourceJson] as RegionalSource[];
 const regionalSourceFiles = regionalSources.flatMap((source) => source.sourceFiles);
 const venueRows = [
   ...tableRowsFromInspect(inspectContents, "01_업체"),

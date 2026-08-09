@@ -359,12 +359,18 @@ export function applyHallNameAudit(halls: HallRecord[]): HallRecord[] {
   const audited = halls.flatMap((hall) => {
     const rule = ruleByHallId.get(hall.id);
     if (!rule) {
+      const singleUnnamed = hall.hallName === "단독홀"
+        || hall.hallName === "단독웨딩홀"
+        || / 단독홀$/.test(hall.hallName);
       return [{
         ...hall,
-        hallNameStatus: defaultStatus(hall.hallName),
+        hallName: singleUnnamed ? SINGLE_UNNAMED : hall.hallName,
+        hallNameStatus: singleUnnamed ? "single_unnamed" : defaultStatus(hall.hallName),
         hallNameSourceUrl: hall.website ?? hall.sourceUrl,
         hallNameCheckedAt: hall.detailCheckedAt ?? hall.classificationCheckedAt,
-        hallNameEvidence: "기존 마스터의 공식 홀명 필드 유지",
+        hallNameEvidence: singleUnnamed
+          ? "단독 웨딩 공간은 확인됐으나 별도 고유 홀명은 공개되지 않음"
+          : "기존 마스터의 공식 홀명 필드 유지",
       }];
     }
 

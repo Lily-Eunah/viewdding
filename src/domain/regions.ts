@@ -24,6 +24,12 @@ export const SIDO_OPTIONS: ReadonlyArray<{ value: Sido; label: string; shortLabe
   { value: "대전광역시", label: "대전광역시", shortLabel: "대전" },
   { value: "세종특별자치시", label: "세종특별자치시", shortLabel: "세종" },
   { value: "대구광역시", label: "대구광역시", shortLabel: "대구" },
+  { value: "광주광역시", label: "광주광역시", shortLabel: "광주" },
+  { value: "충청남도", label: "충청남도", shortLabel: "충남" },
+  { value: "울산광역시", label: "울산광역시", shortLabel: "울산" },
+  { value: "충청북도", label: "충청북도", shortLabel: "충북" },
+  { value: "제주특별자치도", label: "제주특별자치도", shortLabel: "제주" },
+  { value: "전북특별자치도", label: "전북특별자치도", shortLabel: "전북" },
 ];
 
 const SEOUL_METRO_AREAS: Record<string, string> = {
@@ -84,6 +90,16 @@ const DAEGU_METRO_AREAS: Record<string, string> = {
   달서구: "대구 달서·달성", 달성군: "대구 달서·달성",
 };
 
+const GWANGJU_METRO_AREAS: Record<string, string> = {
+  동구: "광주", 서구: "광주", 남구: "광주", 북구: "광주", 광산구: "광주",
+};
+
+const CHUNGNAM_METRO_AREAS: Record<string, string> = { 천안시: "천안·아산", 아산시: "천안·아산" };
+const ULSAN_METRO_AREAS: Record<string, string> = { 중구: "울산", 남구: "울산", 동구: "울산", 북구: "울산", 울주군: "울산" };
+const CHUNGBUK_METRO_AREAS: Record<string, string> = { 청주시: "청주" };
+const JEJU_METRO_AREAS: Record<string, string> = { 제주시: "제주", 서귀포시: "제주" };
+const JEONBUK_METRO_AREAS: Record<string, string> = { 전주시: "전주" };
+
 function definitions(
   sido: Sido,
   sigungus: string[],
@@ -110,6 +126,12 @@ export const REGION_DEFINITIONS: ReadonlyArray<RegionDefinition> = [
   ...definitions("대전광역시", Object.keys(DAEJEON_METRO_AREAS), "30", DAEJEON_METRO_AREAS),
   ...definitions("세종특별자치시", Object.keys(SEJONG_METRO_AREAS), "36", SEJONG_METRO_AREAS),
   ...definitions("대구광역시", Object.keys(DAEGU_METRO_AREAS), "27", DAEGU_METRO_AREAS),
+  ...definitions("광주광역시", Object.keys(GWANGJU_METRO_AREAS), "29", GWANGJU_METRO_AREAS),
+  ...definitions("충청남도", Object.keys(CHUNGNAM_METRO_AREAS), "44", CHUNGNAM_METRO_AREAS),
+  ...definitions("울산광역시", Object.keys(ULSAN_METRO_AREAS), "31", ULSAN_METRO_AREAS),
+  ...definitions("충청북도", Object.keys(CHUNGBUK_METRO_AREAS), "43", CHUNGBUK_METRO_AREAS),
+  ...definitions("제주특별자치도", Object.keys(JEJU_METRO_AREAS), "50", JEJU_METRO_AREAS),
+  ...definitions("전북특별자치도", Object.keys(JEONBUK_METRO_AREAS), "52", JEONBUK_METRO_AREAS),
 ];
 
 const REGION_BY_KEY = new Map(
@@ -129,17 +151,23 @@ function sidoFromAddress(address: string): Sido | null {
   if (/^(?:대전|대전광역시)(?:\s|$)/.test(address)) return "대전광역시";
   if (/^(?:세종|세종특별자치시)(?:\s|$)/.test(address)) return "세종특별자치시";
   if (/^(?:대구|대구광역시)(?:\s|$)/.test(address)) return "대구광역시";
+  if (/^(?:광주|광주광역시|전남광주통합특별시)(?:\s|$)/.test(address)) return "광주광역시";
+  if (/^(?:충남|충청남도)(?:\s|$)/.test(address)) return "충청남도";
+  if (/^(?:울산|울산광역시)(?:\s|$)/.test(address)) return "울산광역시";
+  if (/^(?:충북|충청북도)(?:\s|$)/.test(address)) return "충청북도";
+  if (/^(?:제주|제주특별자치도)(?:\s|$)/.test(address)) return "제주특별자치도";
+  if (/^(?:전북|전라북도|전북특별자치도)(?:\s|$)/.test(address)) return "전북특별자치도";
   return null;
 }
 
 function locationParts(sido: Sido, address: string, legacyDistrict: string): { sigungu: string; subdistrict: string | null } | null {
-  const withoutSido = address.replace(/^(?:서울특별시|서울|경기도|경기|인천광역시|인천|부산광역시|부산|경상남도|경남|대전광역시|대전|세종특별자치시|세종|대구광역시|대구)\s+/, "");
+  const withoutSido = address.replace(/^(?:서울특별시|서울|경기도|경기|인천광역시|인천|부산광역시|부산|경상남도|경남|대전광역시|대전|세종특별자치시|세종|대구광역시|대구|광주광역시|광주|전남광주통합특별시|충청남도|충남|울산광역시|울산|충청북도|충북|제주특별자치도|제주|전북특별자치도|전라북도|전북)\s+/, "");
   if (sido === "서울특별시") {
     const sigungu = withoutSido.match(/^([가-힣]+구)(?:\s|$)/)?.[1]
       ?? legacyDistrict.match(/^([가-힣]+구)$/)?.[1];
     return sigungu ? { sigungu, subdistrict: null } : null;
   }
-  if (sido === "경기도" || sido === "경상남도") {
+  if (sido === "경기도" || sido === "경상남도" || sido === "충청남도" || sido === "충청북도" || sido === "제주특별자치도" || sido === "전북특별자치도") {
     const match = withoutSido.match(/^([가-힣]+(?:시|군))(?:\s+([가-힣]+구))?/)
       ?? legacyDistrict.match(/^([가-힣]+(?:시|군))(?:\s+([가-힣]+구))?/);
     return match ? { sigungu: match[1], subdistrict: match[2] ?? null } : null;
