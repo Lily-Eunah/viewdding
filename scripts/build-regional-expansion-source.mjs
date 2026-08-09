@@ -68,7 +68,7 @@ const hallRows = config.halls.map((hall, index) => {
     "대표 source_id": matched.row["대표 source_id"],
     "공개 상태": publishable ? "공개" : "보류",
     "공개 준비상태": publishable ? "공개가능" : "보완필요",
-    "내부 의견": publishable ? "운영·홀명·대표 분류 확인" : "업체 문의 후 재검토",
+    "내부 의견": hall.internalOpinion ?? (publishable ? "운영·홀명·대표 분류 확인" : "업체 문의 후 재검토"),
     detail_id: `D-${config.regionCode}-${compactDate}-${String(index + 1).padStart(3, "0")}`,
     "상세 조사상태": publishable ? "상세확인" : "부분확인",
     "상세 source_id": matched.row["대표 source_id"],

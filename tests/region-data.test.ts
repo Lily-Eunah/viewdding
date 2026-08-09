@@ -20,18 +20,18 @@ describe("published hall region data", () => {
     expect(counts).toMatchObject({ 부산광역시: 17, 경상남도: 9, 대전광역시: 15, 세종특별자치시: 1, 대구광역시: 26 });
   });
 
-  it("publishes the national follow-up expansion in the requested order", () => {
+  it("publishes the saturated national follow-up expansion in the requested order", () => {
     const counts = halls.reduce<Record<string, number>>((result, hall) => {
       result[hall.sido] = (result[hall.sido] ?? 0) + 1;
       return result;
     }, {});
     expect(counts).toMatchObject({
-      광주광역시: 11,
-      충청남도: 8,
-      울산광역시: 8,
-      충청북도: 9,
-      제주특별자치도: 3,
-      전북특별자치도: 7,
+      광주광역시: 16,
+      충청남도: 18,
+      울산광역시: 14,
+      충청북도: 11,
+      제주특별자치도: 10,
+      전북특별자치도: 21,
     });
   });
 

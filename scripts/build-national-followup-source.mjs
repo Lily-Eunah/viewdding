@@ -1,14 +1,14 @@
 import fs from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import config from "./data/national-followup-expansion-data.mjs";
+import config from "./data/national-followup-saturation-data.mjs";
 
 const projectRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const outputPath = path.join(projectRoot, "src", "data", "national-followup-halls.source.generated.json");
 const compactDate = config.date.replaceAll("-", "");
 
 const venueRows = config.venues.map((venue, index) => {
-  const venueId = `V-${config.regionCode}-${compactDate}-${String(index + 1).padStart(3, "0")}`;
+  const venueId = venue.id ?? `V-${config.regionCode}-${compactDate}-${String(index + 1).padStart(3, "0")}`;
   return {
     venue_id: venueId,
     "공식 업체명": venue.name,
@@ -39,7 +39,7 @@ const venueByName = new Map(config.venues.map((venue, index) => [venue.name, { v
 const hallRows = config.halls.map((hall, index) => {
   const matched = venueByName.get(hall.venue);
   if (!matched) throw new Error(`Unknown venue: ${hall.venue}`);
-  const hallId = `H-${config.regionCode}-${compactDate}-${String(index + 1).padStart(3, "0")}`;
+  const hallId = hall.id ?? `H-${config.regionCode}-${compactDate}-${String(index + 1).padStart(3, "0")}`;
   const publishable = hall.publish && matched.venue.status === "운영확인";
   return {
     hall_id: hallId,
@@ -82,7 +82,7 @@ const hallRows = config.halls.map((hall, index) => {
 
 await fs.writeFile(outputPath, `${JSON.stringify({
   generatedAt: new Date().toISOString(),
-  sourceFiles: [`Viewdding_광주_천안아산_울산_청주_제주_전주_웨딩홀_Master_운영본_${compactDate}.xlsx`],
+  sourceFiles: [`Viewdding_광주_울산_천안아산_청주_제주_전주_웨딩홀_Master_포화조사_운영본_${compactDate}.xlsx`],
   venues: venueRows,
   halls: hallRows,
 }, null, 2)}\n`, "utf8");
