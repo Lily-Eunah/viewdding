@@ -1,7 +1,7 @@
 import type { HallRecord } from "../domain/types";
 
 const CHECKED_AT = "2026-08-08";
-const SINGLE_UNNAMED = "단독홀(고유명칭 미공개)";
+const SINGLE_UNNAMED = "단독홀";
 const UNDER_REVIEW = "홀 정보 확인 중";
 
 type HallNameStatus = NonNullable<HallRecord["hallNameStatus"]>;
@@ -361,6 +361,7 @@ export function applyHallNameAudit(halls: HallRecord[]): HallRecord[] {
     if (!rule) {
       const singleUnnamed = hall.hallName === "단독홀"
         || hall.hallName === "단독웨딩홀"
+        || hall.hallName === "단독홀(고유명칭 미공개)"
         || / 단독홀$/.test(hall.hallName);
       return [{
         ...hall,

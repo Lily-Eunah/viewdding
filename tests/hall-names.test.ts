@@ -10,7 +10,6 @@ describe("hall name audit", () => {
   it("removes generated placeholder names from public data", () => {
     const invalid = halls.filter((hall) => (
       /대표 예식공간|공식 웨딩홀 미확인|홀명 확인 필요/.test(hall.hallName)
-      || hall.hallName === "단독홀"
       || hall.hallName === "단독웨딩홀"
       || / 단독홀$/.test(hall.hallName)
     ));
@@ -20,7 +19,7 @@ describe("hall name audit", () => {
 
   it("assigns a structural verification status to every public hall", () => {
     expect(halls.every((hall) => ["official", "single_unnamed", "unverified"].includes(hall.hallNameStatus ?? ""))).toBe(true);
-    expect(halls.filter((hall) => hall.hallNameStatus === "single_unnamed").every((hall) => hall.hallName === "단독홀(고유명칭 미공개)")).toBe(true);
+    expect(halls.filter((hall) => hall.hallNameStatus === "single_unnamed").every((hall) => hall.hallName === "단독홀")).toBe(true);
     expect(halls.filter((hall) => hall.hallNameStatus === "unverified").every((hall) => hall.hallName === "홀 정보 확인 중")).toBe(true);
   });
 
