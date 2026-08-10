@@ -13,7 +13,7 @@
 button,input,select{font:inherit}button,select{cursor:pointer}a{color:inherit;text-decoration:none}h1,h2,h3,p{margin-top:0}
 .site-header{position:relative;z-index:20;display:flex;justify-content:center;padding:24px 20px 8px}
 .brand{display:inline-flex;flex-direction:column;align-items:center;line-height:1}.brand-kicker{color:var(--muted);font-size:9px;letter-spacing:.28em}.brand-name{margin-top:7px;font:400 38px/1 var(--script);letter-spacing:0}
-.page-shell{width:min(1080px,calc(100% - 40px));margin:auto;padding-bottom:140px}.page-intro{max-width:760px;margin:64px auto 36px;text-align:center}.page-intro h1{margin-bottom:10px;font:500 clamp(34px,5vw,52px)/1.1 var(--serif);letter-spacing:-.04em}.page-intro>p:last-child{color:var(--muted)}
+.page-shell{width:min(1080px,calc(100% - 40px));margin:auto;padding-bottom:140px}.site-footer{width:min(1080px,calc(100% - 40px));margin:0 auto;padding:0 0 48px;color:#777168;font-size:10px;letter-spacing:.08em;text-align:center}.page-intro{max-width:760px;margin:64px auto 36px;text-align:center}.page-intro h1{margin-bottom:10px;font:500 clamp(34px,5vw,52px)/1.1 var(--serif);letter-spacing:-.04em}.page-intro>p:last-child{color:var(--muted)}
 .hero{max-width:850px;margin:58px auto 34px;text-align:center}.hero h1{margin:14px 0 18px;font:500 clamp(38px,5.4vw,62px)/1.12 var(--serif);letter-spacing:-.05em}.hero h1 span{display:block}.hero>p:not(.eyebrow){max-width:520px;margin:0 auto;color:var(--muted);font-size:14px;line-height:1.65}
 .eyebrow{margin-bottom:4px;color:var(--muted);font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase}.data-status{display:inline-block;margin-top:12px;padding:7px 14px;border:1px solid var(--line);border-radius:999px;color:var(--muted);font-size:12px}
 .search-experience{width:min(960px,100%);margin:auto}.search-panel{position:relative;z-index:10;padding:18px;border:1px solid #ffffffc7;border-radius:22px;background:var(--paper);box-shadow:0 10px 30px #2d2c2710}
@@ -40,6 +40,7 @@ button,input,select{font:inherit}button,select{cursor:pointer}a{color:inherit;te
 
 body:has(.landing-page){background:#8b8788}
 body:has(.landing-page)>.site-header,body:has(.landing-page)>.bottom-nav{display:none}
+body:has(.landing-page)>.site-footer{display:none}
 body:has(.landing-page)>.page-shell{width:100%;margin:0;padding:0}
 .landing-page{isolation:isolate;min-height:100svh;overflow:hidden;position:relative;color:#f8f6f4;background:#8b8788}
 .landing-page:before{position:absolute;inset:-4%;z-index:-3;content:"";background:#8b8788 url("/viewdding-hero-v48.png") center/cover no-repeat;filter:blur(32px) saturate(.78) brightness(.94);opacity:.56}
@@ -153,7 +154,7 @@ body:after{position:fixed;inset:0;z-index:-1;pointer-events:none;content:"";opac
 .bottom-nav{display:none;bottom:max(16px,env(safe-area-inset-bottom));width:min(420px,calc(100% - 32px));border-color:#c3baae;border-radius:0;background:#f7f3eceb;box-shadow:0 12px 34px #6c63581c}.bottom-nav a{min-height:62px}.bottom-nav a svg{width:21px;height:21px}
 
 @media(max-width:760px){
-  .site-header{width:calc(100% - 32px);min-height:92px;padding:18px 0 14px}.brand-name{font-size:37px}.site-links{display:none}.bottom-nav{display:grid}
+  .site-header{width:calc(100% - 32px);min-height:92px;padding:18px 0 14px}.brand-name{font-size:37px}.site-links{display:none}.site-footer{padding-bottom:calc(102px + env(safe-area-inset-bottom))}.bottom-nav{display:grid}
   .page-shell{width:min(calc(100% - 28px),640px)}.finder-intro>div{padding:55px 10px 40px}.finder-intro h1{font-size:clamp(31px,8.5vw,41px);letter-spacing:.075em;text-indent:.075em}.finder-intro>div>p:last-child{margin-top:18px;font-size:12px}
   .search-experience.is-compact,.gathering-hero+.restaurant-search-experience{margin-top:0}.search-panel{padding:20px 18px 15px}.primary-filter-grid,.restaurant-filter-grid,.secondary-filter-grid{gap:13px}.detail-panel,.restaurant-detail-panel{gap:22px 16px}
   .restaurant-detail-panel{grid-template-columns:minmax(0,1fr)}.restaurant-cuisine-field,.restaurant-boolean-filters,.restaurant-detail-panel .missing-policy{grid-column:1}.restaurant-detail-panel .missing-policy{line-height:1.65;word-break:keep-all}.restaurant-boolean-filters .option-row{align-items:center}
@@ -186,7 +187,7 @@ body:has(.landing-page-reference):after{display:none}
 .landing-crisp-cta:after{position:absolute;right:15%;bottom:-1px;left:15%;height:1px;content:"";background:#49454085;opacity:1;transform:scaleX(.72);transition:transform .25s,opacity .25s}
 .landing-crisp-cta:hover:after,.landing-crisp-cta:focus-visible:after{transform:scaleX(1)}
 .landing-crisp-arrow{margin-top:-.08em;font:400 1.15em/1.5 Georgia,serif}
-.landing-crisp-footer{right:0;bottom:4.45%;margin:0;color:#48443f8c;font:400 clamp(.43rem,1.02svh,.57rem)/1 var(--display);letter-spacing:.31em;text-transform:uppercase;white-space:nowrap}
+.landing-crisp-footer{right:0;bottom:4.45%;margin:0;color:#48443f8c;font:400 clamp(.43rem,1.02svh,.57rem)/1.35 var(--display);letter-spacing:.31em;text-transform:uppercase;white-space:nowrap}.landing-crisp-footer span{display:block}.landing-crisp-footer span+span{margin-top:.45rem;font-family:var(--sans);letter-spacing:.08em;text-transform:none}
 @media(min-width:900px){
   .landing-page-reference{background:#f3f0ea}
   .landing-reference-image{object-position:center 35%}

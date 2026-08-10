@@ -32,7 +32,10 @@ export default function HomePage() {
             <span>Gathering Map 둘러보기</span><span className="landing-crisp-arrow" aria-hidden="true">→</span>
           </Link>
         </nav>
-        <p className="landing-crisp-footer">Viewdding · For every wedding moment</p>
+        <p className="landing-crisp-footer">
+          <span>Viewdding · For every wedding moment</span>
+          <span>© 2026 Viewding. All rights reserved.</span>
+        </p>
       </section>
     </>
   );

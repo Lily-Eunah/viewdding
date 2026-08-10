@@ -22,6 +22,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
       <body>
         <AppHeader />
         <main className="page-shell">{children}</main>
+        <footer className="site-footer">© 2026 Viewding. All rights reserved.</footer>
         <BottomNav />
       </body>
     </html>
