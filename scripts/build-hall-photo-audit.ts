@@ -6,6 +6,7 @@ import existingReplacementsJson from "../src/data/hall-photo-replacements.genera
 import existingVerificationsJson from "../src/data/hall-photo-verification.generated.json";
 import { hallPhotosByHallId } from "../src/data/hall-photos";
 import { isRejectedHallPhotoAsset } from "../src/domain/hall-photo-audit";
+import hallPhotoBackfillOverrides from "./data/hall-photo-backfill-overrides";
 import type {
   HallPhoto,
   HallPhotoVerificationMethod,
@@ -114,13 +115,15 @@ interface ManualPhotoOverride {
   url: string;
   sourceUrl: string;
   note: string;
+  checkedAt?: string;
+  visualReviewPassed?: boolean;
   sourceType?: HallPhoto["sourceType"];
   usageStatus?: HallPhoto["usageStatus"];
   photoKind?: HallPhoto["photoKind"];
   verificationMethod?: HallPhotoVerificationMethod;
 }
 
-const MANUAL_PHOTO_OVERRIDES: Readonly<Record<string, ManualPhotoOverride>> = {
+const BASE_MANUAL_PHOTO_OVERRIDES: Readonly<Record<string, ManualPhotoOverride>> = {
   "H-SEO-20260728-004": {
     url: "https://www.hotelnaruseoul.com/wp-content/uploads/sites/18/2024/12/%EC%9B%A8%EB%94%A9_%EB%A7%88%EC%9D%B4%ED%81%AC%EB%A1%9C%EC%82%AC%EC%9D%B4%ED%8A%B8_%EB%8C%80%EC%A7%80-1-%EC%82%AC%EB%B3%B8.jpg",
     sourceUrl: "https://www.hotelnaruseoul.com/meetings-events/wedding-family-party/",
@@ -808,6 +811,10 @@ const MANUAL_PHOTO_OVERRIDES: Readonly<Record<string, ManualPhotoOverride>> = {
     verificationMethod: "official_named_gallery",
   },
 };
+const MANUAL_PHOTO_OVERRIDES: Readonly<Record<string, ManualPhotoOverride>> = {
+  ...BASE_MANUAL_PHOTO_OVERRIDES,
+  ...hallPhotoBackfillOverrides,
+};
 const HALL_NAME_ALIASES: Readonly<Record<string, readonly string[]>> = {
   "H-SEO-20260728-057": ["Beyond the Glass"],
   "H-SEO-20260728-081": ["Hanyang Room"],
@@ -989,34 +996,57 @@ function attr(tag: string, name: string): string | null {
   return match ? decodeHtml(match[1]) : null;
 }
 
+function isLikelyImageUrl(value: string): boolean {
+  try {
+    const url = new URL(value);
+    return (
+      /\.(?:avif|jpe?g|png|webp)$/i.test(url.pathname) ||
+      /\/(?:is\/image|image\/upload)\//i.test(url.pathname) ||
+      /(?:cloudinary\.com|ctfassets\.net|hyatt\.com|marriott\.com)$/i.test(
+        url.hostname,
+      ) && /(?:image|rendition|photo|gallery|wedding|hall|ballroom)/i.test(url.pathname)
+    );
+  } catch {
+    return false;
+  }
+}
+
+function srcsetUrls(value: string): string[] {
+  return value
+    .split(",")
+    .map((entry) => entry.trim().split(/\s+/)[0])
+    .filter(Boolean);
+}
+
 function extractImages(html: string, pageUrl: string): ImageCandidate[] {
   const candidates: ImageCandidate[] = [];
-  for (const match of html.matchAll(/<img\b[^>]*>/gi)) {
+  for (const match of html.matchAll(/<(?:img|source)\b[^>]*>/gi)) {
     const tag = match[0];
-    const rawUrl =
-      attr(tag, "data-original") ??
-      attr(tag, "data-breeze") ??
-      attr(tag, "data-lazy-src") ??
-      attr(tag, "data-src") ??
-      attr(tag, "src");
-    if (!rawUrl || rawUrl.startsWith("data:")) continue;
-
-    let url: string;
-    try {
-      url = new URL(rawUrl, pageUrl).href;
-    } catch {
-      continue;
-    }
-    if (!/^https:\/\//.test(url) || !/\.(?:avif|jpe?g|png|webp)(?:\?|$)/i.test(url)) {
-      continue;
-    }
+    const rawUrls = [
+      attr(tag, "data-original"),
+      attr(tag, "data-breeze"),
+      attr(tag, "data-lazy-src"),
+      attr(tag, "data-src"),
+      attr(tag, "src"),
+      ...srcsetUrls(attr(tag, "data-srcset") ?? ""),
+      ...srcsetUrls(attr(tag, "srcset") ?? ""),
+    ].filter((value): value is string => Boolean(value && !value.startsWith("data:")));
 
     const start = Math.max(0, (match.index ?? 0) - 1_500);
-    candidates.push({
-      url,
-      alt: attr(tag, "alt") ?? "",
-      context: stripHtml(html.slice(start, (match.index ?? 0) + tag.length)),
-    });
+    for (const rawUrl of rawUrls) {
+      let url: string;
+      try {
+        url = new URL(rawUrl, pageUrl).href;
+      } catch {
+        continue;
+      }
+      if (!/^https:\/\//.test(url) || !isLikelyImageUrl(url)) continue;
+      candidates.push({
+        url,
+        alt: attr(tag, "alt") ?? "",
+        context: stripHtml(html.slice(start, (match.index ?? 0) + tag.length)),
+      });
+    }
   }
   const pageTitle = stripHtml(
     html.match(/<title\b[^>]*>([\s\S]*?)<\/title>/i)?.[1] ?? "",
@@ -1029,7 +1059,7 @@ function extractImages(html: string, pageUrl: string): ImageCandidate[] {
     if (!rawUrl) continue;
     try {
       const url = new URL(rawUrl, pageUrl).href;
-      if (/^https:\/\//.test(url) && /\.(?:avif|jpe?g|png|webp)(?:\?|$)/i.test(url)) {
+      if (/^https:\/\//.test(url) && isLikelyImageUrl(url)) {
         candidates.push({ url, alt: pageTitle, context: pageTitle });
       }
     } catch {
@@ -1037,12 +1067,12 @@ function extractImages(html: string, pageUrl: string): ImageCandidate[] {
     }
   }
 
-  for (const match of html.matchAll(/url\(\s*["']?([^"')]+\.(?:avif|jpe?g|png|webp)(?:\?[^"')]*)?)["']?\s*\)/gi)) {
+  for (const match of html.matchAll(/url\(\s*["']?([^"')]+)["']?\s*\)/gi)) {
     const rawUrl = decodeHtml(match[1]).replaceAll("\\/", "/");
     if (rawUrl.startsWith("data:")) continue;
     try {
       const url = new URL(rawUrl, pageUrl).href;
-      if (!/^https:\/\//.test(url)) continue;
+      if (!/^https:\/\//.test(url) || !isLikelyImageUrl(url)) continue;
       const start = Math.max(0, (match.index ?? 0) - 1_000);
       const end = Math.min(html.length, (match.index ?? 0) + match[0].length + 500);
       candidates.push({
@@ -1336,6 +1366,26 @@ async function fetchPage(url: string): Promise<{ html: string; url: string } | n
   }
 }
 
+async function isReachableImage(url: string): Promise<boolean> {
+  try {
+    const response = await fetch(url, {
+      headers: {
+        range: "bytes=0-1023",
+        "user-agent": "Mozilla/5.0 (compatible; ViewddingPhotoAudit/1.0)",
+      },
+      redirect: "follow",
+      signal: AbortSignal.timeout(12_000),
+    });
+    if (!response.ok) return false;
+    const contentType = response.headers.get("content-type") ?? "";
+    const extensionIdentified = /\.(?:avif|jpe?g|png|webp)(?:\?|$)/i.test(url);
+    await response.body?.cancel();
+    return contentType.toLocaleLowerCase().startsWith("image/") || extensionIdentified;
+  } catch {
+    return false;
+  }
+}
+
 const pageCache = new Map<string, Promise<{ html: string; url: string } | null>>();
 function cachedPage(url: string) {
   const cached = pageCache.get(url);
@@ -1372,7 +1422,11 @@ async function auditHall(hall: Hall): Promise<{
     };
   }
 
-  if (manualOverride && isRejectedHallPhotoAsset(manualOverride)) {
+  if (
+    manualOverride &&
+    !manualOverride.visualReviewPassed &&
+    isRejectedHallPhotoAsset(manualOverride)
+  ) {
     return {
       replacement: null,
       verification: null,
@@ -1416,7 +1470,7 @@ async function auditHall(hall: Hall): Promise<{
         sourceType: manualOverride.sourceType ?? "official_website",
         usageStatus: manualOverride.usageStatus ?? "official_source_linked",
         photoKind: manualOverride.photoKind ?? "wedding_setup",
-        checkedAt: CHECKED_AT,
+        checkedAt: manualOverride.checkedAt ?? CHECKED_AT,
       },
       verification: {
         identityStatus: "hall_confirmed",
@@ -1487,7 +1541,9 @@ async function auditHall(hall: Hall): Promise<{
       if (visitedPages.has(page.url)) continue;
       visitedPages.add(page.url);
       const publicSource = isPublicHost(page.url);
-      if (publicSource) continue;
+      // Public wedding listings are allowed only when the existing scoring
+      // logic can connect the image context to the exact hall name. They keep
+      // their lower-trust source and usage status in the generated registry.
       for (const candidate of extractImages(page.html, page.url)) {
         const score =
           scoreCandidate(candidate, hall, isMultiHall, page.hallSpecific) +
@@ -1504,7 +1560,13 @@ async function auditHall(hall: Hall): Promise<{
     }
   }
 
-  const chosen = scoredCandidates.sort((a, b) => b.score - a.score)[0];
+  let chosen: (typeof scoredCandidates)[number] | undefined;
+  for (const candidate of scoredCandidates.sort((a, b) => b.score - a.score)) {
+    if (await isReachableImage(candidate.candidate.url)) {
+      chosen = candidate;
+      break;
+    }
+  }
   if (chosen) {
     const method: HallPhotoVerificationMethod = chosen.publicSource
       ? "public_named_listing"
