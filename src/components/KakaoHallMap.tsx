@@ -4,7 +4,7 @@ import Link from "next/link";
 import Script from "next/script";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { hallCapacitySummary, hallMapVenuesWithinBounds } from "@/domain/hall-map";
-import type { HallMapVenue } from "@/domain/hall-map";
+import type { HallMapBounds, HallMapVenue } from "@/domain/hall-map";
 import { hallTags } from "@/lib/labels";
 import { FavoriteButton } from "./FavoriteButton";
 import {
@@ -17,12 +17,23 @@ interface MarkerEntry {
   marker: KakaoMarkerInstance;
 }
 
-export function KakaoHallMap({ venues, appKey }: { venues: HallMapVenue[]; appKey: string }) {
+export function KakaoHallMap({
+  venues,
+  appKey,
+  filterKey,
+  onBoundsChange,
+}: {
+  venues: HallMapVenue[];
+  appKey: string;
+  filterKey: string;
+  onBoundsChange: (bounds: HallMapBounds) => void;
+}) {
   const mapNodeRef = useRef<HTMLDivElement>(null);
   const mapInstanceRef = useRef<KakaoMapInstance | null>(null);
   const markerEntriesRef = useRef(new Map<string, MarkerEntry>());
   const markerImagesRef = useRef<HallMarkerImages | null>(null);
   const clustererRef = useRef<KakaoMarkerClustererInstance | null>(null);
+  const fittedFilterKeyRef = useRef<string | null>(null);
   const [sdkReady, setSdkReady] = useState(false);
   const [scriptError, setScriptError] = useState(false);
   const [visibleIds, setVisibleIds] = useState<string[]>([]);
@@ -43,11 +54,11 @@ export function KakaoHallMap({ venues, appKey }: { venues: HallMapVenue[]; appKe
   }, []);
 
   useEffect(() => {
-    if (!sdkReady || !mapNodeRef.current || !window.kakao || mappableVenues.length === 0) return;
+    if (!sdkReady || !mapNodeRef.current || !window.kakao) return;
     const maps = window.kakao.maps;
     const first = mappableVenues[0];
-    const firstPosition = new maps.LatLng(first.latitude!, first.longitude!);
-    const map = mapInstanceRef.current ?? new maps.Map(mapNodeRef.current, { center: firstPosition, level: 6 });
+    const firstPosition = first ? new maps.LatLng(first.latitude!, first.longitude!) : new maps.LatLng(36.3, 127.8);
+    const map = mapInstanceRef.current ?? new maps.Map(mapNodeRef.current, { center: firstPosition, level: first ? 6 : 13 });
     mapInstanceRef.current = map;
     map.relayout();
 
@@ -77,13 +88,17 @@ export function KakaoHallMap({ venues, appKey }: { venues: HallMapVenue[]; appKe
       return marker;
     });
 
-    if (markers.length === 1) {
+    if (markers.length === 1 && fittedFilterKeyRef.current !== filterKey) {
       markers[0].setMap(map);
       map.setCenter(firstPosition);
       map.setLevel(4);
-    } else {
+      fittedFilterKeyRef.current = filterKey;
+    } else if (markers.length > 0) {
       clustererRef.current = new maps.MarkerClusterer({ map, markers, averageCenter: true, minLevel: 6 });
-      map.setBounds(bounds);
+      if (fittedFilterKeyRef.current !== filterKey) {
+        map.setBounds(bounds);
+        fittedFilterKeyRef.current = filterKey;
+      }
     }
 
     const updateVisibleVenues = () => {
@@ -99,14 +114,19 @@ export function KakaoHallMap({ venues, appKey }: { venues: HallMapVenue[]; appKe
       const nextIds = visible.map((venue) => venue.venueId);
       setVisibleIds(nextIds);
       setSelectedId((current) => current && nextIds.includes(current) ? current : null);
+      onBoundsChange({
+        south: southWest.getLat(),
+        west: southWest.getLng(),
+        north: northEast.getLat(),
+        east: northEast.getLng(),
+      });
     };
 
     setVisibleIds(mappableVenues.map((venue) => venue.venueId));
     setSelectedId((current) => mappableVenues.some((venue) => venue.venueId === current) ? current : null);
     maps.event.addListener(map, "idle", updateVisibleVenues);
-    updateVisibleVenues();
     return () => maps.event.removeListener(map, "idle", updateVisibleVenues);
-  }, [mappableVenues, sdkReady]);
+  }, [filterKey, mappableVenues, onBoundsChange, sdkReady]);
 
   useEffect(() => {
     if (!markerImagesRef.current) return;
@@ -133,12 +153,6 @@ export function KakaoHallMap({ venues, appKey }: { venues: HallMapVenue[]; appKe
             <p className="eyebrow">KAKAO MAP</p>
             <h3>지도를 연결할 수 없어요.</h3>
             <p>잠시 후 다시 시도하거나 목록에서 웨딩홀을 확인해주세요.</p>
-          </div>
-        ) : mappableVenues.length === 0 ? (
-          <div className="restaurant-map-placeholder">
-            <p className="eyebrow">ADDRESS CHECK</p>
-            <h3>지도에 표시할 웨딩홀이 없어요.</h3>
-            <p>필터를 줄이거나 목록 보기에서 전체 결과를 확인해주세요.</p>
           </div>
         ) : (
           <div ref={mapNodeRef} className="restaurant-map-canvas" aria-label="카카오맵" />

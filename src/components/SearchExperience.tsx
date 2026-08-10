@@ -1,18 +1,24 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import { X } from "@phosphor-icons/react";
-import { EMPTY_FILTERS, filterHalls } from "@/domain/filter";
-import { groupFilteredHallsByVenue } from "@/domain/hall-map";
+import { EMPTY_FILTERS } from "@/domain/filter";
+import type { HallMapBounds, HallMapVenue } from "@/domain/hall-map";
 import { REGION_DEFINITIONS, shortSidoLabel, SIDO_OPTIONS } from "@/domain/regions";
-import type { CeremonyFormat, FilterState, HallTypeFilter, MealType, Sido } from "@/domain/types";
-import { availableSidos, halls, sigunguBySido } from "@/lib/data";
+import type { CeremonyFormat, FilteredHall, FilterState, HallTypeFilter, MealType, Sido } from "@/domain/types";
+import {
+  EMPTY_COUNTS,
+  fetchHallCounts,
+  fetchHallList,
+  fetchHallMap,
+  fetchSearchMeta,
+  type SearchCounts,
+} from "@/lib/search-api";
 import { CEREMONY_OPTIONS, HALL_TYPE_GROUPS, INTERVAL_OPTIONS, MEAL_OPTIONS, hallTypeLabel } from "@/lib/labels";
 import { HallCard } from "./HallCard";
 import { KakaoHallMap } from "./KakaoHallMap";
 
-const PAGE_SIZE = 24;
 const REGION_BY_CODE = new Map(REGION_DEFINITIONS.map((region) => [region.regionCode, region]));
 type ViewMode = "list" | "map";
 
@@ -73,29 +79,41 @@ export function SearchExperience({
   const [pickerTypes, setPickerTypes] = useState<HallTypeFilter[]>([]);
   const [typeOpen, setTypeOpen] = useState(false);
   const [detailOpen, setDetailOpen] = useState(false);
-  const [visible, setVisible] = useState(PAGE_SIZE);
   const [viewMode, setViewMode] = useState<ViewMode>("list");
   const [mobileFilterOpen, setMobileFilterOpen] = useState(false);
   const [regionOpen, setRegionOpen] = useState(false);
   const [activeSido, setActiveSido] = useState<Sido>("서울특별시");
+  const [hydrated, setHydrated] = useState(false);
+  const [availableSidos, setAvailableSidos] = useState<Sido[]>([]);
+  const [regionVenueCounts, setRegionVenueCounts] = useState<Record<string, number>>({});
+  const [sidoVenueCounts, setSidoVenueCounts] = useState<Partial<Record<Sido, number>>>({});
+  const [matched, setMatched] = useState<FilteredHall[]>([]);
+  const [unknown, setUnknown] = useState<FilteredHall[]>([]);
+  const [counts, setCounts] = useState<SearchCounts>(EMPTY_COUNTS);
+  const [draftCounts, setDraftCounts] = useState<SearchCounts>(EMPTY_COUNTS);
+  const [nextOffset, setNextOffset] = useState<number | null>(null);
+  const [mapVenues, setMapVenues] = useState<HallMapVenue[]>([]);
+  const [mapBounds, setMapBounds] = useState<HallMapBounds | null>(null);
+  const [loading, setLoading] = useState(true);
+  const [loadError, setLoadError] = useState(false);
 
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
-    const legacyHall = halls.find((hall) => hall.district === params.get("district"));
     const requestedSidos = Array.from(new Set(
       params.getAll("sido").flatMap((value) => value.split(","))
         .filter((value): value is Sido => SIDO_OPTIONS.some((option) => option.value === value)),
     ));
     const requestedRegionCodes = params.getAll("region").flatMap((value) => value.split(","))
       .filter((regionCode) => REGION_BY_CODE.has(regionCode));
-    const legacySigungu = params.get("sigungu") ?? legacyHall?.sigungu ?? "";
-    const legacySido = requestedSidos[0] ?? legacyHall?.sido;
+    const legacySigungu = params.get("sigungu") ?? params.get("district") ?? "";
+    const legacyRegion = REGION_DEFINITIONS.find((region) => region.sigungu === legacySigungu);
+    const legacySido = requestedSidos[0] ?? legacyRegion?.sido;
     const legacyRegionCode = legacySido && legacySigungu
       ? REGION_DEFINITIONS.find((region) => region.sido === legacySido && region.sigungu === legacySigungu)?.regionCode
-      : legacyHall?.regionCode;
+      : legacyRegion?.regionCode;
     const requestedMetroAreas = params.getAll("metro").flatMap((value) => value.split(","));
     const legacyMetroRegionCodes = REGION_DEFINITIONS
-      .filter((region) => requestedMetroAreas.includes(region.metroArea) && halls.some((hall) => hall.regionCode === region.regionCode))
+      .filter((region) => requestedMetroAreas.includes(region.metroArea))
       .map((region) => region.regionCode);
     const hasSpecificLegacyRegion = Boolean(legacyRegionCode && legacySigungu);
     const sidos = hasSpecificLegacyRegion && legacySido
@@ -126,7 +144,58 @@ export function SearchExperience({
     setRegionOpen(parsed.sidos.length > 0 || parsed.regionCodes.length > 0);
     setActiveSido(parsed.sidos[0] ?? REGION_BY_CODE.get(parsed.regionCodes[0])?.sido ?? "서울특별시");
     if (parsed.guests || parsed.naturalLight || parsed.ceremonyFormats.length || parsed.intervalAtLeast || parsed.meals.length) setDetailOpen(true);
+    setHydrated(true);
   }, []);
+
+  useEffect(() => {
+    const controller = new AbortController();
+    fetchSearchMeta(controller.signal).then((meta) => {
+      setAvailableSidos(meta.halls.availableSidos);
+      setRegionVenueCounts(meta.halls.regionVenueCounts);
+      setSidoVenueCounts(meta.halls.sidoVenueCounts);
+    }).catch((error: unknown) => {
+      if (!(error instanceof DOMException && error.name === "AbortError")) setLoadError(true);
+    });
+    return () => controller.abort();
+  }, []);
+
+  useEffect(() => {
+    if (!hydrated) return;
+    const controller = new AbortController();
+    setLoading(true);
+    setLoadError(false);
+    if (viewMode === "list") {
+      setMatched([]);
+      setUnknown([]);
+      setNextOffset(null);
+    }
+    const request = viewMode === "map"
+      ? fetchHallMap(applied, mapBounds, controller.signal).then((response) => {
+          setMapVenues(response.venues);
+          setCounts(response.counts);
+        })
+      : fetchHallList(applied, 0, controller.signal).then((response) => {
+          setMatched(response.matched);
+          setUnknown(response.unknown);
+          setCounts(response.counts);
+          setNextOffset(response.nextOffset);
+        });
+    request.catch((error: unknown) => {
+      if (!(error instanceof DOMException && error.name === "AbortError")) setLoadError(true);
+    }).finally(() => {
+      if (!controller.signal.aborted) setLoading(false);
+    });
+    return () => controller.abort();
+  }, [applied, hydrated, mapBounds, viewMode]);
+
+  useEffect(() => {
+    if (!hydrated) return;
+    const controller = new AbortController();
+    const timer = window.setTimeout(() => {
+      fetchHallCounts(draft, controller.signal).then((response) => setDraftCounts(response.counts)).catch(() => undefined);
+    }, 150);
+    return () => { window.clearTimeout(timer); controller.abort(); };
+  }, [draft, hydrated]);
 
   useEffect(() => {
     document.body.classList.toggle("hall-mobile-map-active", viewMode === "map");
@@ -147,30 +216,12 @@ export function SearchExperience({
     return () => window.removeEventListener("keydown", closeOnEscape);
   }, [applied, mobileFilterOpen]);
 
-  const results = useMemo(() => filterHalls(halls, applied), [applied]);
-  const draftResults = useMemo(() => filterHalls(halls, draft), [draft]);
-  const mapVenues = useMemo(
-    () => groupFilteredHallsByVenue([...results.matched, ...results.unknown]),
-    [results],
-  );
-  const regionVenueCounts = useMemo(() => new Map(
-    REGION_DEFINITIONS.map((region) => [
-      region.regionCode,
-      new Set(halls.filter((hall) => hall.regionCode === region.regionCode).map((hall) => hall.venueId)).size,
-    ]),
-  ), []);
-  const sidoVenueCounts = useMemo(() => new Map(
-    SIDO_OPTIONS.map(({ value }) => [
-      value,
-      new Set(halls.filter((hall) => hall.sido === value).map((hall) => hall.venueId)).size,
-    ]),
-  ), []);
-  useEffect(() => setVisible(PAGE_SIZE), [applied]);
-
   const detailCount = Number(draft.guests !== null) + Number(draft.naturalLight) + draft.ceremonyFormats.length + Number(draft.intervalAtLeast !== null) + draft.meals.length;
   function commit(next: FilterState) {
     setApplied(next);
     setDraft(next);
+    setMapBounds(null);
+    setMapVenues([]);
     const query = queryFromFilters(next, viewMode);
     window.history.replaceState(null, "", `${window.location.pathname}${query ? `?${query}` : ""}`);
   }
@@ -201,6 +252,7 @@ export function SearchExperience({
   }
 
   function switchViewMode(nextViewMode: ViewMode) {
+    if (nextViewMode === "map") setMapBounds(null);
     setViewMode(nextViewMode);
     setMobileFilterOpen(false);
     const query = queryFromFilters(applied, nextViewMode);
@@ -227,8 +279,6 @@ export function SearchExperience({
 
   const selectedCount = filterSelectionCount(draft);
   const appliedCount = filterSelectionCount(applied);
-  const total = results.matched.length + results.unknown.length;
-  const draftTotal = draftResults.matched.length + draftResults.unknown.length;
   const draftLocationChips = [
     ...draft.sidos.map((sido) => ({
       key: `draft-sido-${sido}`,
@@ -241,9 +291,23 @@ export function SearchExperience({
       remove: () => toggleRegionCode(regionCode),
     })),
   ];
-  const activeSidoRegionCodes = sigunguBySido[activeSido]
-    .map((sigungu) => REGION_DEFINITIONS.find((region) => region.sido === activeSido && region.sigungu === sigungu)?.regionCode)
-    .filter((regionCode): regionCode is string => Boolean(regionCode) && (regionVenueCounts.get(regionCode ?? "") ?? 0) > 0);
+  const activeSidoRegionCodes = REGION_DEFINITIONS
+    .filter((region) => region.sido === activeSido && (regionVenueCounts[region.regionCode] ?? 0) > 0)
+    .map((region) => region.regionCode);
+
+  async function loadMore() {
+    if (nextOffset === null || loading) return;
+    setLoading(true);
+    try {
+      const response = await fetchHallList(applied, nextOffset);
+      setMatched((current) => [...current, ...response.matched]);
+      setNextOffset(response.nextOffset);
+    } catch {
+      setLoadError(true);
+    } finally {
+      setLoading(false);
+    }
+  }
 
   return (
     <section className={`search-experience${compact ? " is-compact" : ""}${viewMode === "map" ? " is-map-mode" : ""}${mobileFilterOpen ? " is-mobile-filter-open" : ""}`}>
@@ -307,10 +371,10 @@ export function SearchExperience({
           <div className="region-option-panel" role="tabpanel">
             <div className="region-option-heading"><strong>{activeSido}</strong><span>원하는 지역을 여러 곳 고를 수 있어요.</span></div>
             <div className="region-option-grid">
-              <button type="button" className={draft.sidos.includes(activeSido) ? "region-option is-selected" : "region-option"} aria-pressed={draft.sidos.includes(activeSido)} onClick={() => toggleSido(activeSido)}><span>{shortSidoLabel(activeSido)} 전체</span><small>예식장 {sidoVenueCounts.get(activeSido) ?? 0}곳</small></button>
+              <button type="button" className={draft.sidos.includes(activeSido) ? "region-option is-selected" : "region-option"} aria-pressed={draft.sidos.includes(activeSido)} onClick={() => toggleSido(activeSido)}><span>{shortSidoLabel(activeSido)} 전체</span><small>예식장 {sidoVenueCounts[activeSido] ?? 0}곳</small></button>
               {activeSidoRegionCodes.map((regionCode) => {
                 const region = REGION_BY_CODE.get(regionCode);
-                return <button key={regionCode} type="button" className={draft.regionCodes.includes(regionCode) ? "region-option is-selected" : "region-option"} aria-pressed={draft.regionCodes.includes(regionCode)} onClick={() => toggleRegionCode(regionCode)}><span>{region?.sigungu ?? regionCode}</span><small>예식장 {regionVenueCounts.get(regionCode) ?? 0}곳</small></button>;
+                return <button key={regionCode} type="button" className={draft.regionCodes.includes(regionCode) ? "region-option is-selected" : "region-option"} aria-pressed={draft.regionCodes.includes(regionCode)} onClick={() => toggleRegionCode(regionCode)}><span>{region?.sigungu ?? regionCode}</span><small>예식장 {regionVenueCounts[regionCode] ?? 0}곳</small></button>;
               })}
             </div>
           </div>
@@ -326,13 +390,13 @@ export function SearchExperience({
           <fieldset className="detail-wide"><legend>식사 유형</legend><div className="option-row">{MEAL_OPTIONS.map((option) => <button key={option.value} type="button" className={draft.meals.includes(option.value) ? "option is-selected" : "option"} onClick={() => updateFilters({ ...draft, meals: toggleValue(draft.meals, option.value) })}>{option.label}</button>)}</div></fieldset>
           <p className="missing-policy">값이 없는 홀은 제외하지 않고 ‘정보 확인이 필요한 홀’로 분리합니다. <Link href="/methodology/">분류 기준 보기</Link></p>
         </div> : null}
-        <button className="mobile-filter-apply" type="submit">{selectedCount ? `${draftTotal}개 홀 보기` : "전체 웨딩홀 보기"}</button>
+        <button className="mobile-filter-apply" type="submit">{selectedCount ? `${draftCounts.total}개 홀 보기` : "전체 웨딩홀 보기"}</button>
       </form>
 
       <div id="search-results" className="results-heading">
         <div className="applied-chips">{chips.map((chip) => <button key={chip.key} type="button" aria-label={`${chip.label} 필터 해제`} onClick={chip.remove}>{chip.label}<span className="filter-chip-remove" aria-hidden="true">해제</span></button>)}</div>
         <div className="result-heading-row">
-          <div className="result-summary" aria-live="polite"><strong>조건 확인 {results.matched.length}개 홀</strong><span>정보 미확인 {results.unknown.length}개 · 총 {total}개 홀</span></div>
+          <div className="result-summary" aria-live="polite"><strong>조건 확인 {counts.matched}개 홀</strong><span>정보 미확인 {counts.unknown}개 · 총 {counts.total}개 홀</span></div>
           <div className="result-view-switch" role="group" aria-label="결과 보기 방식">
             <button type="button" className={viewMode === "list" ? "is-selected" : ""} aria-pressed={viewMode === "list"} onClick={() => switchViewMode("list")}>목록</button>
             <button type="button" className={viewMode === "map" ? "is-selected" : ""} aria-pressed={viewMode === "map"} onClick={() => switchViewMode("map")}>지도</button>
@@ -341,13 +405,15 @@ export function SearchExperience({
       </div>
 
       {viewMode === "map" ? (
-        <KakaoHallMap venues={mapVenues} appKey={kakaoMapAppKey} />
+        <KakaoHallMap venues={mapVenues} appKey={kakaoMapAppKey} filterKey={queryFromFilters(applied, "map")} onBoundsChange={setMapBounds} />
       ) : (
         <>
-          <div className="result-list">{results.matched.slice(0, visible).map((item) => <HallCard key={item.hall.id} hall={item.hall} />)}</div>
-          {visible < results.matched.length ? <button type="button" className="more-button" onClick={() => setVisible(visible + PAGE_SIZE)}>홀 더 보기</button> : null}
-          {results.matched.length === 0 ? <div className="empty-state"><h3>조건이 확인된 홀이 없어요.</h3><p>조건을 하나 줄이거나 정보 미확인 결과를 확인해보세요.</p></div> : null}
-          {results.unknown.length > 0 ? <details className="unknown-results"><summary>정보 확인이 필요한 홀 {results.unknown.length}개 보기</summary><p>선택한 조건과 명확히 다르지는 않지만 일부 값이 공개되지 않은 홀입니다.</p><div className="result-list">{results.unknown.slice(0, 24).map((item) => <HallCard key={item.hall.id} hall={item.hall} unknownReasons={item.unknownReasons} />)}</div></details> : null}
+          {loading && matched.length === 0 ? <div className="empty-state"><p>조건에 맞는 웨딩홀을 불러오고 있어요.</p></div> : null}
+          {loadError ? <div className="empty-state"><h3>웨딩홀을 불러오지 못했어요.</h3><p>잠시 후 다시 시도해주세요.</p></div> : null}
+          <div className="result-list">{matched.map((item) => <HallCard key={item.hall.id} hall={item.hall} />)}</div>
+          {nextOffset !== null ? <button type="button" className="more-button" disabled={loading} onClick={loadMore}>{loading ? "불러오는 중" : "홀 더 보기"}</button> : null}
+          {!loading && counts.matched === 0 ? <div className="empty-state"><h3>조건이 확인된 홀이 없어요.</h3><p>조건을 하나 줄이거나 정보 미확인 결과를 확인해보세요.</p></div> : null}
+          {counts.unknown > 0 ? <details className="unknown-results"><summary>정보 확인이 필요한 홀 {counts.unknown}개 보기</summary><p>선택한 조건과 명확히 다르지는 않지만 일부 값이 공개되지 않은 홀입니다.</p><div className="result-list">{unknown.map((item) => <HallCard key={item.hall.id} hall={item.hall} unknownReasons={item.unknownReasons} />)}</div>{counts.unknown > unknown.length ? <p>정보 미확인 결과는 처음 {unknown.length}개만 표시합니다.</p> : null}</details> : null}
         </>
       )}
     </section>

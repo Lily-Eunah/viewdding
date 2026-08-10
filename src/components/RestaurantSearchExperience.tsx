@@ -2,11 +2,19 @@
 
 import { useEffect, useMemo, useState } from "react";
 import { X } from "@phosphor-icons/react";
-import { EMPTY_RESTAURANT_FILTERS, filterRestaurants } from "@/domain/restaurant-filter";
+import { EMPTY_RESTAURANT_FILTERS } from "@/domain/restaurant-filter";
 import { isRestaurantCuisineCategory, RESTAURANT_CUISINE_CATEGORIES } from "@/domain/restaurant-cuisine";
 import type { RestaurantCuisineCategory } from "@/domain/restaurant-cuisine";
-import { restaurantAreasForDistrict } from "@/domain/restaurant-locations";
-import type { GatheringPurpose, RestaurantFilterState, RestaurantRecord, Weekday } from "@/domain/restaurant-types";
+import type { RestaurantMapBounds } from "@/domain/restaurant-map";
+import type { FilteredRestaurant, GatheringPurpose, RestaurantFilterState, RestaurantRecord, Weekday } from "@/domain/restaurant-types";
+import {
+  EMPTY_COUNTS,
+  fetchRestaurantCounts,
+  fetchRestaurantList,
+  fetchRestaurantMap,
+  fetchSearchMeta,
+  type SearchCounts,
+} from "@/lib/search-api";
 import { KakaoRestaurantMap } from "./KakaoRestaurantMap";
 import styles from "./RestaurantMapEnhancements.module.css";
 import { RestaurantCard } from "./RestaurantCard";
@@ -77,10 +85,8 @@ function appliedFilterChips(filters: RestaurantFilterState): AppliedFilterChip[]
 }
 
 export function RestaurantSearchExperience({
-  restaurants,
   kakaoMapAppKey,
 }: {
-  restaurants: RestaurantRecord[];
   kakaoMapAppKey: string;
 }) {
   const [draft, setDraft] = useState<RestaurantFilterState>({ ...EMPTY_RESTAURANT_FILTERS });
@@ -88,6 +94,18 @@ export function RestaurantSearchExperience({
   const [detailOpen, setDetailOpen] = useState(false);
   const [viewMode, setViewMode] = useState<ViewMode>("list");
   const [mobileFilterOpen, setMobileFilterOpen] = useState(false);
+  const [hydrated, setHydrated] = useState(false);
+  const [districtsByPurpose, setDistrictsByPurpose] = useState<Record<GatheringPurpose, string[]>>({ invitation: [], family_meeting: [] });
+  const [areasByPurpose, setAreasByPurpose] = useState<Record<GatheringPurpose, Record<string, string[]>>>({ invitation: {}, family_meeting: {} });
+  const [matched, setMatched] = useState<FilteredRestaurant[]>([]);
+  const [unknown, setUnknown] = useState<FilteredRestaurant[]>([]);
+  const [counts, setCounts] = useState<SearchCounts>(EMPTY_COUNTS);
+  const [draftCounts, setDraftCounts] = useState<SearchCounts>(EMPTY_COUNTS);
+  const [nextOffset, setNextOffset] = useState<number | null>(null);
+  const [mapRestaurants, setMapRestaurants] = useState<RestaurantRecord[]>([]);
+  const [mapBounds, setMapBounds] = useState<RestaurantMapBounds | null>(null);
+  const [loading, setLoading] = useState(true);
+  const [loadError, setLoadError] = useState(false);
 
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
@@ -108,7 +126,57 @@ export function RestaurantSearchExperience({
     setApplied(parsed);
     setViewMode(params.get("view") === "map" ? "map" : "list");
     if (parsed.weekday || parsed.cuisines.length || parsed.budgetMax || parsed.partySize || parsed.courseOnly || parsed.privateRoomOnly || parsed.parkingOnly) setDetailOpen(true);
+    setHydrated(true);
   }, []);
+
+  useEffect(() => {
+    const controller = new AbortController();
+    fetchSearchMeta(controller.signal).then((meta) => {
+      setDistrictsByPurpose(meta.restaurants.districts);
+      setAreasByPurpose(meta.restaurants.areas);
+    }).catch((error: unknown) => {
+      if (!(error instanceof DOMException && error.name === "AbortError")) setLoadError(true);
+    });
+    return () => controller.abort();
+  }, []);
+
+  useEffect(() => {
+    if (!hydrated) return;
+    const controller = new AbortController();
+    setLoading(true);
+    setLoadError(false);
+    if (viewMode === "list") {
+      setMatched([]);
+      setUnknown([]);
+      setNextOffset(null);
+    }
+    const request = viewMode === "map"
+      ? fetchRestaurantMap(applied, mapBounds, controller.signal).then((response) => {
+          setMapRestaurants(response.items);
+          setCounts(response.counts);
+        })
+      : fetchRestaurantList(applied, 0, controller.signal).then((response) => {
+          setMatched(response.matched);
+          setUnknown(response.unknown);
+          setCounts(response.counts);
+          setNextOffset(response.nextOffset);
+        });
+    request.catch((error: unknown) => {
+      if (!(error instanceof DOMException && error.name === "AbortError")) setLoadError(true);
+    }).finally(() => {
+      if (!controller.signal.aborted) setLoading(false);
+    });
+    return () => controller.abort();
+  }, [applied, hydrated, mapBounds, viewMode]);
+
+  useEffect(() => {
+    if (!hydrated) return;
+    const controller = new AbortController();
+    const timer = window.setTimeout(() => {
+      fetchRestaurantCounts(draft, controller.signal).then((response) => setDraftCounts(response.counts)).catch(() => undefined);
+    }, 150);
+    return () => { window.clearTimeout(timer); controller.abort(); };
+  }, [draft, hydrated]);
 
   useEffect(() => {
     document.body.classList.toggle("restaurant-mobile-map-active", viewMode === "map");
@@ -127,27 +195,9 @@ export function RestaurantSearchExperience({
     return () => window.removeEventListener("keydown", closeOnEscape);
   }, [applied, mobileFilterOpen]);
 
-  const purposeRestaurants = useMemo(
-    () => restaurants.filter((restaurant) => restaurant.purpose === draft.purpose),
-    [draft.purpose, restaurants],
-  );
-  const districts = useMemo(
-    () => Array.from(new Set(purposeRestaurants.map((restaurant) => restaurant.district))).sort((a, b) => a.localeCompare(b, "ko")),
-    [purposeRestaurants],
-  );
-  const areas = useMemo(
-    () => restaurantAreasForDistrict(purposeRestaurants, draft.district),
-    [draft.district, purposeRestaurants],
-  );
-  const results = useMemo(() => filterRestaurants(restaurants, applied), [applied, restaurants]);
-  const draftResults = useMemo(() => filterRestaurants(restaurants, draft), [draft, restaurants]);
-  const mapRestaurants = useMemo(
-    () => [...results.matched, ...results.unknown].map((item) => item.restaurant),
-    [results],
-  );
+  const districts = districtsByPurpose[draft.purpose];
+  const areas = draft.district ? areasByPurpose[draft.purpose][draft.district] ?? [] : [];
   const activeFilterChips = useMemo(() => appliedFilterChips(applied), [applied]);
-  const total = results.matched.length + results.unknown.length;
-  const draftTotal = draftResults.matched.length + draftResults.unknown.length;
 
   function replaceUrl(filters: RestaurantFilterState, nextViewMode: ViewMode = viewMode) {
     window.history.replaceState(null, "", `${window.location.pathname}?${queryFromFilters(filters, nextViewMode)}`);
@@ -157,17 +207,22 @@ export function RestaurantSearchExperience({
     const next = { ...draft, purpose, district: "", area: "", cuisines: [] };
     setDraft(next);
     setApplied(next);
+    setMapBounds(null);
+    setMapRestaurants([]);
     replaceUrl(next);
   }
 
   function commit(next: RestaurantFilterState) {
     setDraft(next);
     setApplied(next);
+    setMapBounds(null);
+    setMapRestaurants([]);
     replaceUrl(next);
   }
 
   function switchViewMode(nextViewMode: ViewMode) {
     setMobileFilterOpen(false);
+    if (nextViewMode === "map") setMapBounds(null);
     setViewMode(nextViewMode);
     replaceUrl(applied, nextViewMode);
   }
@@ -193,6 +248,20 @@ export function RestaurantSearchExperience({
 
   const selectedCount = filterSelectionCount(draft);
   const appliedCount = filterSelectionCount(applied);
+
+  async function loadMore() {
+    if (nextOffset === null || loading) return;
+    setLoading(true);
+    try {
+      const response = await fetchRestaurantList(applied, nextOffset);
+      setMatched((current) => [...current, ...response.matched]);
+      setNextOffset(response.nextOffset);
+    } catch {
+      setLoadError(true);
+    } finally {
+      setLoading(false);
+    }
+  }
 
   return (
     <section className={`restaurant-search-experience${viewMode === "map" ? " is-map-mode" : ""}${mobileFilterOpen ? " is-mobile-filter-open" : ""}`}>
@@ -260,13 +329,13 @@ export function RestaurantSearchExperience({
           </div></fieldset>
           <p className="missing-policy">선택한 요일이 정기 휴무인 음식점은 제외합니다. 휴무일을 확인하지 못한 곳은 ‘정보 확인 필요’로 분리합니다.</p>
         </div> : null}
-        <button className="mobile-filter-apply" type="submit">{selectedCount ? `${draftTotal}개 장소 보기` : "전체 음식점 보기"}</button>
+        <button className="mobile-filter-apply" type="submit">{selectedCount ? `${draftCounts.total}개 장소 보기` : "전체 음식점 보기"}</button>
       </form>
 
       <div id="restaurant-results" className="results-heading">
         <p className="result-context">{applied.purpose === "invitation" ? "청첩장 모임" : "상견례"} 장소</p>
         <div className="result-heading-row">
-          <div className="result-summary"><strong>조건 확인 {results.matched.length}곳</strong><span>정보 미확인 {results.unknown.length}곳 · 총 {total}곳</span></div>
+          <div className="result-summary"><strong>조건 확인 {counts.matched}곳</strong><span>정보 미확인 {counts.unknown}곳 · 총 {counts.total}곳</span></div>
           <div className="result-view-switch" role="group" aria-label="결과 보기 방식">
             <button type="button" className={viewMode === "list" ? "is-selected" : ""} aria-pressed={viewMode === "list"} onClick={() => switchViewMode("list")}>목록</button>
             <button type="button" className={viewMode === "map" ? "is-selected" : ""} aria-pressed={viewMode === "map"} onClick={() => switchViewMode("map")}>지도</button>
@@ -277,12 +346,17 @@ export function RestaurantSearchExperience({
         <KakaoRestaurantMap
           restaurants={mapRestaurants}
           appKey={kakaoMapAppKey}
+          filterKey={queryFromFilters(applied, "map")}
+          onBoundsChange={setMapBounds}
         />
       ) : (
         <>
-          <div className="result-list">{results.matched.map((item) => <RestaurantCard key={item.restaurant.id} restaurant={item.restaurant} />)}</div>
-          {results.matched.length === 0 ? <div className="empty-state"><h3>조건이 확인된 음식점이 없어요.</h3><p>조건을 하나 줄이거나 정보 미확인 결과를 확인해보세요.</p></div> : null}
-          {results.unknown.length > 0 ? <details className="unknown-results"><summary>정보 확인이 필요한 음식점 {results.unknown.length}곳 보기</summary><p>선택 조건과 다르지는 않지만 필요한 값 일부가 확인되지 않은 곳입니다.</p><div className="result-list">{results.unknown.map((item) => <RestaurantCard key={item.restaurant.id} restaurant={item.restaurant} unknownReasons={item.unknownReasons} />)}</div></details> : null}
+          {loading && matched.length === 0 ? <div className="empty-state"><p>조건에 맞는 장소를 불러오고 있어요.</p></div> : null}
+          {loadError ? <div className="empty-state"><h3>장소를 불러오지 못했어요.</h3><p>잠시 후 다시 시도해주세요.</p></div> : null}
+          <div className="result-list">{matched.map((item) => <RestaurantCard key={item.restaurant.id} restaurant={item.restaurant} />)}</div>
+          {nextOffset !== null ? <button type="button" className="more-button" disabled={loading} onClick={loadMore}>{loading ? "불러오는 중" : "음식점 더 보기"}</button> : null}
+          {!loading && counts.matched === 0 ? <div className="empty-state"><h3>조건이 확인된 음식점이 없어요.</h3><p>조건을 하나 줄이거나 정보 미확인 결과를 확인해보세요.</p></div> : null}
+          {counts.unknown > 0 ? <details className="unknown-results"><summary>정보 확인이 필요한 음식점 {counts.unknown}곳 보기</summary><p>선택 조건과 다르지는 않지만 필요한 값 일부가 확인되지 않은 곳입니다.</p><div className="result-list">{unknown.map((item) => <RestaurantCard key={item.restaurant.id} restaurant={item.restaurant} unknownReasons={item.unknownReasons} />)}</div>{counts.unknown > unknown.length ? <p>정보 미확인 결과는 처음 {unknown.length}곳만 표시합니다.</p> : null}</details> : null}
         </>
       )}
     </section>

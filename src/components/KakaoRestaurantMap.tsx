@@ -4,6 +4,7 @@ import Link from "next/link";
 import Script from "next/script";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { restaurantsWithinBounds } from "@/domain/restaurant-map";
+import type { RestaurantMapBounds } from "@/domain/restaurant-map";
 import type { RestaurantRecord } from "@/domain/restaurant-types";
 import { restaurantSlug } from "@/lib/restaurant-routes";
 import {
@@ -31,15 +32,20 @@ function priceSummary(restaurant: RestaurantRecord): string {
 export function KakaoRestaurantMap({
   restaurants,
   appKey,
+  filterKey,
+  onBoundsChange,
 }: {
   restaurants: RestaurantRecord[];
   appKey: string;
+  filterKey: string;
+  onBoundsChange: (bounds: RestaurantMapBounds) => void;
 }) {
   const mapNodeRef = useRef<HTMLDivElement>(null);
   const mapInstanceRef = useRef<KakaoMapInstance | null>(null);
   const markerEntriesRef = useRef(new Map<string, MarkerEntry>());
   const markerImagesRef = useRef<RestaurantMarkerImages | null>(null);
   const clustererRef = useRef<KakaoMarkerClustererInstance | null>(null);
+  const fittedFilterKeyRef = useRef<string | null>(null);
   const [sdkReady, setSdkReady] = useState(false);
   const [scriptError, setScriptError] = useState(false);
   const mappableRestaurants = useMemo(
@@ -59,11 +65,11 @@ export function KakaoRestaurantMap({
   }, []);
 
   useEffect(() => {
-    if (!sdkReady || !mapNodeRef.current || !window.kakao || mappableRestaurants.length === 0) return;
+    if (!sdkReady || !mapNodeRef.current || !window.kakao) return;
     const maps = window.kakao.maps;
     const first = mappableRestaurants[0];
-    const firstPosition = new maps.LatLng(first.latitude!, first.longitude!);
-    const map = mapInstanceRef.current ?? new maps.Map(mapNodeRef.current, { center: firstPosition, level: 6 });
+    const firstPosition = first ? new maps.LatLng(first.latitude!, first.longitude!) : new maps.LatLng(37.5665, 126.978);
+    const map = mapInstanceRef.current ?? new maps.Map(mapNodeRef.current, { center: firstPosition, level: first ? 6 : 8 });
     mapInstanceRef.current = map;
     map.relayout();
 
@@ -93,13 +99,17 @@ export function KakaoRestaurantMap({
       return marker;
     });
 
-    if (markers.length === 1) {
+    if (markers.length === 1 && fittedFilterKeyRef.current !== filterKey) {
       markers[0].setMap(map);
       map.setCenter(firstPosition);
       map.setLevel(4);
-    } else {
+      fittedFilterKeyRef.current = filterKey;
+    } else if (markers.length > 0) {
       clustererRef.current = new maps.MarkerClusterer({ map, markers, averageCenter: true, minLevel: 6 });
-      map.setBounds(bounds);
+      if (fittedFilterKeyRef.current !== filterKey) {
+        map.setBounds(bounds);
+        fittedFilterKeyRef.current = filterKey;
+      }
     }
 
     const updateVisibleRestaurants = () => {
@@ -115,15 +125,20 @@ export function KakaoRestaurantMap({
       const nextIds = visible.map((restaurant) => restaurant.id);
       setVisibleIds(nextIds);
       setSelectedId((current) => current && nextIds.includes(current) ? current : null);
+      onBoundsChange({
+        south: southWest.getLat(),
+        west: southWest.getLng(),
+        north: northEast.getLat(),
+        east: northEast.getLng(),
+      });
     };
 
     setVisibleIds(mappableRestaurants.map((restaurant) => restaurant.id));
     setSelectedId((current) => mappableRestaurants.some((restaurant) => restaurant.id === current) ? current : null);
     maps.event.addListener(map, "idle", updateVisibleRestaurants);
-    updateVisibleRestaurants();
 
     return () => maps.event.removeListener(map, "idle", updateVisibleRestaurants);
-  }, [mappableRestaurants, sdkReady]);
+  }, [filterKey, mappableRestaurants, onBoundsChange, sdkReady]);
 
   useEffect(() => {
     const markerImages = markerImagesRef.current;
@@ -151,12 +166,6 @@ export function KakaoRestaurantMap({
             <p className="eyebrow">KAKAO MAP</p>
             <h3>지도 연결을 준비하고 있어요</h3>
             <p>카카오맵 키가 연결되면 필터 결과가 이곳에 마커로 표시됩니다.</p>
-          </div>
-        ) : mappableRestaurants.length === 0 ? (
-          <div className="restaurant-map-placeholder">
-            <p className="eyebrow">ADDRESS CHECK</p>
-            <h3>표시할 좌표를 준비하고 있어요</h3>
-            <p>주소 좌표 변환이 끝난 음식점부터 지도에 표시됩니다.</p>
           </div>
         ) : (
           <div ref={mapNodeRef} className="restaurant-map-canvas" aria-label="카카오맵" />
