@@ -6,11 +6,12 @@
   "scripts": {
     "dev": "next dev",
     "data:seo-csv": "tsx scripts/build-seo-csv.ts",
-    "data:build": "node scripts/build-regional-expansion-source.mjs && node scripts/build-national-followup-source.mjs && tsx scripts/build-data.ts && npm run data:hall-geocodes && npm run data:restaurants && npm run data:seo-csv",
+    "data:build": "node scripts/build-regional-expansion-source.mjs && node scripts/build-national-followup-source.mjs && tsx scripts/build-data.ts && npm run data:hall-geocodes && npm run data:restaurants && npm run data:personal-colors && npm run data:seo-csv",
     "data:hall-geocodes": "tsx scripts/build-hall-geocodes.ts",
     "data:hall-photo-audit": "tsx scripts/build-hall-photo-audit.ts",
     "data:restaurants": "tsx scripts/build-restaurants.ts",
     "data:restaurant-photos": "tsx scripts/build-restaurant-photos.ts",
+    "data:personal-colors": "tsx scripts/build-personal-colors.ts",
     "sites:stage": "tsx scripts/stage-sites.ts",
     "sites:build": "npm run build && npm run sites:stage",
     "test": "vitest run",
