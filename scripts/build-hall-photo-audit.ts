@@ -7,6 +7,7 @@ import existingVerificationsJson from "../src/data/hall-photo-verification.gener
 import { hallPhotosByHallId } from "../src/data/hall-photos";
 import { isRejectedHallPhotoAsset } from "../src/domain/hall-photo-audit";
 import hallPhotoBackfillOverrides from "./data/hall-photo-backfill-overrides";
+import hallPhotoReviewOverridesJson from "./data/hall-photo-review-overrides.generated.json";
 import type {
   HallPhoto,
   HallPhotoVerificationMethod,
@@ -30,6 +31,16 @@ const FORCED_RECHECK_HALL_IDS = new Set([
 const MANUAL_PHOTO_SUPPRESSIONS: Readonly<Record<string, string>> = {
   "H-SEO-20260728-026":
     "공식 운영 페이지와 공식 협력업체 페이지에서 SETEC 컨벤션홀의 실제 예식 세팅 사진을 확인하지 못해 일반 강당 사진을 공개하지 않음.",
+  "H-REG-X3-20260809-032":
+    "Available candidates were visually rejected or identified as a different named hall; keep unpublished until a Gardenia Hall photo is verified.",
+  "H-REG-X3-20260809-054":
+    "The official page repeatedly yielded logo and decorative assets; keep unpublished until a full Grand Ballroom photo is verified.",
+  "H-REG-X3-20260809-062":
+    "Available candidates showed the exterior or non-ceremony areas; keep unpublished until an Island U wedding setup is verified.",
+  "H-SEO-20260730-010":
+    "Available candidates were people, promotional, or unrelated images; keep unpublished until a Veraca Chapel hall overview is verified.",
+  "H-SEO-20260730-011":
+    "Available candidates were people, promotional, or unrelated images; keep unpublished until a Theatre Wedding L'amour hall overview is verified.",
 };
 const VENUE_SOURCE_URL_OVERRIDES: Readonly<Record<string, readonly string[]>> = {
   "V-SEO-20260728-045": [
@@ -814,6 +825,7 @@ const BASE_MANUAL_PHOTO_OVERRIDES: Readonly<Record<string, ManualPhotoOverride>>
 const MANUAL_PHOTO_OVERRIDES: Readonly<Record<string, ManualPhotoOverride>> = {
   ...BASE_MANUAL_PHOTO_OVERRIDES,
   ...hallPhotoBackfillOverrides,
+  ...(hallPhotoReviewOverridesJson as Record<string, ManualPhotoOverride>),
 };
 const HALL_NAME_ALIASES: Readonly<Record<string, readonly string[]>> = {
   "H-SEO-20260728-057": ["Beyond the Glass"],
@@ -1639,6 +1651,16 @@ const workers = Array.from({ length: workerCount }, async () => {
   }
 });
 await Promise.all(workers);
+
+for (const result of results) {
+  if (!result.replacement || !isRejectedHallPhotoAsset(result.replacement)) continue;
+  result.replacement = null;
+  result.verification = null;
+  result.audit.result = "needs_review";
+  result.audit.photoUrl = null;
+  result.audit.reason =
+    "The selected image was rejected by the manual visual-review blocklist.";
+}
 
 const resultByHallId = new Map(results.map((result) => [result.audit.hallId, result]));
 const hallIdsByFinalPhotoUrl = new Map<string, string[]>();

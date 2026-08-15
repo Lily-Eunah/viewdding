@@ -2,6 +2,7 @@ import { writeFile } from "node:fs/promises";
 import path from "node:path";
 import { photosForHall } from "../src/data/hall-photos";
 import hallPhotoBackfillOverrides from "./data/hall-photo-backfill-overrides";
+import hallPhotoReviewOverridesJson from "./data/hall-photo-review-overrides.generated.json";
 
 interface ValidationResult {
   hallId: string;
@@ -12,7 +13,10 @@ interface ValidationResult {
   error: string | null;
 }
 
-const targetIds = new Set(Object.keys(hallPhotoBackfillOverrides));
+const targetIds = new Set([
+  ...Object.keys(hallPhotoBackfillOverrides),
+  ...Object.keys(hallPhotoReviewOverridesJson),
+]);
 const work = [...targetIds].flatMap((hallId) =>
   photosForHall(hallId).map((photo) => ({ hallId, url: photo.url })),
 );

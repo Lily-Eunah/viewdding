@@ -1,5 +1,6 @@
 import { describe, expect, it } from "vitest";
 import hallsJson from "../src/data/halls.generated.json";
+import visualRejectionsJson from "../src/data/hall-photo-visual-rejections.generated.json";
 import { hallPhotosByHallId, photosForHall } from "../src/data/hall-photos";
 import {
   duplicatePhotoHallIds,
@@ -130,6 +131,16 @@ describe("hall photo registry", () => {
     for (const [hallId] of entries) {
       for (const photo of photosForHall(hallId)) {
         expect(isKnownRejectedHallPhotoAsset(photo)).toBe(false);
+      }
+    }
+  });
+
+  it("never publishes a candidate rejected by manual visual review", () => {
+    const rejectedUrls = new Set(visualRejectionsJson.map((entry) => entry.url));
+
+    for (const [hallId] of entries) {
+      for (const photo of photosForHall(hallId)) {
+        expect(rejectedUrls.has(photo.url)).toBe(false);
       }
     }
   });

@@ -2,6 +2,7 @@ import type {
   HallPhotoIdentityStatus,
   HallPhotoVerificationMethod,
 } from "./types";
+import hallPhotoVisualRejectionsJson from "../data/hall-photo-visual-rejections.generated.json";
 
 export interface HallPhotoAuditHall {
   id: string;
@@ -37,6 +38,7 @@ const KNOWN_REJECTED_HALL_PHOTO_URLS = new Set([
   "https://www.pharosconvention.co.kr/attachList/upload/user/NEWS/em20260423120910550.jpg",
   "https://cache.marriott.com/content/dam/marriott-renditions/SELFG/selfg-meeting-room-3277-hor-wide.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=1336px:*",
   "https://wedding.seoulwomen.or.kr/app/uploads/2024/05/36-scaled.jpg",
+  ...hallPhotoVisualRejectionsJson.map((entry) => entry.url),
 ]);
 
 export function isKnownRejectedHallPhotoAsset({
