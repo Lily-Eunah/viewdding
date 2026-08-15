@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import "./globals.css";
 import { AppHeader } from "@/components/AppHeader";
 import { BottomNav } from "@/components/BottomNav";
@@ -22,7 +23,9 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
       <body>
         <AppHeader />
         <main className="page-shell">{children}</main>
-        <BottomNav />
+        <Suspense fallback={<nav className="bottom-nav" aria-hidden="true" />}>
+          <BottomNav />
+        </Suspense>
       </body>
     </html>
   );

@@ -104,13 +104,7 @@ export function HallCard({ hall }: { hall: HallRecord; unknownReasons?: Filtered
         </div>
       </Link>
 
-      <div
-        className="favorite-button-overlay"
-        onClick={(e) => {
-          e.preventDefault();
-          e.stopPropagation();
-        }}
-      >
+      <div className="favorite-button-overlay">
         <FavoriteButton hallId={hall.id} compact />
       </div>
     </article>
