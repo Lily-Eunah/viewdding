@@ -27,7 +27,16 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
               벤더 성과 & 피칭 리포트
             </Link>
             <Link href="/admin/ads" className="admin-nav-item">
-              상단 광고 슬롯 관리
+              상단 광고 슬롯
+            </Link>
+            <Link href="/admin/essentials" className="admin-nav-item">
+              🛍️ 준비물 관리
+            </Link>
+            <Link href="/admin/self-snap/items" className="admin-nav-item">
+              📸 스냅 소품/의상
+            </Link>
+            <Link href="/admin/self-snap/venues" className="admin-nav-item">
+              🏛️ 스냅 장소/스튜디오
             </Link>
           </nav>
 
