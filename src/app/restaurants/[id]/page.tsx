@@ -15,6 +15,10 @@ import {
 } from "@/lib/restaurant-labels";
 import { restaurantSlug } from "@/lib/restaurant-routes";
 import { getRestaurantBySlug, getRestaurantEvidence, restaurants } from "@/lib/restaurants";
+import {
+  RestaurantDetailOutboundLink,
+  RestaurantDetailTracker,
+} from "@/components/RestaurantDetailTracker";
 
 export const dynamicParams = false;
 
@@ -60,6 +64,8 @@ export default async function RestaurantDetailPage({ params }: { params: Promise
   const location = [restaurant.district, restaurant.area].filter(Boolean).join(" · ");
   const mealMinimum = restaurantMealMinimumLabel(restaurant);
   const recommendation = restaurant.recommendationPoints?.replace(/\s*\/\s*/g, " · ");
+  const displayName = restaurantName(restaurant);
+  const vId = restaurantSlug(restaurant);
   const facts = [
     { label: "1인 가격", value: restaurantPriceLabel(restaurant) },
     { label: "정기 휴무", value: restaurantClosedDaysLabel(restaurant) },
@@ -74,6 +80,12 @@ export default async function RestaurantDetailPage({ params }: { params: Promise
 
   return (
     <article className="detail-page restaurant-detail-page">
+      <RestaurantDetailTracker
+        vendorId={vId}
+        vendorName={displayName}
+        region={restaurant.district}
+      />
+
       <nav className="breadcrumb" aria-label="현재 위치">
         <Link href={gatheringHref}>{purpose} 장소 찾기</Link>
         <span>›</span>
@@ -83,7 +95,7 @@ export default async function RestaurantDetailPage({ params }: { params: Promise
       <header className="detail-header restaurant-detail-header">
         <div>
           <p className="eyebrow">{purpose}</p>
-          <h1>{restaurantName(restaurant)}</h1>
+          <h1>{displayName}</h1>
           <p>{location} · {restaurantStationLabel(restaurant)}</p>
           <div className="chip-row">
             {restaurant.venueType ? <span className="chip restaurant-venue-type">업종 · {restaurant.venueType}</span> : null}
@@ -92,8 +104,28 @@ export default async function RestaurantDetailPage({ params }: { params: Promise
           </div>
         </div>
         <div className="restaurant-detail-actions">
-          {restaurant.naverMapUrl ? <a href={restaurant.naverMapUrl} target="_blank" rel="noreferrer">네이버 지도</a> : null}
-          {restaurant.kakaoMapUrl ? <a href={restaurant.kakaoMapUrl} target="_blank" rel="noreferrer">카카오맵</a> : null}
+          {restaurant.naverMapUrl ? (
+            <RestaurantDetailOutboundLink
+              vendorId={vId}
+              vendorName={displayName}
+              targetType="naver_map"
+              targetUrl={restaurant.naverMapUrl}
+              region={restaurant.district}
+            >
+              네이버 지도
+            </RestaurantDetailOutboundLink>
+          ) : null}
+          {restaurant.kakaoMapUrl ? (
+            <RestaurantDetailOutboundLink
+              vendorId={vId}
+              vendorName={displayName}
+              targetType="kakao_map"
+              targetUrl={restaurant.kakaoMapUrl}
+              region={restaurant.district}
+            >
+              카카오맵
+            </RestaurantDetailOutboundLink>
+          ) : null}
         </div>
       </header>
 
@@ -129,7 +161,14 @@ export default async function RestaurantDetailPage({ params }: { params: Promise
           <div className="restaurant-review-list">
             {reviews.map((review) => (
               <article className="restaurant-review-card" key={review.id}>
-                <a className="restaurant-review-card-link" href={review.url}>
+                <RestaurantDetailOutboundLink
+                  vendorId={vId}
+                  vendorName={displayName}
+                  targetType="blog_review"
+                  targetUrl={review.url}
+                  region={restaurant.district}
+                  className="restaurant-review-card-link"
+                >
                   <div className="restaurant-review-meta">
                     <span>{review.platform ?? review.sourceType}</span>
                     {review.publishedAt ? <time dateTime={review.publishedAt}>{review.publishedAt}</time> : null}
@@ -144,7 +183,7 @@ export default async function RestaurantDetailPage({ params }: { params: Promise
                   </div>
                   <h3>{review.title ?? "블로그 후기"}</h3>
                   {review.summary ? <p>{review.summary}</p> : null}
-                </a>
+                </RestaurantDetailOutboundLink>
               </article>
             ))}
           </div>

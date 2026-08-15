@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { FAVORITES_EVENT, isFavorite, toggleFavorite, type FavoriteCategory } from "@/lib/favorites";
+import { trackFavoriteToggle } from "@/lib/analytics-client";
 
 export function FavoriteButton({
   itemId,
@@ -41,6 +42,11 @@ export function FavoriteButton({
         e.preventDefault();
         e.stopPropagation();
         toggleFavorite(category, targetId);
+        trackFavoriteToggle({
+          vendorId: targetId,
+          category,
+          isFavorite: !saved,
+        });
       }}
     >
       <span aria-hidden="true">{saved ? "♥" : "♡"}</span>

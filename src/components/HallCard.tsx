@@ -1,9 +1,12 @@
+"use client";
+
 import Link from "next/link";
 import type { FilteredHall, HallRecord } from "@/domain/types";
 import { shortSidoLabel } from "@/domain/regions";
 import { ceremonyLabel, hallTags, mealLabels } from "@/lib/labels";
 import { FavoriteButton } from "./FavoriteButton";
 import { HallPhotoMedia } from "./HallPhotoMedia";
+import { trackDetailView, useCardImpression } from "@/lib/analytics-client";
 
 function hasRange(range: HallRecord["capacity"]): boolean {
   return range.min !== null || range.max !== null;
@@ -52,9 +55,30 @@ export function HallCard({ hall }: { hall: HallRecord; unknownReasons?: Filtered
   const tags = hallTags(hall);
   const primaryPhoto = hall.photos?.[0];
 
+  const cardRef = useCardImpression<HTMLElement>({
+    vendorId: hall.id,
+    vendorName: displayName,
+    category: "wedding_hall",
+    region: locationText,
+  });
+
+  const handleDetailClick = () => {
+    trackDetailView({
+      vendorId: hall.id,
+      vendorName: displayName,
+      category: "wedding_hall",
+      region: locationText,
+    });
+  };
+
   return (
-    <article className="hall-card">
-      <Link href={`/halls/${hall.id}/`} className="hall-card-main-link" style={{ display: "block", color: "inherit", textDecoration: "none" }}>
+    <article className="hall-card" ref={cardRef}>
+      <Link
+        href={`/halls/${hall.id}/`}
+        className="hall-card-main-link"
+        style={{ display: "block", color: "inherit", textDecoration: "none" }}
+        onClick={handleDetailClick}
+      >
         <div className="hall-card-media-wrapper">
           {primaryPhoto ? (
             <HallPhotoMedia photo={primaryPhoto} variant="card" />

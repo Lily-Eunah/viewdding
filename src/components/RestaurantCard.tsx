@@ -15,6 +15,11 @@ import {
 } from "@/lib/restaurant-labels";
 import { restaurantSlug } from "@/lib/restaurant-routes";
 import { getRestaurantBrandFallback } from "@/lib/restaurant-visuals";
+import {
+  trackDetailView,
+  trackOutboundClick,
+  useCardImpression,
+} from "@/lib/analytics-client";
 
 function NaverMapAppIcon() {
   const gradId = useId();
@@ -60,11 +65,51 @@ export function RestaurantCard({
 }) {
   const [imgFailed, setImgFailed] = useState(false);
   const displayName = `${restaurant.name}${restaurant.branch ? ` ${restaurant.branch}` : ""}`;
-  const detailUrl = `/restaurants/${restaurantSlug(restaurant)}/`;
+  const vId = restaurantSlug(restaurant);
+  const detailUrl = `/restaurants/${vId}/`;
   const hasPhoto = Boolean(restaurant.photoUrl) && !imgFailed;
   const fallbackVisual = getRestaurantBrandFallback(restaurant);
   const closedBadge = restaurantClosedBadgeLabel(restaurant);
   const cleanStation = restaurantStationCleanLabel(restaurant);
+
+  // Hook for 500ms viewport dwell impression logging
+  const cardRef = useCardImpression<HTMLElement>({
+    vendorId: vId,
+    vendorName: displayName,
+    category: "gathering_restaurant",
+    region: restaurant.district,
+  });
+
+  const handleDetailClick = () => {
+    trackDetailView({
+      vendorId: vId,
+      vendorName: displayName,
+      category: "gathering_restaurant",
+      region: restaurant.district,
+    });
+  };
+
+  const handleNaverMapClick = () => {
+    trackOutboundClick({
+      vendorId: vId,
+      vendorName: displayName,
+      targetType: "naver_map",
+      targetUrl: restaurant.naverMapUrl || undefined,
+      category: "gathering_restaurant",
+      region: restaurant.district,
+    });
+  };
+
+  const handleKakaoMapClick = () => {
+    trackOutboundClick({
+      vendorId: vId,
+      vendorName: displayName,
+      targetType: "kakao_map",
+      targetUrl: restaurant.kakaoMapUrl || undefined,
+      category: "gathering_restaurant",
+      region: restaurant.district,
+    });
+  };
 
   // Filter out redundant tags that duplicate purpose/district/cuisine
   const rawTags = [...(restaurant.captionTags || [])];
@@ -93,6 +138,7 @@ export function RestaurantCard({
           className="portal-icon-only-btn"
           title="네이버 지도에서 열기"
           aria-label="네이버 지도에서 열기"
+          onClick={handleNaverMapClick}
         >
           <NaverMapAppIcon />
         </a>
@@ -105,6 +151,7 @@ export function RestaurantCard({
           className="portal-icon-only-btn"
           title="카카오맵에서 열기"
           aria-label="카카오맵에서 열기"
+          onClick={handleKakaoMapClick}
         >
           <KakaoMapAppIcon />
         </a>
@@ -113,10 +160,10 @@ export function RestaurantCard({
   );
 
   return (
-    <article className="restaurant-card">
+    <article className="restaurant-card" ref={cardRef}>
       <div className="restaurant-card-main-grid">
         {/* Left Visual Thumbnail Area */}
-        <Link href={detailUrl} className="restaurant-card-visual-link">
+        <Link href={detailUrl} className="restaurant-card-visual-link" onClick={handleDetailClick}>
           <div
             className="restaurant-card-visual-wrapper"
             style={!hasPhoto ? { background: fallbackVisual.bgGradient } : undefined}

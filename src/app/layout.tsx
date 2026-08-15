@@ -3,6 +3,7 @@ import { Suspense } from "react";
 import "./globals.css";
 import { AppHeader } from "@/components/AppHeader";
 import { BottomNav } from "@/components/BottomNav";
+import { AnalyticsPageTracker } from "@/components/AnalyticsPageTracker";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://viewdding.com"),
@@ -21,6 +22,9 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         />
       </head>
       <body>
+        <Suspense fallback={null}>
+          <AnalyticsPageTracker />
+        </Suspense>
         <AppHeader />
         <main className="page-shell">{children}</main>
         <Suspense fallback={<nav className="bottom-nav" aria-hidden="true" />}>
