@@ -397,6 +397,7 @@ export default function AdminEssentialsPage() {
                     <img
                       src={formData.thumbnailUrl}
                       alt="Preview"
+                      referrerPolicy="no-referrer"
                       style={{ width: "100%", height: "100%", objectFit: "cover" }}
                     />
                   ) : (
@@ -716,6 +717,7 @@ export default function AdminEssentialsPage() {
                           <img
                             src={res.thumbnailUrl || "/viewdding-hero-v48.png"}
                             alt=""
+                            referrerPolicy="no-referrer"
                             style={{ width: "40px", height: "40px", objectFit: "cover", borderRadius: "6px" }}
                           />
                         </td>
@@ -821,6 +823,7 @@ export default function AdminEssentialsPage() {
                       <img
                         src={item.thumbnailUrl || "/viewdding-hero-v48.png"}
                         alt=""
+                        referrerPolicy="no-referrer"
                         style={{ width: "48px", height: "48px", objectFit: "cover", borderRadius: "8px" }}
                       />
                     </td>

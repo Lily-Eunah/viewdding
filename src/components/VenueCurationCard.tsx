@@ -95,6 +95,7 @@ export function VenueCurationCard({
           alt={name}
           className="venue-card-image"
           loading="lazy"
+          referrerPolicy="no-referrer"
           onError={() => setImgError(true)}
         />
         <div className="venue-badges">

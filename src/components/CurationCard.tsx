@@ -107,6 +107,7 @@ export function CurationCard({
           alt={name}
           className="inpock-card-image"
           loading="lazy"
+          referrerPolicy="no-referrer"
           onError={() => setImgError(true)}
         />
 

@@ -260,6 +260,7 @@ export default function AdminSelfSnapVenuesPage() {
                   <img
                     src={formData.thumbnailUrl}
                     alt="Preview"
+                    referrerPolicy="no-referrer"
                     style={{ width: "100%", height: "100%", objectFit: "cover" }}
                   />
                 ) : (
@@ -565,6 +566,7 @@ export default function AdminSelfSnapVenuesPage() {
                       <img
                         src={venue.thumbnailUrl || "/viewdding-hero-v48.png"}
                         alt=""
+                        referrerPolicy="no-referrer"
                         style={{ width: "64px", height: "40px", objectFit: "cover", borderRadius: "6px" }}
                       />
                     </td>
