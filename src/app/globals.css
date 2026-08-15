@@ -113,6 +113,11 @@ body:after{position:fixed;inset:0;z-index:-1;pointer-events:none;content:"";opac
 .brand{align-items:center}.brand-kicker{font:500 8px/1.3 var(--sans);letter-spacing:.31em}.brand-name{margin-top:8px;color:#514d47;font-size:43px}
 .site-links{position:absolute;right:0;bottom:28px;gap:25px;color:#756f67;font:400 12px/1 var(--display);letter-spacing:.035em}
 .site-links a{min-height:28px}.site-links a:after{bottom:1px;opacity:.55}
+@media (min-width:761px) and (max-width:960px){
+  .site-header{display:grid;grid-template-columns:minmax(190px,1fr) auto;align-items:end;justify-content:normal;gap:clamp(28px,5vw,52px)}
+  .brand{justify-self:start}
+  .site-links{position:static;justify-self:end}
+}
 .page-shell{width:min(1120px,calc(100% - 64px));padding-bottom:150px;position:relative;z-index:10}
 .finder-intro{min-height:auto;display:block;overflow:visible;margin:0;color:var(--ink);background:transparent;text-align:center}
 .finder-intro:before,.finder-intro:after{display:none}
