@@ -1,17 +1,35 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { FAVORITES_EVENT, readFavorites, writeFavorites } from "@/lib/favorites";
+import { FAVORITES_EVENT, isFavorite, toggleFavorite, type FavoriteCategory } from "@/lib/favorites";
 
-export function FavoriteButton({ hallId, compact = false }: { hallId: string; compact?: boolean }) {
+export function FavoriteButton({
+  itemId,
+  hallId,
+  category = "halls",
+  compact = false,
+}: {
+  itemId?: string;
+  hallId?: string;
+  category?: FavoriteCategory;
+  compact?: boolean;
+}) {
+  const targetId = itemId || hallId || "";
   const [saved, setSaved] = useState(false);
+
   useEffect(() => {
-    const sync = () => setSaved(readFavorites().includes(hallId));
+    if (!targetId) return;
+    const sync = () => setSaved(isFavorite(category, targetId));
     sync();
     window.addEventListener(FAVORITES_EVENT, sync);
     window.addEventListener("storage", sync);
-    return () => { window.removeEventListener(FAVORITES_EVENT, sync); window.removeEventListener("storage", sync); };
-  }, [hallId]);
+    return () => {
+      window.removeEventListener(FAVORITES_EVENT, sync);
+      window.removeEventListener("storage", sync);
+    };
+  }, [category, targetId]);
+
+  if (!targetId) return null;
 
   return (
     <button
@@ -19,12 +37,14 @@ export function FavoriteButton({ hallId, compact = false }: { hallId: string; co
       className={`favorite-button${saved ? " is-saved" : ""}${compact ? " is-compact" : ""}`}
       aria-pressed={saved}
       aria-label={saved ? "즐겨찾기 해제" : "즐겨찾기 저장"}
-      onClick={() => {
-        const current = readFavorites();
-        writeFavorites(saved ? current.filter((id) => id !== hallId) : [...current, hallId]);
+      onClick={(e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        toggleFavorite(category, targetId);
       }}
     >
       <span aria-hidden="true">{saved ? "♥" : "♡"}</span>
     </button>
   );
 }
+

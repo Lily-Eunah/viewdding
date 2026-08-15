@@ -105,7 +105,7 @@ export function HallCard({ hall }: { hall: HallRecord; unknownReasons?: Filtered
       </Link>
 
       <div className="favorite-button-overlay">
-        <FavoriteButton hallId={hall.id} compact />
+        <FavoriteButton itemId={hall.id} category="halls" compact />
       </div>
     </article>
   );

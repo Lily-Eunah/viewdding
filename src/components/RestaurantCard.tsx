@@ -4,6 +4,7 @@ import { useId, useState } from "react";
 import Link from "next/link";
 import { ArrowUpRight } from "@phosphor-icons/react";
 import type { RestaurantRecord } from "@/domain/restaurant-types";
+import { FavoriteButton } from "@/components/FavoriteButton";
 import {
   gatheringPurposeLabel,
   restaurantClosedBadgeLabel,
@@ -153,6 +154,7 @@ export function RestaurantCard({
               </Link>
               <div className="restaurant-top-portal-links">
                 {portalLinks}
+                <FavoriteButton itemId={restaurant.id} category={restaurant.purpose} compact />
               </div>
             </div>
 
