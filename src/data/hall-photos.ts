@@ -275,6 +275,26 @@ const officialPhotoSeeds: Readonly<Record<string, OfficialPhotoSeed>> = {
     sourceUrl: "https://arteseoul.kr/",
     photoKind: "wedding_setup",
   },
+  "H-GG-HO-20260808-011": {
+    url: "https://cdn.imweb.me/upload/S2022121686779ce0c029b/093c26c290baf.png",
+    sourceUrl: "https://colorinwedding.com/heeon_foret",
+    photoKind: "wedding_setup",
+  },
+  "H-GG-HO-20260808-012": {
+    url: "https://cdn.imweb.me/upload/S2022121686779ce0c029b/093c26c290baf.png",
+    sourceUrl: "https://colorinwedding.com/heeon_foret",
+    photoKind: "wedding_setup",
+  },
+  "H-CAP-X1-20260808-013": {
+    url: "https://www.theraum.co.kr/_skin/raum_251230/img/etc/w_grass_01.jpg",
+    sourceUrl: "https://www.nesthotel.co.kr/include/banquet/wedding.asp",
+    photoKind: "wedding_setup",
+  },
+  "H-CAP-X1-20260808-014": {
+    url: "https://www.theraum.co.kr/_skin/raum_251230/img/etc/w_grass_01.jpg",
+    sourceUrl: "https://www.nesthotel.co.kr/include/banquet/wedding.asp",
+    photoKind: "wedding_setup",
+  },
 };
 
 const discoveredPhotoSeeds = discoveredPhotoSeedsJson as DiscoveredPhotoSeed[];
