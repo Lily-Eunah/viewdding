@@ -1,7 +1,20 @@
 import personalColorsData from "@/data/personal-colors.generated.json";
 import type { PersonalColorRecord, PersonalColorStatus, VerificationGrade } from "@/domain/personal-color-types";
 
-export const personalColors: PersonalColorRecord[] = personalColorsData as unknown as PersonalColorRecord[];
+let personalColorPhotosData: Record<string, { photoUrl?: string | null }> = {};
+try {
+  // eslint-disable-next-line @typescript-eslint/no-require-imports
+  personalColorPhotosData = require("@/data/personal-color-photos.generated.json");
+} catch {
+  personalColorPhotosData = {};
+}
+
+export const personalColors: PersonalColorRecord[] = (personalColorsData as unknown as PersonalColorRecord[]).map(
+  (vendor) => ({
+    ...vendor,
+    photoUrl: personalColorPhotosData[vendor.id]?.photoUrl ?? vendor.photoUrl ?? null,
+  })
+);
 
 export function getActivePersonalColors(): PersonalColorRecord[] {
   return personalColors.filter((vendor) => vendor.active);

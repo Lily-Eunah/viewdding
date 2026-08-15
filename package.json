@@ -12,6 +12,7 @@
     "data:restaurants": "tsx scripts/build-restaurants.ts",
     "data:restaurant-photos": "tsx scripts/build-restaurant-photos.ts",
     "data:personal-colors": "tsx scripts/build-personal-colors.ts",
+    "data:personal-color-photos": "tsx scripts/build-personal-color-photos.ts",
     "sites:stage": "tsx scripts/stage-sites.ts",
     "sites:build": "npm run build && npm run sites:stage",
     "test": "vitest run",

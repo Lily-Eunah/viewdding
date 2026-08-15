@@ -31,7 +31,8 @@
     "notes": "공개 후기+지역 확인",
     "latitude": 37.5663550219259,
     "longitude": 127.032213833438,
-    "active": true
+    "active": true,
+    "photoUrl": "https://postfiles.pstatic.net/MjAyNjA4MDZfMjU3/MDAxNzg1OTk5MDE4NDEy.KhogsuRB9u03Df31BYUKB3O8KuqF1mOevD4qtZEACjog.lq-6pI3SyGISWTQe_UTFKxWxVvi-eUgVGlohsihy5fog.JPEG/20260805_120410.jpg?type=w466"
   },
   {
     "id": "WD-002",
@@ -65,7 +66,8 @@
     "notes": "가격·구성 재확인 권장",
     "latitude": 37.5172,
     "longitude": 127.0473,
-    "active": true
+    "active": true,
+    "photoUrl": "https://t1.kakaocdn.net/fiy_reboot/place/82E1782D8809464EBB5E551610F64A0F"
   },
   {
     "id": "WD-003",
@@ -98,7 +100,8 @@
     "notes": "본점 운영·제휴 조건 재확인",
     "latitude": 37.517331925853,
     "longitude": 127.047377408384,
-    "active": true
+    "active": true,
+    "photoUrl": null
   },
   {
     "id": "WD-004",
@@ -135,7 +138,8 @@
     "notes": "주소·서비스 교차 확인",
     "latitude": 37.5587712526005,
     "longitude": 126.924816169617,
-    "active": true
+    "active": true,
+    "photoUrl": "https://postfiles.pstatic.net/MjAyNjAxMTNfMjIw/MDAxNzY4MjkxNTQxMTI2.lQ8zEcD8oic-dCTLrrM8-XspXOkxQhLIv1LccEDkiKQg.6vhrrqN0bmJ9tCBZt6fa1ADINOJSYa5ZeNpSAvI7RtAg.PNG/5.png?type=w966"
   },
   {
     "id": "WD-005",
@@ -169,7 +173,8 @@
     "notes": "영업시간 표기 상충 가능, 예약 확인",
     "latitude": 37.5628159170714,
     "longitude": 126.925814014241,
-    "active": true
+    "active": true,
+    "photoUrl": null
   },
   {
     "id": "WD-006",
@@ -201,7 +206,8 @@
     "notes": "공식 예약 페이지 확인 권장",
     "latitude": 37.5263635705034,
     "longitude": 126.896273923703,
-    "active": true
+    "active": true,
+    "photoUrl": "https://postfiles.pstatic.net/MjAyNjA3MjJfMTAw/MDAxNzg0NzIzMTc2MDk2.F5MYpOYQY2fh9doGu9a9cWTfm83Tn24DOYFDZpgPcEUg.eWAWZNuwbiwMCWUhPfv2fhCkamnovR_W1LOrIimq_lwg.JPEG/SE-66ef89d1-ae09-48ea-ba47-1bc638532fc3.jpg?type=w386"
   },
   {
     "id": "WD-007",
@@ -237,7 +243,8 @@
     "notes": "주소·전화 공개 후기 확인",
     "latitude": 37.4845462297275,
     "longitude": 127.030342817494,
-    "active": true
+    "active": true,
+    "photoUrl": "https://t1.kakaocdn.net/mystore/7C1C4DE51C0A442C99C453ADCA73432C"
   },
   {
     "id": "WD-008",
@@ -271,7 +278,8 @@
     "notes": "현재 예약·웨딩 상품·주소 확인 완료",
     "latitude": 37.5150904350568,
     "longitude": 127.114798987211,
-    "active": true
+    "active": true,
+    "photoUrl": "https://t1.kakaocdn.net/mystore/20A91FB979A341C6BDC14E2E71E023C6"
   },
   {
     "id": "WD-009",
@@ -306,7 +314,8 @@
     "notes": "공식 사이트+플레이스+최근 독립 후기 확인",
     "latitude": 37.5494459180061,
     "longitude": 126.910346057876,
-    "active": true
+    "active": true,
+    "photoUrl": null
   },
   {
     "id": "WD-010",
@@ -340,7 +349,8 @@
     "notes": "현재 예약·주소·웨딩 상품 확인 완료",
     "latitude": 37.5091917700771,
     "longitude": 127.084171041638,
-    "active": true
+    "active": true,
+    "photoUrl": "https://postfiles.pstatic.net/MjAyNDA4MjJfODgg/MDAxNzI0MzM0Njc2MzI3.Js8koQhY1EV5ZtX6qSIBRm-Qs5v8UID-P4TCIkdb-ocg.t26Esarn-byCFc4AHzSGokPTueSnzMIO11hwqpQxvr4g.JPEG/IMG_6831.jpg?type=w466"
   },
   {
     "id": "WD-011",
@@ -374,7 +384,8 @@
     "notes": "예약제",
     "latitude": 37.1995,
     "longitude": 126.8315,
-    "active": true
+    "active": true,
+    "photoUrl": null
   },
   {
     "id": "WD-012",
@@ -407,7 +418,8 @@
     "notes": "현재 예약·주소·가격·웨딩 패키지 확인",
     "latitude": 37.1661047288121,
     "longitude": 127.105122080025,
-    "active": true
+    "active": true,
+    "photoUrl": "https://t1.kakaocdn.net/mystore/3A06D3CB38974DADAB3F294E8C4DBDCC"
   },
   {
     "id": "WD-013",
@@ -441,7 +453,8 @@
     "notes": "기존 경기 분류를 실제 주소 기준 서울로 정정",
     "latitude": 37.5238393396238,
     "longitude": 126.891282699457,
-    "active": true
+    "active": true,
+    "photoUrl": "https://t1.kakaocdn.net/mystore/9F43BFE38AD24506AE9310B189F78DAC"
   },
   {
     "id": "WD-014",
@@ -480,7 +493,8 @@
     "notes": "공식 채널+플레이스+독립 후기 확인",
     "latitude": 37.2466692531637,
     "longitude": 127.056605302185,
-    "active": true
+    "active": true,
+    "photoUrl": "https://t1.kakaocdn.net/mystore/AFF02389C807477F8F564318805DFBF8"
   },
   {
     "id": "WD-015",
@@ -517,7 +531,8 @@
     "notes": "용인점 웨딩 상품·예약·주소 확인",
     "latitude": 37.3127975899328,
     "longitude": 127.081666875865,
-    "active": true
+    "active": true,
+    "photoUrl": null
   },
   {
     "id": "WD-016",
@@ -548,7 +563,8 @@
     "notes": "세미웨딩과 풀 웨딩진단 차이 표기 필요",
     "latitude": 37.5029580733055,
     "longitude": 126.772850689993,
-    "active": true
+    "active": true,
+    "photoUrl": "https://t1.kakaocdn.net/mystore/81ECF13077F043CC8A818AE2E1111442"
   },
   {
     "id": "WD-017",
@@ -582,7 +598,8 @@
     "notes": "부평역 도보권 안내",
     "latitude": 37.4910355141781,
     "longitude": 126.723090470976,
-    "active": true
+    "active": true,
+    "photoUrl": "https://t1.kakaocdn.net/mystore/BA18091F88D5476BAF4A7959A5F92EA7"
   },
   {
     "id": "WD-018",
@@ -616,7 +633,8 @@
     "notes": "현재 가격·주소 재확인",
     "latitude": 37.5665,
     "longitude": 126.978,
-    "active": true
+    "active": true,
+    "photoUrl": null
   },
   {
     "id": "WD-019",
@@ -650,7 +668,8 @@
     "notes": "서비스 제공 후기 있음",
     "latitude": 37.3853568100636,
     "longitude": 126.641346192546,
-    "active": true
+    "active": true,
+    "photoUrl": "https://t1.kakaocdn.net/mystore/65BABF8ED5A0420BBDA50DF0E04EC680"
   },
   {
     "id": "WD-020",
@@ -685,7 +704,8 @@
     "notes": "영업중·주소·예약·웨딩 상품 확인",
     "latitude": 37.5083937119864,
     "longitude": 126.724017249211,
-    "active": true
+    "active": true,
+    "photoUrl": "https://t1.kakaocdn.net/fiy_reboot/place/FAFE3536025147429413C7D4B880B8D5"
   },
   {
     "id": "WD-021",
@@ -721,7 +741,8 @@
     "notes": "현재 가격 확인 후 노출",
     "latitude": 37.45740418390845,
     "longitude": 126.69131772007465,
-    "active": true
+    "active": true,
+    "photoUrl": "https://t1.kakaocdn.net/mystore/27F73B035C06441D9A108A9B469F89B5"
   },
   {
     "id": "WD-022",
@@ -753,7 +774,8 @@
     "notes": "웨딩 전용 상품 미확인—사이트 기본 비노출",
     "latitude": 37.4506801475566,
     "longitude": 126.705374911709,
-    "active": false
+    "active": false,
+    "photoUrl": "https://t1.kakaocdn.net/mystore/B5FF2DCE68444D3A91D6281122F56872"
   },
   {
     "id": "WD-023",
@@ -785,7 +807,8 @@
     "notes": "독립 출처 2개",
     "latitude": 35.1572562696178,
     "longitude": 129.071226616737,
-    "active": true
+    "active": true,
+    "photoUrl": "https://t1.kakaocdn.net/mystore/C493C0A82C21442C9C2B84E7D3CCF697"
   },
   {
     "id": "WD-024",
@@ -819,7 +842,8 @@
     "notes": "드레스 질감·넥라인·베일 등 안내 후기",
     "latitude": 35.155848744132,
     "longitude": 129.058801593773,
-    "active": true
+    "active": true,
+    "photoUrl": "https://postfiles.pstatic.net/MjAyNDA4MTFfNTkg/MDAxNzIzMzQ4NzQyNjg1.nYIGuW5C4-lgk-b4XkRtBrSLat7p62xuHRxGDO3ssD0g.9iPbTpYK-4Lsap50oxeJpqzqjqAmSL74Icr4NtBWAJ8g.JPEG/Screenshot%EF%BC%BF20240811%EF%BC%BF125719%EF%BC%BFMessages.jpg?type=w275"
   },
   {
     "id": "WD-025",
@@ -851,7 +875,8 @@
     "notes": "지점 운영 확인 권장",
     "latitude": 35.1456,
     "longitude": 129.1131,
-    "active": true
+    "active": true,
+    "photoUrl": "https://postfiles.pstatic.net/MjAyNjAxMzBfMTI4/MDAxNzY5Nzc4NzM5MjU4.CQXatTW4tbGmWouRrmg_HGBjhzJuiOudjNTS2owuHPwg.j5fo_xGGrE0cwB2BkAl8XjVhacxMNtOtYbfPHwE3G10g.JPEG/900%EF%BC%BF1769778713805.jpg?type=w773"
   },
   {
     "id": "WD-026",
@@ -885,7 +910,8 @@
     "notes": "주소·전화 공개 후기 확인",
     "latitude": 35.8688108665678,
     "longitude": 128.598048878424,
-    "active": true
+    "active": true,
+    "photoUrl": null
   },
   {
     "id": "WD-027",
@@ -921,7 +947,8 @@
     "notes": "웨딩샵 경력 소개는 업체 확인 권장",
     "latitude": 35.8514868252018,
     "longitude": 128.534763724383,
-    "active": true
+    "active": true,
+    "photoUrl": "https://t1.kakaocdn.net/mystore/C9E031E678AC40E189112250A2E4F96C"
   },
   {
     "id": "WD-028",
@@ -955,7 +982,8 @@
     "notes": "공식 운영 블로그 확인",
     "latitude": 36.35158682818576,
     "longitude": 127.38877483718095,
-    "active": true
+    "active": true,
+    "photoUrl": "https://postfiles.pstatic.net/MjAyNTA5MTdfMjIw/MDAxNzU4MDY1NTY2NjQ3.PUPN6ecDH_8Kaxme1iss-Q-bn769CFmPZtc3WNvPczQg.b77ZavIPnHzzsOUGQr1ogZCOtpBlCuRuSU7DQ986rUcg.JPEG/IMG_3803.jpg?type=w966"
   },
   {
     "id": "WD-029",
@@ -989,7 +1017,8 @@
     "notes": "예약제 확인",
     "latitude": 36.3306860207258,
     "longitude": 127.33860899324,
-    "active": true
+    "active": true,
+    "photoUrl": "https://blogfiles.pstatic.net/MjAyNDA4MjFfMTg3/MDAxNzI0MjIxNzMxMzcx.aghbBDGNIfQQZxaBHHfR95EeaBvh72bFpm8ivUnY1wsg.otLLbiXcWl35D4GvBj9FyUvCjfHf_gXA3-XI2sHyAF4g.JPEG/SE-0DB67052-7798-4E68-843E-20E6EFCC0850.jpg?type=w1"
   },
   {
     "id": "WD-030",
@@ -1024,7 +1053,8 @@
     "notes": "공식 운영 블로그+예약 링크 존재",
     "latitude": 36.3737095885485,
     "longitude": 127.317376506105,
-    "active": true
+    "active": true,
+    "photoUrl": "https://postfiles.pstatic.net/MjAyNDEwMjlfNjkg/MDAxNzMwMTg2MjgzNjI5.7-MO4aGhXo2mBAEJ_s2gXhAW-fjbNA06-qLVgx3TAsgg.up3L0J3WLNpHdT3Xf5vKUcsIZbGDJnsuY6TSpMZgGncg.JPEG/IMG_1557.jpg?type=w966"
   },
   {
     "id": "WD-031",
@@ -1058,7 +1088,8 @@
     "notes": "주소·연락처 공개 후기 확인",
     "latitude": 36.3283786888431,
     "longitude": 127.424269960515,
-    "active": true
+    "active": true,
+    "photoUrl": "https://blog.kakaocdn.net/dn/bZza8t/btsGqPi92Uh/rOlXF8n2XGBv9ghxYmw3fk/img.jpg"
   },
   {
     "id": "WD-032",
@@ -1092,7 +1123,8 @@
     "notes": "다수 후기·주소 확인",
     "latitude": 36.6264592786782,
     "longitude": 127.4293058408,
-    "active": true
+    "active": true,
+    "photoUrl": "https://t1.kakaocdn.net/mystore/6AE1453D215D4BA5883CBEBB46B6C6B9"
   },
   {
     "id": "WD-033",
@@ -1126,7 +1158,8 @@
     "notes": "현재 가격 재확인",
     "latitude": 35.1470716407471,
     "longitude": 126.918282496177,
-    "active": true
+    "active": true,
+    "photoUrl": "https://t1.kakaocdn.net/mystore/C8BCEDE6FA76491E9392111CEC0129B5"
   },
   {
     "id": "WD-034",
@@ -1159,7 +1192,8 @@
     "notes": "주소·예약 상품 보완",
     "latitude": 35.146,
     "longitude": 126.9233,
-    "active": true
+    "active": true,
+    "photoUrl": "https://postfiles.pstatic.net/MjAyNjA3MjVfMTI3/MDAxNzg0OTUzMDM4MTkw.u4MYBJfmQO4U3r90ToDl52GPXj7PShGF9DkQDg8zdcwg.dAJQM_Hv8vksiHCtfsh4aoZ7VXVs2bDh0Lcr_lIDZmkg.JPEG/IMG%EF%BC%BF9257.jpg?type=w773"
   },
   {
     "id": "WD-035",
@@ -1195,7 +1229,8 @@
     "notes": "주소·복수 후기 확인",
     "latitude": 35.1459510981073,
     "longitude": 126.916214279417,
-    "active": true
+    "active": true,
+    "photoUrl": null
   },
   {
     "id": "WD-036",
@@ -1228,7 +1263,8 @@
     "notes": "주소·전화 공개 후기 확인",
     "latitude": 35.1503375138557,
     "longitude": 126.914326791036,
-    "active": true
+    "active": true,
+    "photoUrl": "https://t1.kakaocdn.net/mystore/7DD75657C3254D6A9B68010BC9F57C10"
   },
   {
     "id": "WD-037",
@@ -1262,7 +1298,8 @@
     "notes": "주소·현재 상품 확인",
     "latitude": 35.8242,
     "longitude": 127.148,
-    "active": true
+    "active": true,
+    "photoUrl": "https://postfiles.pstatic.net/MjAyNTAxMDJfMjIw/MDAxNzM1NzgxMTMzMTg5.jsgkkJ9QR7z_d5OBlJzZVw5TuE2tQJrW8AOalgWlw9gg.8Cm4vhRInG2BMNOIpR2W0lCfYBFhylsnDxMjCEIttOwg.JPEG/SE-7128aac8-9586-478a-8e46-90d72635ef68.jpg?type=w773"
   },
   {
     "id": "WD-038",
@@ -1293,7 +1330,8 @@
     "notes": "웨딩 전용 상품 미확인—사이트 기본 비노출",
     "latitude": 35.8390178629053,
     "longitude": 127.075131118045,
-    "active": false
+    "active": false,
+    "photoUrl": "https://t1.kakaocdn.net/mystore/697C8DD3F66E446A82C0AB95D3A93B27"
   },
   {
     "id": "WD-039",
@@ -1328,7 +1366,8 @@
     "notes": "청담 드레스샵 출장 소개는 업체 확인",
     "latitude": 35.2133702442787,
     "longitude": 128.573981518795,
-    "active": true
+    "active": true,
+    "photoUrl": "https://postfiles.pstatic.net/MjAyNjA4MTNfMjY5/MDAxNzg2NTg2MjM5ODYx.Fmjma6cE4CBcwmMulMrVdupPFWOwiBp-i4DRK8cJttUg.Hjp7f_G0dUGpQLK42c1DWztnJAtIYFIu7OJmQsuXV_Eg.JPEG/IMG%EF%BC%BF4123.jpg?type=w580"
   },
   {
     "id": "WD-040",
@@ -1363,7 +1402,8 @@
     "notes": "상세 주소·상품명 보완",
     "latitude": 35.2304362545997,
     "longitude": 128.680921247386,
-    "active": true
+    "active": true,
+    "photoUrl": "https://postfiles.pstatic.net/MjAyNTEwMTBfNjEg/MDAxNzYwMTAwNTkzOTE3.0X_Jp-uPi-gZPVgWbMXVNFJcoWe7ECKt2r8x329ckysg.NglmTAcubNkyxE1Tv8jceusZ61pyluDiI5w_-Omy5vAg.JPEG/1760100593611.jpg?type=w580"
   },
   {
     "id": "WD-041",
@@ -1397,7 +1437,8 @@
     "notes": "주소·복수 후기 확인",
     "latitude": 37.7627447175726,
     "longitude": 128.899691542665,
-    "active": true
+    "active": true,
+    "photoUrl": "https://postfiles.pstatic.net/MjAyNDA4MDFfMjIw/MDAxNzIyNDc4MzYwNjYy.7aXS-KKThVTya0rhpPiQimym4YrD9ym1VNZLPzaRyVIg.VqIgEPk_ckKsOjvuH2SHaMohQlmWueM552k3R9rUx2Eg.PNG/kakao_screenshot1722478350988.png?type=w773"
   },
   {
     "id": "WD-042",
@@ -1429,7 +1470,8 @@
     "notes": "현재 지점 운영·상품 확인",
     "latitude": 33.509097798522,
     "longitude": 126.513266470185,
-    "active": true
+    "active": true,
+    "photoUrl": null
   },
   {
     "id": "WD-043",
@@ -1464,7 +1506,8 @@
     "notes": "공식 글+독립 후기+주소 확인 완료",
     "latitude": 35.5411803041083,
     "longitude": 129.321215429352,
-    "active": true
+    "active": true,
+    "photoUrl": "https://postfiles.pstatic.net/MjAyNTA3MjFfNjcg/MDAxNzUzMDgxMzQ2MjMw.skpUglbJ0ixyDCO8fN4uxbBeqm1FGlr7eijMJTxz0ckg.WbHrZSBi0FM6u-6yKZm7qIbn727wiScRjZ1fGX0X1OAg.JPEG/IMG%EF%BC%BF4362.JPG?type=w386"
   },
   {
     "id": "WD-044",
@@ -1495,7 +1538,8 @@
     "notes": "공식 채널+복수 독립 후기+주소·가격 확인",
     "latitude": 35.5357131350658,
     "longitude": 129.317205601092,
-    "active": true
+    "active": true,
+    "photoUrl": "https://postfiles.pstatic.net/MjAyNDEwMTdfMTk2/MDAxNzI5MTQwMjE2NDIy.mhQxrdk_5GTNyfCZamG4qgLQtkZI5pq89EWi8riTo_Yg.vQgrH4VRv6ye200tlxF-aibubf2ei3ugHq9on0KBkNUg.JPEG/SE-0adcca60-8b6e-11ef-a420-5179176b9371.jpg?type=w773"
   },
   {
     "id": "WD-045",
@@ -1529,7 +1573,8 @@
     "notes": "네이버 예약 가능 안내, 현재 가격 확인",
     "latitude": 36.4864294986609,
     "longitude": 127.257454396864,
-    "active": true
+    "active": true,
+    "photoUrl": "https://postfiles.pstatic.net/MjAyNjA3MTlfMjYw/MDAxNzg0NDM5MzIxMzcz.wMes5dx6y_KtBKo-sBnW-JF5ywg__rsrOUycaTKfL_wg._wxKU37SvDqmT92x9gqGvztedbWqETAMJ6i-_XYyCLMg.JPEG/SE-0D454226-772F-4EA0-B4EF-D14BC42393F6.jpg?type=w386"
   },
   {
     "id": "WD-046",
@@ -1564,7 +1609,8 @@
     "notes": "천안아산역권, 메뉴·가격 최종 확인",
     "latitude": 36.7974341806554,
     "longitude": 127.109240560226,
-    "active": true
+    "active": true,
+    "photoUrl": "https://postfiles.pstatic.net/MjAyNjA2MTdfMjgx/MDAxNzgxNjI2MjE0OTAz.72bC7qe5RJAf0537VDu1amVnNeAJTL8JN-05q-mNV3Ug.hY-o5bKMM5EloT1-mFpM_a8gOAltEXDwLlf05BVVmA4g.JPEG/900_20260614_155304.jpg?type=w966"
   },
   {
     "id": "WD-047",
@@ -1600,7 +1646,8 @@
     "notes": "상세 호수·현재 상품 확인",
     "latitude": 36.821560009891,
     "longitude": 127.108324709842,
-    "active": true
+    "active": true,
+    "photoUrl": "https://t1.kakaocdn.net/mystore/A3EE56253BA34AA0A85D23A0ECA04AE8"
   },
   {
     "id": "WD-048",
@@ -1636,7 +1683,8 @@
     "notes": "드레스 피팅 포함 범위·가격 확인",
     "latitude": 36.8347166129041,
     "longitude": 127.143042925194,
-    "active": true
+    "active": true,
+    "photoUrl": "https://t1.kakaocdn.net/mystore/3A08C1B6546F4FE49B46B5BB4605C64A"
   },
   {
     "id": "WD-049",
@@ -1676,7 +1724,8 @@
     "notes": "현재 운영·주소·예약과 웨딩 프로그램 확인",
     "latitude": 36.8212772100055,
     "longitude": 127.10993046032,
-    "active": true
+    "active": true,
+    "photoUrl": "https://t1.kakaocdn.net/mystore/07FD41157196406FB14E1E52E456BED9"
   },
   {
     "id": "WD-050",
@@ -1712,7 +1761,8 @@
     "notes": "상세 주소·예약 페이지 보완",
     "latitude": 36.8151,
     "longitude": 127.1139,
-    "active": true
+    "active": true,
+    "photoUrl": null
   },
   {
     "id": "WD-051",
@@ -1750,7 +1800,8 @@
     "notes": "상세 주소·현재 가격 확인",
     "latitude": 35.8562,
     "longitude": 129.2247,
-    "active": true
+    "active": true,
+    "photoUrl": null
   },
   {
     "id": "WD-052",
@@ -1785,7 +1836,8 @@
     "notes": "헤어샵 결합형, 예약 상품 범위 확인",
     "latitude": 36.1195,
     "longitude": 128.3446,
-    "active": true
+    "active": true,
+    "photoUrl": "https://postfiles.pstatic.net/MjAyNjA3MjdfMTky/MDAxNzg1MTQ1NDE3MjE3.FjuX_qrIvVgmfVJV5b0p6PI_ci37rEhSOqRSaL8epDMg.DlTX9xmwXLAHunXa3ynMky8w_6NKbseh57XFwC1CZuog.JPEG/IMG%EF%BC%BF6076.JPG?type=w773"
   },
   {
     "id": "WD-053",
@@ -1819,7 +1871,8 @@
     "notes": "상세 주소·공식 예약 채널 보완",
     "latitude": 36.019,
     "longitude": 129.3435,
-    "active": true
+    "active": true,
+    "photoUrl": "https://t1.kakaocdn.net/mystore/E0B01E4EE20F4DD9BE0A284A4066AD22"
   },
   {
     "id": "WD-054",
@@ -1858,7 +1911,8 @@
     "notes": "고유무드·하이엔드 드레스 진단 안내",
     "latitude": 35.228,
     "longitude": 128.6811,
-    "active": true
+    "active": true,
+    "photoUrl": "https://postfiles.pstatic.net/MjAyNjAyMDNfNjcg/MDAxNzcwMTE2NzgxMjQ0.icaQhgO0hFcQgkxTTN9gDtybd1eTw6TrmThKVcu1M5kg.zvEJxmWUT_GnzU_X-vioxHkHOqU9Q75DXRqvfcSVgYUg.JPEG/SE-c71d7832-74fe-4a0e-9fa1-81c50b7211bc.jpg?type=w966"
   },
   {
     "id": "WD-055",
@@ -1893,7 +1947,8 @@
     "notes": "웨딩 전용 상품 미확인—사이트 기본 비노출",
     "latitude": 37.8786537638984,
     "longitude": 127.721528792829,
-    "active": false
+    "active": false,
+    "photoUrl": null
   },
   {
     "id": "WD-056",
@@ -1927,7 +1982,8 @@
     "notes": "웨딩 전용 상품 미확인—사이트 기본 비노출",
     "latitude": 34.8101940835427,
     "longitude": 126.425139436439,
-    "active": false
+    "active": false,
+    "photoUrl": null
   },
   {
     "id": "WD-057",
@@ -1959,7 +2015,8 @@
     "notes": "퍼스널컬러 진단 상시 운영·웨딩 패키지 미확인—기본 비노출",
     "latitude": 34.809309051536,
     "longitude": 126.466394881321,
-    "active": false
+    "active": false,
+    "photoUrl": "https://postfiles.pstatic.net/MjAyNjA0MjdfMzIg/MDAxNzc3Mjk2MjA0NzQz.-3uM3zxJDgtwu_DAflvmxgoFVZXSxpvn5i4dSz3eankg.6veBt_2S1trYKBXN_EL_KCTC0absEddZ0Z0YwwSvjmYg.JPEG/output%EF%BC%BF1778338011.jpg?type=w773"
   },
   {
     "id": "WD-058",
@@ -1996,7 +2053,8 @@
     "notes": "최근 후기와 플레이스 영업·예약 확인",
     "latitude": 33.4881515755514,
     "longitude": 126.494397935799,
-    "active": true
+    "active": true,
+    "photoUrl": null
   },
   {
     "id": "WD-059",
@@ -2030,7 +2088,8 @@
     "notes": "네이버 예약·최근 웨딩 후기 확인",
     "latitude": 35.8168185304258,
     "longitude": 127.11153052678,
-    "active": true
+    "active": true,
+    "photoUrl": null
   },
   {
     "id": "WD-060",
@@ -2067,7 +2126,8 @@
     "notes": "상세 호수·가격은 공개 채널에서 추가 확인 필요",
     "latitude": 35.826833813884,
     "longitude": 127.09559496887,
-    "active": true
+    "active": true,
+    "photoUrl": null
   },
   {
     "id": "WD-061",
@@ -2103,7 +2163,8 @@
     "notes": "프리미엄 구성·가격 변동 가능",
     "latitude": 35.8238115847224,
     "longitude": 127.102948932363,
-    "active": true
+    "active": true,
+    "photoUrl": "https://t1.kakaocdn.net/mystore/A8C01E87FE934CB9BAD69C9FD1A9E203"
   },
   {
     "id": "WD-062",
@@ -2139,7 +2200,8 @@
     "notes": "공식 서비스·플레이스 예약 확인",
     "latitude": 35.5633156546155,
     "longitude": 129.310647538756,
-    "active": true
+    "active": true,
+    "photoUrl": "https://postfiles.pstatic.net/MjAyNDA4MTVfMTAz/MDAxNzIzNjgzNDUzMzk2.Hqe61zXEbjGFyFbzjWWUHPLYqglM6fDpOrjeA7rfDBQg.uhQ-hnMCQt4J8vUB1LQ6QWn1jYg19KXFhTDgKjaXq6og.JPEG/KakaoTalk_Photo_2024-08-14-17-41-25_016.jpeg?type=w466"
   },
   {
     "id": "WD-063",
@@ -2173,7 +2235,8 @@
     "notes": "퍼스널컬러 외 왁싱 서비스 병행",
     "latitude": 35.5453082035114,
     "longitude": 129.320852540117,
-    "active": true
+    "active": true,
+    "photoUrl": "https://postfiles.pstatic.net/MjAyNjA2MjFfMTg1/MDAxNzgyMDA5NzQ3Nzkw.3P_328wuMiyVfyrNjTVAdS4M9kpzSfKsrKvfIlLTCdsg.HMX9O2TipX9PpUvdy5x8JwFrtYUBVAcQ0rqMz8DLrsQg.JPEG/IMG%EF%BC%BF7067.JPG?type=w773"
   },
   {
     "id": "WD-064",
@@ -2208,7 +2271,8 @@
     "notes": "웨딩 세부 구성·가격은 예약 전 확인",
     "latitude": 35.5439291001786,
     "longitude": 129.321649458563,
-    "active": true
+    "active": true,
+    "photoUrl": null
   },
   {
     "id": "WD-065",
@@ -2243,7 +2307,8 @@
     "notes": "드레스·메이크업·헤어·액세서리·부케 진단 후기 확인",
     "latitude": 35.8578153296759,
     "longitude": 128.642117317993,
-    "active": true
+    "active": true,
+    "photoUrl": null
   },
   {
     "id": "WD-066",
@@ -2277,7 +2342,8 @@
     "notes": "공식 서비스 기준; 독립 웨딩 후기 추가 확인 권장",
     "latitude": 35.8663778747541,
     "longitude": 128.621600762086,
-    "active": true
+    "active": true,
+    "photoUrl": "https://t1.kakaocdn.net/mystore/2CBED191A760478FB03FCFEDC76456E1"
   },
   {
     "id": "WD-067",
@@ -2311,7 +2377,8 @@
     "notes": "네이버 예약·최근 후기 확인",
     "latitude": 35.1598508502058,
     "longitude": 129.066608139088,
-    "active": true
+    "active": true,
+    "photoUrl": null
   },
   {
     "id": "WD-068",
@@ -2347,7 +2414,8 @@
     "notes": "공식 가격은 분기·코스별 변동 가능",
     "latitude": 35.1629633489452,
     "longitude": 129.158453369505,
-    "active": true
+    "active": true,
+    "photoUrl": "https://t1.kakaocdn.net/mystore/CD6DA452F03C41A789EA680A884480AA"
   },
   {
     "id": "WD-069",
@@ -2381,7 +2449,8 @@
     "notes": "웨딩 특화 프로그램·네이버 예약 확인",
     "latitude": 35.1514283109382,
     "longitude": 129.05817351441,
-    "active": true
+    "active": true,
+    "photoUrl": "https://t1.kakaocdn.net/mystore/63AE7ED9665D4176AD7444747AF5E387"
   },
   {
     "id": "WD-070",
@@ -2415,7 +2484,8 @@
     "notes": "웨딩 전용 구성·예약 가능일 재확인 권장",
     "latitude": 35.8161584000594,
     "longitude": 127.088882125299,
-    "active": true
+    "active": true,
+    "photoUrl": "https://t1.kakaocdn.net/mystore/56513B1C546146E389DB361E25642C59"
   },
   {
     "id": "WD-071",
@@ -2449,7 +2519,8 @@
     "notes": "상세 주소·가격은 네이버 예약에서 확인 필요",
     "latitude": 35.8122369480265,
     "longitude": 127.119796025933,
-    "active": true
+    "active": true,
+    "photoUrl": null
   },
   {
     "id": "WD-072",
@@ -2483,7 +2554,8 @@
     "notes": "가격·프로그램은 예약 시 재확인",
     "latitude": 37.5432313943084,
     "longitude": 127.056957190581,
-    "active": true
+    "active": true,
+    "photoUrl": null
   },
   {
     "id": "WD-073",
@@ -2517,7 +2589,8 @@
     "notes": "예약 가능 프로그램·가격 확인 권장",
     "latitude": 37.5229428793527,
     "longitude": 127.047706753986,
-    "active": true
+    "active": true,
+    "photoUrl": null
   },
   {
     "id": "WD-074",
@@ -2554,7 +2627,8 @@
     "notes": "웨딩컨설팅은 강남점 운영으로 확인",
     "latitude": 37.4928116227692,
     "longitude": 127.028544137454,
-    "active": true
+    "active": true,
+    "photoUrl": null
   },
   {
     "id": "WD-075",
@@ -2590,7 +2664,8 @@
     "notes": "예약 링크와 최신 가격 확인 권장",
     "latitude": 37.4764610396654,
     "longitude": 126.879842463241,
-    "active": true
+    "active": true,
+    "photoUrl": "https://t1.kakaocdn.net/mystore/6D8D7F9FAE6343C7A388B6CCA410FF0A"
   },
   {
     "id": "WD-076",
@@ -2628,7 +2703,8 @@
     "notes": "프로그램별 소요시간·가격 예약 시 확인",
     "latitude": 37.5045891777158,
     "longitude": 126.776211381484,
-    "active": true
+    "active": true,
+    "photoUrl": null
   },
   {
     "id": "WD-077",
@@ -2664,7 +2740,8 @@
     "notes": "가격 변동 여부 예약 시 확인",
     "latitude": 37.6692136444311,
     "longitude": 127.113637513379,
-    "active": true
+    "active": true,
+    "photoUrl": null
   },
   {
     "id": "WD-078",
@@ -2702,7 +2779,8 @@
     "notes": "상세 웨딩 코스와 가격 확인 권장",
     "latitude": 37.4868954851607,
     "longitude": 126.777916006865,
-    "active": true
+    "active": true,
+    "photoUrl": null
   },
   {
     "id": "WD-079",
@@ -2740,7 +2818,8 @@
     "notes": "카카오 문의 기반 예약 여부 확인",
     "latitude": 37.7450832478385,
     "longitude": 127.041909612741,
-    "active": true
+    "active": true,
+    "photoUrl": null
   },
   {
     "id": "WD-080",
@@ -2774,7 +2853,8 @@
     "notes": "웨딩 패키지 최신 구성·가격 확인 필요",
     "latitude": 37.0059292539321,
     "longitude": 127.088593791536,
-    "active": true
+    "active": true,
+    "photoUrl": null
   },
   {
     "id": "WD-081",
@@ -2810,7 +2890,8 @@
     "notes": "웨딩 전용 코스명·가격 예약 시 확인",
     "latitude": 37.3202483853921,
     "longitude": 127.1093889817,
-    "active": true
+    "active": true,
+    "photoUrl": null
   },
   {
     "id": "WD-082",
@@ -2847,7 +2928,8 @@
     "notes": "가격 변동 여부 예약 시 확인",
     "latitude": 37.6512768694197,
     "longitude": 126.777162351475,
-    "active": true
+    "active": true,
+    "photoUrl": null
   },
   {
     "id": "WD-083",
@@ -2885,7 +2967,8 @@
     "notes": "공개 가격·예약 가능 시간 재확인",
     "latitude": 37.3107115964055,
     "longitude": 127.081023433323,
-    "active": true
+    "active": true,
+    "photoUrl": null
   },
   {
     "id": "WD-084",
@@ -2922,7 +3005,8 @@
     "notes": "웨딩 코스 구성·가격 예약 시 확인",
     "latitude": 37.5676859104888,
     "longitude": 126.82597944995,
-    "active": true
+    "active": true,
+    "photoUrl": null
   },
   {
     "id": "WD-085",
@@ -2959,7 +3043,8 @@
     "notes": "대표원장 일정에 따라 예약 시간 변동 가능",
     "latitude": 37.560835635621,
     "longitude": 126.829618546018,
-    "active": true
+    "active": true,
+    "photoUrl": null
   },
   {
     "id": "WD-086",
@@ -2995,7 +3080,8 @@
     "notes": "웨딩 코스별 가격·소요시간 재확인",
     "latitude": 37.4837,
     "longitude": 127.0324,
-    "active": true
+    "active": true,
+    "photoUrl": null
   },
   {
     "id": "WD-087",
@@ -3030,7 +3116,8 @@
     "notes": "최신 웨딩 프로그램 가격 확인 권장",
     "latitude": 37.5373738689796,
     "longitude": 127.12572887033,
-    "active": true
+    "active": true,
+    "photoUrl": null
   },
   {
     "id": "WD-088",
@@ -3068,7 +3155,8 @@
     "notes": "이전 주소 표기가 섞여 있어 지도 기준 재확인 권장",
     "latitude": 37.6158621924384,
     "longitude": 126.928432696242,
-    "active": true
+    "active": true,
+    "photoUrl": null
   },
   {
     "id": "WD-089",
@@ -3104,7 +3192,8 @@
     "notes": "웨딩 프로그램 구성·가격 확인 권장",
     "latitude": 37.5066776734831,
     "longitude": 126.886228287209,
-    "active": true
+    "active": true,
+    "photoUrl": null
   },
   {
     "id": "WD-090",
@@ -3143,7 +3232,8 @@
     "notes": "네이버 예약 전용 여부·최신 가격 확인",
     "latitude": 37.486586968186,
     "longitude": 126.900207675003,
-    "active": true
+    "active": true,
+    "photoUrl": null
   },
   {
     "id": "WD-091",
@@ -3181,7 +3271,8 @@
     "notes": "웨딩 코스 최신 가격·예약 가능 시간 확인",
     "latitude": 37.5201862876777,
     "longitude": 127.024255546816,
-    "active": true
+    "active": true,
+    "photoUrl": null
   },
   {
     "id": "WD-092",
@@ -3218,7 +3309,8 @@
     "notes": "네이버 지도 상세주소 기준, 최신 가격 확인 권장",
     "latitude": 37.5563694546652,
     "longitude": 127.010089755608,
-    "active": true
+    "active": true,
+    "photoUrl": null
   },
   {
     "id": "WD-093",
@@ -3255,7 +3347,8 @@
     "notes": "홍대 동교센터의 웨딩 진단 서비스 기준, 최신 가격·구성은 예약 전 확인",
     "latitude": 37.5584928774283,
     "longitude": 126.924163186253,
-    "active": true
+    "active": true,
+    "photoUrl": null
   },
   {
     "id": "WD-094",
@@ -3295,7 +3388,8 @@
     "notes": "성수점과 별도 지점. 혜화점 주소·웨딩 프로그램 기준, 최신 가격 확인 권장",
     "latitude": 37.5820509615644,
     "longitude": 127.000132912788,
-    "active": true
+    "active": true,
+    "photoUrl": "https://postfiles.pstatic.net/MjAyNjAzMDZfOCAg/MDAxNzcyNzU5MjkxMTE2.P48NLb6M04gUNOhYL-opaloijhMZ6caO6MnolYR-8cIg.5bmyCGJroH9qoDRoUSkdUpBxHS1tN-TFlLIT_F0HpLog.JPEG/IMG%EF%BC%BF9078.jpg?type=w466"
   },
   {
     "id": "WD-095",
@@ -3333,7 +3427,8 @@
     "notes": "웨딩컨설팅 공개 후기 기준, 세부 프로그램·최신 가격은 예약 전 확인",
     "latitude": 37.5787240461971,
     "longitude": 126.969772743327,
-    "active": true
+    "active": true,
+    "photoUrl": null
   },
   {
     "id": "WD-096",
@@ -3367,7 +3462,8 @@
     "notes": "블룸프로젝트와 다른 업체. 성신여대 인근 주소와 웨딩 프로그램 기준",
     "latitude": 37.5952229665414,
     "longitude": 127.017020477659,
-    "active": true
+    "active": true,
+    "photoUrl": "https://postfiles.pstatic.net/MjAyNDA2MThfOTMg/MDAxNzE4Njg1MjM0ODk0.hRnUONCSSupCua38BNjFJTR-ZciObPuB6c37mtHy6MAg.Jf9YGl2U9BxDhABBTG25UN74UFmat-6U94TR32YadQUg.JPEG/SE-144D8A04-7634-4C4A-A250-527CC8DA77BF.jpg?type=w773"
   },
   {
     "id": "WD-097",
@@ -3404,7 +3500,8 @@
     "notes": "공개 서비스 소개와 현주소 확인. 웨딩 세부 구성·가격은 예약 전 확인",
     "latitude": 37.5577748829634,
     "longitude": 127.081108656059,
-    "active": true
+    "active": true,
+    "photoUrl": "https://t1.kakaocdn.net/mystore/7E3DDB34EAD74C66BC78DCA6B1CDCAB9"
   },
   {
     "id": "WD-098",
@@ -3440,7 +3537,8 @@
     "notes": "사용자 제보 반영. 정식 웨딩 메뉴명보다 실제 예비신부 이용 근거로 수집",
     "latitude": 37.5421450652284,
     "longitude": 127.046904396403,
-    "active": true
+    "active": true,
+    "photoUrl": "https://t1.kakaocdn.net/mystore/A2FD235F85BD4568A55EA9AE0C0D1E51"
   },
   {
     "id": "WD-099",
@@ -3477,7 +3575,8 @@
     "notes": "일반 진단 기반이나 웨딩 적용 내용이 여러 공개 후기에서 구체적으로 확인됨",
     "latitude": 37.5503771690932,
     "longitude": 127.045193170666,
-    "active": true
+    "active": true,
+    "photoUrl": null
   },
   {
     "id": "WD-100",
@@ -3516,7 +3615,8 @@
     "notes": "최근 출처는 237호, 과거 후기에는 216호도 노출되어 예약 시 호수 확인",
     "latitude": 37.5429285449926,
     "longitude": 127.057562902095,
-    "active": true
+    "active": true,
+    "photoUrl": "https://postfiles.pstatic.net/MjAyNjAyMjJfMjY4/MDAxNzcxNzMzMzUzMjMz.FYv2WHJj44-iNfIzrfJsL2L2r3A1KwapRO2_VEm7DZsg.78ZfBoVJ-_hZqcPA8DtMttTWrLiIsnSvZsJXZmfKJ7Ig.JPEG/KakaoTalk_20260222_130818422_02.jpg?type=w386"
   },
   {
     "id": "WD-101",
@@ -3553,7 +3653,8 @@
     "notes": "수서역 인근 웨딩컨설팅 운영과 드레스 피팅 후기 기준",
     "latitude": 37.4867575979651,
     "longitude": 127.103173559444,
-    "active": true
+    "active": true,
+    "photoUrl": null
   },
   {
     "id": "WD-102",
@@ -3590,7 +3691,8 @@
     "notes": "일반 진단과 웨딩 적용이 함께 확인된 업체",
     "latitude": 37.5158026195827,
     "longitude": 127.031904783037,
-    "active": true
+    "active": true,
+    "photoUrl": null
   },
   {
     "id": "WD-103",
@@ -3625,7 +3727,8 @@
     "notes": "퍼스널컬러 진단과 웨딩 헤어메이크업을 함께 제공하는 토탈뷰티형 업체",
     "latitude": 37.5237726439718,
     "longitude": 127.038484274536,
-    "active": true
+    "active": true,
+    "photoUrl": "https://t1.kakaocdn.net/fiy_reboot/place/BCF2D998D0B34293875C783A2B8C524B"
   },
   {
     "id": "WD-104",
@@ -3662,7 +3765,8 @@
     "notes": "전용 웨딩 코스보다 신부·예복 활용 근거로 분류",
     "latitude": 37.5182277112271,
     "longitude": 127.020823504967,
-    "active": true
+    "active": true,
+    "photoUrl": "https://t1.kakaocdn.net/mystore/8FDC06A3FED0484FA77E87ECAA9A160A"
   },
   {
     "id": "WD-105",
@@ -3698,7 +3802,8 @@
     "notes": "최신 매장 안내는 역삼 주소, 과거 웨딩 후기에는 신반포 주소도 있어 예약 페이지 재확인",
     "latitude": 37.504424108842,
     "longitude": 127.047222903908,
-    "active": true
+    "active": true,
+    "photoUrl": null
   },
   {
     "id": "WD-106",
@@ -3735,7 +3840,8 @@
     "notes": "커플 진단을 웨딩 준비에 적용한 구체적 후기 기준",
     "latitude": 37.5057113479177,
     "longitude": 127.021671092186,
-    "active": true
+    "active": true,
+    "photoUrl": null
   },
   {
     "id": "WD-107",
@@ -3770,7 +3876,8 @@
     "notes": "웨딩 구성이 별도로 있다는 공개 후기와 현주소 기준",
     "latitude": 37.4761232968481,
     "longitude": 127.045109528978,
-    "active": true
+    "active": true,
+    "photoUrl": "https://postfiles.pstatic.net/MjAyNTA2MTZfMTQw/MDAxNzUwMDYwMjg4NDM5.NDEeGdHhiOnsG-ZiGpdor8hGnzBcSFQd96XzV9Ys3oIg.cottEa0TUFlKjJk0w_td1Ks-rXSkVcUV-YuakigFE4wg.JPEG/DSC01303.JPG?type=w773"
   },
   {
     "id": "WD-108",
@@ -3809,7 +3916,8 @@
     "notes": "건물 내 상세 층·호수는 지도/예약 안내에서 확인 권장",
     "latitude": 37.4901824983595,
     "longitude": 127.030641805543,
-    "active": true
+    "active": true,
+    "photoUrl": null
   },
   {
     "id": "WD-109",
@@ -3845,7 +3953,8 @@
     "notes": "잠실·송리단길 인근, 100% 예약제 공개 안내 기준",
     "latitude": 37.5097092982799,
     "longitude": 127.10570564968,
-    "active": true
+    "active": true,
+    "photoUrl": null
   },
   {
     "id": "WD-110",
@@ -3886,7 +3995,8 @@
     "notes": "이전 강남/송파 표기 후기와 혼동 주의, 현재 공개 사업장 주소는 문래",
     "latitude": 37.519483432294,
     "longitude": 126.898038715373,
-    "active": true
+    "active": true,
+    "photoUrl": "https://postfiles.pstatic.net/MjAyMzEwMDRfMjgg/MDAxNjk2MzkzOTQ4MTg4.dUxxs_0BjsUA-WKqHYuhTQ4sJkZ6V3KZaoUEpdKQIHYg.1X_C7N5qS-4x7A9mxh9OxxK7Fycgbtm7Ess62ZmYxxIg.JPEG.mmdcolor/SE-d102a685-2a88-4cd7-b733-c87e947c0ae0.jpg?type=w466"
   },
   {
     "id": "WD-111",
@@ -3923,7 +4033,8 @@
     "notes": "최근 출처는 104동, 일부 과거 출처는 103동으로 표기되어 상세 위치 예약 확인",
     "latitude": 37.5095130592283,
     "longitude": 126.887845554724,
-    "active": true
+    "active": true,
+    "photoUrl": null
   },
   {
     "id": "WD-112",
@@ -3956,7 +4067,8 @@
     "notes": "일반 진단형이지만 예비신부 웨딩촬영 활용 근거와 현행 사업장 확인",
     "latitude": 37.5589625253663,
     "longitude": 126.829473076046,
-    "active": true
+    "active": true,
+    "photoUrl": null
   },
   {
     "id": "WD-113",
@@ -3993,7 +4105,8 @@
     "notes": "전용 웨딩 상품명보다 골격진단의 드레스 적용 후기가 반복 확인됨",
     "latitude": 37.5601974065541,
     "longitude": 126.830520236383,
-    "active": true
+    "active": true,
+    "photoUrl": "https://t1.kakaocdn.net/mystore/6912879610124F2ABFE66A1E143BF60C"
   },
   {
     "id": "WD-114",
@@ -4028,7 +4141,8 @@
     "notes": "서울대입구 지점 공식 웨딩 활용 콘텐츠와 공개 주소 기준",
     "latitude": 37.480913087615,
     "longitude": 126.954486112725,
-    "active": true
+    "active": true,
+    "photoUrl": null
   },
   {
     "id": "WD-115",
@@ -4064,7 +4178,8 @@
     "notes": "일반 진단 기반이나 웨딩드레스 선택 활용이 구체적으로 확인됨",
     "latitude": 37.5317374519705,
     "longitude": 126.971514687147,
-    "active": true
+    "active": true,
+    "photoUrl": null
   },
   {
     "id": "WD-116",
@@ -4099,7 +4214,8 @@
     "notes": "연남 1호점·성수점은 별도 지점이며 공식 인스타그램 계정은 공통",
     "latitude": 37.5621247680055,
     "longitude": 126.924542744133,
-    "active": true
+    "active": true,
+    "photoUrl": "https://postfiles.pstatic.net/MjAyNjA3MDhfMjIx/MDAxNzgzNDg5NDcyNjAx.1Vs3miI_k4vpOfmA-yTRuIAyQ4hyvtcRpiOt3VrlVBYg.yrDEVGtNx_QFSElI0dDBcTpUq5cL9AJ9gKEY6CfTuMYg.JPEG/IMG%EF%BC%BF3856.jpg?type=w386"
   },
   {
     "id": "WD-117",
@@ -4135,7 +4251,8 @@
     "notes": "현재 강북구 사업장과 웨딩촬영 전 커플 진단 후기 확인",
     "latitude": 37.6371277340534,
     "longitude": 127.025191277715,
-    "active": true
+    "active": true,
+    "photoUrl": null
   },
   {
     "id": "WD-118",
@@ -4172,7 +4289,8 @@
     "notes": "지점 운영은 확인됐으나 상세 번지·호수는 예약 전 재확인",
     "latitude": 37.6542,
     "longitude": 127.0568,
-    "active": true
+    "active": true,
+    "photoUrl": null
   },
   {
     "id": "WD-119",
@@ -4208,7 +4326,8 @@
     "notes": "연희동 본점 현행 주소와 드레스투어 활용 후기 확인",
     "latitude": 37.5742302251897,
     "longitude": 126.935233078242,
-    "active": true
+    "active": true,
+    "photoUrl": null
   },
   {
     "id": "WD-120",
@@ -4244,7 +4363,8 @@
     "notes": "목동 현행 주소와 결혼 전 진단 활용 후기 확인",
     "latitude": 37.5232944718498,
     "longitude": 126.864027449791,
-    "active": true
+    "active": true,
+    "photoUrl": null
   },
   {
     "id": "WD-121",
@@ -4283,7 +4403,8 @@
     "notes": "상세 번지·호수와 운영 상태는 예약 전 재확인",
     "latitude": 37.3219394584907,
     "longitude": 126.832292027071,
-    "active": true
+    "active": true,
+    "photoUrl": null
   },
   {
     "id": "WD-122",
@@ -4324,7 +4445,8 @@
     "notes": "현재 산본 사업장·전화 0507-1371-5958 및 웨딩 프로그램 확인",
     "latitude": 37.3594038666756,
     "longitude": 126.930766651442,
-    "active": true
+    "active": true,
+    "photoUrl": null
   },
   {
     "id": "WD-123",
@@ -4362,7 +4484,8 @@
     "notes": "현재 미사 사업장과 웨딩 컨설팅 안내 확인",
     "latitude": 37.5620314431748,
     "longitude": 127.192812893671,
-    "active": true
+    "active": true,
+    "photoUrl": null
   },
   {
     "id": "WD-124",
@@ -4396,7 +4519,8 @@
     "notes": "현재 주소·전화 0507-1404-1402 확인; 웨딩 전용 상품 구성 재확인",
     "latitude": 37.2108651707078,
     "longitude": 127.089445559923,
-    "active": true
+    "active": true,
+    "photoUrl": "https://t1.daumcdn.net/local/kakaomapPhoto/review/bf97c877c128094dfd83ddb87e5c121c47e36439?original"
   },
   {
     "id": "WD-125",
@@ -4432,7 +4556,8 @@
     "notes": "현재 주소·전화 0507-1341-3839 및 웨딩 진단 운영 확인",
     "latitude": 37.2876086076178,
     "longitude": 127.057001896438,
-    "active": true
+    "active": true,
+    "photoUrl": null
   },
   {
     "id": "WD-126",
@@ -4468,7 +4593,8 @@
     "notes": "현재 서현 사업장·전화 0507-1322-4901 및 웨딩 활용 후기 확인",
     "latitude": 37.3857030304401,
     "longitude": 127.125709817271,
-    "active": true
+    "active": true,
+    "photoUrl": "https://t1.kakaocdn.net/mystore/CA2F7370E6DC40438168059541DCAD31"
   },
   {
     "id": "WD-127",
@@ -4505,7 +4631,8 @@
     "notes": "현재 통복동 사업장·전화 0507-1478-3693 및 웨딩 프로그램 확인",
     "latitude": 36.9956289358934,
     "longitude": 127.086832171773,
-    "active": true
+    "active": true,
+    "photoUrl": null
   },
   {
     "id": "WD-128",
@@ -4540,7 +4667,8 @@
     "notes": "현재 운양동 사업장과 웨딩 컨설팅 운영 확인",
     "latitude": 37.6527693939484,
     "longitude": 126.683431128579,
-    "active": true
+    "active": true,
+    "photoUrl": "https://t1.kakaocdn.net/mystore/37F5C7B92EA14A78BEBFBAE2C2593AB8"
   },
   {
     "id": "WD-129",
@@ -4579,7 +4707,8 @@
     "notes": "현재 평촌 사업장·전화 0507-1315-9748 및 웨딩 컨설팅 상품 확인",
     "latitude": 37.3965365395623,
     "longitude": 126.966121951265,
-    "active": true
+    "active": true,
+    "photoUrl": "https://postfiles.pstatic.net/MjAyNjA4MDNfMTMy/MDAxNzg1NzQzMTkzMDA1.MY-3CDalAK6Wh2V_Va_WkDwc7NtM0DennkrcxIlcZ2cg.6If4Www4_gv99uBEVwuo2HlCSRcgUpT2uIjNP1yCfcEg.JPEG/IMG%EF%BC%BF2825.jpg?type=w580"
   },
   {
     "id": "WD-130",
@@ -4613,7 +4742,8 @@
     "notes": "현재 야당동 사업장·전화 0507-1359-1107 및 웨딩진단 운영 확인",
     "latitude": 37.7125853110848,
     "longitude": 126.759666130671,
-    "active": true
+    "active": true,
+    "photoUrl": null
   },
   {
     "id": "WD-131",
@@ -4652,7 +4782,8 @@
     "notes": "현재 김해 사업장·전화 0507-1345-9776 및 웨딩 컨설팅 운영 확인",
     "latitude": 35.233886273999,
     "longitude": 128.866889708428,
-    "active": true
+    "active": true,
+    "photoUrl": null
   },
   {
     "id": "WD-132",
@@ -4687,7 +4818,8 @@
     "notes": "현재 창원 사업장·전화 0507-1345-5278 및 웨딩 컨설팅 운영 확인",
     "latitude": 35.2244802241098,
     "longitude": 128.678347346605,
-    "active": true
+    "active": true,
+    "photoUrl": "https://t1.kakaocdn.net/mystore/BD65565D1AAF4FEA99F4FF67204E277E"
   },
   {
     "id": "WD-133",
@@ -4722,7 +4854,8 @@
     "notes": "현재 원주 사업장·영업중 확인; 웨딩 전용 패키지 범위는 예약 전 확인 권장",
     "latitude": 37.32767880959,
     "longitude": 127.978389908755,
-    "active": true
+    "active": true,
+    "photoUrl": "https://t1.kakaocdn.net/fiy_reboot/place/595045409AE3405A83E9619ABC4FDE29"
   },
   {
     "id": "WD-134",
@@ -4760,7 +4893,8 @@
     "notes": "현재 사업장·전화 0507-1377-3491 및 예약제 운영 확인",
     "latitude": 36.6577375348161,
     "longitude": 127.495968735667,
-    "active": true
+    "active": true,
+    "photoUrl": "https://t1.kakaocdn.net/mystore/DE65FF09A22D40D4BE5CC50DFA0B9A23"
   },
   {
     "id": "WD-135",
@@ -4795,6 +4929,7 @@
     "notes": "현재 사업장·전화 0507-1356-2801 확인; 웨딩 컬러 전용 패키지는 예약 전 확인 권장",
     "latitude": 34.9512364031792,
     "longitude": 127.515148770715,
-    "active": true
+    "active": true,
+    "photoUrl": "https://t1.kakaocdn.net/mystore/1E83C09DA8AB48739E658DB247D26D10"
   }
 ]
