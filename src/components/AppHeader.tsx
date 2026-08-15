@@ -13,6 +13,7 @@ export function AppHeader() {
         <Link href="/gatherings/?purpose=family_meeting">Family Meeting</Link>
         <Link href="/self-snap/">Self Snap</Link>
         <Link href="/essentials/">Essentials</Link>
+        <Link href="/wedding-color/">Personal Color</Link>
         <Link href="/methodology/">Info</Link>
       </nav>
     </header>
