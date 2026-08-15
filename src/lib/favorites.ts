@@ -81,17 +81,21 @@ export function isFavorite(category: FavoriteCategory, id: string): boolean {
   return readCategoryFavorites(category).includes(id);
 }
 
-export function toggleFavorite(category: FavoriteCategory, id: string): void {
+export function toggleFavorite(category: FavoriteCategory, id: string): boolean {
   const data = readAllFavorites();
+  let nextSaved = false;
   if (category === "halls") {
     const exists = data.halls.includes(id);
     data.halls = exists ? data.halls.filter((item) => item !== id) : [...data.halls, id];
+    nextSaved = !exists;
   } else {
     const list = data.restaurants[category] ?? [];
     const exists = list.includes(id);
     data.restaurants[category] = exists ? list.filter((item) => item !== id) : [...list, id];
+    nextSaved = !exists;
   }
   writeAllFavorites(data);
+  return nextSaved;
 }
 
 export function clearCategory(category: FavoriteCategory): void {
