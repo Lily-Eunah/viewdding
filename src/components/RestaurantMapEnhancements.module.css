@@ -1,0 +1,18 @@
+.cuisineField {
+  min-width: 0;
+  min-inline-size: 0;
+}
+
+.cuisineField :global(.option-row) {
+  min-width: 0;
+}
+
+.cuisineField :global(.option) {
+  flex: 0 0 auto;
+  white-space: nowrap;
+  word-break: keep-all;
+}
+
+.cuisineField legend {
+  white-space: nowrap;
+}

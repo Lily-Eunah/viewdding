@@ -5,14 +5,19 @@
   "type": "module",
   "scripts": {
     "dev": "next dev",
-    "data:build": "tsx scripts/build-data.ts",
+    "data:build": "node scripts/build-regional-expansion-source.mjs && node scripts/build-national-followup-source.mjs && tsx scripts/build-data.ts && npm run data:hall-geocodes && npm run data:restaurants",
+    "data:hall-geocodes": "tsx scripts/build-hall-geocodes.ts",
+    "data:hall-photo-audit": "tsx scripts/build-hall-photo-audit.ts",
+    "data:restaurants": "tsx scripts/build-restaurants.ts",
     "sites:stage": "tsx scripts/stage-sites.ts",
     "sites:build": "npm run build && npm run sites:stage",
     "test": "vitest run",
     "typecheck": "tsc --noEmit --incremental false",
-    "build": "npm run data:build && next build"
+    "build": "next build --webpack && npm run sites:stage"
   },
   "dependencies": {
+    "@next/env": "16.3.0",
+    "@phosphor-icons/react": "^2.1.10",
     "next": "16.3.0",
     "react": "19.2.8",
     "react-dom": "19.2.8"

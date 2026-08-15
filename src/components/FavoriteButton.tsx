@@ -24,7 +24,7 @@ export function FavoriteButton({ hallId, compact = false }: { hallId: string; co
         writeFavorites(saved ? current.filter((id) => id !== hallId) : [...current, hallId]);
       }}
     >
-      <span aria-hidden="true">{saved ? "♥" : "♡"}</span>{compact ? null : <span>{saved ? "저장됨" : "즐겨찾기"}</span>}
+      <span aria-hidden="true">{saved ? "♥" : "♡"}</span>
     </button>
   );
 }

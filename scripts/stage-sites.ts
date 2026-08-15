@@ -8,10 +8,15 @@ const dist = path.join(root, "dist");
 await rm(dist, { recursive: true, force: true });
 await mkdir(path.join(dist, "client"), { recursive: true });
 await mkdir(path.join(dist, "server"), { recursive: true });
+await mkdir(path.join(dist, ".openai"), { recursive: true });
 await cp(output, path.join(dist, "client"), { recursive: true });
 await cp(
   path.join(root, "worker", "static-site.js"),
   path.join(dist, "server", "index.js"),
+);
+await cp(
+  path.join(root, ".openai", "hosting.json"),
+  path.join(dist, ".openai", "hosting.json"),
 );
 
 console.log("Staged static export for Sites deployment.");

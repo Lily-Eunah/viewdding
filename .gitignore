@@ -5,6 +5,8 @@ dist/
 outputs/
 tmp/
 coverage/
+.codex-deploy/
+.codex-remote-attachments/
 *.tsbuildinfo
 .env*
 !.env.example

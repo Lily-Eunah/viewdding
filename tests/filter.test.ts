@@ -4,7 +4,8 @@ import type { HallRecord } from "../src/domain/types";
 
 function hall(overrides: Partial<HallRecord> = {}): HallRecord {
   return {
-    id: "H-1", venueId: "V-1", venueName: "테스트", hallName: "홀", district: "강남구",
+    id: "H-1", venueId: "V-1", venueName: "테스트", hallName: "홀",
+    sido: "서울특별시", sigungu: "강남구", subdistrict: null, regionCode: "VDD-11-023", metroArea: "서울 동남권", district: "강남구",
     neighborhood: null, address: null, phone: null, website: null, instagram: null, mapUrl: null,
     publicStatus: "public", lighting: "bright", naturalLight: "yes", chapel: true, house: false,
     indoorOutdoor: "indoor", venueType: "professional_convention", ceremonyFormat: "separate",
@@ -22,6 +23,33 @@ describe("filter engine", () => {
     const transitional = hall({ lighting: "transitional" });
     expect(evaluateHall(transitional, { ...EMPTY_FILTERS, hallTypes: ["bright"] })?.state).toBe("match");
     expect(evaluateHall(transitional, { ...EMPTY_FILTERS, hallTypes: ["dark"] })?.state).toBe("match");
+  });
+
+  it("separates same-named districts by sido and sigungu", () => {
+    const seoul = hall({ sido: "서울특별시", sigungu: "중구", district: "중구", regionCode: "VDD-11-002" });
+    const incheon = hall({ sido: "인천광역시", sigungu: "중구", district: "중구", regionCode: "legacy-incheon-jung" });
+    const filters = { ...EMPTY_FILTERS, regionCodes: ["VDD-11-002"] };
+    expect(evaluateHall(seoul, filters)?.state).toBe("match");
+    expect(evaluateHall(incheon, filters)).toBeNull();
+  });
+
+  it("matches an entire sido", () => {
+    expect(evaluateHall(hall(), { ...EMPTY_FILTERS, sidos: ["서울특별시"] })?.state).toBe("match");
+    expect(evaluateHall(hall(), { ...EMPTY_FILTERS, sidos: ["경기도"] })).toBeNull();
+  });
+
+  it("uses OR across exact administrative regions", () => {
+    const eunpyeong = hall({ sido: "서울특별시", sigungu: "은평구", regionCode: "VDD-11-012" });
+    const goyang = hall({ sido: "경기도", sigungu: "고양시", regionCode: "VDD-41-005" });
+    const suwon = hall({ sido: "경기도", sigungu: "수원시", regionCode: "VDD-41-001" });
+    const filters = {
+      ...EMPTY_FILTERS,
+      regionCodes: ["VDD-11-012", "VDD-41-005"],
+    };
+
+    expect(evaluateHall(eunpyeong, filters)?.state).toBe("match");
+    expect(evaluateHall(goyang, filters)?.state).toBe("match");
+    expect(evaluateHall(suwon, filters)).toBeNull();
   });
 
   it("uses OR inside a type group and AND across groups", () => {

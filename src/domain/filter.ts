@@ -85,8 +85,9 @@ function matchMeals(hall: HallRecord, selected: MealType[]): MatchState {
 export function evaluateHall(hall: HallRecord, filters: FilterState): FilteredHall | null {
   const checks: Array<{ state: MatchState; reason: string }> = [];
 
-  if (filters.district) {
-    checks.push({ state: hall.district === filters.district ? "match" : "mismatch", reason: "지역" });
+  if (filters.sidos.length > 0 || filters.regionCodes.length > 0) {
+    const locationMatch = filters.sidos.includes(hall.sido) || filters.regionCodes.includes(hall.regionCode);
+    checks.push({ state: locationMatch ? "match" : "mismatch", reason: "지역" });
   }
 
   for (const group of TYPE_GROUPS) {
@@ -134,7 +135,8 @@ export function filterHalls(halls: HallRecord[], filters: FilterState): {
 }
 
 export const EMPTY_FILTERS: FilterState = {
-  district: "",
+  sidos: [],
+  regionCodes: [],
   hallTypes: [],
   guests: null,
   naturalLight: false,
