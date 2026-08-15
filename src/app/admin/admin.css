@@ -1,16 +1,17 @@
-/* Viewdding B2B Admin & Analytics Dashboard Styles */
+/* Viewdding B2B Admin & Analytics - Warm Cream & Editorial Edition */
 
 .admin-container {
   min-height: 100vh;
-  background-color: #0b0f19;
-  color: #f1f5f9;
-  font-family: -apple-system, BlinkMacSystemFont, "Pretendard Variable", Pretendard, "Segoe UI", Roboto, sans-serif;
-  padding-bottom: 60px;
+  background-color: var(--canvas, #e8e6e1);
+  color: var(--ink, #262725);
+  font-family: var(--sans, -apple-system, BlinkMacSystemFont, "Pretendard", "Noto Sans KR", sans-serif);
+  padding-bottom: 80px;
 }
 
+/* Header */
 .admin-header {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-  background: rgba(15, 23, 42, 0.85);
+  border-bottom: 1px solid var(--line, #d2cfc7);
+  background: rgba(248, 247, 243, 0.92);
   backdrop-filter: blur(16px);
   position: sticky;
   top: 0;
@@ -18,9 +19,9 @@
 }
 
 .admin-header-inner {
-  max-width: 1320px;
+  max-width: 1280px;
   margin: 0 auto;
-  padding: 16px 24px;
+  padding: 14px 24px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -31,55 +32,69 @@
 .admin-brand-group {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 14px;
 }
 
 .admin-brand-logo {
-  font-size: 1.25rem;
-  font-weight: 800;
-  letter-spacing: -0.5px;
-  background: linear-gradient(135deg, #ec4899 0%, #8b5cf6 50%, #3b82f6 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
   text-decoration: none;
+  line-height: 1;
+}
+
+.admin-brand-kicker {
+  color: var(--muted, #77766f);
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+}
+
+.admin-brand-name {
+  margin-top: 4px;
+  font: 400 32px/1 var(--script, "Pinyon Script", cursive);
+  color: var(--ink, #262725);
+  letter-spacing: 0;
 }
 
 .admin-badge {
-  background: rgba(139, 92, 246, 0.15);
-  color: #a78bfa;
-  border: 1px solid rgba(139, 92, 246, 0.3);
+  background: #eeece6;
+  color: var(--accent, #4f5e50);
+  border: 1px solid var(--line, #d2cfc7);
   font-size: 0.72rem;
   font-weight: 700;
-  padding: 3px 8px;
+  padding: 4px 9px;
   border-radius: 9999px;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
 }
 
 .admin-nav-links {
   display: flex;
-  gap: 8px;
+  gap: 6px;
 }
 
 .admin-nav-item {
-  color: #94a3b8;
+  color: var(--muted, #77766f);
   font-size: 0.9rem;
   font-weight: 600;
   padding: 8px 14px;
-  border-radius: 8px;
+  border-radius: 9999px;
   text-decoration: none;
-  transition: all 0.15s ease;
+  transition: all 0.18s ease;
 }
 
 .admin-nav-item:hover {
-  color: #ffffff;
-  background: rgba(255, 255, 255, 0.05);
+  color: var(--ink, #262725);
+  background: rgba(0, 0, 0, 0.04);
 }
 
 .admin-nav-item.active {
-  color: #ffffff;
-  background: rgba(139, 92, 246, 0.2);
-  border: 1px solid rgba(139, 92, 246, 0.4);
+  color: var(--ink, #262725);
+  background: var(--paper, #f8f7f3);
+  border: 1px solid var(--line, #d2cfc7);
+  font-weight: 700;
 }
 
 .admin-actions-group {
@@ -91,90 +106,91 @@
 .admin-btn {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
+  gap: 6px;
   font-size: 0.85rem;
-  font-weight: 600;
-  padding: 8px 16px;
-  border-radius: 8px;
+  font-weight: 700;
+  padding: 9px 18px;
+  border-radius: 9999px;
   cursor: pointer;
-  transition: all 0.15s ease;
-  border: none;
+  transition: all 0.18s ease;
+  border: 1px solid transparent;
   text-decoration: none;
 }
 
 .admin-btn-primary {
-  background: linear-gradient(135deg, #7c3aed 0%, #6366f1 100%);
+  background: var(--ink, #262725);
   color: #ffffff;
-  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
+  box-shadow: 0 4px 14px rgba(38, 39, 37, 0.18);
 }
 
 .admin-btn-primary:hover {
-  filter: brightness(1.1);
+  background: var(--accent, #4f5e50);
   transform: translateY(-1px);
 }
 
 .admin-btn-secondary {
-  background: rgba(255, 255, 255, 0.08);
-  color: #cbd5e1;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: #faf9f6;
+  color: var(--ink, #262725);
+  border-color: var(--line, #d2cfc7);
 }
 
 .admin-btn-secondary:hover {
-  background: rgba(255, 255, 255, 0.12);
-  color: #ffffff;
+  background: #ffffff;
+  border-color: var(--line2, #aaa79e);
 }
 
 .admin-body {
-  max-width: 1320px;
+  max-width: 1280px;
   margin: 0 auto;
-  padding: 28px 24px;
+  padding: 36px 24px;
 }
 
-/* Hero Section / Overview Bar */
+/* Header & Title Section */
 .admin-overview-header {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  margin-bottom: 24px;
+  margin-bottom: 28px;
   flex-wrap: wrap;
   gap: 16px;
 }
 
 .admin-title-main {
-  font-size: 1.6rem;
-  font-weight: 700;
-  letter-spacing: -0.5px;
-  margin: 0 0 6px 0;
-  color: #f8fafc;
+  font: 500 clamp(26px, 3.2vw, 36px)/1.2 var(--serif, "Eulyoo 1945", serif);
+  letter-spacing: -0.03em;
+  margin: 0 0 8px 0;
+  color: var(--ink, #262725);
 }
 
 .admin-subtitle {
-  font-size: 0.9rem;
-  color: #94a3b8;
+  font-size: 0.92rem;
+  color: var(--muted, #77766f);
   margin: 0;
+  line-height: 1.5;
 }
 
-/* Funnel Stat Cards Grid */
+/* 3-Tier Funnel Stat Cards Grid */
 .admin-stats-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 16px;
-  margin-bottom: 28px;
+  margin-bottom: 32px;
 }
 
 .admin-stat-card {
-  background: rgba(30, 41, 59, 0.6);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 14px;
-  padding: 20px;
+  background: #faf9f6;
+  border: 1px solid #ffffffd9;
+  box-shadow: 0 4px 20px rgba(45, 44, 39, 0.06);
+  border-radius: 20px;
+  padding: 22px;
   position: relative;
   overflow: hidden;
-  transition: transform 0.15s ease, border-color 0.15s ease;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
 }
 
 .admin-stat-card:hover {
-  border-color: rgba(139, 92, 246, 0.4);
   transform: translateY(-2px);
+  box-shadow: 0 10px 28px rgba(45, 44, 39, 0.1);
 }
 
 .admin-stat-card::before {
@@ -183,21 +199,20 @@
   top: 0;
   left: 0;
   right: 0;
-  height: 3px;
-  background: transparent;
+  height: 4px;
 }
 
 .admin-stat-card.top-funnel::before {
-  background: linear-gradient(90deg, #38bdf8, #818cf8);
+  background: #4f5e50; /* 뷰딩 세이지 그린 */
 }
 .admin-stat-card.mid-funnel::before {
-  background: linear-gradient(90deg, #818cf8, #c084fc);
+  background: #9b7050; /* 샴페인 앰버 */
 }
 .admin-stat-card.bottom-funnel::before {
-  background: linear-gradient(90deg, #f43f5e, #fb923c);
+  background: #b8543f; /* 테라코타 코랄 (핵심 전환) */
 }
 .admin-stat-card.revenue-card::before {
-  background: linear-gradient(90deg, #10b981, #34d399);
+  background: #2f684a; /* 포레스트 */
 }
 
 .stat-header-row {
@@ -208,51 +223,57 @@
 }
 
 .stat-phase-tag {
-  font-size: 0.72rem;
+  font-size: 0.74rem;
   font-weight: 700;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: #94a3b8;
+  color: var(--muted, #77766f);
 }
 
 .stat-growth-badge {
   font-size: 0.75rem;
   font-weight: 700;
-  padding: 2px 6px;
-  border-radius: 6px;
+  padding: 3px 8px;
+  border-radius: 9999px;
   display: inline-flex;
   align-items: center;
   gap: 2px;
 }
 
 .stat-growth-badge.positive {
-  background: rgba(16, 185, 129, 0.15);
-  color: #34d399;
+  background: #e2e8e2;
+  color: #2f593e;
 }
 
 .stat-value-main {
-  font-size: 2rem;
+  font-size: 2.2rem;
   font-weight: 800;
-  letter-spacing: -0.5px;
-  color: #ffffff;
-  margin: 0 0 4px 0;
+  letter-spacing: -0.03em;
+  color: var(--ink, #262725);
+  margin: 0 0 6px 0;
   display: flex;
   align-items: baseline;
   gap: 6px;
+  font-family: var(--sans);
 }
 
 .stat-unit {
   font-size: 1rem;
   font-weight: 600;
-  color: #94a3b8;
+  color: var(--muted, #77766f);
 }
 
 .stat-subtext {
-  font-size: 0.82rem;
-  color: #94a3b8;
+  font-size: 0.84rem;
+  color: var(--muted, #77766f);
   margin: 0;
   display: flex;
   justify-content: space-between;
+  line-height: 1.4;
+}
+
+.stat-subtext strong {
+  color: var(--ink, #262725);
 }
 
 /* Charts & Breakdown Grid */
@@ -260,7 +281,7 @@
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 20px;
-  margin-bottom: 28px;
+  margin-bottom: 32px;
 }
 
 @media (max-width: 960px) {
@@ -270,30 +291,31 @@
 }
 
 .admin-card {
-  background: rgba(30, 41, 59, 0.6);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 14px;
-  padding: 20px;
+  background: #faf9f6;
+  border: 1px solid #ffffffd9;
+  box-shadow: 0 4px 20px rgba(45, 44, 39, 0.06);
+  border-radius: 20px;
+  padding: 24px;
 }
 
 .admin-card-title {
-  font-size: 1.05rem;
-  font-weight: 700;
-  margin: 0 0 16px 0;
-  color: #f1f5f9;
+  font: 700 1.05rem/1.3 var(--sans);
+  letter-spacing: -0.015em;
+  margin: 0 0 18px 0;
+  color: var(--ink, #262725);
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-/* Custom SVG Bar / Line Chart */
+/* Custom SVG Bar Chart */
 .traffic-chart-wrapper {
   height: 220px;
   display: flex;
   align-items: flex-end;
   gap: 8px;
   padding-top: 20px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid var(--line, #d2cfc7);
   padding-bottom: 10px;
 }
 
@@ -309,7 +331,7 @@
 
 .chart-bar {
   width: 100%;
-  max-width: 24px;
+  max-width: 22px;
   border-radius: 4px 4px 0 0;
   transition: all 0.2s ease;
   cursor: pointer;
@@ -317,16 +339,18 @@
 }
 
 .chart-bar.pv {
-  background: linear-gradient(180deg, #6366f1 0%, rgba(99, 102, 241, 0.4) 100%);
+  background: linear-gradient(180deg, #4f5e50 0%, rgba(79, 94, 80, 0.35) 100%);
 }
 
 .chart-bar:hover {
-  filter: brightness(1.25);
+  filter: brightness(0.85);
+  transform: scaleY(1.03);
+  transform-origin: bottom;
 }
 
 .chart-bar-label {
   font-size: 0.7rem;
-  color: #64748b;
+  color: var(--muted, #77766f);
   margin-top: 6px;
 }
 
@@ -334,7 +358,7 @@
 .category-progress-list {
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 16px;
 }
 
 .category-progress-item {
@@ -346,15 +370,15 @@
 .category-progress-label {
   display: flex;
   justify-content: space-between;
-  font-size: 0.85rem;
+  font-size: 0.88rem;
   font-weight: 600;
-  color: #e2e8f0;
+  color: var(--ink, #262725);
 }
 
 .category-progress-bar-bg {
   width: 100%;
-  height: 8px;
-  background: rgba(255, 255, 255, 0.08);
+  height: 9px;
+  background: #eeece6;
   border-radius: 999px;
   overflow: hidden;
 }
@@ -362,73 +386,75 @@
 .category-progress-bar-fill {
   height: 100%;
   border-radius: 999px;
-  background: linear-gradient(90deg, #8b5cf6, #ec4899);
+  background: linear-gradient(90deg, #4f5e50, #9b7050);
 }
 
 /* Outbound Channel Pills */
 .outbound-channel-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
+  gap: 12px;
 }
 
 .outbound-channel-box {
-  background: rgba(15, 23, 42, 0.6);
-  border: 1px solid rgba(255, 255, 255, 0.06);
-  border-radius: 10px;
-  padding: 12px;
+  background: #ffffff;
+  border: 1px solid var(--line, #d2cfc7);
+  border-radius: 14px;
+  padding: 14px;
 }
 
 .outbound-channel-name {
   font-size: 0.78rem;
-  color: #94a3b8;
+  color: var(--muted, #77766f);
   margin: 0 0 4px 0;
+  font-weight: 600;
 }
 
 .outbound-channel-count {
-  font-size: 1.2rem;
-  font-weight: 700;
-  color: #f8fafc;
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--ink, #262725);
   margin: 0;
 }
 
 /* Vendor Performance Table */
 .admin-table-wrapper {
   overflow-x: auto;
-  margin-top: 12px;
+  margin-top: 14px;
 }
 
 .admin-table {
   width: 100%;
   border-collapse: collapse;
   text-align: left;
-  font-size: 0.875rem;
+  font-size: 0.88rem;
 }
 
 .admin-table th {
   padding: 12px 14px;
-  background: rgba(15, 23, 42, 0.7);
-  color: #94a3b8;
-  font-weight: 600;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-  font-size: 0.78rem;
+  background: #eeece6;
+  color: var(--muted, #77766f);
+  font-weight: 700;
+  border-bottom: 1px solid var(--line, #d2cfc7);
+  font-size: 0.76rem;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.04em;
 }
 
 .admin-table td {
   padding: 14px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-  color: #cbd5e1;
+  border-bottom: 1px solid rgba(210, 207, 199, 0.4);
+  color: var(--ink, #262725);
+  background: #faf9f6;
 }
 
 .admin-table tr:hover td {
-  background: rgba(255, 255, 255, 0.03);
+  background: #ffffff;
 }
 
 .vendor-cell-title {
   font-weight: 700;
-  color: #f8fafc;
+  color: var(--ink, #262725);
   display: flex;
   align-items: center;
   gap: 8px;
@@ -436,11 +462,12 @@
 
 .sponsored-pill {
   font-size: 0.68rem;
-  background: linear-gradient(135deg, #f59e0b, #d97706);
+  background: #9b7050;
   color: #ffffff;
   padding: 2px 6px;
   border-radius: 4px;
   font-weight: 800;
+  letter-spacing: 0.5px;
 }
 
 .pitch-btn {
@@ -448,34 +475,35 @@
   align-items: center;
   gap: 4px;
   font-size: 0.78rem;
-  font-weight: 600;
-  background: rgba(139, 92, 246, 0.15);
-  color: #c084fc;
-  border: 1px solid rgba(139, 92, 246, 0.3);
-  padding: 5px 10px;
-  border-radius: 6px;
+  font-weight: 700;
+  background: #ffffff;
+  color: var(--ink, #262725);
+  border: 1px solid var(--line, #d2cfc7);
+  padding: 6px 12px;
+  border-radius: 9999px;
   text-decoration: none;
-  transition: all 0.15s ease;
+  transition: all 0.18s ease;
 }
 
 .pitch-btn:hover {
-  background: rgba(139, 92, 246, 0.3);
+  background: var(--ink, #262725);
   color: #ffffff;
+  border-color: var(--ink, #262725);
 }
 
-/* 1-Page Pitch Deck / Vendor Sheet Styling */
+/* 1-Page Pitch Deck / Vendor Sheet Styling (Editorial Magazine Style) */
 .pitch-deck-container {
   max-width: 900px;
   margin: 0 auto;
-  background: #0f172a;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 16px;
-  padding: 36px;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+  background: #ffffff;
+  border: 1px solid var(--line, #d2cfc7);
+  border-radius: 24px;
+  padding: 40px;
+  box-shadow: 0 10px 40px rgba(45, 44, 39, 0.08);
 }
 
 .pitch-deck-header {
-  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 2px solid var(--line, #d2cfc7);
   padding-bottom: 24px;
   margin-bottom: 28px;
   display: flex;
@@ -484,33 +512,37 @@
 }
 
 .pitch-kpi-highlight {
-  background: linear-gradient(135deg, rgba(124, 58, 237, 0.15), rgba(236, 72, 153, 0.15));
-  border: 1px solid rgba(139, 92, 246, 0.4);
-  border-radius: 12px;
-  padding: 24px;
+  background: #f8f7f3;
+  border: 1px solid var(--line, #d2cfc7);
+  border-radius: 18px;
+  padding: 28px;
   margin-bottom: 28px;
   text-align: center;
 }
 
 .pitch-kpi-title {
-  font-size: 1.1rem;
-  color: #cbd5e1;
-  margin-bottom: 8px;
+  font-size: 1.05rem;
+  color: var(--muted, #77766f);
+  margin-bottom: 10px;
+}
+
+.pitch-kpi-title strong {
+  color: var(--ink, #262725);
 }
 
 .pitch-kpi-number {
-  font-size: 3rem;
+  font-size: 3.4rem;
   font-weight: 900;
-  background: linear-gradient(135deg, #a78bfa, #f472b6);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  margin: 0 0 8px 0;
+  color: #b8543f; /* 핵심 전환 강조 */
+  margin: 0 0 10px 0;
+  letter-spacing: -0.04em;
+  font-family: var(--sans);
 }
 
 .pitch-simulation-card {
-  background: rgba(30, 41, 59, 0.8);
-  border: 1px solid rgba(52, 211, 153, 0.3);
-  border-radius: 12px;
+  background: #faf9f6;
+  border: 1px solid #c8d4c6;
+  border-radius: 18px;
   padding: 24px;
   margin-top: 24px;
 }

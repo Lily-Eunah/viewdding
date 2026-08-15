@@ -2,7 +2,7 @@ import Link from "next/link";
 import "./admin.css";
 
 export const metadata = {
-  title: "Viewdding B2B Admin & Analytics",
+  title: "Viewdding B2B Admin & Ads",
   description: "뷰딩 B2B 파트너십, 아웃링크 전환 및 광고 성과 분석 대시보드",
 };
 
@@ -12,15 +12,16 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
       <header className="admin-header">
         <div className="admin-header-inner">
           <div className="admin-brand-group">
-            <Link href="/admin" className="admin-brand-logo">
-              Viewdding
+            <Link href="/" className="admin-brand-logo" aria-label="Viewdding 홈">
+              <span className="admin-brand-kicker">WEDDING PLACE ARCHIVE</span>
+              <span className="admin-brand-name">Viewdding</span>
             </Link>
             <span className="admin-badge">B2B Admin & Ads</span>
           </div>
 
-          <nav className="admin-nav-links">
+          <nav className="admin-nav-links" aria-label="어드민 메뉴">
             <Link href="/admin" className="admin-nav-item">
-              대시보드 종합 (Overview)
+              대시보드 종합
             </Link>
             <Link href="/admin/vendors" className="admin-nav-item">
               벤더 성과 & 피칭 리포트
