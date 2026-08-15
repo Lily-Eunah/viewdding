@@ -1,24 +1,17 @@
 "use client";
 
 import { useId, useState } from "react";
-import {
-  Sparkle,
-  InstagramLogo,
-  ArrowSquareOut,
-  MapPin,
-  CheckCircle,
-  Article,
-} from "@phosphor-icons/react";
+import { InstagramLogo, Article } from "@phosphor-icons/react";
 import type { PersonalColorRecord } from "@/domain/personal-color-types";
 import { serviceTagMeta } from "@/domain/personal-color-categories";
 import { FavoriteButton } from "@/components/FavoriteButton";
-import { formatPersonalColorPrice, personalColorGradeBadge, personalColorStatusBadge } from "@/lib/personal-colors";
-import { trackDetailView, trackOutboundClick, useCardImpression } from "@/lib/analytics-client";
+import { formatPersonalColorPrice } from "@/lib/personal-colors";
+import { trackOutboundClick, useCardImpression } from "@/lib/analytics-client";
 
 function NaverMapAppIcon() {
   const gradId = useId();
   return (
-    <svg width="22" height="22" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ display: "block" }}>
+    <svg width="24" height="24" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ display: "block" }}>
       <defs>
         <linearGradient id={gradId} x1="14" y1="4" x2="14" y2="24" gradientUnits="userSpaceOnUse">
           <stop offset="0%" stopColor="#0072FF" />
@@ -37,16 +30,13 @@ function NaverMapAppIcon() {
   );
 }
 
-// Generate pastel gradient based on vendor name for brand fallback
-function getPersonalColorGradient(name: string): string {
+function getPersonalColorFallback(name: string): { bgGradient: string; icon: string; categoryLabel: string } {
   const gradients = [
-    "linear-gradient(135deg, #FFE4E6 0%, #FECDD3 50%, #FDA4AF 100%)",
-    "linear-gradient(135deg, #FDF2F8 0%, #FCE7F3 50%, #FBCFE8 100%)",
-    "linear-gradient(135deg, #EDE9FE 0%, #DDD6FE 50%, #C4B5FD 100%)",
-    "linear-gradient(135deg, #E0E7FF 0%, #C7D2FE 50%, #A5B4FC 100%)",
-    "linear-gradient(135deg, #FEF3C7 0%, #FDE68A 50%, #FCD34D 100%)",
-    "linear-gradient(135deg, #E0F2FE 0%, #BAE6FD 50%, #7DD3FC 100%)",
-    "linear-gradient(135deg, #ECFDF5 0%, #D1FAE5 50%, #A7F3D0 100%)",
+    "linear-gradient(135deg, #FDE2E4 0%, #FFCAD4 100%)",
+    "linear-gradient(135deg, #E2ECE9 0%, #BEE1E6 100%)",
+    "linear-gradient(135deg, #DFE7FD 0%, #CDDAFD 100%)",
+    "linear-gradient(135deg, #F0E6EF 0%, #D8BBFF 100%)",
+    "linear-gradient(135deg, #FFF1E6 0%, #FDD2B5 100%)",
   ];
   let hash = 0;
   for (let i = 0; i < name.length; i++) {
@@ -54,7 +44,11 @@ function getPersonalColorGradient(name: string): string {
     hash |= 0;
   }
   const index = Math.abs(hash) % gradients.length;
-  return gradients[index];
+  return {
+    bgGradient: gradients[index],
+    icon: "🎨",
+    categoryLabel: "퍼스널컬러 진단",
+  };
 }
 
 export function PersonalColorCard({
@@ -65,16 +59,16 @@ export function PersonalColorCard({
   unknownReasons?: string[];
 }) {
   const [imgFailed, setImgFailed] = useState(false);
-  const statusBadge = personalColorStatusBadge(vendor.status);
-  const gradeBadge = personalColorGradeBadge(vendor.grade);
   const priceDisplay = formatPersonalColorPrice(vendor);
-  const bgGradient = getPersonalColorGradient(vendor.name);
+  const hasPhoto = Boolean(vendor.photoUrl) && !imgFailed;
+  const fallbackVisual = getPersonalColorFallback(vendor.name);
+  const categoryKicker = vendor.services.slice(0, 2).join("·") || "웨딩 퍼스널컬러";
 
   // Hook for 500ms viewport dwell impression logging
   const cardRef = useCardImpression<HTMLElement>({
     vendorId: vendor.id,
     vendorName: vendor.name,
-    category: "wedding_personal_color",
+    category: "personal_color",
     region: vendor.district,
   });
 
@@ -84,7 +78,7 @@ export function PersonalColorCard({
       vendorName: vendor.name,
       targetType: "naver_map",
       targetUrl: vendor.naverMapUrl || undefined,
-      category: "wedding_personal_color",
+      category: "personal_color",
       region: vendor.district,
     });
   };
@@ -95,7 +89,7 @@ export function PersonalColorCard({
       vendorName: vendor.name,
       targetType: "instagram",
       targetUrl: vendor.instagramUrl || undefined,
-      category: "wedding_personal_color",
+      category: "personal_color",
       region: vendor.district,
     });
   };
@@ -106,7 +100,7 @@ export function PersonalColorCard({
       vendorName: vendor.name,
       targetType: "blog_review",
       targetUrl: vendor.reviewUrl || undefined,
-      category: "wedding_personal_color",
+      category: "personal_color",
       region: vendor.district,
     });
   };
@@ -131,12 +125,12 @@ export function PersonalColorCard({
           href={vendor.instagramUrl}
           target="_blank"
           rel="noreferrer"
-          className="portal-icon-only-btn instagram-portal-btn"
+          className="portal-icon-only-btn"
           title="공식 인스타그램 보기"
           aria-label="공식 인스타그램 보기"
           onClick={handleInstagramClick}
         >
-          <InstagramLogo size={20} weight="bold" color="#E1306C" />
+          <InstagramLogo size={22} weight="bold" color="#E1306C" />
         </a>
       ) : null}
       {vendor.reviewUrl ? (
@@ -149,49 +143,56 @@ export function PersonalColorCard({
           aria-label="실제 후기 및 정보 보기"
           onClick={handleReviewClick}
         >
-          <Article size={20} weight="bold" color="#475569" />
+          <Article size={22} weight="bold" color="#64748B" />
         </a>
       ) : null}
     </div>
   );
 
   return (
-    <article className="restaurant-card personal-color-card" ref={cardRef}>
+    <article className="restaurant-card" ref={cardRef}>
       <div className="restaurant-card-main-grid">
         {/* Left Visual Thumbnail Area */}
-        <div className="restaurant-card-visual-wrapper" style={{ background: bgGradient }}>
-          {vendor.photoUrl && !imgFailed ? (
-            <img
-              src={vendor.photoUrl}
-              alt={vendor.name}
-              className="restaurant-card-img"
-              loading="lazy"
-              referrerPolicy="no-referrer"
-              onError={() => setImgFailed(true)}
-            />
-          ) : (
-            <div className="personal-color-brand-visual">
-              <span className="brand-visual-icon" role="img" aria-label="웨딩 퍼스널컬러">
-                🎨
-              </span>
-              <span className="brand-visual-label">웨딩 컬러진단</span>
-              <span className="brand-visual-watermark">Viewdding</span>
-            </div>
-          )}
-        </div>
+        <a
+          href={vendor.naverMapUrl || "#"}
+          target="_blank"
+          rel="noreferrer"
+          className="restaurant-card-visual-link"
+          onClick={handleNaverMapClick}
+        >
+          <div
+            className="restaurant-card-visual-wrapper"
+            style={!hasPhoto ? { background: fallbackVisual.bgGradient } : undefined}
+          >
+            {hasPhoto ? (
+              <>
+                <img
+                  src={vendor.photoUrl!}
+                  alt={vendor.name}
+                  className="restaurant-card-img"
+                  loading="lazy"
+                  referrerPolicy="no-referrer"
+                  onError={() => setImgFailed(true)}
+                />
+                <span className="restaurant-visual-badge">지도 등록 사진</span>
+              </>
+            ) : (
+              <div className="restaurant-brand-visual">
+                <span className="brand-visual-icon" role="img" aria-label={fallbackVisual.categoryLabel}>
+                  {fallbackVisual.icon}
+                </span>
+                <span className="brand-visual-label">{fallbackVisual.categoryLabel}</span>
+                <span className="brand-visual-watermark">Viewdding</span>
+              </div>
+            )}
+          </div>
+        </a>
 
         {/* Center / Main Body Info */}
         <div className="restaurant-card-body">
           <div className="restaurant-card-top-section">
             <div className="restaurant-kicker-row">
-              <div className="personal-color-badges">
-                <span className={`personal-color-status-pill tone-${statusBadge.tone}`}>
-                  {statusBadge.label}
-                </span>
-                <span className={`personal-color-grade-pill ${gradeBadge.tone}`}>
-                  {gradeBadge.label}
-                </span>
-              </div>
+              <p className="restaurant-kicker">{categoryKicker}</p>
               <div className="restaurant-top-portal-links">
                 {portalLinks}
                 <FavoriteButton itemId={vendor.id} category="wedding_color" compact />
@@ -201,59 +202,45 @@ export function PersonalColorCard({
             <div className="restaurant-title-row">
               <h3 className="restaurant-card-title">
                 {vendor.naverMapUrl ? (
-                  <a
-                    href={vendor.naverMapUrl}
-                    target="_blank"
-                    rel="noreferrer"
-                    onClick={handleNaverMapClick}
-                  >
+                  <a href={vendor.naverMapUrl} target="_blank" rel="noreferrer" onClick={handleNaverMapClick}>
                     {vendor.name}
                   </a>
                 ) : (
                   vendor.name
                 )}
               </h3>
-              <span className="personal-color-price-pill">{priceDisplay}</span>
+              <span className="restaurant-closed-pill" style={{ background: "#FDF2F8", color: "#BE185D" }}>
+                {priceDisplay}
+              </span>
             </div>
 
             <p className="restaurant-location-line">
-              <MapPin size={14} weight="fill" className="location-pin-icon" />
-              <span>{vendor.address || vendor.district}</span>
+              <span>{vendor.district}</span>
+              {vendor.address && vendor.address !== vendor.district ? <span> · {vendor.address}</span> : null}
             </p>
+
+            {vendor.evidence ? <p className="restaurant-point">{vendor.evidence}</p> : null}
           </div>
 
-          {/* Service Feature Tags */}
-          <div className="personal-color-tags-row">
-            {vendor.serviceTags
-              .filter((t) => t !== "color")
-              .slice(0, 4)
-              .map((tag) => {
-                const meta = serviceTagMeta(tag);
-                return (
-                  <span key={tag} className="personal-color-tag-chip" title={meta.description}>
-                    {meta.shortLabel}
+          {/* Bottom chips row */}
+          <div className="restaurant-card-bottom-tags">
+            <div className="chip-row">
+              {vendor.serviceTags
+                .filter((t) => t !== "color")
+                .map((tag) => (
+                  <span key={tag} className="chip">
+                    {serviceTagMeta(tag).shortLabel}
                   </span>
-                );
-              })}
-            {vendor.services.slice(0, 2).map((srv, idx) => (
-              <span key={idx} className="personal-color-sub-chip">
-                {srv}
-              </span>
-            ))}
+                ))}
+              {vendor.services.slice(0, 2).map((srv, idx) => (
+                <span key={idx} className="chip">
+                  {srv}
+                </span>
+              ))}
+            </div>
           </div>
 
-          {/* Evidence / Highlights Bubble */}
-          {vendor.evidence ? (
-            <div className="personal-color-evidence-box">
-              <p className="evidence-text">
-                <Sparkle size={13} weight="fill" className="sparkle-icon" />
-                <span>{vendor.evidence}</span>
-              </p>
-              {vendor.notes ? <p className="notes-text">{vendor.notes}</p> : null}
-            </div>
-          ) : null}
-
-          {/* Unknown reasons warning if any */}
+          {/* Unknown reasons if any */}
           {unknownReasons.length > 0 ? (
             <div className="restaurant-unknown-box">
               <p className="unknown-title">확인 필요 항목</p>
@@ -264,6 +251,33 @@ export function PersonalColorCard({
               </ul>
             </div>
           ) : null}
+        </div>
+
+        {/* Right Metrics & Actions Column (Desktop) */}
+        <div className="restaurant-card-metrics-col">
+          <dl className="restaurant-metrics-grid">
+            <div className="metric-box">
+              <dt>예상 비용</dt>
+              <dd>{priceDisplay}</dd>
+            </div>
+            <div className="metric-box">
+              <dt>주요 진단</dt>
+              <dd>{vendor.services[0] || "퍼스널컬러"}</dd>
+            </div>
+            <div className="metric-box">
+              <dt>체형/골격</dt>
+              <dd>{vendor.serviceTags.includes("body_shape") ? "골격진단 포함" : "컬러 중심"}</dd>
+            </div>
+            <div className="metric-box">
+              <dt>웨딩 스타일</dt>
+              <dd>{vendor.serviceTags.includes("dress") ? "드레스/헤메" : "스타일링"}</dd>
+            </div>
+          </dl>
+
+          <div className="restaurant-metrics-portal-links">
+            {portalLinks}
+            <FavoriteButton itemId={vendor.id} category="wedding_color" compact />
+          </div>
         </div>
       </div>
     </article>

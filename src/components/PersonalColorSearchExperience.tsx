@@ -4,7 +4,6 @@ import { useEffect, useMemo, useState } from "react";
 import { useSearchParams } from "next/navigation";
 import {
   MagnifyingGlass,
-  X,
   SlidersHorizontal,
   MapPin,
   MapTrifold,
@@ -41,7 +40,6 @@ function queryFromFilters(filters: PersonalColorFilterState, viewMode: ViewMode)
   if (filters.district) params.set("district", filters.district);
   if (filters.serviceTags.length > 0) params.set("services", filters.serviceTags.join(","));
   if (filters.priceBudgetMax !== null) params.set("budget", String(filters.priceBudgetMax));
-  if (filters.gradeAOnly) params.set("gradeA", "1");
   return params.toString();
 }
 
@@ -55,8 +53,7 @@ function filterSelectionCount(filters: PersonalColorFilterState): number {
     Number(Boolean(filters.sido)) +
     Number(Boolean(filters.district)) +
     filters.serviceTags.length +
-    Number(filters.priceBudgetMax !== null) +
-    Number(filters.gradeAOnly)
+    Number(filters.priceBudgetMax !== null)
   );
 }
 
@@ -71,7 +68,6 @@ function appliedFilterChips(filters: PersonalColorFilterState): AppliedFilterChi
   if (filters.priceBudgetMax !== null) {
     chips.push({ key: "budget", label: `최대 ${(filters.priceBudgetMax / 10000).toLocaleString("ko-KR")}만원` });
   }
-  if (filters.gradeAOnly) chips.push({ key: "gradeA", label: "A등급 검증" });
   return chips;
 }
 
@@ -103,7 +99,7 @@ export function PersonalColorSearchExperience({
       district: initialDistrict,
       serviceTags: serviceTagsFrom(searchParams.get("services")),
       priceBudgetMax: searchParams.get("budget") ? Number(searchParams.get("budget")) : null,
-      gradeAOnly: searchParams.get("gradeA") === "1",
+      gradeAOnly: false,
       includeOnHold: false,
     };
 
@@ -124,6 +120,7 @@ export function PersonalColorSearchExperience({
   );
   const activeFilterChips = useMemo(() => appliedFilterChips(applied), [applied]);
   const appliedCount = filterSelectionCount(applied);
+  const detailCount = Number(applied.priceBudgetMax !== null);
   const total = results.matched.length + results.unknown.length;
 
   function commit(next: PersonalColorFilterState) {
@@ -141,186 +138,164 @@ export function PersonalColorSearchExperience({
     window.history.replaceState(null, "", `${window.location.pathname}${query ? `?${query}` : ""}`);
   }
 
-  function toggleQuickServiceTag(tag: PersonalColorServiceTag) {
-    const exists = applied.serviceTags.includes(tag);
-    const nextTags = exists
-      ? applied.serviceTags.filter((t) => t !== tag)
-      : [...applied.serviceTags, tag];
-    commit({ ...applied, serviceTags: nextTags });
-  }
-
-  function removeFilterChip(chipKey: string) {
-    if (chipKey === "keyword") commit({ ...applied, keyword: "" });
+  function clearAppliedFilter(chipKey: string) {
+    const next = { ...applied };
+    if (chipKey === "keyword") next.keyword = "";
     else if (chipKey === "sido") {
       setSelectedSidos([]);
-      commit({ ...applied, sido: "" });
+      next.sido = "";
     } else if (chipKey === "district") {
       setSelectedDistricts([]);
-      commit({ ...applied, district: "" });
+      next.district = "";
     } else if (chipKey.startsWith("service:")) {
       const tag = chipKey.replace("service:", "") as PersonalColorServiceTag;
-      commit({ ...applied, serviceTags: applied.serviceTags.filter((t) => t !== tag) });
-    } else if (chipKey === "budget") commit({ ...applied, priceBudgetMax: null });
-    else if (chipKey === "gradeA") commit({ ...applied, gradeAOnly: false });
+      next.serviceTags = next.serviceTags.filter((t) => t !== tag);
+    } else if (chipKey === "budget") next.priceBudgetMax = null;
+
+    commit(next);
   }
 
-  const regionLabel = useMemo(() => {
-    if (applied.district) return applied.district;
-    if (applied.sido) return shortSidoLabel(applied.sido as Sido);
-    return "전국 지역";
-  }, [applied.sido, applied.district]);
+  const regionSummaryText = useMemo(() => {
+    if (draft.district) return draft.district;
+    if (selectedDistricts.length > 0) return selectedDistricts[0];
+    if (selectedSidos.length > 0) return `${shortSidoLabel(selectedSidos[0])} 전체`;
+    return "지역";
+  }, [draft.district, selectedDistricts, selectedSidos]);
+
+  const serviceSummaryText = useMemo(() => {
+    if (draft.serviceTags.length === 0) return "진단 서비스";
+    return draft.serviceTags.map((t) => serviceTagMeta(t).shortLabel).join(", ");
+  }, [draft.serviceTags]);
+
+  const handleRegionApply = (sidos: Sido[], _codes: string[], districts: string[]) => {
+    setSelectedSidos(sidos);
+    setSelectedDistricts(districts);
+    const chosenDistrict = districts[0] || (sidos.length > 0 ? `${shortSidoLabel(sidos[0])}` : "");
+    const nextDraft = { ...draft, district: chosenDistrict, sido: sidos[0] ?? "" };
+    commit(nextDraft);
+  };
+
+  const handleFilterSheetApply = (nextState: PersonalColorFilterState) => {
+    commit(nextState);
+  };
 
   return (
-    <div className="search-experience personal-color-experience">
-      {/* Header Search Section */}
-      <section className="search-header-panel">
-        <div className="search-header-top">
-          <div className="search-input-wrapper">
-            <MagnifyingGlass size={18} className="search-input-icon" />
-            <input
-              type="text"
-              placeholder="업체명, 지역명(강남, 성수, 전주 등), 서비스 검색"
-              value={draft.keyword}
-              onChange={(e) => setDraft({ ...draft, keyword: e.target.value })}
-              onKeyDown={(e) => {
-                if (e.key === "Enter") {
-                  commit({ ...applied, keyword: draft.keyword });
-                }
+    <section className={`restaurant-search-experience${viewMode === "map" ? " is-map-mode" : ""}`}>
+      {/* Top Search & Filter Bar */}
+      <div className="search-top-bar">
+        <div className="search-input-wrapper">
+          <input
+            type="text"
+            className="search-keyword-input"
+            placeholder="웨딩 퍼스널 컬러 업체를 검색해 보세요. (업체명, 지역명, 서비스)"
+            value={draft.keyword}
+            onChange={(e) => {
+              const next = { ...draft, keyword: e.target.value };
+              setDraft(next);
+              commit(next);
+            }}
+          />
+          {draft.keyword ? (
+            <button
+              type="button"
+              className="search-clear-btn"
+              onClick={() => {
+                const next = { ...draft, keyword: "" };
+                setDraft(next);
+                commit(next);
               }}
-              className="search-input-field"
-            />
-            {draft.keyword ? (
-              <button
-                type="button"
-                className="search-clear-btn"
-                onClick={() => {
-                  setDraft({ ...draft, keyword: "" });
-                  commit({ ...applied, keyword: "" });
-                }}
-                aria-label="검색어 지우기"
-              >
-                <X size={16} />
-              </button>
-            ) : null}
-          </div>
-
-          <button
-            type="button"
-            className={`view-mode-toggle-btn ${viewMode === "map" ? "is-active" : ""}`}
-            onClick={toggleViewMode}
-            aria-label={viewMode === "list" ? "지도 보기로 전환" : "목록 보기로 전환"}
-          >
-            {viewMode === "list" ? (
-              <>
-                <MapTrifold size={18} weight="bold" />
-                <span>지도</span>
-              </>
-            ) : (
-              <>
-                <List size={18} weight="bold" />
-                <span>목록</span>
-              </>
-            )}
-          </button>
+              aria-label="검색어 지우기"
+            >
+              ×
+            </button>
+          ) : (
+            <MagnifyingGlass size={18} className="search-input-icon" />
+          )}
         </div>
 
-        {/* Quick Filter Bar */}
-        <div className="quick-filter-scroll-row">
-          {/* Region Picker Trigger */}
+        <div className="filter-pills-bar">
           <button
             type="button"
-            className={`quick-filter-chip region-chip ${applied.sido || applied.district ? "is-selected" : ""}`}
-            onClick={() => setRegionModalOpen(true)}
-          >
-            <MapPin size={15} weight="fill" />
-            <span>{regionLabel}</span>
-          </button>
-
-          {/* Quick Service Tags */}
-          <button
-            type="button"
-            className={`quick-filter-chip ${applied.serviceTags.includes("body_shape") ? "is-selected" : ""}`}
-            onClick={() => toggleQuickServiceTag("body_shape")}
-          >
-            <span>골격·체형</span>
-          </button>
-          <button
-            type="button"
-            className={`quick-filter-chip ${applied.serviceTags.includes("dress") ? "is-selected" : ""}`}
-            onClick={() => toggleQuickServiceTag("dress")}
-          >
-            <span>드레스·소재</span>
-          </button>
-          <button
-            type="button"
-            className={`quick-filter-chip ${applied.serviceTags.includes("makeup_hair") ? "is-selected" : ""}`}
-            onClick={() => toggleQuickServiceTag("makeup_hair")}
-          >
-            <span>헤어·메이크업</span>
-          </button>
-          <button
-            type="button"
-            className={`quick-filter-chip ${applied.serviceTags.includes("couple") ? "is-selected" : ""}`}
-            onClick={() => toggleQuickServiceTag("couple")}
-          >
-            <span>커플·신랑</span>
-          </button>
-
-          {/* Detail Filter Modal Trigger */}
-          <button
-            type="button"
-            className={`quick-filter-chip filter-modal-trigger ${appliedCount > 0 ? "is-selected" : ""}`}
+            className={`filter-pill-chip${appliedCount > 0 ? " has-active" : ""}`}
             onClick={() => {
               setFilterModalMode("all");
               setFilterSheetOpen(true);
             }}
+            aria-label="전체 필터"
           >
-            <SlidersHorizontal size={15} weight="bold" />
-            <span>상세 필터</span>
-            {appliedCount > 0 ? <span className="filter-count-badge">{appliedCount}</span> : null}
+            <SlidersHorizontal size={15} />
+          </button>
+
+          <button
+            type="button"
+            className={`filter-pill-chip${draft.district || selectedSidos.length > 0 ? " is-selected" : ""}`}
+            onClick={() => setRegionModalOpen(true)}
+          >
+            <MapPin size={14} />
+            <span>{regionSummaryText}</span>
+            <span className="pill-arrow">∨</span>
+          </button>
+
+          <button
+            type="button"
+            className={`filter-pill-chip${draft.serviceTags.length > 0 ? " is-selected" : ""}`}
+            onClick={() => {
+              setFilterModalMode("service");
+              setFilterSheetOpen(true);
+            }}
+          >
+            <span>{serviceSummaryText}</span>
+            <span className="pill-arrow">∨</span>
+          </button>
+
+          <button
+            type="button"
+            className={`filter-pill-chip${detailCount > 0 ? " is-selected" : ""}`}
+            onClick={() => {
+              setFilterModalMode("detail");
+              setFilterSheetOpen(true);
+            }}
+          >
+            <span>상세필터{detailCount ? ` ${detailCount}` : ""}</span>
+            <span className="pill-arrow">∨</span>
           </button>
         </div>
+      </div>
 
-        {/* Applied Filter Chips Row */}
+      {/* Results Header with Applied Chips & Count */}
+      <div id="restaurant-results" className="results-heading">
         {activeFilterChips.length > 0 ? (
-          <div className="applied-chips-row">
+          <div className="applied-chips">
             {activeFilterChips.map((chip) => (
-              <span key={chip.key} className="applied-filter-tag">
-                <span>{chip.label}</span>
-                <button
-                  type="button"
-                  onClick={() => removeFilterChip(chip.key)}
-                  aria-label={`${chip.label} 필터 제거`}
-                >
-                  <X size={12} weight="bold" />
-                </button>
-              </span>
+              <button
+                key={chip.key}
+                type="button"
+                aria-label={`${chip.label} 필터 해제`}
+                onClick={() => clearAppliedFilter(chip.key)}
+              >
+                {chip.label}
+                <span className="filter-chip-remove" aria-hidden="true">
+                  ✕
+                </span>
+              </button>
             ))}
-            <button
-              type="button"
-              className="applied-filter-reset-btn"
-              onClick={() => {
-                setSelectedSidos([]);
-                setSelectedDistricts([]);
-                commit({ ...EMPTY_PERSONAL_COLOR_FILTERS });
-              }}
-            >
-              전체 초기화
-            </button>
           </div>
         ) : null}
-      </section>
 
-      {/* Main Content Area */}
-      {viewMode === "list" ? (
-        <section className="search-results-section">
-          <div className="search-results-meta">
-            <p className="results-count-text">
-              총 <strong>{total}</strong>개의 웨딩 퍼스널컬러 업체를 찾았습니다.
-            </p>
+        <div className="result-heading-row">
+          <div className="result-summary" aria-live="polite">
+            <strong>총 {results.matched.length}개</strong>
+            <span>정보 미확인 {results.unknown.length}개 · 총 {total}개 업체</span>
           </div>
+        </div>
+      </div>
 
-          <div className="restaurant-cards-list">
+      {/* Main Content Area: Map or List */}
+      {viewMode === "map" ? (
+        <KakaoPersonalColorMap vendors={mapVendors} appKey={kakaoMapAppKey} />
+      ) : (
+        <>
+          <div className="restaurant-result-list">
             {results.matched.slice(0, visibleCount).map(({ vendor }) => (
               <PersonalColorCard key={vendor.id} vendor={vendor} />
             ))}
@@ -331,13 +306,13 @@ export function PersonalColorSearchExperience({
           </div>
 
           {total === 0 ? (
-            <div className="search-empty-state">
-              <Sparkle size={36} color="var(--muted)" />
-              <p className="empty-title">선택한 조건에 맞는 업체가 없습니다.</p>
-              <p className="empty-desc">지역이나 진단 서비스 필터를 변경해 보세요.</p>
+            <div className="empty-state" style={{ marginTop: "40px" }}>
+              <h2>선택한 조건에 맞는 업체가 없습니다.</h2>
+              <p>지역이나 진단 서비스 필터를 변경해 보세요.</p>
               <button
                 type="button"
-                className="empty-reset-btn"
+                className="primary-link"
+                style={{ marginTop: "16px", cursor: "pointer", border: "none" }}
                 onClick={() => {
                   setSelectedSidos([]);
                   setSelectedDistricts([]);
@@ -349,23 +324,39 @@ export function PersonalColorSearchExperience({
             </div>
           ) : null}
 
-          {visibleCount < total ? (
-            <div className="search-load-more-wrapper">
+          {results.matched.length > visibleCount ? (
+            <div className="restaurant-load-more-row">
               <button
                 type="button"
-                className="search-load-more-btn"
+                className="restaurant-load-more-btn"
                 onClick={() => setVisibleCount((prev) => prev + PAGE_SIZE)}
               >
-                더보기 ({visibleCount}/{total})
+                더 많은 웨딩 퍼스널 컬러 업체 보기 (+{Math.min(PAGE_SIZE, results.matched.length - visibleCount)}곳)
               </button>
             </div>
           ) : null}
-        </section>
-      ) : (
-        <section className="search-map-section" style={{ height: "calc(100svh - 180px)", minHeight: "500px" }}>
-          <KakaoPersonalColorMap vendors={mapVendors} appKey={kakaoMapAppKey} />
-        </section>
+        </>
       )}
+
+      {/* Floating Bottom-Right Map Toggle Button */}
+      <button
+        type="button"
+        className="map-floating-toggle-btn"
+        onClick={toggleViewMode}
+        aria-label={viewMode === "list" ? "지도 보기로 전환" : "목록 보기로 전환"}
+      >
+        {viewMode === "list" ? (
+          <>
+            <MapTrifold size={18} weight="bold" />
+            <span>지도</span>
+          </>
+        ) : (
+          <>
+            <List size={18} weight="bold" />
+            <span>목록</span>
+          </>
+        )}
+      </button>
 
       {/* Region Picker Modal */}
       <RegionPickerModal
@@ -374,15 +365,7 @@ export function PersonalColorSearchExperience({
         selectedSidos={selectedSidos}
         selectedRegionCodes={[]}
         selectedDistricts={selectedDistricts}
-        onApply={(sidos, _regionCodes, districts) => {
-          setSelectedSidos(sidos);
-          setSelectedDistricts(districts);
-          commit({
-            ...applied,
-            sido: sidos[0] ?? "",
-            district: districts[0] ?? "",
-          });
-        }}
+        onApply={handleRegionApply}
         title="웨딩 퍼스널 컬러 지역 선택"
       />
 
@@ -391,10 +374,10 @@ export function PersonalColorSearchExperience({
         isOpen={filterSheetOpen}
         onClose={() => setFilterSheetOpen(false)}
         filters={draft}
-        onApply={(next) => commit(next)}
+        onApply={handleFilterSheetApply}
         totalMatchesCount={draftResults.matched.length + draftResults.unknown.length}
         mode={filterModalMode}
       />
-    </div>
+    </section>
   );
 }

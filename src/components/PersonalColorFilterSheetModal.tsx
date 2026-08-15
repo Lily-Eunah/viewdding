@@ -59,16 +59,12 @@ export function PersonalColorFilterSheetModal({
       setDraft((prev) => ({
         ...prev,
         priceBudgetMax: null,
-        gradeAOnly: false,
-        includeOnHold: false,
       }));
     } else {
       setDraft({
         ...initialFilters,
         serviceTags: [],
         priceBudgetMax: null,
-        gradeAOnly: false,
-        includeOnHold: false,
       });
     }
   };
@@ -135,43 +131,24 @@ export function PersonalColorFilterSheetModal({
 
           {/* Budget Filter Section */}
           {showDetail ? (
-            <>
-              <section className="filter-sheet-section">
-                <h3>예상 예산 (1인 기준)</h3>
-                <div className="filter-sheet-btn-group">
-                  {BUDGET_OPTIONS.map((opt) => {
-                    const active = draft.priceBudgetMax === opt.value;
-                    return (
-                      <button
-                        key={String(opt.value)}
-                        type="button"
-                        className={`filter-group-btn ${active ? "is-active" : ""}`}
-                        onClick={() => setDraft((prev) => ({ ...prev, priceBudgetMax: opt.value }))}
-                      >
-                        {opt.label}
-                      </button>
-                    );
-                  })}
-                </div>
-              </section>
-
-              {/* Verification & Grade Section */}
-              <section className="filter-sheet-section">
-                <h3>검증 등급</h3>
-                <div className="filter-sheet-toggle-row">
-                  <div>
-                    <span className="toggle-label">A등급 검증 업체만 보기</span>
-                    <span className="toggle-sub">플레이스 예약·공식 상품·최근 후기 확인 완료</span>
-                  </div>
-                  <input
-                    type="checkbox"
-                    className="filter-toggle-switch"
-                    checked={draft.gradeAOnly}
-                    onChange={(e) => setDraft((prev) => ({ ...prev, gradeAOnly: e.target.checked }))}
-                  />
-                </div>
-              </section>
-            </>
+            <section className="filter-sheet-section">
+              <h3>예상 예산 (1인 기준)</h3>
+              <div className="filter-sheet-btn-group">
+                {BUDGET_OPTIONS.map((opt) => {
+                  const active = draft.priceBudgetMax === opt.value;
+                  return (
+                    <button
+                      key={String(opt.value)}
+                      type="button"
+                      className={`filter-group-btn ${active ? "is-active" : ""}`}
+                      onClick={() => setDraft((prev) => ({ ...prev, priceBudgetMax: opt.value }))}
+                    >
+                      {opt.label}
+                    </button>
+                  );
+                })}
+              </div>
+            </section>
           ) : null}
         </div>
 
