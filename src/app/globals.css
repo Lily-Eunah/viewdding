@@ -2569,6 +2569,274 @@ body:has(.landing-page-reference):after{display:none}
   }
 }
 
+/* Wedding Personal Color Styling */
+.personal-color-experience .results-count-text strong {
+  color: #be185d;
+}
+
+.personal-color-card {
+  border-radius: 16px;
+  background: #faf7f1;
+  border: 1px solid #d1c8bc;
+}
+
+.personal-color-brand-visual {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  min-height: 170px;
+  padding: 16px 12px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.personal-color-badges {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.personal-color-status-pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 7px;
+  border-radius: 4px;
+  font-size: 10.5px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.personal-color-status-pill.tone-primary {
+  background: #ecfdf5;
+  color: #047857;
+  border: 1px solid #a7f3d0;
+}
+
+.personal-color-status-pill.tone-warning {
+  background: #fffbeb;
+  color: #b45309;
+  border: 1px solid #fde68a;
+}
+
+.personal-color-status-pill.tone-neutral {
+  background: #f1f5f9;
+  color: #475569;
+  border: 1px solid #cbd5e1;
+}
+
+.personal-color-grade-pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.personal-color-grade-pill.badge-a {
+  background: #eff6ff;
+  color: #1d4ed8;
+  border: 1px solid #bfdbfe;
+}
+
+.personal-color-grade-pill.badge-b {
+  background: #f8fafc;
+  color: #475569;
+  border: 1px solid #e2e8f0;
+}
+
+.personal-color-grade-pill.badge-c {
+  background: #f8fafc;
+  color: #94a3b8;
+  border: 1px solid #e2e8f0;
+}
+
+.personal-color-price-pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 8px;
+  border-radius: 6px;
+  background: #fdf2f8;
+  color: #be185d;
+  border: 1px solid #fbcfe8;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  flex-shrink: 0;
+}
+
+.personal-color-tags-row {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  flex-wrap: wrap;
+  margin: 6px 0;
+}
+
+.personal-color-tag-chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 700;
+  background: #f5f3ff;
+  color: #6d28d9;
+  border: 1px solid #ddd6fe;
+}
+
+.personal-color-sub-chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 7px;
+  border-radius: 999px;
+  font-size: 10.5px;
+  color: #57534e;
+  background: #f5f5f4;
+  border: 1px solid #e7e5e4;
+}
+
+.personal-color-evidence-box {
+  background: #ffffff;
+  border: 1px solid #ede8df;
+  border-radius: 8px;
+  padding: 8px 10px;
+  margin-top: 6px;
+}
+
+.personal-color-evidence-box .evidence-text {
+  margin: 0;
+  font-size: 11.5px;
+  font-weight: 600;
+  color: #44403c;
+  display: flex;
+  align-items: flex-start;
+  gap: 5px;
+  line-height: 1.4;
+}
+
+.personal-color-evidence-box .evidence-text .sparkle-icon {
+  color: #be185d;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.personal-color-evidence-box .notes-text {
+  margin: 4px 0 0 18px;
+  font-size: 11px;
+  color: #78716c;
+  line-height: 1.35;
+}
+
+.filter-sheet-grid-tags {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.filter-service-tag-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 14px;
+  background: #ffffff;
+  border: 1px solid #e7e5e4;
+  border-radius: 10px;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.filter-service-tag-card:hover {
+  border-color: #be185d;
+  background: #fff1f2;
+}
+
+.filter-service-tag-card.is-active {
+  border-color: #be185d;
+  background: #fff1f2;
+}
+
+.tag-card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.tag-card-title {
+  font-size: 13px;
+  font-weight: 700;
+  color: #1c1917;
+}
+
+.tag-card-desc {
+  font-size: 11px;
+  color: #78716c;
+}
+
+.tag-checkbox {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1.5px solid #d6d3d1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  background: #ffffff;
+  flex-shrink: 0;
+  transition: all 0.15s ease;
+}
+
+.tag-checkbox.is-checked {
+  background: #be185d;
+  border-color: #be185d;
+}
+
+.filter-section-desc {
+  margin: 0 0 8px;
+  font-size: 12px;
+  color: #78716c;
+}
+
+.filter-sheet-toggle-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 14px;
+  background: #ffffff;
+  border: 1px solid #e7e5e4;
+  border-radius: 10px;
+}
+
+.toggle-label {
+  display: block;
+  font-size: 13px;
+  font-weight: 700;
+  color: #1c1917;
+}
+
+.toggle-sub {
+  display: block;
+  font-size: 11px;
+  color: #78716c;
+  margin-top: 2px;
+}
+
+.filter-toggle-switch {
+  width: 20px;
+  height: 20px;
+  accent-color: #be185d;
+  cursor: pointer;
+}
+
+
 
 
 
