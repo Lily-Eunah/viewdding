@@ -14,12 +14,21 @@ export function gatheringPurposeLabel(restaurant: RestaurantRecord): string {
   return restaurant.purpose === "invitation" ? "청첩장 모임" : "상견례";
 }
 
+export function formatPriceWan(value: number): string {
+  const wan = value / 10000;
+  return Number.isInteger(wan) ? String(wan) : wan.toFixed(1).replace(/\.0$/, "");
+}
+
 export function restaurantPriceLabel(restaurant: RestaurantRecord): string {
   const { min, max } = restaurant.pricePerPerson;
-  if (min !== null && max !== null) return min === max ? won(min) : `${won(min)}~${won(max)}`;
-  if (min !== null) return `${won(min)}부터`;
-  if (max !== null) return `${won(max)}까지`;
-  return "확인 필요";
+  if (min !== null && max !== null) {
+    return min === max
+      ? `${formatPriceWan(min)}만원`
+      : `${formatPriceWan(min)}~${formatPriceWan(max)}만원`;
+  }
+  if (min !== null) return `${formatPriceWan(min)}만원~`;
+  if (max !== null) return `~${formatPriceWan(max)}만원`;
+  return "-";
 }
 
 export function restaurantMealMinimumLabel(
@@ -51,17 +60,17 @@ export function restaurantCompanionVisitLabel(companion: string): string {
 export function restaurantRoomLabel(restaurant: RestaurantRecord): string {
   if (restaurant.privateRoom === "no") return "룸 없음";
   const { min, max } = restaurant.roomCapacity;
-  if (min !== null && max !== null) return min === max ? `${min}명` : `${min}~${max}명`;
-  if (min !== null) return `${min}명 이상`;
-  if (max !== null) return `${max}명까지`;
-  return restaurant.privateRoom === "yes" ? "룸 있음 · 인원 확인 필요" : "확인 필요";
+  if (min !== null && max !== null) return min === max ? `${min}인 룸` : `${min}~${max}인 룸`;
+  if (min !== null) return `${min}인 이상 룸`;
+  if (max !== null) return `최대 ${max}인 룸`;
+  return restaurant.privateRoom === "yes" ? "룸 있음" : "-";
 }
 
 export function restaurantParkingLabel(restaurant: RestaurantRecord): string {
-  if (restaurant.parking === "valet") return "발렛";
-  if (restaurant.parking === "available") return "가능";
-  if (restaurant.parking === "none") return "불가";
-  return "확인 필요";
+  if (restaurant.parking === "valet") return "발렛 가능";
+  if (restaurant.parking === "available") return "주차 가능";
+  if (restaurant.parking === "none") return "주차 불가";
+  return "-";
 }
 
 export function restaurantClosedDaysLabel(restaurant: RestaurantRecord): string {
@@ -70,8 +79,21 @@ export function restaurantClosedDaysLabel(restaurant: RestaurantRecord): string 
   return `${restaurant.closedWeekdays.map((day) => WEEKDAY_LABELS[day]).join("·")} 휴무`;
 }
 
+export function restaurantClosedBadgeLabel(restaurant: RestaurantRecord): string | null {
+  if (restaurant.closedWeekdays === null) return null;
+  if (restaurant.closedWeekdays.length === 0) return "연중무휴";
+  return `${restaurant.closedWeekdays.map((day) => WEEKDAY_LABELS[day]).join("·")} 휴무`;
+}
+
 export function restaurantStationLabel(restaurant: RestaurantRecord): string {
   if (!restaurant.nearestStation) return "가까운 역 확인 필요";
+  const exit = restaurant.stationExit ? ` ${restaurant.stationExit}` : "";
+  const walk = restaurant.walkingMinutes !== null ? ` · 도보 ${restaurant.walkingMinutes}분` : "";
+  return `${restaurant.nearestStation}${exit}${walk}`;
+}
+
+export function restaurantStationCleanLabel(restaurant: RestaurantRecord): string | null {
+  if (!restaurant.nearestStation || restaurant.nearestStation.includes("확인")) return null;
   const exit = restaurant.stationExit ? ` ${restaurant.stationExit}` : "";
   const walk = restaurant.walkingMinutes !== null ? ` · 도보 ${restaurant.walkingMinutes}분` : "";
   return `${restaurant.nearestStation}${exit}${walk}`;

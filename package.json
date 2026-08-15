@@ -5,15 +5,17 @@
   "type": "module",
   "scripts": {
     "dev": "next dev",
-    "data:build": "node scripts/build-regional-expansion-source.mjs && node scripts/build-national-followup-source.mjs && tsx scripts/build-data.ts && npm run data:hall-geocodes && npm run data:restaurants",
+    "data:seo-csv": "tsx scripts/build-seo-csv.ts",
+    "data:build": "node scripts/build-regional-expansion-source.mjs && node scripts/build-national-followup-source.mjs && tsx scripts/build-data.ts && npm run data:hall-geocodes && npm run data:restaurants && npm run data:seo-csv",
     "data:hall-geocodes": "tsx scripts/build-hall-geocodes.ts",
     "data:hall-photo-audit": "tsx scripts/build-hall-photo-audit.ts",
     "data:restaurants": "tsx scripts/build-restaurants.ts",
+    "data:restaurant-photos": "tsx scripts/build-restaurant-photos.ts",
     "sites:stage": "tsx scripts/stage-sites.ts",
     "sites:build": "npm run build && npm run sites:stage",
     "test": "vitest run",
     "typecheck": "tsc --noEmit --incremental false",
-    "build": "next build --webpack && npm run sites:stage"
+    "build": "npm run data:seo-csv && next build --webpack && npm run sites:stage"
   },
   "dependencies": {
     "@next/env": "16.3.0",

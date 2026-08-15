@@ -1,35 +1,42 @@
 "use client";
 
 import Link from "next/link";
-import { Buildings, ForkKnife, Heart, House } from "@phosphor-icons/react";
-import { usePathname } from "next/navigation";
-
-const NAV_ITEMS = [
-  { href: "/", label: "홈", Icon: House, paths: ["/"] },
-  { href: "/search/", label: "웨딩홀", Icon: Buildings, paths: ["/search", "/halls"] },
-  { href: "/gatherings/", label: "모임장소", Icon: ForkKnife, paths: ["/gatherings", "/restaurants"] },
-  { href: "/favorites/", label: "저장", Icon: Heart, paths: ["/favorites"] },
-] as const;
-
-function isActivePath(pathname: string, paths: readonly string[]): boolean {
-  if (paths.includes("/") && pathname === "/") return true;
-  return paths.filter((path) => path !== "/").some((path) => pathname === path || pathname.startsWith(`${path}/`));
-}
+import { Buildings, EnvelopeSimple, Heart, House, Wine } from "@phosphor-icons/react";
+import { usePathname, useSearchParams } from "next/navigation";
 
 export function BottomNav() {
   const pathname = usePathname() ?? "";
+  const searchParams = useSearchParams();
+  const purpose = searchParams?.get("purpose");
+
+  const navItems = [
+    { key: "home", href: "/", label: "홈", Icon: House, active: pathname === "/" },
+    { key: "wedding", href: "/search/", label: "웨딩홀", Icon: Buildings, active: pathname.startsWith("/search") || pathname.startsWith("/halls") },
+    {
+      key: "invitation",
+      href: "/gatherings/?purpose=invitation",
+      label: "청첩장 모임",
+      Icon: EnvelopeSimple,
+      active: pathname.startsWith("/gatherings") && purpose !== "family_meeting",
+    },
+    {
+      key: "family_meeting",
+      href: "/gatherings/?purpose=family_meeting",
+      label: "상견례",
+      Icon: Wine,
+      active: pathname.startsWith("/gatherings") && purpose === "family_meeting",
+    },
+    { key: "favorites", href: "/favorites/", label: "저장", Icon: Heart, active: pathname.startsWith("/favorites") },
+  ];
 
   return (
     <nav className="bottom-nav" aria-label="주요 메뉴">
-      {NAV_ITEMS.map(({ href, label, Icon, paths }) => {
-        const active = isActivePath(pathname, paths);
-        return (
-          <Link key={href} href={href} className={active ? "is-active" : undefined} aria-current={active ? "page" : undefined}>
-            <Icon aria-hidden="true" size={22} weight={active ? "fill" : "regular"} />
-            <span>{label}</span>
-          </Link>
-        );
-      })}
+      {navItems.map(({ key, href, label, Icon, active }) => (
+        <Link key={key} href={href} className={active ? "is-active" : undefined} aria-current={active ? "page" : undefined}>
+          <Icon aria-hidden="true" size={22} weight={active ? "fill" : "regular"} />
+          <span>{label}</span>
+        </Link>
+      ))}
     </nav>
   );
 }

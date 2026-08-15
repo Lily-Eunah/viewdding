@@ -42,9 +42,11 @@ export interface RestaurantRecord {
   latitude: number | null;
   longitude: number | null;
   active: boolean;
+  photoUrl?: string | null;
 }
 
 export interface RestaurantFilterState {
+  keyword: string;
   purpose: GatheringPurpose;
   district: string;
   area: string;

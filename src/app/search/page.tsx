@@ -1,13 +1,14 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { SearchExperience } from "@/components/SearchExperience";
 
 export const metadata: Metadata = {
-  title: "웨딩홀 검색",
-  description: "전국 주요 지역 웨딩홀을 시도·시군구와 예식 조건별로 검색해 보세요.",
+  title: "웨딩홀 모아보기 및 검색",
+  description: "전국 주요 지역 웨딩홀 큐레이션 추천과 시도·시군구 및 예식 조건별 실시간 검색을 이용해 보세요.",
   alternates: { canonical: "/search/" },
 };
 
 export default function SearchPage() {
-  return <><section className="finder-intro"><div><p className="eyebrow">VIEWDDING · REGIONAL VENUES</p><h1>WEDDING VENUE</h1><p><strong>지역별 웨딩홀 찾기</strong><br />서울부터 광주·천안아산·울산·청주·제주·전주까지 여러 지역을 골라 함께 비교해 보세요.<br /><Link className="finder-seo-link" href="/seoul/wedding-halls/">서울 전체 리스트</Link> · <Link className="finder-seo-link" href="/gyeonggi/wedding-halls/">경기 전체 리스트</Link></p></div></section><SearchExperience compact kakaoMapAppKey={process.env.NEXT_PUBLIC_KAKAO_MAP_JS_KEY ?? ""} /></>;
+  return (
+    <SearchExperience compact kakaoMapAppKey={process.env.NEXT_PUBLIC_KAKAO_MAP_JS_KEY ?? ""} />
+  );
 }

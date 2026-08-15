@@ -28,8 +28,11 @@ export default function HomePage() {
           <Link className="landing-crisp-cta" href="/search/">
             <span>Wedding Hall 둘러보기</span><span className="landing-crisp-arrow" aria-hidden="true">→</span>
           </Link>
-          <Link className="landing-crisp-cta" href="/gatherings/">
-            <span>Gathering Map 둘러보기</span><span className="landing-crisp-arrow" aria-hidden="true">→</span>
+          <Link className="landing-crisp-cta" href="/gatherings/?purpose=invitation">
+            <span>Invitation 청첩장 모임</span><span className="landing-crisp-arrow" aria-hidden="true">→</span>
+          </Link>
+          <Link className="landing-crisp-cta" href="/gatherings/?purpose=family_meeting">
+            <span>Family Meeting 상견례</span><span className="landing-crisp-arrow" aria-hidden="true">→</span>
           </Link>
         </nav>
         <p className="landing-crisp-footer">Viewdding · For every wedding moment</p>
