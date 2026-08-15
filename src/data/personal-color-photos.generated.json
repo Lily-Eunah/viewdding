@@ -2,11 +2,11 @@
   "WD-001": {
     "vendorId": "WD-001",
     "name": "희플레이스",
-    "photoUrl": "https://postfiles.pstatic.net/MjAyNjA4MDZfMjU3/MDAxNzg1OTk5MDE4NDEy.KhogsuRB9u03Df31BYUKB3O8KuqF1mOevD4qtZEACjog.lq-6pI3SyGISWTQe_UTFKxWxVvi-eUgVGlohsihy5fog.JPEG/20260805_120410.jpg?type=w466",
-    "thumbnailUrl": "https://postfiles.pstatic.net/MjAyNjA4MDZfMjU3/MDAxNzg1OTk5MDE4NDEy.KhogsuRB9u03Df31BYUKB3O8KuqF1mOevD4qtZEACjog.lq-6pI3SyGISWTQe_UTFKxWxVvi-eUgVGlohsihy5fog.JPEG/20260805_120410.jpg?type=w466",
-    "sourceType": "kakao_place",
-    "placeUrl": "http://place.map.kakao.com/821860957",
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "photoUrl": null,
+    "thumbnailUrl": null,
+    "sourceType": "none",
+    "placeUrl": null,
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-002": {
     "vendorId": "WD-002",
@@ -15,7 +15,7 @@
     "thumbnailUrl": "https://t1.kakaocdn.net/fiy_reboot/place/82E1782D8809464EBB5E551610F64A0F",
     "sourceType": "kakao_place",
     "placeUrl": "http://place.map.kakao.com/1068005098",
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-003": {
     "vendorId": "WD-003",
@@ -24,16 +24,16 @@
     "thumbnailUrl": null,
     "sourceType": "none",
     "placeUrl": null,
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-004": {
     "vendorId": "WD-004",
     "name": "핏컬러",
-    "photoUrl": "https://postfiles.pstatic.net/MjAyNjAxMTNfMjIw/MDAxNzY4MjkxNTQxMTI2.lQ8zEcD8oic-dCTLrrM8-XspXOkxQhLIv1LccEDkiKQg.6vhrrqN0bmJ9tCBZt6fa1ADINOJSYa5ZeNpSAvI7RtAg.PNG/5.png?type=w966",
-    "thumbnailUrl": "https://postfiles.pstatic.net/MjAyNjAxMTNfMjIw/MDAxNzY4MjkxNTQxMTI2.lQ8zEcD8oic-dCTLrrM8-XspXOkxQhLIv1LccEDkiKQg.6vhrrqN0bmJ9tCBZt6fa1ADINOJSYa5ZeNpSAvI7RtAg.PNG/5.png?type=w966",
-    "sourceType": "kakao_place",
-    "placeUrl": "http://place.map.kakao.com/219225356",
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "photoUrl": null,
+    "thumbnailUrl": null,
+    "sourceType": "none",
+    "placeUrl": null,
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-005": {
     "vendorId": "WD-005",
@@ -42,16 +42,16 @@
     "thumbnailUrl": null,
     "sourceType": "none",
     "placeUrl": null,
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-006": {
     "vendorId": "WD-006",
     "name": "꼴로레",
-    "photoUrl": "https://postfiles.pstatic.net/MjAyNjA3MjJfMTAw/MDAxNzg0NzIzMTc2MDk2.F5MYpOYQY2fh9doGu9a9cWTfm83Tn24DOYFDZpgPcEUg.eWAWZNuwbiwMCWUhPfv2fhCkamnovR_W1LOrIimq_lwg.JPEG/SE-66ef89d1-ae09-48ea-ba47-1bc638532fc3.jpg?type=w386",
-    "thumbnailUrl": "https://postfiles.pstatic.net/MjAyNjA3MjJfMTAw/MDAxNzg0NzIzMTc2MDk2.F5MYpOYQY2fh9doGu9a9cWTfm83Tn24DOYFDZpgPcEUg.eWAWZNuwbiwMCWUhPfv2fhCkamnovR_W1LOrIimq_lwg.JPEG/SE-66ef89d1-ae09-48ea-ba47-1bc638532fc3.jpg?type=w386",
-    "sourceType": "kakao_place",
-    "placeUrl": "http://place.map.kakao.com/744293313",
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "photoUrl": null,
+    "thumbnailUrl": null,
+    "sourceType": "none",
+    "placeUrl": null,
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-007": {
     "vendorId": "WD-007",
@@ -60,7 +60,7 @@
     "thumbnailUrl": "https://t1.kakaocdn.net/mystore/7C1C4DE51C0A442C99C453ADCA73432C",
     "sourceType": "kakao_place",
     "placeUrl": "http://place.map.kakao.com/1403637257",
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-008": {
     "vendorId": "WD-008",
@@ -69,7 +69,7 @@
     "thumbnailUrl": "https://t1.kakaocdn.net/mystore/20A91FB979A341C6BDC14E2E71E023C6",
     "sourceType": "kakao_place",
     "placeUrl": "http://place.map.kakao.com/89701005",
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-009": {
     "vendorId": "WD-009",
@@ -78,16 +78,16 @@
     "thumbnailUrl": null,
     "sourceType": "none",
     "placeUrl": null,
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-010": {
     "vendorId": "WD-010",
     "name": "컬러마인",
-    "photoUrl": "https://postfiles.pstatic.net/MjAyNDA4MjJfODgg/MDAxNzI0MzM0Njc2MzI3.Js8koQhY1EV5ZtX6qSIBRm-Qs5v8UID-P4TCIkdb-ocg.t26Esarn-byCFc4AHzSGokPTueSnzMIO11hwqpQxvr4g.JPEG/IMG_6831.jpg?type=w466",
-    "thumbnailUrl": "https://postfiles.pstatic.net/MjAyNDA4MjJfODgg/MDAxNzI0MzM0Njc2MzI3.Js8koQhY1EV5ZtX6qSIBRm-Qs5v8UID-P4TCIkdb-ocg.t26Esarn-byCFc4AHzSGokPTueSnzMIO11hwqpQxvr4g.JPEG/IMG_6831.jpg?type=w466",
-    "sourceType": "kakao_place",
-    "placeUrl": "http://place.map.kakao.com/1616623756",
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "photoUrl": null,
+    "thumbnailUrl": null,
+    "sourceType": "none",
+    "placeUrl": null,
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-011": {
     "vendorId": "WD-011",
@@ -96,7 +96,7 @@
     "thumbnailUrl": null,
     "sourceType": "none",
     "placeUrl": null,
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-012": {
     "vendorId": "WD-012",
@@ -105,7 +105,7 @@
     "thumbnailUrl": "https://t1.kakaocdn.net/mystore/3A06D3CB38974DADAB3F294E8C4DBDCC",
     "sourceType": "kakao_place",
     "placeUrl": "http://place.map.kakao.com/1678363064",
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-013": {
     "vendorId": "WD-013",
@@ -114,7 +114,7 @@
     "thumbnailUrl": "https://t1.kakaocdn.net/mystore/9F43BFE38AD24506AE9310B189F78DAC",
     "sourceType": "kakao_place",
     "placeUrl": "http://place.map.kakao.com/728207324",
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-014": {
     "vendorId": "WD-014",
@@ -123,7 +123,7 @@
     "thumbnailUrl": "https://t1.kakaocdn.net/mystore/AFF02389C807477F8F564318805DFBF8",
     "sourceType": "kakao_place",
     "placeUrl": "http://place.map.kakao.com/1992997863",
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-015": {
     "vendorId": "WD-015",
@@ -132,7 +132,7 @@
     "thumbnailUrl": null,
     "sourceType": "none",
     "placeUrl": null,
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-016": {
     "vendorId": "WD-016",
@@ -141,7 +141,7 @@
     "thumbnailUrl": "https://t1.kakaocdn.net/mystore/81ECF13077F043CC8A818AE2E1111442",
     "sourceType": "kakao_place",
     "placeUrl": "http://place.map.kakao.com/617643702",
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-017": {
     "vendorId": "WD-017",
@@ -150,7 +150,7 @@
     "thumbnailUrl": "https://t1.kakaocdn.net/mystore/BA18091F88D5476BAF4A7959A5F92EA7",
     "sourceType": "kakao_place",
     "placeUrl": "http://place.map.kakao.com/1365733785",
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-018": {
     "vendorId": "WD-018",
@@ -159,7 +159,7 @@
     "thumbnailUrl": null,
     "sourceType": "none",
     "placeUrl": null,
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-019": {
     "vendorId": "WD-019",
@@ -168,7 +168,7 @@
     "thumbnailUrl": "https://t1.kakaocdn.net/mystore/65BABF8ED5A0420BBDA50DF0E04EC680",
     "sourceType": "kakao_place",
     "placeUrl": "http://place.map.kakao.com/1928054775",
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-020": {
     "vendorId": "WD-020",
@@ -177,7 +177,7 @@
     "thumbnailUrl": "https://t1.kakaocdn.net/fiy_reboot/place/FAFE3536025147429413C7D4B880B8D5",
     "sourceType": "kakao_place",
     "placeUrl": "http://place.map.kakao.com/1047774674",
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-021": {
     "vendorId": "WD-021",
@@ -186,7 +186,7 @@
     "thumbnailUrl": "https://t1.kakaocdn.net/mystore/27F73B035C06441D9A108A9B469F89B5",
     "sourceType": "kakao_place",
     "placeUrl": "http://place.map.kakao.com/958543909",
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-022": {
     "vendorId": "WD-022",
@@ -195,7 +195,7 @@
     "thumbnailUrl": "https://t1.kakaocdn.net/mystore/B5FF2DCE68444D3A91D6281122F56872",
     "sourceType": "kakao_place",
     "placeUrl": "http://place.map.kakao.com/809225040",
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-023": {
     "vendorId": "WD-023",
@@ -204,25 +204,25 @@
     "thumbnailUrl": "https://t1.kakaocdn.net/mystore/C493C0A82C21442C9C2B84E7D3CCF697",
     "sourceType": "kakao_place",
     "placeUrl": "http://place.map.kakao.com/1128548650",
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-024": {
     "vendorId": "WD-024",
     "name": "톤앤미 부산점",
-    "photoUrl": "https://postfiles.pstatic.net/MjAyNDA4MTFfNTkg/MDAxNzIzMzQ4NzQyNjg1.nYIGuW5C4-lgk-b4XkRtBrSLat7p62xuHRxGDO3ssD0g.9iPbTpYK-4Lsap50oxeJpqzqjqAmSL74Icr4NtBWAJ8g.JPEG/Screenshot%EF%BC%BF20240811%EF%BC%BF125719%EF%BC%BFMessages.jpg?type=w275",
-    "thumbnailUrl": "https://postfiles.pstatic.net/MjAyNDA4MTFfNTkg/MDAxNzIzMzQ4NzQyNjg1.nYIGuW5C4-lgk-b4XkRtBrSLat7p62xuHRxGDO3ssD0g.9iPbTpYK-4Lsap50oxeJpqzqjqAmSL74Icr4NtBWAJ8g.JPEG/Screenshot%EF%BC%BF20240811%EF%BC%BF125719%EF%BC%BFMessages.jpg?type=w275",
-    "sourceType": "kakao_place",
-    "placeUrl": "http://place.map.kakao.com/1226567371",
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "photoUrl": null,
+    "thumbnailUrl": null,
+    "sourceType": "none",
+    "placeUrl": null,
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-025": {
     "vendorId": "WD-025",
     "name": "컬러플레이스 광안점",
-    "photoUrl": "https://postfiles.pstatic.net/MjAyNjAxMzBfMTI4/MDAxNzY5Nzc4NzM5MjU4.CQXatTW4tbGmWouRrmg_HGBjhzJuiOudjNTS2owuHPwg.j5fo_xGGrE0cwB2BkAl8XjVhacxMNtOtYbfPHwE3G10g.JPEG/900%EF%BC%BF1769778713805.jpg?type=w773",
-    "thumbnailUrl": "https://postfiles.pstatic.net/MjAyNjAxMzBfMTI4/MDAxNzY5Nzc4NzM5MjU4.CQXatTW4tbGmWouRrmg_HGBjhzJuiOudjNTS2owuHPwg.j5fo_xGGrE0cwB2BkAl8XjVhacxMNtOtYbfPHwE3G10g.JPEG/900%EF%BC%BF1769778713805.jpg?type=w773",
-    "sourceType": "kakao_place",
-    "placeUrl": "http://place.map.kakao.com/1841235149",
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "photoUrl": null,
+    "thumbnailUrl": null,
+    "sourceType": "none",
+    "placeUrl": null,
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-026": {
     "vendorId": "WD-026",
@@ -231,7 +231,7 @@
     "thumbnailUrl": null,
     "sourceType": "none",
     "placeUrl": null,
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-027": {
     "vendorId": "WD-027",
@@ -240,34 +240,34 @@
     "thumbnailUrl": "https://t1.kakaocdn.net/mystore/C9E031E678AC40E189112250A2E4F96C",
     "sourceType": "kakao_place",
     "placeUrl": "http://place.map.kakao.com/1803586539",
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-028": {
     "vendorId": "WD-028",
     "name": "한지퍼스널컬러",
-    "photoUrl": "https://postfiles.pstatic.net/MjAyNTA5MTdfMjIw/MDAxNzU4MDY1NTY2NjQ3.PUPN6ecDH_8Kaxme1iss-Q-bn769CFmPZtc3WNvPczQg.b77ZavIPnHzzsOUGQr1ogZCOtpBlCuRuSU7DQ986rUcg.JPEG/IMG_3803.jpg?type=w966",
-    "thumbnailUrl": "https://postfiles.pstatic.net/MjAyNTA5MTdfMjIw/MDAxNzU4MDY1NTY2NjQ3.PUPN6ecDH_8Kaxme1iss-Q-bn769CFmPZtc3WNvPczQg.b77ZavIPnHzzsOUGQr1ogZCOtpBlCuRuSU7DQ986rUcg.JPEG/IMG_3803.jpg?type=w966",
-    "sourceType": "kakao_place",
-    "placeUrl": "http://place.map.kakao.com/1094494424",
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "photoUrl": null,
+    "thumbnailUrl": null,
+    "sourceType": "none",
+    "placeUrl": null,
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-029": {
     "vendorId": "WD-029",
     "name": "컬러루미닝",
-    "photoUrl": "https://blogfiles.pstatic.net/MjAyNDA4MjFfMTg3/MDAxNzI0MjIxNzMxMzcx.aghbBDGNIfQQZxaBHHfR95EeaBvh72bFpm8ivUnY1wsg.otLLbiXcWl35D4GvBj9FyUvCjfHf_gXA3-XI2sHyAF4g.JPEG/SE-0DB67052-7798-4E68-843E-20E6EFCC0850.jpg?type=w1",
-    "thumbnailUrl": "https://blogfiles.pstatic.net/MjAyNDA4MjFfMTg3/MDAxNzI0MjIxNzMxMzcx.aghbBDGNIfQQZxaBHHfR95EeaBvh72bFpm8ivUnY1wsg.otLLbiXcWl35D4GvBj9FyUvCjfHf_gXA3-XI2sHyAF4g.JPEG/SE-0DB67052-7798-4E68-843E-20E6EFCC0850.jpg?type=w1",
-    "sourceType": "kakao_place",
-    "placeUrl": "http://place.map.kakao.com/2005629764",
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "photoUrl": null,
+    "thumbnailUrl": null,
+    "sourceType": "none",
+    "placeUrl": null,
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-030": {
     "vendorId": "WD-030",
     "name": "티엔스튜디오",
-    "photoUrl": "https://postfiles.pstatic.net/MjAyNDEwMjlfNjkg/MDAxNzMwMTg2MjgzNjI5.7-MO4aGhXo2mBAEJ_s2gXhAW-fjbNA06-qLVgx3TAsgg.up3L0J3WLNpHdT3Xf5vKUcsIZbGDJnsuY6TSpMZgGncg.JPEG/IMG_1557.jpg?type=w966",
-    "thumbnailUrl": "https://postfiles.pstatic.net/MjAyNDEwMjlfNjkg/MDAxNzMwMTg2MjgzNjI5.7-MO4aGhXo2mBAEJ_s2gXhAW-fjbNA06-qLVgx3TAsgg.up3L0J3WLNpHdT3Xf5vKUcsIZbGDJnsuY6TSpMZgGncg.JPEG/IMG_1557.jpg?type=w966",
-    "sourceType": "kakao_place",
-    "placeUrl": "http://place.map.kakao.com/112964899",
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "photoUrl": null,
+    "thumbnailUrl": null,
+    "sourceType": "none",
+    "placeUrl": null,
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-031": {
     "vendorId": "WD-031",
@@ -276,7 +276,7 @@
     "thumbnailUrl": "https://blog.kakaocdn.net/dn/bZza8t/btsGqPi92Uh/rOlXF8n2XGBv9ghxYmw3fk/img.jpg",
     "sourceType": "kakao_place",
     "placeUrl": "http://place.map.kakao.com/1038782095",
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-032": {
     "vendorId": "WD-032",
@@ -285,7 +285,7 @@
     "thumbnailUrl": "https://t1.kakaocdn.net/mystore/6AE1453D215D4BA5883CBEBB46B6C6B9",
     "sourceType": "kakao_place",
     "placeUrl": "http://place.map.kakao.com/2119523670",
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-033": {
     "vendorId": "WD-033",
@@ -294,16 +294,16 @@
     "thumbnailUrl": "https://t1.kakaocdn.net/mystore/C8BCEDE6FA76491E9392111CEC0129B5",
     "sourceType": "kakao_place",
     "placeUrl": "http://place.map.kakao.com/1226413052",
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-034": {
     "vendorId": "WD-034",
     "name": "컬러소나",
-    "photoUrl": "https://postfiles.pstatic.net/MjAyNjA3MjVfMTI3/MDAxNzg0OTUzMDM4MTkw.u4MYBJfmQO4U3r90ToDl52GPXj7PShGF9DkQDg8zdcwg.dAJQM_Hv8vksiHCtfsh4aoZ7VXVs2bDh0Lcr_lIDZmkg.JPEG/IMG%EF%BC%BF9257.jpg?type=w773",
-    "thumbnailUrl": "https://postfiles.pstatic.net/MjAyNjA3MjVfMTI3/MDAxNzg0OTUzMDM4MTkw.u4MYBJfmQO4U3r90ToDl52GPXj7PShGF9DkQDg8zdcwg.dAJQM_Hv8vksiHCtfsh4aoZ7VXVs2bDh0Lcr_lIDZmkg.JPEG/IMG%EF%BC%BF9257.jpg?type=w773",
-    "sourceType": "kakao_place",
-    "placeUrl": "http://place.map.kakao.com/1483714639",
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "photoUrl": null,
+    "thumbnailUrl": null,
+    "sourceType": "none",
+    "placeUrl": null,
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-035": {
     "vendorId": "WD-035",
@@ -312,7 +312,7 @@
     "thumbnailUrl": null,
     "sourceType": "none",
     "placeUrl": null,
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-036": {
     "vendorId": "WD-036",
@@ -321,16 +321,16 @@
     "thumbnailUrl": "https://t1.kakaocdn.net/mystore/7DD75657C3254D6A9B68010BC9F57C10",
     "sourceType": "kakao_place",
     "placeUrl": "http://place.map.kakao.com/850748006",
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-037": {
     "vendorId": "WD-037",
     "name": "미스데이지",
-    "photoUrl": "https://postfiles.pstatic.net/MjAyNTAxMDJfMjIw/MDAxNzM1NzgxMTMzMTg5.jsgkkJ9QR7z_d5OBlJzZVw5TuE2tQJrW8AOalgWlw9gg.8Cm4vhRInG2BMNOIpR2W0lCfYBFhylsnDxMjCEIttOwg.JPEG/SE-7128aac8-9586-478a-8e46-90d72635ef68.jpg?type=w773",
-    "thumbnailUrl": "https://postfiles.pstatic.net/MjAyNTAxMDJfMjIw/MDAxNzM1NzgxMTMzMTg5.jsgkkJ9QR7z_d5OBlJzZVw5TuE2tQJrW8AOalgWlw9gg.8Cm4vhRInG2BMNOIpR2W0lCfYBFhylsnDxMjCEIttOwg.JPEG/SE-7128aac8-9586-478a-8e46-90d72635ef68.jpg?type=w773",
-    "sourceType": "kakao_place",
-    "placeUrl": "http://place.map.kakao.com/27546630",
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "photoUrl": null,
+    "thumbnailUrl": null,
+    "sourceType": "none",
+    "placeUrl": null,
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-038": {
     "vendorId": "WD-038",
@@ -339,34 +339,34 @@
     "thumbnailUrl": "https://t1.kakaocdn.net/mystore/697C8DD3F66E446A82C0AB95D3A93B27",
     "sourceType": "kakao_place",
     "placeUrl": "http://place.map.kakao.com/64052576",
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-039": {
     "vendorId": "WD-039",
     "name": "컬러메이트",
-    "photoUrl": "https://postfiles.pstatic.net/MjAyNjA4MTNfMjY5/MDAxNzg2NTg2MjM5ODYx.Fmjma6cE4CBcwmMulMrVdupPFWOwiBp-i4DRK8cJttUg.Hjp7f_G0dUGpQLK42c1DWztnJAtIYFIu7OJmQsuXV_Eg.JPEG/IMG%EF%BC%BF4123.jpg?type=w580",
-    "thumbnailUrl": "https://postfiles.pstatic.net/MjAyNjA4MTNfMjY5/MDAxNzg2NTg2MjM5ODYx.Fmjma6cE4CBcwmMulMrVdupPFWOwiBp-i4DRK8cJttUg.Hjp7f_G0dUGpQLK42c1DWztnJAtIYFIu7OJmQsuXV_Eg.JPEG/IMG%EF%BC%BF4123.jpg?type=w580",
-    "sourceType": "kakao_place",
-    "placeUrl": "http://place.map.kakao.com/1621175423",
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "photoUrl": null,
+    "thumbnailUrl": null,
+    "sourceType": "none",
+    "placeUrl": null,
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-040": {
     "vendorId": "WD-040",
     "name": "컬러라인",
-    "photoUrl": "https://postfiles.pstatic.net/MjAyNTEwMTBfNjEg/MDAxNzYwMTAwNTkzOTE3.0X_Jp-uPi-gZPVgWbMXVNFJcoWe7ECKt2r8x329ckysg.NglmTAcubNkyxE1Tv8jceusZ61pyluDiI5w_-Omy5vAg.JPEG/1760100593611.jpg?type=w580",
-    "thumbnailUrl": "https://postfiles.pstatic.net/MjAyNTEwMTBfNjEg/MDAxNzYwMTAwNTkzOTE3.0X_Jp-uPi-gZPVgWbMXVNFJcoWe7ECKt2r8x329ckysg.NglmTAcubNkyxE1Tv8jceusZ61pyluDiI5w_-Omy5vAg.JPEG/1760100593611.jpg?type=w580",
-    "sourceType": "kakao_place",
-    "placeUrl": "http://place.map.kakao.com/562520368",
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "photoUrl": null,
+    "thumbnailUrl": null,
+    "sourceType": "none",
+    "placeUrl": null,
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-041": {
     "vendorId": "WD-041",
     "name": "남다른color",
-    "photoUrl": "https://postfiles.pstatic.net/MjAyNDA4MDFfMjIw/MDAxNzIyNDc4MzYwNjYy.7aXS-KKThVTya0rhpPiQimym4YrD9ym1VNZLPzaRyVIg.VqIgEPk_ckKsOjvuH2SHaMohQlmWueM552k3R9rUx2Eg.PNG/kakao_screenshot1722478350988.png?type=w773",
-    "thumbnailUrl": "https://postfiles.pstatic.net/MjAyNDA4MDFfMjIw/MDAxNzIyNDc4MzYwNjYy.7aXS-KKThVTya0rhpPiQimym4YrD9ym1VNZLPzaRyVIg.VqIgEPk_ckKsOjvuH2SHaMohQlmWueM552k3R9rUx2Eg.PNG/kakao_screenshot1722478350988.png?type=w773",
-    "sourceType": "kakao_place",
-    "placeUrl": "http://place.map.kakao.com/1665354187",
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "photoUrl": null,
+    "thumbnailUrl": null,
+    "sourceType": "none",
+    "placeUrl": null,
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-042": {
     "vendorId": "WD-042",
@@ -375,43 +375,43 @@
     "thumbnailUrl": null,
     "sourceType": "none",
     "placeUrl": null,
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-043": {
     "vendorId": "WD-043",
     "name": "이미지향 컬러브랜딩센터",
-    "photoUrl": "https://postfiles.pstatic.net/MjAyNTA3MjFfNjcg/MDAxNzUzMDgxMzQ2MjMw.skpUglbJ0ixyDCO8fN4uxbBeqm1FGlr7eijMJTxz0ckg.WbHrZSBi0FM6u-6yKZm7qIbn727wiScRjZ1fGX0X1OAg.JPEG/IMG%EF%BC%BF4362.JPG?type=w386",
-    "thumbnailUrl": "https://postfiles.pstatic.net/MjAyNTA3MjFfNjcg/MDAxNzUzMDgxMzQ2MjMw.skpUglbJ0ixyDCO8fN4uxbBeqm1FGlr7eijMJTxz0ckg.WbHrZSBi0FM6u-6yKZm7qIbn727wiScRjZ1fGX0X1OAg.JPEG/IMG%EF%BC%BF4362.JPG?type=w386",
-    "sourceType": "kakao_place",
-    "placeUrl": "http://place.map.kakao.com/475316526",
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "photoUrl": null,
+    "thumbnailUrl": null,
+    "sourceType": "none",
+    "placeUrl": null,
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-044": {
     "vendorId": "WD-044",
     "name": "가현컬러스튜디오",
-    "photoUrl": "https://postfiles.pstatic.net/MjAyNDEwMTdfMTk2/MDAxNzI5MTQwMjE2NDIy.mhQxrdk_5GTNyfCZamG4qgLQtkZI5pq89EWi8riTo_Yg.vQgrH4VRv6ye200tlxF-aibubf2ei3ugHq9on0KBkNUg.JPEG/SE-0adcca60-8b6e-11ef-a420-5179176b9371.jpg?type=w773",
-    "thumbnailUrl": "https://postfiles.pstatic.net/MjAyNDEwMTdfMTk2/MDAxNzI5MTQwMjE2NDIy.mhQxrdk_5GTNyfCZamG4qgLQtkZI5pq89EWi8riTo_Yg.vQgrH4VRv6ye200tlxF-aibubf2ei3ugHq9on0KBkNUg.JPEG/SE-0adcca60-8b6e-11ef-a420-5179176b9371.jpg?type=w773",
-    "sourceType": "kakao_place",
-    "placeUrl": "http://place.map.kakao.com/1614389525",
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "photoUrl": null,
+    "thumbnailUrl": null,
+    "sourceType": "none",
+    "placeUrl": null,
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-045": {
     "vendorId": "WD-045",
     "name": "몽끄컬러랩 세종점",
-    "photoUrl": "https://postfiles.pstatic.net/MjAyNjA3MTlfMjYw/MDAxNzg0NDM5MzIxMzcz.wMes5dx6y_KtBKo-sBnW-JF5ywg__rsrOUycaTKfL_wg._wxKU37SvDqmT92x9gqGvztedbWqETAMJ6i-_XYyCLMg.JPEG/SE-0D454226-772F-4EA0-B4EF-D14BC42393F6.jpg?type=w386",
-    "thumbnailUrl": "https://postfiles.pstatic.net/MjAyNjA3MTlfMjYw/MDAxNzg0NDM5MzIxMzcz.wMes5dx6y_KtBKo-sBnW-JF5ywg__rsrOUycaTKfL_wg._wxKU37SvDqmT92x9gqGvztedbWqETAMJ6i-_XYyCLMg.JPEG/SE-0D454226-772F-4EA0-B4EF-D14BC42393F6.jpg?type=w386",
-    "sourceType": "kakao_place",
-    "placeUrl": "http://place.map.kakao.com/187933806",
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "photoUrl": null,
+    "thumbnailUrl": null,
+    "sourceType": "none",
+    "placeUrl": null,
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-046": {
     "vendorId": "WD-046",
     "name": "잇츠소다",
-    "photoUrl": "https://postfiles.pstatic.net/MjAyNjA2MTdfMjgx/MDAxNzgxNjI2MjE0OTAz.72bC7qe5RJAf0537VDu1amVnNeAJTL8JN-05q-mNV3Ug.hY-o5bKMM5EloT1-mFpM_a8gOAltEXDwLlf05BVVmA4g.JPEG/900_20260614_155304.jpg?type=w966",
-    "thumbnailUrl": "https://postfiles.pstatic.net/MjAyNjA2MTdfMjgx/MDAxNzgxNjI2MjE0OTAz.72bC7qe5RJAf0537VDu1amVnNeAJTL8JN-05q-mNV3Ug.hY-o5bKMM5EloT1-mFpM_a8gOAltEXDwLlf05BVVmA4g.JPEG/900_20260614_155304.jpg?type=w966",
-    "sourceType": "kakao_place",
-    "placeUrl": "http://place.map.kakao.com/1165326331",
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "photoUrl": null,
+    "thumbnailUrl": null,
+    "sourceType": "none",
+    "placeUrl": null,
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-047": {
     "vendorId": "WD-047",
@@ -420,7 +420,7 @@
     "thumbnailUrl": "https://t1.kakaocdn.net/mystore/A3EE56253BA34AA0A85D23A0ECA04AE8",
     "sourceType": "kakao_place",
     "placeUrl": "http://place.map.kakao.com/1230339741",
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-048": {
     "vendorId": "WD-048",
@@ -429,7 +429,7 @@
     "thumbnailUrl": "https://t1.kakaocdn.net/mystore/3A08C1B6546F4FE49B46B5BB4605C64A",
     "sourceType": "kakao_place",
     "placeUrl": "http://place.map.kakao.com/1541507086",
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-049": {
     "vendorId": "WD-049",
@@ -438,7 +438,7 @@
     "thumbnailUrl": "https://t1.kakaocdn.net/mystore/07FD41157196406FB14E1E52E456BED9",
     "sourceType": "kakao_place",
     "placeUrl": "http://place.map.kakao.com/1349610553",
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-050": {
     "vendorId": "WD-050",
@@ -447,7 +447,7 @@
     "thumbnailUrl": null,
     "sourceType": "none",
     "placeUrl": null,
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-051": {
     "vendorId": "WD-051",
@@ -456,16 +456,16 @@
     "thumbnailUrl": null,
     "sourceType": "none",
     "placeUrl": null,
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-052": {
     "vendorId": "WD-052",
     "name": "이비스헤어",
-    "photoUrl": "https://postfiles.pstatic.net/MjAyNjA3MjdfMTky/MDAxNzg1MTQ1NDE3MjE3.FjuX_qrIvVgmfVJV5b0p6PI_ci37rEhSOqRSaL8epDMg.DlTX9xmwXLAHunXa3ynMky8w_6NKbseh57XFwC1CZuog.JPEG/IMG%EF%BC%BF6076.JPG?type=w773",
-    "thumbnailUrl": "https://postfiles.pstatic.net/MjAyNjA3MjdfMTky/MDAxNzg1MTQ1NDE3MjE3.FjuX_qrIvVgmfVJV5b0p6PI_ci37rEhSOqRSaL8epDMg.DlTX9xmwXLAHunXa3ynMky8w_6NKbseh57XFwC1CZuog.JPEG/IMG%EF%BC%BF6076.JPG?type=w773",
-    "sourceType": "kakao_place",
-    "placeUrl": "http://place.map.kakao.com/413478273",
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "photoUrl": null,
+    "thumbnailUrl": null,
+    "sourceType": "none",
+    "placeUrl": null,
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-053": {
     "vendorId": "WD-053",
@@ -474,16 +474,16 @@
     "thumbnailUrl": "https://t1.kakaocdn.net/mystore/E0B01E4EE20F4DD9BE0A284A4066AD22",
     "sourceType": "kakao_place",
     "placeUrl": "http://place.map.kakao.com/96145864",
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-054": {
     "vendorId": "WD-054",
     "name": "컬러코드",
-    "photoUrl": "https://postfiles.pstatic.net/MjAyNjAyMDNfNjcg/MDAxNzcwMTE2NzgxMjQ0.icaQhgO0hFcQgkxTTN9gDtybd1eTw6TrmThKVcu1M5kg.zvEJxmWUT_GnzU_X-vioxHkHOqU9Q75DXRqvfcSVgYUg.JPEG/SE-c71d7832-74fe-4a0e-9fa1-81c50b7211bc.jpg?type=w966",
-    "thumbnailUrl": "https://postfiles.pstatic.net/MjAyNjAyMDNfNjcg/MDAxNzcwMTE2NzgxMjQ0.icaQhgO0hFcQgkxTTN9gDtybd1eTw6TrmThKVcu1M5kg.zvEJxmWUT_GnzU_X-vioxHkHOqU9Q75DXRqvfcSVgYUg.JPEG/SE-c71d7832-74fe-4a0e-9fa1-81c50b7211bc.jpg?type=w966",
-    "sourceType": "kakao_place",
-    "placeUrl": "http://place.map.kakao.com/1536399938",
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "photoUrl": null,
+    "thumbnailUrl": null,
+    "sourceType": "none",
+    "placeUrl": null,
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-055": {
     "vendorId": "WD-055",
@@ -492,7 +492,7 @@
     "thumbnailUrl": null,
     "sourceType": "none",
     "placeUrl": null,
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-056": {
     "vendorId": "WD-056",
@@ -501,16 +501,16 @@
     "thumbnailUrl": null,
     "sourceType": "none",
     "placeUrl": null,
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-057": {
     "vendorId": "WD-057",
     "name": "217헤어살롱 남악점",
-    "photoUrl": "https://postfiles.pstatic.net/MjAyNjA0MjdfMzIg/MDAxNzc3Mjk2MjA0NzQz.-3uM3zxJDgtwu_DAflvmxgoFVZXSxpvn5i4dSz3eankg.6veBt_2S1trYKBXN_EL_KCTC0absEddZ0Z0YwwSvjmYg.JPEG/output%EF%BC%BF1778338011.jpg?type=w773",
-    "thumbnailUrl": "https://postfiles.pstatic.net/MjAyNjA0MjdfMzIg/MDAxNzc3Mjk2MjA0NzQz.-3uM3zxJDgtwu_DAflvmxgoFVZXSxpvn5i4dSz3eankg.6veBt_2S1trYKBXN_EL_KCTC0absEddZ0Z0YwwSvjmYg.JPEG/output%EF%BC%BF1778338011.jpg?type=w773",
-    "sourceType": "kakao_place",
-    "placeUrl": "http://place.map.kakao.com/1158179351",
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "photoUrl": null,
+    "thumbnailUrl": null,
+    "sourceType": "none",
+    "placeUrl": null,
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-058": {
     "vendorId": "WD-058",
@@ -519,7 +519,7 @@
     "thumbnailUrl": null,
     "sourceType": "none",
     "placeUrl": null,
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-059": {
     "vendorId": "WD-059",
@@ -528,7 +528,7 @@
     "thumbnailUrl": null,
     "sourceType": "none",
     "placeUrl": null,
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-060": {
     "vendorId": "WD-060",
@@ -537,7 +537,7 @@
     "thumbnailUrl": null,
     "sourceType": "none",
     "placeUrl": null,
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-061": {
     "vendorId": "WD-061",
@@ -546,25 +546,25 @@
     "thumbnailUrl": "https://t1.kakaocdn.net/mystore/A8C01E87FE934CB9BAD69C9FD1A9E203",
     "sourceType": "kakao_place",
     "placeUrl": "http://place.map.kakao.com/1708826435",
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-062": {
     "vendorId": "WD-062",
     "name": "PBS컬러랩",
-    "photoUrl": "https://postfiles.pstatic.net/MjAyNDA4MTVfMTAz/MDAxNzIzNjgzNDUzMzk2.Hqe61zXEbjGFyFbzjWWUHPLYqglM6fDpOrjeA7rfDBQg.uhQ-hnMCQt4J8vUB1LQ6QWn1jYg19KXFhTDgKjaXq6og.JPEG/KakaoTalk_Photo_2024-08-14-17-41-25_016.jpeg?type=w466",
-    "thumbnailUrl": "https://postfiles.pstatic.net/MjAyNDA4MTVfMTAz/MDAxNzIzNjgzNDUzMzk2.Hqe61zXEbjGFyFbzjWWUHPLYqglM6fDpOrjeA7rfDBQg.uhQ-hnMCQt4J8vUB1LQ6QWn1jYg19KXFhTDgKjaXq6og.JPEG/KakaoTalk_Photo_2024-08-14-17-41-25_016.jpeg?type=w466",
-    "sourceType": "kakao_place",
-    "placeUrl": "http://place.map.kakao.com/572675267",
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "photoUrl": null,
+    "thumbnailUrl": null,
+    "sourceType": "none",
+    "placeUrl": null,
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-063": {
     "vendorId": "WD-063",
     "name": "뷰티바이서",
-    "photoUrl": "https://postfiles.pstatic.net/MjAyNjA2MjFfMTg1/MDAxNzgyMDA5NzQ3Nzkw.3P_328wuMiyVfyrNjTVAdS4M9kpzSfKsrKvfIlLTCdsg.HMX9O2TipX9PpUvdy5x8JwFrtYUBVAcQ0rqMz8DLrsQg.JPEG/IMG%EF%BC%BF7067.JPG?type=w773",
-    "thumbnailUrl": "https://postfiles.pstatic.net/MjAyNjA2MjFfMTg1/MDAxNzgyMDA5NzQ3Nzkw.3P_328wuMiyVfyrNjTVAdS4M9kpzSfKsrKvfIlLTCdsg.HMX9O2TipX9PpUvdy5x8JwFrtYUBVAcQ0rqMz8DLrsQg.JPEG/IMG%EF%BC%BF7067.JPG?type=w773",
-    "sourceType": "kakao_place",
-    "placeUrl": "http://place.map.kakao.com/1073875512",
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "photoUrl": null,
+    "thumbnailUrl": null,
+    "sourceType": "none",
+    "placeUrl": null,
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-064": {
     "vendorId": "WD-064",
@@ -573,7 +573,7 @@
     "thumbnailUrl": null,
     "sourceType": "none",
     "placeUrl": null,
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-065": {
     "vendorId": "WD-065",
@@ -582,7 +582,7 @@
     "thumbnailUrl": null,
     "sourceType": "none",
     "placeUrl": null,
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-066": {
     "vendorId": "WD-066",
@@ -591,7 +591,7 @@
     "thumbnailUrl": "https://t1.kakaocdn.net/mystore/2CBED191A760478FB03FCFEDC76456E1",
     "sourceType": "kakao_place",
     "placeUrl": "http://place.map.kakao.com/1718215492",
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-067": {
     "vendorId": "WD-067",
@@ -600,7 +600,7 @@
     "thumbnailUrl": null,
     "sourceType": "none",
     "placeUrl": null,
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-068": {
     "vendorId": "WD-068",
@@ -609,7 +609,7 @@
     "thumbnailUrl": "https://t1.kakaocdn.net/mystore/CD6DA452F03C41A789EA680A884480AA",
     "sourceType": "kakao_place",
     "placeUrl": "http://place.map.kakao.com/537566473",
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-069": {
     "vendorId": "WD-069",
@@ -618,7 +618,7 @@
     "thumbnailUrl": "https://t1.kakaocdn.net/mystore/63AE7ED9665D4176AD7444747AF5E387",
     "sourceType": "kakao_place",
     "placeUrl": "http://place.map.kakao.com/771819551",
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-070": {
     "vendorId": "WD-070",
@@ -627,7 +627,7 @@
     "thumbnailUrl": "https://t1.kakaocdn.net/mystore/56513B1C546146E389DB361E25642C59",
     "sourceType": "kakao_place",
     "placeUrl": "http://place.map.kakao.com/590668197",
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-071": {
     "vendorId": "WD-071",
@@ -636,7 +636,7 @@
     "thumbnailUrl": null,
     "sourceType": "none",
     "placeUrl": null,
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-072": {
     "vendorId": "WD-072",
@@ -645,7 +645,7 @@
     "thumbnailUrl": null,
     "sourceType": "none",
     "placeUrl": null,
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-073": {
     "vendorId": "WD-073",
@@ -654,7 +654,7 @@
     "thumbnailUrl": null,
     "sourceType": "none",
     "placeUrl": null,
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-074": {
     "vendorId": "WD-074",
@@ -663,7 +663,7 @@
     "thumbnailUrl": null,
     "sourceType": "none",
     "placeUrl": null,
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-075": {
     "vendorId": "WD-075",
@@ -672,7 +672,7 @@
     "thumbnailUrl": "https://t1.kakaocdn.net/mystore/6D8D7F9FAE6343C7A388B6CCA410FF0A",
     "sourceType": "kakao_place",
     "placeUrl": "http://place.map.kakao.com/1785436451",
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-076": {
     "vendorId": "WD-076",
@@ -681,7 +681,7 @@
     "thumbnailUrl": null,
     "sourceType": "none",
     "placeUrl": null,
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-077": {
     "vendorId": "WD-077",
@@ -690,7 +690,7 @@
     "thumbnailUrl": null,
     "sourceType": "none",
     "placeUrl": null,
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-078": {
     "vendorId": "WD-078",
@@ -699,7 +699,7 @@
     "thumbnailUrl": null,
     "sourceType": "none",
     "placeUrl": null,
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-079": {
     "vendorId": "WD-079",
@@ -708,7 +708,7 @@
     "thumbnailUrl": null,
     "sourceType": "none",
     "placeUrl": null,
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-080": {
     "vendorId": "WD-080",
@@ -717,7 +717,7 @@
     "thumbnailUrl": null,
     "sourceType": "none",
     "placeUrl": null,
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-081": {
     "vendorId": "WD-081",
@@ -726,7 +726,7 @@
     "thumbnailUrl": null,
     "sourceType": "none",
     "placeUrl": null,
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-082": {
     "vendorId": "WD-082",
@@ -735,7 +735,7 @@
     "thumbnailUrl": null,
     "sourceType": "none",
     "placeUrl": null,
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-083": {
     "vendorId": "WD-083",
@@ -744,7 +744,7 @@
     "thumbnailUrl": null,
     "sourceType": "none",
     "placeUrl": null,
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-084": {
     "vendorId": "WD-084",
@@ -753,7 +753,7 @@
     "thumbnailUrl": null,
     "sourceType": "none",
     "placeUrl": null,
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-085": {
     "vendorId": "WD-085",
@@ -762,7 +762,7 @@
     "thumbnailUrl": null,
     "sourceType": "none",
     "placeUrl": null,
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-086": {
     "vendorId": "WD-086",
@@ -771,7 +771,7 @@
     "thumbnailUrl": null,
     "sourceType": "none",
     "placeUrl": null,
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-087": {
     "vendorId": "WD-087",
@@ -780,7 +780,7 @@
     "thumbnailUrl": null,
     "sourceType": "none",
     "placeUrl": null,
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-088": {
     "vendorId": "WD-088",
@@ -789,7 +789,7 @@
     "thumbnailUrl": null,
     "sourceType": "none",
     "placeUrl": null,
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-089": {
     "vendorId": "WD-089",
@@ -798,7 +798,7 @@
     "thumbnailUrl": null,
     "sourceType": "none",
     "placeUrl": null,
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-090": {
     "vendorId": "WD-090",
@@ -807,7 +807,7 @@
     "thumbnailUrl": null,
     "sourceType": "none",
     "placeUrl": null,
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-091": {
     "vendorId": "WD-091",
@@ -816,7 +816,7 @@
     "thumbnailUrl": null,
     "sourceType": "none",
     "placeUrl": null,
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-092": {
     "vendorId": "WD-092",
@@ -825,7 +825,7 @@
     "thumbnailUrl": null,
     "sourceType": "none",
     "placeUrl": null,
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-093": {
     "vendorId": "WD-093",
@@ -834,16 +834,16 @@
     "thumbnailUrl": null,
     "sourceType": "none",
     "placeUrl": null,
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-094": {
     "vendorId": "WD-094",
     "name": "컬러아르떼 혜화점",
-    "photoUrl": "https://postfiles.pstatic.net/MjAyNjAzMDZfOCAg/MDAxNzcyNzU5MjkxMTE2.P48NLb6M04gUNOhYL-opaloijhMZ6caO6MnolYR-8cIg.5bmyCGJroH9qoDRoUSkdUpBxHS1tN-TFlLIT_F0HpLog.JPEG/IMG%EF%BC%BF9078.jpg?type=w466",
-    "thumbnailUrl": "https://postfiles.pstatic.net/MjAyNjAzMDZfOCAg/MDAxNzcyNzU5MjkxMTE2.P48NLb6M04gUNOhYL-opaloijhMZ6caO6MnolYR-8cIg.5bmyCGJroH9qoDRoUSkdUpBxHS1tN-TFlLIT_F0HpLog.JPEG/IMG%EF%BC%BF9078.jpg?type=w466",
-    "sourceType": "kakao_place",
-    "placeUrl": "http://place.map.kakao.com/2074934524",
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "photoUrl": null,
+    "thumbnailUrl": null,
+    "sourceType": "none",
+    "placeUrl": null,
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-095": {
     "vendorId": "WD-095",
@@ -852,16 +852,16 @@
     "thumbnailUrl": null,
     "sourceType": "none",
     "placeUrl": null,
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-096": {
     "vendorId": "WD-096",
     "name": "블룸팔레트",
-    "photoUrl": "https://postfiles.pstatic.net/MjAyNDA2MThfOTMg/MDAxNzE4Njg1MjM0ODk0.hRnUONCSSupCua38BNjFJTR-ZciObPuB6c37mtHy6MAg.Jf9YGl2U9BxDhABBTG25UN74UFmat-6U94TR32YadQUg.JPEG/SE-144D8A04-7634-4C4A-A250-527CC8DA77BF.jpg?type=w773",
-    "thumbnailUrl": "https://postfiles.pstatic.net/MjAyNDA2MThfOTMg/MDAxNzE4Njg1MjM0ODk0.hRnUONCSSupCua38BNjFJTR-ZciObPuB6c37mtHy6MAg.Jf9YGl2U9BxDhABBTG25UN74UFmat-6U94TR32YadQUg.JPEG/SE-144D8A04-7634-4C4A-A250-527CC8DA77BF.jpg?type=w773",
-    "sourceType": "kakao_place",
-    "placeUrl": "http://place.map.kakao.com/1032491758",
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "photoUrl": null,
+    "thumbnailUrl": null,
+    "sourceType": "none",
+    "placeUrl": null,
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-097": {
     "vendorId": "WD-097",
@@ -870,7 +870,7 @@
     "thumbnailUrl": "https://t1.kakaocdn.net/mystore/7E3DDB34EAD74C66BC78DCA6B1CDCAB9",
     "sourceType": "kakao_place",
     "placeUrl": "http://place.map.kakao.com/1188784657",
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-098": {
     "vendorId": "WD-098",
@@ -879,7 +879,7 @@
     "thumbnailUrl": "https://t1.kakaocdn.net/mystore/A2FD235F85BD4568A55EA9AE0C0D1E51",
     "sourceType": "kakao_place",
     "placeUrl": "http://place.map.kakao.com/924883275",
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-099": {
     "vendorId": "WD-099",
@@ -888,16 +888,16 @@
     "thumbnailUrl": null,
     "sourceType": "none",
     "placeUrl": null,
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-100": {
     "vendorId": "WD-100",
     "name": "브랜미 성수점",
-    "photoUrl": "https://postfiles.pstatic.net/MjAyNjAyMjJfMjY4/MDAxNzcxNzMzMzUzMjMz.FYv2WHJj44-iNfIzrfJsL2L2r3A1KwapRO2_VEm7DZsg.78ZfBoVJ-_hZqcPA8DtMttTWrLiIsnSvZsJXZmfKJ7Ig.JPEG/KakaoTalk_20260222_130818422_02.jpg?type=w386",
-    "thumbnailUrl": "https://postfiles.pstatic.net/MjAyNjAyMjJfMjY4/MDAxNzcxNzMzMzUzMjMz.FYv2WHJj44-iNfIzrfJsL2L2r3A1KwapRO2_VEm7DZsg.78ZfBoVJ-_hZqcPA8DtMttTWrLiIsnSvZsJXZmfKJ7Ig.JPEG/KakaoTalk_20260222_130818422_02.jpg?type=w386",
-    "sourceType": "kakao_place",
-    "placeUrl": "http://place.map.kakao.com/936345179",
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "photoUrl": null,
+    "thumbnailUrl": null,
+    "sourceType": "none",
+    "placeUrl": null,
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-101": {
     "vendorId": "WD-101",
@@ -906,7 +906,7 @@
     "thumbnailUrl": null,
     "sourceType": "none",
     "placeUrl": null,
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-102": {
     "vendorId": "WD-102",
@@ -915,7 +915,7 @@
     "thumbnailUrl": null,
     "sourceType": "none",
     "placeUrl": null,
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-103": {
     "vendorId": "WD-103",
@@ -924,7 +924,7 @@
     "thumbnailUrl": "https://t1.kakaocdn.net/fiy_reboot/place/BCF2D998D0B34293875C783A2B8C524B",
     "sourceType": "kakao_place",
     "placeUrl": "http://place.map.kakao.com/1975520178",
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-104": {
     "vendorId": "WD-104",
@@ -933,7 +933,7 @@
     "thumbnailUrl": "https://t1.kakaocdn.net/mystore/8FDC06A3FED0484FA77E87ECAA9A160A",
     "sourceType": "kakao_place",
     "placeUrl": "http://place.map.kakao.com/613856720",
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-105": {
     "vendorId": "WD-105",
@@ -942,7 +942,7 @@
     "thumbnailUrl": null,
     "sourceType": "none",
     "placeUrl": null,
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-106": {
     "vendorId": "WD-106",
@@ -951,16 +951,16 @@
     "thumbnailUrl": null,
     "sourceType": "none",
     "placeUrl": null,
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-107": {
     "vendorId": "WD-107",
     "name": "퍼스널블라썸",
-    "photoUrl": "https://postfiles.pstatic.net/MjAyNTA2MTZfMTQw/MDAxNzUwMDYwMjg4NDM5.NDEeGdHhiOnsG-ZiGpdor8hGnzBcSFQd96XzV9Ys3oIg.cottEa0TUFlKjJk0w_td1Ks-rXSkVcUV-YuakigFE4wg.JPEG/DSC01303.JPG?type=w773",
-    "thumbnailUrl": "https://postfiles.pstatic.net/MjAyNTA2MTZfMTQw/MDAxNzUwMDYwMjg4NDM5.NDEeGdHhiOnsG-ZiGpdor8hGnzBcSFQd96XzV9Ys3oIg.cottEa0TUFlKjJk0w_td1Ks-rXSkVcUV-YuakigFE4wg.JPEG/DSC01303.JPG?type=w773",
-    "sourceType": "kakao_place",
-    "placeUrl": "http://place.map.kakao.com/2147402500",
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "photoUrl": null,
+    "thumbnailUrl": null,
+    "sourceType": "none",
+    "placeUrl": null,
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-108": {
     "vendorId": "WD-108",
@@ -969,7 +969,7 @@
     "thumbnailUrl": null,
     "sourceType": "none",
     "placeUrl": null,
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-109": {
     "vendorId": "WD-109",
@@ -978,16 +978,16 @@
     "thumbnailUrl": null,
     "sourceType": "none",
     "placeUrl": null,
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-110": {
     "vendorId": "WD-110",
     "name": "픽컬러브랜딩센터",
-    "photoUrl": "https://postfiles.pstatic.net/MjAyMzEwMDRfMjgg/MDAxNjk2MzkzOTQ4MTg4.dUxxs_0BjsUA-WKqHYuhTQ4sJkZ6V3KZaoUEpdKQIHYg.1X_C7N5qS-4x7A9mxh9OxxK7Fycgbtm7Ess62ZmYxxIg.JPEG.mmdcolor/SE-d102a685-2a88-4cd7-b733-c87e947c0ae0.jpg?type=w466",
-    "thumbnailUrl": "https://postfiles.pstatic.net/MjAyMzEwMDRfMjgg/MDAxNjk2MzkzOTQ4MTg4.dUxxs_0BjsUA-WKqHYuhTQ4sJkZ6V3KZaoUEpdKQIHYg.1X_C7N5qS-4x7A9mxh9OxxK7Fycgbtm7Ess62ZmYxxIg.JPEG.mmdcolor/SE-d102a685-2a88-4cd7-b733-c87e947c0ae0.jpg?type=w466",
-    "sourceType": "kakao_place",
-    "placeUrl": "http://place.map.kakao.com/180158344",
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "photoUrl": null,
+    "thumbnailUrl": null,
+    "sourceType": "none",
+    "placeUrl": null,
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-111": {
     "vendorId": "WD-111",
@@ -996,7 +996,7 @@
     "thumbnailUrl": null,
     "sourceType": "none",
     "placeUrl": null,
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-112": {
     "vendorId": "WD-112",
@@ -1005,7 +1005,7 @@
     "thumbnailUrl": null,
     "sourceType": "none",
     "placeUrl": null,
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-113": {
     "vendorId": "WD-113",
@@ -1014,7 +1014,7 @@
     "thumbnailUrl": "https://t1.kakaocdn.net/mystore/6912879610124F2ABFE66A1E143BF60C",
     "sourceType": "kakao_place",
     "placeUrl": "http://place.map.kakao.com/1986156812",
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-114": {
     "vendorId": "WD-114",
@@ -1023,7 +1023,7 @@
     "thumbnailUrl": null,
     "sourceType": "none",
     "placeUrl": null,
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-115": {
     "vendorId": "WD-115",
@@ -1032,16 +1032,16 @@
     "thumbnailUrl": null,
     "sourceType": "none",
     "placeUrl": null,
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-116": {
     "vendorId": "WD-116",
     "name": "느로아 퍼스널컬러 연남점",
-    "photoUrl": "https://postfiles.pstatic.net/MjAyNjA3MDhfMjIx/MDAxNzgzNDg5NDcyNjAx.1Vs3miI_k4vpOfmA-yTRuIAyQ4hyvtcRpiOt3VrlVBYg.yrDEVGtNx_QFSElI0dDBcTpUq5cL9AJ9gKEY6CfTuMYg.JPEG/IMG%EF%BC%BF3856.jpg?type=w386",
-    "thumbnailUrl": "https://postfiles.pstatic.net/MjAyNjA3MDhfMjIx/MDAxNzgzNDg5NDcyNjAx.1Vs3miI_k4vpOfmA-yTRuIAyQ4hyvtcRpiOt3VrlVBYg.yrDEVGtNx_QFSElI0dDBcTpUq5cL9AJ9gKEY6CfTuMYg.JPEG/IMG%EF%BC%BF3856.jpg?type=w386",
-    "sourceType": "kakao_place",
-    "placeUrl": "http://place.map.kakao.com/73312763",
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "photoUrl": null,
+    "thumbnailUrl": null,
+    "sourceType": "none",
+    "placeUrl": null,
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-117": {
     "vendorId": "WD-117",
@@ -1050,7 +1050,7 @@
     "thumbnailUrl": null,
     "sourceType": "none",
     "placeUrl": null,
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-118": {
     "vendorId": "WD-118",
@@ -1059,7 +1059,7 @@
     "thumbnailUrl": null,
     "sourceType": "none",
     "placeUrl": null,
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-119": {
     "vendorId": "WD-119",
@@ -1068,7 +1068,7 @@
     "thumbnailUrl": null,
     "sourceType": "none",
     "placeUrl": null,
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-120": {
     "vendorId": "WD-120",
@@ -1077,7 +1077,7 @@
     "thumbnailUrl": null,
     "sourceType": "none",
     "placeUrl": null,
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-121": {
     "vendorId": "WD-121",
@@ -1086,7 +1086,7 @@
     "thumbnailUrl": null,
     "sourceType": "none",
     "placeUrl": null,
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-122": {
     "vendorId": "WD-122",
@@ -1095,7 +1095,7 @@
     "thumbnailUrl": null,
     "sourceType": "none",
     "placeUrl": null,
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-123": {
     "vendorId": "WD-123",
@@ -1104,7 +1104,7 @@
     "thumbnailUrl": null,
     "sourceType": "none",
     "placeUrl": null,
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-124": {
     "vendorId": "WD-124",
@@ -1113,7 +1113,7 @@
     "thumbnailUrl": "https://t1.daumcdn.net/local/kakaomapPhoto/review/bf97c877c128094dfd83ddb87e5c121c47e36439?original",
     "sourceType": "kakao_place",
     "placeUrl": "http://place.map.kakao.com/89205114",
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-125": {
     "vendorId": "WD-125",
@@ -1122,7 +1122,7 @@
     "thumbnailUrl": null,
     "sourceType": "none",
     "placeUrl": null,
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-126": {
     "vendorId": "WD-126",
@@ -1131,7 +1131,7 @@
     "thumbnailUrl": "https://t1.kakaocdn.net/mystore/CA2F7370E6DC40438168059541DCAD31",
     "sourceType": "kakao_place",
     "placeUrl": "http://place.map.kakao.com/102388370",
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-127": {
     "vendorId": "WD-127",
@@ -1140,7 +1140,7 @@
     "thumbnailUrl": null,
     "sourceType": "none",
     "placeUrl": null,
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-128": {
     "vendorId": "WD-128",
@@ -1149,16 +1149,16 @@
     "thumbnailUrl": "https://t1.kakaocdn.net/mystore/37F5C7B92EA14A78BEBFBAE2C2593AB8",
     "sourceType": "kakao_place",
     "placeUrl": "http://place.map.kakao.com/163208170",
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-129": {
     "vendorId": "WD-129",
     "name": "스네지호",
-    "photoUrl": "https://postfiles.pstatic.net/MjAyNjA4MDNfMTMy/MDAxNzg1NzQzMTkzMDA1.MY-3CDalAK6Wh2V_Va_WkDwc7NtM0DennkrcxIlcZ2cg.6If4Www4_gv99uBEVwuo2HlCSRcgUpT2uIjNP1yCfcEg.JPEG/IMG%EF%BC%BF2825.jpg?type=w580",
-    "thumbnailUrl": "https://postfiles.pstatic.net/MjAyNjA4MDNfMTMy/MDAxNzg1NzQzMTkzMDA1.MY-3CDalAK6Wh2V_Va_WkDwc7NtM0DennkrcxIlcZ2cg.6If4Www4_gv99uBEVwuo2HlCSRcgUpT2uIjNP1yCfcEg.JPEG/IMG%EF%BC%BF2825.jpg?type=w580",
-    "sourceType": "kakao_place",
-    "placeUrl": "http://place.map.kakao.com/665249530",
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "photoUrl": null,
+    "thumbnailUrl": null,
+    "sourceType": "none",
+    "placeUrl": null,
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-130": {
     "vendorId": "WD-130",
@@ -1167,7 +1167,7 @@
     "thumbnailUrl": null,
     "sourceType": "none",
     "placeUrl": null,
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-131": {
     "vendorId": "WD-131",
@@ -1176,7 +1176,7 @@
     "thumbnailUrl": null,
     "sourceType": "none",
     "placeUrl": null,
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-132": {
     "vendorId": "WD-132",
@@ -1185,7 +1185,7 @@
     "thumbnailUrl": "https://t1.kakaocdn.net/mystore/BD65565D1AAF4FEA99F4FF67204E277E",
     "sourceType": "kakao_place",
     "placeUrl": "http://place.map.kakao.com/255287595",
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-133": {
     "vendorId": "WD-133",
@@ -1194,7 +1194,7 @@
     "thumbnailUrl": "https://t1.kakaocdn.net/fiy_reboot/place/595045409AE3405A83E9619ABC4FDE29",
     "sourceType": "kakao_place",
     "placeUrl": "http://place.map.kakao.com/1490836685",
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-134": {
     "vendorId": "WD-134",
@@ -1203,7 +1203,7 @@
     "thumbnailUrl": "https://t1.kakaocdn.net/mystore/DE65FF09A22D40D4BE5CC50DFA0B9A23",
     "sourceType": "kakao_place",
     "placeUrl": "http://place.map.kakao.com/356559811",
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   },
   "WD-135": {
     "vendorId": "WD-135",
@@ -1212,6 +1212,6 @@
     "thumbnailUrl": "https://t1.kakaocdn.net/mystore/1E83C09DA8AB48739E658DB247D26D10",
     "sourceType": "kakao_place",
     "placeUrl": "http://place.map.kakao.com/488651122",
-    "updatedAt": "2026-08-15T15:06:25.413Z"
+    "updatedAt": "2026-08-15T15:17:18.868Z"
   }
 }

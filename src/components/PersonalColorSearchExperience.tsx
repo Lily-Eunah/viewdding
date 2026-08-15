@@ -341,7 +341,7 @@ export function PersonalColorSearchExperience({
       {/* Floating Bottom-Right Map Toggle Button */}
       <button
         type="button"
-        className="map-floating-toggle-btn"
+        className="floating-map-toggle-btn"
         onClick={toggleViewMode}
         aria-label={viewMode === "list" ? "지도 보기로 전환" : "목록 보기로 전환"}
       >

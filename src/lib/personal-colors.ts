@@ -29,11 +29,32 @@ export function formatPersonalColorPrice(vendor: PersonalColorRecord): string {
     const minMan = Math.round(vendor.priceEstimatedMin / 10000);
     if (vendor.priceEstimatedMax && vendor.priceEstimatedMax !== vendor.priceEstimatedMin) {
       const maxMan = Math.round(vendor.priceEstimatedMax / 10000);
-      return `${minMan}~${maxMan}만원대`;
+      return `${minMan}~${maxMan}만원`;
     }
     return `약 ${minMan}만원`;
   }
-  return vendor.priceRaw || "문의";
+
+  if (!vendor.priceRaw) return "문의";
+
+  // Try extracting number pairs from raw strings (e.g. "168,000원", "273,000원", "15만원")
+  const manMatches = Array.from(vendor.priceRaw.matchAll(/(\d+(?:\.\d+)?)\s*만\s*원?/g)).map((m) => Number(m[1]));
+  const fullNumMatches = Array.from(vendor.priceRaw.matchAll(/(\d{2,3}),(\d{3})\s*원?/g)).map((m) =>
+    Math.round(Number(m[1] + m[2]) / 10000)
+  );
+
+  const allNums = [...manMatches, ...fullNumMatches].filter((n) => n >= 3 && n <= 100);
+  if (allNums.length > 0) {
+    const min = Math.min(...allNums);
+    const max = Math.max(...allNums);
+    if (min === max) return `약 ${min}만원`;
+    return `${min}~${max}만원`;
+  }
+
+  if (vendor.priceRaw.length <= 10 && !vendor.priceRaw.includes("·")) {
+    return vendor.priceRaw;
+  }
+
+  return "문의";
 }
 
 export function personalColorStatusBadge(status: PersonalColorStatus): { label: string; tone: "primary" | "warning" | "neutral" } {

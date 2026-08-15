@@ -11,7 +11,7 @@ import { trackOutboundClick, useCardImpression } from "@/lib/analytics-client";
 function NaverMapAppIcon() {
   const gradId = useId();
   return (
-    <svg width="24" height="24" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ display: "block" }}>
+    <svg width="22" height="22" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ display: "block" }}>
       <defs>
         <linearGradient id={gradId} x1="14" y1="4" x2="14" y2="24" gradientUnits="userSpaceOnUse">
           <stop offset="0%" stopColor="#0072FF" />
@@ -130,7 +130,7 @@ export function PersonalColorCard({
           aria-label="공식 인스타그램 보기"
           onClick={handleInstagramClick}
         >
-          <InstagramLogo size={22} weight="bold" color="#E1306C" />
+          <InstagramLogo size={20} weight="bold" color="#E1306C" />
         </a>
       ) : null}
       {vendor.reviewUrl ? (
@@ -143,7 +143,7 @@ export function PersonalColorCard({
           aria-label="실제 후기 및 정보 보기"
           onClick={handleReviewClick}
         >
-          <Article size={22} weight="bold" color="#64748B" />
+          <Article size={20} weight="bold" color="#64748B" />
         </a>
       ) : null}
     </div>
@@ -209,9 +209,6 @@ export function PersonalColorCard({
                   vendor.name
                 )}
               </h3>
-              <span className="restaurant-closed-pill" style={{ background: "#FDF2F8", color: "#BE185D" }}>
-                {priceDisplay}
-              </span>
             </div>
 
             <p className="restaurant-location-line">
@@ -256,11 +253,11 @@ export function PersonalColorCard({
         {/* Right Metrics & Actions Column (Desktop) */}
         <div className="restaurant-card-metrics-col">
           <dl className="restaurant-metrics-grid">
-            <div className="metric-box">
+            <div className="metric-box" title={vendor.priceRaw || priceDisplay}>
               <dt>예상 비용</dt>
               <dd>{priceDisplay}</dd>
             </div>
-            <div className="metric-box">
+            <div className="metric-box" title={vendor.services.join(", ")}>
               <dt>주요 진단</dt>
               <dd>{vendor.services[0] || "퍼스널컬러"}</dd>
             </div>

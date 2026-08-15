@@ -18,16 +18,17 @@ export interface PersonalColorPhotoEntry {
   name: string;
   photoUrl: string | null;
   thumbnailUrl: string | null;
-  sourceType: "kakao_place" | "naver_place" | "none";
+  sourceType: "kakao_place" | "none";
   placeUrl: string | null;
   updatedAt: string;
 }
 
 type PhotoCache = Record<string, PersonalColorPhotoEntry>;
 
-function extractCleanPhotoUrl(ogImageUrl: string): string | null {
+function extractCleanOfficialPhotoUrl(ogImageUrl: string): string | null {
   if (!ogImageUrl) return null;
 
+  // Filter out static maps and generic logos
   if (
     ogImageUrl.includes("staticmap") ||
     ogImageUrl.includes("default") ||
@@ -47,10 +48,23 @@ function extractCleanPhotoUrl(ogImageUrl: string): string | null {
   if (fnameMatch) {
     try {
       const decoded = decodeURIComponent(fnameMatch[1]);
-      return decoded.startsWith("http://") ? decoded.replace("http://", "https://") : decoded;
+      url = decoded.startsWith("http://") ? decoded.replace("http://", "https://") : decoded;
     } catch {
-      return url;
+      // keep url as is
     }
+  }
+
+  // Filter out personal blog attachments (which often contain low-quality screenshots/selfies)
+  // Only accept official store photos from Kakao/Daum place CDN
+  const isOfficialStorePhoto =
+    url.includes("mystore") ||
+    url.includes("fiy_reboot") ||
+    url.includes("kakaomapPhoto") ||
+    url.includes("/place/") ||
+    url.includes("cfile");
+
+  if (!isOfficialStorePhoto && (url.includes("pstatic.net") || url.includes("blogfiles"))) {
+    return null; // Reject random user blog post photos in favor of clean brand visual
   }
 
   return url.startsWith("http://") ? url.replace("http://", "https://") : url;
@@ -111,7 +125,7 @@ async function fetchKakaoPlacePhoto(
               html.match(/<meta\s+content=["']([^"']+)["']\s+property=["']og:image["']/i);
 
             if (ogMatch?.[1]) {
-              const cleanPhoto = extractCleanPhotoUrl(ogMatch[1]);
+              const cleanPhoto = extractCleanOfficialPhotoUrl(ogMatch[1]);
               if (cleanPhoto) {
                 return { photoUrl: cleanPhoto, placeUrl, sourceType: "kakao_place" };
               }
@@ -128,19 +142,12 @@ async function fetchKakaoPlacePhoto(
 }
 
 async function main() {
-  console.log("Starting Wedding Personal Color photos collection...");
+  console.log("Starting Wedding Personal Color official store photos collection...");
 
   const raw = await fs.readFile(personalColorsPath, "utf-8");
   const vendors = JSON.parse(raw) as PersonalColorRecord[];
 
-  let existingCache: PhotoCache = {};
-  try {
-    const cacheRaw = await fs.readFile(outputPath, "utf-8");
-    existingCache = JSON.parse(cacheRaw) as PhotoCache;
-  } catch {
-    existingCache = {};
-  }
-
+  const cache: PhotoCache = {};
   const now = new Date().toISOString();
   let successCount = 0;
   let fallbackCount = 0;
@@ -149,25 +156,19 @@ async function main() {
     const v = vendors[i];
     const key = v.id;
 
-    if (existingCache[key]?.photoUrl) {
-      v.photoUrl = existingCache[key].photoUrl;
-      successCount += 1;
-      continue;
-    }
-
     const { photoUrl, placeUrl, sourceType } = await fetchKakaoPlacePhoto(v);
 
     if (photoUrl) {
       successCount += 1;
       v.photoUrl = photoUrl;
-      console.log(`[${i + 1}/${vendors.length}] Found photo for ${v.name}: ${photoUrl.slice(0, 70)}...`);
+      console.log(`[${i + 1}/${vendors.length}] Official store photo for ${v.name}: ${photoUrl.slice(0, 70)}...`);
     } else {
       fallbackCount += 1;
       v.photoUrl = null;
-      console.log(`[${i + 1}/${vendors.length}] No photo found for ${v.name}`);
+      console.log(`[${i + 1}/${vendors.length}] Clean brand visual for ${v.name}`);
     }
 
-    existingCache[key] = {
+    cache[key] = {
       vendorId: v.id,
       name: v.name,
       photoUrl,
@@ -179,13 +180,13 @@ async function main() {
   }
 
   // Save photos cache and updated personal-colors.generated.json
-  await fs.writeFile(outputPath, JSON.stringify(existingCache, null, 2), "utf-8");
+  await fs.writeFile(outputPath, JSON.stringify(cache, null, 2), "utf-8");
   await fs.writeFile(personalColorsPath, JSON.stringify(vendors, null, 2), "utf-8");
 
-  console.log(`\nPhoto backfill summary:`);
+  console.log(`\nOfficial store photos collection summary:`);
   console.log(`Total: ${vendors.length}`);
-  console.log(`Found: ${successCount}`);
-  console.log(`No photo: ${fallbackCount}`);
+  console.log(`Official store photos: ${successCount}`);
+  console.log(`Clean brand visual: ${fallbackCount}`);
   console.log(`Saved to ${outputPath}`);
 }
 

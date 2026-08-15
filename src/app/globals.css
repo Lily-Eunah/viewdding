@@ -1804,6 +1804,14 @@ body:has(.landing-page-reference):after{display:none}
   margin-top: 10px;
 }
 
+.restaurant-metrics-portal-links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: 12px;
+}
+
 .portal-icon-only-btn {
   display: inline-flex;
   align-items: center;
