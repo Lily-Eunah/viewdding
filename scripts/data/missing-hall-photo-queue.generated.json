@@ -1323,27 +1323,6 @@
     ]
   },
   {
-    "hallId": "H-SEO-20260729-322",
-    "venueId": "V-SEO-20260729-101",
-    "venueName": "웨딩스퀘어 성북",
-    "hallName": "아모르홀",
-    "sido": "서울특별시",
-    "sigungu": "성북구",
-    "publicStatus": "public",
-    "hallNameStatus": "official",
-    "venueHallCount": 2,
-    "officialWebsite": "https://www.weddingsquare.co.kr/",
-    "officialInstagram": null,
-    "hallNameSourceUrl": "https://www.weddingsquare.co.kr/",
-    "priority": 1,
-    "reviewStatus": "pending",
-    "recommendedQueries": [
-      "\"웨딩스퀘어 성북\" \"아모르홀\" 공식",
-      "\"웨딩스퀘어 성북\" \"아모르홀\" 웨딩",
-      "\"웨딩스퀘어 성북\" \"아모르홀\" 인스타그램"
-    ]
-  },
-  {
     "hallId": "H-SEO-20260729-234",
     "venueId": "V-SEO-20260729-106",
     "venueName": "더컨벤션 잠실점",
@@ -2751,27 +2730,6 @@
     ]
   },
   {
-    "hallId": "H-REG-X3-20260809-066",
-    "venueId": "V-REG-X3-20260809-032",
-    "venueName": "모나밸리",
-    "hallName": "아레나홀",
-    "sido": "충청남도",
-    "sigungu": "아산시",
-    "publicStatus": "public",
-    "hallNameStatus": "official",
-    "venueHallCount": 1,
-    "officialWebsite": "https://www.monavalley.co.kr/",
-    "officialInstagram": null,
-    "hallNameSourceUrl": "https://www.monavalley.co.kr/",
-    "priority": 1,
-    "reviewStatus": "pending",
-    "recommendedQueries": [
-      "\"모나밸리\" \"아레나홀\" 공식",
-      "\"모나밸리\" \"아레나홀\" 웨딩",
-      "\"모나밸리\" \"아레나홀\" 인스타그램"
-    ]
-  },
-  {
     "hallId": "H-REG-X3-20260809-064",
     "venueId": "V-REG-X3-20260809-030",
     "venueName": "호서웨딩프라자",
@@ -3276,27 +3234,6 @@
     ]
   },
   {
-    "hallId": "H-SEO-20260729-239",
-    "venueId": "V-SEO-20260729-111",
-    "venueName": "서울웨딩타워",
-    "hallName": "단독홀",
-    "sido": "서울특별시",
-    "sigungu": "송파구",
-    "publicStatus": "public",
-    "hallNameStatus": "single_unnamed",
-    "venueHallCount": 1,
-    "officialWebsite": "https://thewedd.com/hall-35/",
-    "officialInstagram": null,
-    "hallNameSourceUrl": "https://thewedd.com/hall-35/",
-    "priority": 2,
-    "reviewStatus": "pending",
-    "recommendedQueries": [
-      "\"서울웨딩타워\" \"단독홀\" 공식",
-      "\"서울웨딩타워\" \"단독홀\" 웨딩",
-      "\"서울웨딩타워\" \"단독홀\" 인스타그램"
-    ]
-  },
-  {
     "hallId": "H-SEO-20260729-240",
     "venueId": "V-SEO-20260729-112",
     "venueName": "소피텔 앰배서더 서울",
@@ -3315,27 +3252,6 @@
       "\"소피텔 앰배서더 서울\" \"그랜드 볼룸 방돔\" 공식",
       "\"소피텔 앰배서더 서울\" \"그랜드 볼룸 방돔\" 웨딩",
       "\"소피텔 앰배서더 서울\" \"그랜드 볼룸 방돔\" 인스타그램"
-    ]
-  },
-  {
-    "hallId": "H-SEO-20260729-242",
-    "venueId": "V-SEO-20260729-114",
-    "venueName": "시그니엘 서울",
-    "hallName": "그랜드 볼룸",
-    "sido": "서울특별시",
-    "sigungu": "송파구",
-    "publicStatus": "public",
-    "hallNameStatus": "official",
-    "venueHallCount": 1,
-    "officialWebsite": null,
-    "officialInstagram": null,
-    "hallNameSourceUrl": "https://yozmwedding.co.kr/74",
-    "priority": 2,
-    "reviewStatus": "pending",
-    "recommendedQueries": [
-      "\"시그니엘 서울\" \"그랜드 볼룸\" 공식",
-      "\"시그니엘 서울\" \"그랜드 볼룸\" 웨딩",
-      "\"시그니엘 서울\" \"그랜드 볼룸\" 인스타그램"
     ]
   },
   {
@@ -3399,27 +3315,6 @@
       "\"브라이튼하우스\" \"브라이튼하우스\" 공식",
       "\"브라이튼하우스\" \"브라이튼하우스\" 웨딩",
       "\"브라이튼하우스\" \"브라이튼하우스\" 인스타그램"
-    ]
-  },
-  {
-    "hallId": "H-SEO-20260729-287",
-    "venueId": "V-SEO-20260729-155",
-    "venueName": "라피쥬웨딩 인사점",
-    "hallName": "단독홀",
-    "sido": "서울특별시",
-    "sigungu": "종로구",
-    "publicStatus": "public",
-    "hallNameStatus": "single_unnamed",
-    "venueHallCount": 1,
-    "officialWebsite": "https://www.lapige.com/",
-    "officialInstagram": null,
-    "hallNameSourceUrl": "https://www.lapige.com/",
-    "priority": 2,
-    "reviewStatus": "pending",
-    "recommendedQueries": [
-      "\"라피쥬웨딩 인사점\" \"단독홀\" 공식",
-      "\"라피쥬웨딩 인사점\" \"단독홀\" 웨딩",
-      "\"라피쥬웨딩 인사점\" \"단독홀\" 인스타그램"
     ]
   },
   {
@@ -3507,27 +3402,6 @@
     ]
   },
   {
-    "hallId": "H-IC-P1-20260808-014",
-    "venueId": "V-IC-P1-20260808-008",
-    "venueName": "샤펠드미앙",
-    "hallName": "단독홀",
-    "sido": "인천광역시",
-    "sigungu": "남동구",
-    "publicStatus": "public",
-    "hallNameStatus": "single_unnamed",
-    "venueHallCount": 1,
-    "officialWebsite": "https://incheon.wedding/collections/weddinghall-chapelle-de-mien/",
-    "officialInstagram": null,
-    "hallNameSourceUrl": "https://incheon.wedding/collections/weddinghall-chapelle-de-mien/",
-    "priority": 2,
-    "reviewStatus": "pending",
-    "recommendedQueries": [
-      "\"샤펠드미앙\" \"단독홀\" 공식",
-      "\"샤펠드미앙\" \"단독홀\" 웨딩",
-      "\"샤펠드미앙\" \"단독홀\" 인스타그램"
-    ]
-  },
-  {
     "hallId": "H-REG-X3-20260809-065",
     "venueId": "V-REG-X3-20260809-031",
     "venueName": "빌라드70",
@@ -3549,27 +3423,6 @@
     ]
   },
   {
-    "hallId": "H-REG-X3-20260809-063",
-    "venueId": "V-REG-X3-20260809-029",
-    "venueName": "아산터미널웨딩홀",
-    "hallName": "단독홀",
-    "sido": "충청남도",
-    "sigungu": "아산시",
-    "publicStatus": "public",
-    "hallNameStatus": "single_unnamed",
-    "venueHallCount": 1,
-    "officialWebsite": "https://www.data.go.kr/data/15129248/fileData.do?recommendDataYn=Y",
-    "officialInstagram": null,
-    "hallNameSourceUrl": "https://www.data.go.kr/data/15129248/fileData.do?recommendDataYn=Y",
-    "priority": 2,
-    "reviewStatus": "pending",
-    "recommendedQueries": [
-      "\"아산터미널웨딩홀\" \"단독홀\" 공식",
-      "\"아산터미널웨딩홀\" \"단독홀\" 웨딩",
-      "\"아산터미널웨딩홀\" \"단독홀\" 인스타그램"
-    ]
-  },
-  {
     "hallId": "H-REG-X3-20260809-062",
     "venueId": "V-REG-X3-20260809-028",
     "venueName": "아일랜드유",
@@ -3588,27 +3441,6 @@
       "\"아일랜드유\" \"단독홀\" 공식",
       "\"아일랜드유\" \"단독홀\" 웨딩",
       "\"아일랜드유\" \"단독홀\" 인스타그램"
-    ]
-  },
-  {
-    "hallId": "H-REG-X3-20260809-068",
-    "venueId": "V-REG-X3-20260809-034",
-    "venueName": "벨리스웨딩",
-    "hallName": "단독홀",
-    "sido": "충청북도",
-    "sigungu": "청주시",
-    "publicStatus": "public",
-    "hallNameStatus": "single_unnamed",
-    "venueHallCount": 1,
-    "officialWebsite": "https://bellis-wedding.com/main",
-    "officialInstagram": null,
-    "hallNameSourceUrl": "https://bellis-wedding.com/main",
-    "priority": 2,
-    "reviewStatus": "pending",
-    "recommendedQueries": [
-      "\"벨리스웨딩\" \"단독홀\" 공식",
-      "\"벨리스웨딩\" \"단독홀\" 웨딩",
-      "\"벨리스웨딩\" \"단독홀\" 인스타그램"
     ]
   },
   {
@@ -3672,27 +3504,6 @@
       "\"노보텔 앰배서더 서울 강남\" \"보르도홀\" 공식",
       "\"노보텔 앰배서더 서울 강남\" \"보르도홀\" 웨딩",
       "\"노보텔 앰배서더 서울 강남\" \"보르도홀\" 인스타그램"
-    ]
-  },
-  {
-    "hallId": "H-SEO-20260729-096",
-    "venueId": "V-SEO-20260728-041",
-    "venueName": "엘리에나호텔",
-    "hallName": "그랜드볼룸",
-    "sido": "서울특별시",
-    "sigungu": "강남구",
-    "publicStatus": "public",
-    "hallNameStatus": "official",
-    "venueHallCount": 3,
-    "officialWebsite": null,
-    "officialInstagram": null,
-    "hallNameSourceUrl": "https://yozmwedding.co.kr/venue/?bmode=view&idx=18228236",
-    "priority": 3,
-    "reviewStatus": "pending",
-    "recommendedQueries": [
-      "\"엘리에나호텔\" \"그랜드볼룸\" 공식",
-      "\"엘리에나호텔\" \"그랜드볼룸\" 웨딩",
-      "\"엘리에나호텔\" \"그랜드볼룸\" 인스타그램"
     ]
   },
   {
@@ -3966,27 +3777,6 @@
       "\"그랜드 하얏트 서울\" \"그랜드 살롱\" 공식",
       "\"그랜드 하얏트 서울\" \"그랜드 살롱\" 웨딩",
       "\"그랜드 하얏트 서울\" \"그랜드 살롱\" 인스타그램"
-    ]
-  },
-  {
-    "hallId": "H-SEO-20260729-270",
-    "venueId": "V-SEO-20260729-139",
-    "venueName": "그랜드 하얏트 서울",
-    "hallName": "워터폴 가든",
-    "sido": "서울특별시",
-    "sigungu": "용산구",
-    "publicStatus": "public",
-    "hallNameStatus": "official",
-    "venueHallCount": 3,
-    "officialWebsite": null,
-    "officialInstagram": null,
-    "hallNameSourceUrl": "https://yozmwedding.co.kr/79",
-    "priority": 3,
-    "reviewStatus": "pending",
-    "recommendedQueries": [
-      "\"그랜드 하얏트 서울\" \"워터폴 가든\" 공식",
-      "\"그랜드 하얏트 서울\" \"워터폴 가든\" 웨딩",
-      "\"그랜드 하얏트 서울\" \"워터폴 가든\" 인스타그램"
     ]
   },
   {

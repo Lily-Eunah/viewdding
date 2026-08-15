@@ -891,6 +891,15 @@
     "checkedAt": "2026-08-10"
   },
   {
+    "hallId": "H-IC-P1-20260808-014",
+    "url": "https://blogthumb.pstatic.net/MjAyNjA0MjdfMjQ0/MDAxNzc3MjYyNjE1MTcx.oqcOIxv_KsTA8QkIw7PK_38Fen_k_bdpvlIpIvz7d4Yg.nQe8XkQS38WQ-K4HY3qdwHHiuatCeRpuVQaZJHr7qMQg.JPEG/KakaoTalk_20260427_123706152_01.jpg?type=w2",
+    "sourceUrl": "https://blog.naver.com/formerci/224268100718",
+    "sourceType": "public_listing",
+    "usageStatus": "public_source_linked",
+    "photoKind": "wedding_setup",
+    "checkedAt": "2026-08-10"
+  },
+  {
     "hallId": "H-IC-P1-20260808-015",
     "url": "https://cdn.prod.website-files.com/66a1eeaa00f1c86c3dbae974/66e00327e6ef06d596472244_image.avif",
     "sourceUrl": "https://www.directwedding.co.kr/weddinghall/hall0417",
@@ -1800,11 +1809,38 @@
     "checkedAt": "2026-08-10"
   },
   {
+    "hallId": "H-REG-X3-20260809-063",
+    "url": "https://blogthumb.pstatic.net/MjAyNTExMDJfMTYx/MDAxNzYyMDUxMDQyNTU1.vlQldmWBeXyEeikTn_iVgsA5qNVGmS_hWMgNp_pEyukg.FNOjidU1ooLZeQOtnBe5tIAKY6CYUQeZ7QEKruOP9uMg.JPEG/824C4B0C%A3%AD6D7B%A3%AD4922%A3%AD9C02%A3%AD5ED21EEB9571.jpeg?type=w2",
+    "sourceUrl": "https://blog.naver.com/chaeschaes/224061887187",
+    "sourceType": "public_listing",
+    "usageStatus": "public_source_linked",
+    "photoKind": "wedding_setup",
+    "checkedAt": "2026-08-10"
+  },
+  {
+    "hallId": "H-REG-X3-20260809-066",
+    "url": "https://www.monavalley.co.kr/Image/arenahall_new_1.jpg",
+    "sourceUrl": "https://www.monavalley.co.kr/sub.php?Page=sub2-1",
+    "sourceType": "official_website",
+    "usageStatus": "official_source_linked",
+    "photoKind": "wedding_setup",
+    "checkedAt": "2026-08-10"
+  },
+  {
     "hallId": "H-REG-X3-20260809-067",
     "url": "https://postfiles.pstatic.net/MjAyNjAzMjVfNTUg/MDAxNzc0NDQxMzIyNjAy.LDO34rJGoWaNH4pEJi-OF0zTDJlnRG3blCRWlZMM6q0g.hrj71pzwKT3oTzctYc5ahRewk4ggrjd04uSObbqa_RQg.PNG/image.png?type=w966",
     "sourceUrl": "https://blog.naver.com/spicyhater/224229529795",
     "sourceType": "public_listing",
     "usageStatus": "public_source_linked",
+    "photoKind": "wedding_setup",
+    "checkedAt": "2026-08-10"
+  },
+  {
+    "hallId": "H-REG-X3-20260809-068",
+    "url": "https://cdn.imweb.me/upload/S202607081fa04837c81b5/c8c8f17a0a651.png",
+    "sourceUrl": "https://bellis-wedding.com/main",
+    "sourceType": "official_website",
+    "usageStatus": "official_source_linked",
     "photoKind": "wedding_setup",
     "checkedAt": "2026-08-10"
   },
@@ -2373,7 +2409,7 @@
     "sourceType": "official_website",
     "usageStatus": "official_source_linked",
     "photoKind": "wedding_setup",
-    "checkedAt": "2026-08-08"
+    "checkedAt": "2026-08-10"
   },
   {
     "hallId": "H-SEO-20260728-076",
@@ -2509,6 +2545,15 @@
     "usageStatus": "public_source_linked",
     "photoKind": "wedding_setup",
     "checkedAt": "2026-08-08"
+  },
+  {
+    "hallId": "H-SEO-20260729-096",
+    "url": "https://cdn.imweb.me/upload/S20240204aca494e0b4938/56282536989bf.jpg",
+    "sourceUrl": "https://yozmwedding.co.kr/venue/?bmode=view&idx=18228236",
+    "sourceType": "public_listing",
+    "usageStatus": "public_source_linked",
+    "photoKind": "wedding_setup",
+    "checkedAt": "2026-08-10"
   },
   {
     "hallId": "H-SEO-20260729-097",
@@ -3174,7 +3219,7 @@
     "sourceType": "official_website",
     "usageStatus": "official_source_linked",
     "photoKind": "wedding_setup",
-    "checkedAt": "2026-08-08"
+    "checkedAt": "2026-08-10"
   },
   {
     "hallId": "H-SEO-20260729-191",
@@ -3528,6 +3573,15 @@
     "checkedAt": "2026-08-08"
   },
   {
+    "hallId": "H-SEO-20260729-239",
+    "url": "https://blogthumb.pstatic.net/MjAyNTA4MTlfNzQg/MDAxNzU1NTk2NTIxNjE0.XvgwNNhLu6aDKUrClNlUvPiqjUjA89sCCyxlboEszOYg.pfY_HgTbxzuZgDKNoCfYq5_jEfKIPoloZoyCH6f77FUg.JPEG/IMG%A3%DF7111.jpg?type=w2",
+    "sourceUrl": "https://blog.naver.com/jin68918/223976667264",
+    "sourceType": "public_listing",
+    "usageStatus": "public_source_linked",
+    "photoKind": "wedding_setup",
+    "checkedAt": "2026-08-10"
+  },
+  {
     "hallId": "H-SEO-20260729-241",
     "url": "https://cdn.imweb.me/upload/S20240204aca494e0b4938/f34b71d5038a9.jpg",
     "sourceUrl": "https://yozmwedding.co.kr/venue/?bmode=view&idx=150907134",
@@ -3535,6 +3589,15 @@
     "usageStatus": "public_source_linked",
     "photoKind": "wedding_setup",
     "checkedAt": "2026-08-08"
+  },
+  {
+    "hallId": "H-SEO-20260729-242",
+    "url": "https://blogthumb.pstatic.net/MjAyNTExMDlfODkg/MDAxNzYyNjc5NTI5Mjk2.bsChgzPy90uPgJrLaHwRmmzRKWCqMoPQZX5zfPVudcEg.EJgPjL0YsHXwL5B5ON8wNA-w4pmmekfN42tsiKAhAbEg.JPEG/output%A3%DF4047683479.jpg?type=w2",
+    "sourceUrl": "https://blog.naver.com/reg0312/224070053677",
+    "sourceType": "public_listing",
+    "usageStatus": "public_source_linked",
+    "photoKind": "wedding_setup",
+    "checkedAt": "2026-08-10"
   },
   {
     "hallId": "H-SEO-20260729-246",
@@ -3672,6 +3735,15 @@
     "checkedAt": "2026-08-08"
   },
   {
+    "hallId": "H-SEO-20260729-270",
+    "url": "https://blogthumb.pstatic.net/MjAyNTExMDNfODIg/MDAxNzYyMTQ5NDc4MzQ1.Hk7YJkIrvYFnSB8gxqJW-Q3s_ujGWz-l_du2_W4g5YIg.JpQMhCu9Q2jVnIIlnDyoY0Xp1KnZUtCq9bjQxSFaDAQg.JPEG/output%A3%DF657864999.jpg?type=w2",
+    "sourceUrl": "https://blog.naver.com/summerseo/224025393628",
+    "sourceType": "public_listing",
+    "usageStatus": "public_source_linked",
+    "photoKind": "wedding_setup",
+    "checkedAt": "2026-08-10"
+  },
+  {
     "hallId": "H-SEO-20260729-271",
     "url": "https://cdn.imweb.me/upload/S20240204aca494e0b4938/4fe3385b1f705.jpg",
     "sourceUrl": "https://yozmwedding.co.kr/venue/?bmode=view&idx=19023649",
@@ -3751,6 +3823,15 @@
     "usageStatus": "official_source_linked",
     "photoKind": "wedding_setup",
     "checkedAt": "2026-08-08"
+  },
+  {
+    "hallId": "H-SEO-20260729-287",
+    "url": "https://cdn.prod.website-files.com/66a1eeaa00f1c86c3dbae974/66e002661390e2f5fecc4d40_image.avif",
+    "sourceUrl": "https://www.directwedding.co.kr/weddinghall/hall0175",
+    "sourceType": "public_listing",
+    "usageStatus": "public_source_linked",
+    "photoKind": "wedding_setup",
+    "checkedAt": "2026-08-10"
   },
   {
     "hallId": "H-SEO-20260729-291",
@@ -3949,6 +4030,15 @@
     "usageStatus": "official_source_linked",
     "photoKind": "wedding_setup",
     "checkedAt": "2026-08-08"
+  },
+  {
+    "hallId": "H-SEO-20260729-322",
+    "url": "https://cdn.imweb.me/upload/S20250617bb376dcf6ff0e/b99a488fd92db.png",
+    "sourceUrl": "https://www.weddingsquare.co.kr/",
+    "sourceType": "official_website",
+    "usageStatus": "official_source_linked",
+    "photoKind": "wedding_setup",
+    "checkedAt": "2026-08-10"
   },
   {
     "hallId": "H-SEO-20260729-323",

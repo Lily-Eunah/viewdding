@@ -176,6 +176,14 @@
     "error": null
   },
   {
+    "hallId": "H-IC-P1-20260808-014",
+    "url": "https://blogthumb.pstatic.net/MjAyNjA0MjdfMjQ0/MDAxNzc3MjYyNjE1MTcx.oqcOIxv_KsTA8QkIw7PK_38Fen_k_bdpvlIpIvz7d4Yg.nQe8XkQS38WQ-K4HY3qdwHHiuatCeRpuVQaZJHr7qMQg.JPEG/KakaoTalk_20260427_123706152_01.jpg?type=w2",
+    "bytes": 211396,
+    "sha256": "3e60169ec3472323b1dd2f33c718c02ccf9c12517ff24029969d541d566164a1",
+    "valid": true,
+    "error": null
+  },
+  {
     "hallId": "H-REG-X3-20260809-005",
     "url": "https://blogthumb.pstatic.net/MjAyNjAzMjVfMjI0/MDAxNzc0NDAwMDkyMzYz.OrQhStSfJ3fc_n6vVvYlyHgwObepK2NnkZPf9TVQS28g.4O2aJhRJQuKiwEG6nnLwH3w6Jo0VzVVQuHNnOHNVAAQg.JPEG/IMG_20260117_3116.jpg?type=w2",
     "bytes": 56430,
@@ -288,10 +296,34 @@
     "error": null
   },
   {
+    "hallId": "H-REG-X3-20260809-063",
+    "url": "https://blogthumb.pstatic.net/MjAyNTExMDJfMTYx/MDAxNzYyMDUxMDQyNTU1.vlQldmWBeXyEeikTn_iVgsA5qNVGmS_hWMgNp_pEyukg.FNOjidU1ooLZeQOtnBe5tIAKY6CYUQeZ7QEKruOP9uMg.JPEG/824C4B0C%A3%AD6D7B%A3%AD4922%A3%AD9C02%A3%AD5ED21EEB9571.jpeg?type=w2",
+    "bytes": 246280,
+    "sha256": "4bad880d4efe1b46b29f21933f12895b6eab2cb27d0ec580bd97795b56fa4dd4",
+    "valid": true,
+    "error": null
+  },
+  {
+    "hallId": "H-REG-X3-20260809-066",
+    "url": "https://www.monavalley.co.kr/Image/arenahall_new_1.jpg",
+    "bytes": 1123724,
+    "sha256": "b1dfcb371d00349a3e4c8a28b0bfcf1c90d72ba2faec0f992410ecfede430a0f",
+    "valid": true,
+    "error": null
+  },
+  {
     "hallId": "H-REG-X3-20260809-067",
     "url": "https://postfiles.pstatic.net/MjAyNjAzMjVfNTUg/MDAxNzc0NDQxMzIyNjAy.LDO34rJGoWaNH4pEJi-OF0zTDJlnRG3blCRWlZMM6q0g.hrj71pzwKT3oTzctYc5ahRewk4ggrjd04uSObbqa_RQg.PNG/image.png?type=w966",
     "bytes": 942276,
     "sha256": "d16d2bf3a56768bf81c32239a00b430c5f15907f243b9d5f95aed401405b36a8",
+    "valid": true,
+    "error": null
+  },
+  {
+    "hallId": "H-REG-X3-20260809-068",
+    "url": "https://cdn.imweb.me/upload/S202607081fa04837c81b5/c8c8f17a0a651.png",
+    "bytes": 2674316,
+    "sha256": "0331790c31f36dc8afe664ce00bf9e7d6957a9bbfa37d585ae38ff1a65c1f937",
     "valid": true,
     "error": null
   },
@@ -316,6 +348,14 @@
     "url": "https://postfiles.pstatic.net/MjAyNTA5MTRfMjE3/MDAxNzU3NzgwNjAyOTg0.Vdj26_nmHetMHR0Ie-M94HGtA_39ykq4Hwv6NqGvvmAg.lDHZ_s15UicDWem5bJc7Eb3lniO-Tg-T6s0AgCMLBeQg.JPEG/SE-9e4eb9da-2103-4e81-92af-d22bd01e10ec.jpg?type=w966",
     "bytes": 231572,
     "sha256": "a5541e7e528da36a9ce1fa96ee0f1ce2a23e289531a513dc17cb01062d0006de",
+    "valid": true,
+    "error": null
+  },
+  {
+    "hallId": "H-SEO-20260729-096",
+    "url": "https://cdn.imweb.me/upload/S20240204aca494e0b4938/56282536989bf.jpg",
+    "bytes": 204819,
+    "sha256": "4dcac72d05cf6a52f848b339b4bbf6d8a9b7d638893949413a4f005f9ff6e9e4",
     "valid": true,
     "error": null
   },
@@ -400,6 +440,22 @@
     "error": null
   },
   {
+    "hallId": "H-SEO-20260729-239",
+    "url": "https://blogthumb.pstatic.net/MjAyNTA4MTlfNzQg/MDAxNzU1NTk2NTIxNjE0.XvgwNNhLu6aDKUrClNlUvPiqjUjA89sCCyxlboEszOYg.pfY_HgTbxzuZgDKNoCfYq5_jEfKIPoloZoyCH6f77FUg.JPEG/IMG%A3%DF7111.jpg?type=w2",
+    "bytes": 152251,
+    "sha256": "9430769465b325c381d97f26f071f005fa2656243e4ead143d81d9e5de86a1ed",
+    "valid": true,
+    "error": null
+  },
+  {
+    "hallId": "H-SEO-20260729-242",
+    "url": "https://blogthumb.pstatic.net/MjAyNTExMDlfODkg/MDAxNzYyNjc5NTI5Mjk2.bsChgzPy90uPgJrLaHwRmmzRKWCqMoPQZX5zfPVudcEg.EJgPjL0YsHXwL5B5ON8wNA-w4pmmekfN42tsiKAhAbEg.JPEG/output%A3%DF4047683479.jpg?type=w2",
+    "bytes": 208753,
+    "sha256": "1a9916b39d5471b998b9e23b0af1fccb79aebb6181053babe87a61a32a4a85a4",
+    "valid": true,
+    "error": null
+  },
+  {
     "hallId": "H-SEO-20260729-253",
     "url": "https://postfiles.pstatic.net/MjAyNDA5MjZfMTMw/MDAxNzI3MzU4Nzc3NTg4.Alp5NHP9t6VxVNJmjY9Pz2QGOSac4D4LHOfnqwq92vkg.CmMvjU3NyRatn75f4Jrzxxm8_M2-AxiESIZ5Vj2QidAg.JPEG/SE-c78602b4-cb96-4f84-9d17-bfed0a6774d8.jpg?type=w966",
     "bytes": 69287,
@@ -420,6 +476,22 @@
     "url": "https://blogthumb.pstatic.net/MjAyNjA3MTFfODYg/MDAxNzgzNzUwODM5NTg3.O86lj_4fA1OvKJJM29vkrjHvrPyRtZZQzQsp4aaoABwg.Mmx6h9lSsbdrgPqvNK6mKdfCK3w14q6CN5EV4U8Webkg.JPEG/900_20260628_110758.jpg?type=w2",
     "bytes": 164926,
     "sha256": "b0c5335142641dc9d0e2fe71e8b7fb830324d7be765b4416c9a80a60aaf63e6c",
+    "valid": true,
+    "error": null
+  },
+  {
+    "hallId": "H-SEO-20260729-270",
+    "url": "https://blogthumb.pstatic.net/MjAyNTExMDNfODIg/MDAxNzYyMTQ5NDc4MzQ1.Hk7YJkIrvYFnSB8gxqJW-Q3s_ujGWz-l_du2_W4g5YIg.JpQMhCu9Q2jVnIIlnDyoY0Xp1KnZUtCq9bjQxSFaDAQg.JPEG/output%A3%DF657864999.jpg?type=w2",
+    "bytes": 161847,
+    "sha256": "7ad966be25531381cdb72e5d2a4b2a4aaffbea35684e8164b8d503c4f27f3163",
+    "valid": true,
+    "error": null
+  },
+  {
+    "hallId": "H-SEO-20260729-287",
+    "url": "https://cdn.prod.website-files.com/66a1eeaa00f1c86c3dbae974/66e002661390e2f5fecc4d40_image.avif",
+    "bytes": 88714,
+    "sha256": "e480001c94264b027a44f3a4ab2768afa783a23fe0dac1fae1ebfad45db12e2d",
     "valid": true,
     "error": null
   },
@@ -452,6 +524,14 @@
     "url": "https://blogthumb.pstatic.net/MjAyNjA3MjFfNzkg/MDAxNzg0NTk3ODA1MTUx.ouwhJeIMli2SemXhtwAgDY2sOabpRtYNd70SS8tedvkg.dJAkYKaNs7AUUVbtDuneAkzTcfvRmyCRKj5dUtc8Q90g.PNG/900_Screenshot_20260712_140640_Photo_Editor.png?type=w2",
     "bytes": 489057,
     "sha256": "0c9a98cdea8eaa7fca7f1baddfb29952766a13b01649eef05a6259254eae5801",
+    "valid": true,
+    "error": null
+  },
+  {
+    "hallId": "H-SEO-20260729-322",
+    "url": "https://cdn.imweb.me/upload/S20250617bb376dcf6ff0e/b99a488fd92db.png",
+    "bytes": 3466725,
+    "sha256": "554688956f1da268af26519450263e6dc8e95aa57e33bd97c634cbf646e9c9fd",
     "valid": true,
     "error": null
   },

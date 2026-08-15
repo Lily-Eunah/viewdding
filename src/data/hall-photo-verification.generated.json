@@ -1074,16 +1074,6 @@
     "verificationMethod": "official_hall_page",
     "verificationNote": "공식 사이트의 홀별 상세 페이지에서 홀명과 공간 사진을 함께 확인함."
   },
-  "H-SEO-20260728-075": {
-    "identityStatus": "hall_confirmed",
-    "verificationMethod": "official_hall_page",
-    "verificationNote": "공식 사이트의 홀별 상세 페이지에서 홀명과 공간 사진을 함께 확인함."
-  },
-  "H-SEO-20260729-189": {
-    "identityStatus": "hall_confirmed",
-    "verificationMethod": "official_single_hall_venue",
-    "verificationNote": "공식 사이트에서 홀명과 공간 사진의 직접 연결을 확인함."
-  },
   "H-GG-GP-20260808-008": {
     "identityStatus": "hall_confirmed",
     "verificationMethod": "official_hall_page",
@@ -2308,5 +2298,65 @@
     "identityStatus": "hall_confirmed",
     "verificationMethod": "public_named_listing",
     "verificationNote": "??? ?? ?? ??? ????? ?? ?? ???? ?? ??? ????, ?? ?? ??? ??? ??? ?? ???."
+  },
+  "H-REG-X3-20260809-068": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_hall_page",
+    "verificationNote": "공식 사이트의 홀별 상세 페이지에서 홀명과 공간 사진을 함께 확인함."
+  },
+  "H-SEO-20260729-096": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "public_named_listing",
+    "verificationNote": "공개 웨딩 정보 페이지에서 사진 인접 문구와 개별 홀명을 함께 확인함."
+  },
+  "H-SEO-20260729-287": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "public_named_listing",
+    "verificationNote": "공개 웨딩 정보 페이지에서 사진 인접 문구와 개별 홀명을 함께 확인함."
+  },
+  "H-SEO-20260729-322": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_named_gallery",
+    "verificationNote": "공식 사이트에서 홀명과 공간 사진의 직접 연결을 확인함."
+  },
+  "H-REG-X3-20260809-063": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "public_named_listing",
+    "verificationNote": "아산터미널웨딩홀 단독홀: manually verified a recent, hall-named wedding-space photo."
+  },
+  "H-SEO-20260729-239": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "public_named_listing",
+    "verificationNote": "서울웨딩타워 단독홀: manually verified a recent, hall-named wedding-space photo."
+  },
+  "H-SEO-20260729-242": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "public_named_listing",
+    "verificationNote": "시그니엘 서울 그랜드 볼룸: manually verified a recent, hall-named wedding-space photo."
+  },
+  "H-SEO-20260729-270": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "public_named_listing",
+    "verificationNote": "그랜드 하얏트 서울 워터폴 가든: manually verified a recent, hall-named wedding-space photo."
+  },
+  "H-SEO-20260728-075": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_hall_page",
+    "verificationNote": "공식 사이트의 홀별 상세 페이지에서 홀명과 공간 사진을 함께 확인함."
+  },
+  "H-SEO-20260729-189": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_single_hall_venue",
+    "verificationNote": "공식 사이트에서 홀명과 공간 사진의 직접 연결을 확인함."
+  },
+  "H-REG-X3-20260809-066": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "official_hall_page",
+    "verificationNote": "모나밸리 아레나홀: manually verified a wide wedding-setup photo without people dominating the image."
+  },
+  "H-IC-P1-20260808-014": {
+    "identityStatus": "hall_confirmed",
+    "verificationMethod": "public_named_listing",
+    "verificationNote": "샤펠드미앙 단독홀: manually verified a recent, hall-named wedding-space photo."
   }
 }
