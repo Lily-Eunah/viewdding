@@ -28,6 +28,10 @@ interface KakaoMarkerClustererInstance {
   clear(): void;
 }
 
+interface KakaoCustomOverlayInstance {
+  setMap(map: KakaoMapInstance | null): void;
+}
+
 interface KakaoSize {}
 
 interface KakaoPoint {}
@@ -52,6 +56,13 @@ interface KakaoMapsNamespace {
     clickable: boolean;
     image?: KakaoMarkerImageInstance;
   }) => KakaoMarkerInstance;
+  CustomOverlay: new (options: {
+    position: KakaoLatLng;
+    content: string | HTMLElement;
+    xAnchor?: number;
+    yAnchor?: number;
+    zIndex?: number;
+  }) => KakaoCustomOverlayInstance;
   MarkerClusterer: new (options: {
     map: KakaoMapInstance;
     markers: KakaoMarkerInstance[];
