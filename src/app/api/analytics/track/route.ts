@@ -2,6 +2,8 @@ import { NextResponse } from "next/server";
 import type { AnalyticsEventRecord } from "@/domain/analytics-types";
 import { saveAnalyticsEvents } from "@/lib/analytics-store";
 
+export const dynamic = "force-static";
+
 export async function POST(req: Request) {
   try {
     let rawBody = "";
