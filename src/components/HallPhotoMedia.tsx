@@ -26,9 +26,13 @@ export function HallPhotoMedia({ photo, variant }: { photo: HallPhoto; variant: 
               : "\uacf5\uc2dd \uacf5\uac04 \uc804\uacbd"}
         </span>
         <span aria-hidden="true"> {"\u00b7"} </span>
-        <a href={photo.sourceUrl} target="_blank" rel="noreferrer">
-          {photo.sourceName} <span aria-hidden="true">{"\u2197"}</span>
-        </a>
+        {variant === "detail" ? (
+          <a href={photo.sourceUrl} target="_blank" rel="noreferrer">
+            {photo.sourceName} <span aria-hidden="true">{"\u2197"}</span>
+          </a>
+        ) : (
+          <span>{photo.sourceName}</span>
+        )}
       </figcaption>
     </figure>
   );

@@ -9,6 +9,7 @@ import { isRestaurantPublic } from "./restaurant-normalization";
 type MatchState = "match" | "unknown" | "mismatch";
 
 export const EMPTY_RESTAURANT_FILTERS: RestaurantFilterState = {
+  keyword: "",
   purpose: "invitation",
   district: "",
   area: "",
@@ -34,6 +35,24 @@ function matchPartySize(restaurant: RestaurantRecord, partySize: number): MatchS
   return partySize >= min && partySize <= max ? "match" : "mismatch";
 }
 
+function matchKeyword(restaurant: RestaurantRecord, rawKeyword: string): boolean {
+  const query = rawKeyword.trim().toLowerCase();
+  if (!query) return true;
+  const searchableText = [
+    restaurant.name,
+    restaurant.branch ?? "",
+    restaurant.district,
+    restaurant.area,
+    restaurant.address,
+    restaurant.venueType,
+    restaurant.nearestStation ?? "",
+    ...restaurant.cuisines,
+    ...restaurant.captionTags,
+    restaurant.recommendationPoints ?? "",
+  ].join(" ").toLowerCase();
+  return searchableText.includes(query);
+}
+
 export function evaluateRestaurant(
   restaurant: RestaurantRecord,
   filters: RestaurantFilterState,
@@ -41,8 +60,20 @@ export function evaluateRestaurant(
   const checks: Array<{ state: MatchState; reason: string }> = [];
   checks.push({ state: restaurant.purpose === filters.purpose ? "match" : "mismatch", reason: "모임 목적" });
 
+  if (filters.keyword.trim()) {
+    checks.push({
+      state: matchKeyword(restaurant, filters.keyword) ? "match" : "mismatch",
+      reason: "검색어",
+    });
+  }
+
   if (filters.district) {
-    checks.push({ state: restaurant.district === filters.district ? "match" : "mismatch", reason: "지역" });
+    const target = filters.district.trim();
+    const isSido = ["서울", "서울특별시", "경기", "경기도", "인천", "인천광역시", "강원", "충북", "충남", "전북", "전남", "경북", "경남", "제주"].includes(target);
+    const matched = isSido
+      ? Boolean(restaurant.address?.includes(target) || (target.startsWith("서울") && restaurant.address?.includes("서울")))
+      : restaurant.district === target || Boolean(restaurant.address?.includes(target));
+    checks.push({ state: matched ? "match" : "mismatch", reason: "지역" });
   }
   if (filters.area) {
     const areaMatch = restaurant.area === filters.area || restaurant.nearestStation === filters.area;

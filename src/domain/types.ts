@@ -142,6 +142,7 @@ export interface HallRecord {
 }
 
 export interface FilterState {
+  keyword: string;
   sidos: Sido[];
   regionCodes: string[];
   hallTypes: HallTypeFilter[];
