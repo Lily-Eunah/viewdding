@@ -94,3 +94,8 @@ export function applyHallMarkerSelection(
 ): void {
   applyRestaurantMarkerSelection(entries, selectedId, images);
 }
+
+export function createMarkerLabelHtml(name: string): string {
+  return `<div class="map-marker-label"><span>${name}</span></div>`;
+}
+

@@ -1,16 +1,16 @@
 "use client";
 
-import Link from "next/link";
 import Script from "next/script";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { restaurantsWithinBounds } from "@/domain/restaurant-map";
 import type { RestaurantRecord } from "@/domain/restaurant-types";
-import { restaurantSlug } from "@/lib/restaurant-routes";
 import {
   applyRestaurantMarkerSelection,
+  createMarkerLabelHtml,
   createRestaurantMarkerImages,
   type RestaurantMarkerImages,
 } from "./kakao-marker-style";
+import { RestaurantMapCard } from "./RestaurantMapCard";
 
 interface MarkerEntry {
   marker: KakaoMarkerInstance;
@@ -18,14 +18,6 @@ interface MarkerEntry {
 
 function restaurantName(restaurant: RestaurantRecord): string {
   return `${restaurant.name}${restaurant.branch ? ` ${restaurant.branch}` : ""}`;
-}
-
-function priceSummary(restaurant: RestaurantRecord): string {
-  const { min, max } = restaurant.pricePerPerson;
-  if (min !== null && max !== null) return `${min.toLocaleString("ko-KR")}~${max.toLocaleString("ko-KR")}원`;
-  if (min !== null) return `${min.toLocaleString("ko-KR")}원부터`;
-  if (max !== null) return `${max.toLocaleString("ko-KR")}원까지`;
-  return "가격 확인 필요";
 }
 
 export function KakaoRestaurantMap({
@@ -40,6 +32,8 @@ export function KakaoRestaurantMap({
   const markerEntriesRef = useRef(new Map<string, MarkerEntry>());
   const markerImagesRef = useRef<RestaurantMarkerImages | null>(null);
   const clustererRef = useRef<KakaoMarkerClustererInstance | null>(null);
+  const overlayRef = useRef<KakaoCustomOverlayInstance | null>(null);
+
   const [sdkReady, setSdkReady] = useState(false);
   const [scriptError, setScriptError] = useState(false);
   const mappableRestaurants = useMemo(
@@ -49,6 +43,7 @@ export function KakaoRestaurantMap({
   const [visibleIds, setVisibleIds] = useState<string[]>([]);
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [listExpanded, setListExpanded] = useState(false);
+
   const selectedRestaurant = mappableRestaurants.find((restaurant) => restaurant.id === selectedId) ?? null;
   const visibleRestaurants = mappableRestaurants.filter((restaurant) => visibleIds.includes(restaurant.id));
 
@@ -114,26 +109,50 @@ export function KakaoRestaurantMap({
       });
       const nextIds = visible.map((restaurant) => restaurant.id);
       setVisibleIds(nextIds);
-      setSelectedId((current) => current && nextIds.includes(current) ? current : null);
+      setSelectedId((current) => (current && nextIds.includes(current) ? current : null));
     };
 
     setVisibleIds(mappableRestaurants.map((restaurant) => restaurant.id));
-    setSelectedId((current) => mappableRestaurants.some((restaurant) => restaurant.id === current) ? current : null);
+    setSelectedId((current) => (mappableRestaurants.some((restaurant) => restaurant.id === current) ? current : null));
     maps.event.addListener(map, "idle", updateVisibleRestaurants);
     updateVisibleRestaurants();
 
     return () => maps.event.removeListener(map, "idle", updateVisibleRestaurants);
   }, [mappableRestaurants, sdkReady]);
 
+  // Marker image & CustomOverlay updating
   useEffect(() => {
     const markerImages = markerImagesRef.current;
-    if (!markerImages) return;
-    applyRestaurantMarkerSelection(markerEntriesRef.current, selectedId, markerImages);
-  }, [selectedId]);
+    if (markerImages) {
+      applyRestaurantMarkerSelection(markerEntriesRef.current, selectedId, markerImages);
+    }
+
+    if (overlayRef.current) {
+      overlayRef.current.setMap(null);
+      overlayRef.current = null;
+    }
+
+    if (selectedRestaurant && selectedRestaurant.latitude && selectedRestaurant.longitude && window.kakao?.maps && mapInstanceRef.current) {
+      const maps = window.kakao.maps;
+      const position = new maps.LatLng(selectedRestaurant.latitude, selectedRestaurant.longitude);
+      const content = createMarkerLabelHtml(restaurantName(selectedRestaurant));
+      const overlay = new maps.CustomOverlay({
+        position,
+        content,
+        yAnchor: 2.2,
+        zIndex: 11,
+      });
+      overlay.setMap(mapInstanceRef.current);
+      overlayRef.current = overlay;
+    }
+  }, [selectedId, selectedRestaurant]);
 
   function selectRestaurant(restaurant: RestaurantRecord) {
     setSelectedId(restaurant.id);
     setListExpanded(false);
+    if (mapInstanceRef.current && restaurant.latitude && restaurant.longitude && window.kakao?.maps) {
+      mapInstanceRef.current.panTo(new window.kakao.maps.LatLng(restaurant.latitude, restaurant.longitude));
+    }
   }
 
   const missingCoordinateCount = restaurants.length - mappableRestaurants.length;
@@ -161,6 +180,14 @@ export function KakaoRestaurantMap({
         ) : (
           <div ref={mapNodeRef} className="restaurant-map-canvas" aria-label="카카오맵" />
         )}
+
+        {selectedRestaurant ? (
+          <RestaurantMapCard
+            restaurant={selectedRestaurant}
+            onClose={() => setSelectedId(null)}
+          />
+        ) : null}
+
         {appKey ? (
           <Script
             id="kakao-maps-sdk"
@@ -184,22 +211,7 @@ export function KakaoRestaurantMap({
           <strong>현재 지도 {visibleRestaurants.length}곳</strong>
           <small>{listExpanded ? "지도 보기" : "목록 보기"}</small>
         </button>
-        {selectedRestaurant ? (
-          <div className="map-selected-place">
-            <p className="eyebrow">선택한 장소</p>
-            <h3>{restaurantName(selectedRestaurant)}</h3>
-            <p>{selectedRestaurant.area ?? selectedRestaurant.district}{selectedRestaurant.nearestStation ? ` · ${selectedRestaurant.nearestStation}` : ""} · {priceSummary(selectedRestaurant)}</p>
-            <div className="map-selected-chips">
-              {selectedRestaurant.venueType ? <span>업종 · {selectedRestaurant.venueType}</span> : null}
-              {selectedRestaurant.cuisines.slice(0, 2).map((cuisine) => <span key={cuisine}>{cuisine}</span>)}
-            </div>
-            <div className="map-selected-links">
-              <Link href={`/restaurants/${restaurantSlug(selectedRestaurant)}/`}>상세보기</Link>
-              {selectedRestaurant.naverMapUrl ? <a href={selectedRestaurant.naverMapUrl} target="_blank" rel="noreferrer">네이버 지도</a> : null}
-              {selectedRestaurant.kakaoMapUrl ? <a href={selectedRestaurant.kakaoMapUrl} target="_blank" rel="noreferrer">카카오맵</a> : null}
-            </div>
-          </div>
-        ) : null}
+
         <div className="map-place-list">
           {visibleRestaurants.map((restaurant) => (
             <button
@@ -210,7 +222,10 @@ export function KakaoRestaurantMap({
               onClick={() => selectRestaurant(restaurant)}
             >
               <strong>{restaurantName(restaurant)}</strong>
-              <span>{restaurant.area ?? restaurant.district}{restaurant.nearestStation ? ` · ${restaurant.nearestStation}` : ""}</span>
+              <span>
+                {restaurant.area ?? restaurant.district}
+                {restaurant.nearestStation ? ` · ${restaurant.nearestStation}` : ""}
+              </span>
             </button>
           ))}
           {visibleRestaurants.length === 0 ? <p className="map-empty-list">현재 지도 영역에 음식점이 없습니다.</p> : null}

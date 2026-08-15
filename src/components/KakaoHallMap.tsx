@@ -1,17 +1,16 @@
 "use client";
 
-import Link from "next/link";
 import Script from "next/script";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import { hallCapacitySummary, hallMapVenuesWithinBounds } from "@/domain/hall-map";
+import { hallMapVenuesWithinBounds } from "@/domain/hall-map";
 import type { HallMapVenue } from "@/domain/hall-map";
-import { hallTags } from "@/lib/labels";
-import { FavoriteButton } from "./FavoriteButton";
 import {
   applyHallMarkerSelection,
   createHallMarkerImages,
+  createMarkerLabelHtml,
   type HallMarkerImages,
 } from "./kakao-marker-style";
+import { HallMapCard } from "./HallMapCard";
 
 interface MarkerEntry {
   marker: KakaoMarkerInstance;
@@ -23,6 +22,8 @@ export function KakaoHallMap({ venues, appKey }: { venues: HallMapVenue[]; appKe
   const markerEntriesRef = useRef(new Map<string, MarkerEntry>());
   const markerImagesRef = useRef<HallMarkerImages | null>(null);
   const clustererRef = useRef<KakaoMarkerClustererInstance | null>(null);
+  const overlayRef = useRef<KakaoCustomOverlayInstance | null>(null);
+
   const [sdkReady, setSdkReady] = useState(false);
   const [scriptError, setScriptError] = useState(false);
   const [visibleIds, setVisibleIds] = useState<string[]>([]);
@@ -98,24 +99,48 @@ export function KakaoHallMap({ venues, appKey }: { venues: HallMapVenue[]; appKe
       });
       const nextIds = visible.map((venue) => venue.venueId);
       setVisibleIds(nextIds);
-      setSelectedId((current) => current && nextIds.includes(current) ? current : null);
+      setSelectedId((current) => (current && nextIds.includes(current) ? current : null));
     };
 
     setVisibleIds(mappableVenues.map((venue) => venue.venueId));
-    setSelectedId((current) => mappableVenues.some((venue) => venue.venueId === current) ? current : null);
+    setSelectedId((current) => (mappableVenues.some((venue) => venue.venueId === current) ? current : null));
     maps.event.addListener(map, "idle", updateVisibleVenues);
     updateVisibleVenues();
     return () => maps.event.removeListener(map, "idle", updateVisibleVenues);
   }, [mappableVenues, sdkReady]);
 
+  // Marker image & CustomOverlay updating
   useEffect(() => {
-    if (!markerImagesRef.current) return;
-    applyHallMarkerSelection(markerEntriesRef.current, selectedId, markerImagesRef.current);
-  }, [selectedId]);
+    if (markerImagesRef.current) {
+      applyHallMarkerSelection(markerEntriesRef.current, selectedId, markerImagesRef.current);
+    }
+
+    if (overlayRef.current) {
+      overlayRef.current.setMap(null);
+      overlayRef.current = null;
+    }
+
+    if (selectedVenue && selectedVenue.latitude && selectedVenue.longitude && window.kakao?.maps && mapInstanceRef.current) {
+      const maps = window.kakao.maps;
+      const position = new maps.LatLng(selectedVenue.latitude, selectedVenue.longitude);
+      const content = createMarkerLabelHtml(selectedVenue.venueName);
+      const overlay = new maps.CustomOverlay({
+        position,
+        content,
+        yAnchor: 2.2,
+        zIndex: 11,
+      });
+      overlay.setMap(mapInstanceRef.current);
+      overlayRef.current = overlay;
+    }
+  }, [selectedId, selectedVenue]);
 
   function selectVenue(venue: HallMapVenue) {
     setSelectedId(venue.venueId);
     setListExpanded(false);
+    if (mapInstanceRef.current && venue.latitude && venue.longitude && window.kakao?.maps) {
+      mapInstanceRef.current.panTo(new window.kakao.maps.LatLng(venue.latitude, venue.longitude));
+    }
   }
 
   const missingCoordinateCount = venues.length - mappableVenues.length;
@@ -143,6 +168,14 @@ export function KakaoHallMap({ venues, appKey }: { venues: HallMapVenue[]; appKe
         ) : (
           <div ref={mapNodeRef} className="restaurant-map-canvas" aria-label="카카오맵" />
         )}
+
+        {selectedVenue ? (
+          <HallMapCard
+            venue={selectedVenue}
+            onClose={() => setSelectedId(null)}
+          />
+        ) : null}
+
         {appKey ? (
           <Script
             id="kakao-maps-sdk"
@@ -161,28 +194,7 @@ export function KakaoHallMap({ venues, appKey }: { venues: HallMapVenue[]; appKe
           <strong>현재 지도 {visibleVenues.length}곳</strong>
           <small>{listExpanded ? "지도 보기" : "목록 보기"}</small>
         </button>
-        {selectedVenue ? (
-          <div className="map-selected-place hall-map-selected-place">
-            <p className="eyebrow">선택한 예식장</p>
-            <h3>{selectedVenue.venueName}</h3>
-            <p>{selectedVenue.district}{selectedVenue.address ? ` · ${selectedVenue.address}` : ""}</p>
-            <div className="map-selected-halls">
-              {selectedVenue.halls.map(({ hall, unknownReasons }) => (
-                <article className="map-selected-hall" key={hall.id}>
-                  <div className="map-selected-hall-heading">
-                    <div><strong><Link href={`/halls/${hall.id}/`}>{hall.hallName}</Link></strong><span>{hallCapacitySummary(hall) ?? "수용 인원 문의"}</span></div>
-                    <FavoriteButton hallId={hall.id} compact />
-                  </div>
-                  <div className="map-selected-chips">{hallTags(hall).slice(0, 3).map((tag) => <span key={tag}>{tag}</span>)}</div>
-                  {unknownReasons.length > 0 ? <small>일부 조건 확인 필요</small> : null}
-                </article>
-              ))}
-            </div>
-            <div className="map-selected-links">
-              {selectedVenue.placeUrl ? <a href={selectedVenue.placeUrl} target="_blank" rel="noreferrer">카카오맵</a> : null}
-            </div>
-          </div>
-        ) : null}
+
         <div className="map-place-list">
           {visibleVenues.map((venue) => (
             <button key={venue.venueId} type="button" className={venue.venueId === selectedVenue?.venueId ? "is-selected" : ""} aria-pressed={venue.venueId === selectedVenue?.venueId} onClick={() => selectVenue(venue)}>
