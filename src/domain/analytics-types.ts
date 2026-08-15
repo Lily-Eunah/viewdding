@@ -12,6 +12,7 @@ export type OutboundTargetType =
   | "instagram"
   | "phone"
   | "website"
+  | "homepage"
   | "blog_review"
   | "reservation";
 

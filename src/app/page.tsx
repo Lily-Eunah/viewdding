@@ -34,6 +34,9 @@ export default function HomePage() {
           <Link className="landing-crisp-cta" href="/gatherings/?purpose=family_meeting">
             <span>Family Meeting 상견례</span><span className="landing-crisp-arrow" aria-hidden="true">→</span>
           </Link>
+          <Link className="landing-crisp-cta" href="/wedding-color/">
+            <span>Personal Color 웨딩 퍼스널 컬러</span><span className="landing-crisp-arrow" aria-hidden="true">→</span>
+          </Link>
         </nav>
         <p className="landing-crisp-footer">Viewdding · For every wedding moment</p>
       </section>
