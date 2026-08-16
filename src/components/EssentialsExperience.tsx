@@ -1,7 +1,12 @@
 "use client";
 
 import { useState, useEffect, useMemo } from "react";
-import { CheckSquareOffset, ListChecks, Sparkle } from "@phosphor-icons/react";
+import {
+  CheckSquareOffset,
+  ListChecks,
+  Info,
+  Sparkle,
+} from "@phosphor-icons/react";
 import { CurationCard } from "@/components/CurationCard";
 import {
   ESSENTIAL_STAGES,
@@ -102,6 +107,12 @@ export function EssentialsExperience({ initialItems }: EssentialsExperienceProps
           드레스 투어부터 스튜디오 스냅, 본식 당일과 신혼여행까지.<br />
           결혼을 완성하는 디테일한 준비물과 실전 꿀팁을 확인해 보세요.
         </p>
+
+        {/* Slim Trust Line Notice */}
+        <div className="curation-trust-line" role="note" aria-label="큐레이션 및 가격 정책">
+          <Info size={13} weight="bold" className="curation-trust-icon" />
+          <span>Viewdding 큐레이션은 판매처가 수수료를 부담하며, 구매 가격에는 전혀 차이가 없습니다.</span>
+        </div>
       </header>
 
       {/* Stage Navigation (Sticky) */}
@@ -205,12 +216,6 @@ export function EssentialsExperience({ initialItems }: EssentialsExperienceProps
           ))}
         </section>
       )}
-
-      {/* FTC Affiliate Disclosure Notice */}
-      <footer className="affiliate-disclosure-banner">
-        <Sparkle size={14} style={{ display: "inline", verticalAlign: "middle", marginRight: "4px" }} />
-        Viewdding은 예비부부의 성공적인 결혼 준비를 위해 유용한 아이템을 선별하여 소개합니다. 일부 제휴 링크를 통한 구매 시 플랫폼으로부터 소정의 수수료를 제공받을 수 있으며, 이는 서비스 운영에 소중하게 활용됩니다.
-      </footer>
     </div>
   );
 }

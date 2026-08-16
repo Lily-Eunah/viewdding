@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useMemo } from "react";
-import { Sparkle, Camera, Buildings, Tree } from "@phosphor-icons/react";
+import { Sparkle, Camera, Buildings, Tree, Info } from "@phosphor-icons/react";
 import { CurationCard } from "@/components/CurationCard";
 import { VenueCurationCard } from "@/components/VenueCurationCard";
 import {
@@ -53,12 +53,18 @@ export function SelfSnapExperience({
     <div className="curation-page-shell">
       {/* Hero Section */}
       <header className="curation-hero">
-        <span className="curation-hero-kicker">Self Wedding & Snap Archive</span>
+        <span className="curation-hero-kicker">Self Wedding &amp; Snap Archive</span>
         <h1>셀프스냅 큐레이션</h1>
         <p>
           우리만의 감성을 담은 셀프 웨딩 스냅.<br />
           감각적인 드레스·소품 쇼핑부터 자연광 스튜디오와 야외 인생샷 명소까지 한곳에서 둘러보세요.
         </p>
+
+        {/* Slim Trust Line Notice */}
+        <div className="curation-trust-line" role="note" aria-label="큐레이션 및 가격 정책">
+          <Info size={13} weight="bold" className="curation-trust-icon" />
+          <span>Viewdding 큐레이션은 판매처가 수수료를 부담하며, 구매 및 대관 금액에는 전혀 차이가 없습니다.</span>
+        </div>
       </header>
 
       {/* Main 3 Tabs (Sticky) */}
@@ -188,12 +194,6 @@ export function SelfSnapExperience({
           </section>
         )
       )}
-
-      {/* FTC Affiliate Disclosure Notice */}
-      <footer className="affiliate-disclosure-banner">
-        <Sparkle size={14} style={{ display: "inline", verticalAlign: "middle", marginRight: "4px" }} />
-        Viewdding은 감각적인 셀프 웨딩 연출을 돕기 위해 엄선된 의상, 소품 및 장소를 큐레이션합니다. 제휴 링크를 통한 구매 또는 대관 시 소정의 수수료를 제공받을 수 있습니다.
-      </footer>
     </div>
   );
 }

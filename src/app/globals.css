@@ -2985,6 +2985,39 @@ body:has(.landing-page-reference):after{display:none}
   line-height: 1.6;
 }
 
+/* Curation Trust & Fair Pricing Notice (Slim Capsule) */
+.curation-trust-line {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  margin: 18px auto 0;
+  padding: 6px 14px;
+  background: rgba(247, 244, 239, 0.72);
+  border: 1px solid rgba(220, 213, 201, 0.55);
+  border-radius: 999px;
+  font-size: 11.5px;
+  line-height: 1.4;
+  color: #7d7568;
+  backdrop-filter: blur(8px);
+  max-width: fit-content;
+}
+
+.curation-trust-icon {
+  color: #9c8e7e;
+  flex-shrink: 0;
+}
+
+@media (max-width: 760px) {
+  .curation-trust-line {
+    font-size: 10.5px;
+    padding: 5px 12px;
+    margin-top: 14px;
+    line-height: 1.45;
+    text-align: center;
+  }
+}
+
 /* Stage Navigation Tabs (Sticky) */
 .curation-stage-nav-wrap {
   position: sticky;
