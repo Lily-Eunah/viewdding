@@ -15,7 +15,7 @@ export function FavoriteButton({
   hallId?: string;
   category?: FavoriteCategory;
   compact?: boolean;
-  variant?: "icon" | "chip";
+  variant?: "icon" | "chip" | "portal";
 }) {
   const targetId = itemId || hallId || "";
   const [saved, setSaved] = useState(false);
@@ -44,6 +44,31 @@ export function FavoriteButton({
       isFavorite: !saved,
     });
   };
+
+  if (variant === "portal") {
+    return (
+      <button
+        type="button"
+        className={`portal-icon-only-btn favorite-portal-btn${saved ? " is-saved" : ""}`}
+        aria-pressed={saved}
+        aria-label={saved ? "즐겨찾기 해제" : "즐겨찾기 저장"}
+        onClick={handleClick}
+        title={saved ? "보관함에서 제거" : "보관함에 저장"}
+      >
+        <span
+          aria-hidden="true"
+          style={{
+            fontSize: "16px",
+            color: saved ? "#E11D48" : "#8A7E72",
+            lineHeight: 1,
+            transition: "color 0.15s ease",
+          }}
+        >
+          {saved ? "♥" : "♡"}
+        </span>
+      </button>
+    );
+  }
 
   if (variant === "chip") {
     return (

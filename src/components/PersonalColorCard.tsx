@@ -1,6 +1,6 @@
 "use client";
 
-import { useId, useState } from "react";
+import { useId } from "react";
 import { InstagramLogo, Article } from "@phosphor-icons/react";
 import type { PersonalColorRecord } from "@/domain/personal-color-types";
 import { serviceTagMeta } from "@/domain/personal-color-categories";
@@ -30,27 +30,6 @@ function NaverMapAppIcon() {
   );
 }
 
-function getPersonalColorFallback(name: string): { bgGradient: string; icon: string; categoryLabel: string } {
-  const gradients = [
-    "linear-gradient(135deg, #FDE2E4 0%, #FFCAD4 100%)",
-    "linear-gradient(135deg, #E2ECE9 0%, #BEE1E6 100%)",
-    "linear-gradient(135deg, #DFE7FD 0%, #CDDAFD 100%)",
-    "linear-gradient(135deg, #F0E6EF 0%, #D8BBFF 100%)",
-    "linear-gradient(135deg, #FFF1E6 0%, #FDD2B5 100%)",
-  ];
-  let hash = 0;
-  for (let i = 0; i < name.length; i++) {
-    hash = (hash << 5) - hash + name.charCodeAt(i);
-    hash |= 0;
-  }
-  const index = Math.abs(hash) % gradients.length;
-  return {
-    bgGradient: gradients[index],
-    icon: "🎨",
-    categoryLabel: "퍼스널컬러 진단",
-  };
-}
-
 export function PersonalColorCard({
   vendor,
   unknownReasons = [],
@@ -58,10 +37,7 @@ export function PersonalColorCard({
   vendor: PersonalColorRecord;
   unknownReasons?: string[];
 }) {
-  const [imgFailed, setImgFailed] = useState(false);
   const priceDisplay = formatPersonalColorPrice(vendor);
-  const hasPhoto = Boolean(vendor.photoUrl) && !imgFailed;
-  const fallbackVisual = getPersonalColorFallback(vendor.name);
   const categoryKicker = vendor.services.slice(0, 2).join("·") || "웨딩 퍼스널컬러";
 
   // Hook for 500ms viewport dwell impression logging
@@ -146,56 +122,20 @@ export function PersonalColorCard({
           <Article size={20} weight="bold" color="#64748B" />
         </a>
       ) : null}
+      <FavoriteButton itemId={vendor.id} category="wedding_color" variant="portal" />
     </div>
   );
 
   return (
-    <article className="restaurant-card personal-color-fixed-card" ref={cardRef}>
+    <article className="restaurant-card personal-color-no-img-card" ref={cardRef}>
       <div className="restaurant-card-main-grid">
-        {/* Left Visual Thumbnail Area (Strictly sized with absolute positioning to prevent height inflation) */}
-        <a
-          href={vendor.naverMapUrl || "#"}
-          target="_blank"
-          rel="noreferrer"
-          className="restaurant-card-visual-link"
-          onClick={handleNaverMapClick}
-        >
-          <div
-            className="restaurant-card-visual-wrapper"
-            style={!hasPhoto ? { background: fallbackVisual.bgGradient } : undefined}
-          >
-            {hasPhoto ? (
-              <>
-                <img
-                  src={vendor.photoUrl!}
-                  alt={vendor.name}
-                  className="restaurant-card-img"
-                  loading="lazy"
-                  referrerPolicy="no-referrer"
-                  onError={() => setImgFailed(true)}
-                />
-                <span className="restaurant-visual-badge">지도 등록 사진</span>
-              </>
-            ) : (
-              <div className="restaurant-brand-visual">
-                <span className="brand-visual-icon" role="img" aria-label={fallbackVisual.categoryLabel}>
-                  {fallbackVisual.icon}
-                </span>
-                <span className="brand-visual-label">{fallbackVisual.categoryLabel}</span>
-                <span className="brand-visual-watermark">Viewdding</span>
-              </div>
-            )}
-          </div>
-        </a>
-
-        {/* Center / Main Body Info */}
+        {/* Left / Main Body Info */}
         <div className="restaurant-card-body">
           <div className="restaurant-card-top-section">
             <div className="restaurant-kicker-row">
               <p className="restaurant-kicker">{categoryKicker}</p>
               <div className="restaurant-top-portal-links">
                 {portalLinks}
-                <FavoriteButton itemId={vendor.id} category="wedding_color" variant="chip" />
               </div>
             </div>
 
@@ -219,10 +159,9 @@ export function PersonalColorCard({
             {vendor.evidence ? <p className="restaurant-point">{vendor.evidence}</p> : null}
           </div>
 
-          {/* Bottom chips row (Includes Favorite Chip with exact same design) */}
+          {/* Bottom chips row (Service and Styling Tags only) */}
           <div className="restaurant-card-bottom-tags">
             <div className="chip-row">
-              <FavoriteButton itemId={vendor.id} category="wedding_color" variant="chip" />
               {vendor.serviceTags
                 .filter((t) => t !== "color")
                 .map((tag) => (
@@ -251,7 +190,7 @@ export function PersonalColorCard({
           ) : null}
         </div>
 
-        {/* Right Metrics & Actions Column (Desktop) */}
+        {/* Right Metrics & Actions Column */}
         <div className="restaurant-card-metrics-col">
           <dl className="restaurant-metrics-grid">
             <div className="metric-box" title={vendor.priceRaw || priceDisplay}>
@@ -274,7 +213,6 @@ export function PersonalColorCard({
 
           <div className="restaurant-metrics-portal-links">
             {portalLinks}
-            <FavoriteButton itemId={vendor.id} category="wedding_color" variant="chip" />
           </div>
         </div>
       </div>

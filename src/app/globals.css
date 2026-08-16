@@ -1780,43 +1780,71 @@ body:has(.landing-page-reference):after{display:none}
   line-height: 1;
 }
 
-.personal-color-fixed-card .restaurant-card-main-grid {
-  display: grid;
-  grid-template-columns: 220px minmax(0, 1.25fr) minmax(280px, 0.95fr);
-  gap: 20px;
-  align-items: stretch;
-  min-height: 205px;
-  height: 100%;
-}
-
-.personal-color-fixed-card .restaurant-card-visual-wrapper {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  min-height: 200px;
+.personal-color-no-img-card {
+  background: #FFFFFF;
+  border-radius: 20px;
+  border: 1px solid rgba(87, 82, 76, 0.08);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
   overflow: hidden;
-  background: #EAE3D9;
 }
 
-.personal-color-fixed-card .restaurant-card-visual-wrapper .restaurant-card-img {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-  display: block;
+.personal-color-no-img-card:hover {
+  transform: translateY(-2px);
+  border-color: #9E9488;
+  box-shadow: 0 10px 26px rgba(74, 70, 66, 0.08);
 }
 
-.personal-color-fixed-card .restaurant-card-visual-wrapper .restaurant-brand-visual {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
+.personal-color-no-img-card .restaurant-card-main-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(280px, 1fr);
+  gap: 24px;
+  padding: 24px 28px;
+  align-items: stretch;
+  min-height: 190px;
+}
+
+.personal-color-no-img-card .restaurant-card-body {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  padding: 0;
+  min-width: 0;
+  height: 100%;
+}
+
+.personal-color-no-img-card .restaurant-card-metrics-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 0 0 24px;
+  border-left: 1px solid #ECE4D9;
+  background: transparent;
+  height: 100%;
+}
+
+.favorite-portal-btn.is-saved {
+  border-color: #FDA4AF;
+  background: #FFF1F2;
+  box-shadow: 0 2px 6px rgba(190, 24, 93, 0.12);
+}
+
+.favorite-portal-btn:hover {
+  border-color: #BE185D;
+  transform: translateY(-1px);
+}
+
+@media (max-width: 768px) {
+  .personal-color-no-img-card .restaurant-card-main-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    padding: 20px 18px;
+  }
+  .personal-color-no-img-card .restaurant-card-metrics-col {
+    padding: 16px 0 0 0;
+    border-left: none;
+    border-top: 1px solid #ECE4D9;
+  }
 }
 
 .restaurant-card-metrics-col {
