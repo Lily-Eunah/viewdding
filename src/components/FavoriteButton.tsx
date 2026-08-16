@@ -9,11 +9,13 @@ export function FavoriteButton({
   hallId,
   category = "halls",
   compact = false,
+  variant = "icon",
 }: {
   itemId?: string;
   hallId?: string;
   category?: FavoriteCategory;
   compact?: boolean;
+  variant?: "icon" | "chip";
 }) {
   const targetId = itemId || hallId || "";
   const [saved, setSaved] = useState(false);
@@ -32,25 +34,43 @@ export function FavoriteButton({
 
   if (!targetId) return null;
 
+  const handleClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    e.stopPropagation();
+    toggleFavorite(category, targetId);
+    trackFavoriteToggle({
+      vendorId: targetId,
+      category,
+      isFavorite: !saved,
+    });
+  };
+
+  if (variant === "chip") {
+    return (
+      <button
+        type="button"
+        className={`chip favorite-chip-btn${saved ? " is-saved" : ""}`}
+        aria-pressed={saved}
+        aria-label={saved ? "즐겨찾기 해제" : "즐겨찾기 저장"}
+        onClick={handleClick}
+      >
+        <span aria-hidden="true" className="favorite-chip-heart" style={{ color: saved ? "#E11D48" : "inherit" }}>
+          {saved ? "♥" : "♡"}
+        </span>
+        <span>{saved ? "저장됨" : "저장"}</span>
+      </button>
+    );
+  }
+
   return (
     <button
       type="button"
       className={`favorite-button${saved ? " is-saved" : ""}${compact ? " is-compact" : ""}`}
       aria-pressed={saved}
       aria-label={saved ? "즐겨찾기 해제" : "즐겨찾기 저장"}
-      onClick={(e) => {
-        e.preventDefault();
-        e.stopPropagation();
-        toggleFavorite(category, targetId);
-        trackFavoriteToggle({
-          vendorId: targetId,
-          category,
-          isFavorite: !saved,
-        });
-      }}
+      onClick={handleClick}
     >
       <span aria-hidden="true">{saved ? "♥" : "♡"}</span>
     </button>
   );
 }
-

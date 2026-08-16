@@ -150,9 +150,9 @@ export function PersonalColorCard({
   );
 
   return (
-    <article className="restaurant-card" ref={cardRef}>
+    <article className="restaurant-card personal-color-fixed-card" ref={cardRef}>
       <div className="restaurant-card-main-grid">
-        {/* Left Visual Thumbnail Area */}
+        {/* Left Visual Thumbnail Area (Strictly sized with absolute positioning to prevent height inflation) */}
         <a
           href={vendor.naverMapUrl || "#"}
           target="_blank"
@@ -195,7 +195,7 @@ export function PersonalColorCard({
               <p className="restaurant-kicker">{categoryKicker}</p>
               <div className="restaurant-top-portal-links">
                 {portalLinks}
-                <FavoriteButton itemId={vendor.id} category="wedding_color" compact />
+                <FavoriteButton itemId={vendor.id} category="wedding_color" variant="chip" />
               </div>
             </div>
 
@@ -219,9 +219,10 @@ export function PersonalColorCard({
             {vendor.evidence ? <p className="restaurant-point">{vendor.evidence}</p> : null}
           </div>
 
-          {/* Bottom chips row */}
+          {/* Bottom chips row (Includes Favorite Chip with exact same design) */}
           <div className="restaurant-card-bottom-tags">
             <div className="chip-row">
+              <FavoriteButton itemId={vendor.id} category="wedding_color" variant="chip" />
               {vendor.serviceTags
                 .filter((t) => t !== "color")
                 .map((tag) => (
@@ -273,7 +274,7 @@ export function PersonalColorCard({
 
           <div className="restaurant-metrics-portal-links">
             {portalLinks}
-            <FavoriteButton itemId={vendor.id} category="wedding_color" compact />
+            <FavoriteButton itemId={vendor.id} category="wedding_color" variant="chip" />
           </div>
         </div>
       </div>

@@ -1744,6 +1744,81 @@ body:has(.landing-page-reference):after{display:none}
   flex-shrink: 0;
 }
 
+.chip.favorite-chip-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 2px 9px;
+  font-size: 11px;
+  font-weight: 600;
+  color: #554F46;
+  background: #FFFFFF;
+  border: 1px solid #C6C0B7;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 0.18s ease;
+  text-decoration: none;
+  line-height: 1.4;
+  flex-shrink: 0;
+}
+
+.chip.favorite-chip-btn:hover {
+  border-color: #BE185D;
+  color: #BE185D;
+  background: #FFF5F7;
+}
+
+.chip.favorite-chip-btn.is-saved {
+  border-color: #FDA4AF;
+  background: #FFF1F2;
+  color: #BE185D;
+  font-weight: 700;
+}
+
+.favorite-chip-heart {
+  font-size: 12px;
+  line-height: 1;
+}
+
+.personal-color-fixed-card .restaurant-card-main-grid {
+  display: grid;
+  grid-template-columns: 220px minmax(0, 1.25fr) minmax(280px, 0.95fr);
+  gap: 20px;
+  align-items: stretch;
+  min-height: 205px;
+  height: 100%;
+}
+
+.personal-color-fixed-card .restaurant-card-visual-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 200px;
+  overflow: hidden;
+  background: #EAE3D9;
+}
+
+.personal-color-fixed-card .restaurant-card-visual-wrapper .restaurant-card-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.personal-color-fixed-card .restaurant-card-visual-wrapper .restaurant-brand-visual {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .restaurant-card-metrics-col {
   display: flex;
   flex-direction: column;
