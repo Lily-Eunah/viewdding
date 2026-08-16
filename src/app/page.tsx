@@ -9,12 +9,12 @@ export const metadata: Metadata = {
 };
 
 const QUICK_CHIPS = [
-  { label: "✨ 웨딩홀 엑셀 다운로드", href: "/search/" },
-  { label: "🍷 상견례 룸 다이닝", href: "/gatherings/?purpose=family_meeting" },
-  { label: "💌 청첩장 모임 장소", href: "/gatherings/?purpose=invitation" },
-  { label: "📸 셀프스냅 룩북", href: "/self-snap/" },
-  { label: "📋 D-Day 필수 준비물", href: "/essentials/" },
-  { label: "🎨 웨딩 퍼스널 컬러", href: "/wedding-color/" },
+  { label: "웨딩홀 엑셀 다운로드", href: "/search/" },
+  { label: "상견례 룸 다이닝", href: "/gatherings/?purpose=family_meeting" },
+  { label: "청첩장 모임 장소", href: "/gatherings/?purpose=invitation" },
+  { label: "셀프스냅 룩북", href: "/self-snap/" },
+  { label: "D-Day 필수 준비물", href: "/essentials/" },
+  { label: "웨딩 퍼스널 컬러", href: "/wedding-color/" },
 ];
 
 export default function HomePage() {
