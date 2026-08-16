@@ -43,12 +43,6 @@ const MENU_ITEMS: MenuItem[] = [
     koTitle: "웨딩 퍼스널 컬러 진단",
     href: "/wedding-color/",
   },
-  {
-    num: "06",
-    enTitle: "Guide & Methodology",
-    koTitle: "데이터 아카이브 가이드",
-    href: "/methodology/",
-  },
 ];
 
 export function AppHeader() {

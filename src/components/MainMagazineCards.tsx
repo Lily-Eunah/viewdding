@@ -23,7 +23,7 @@ const MAGAZINE_CARDS: MagazineCardItem[] = [
     summary: "서울 및 수도권 300+ 웨딩홀",
     description: "보증인원, 식대, 홀 스타일, 주차까지 한눈에 비교하고 엑셀로 한 번에 다운로드하세요.",
     href: "/search/",
-    imageSrc: "https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=800&auto=format&fit=crop&q=80",
+    imageSrc: "https://images.unsplash.com/photo-1519741497674-611481863552?w=800&auto=format&fit=crop&q=80",
     tag: "#웨딩홀조건검색",
   },
   {
@@ -35,13 +35,13 @@ const MAGAZINE_CARDS: MagazineCardItem[] = [
     summary: "실패 없는 다이닝 큐레이션",
     description: "예산대, 코스 구성, 룸 완비 여부, 주차 편리성을 고려해 까다로운 모임 장소를 빠르게 결정하세요.",
     href: "/gatherings/?purpose=invitation",
-    imageSrc: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&auto=format&fit=crop&q=80",
+    imageSrc: "https://t1.daumcdn.net/local/kakaomapPhoto/review/6739c1b8888a6e6da90fd08704beb13d55823f74?original",
     tag: "#상견례룸식당",
   },
   {
     id: "self-snap",
     categoryNumber: "03",
-    englishTitle: "Self Snap & Location",
+    englishTitle: "Self Snap & Style",
     koreanTitle: "셀프스냅 룩북 & 스팟",
     badge: "스타일링 큐레이션",
     summary: "취향별 드레스 & 감성 스튜디오",
@@ -59,7 +59,7 @@ const MAGAZINE_CARDS: MagazineCardItem[] = [
     summary: "투어·스냅·본식 필수템",
     description: "골반 보정 속옷, 누브라, 숏베일부터 당일 멘붕 방지 파우치까지 선배 신부들이 검증한 아이템.",
     href: "/essentials/",
-    imageSrc: "https://images.unsplash.com/photo-1519741497674-611481863552?w=800&auto=format&fit=crop&q=80",
+    imageSrc: "https://shop-phinf.pstatic.net/20240417_193/1713337968508f7Nve_JPEG/4375000000000000_1578330752.jpg",
     tag: "#본식필수준비물",
   },
   {
@@ -71,20 +71,8 @@ const MAGAZINE_CARDS: MagazineCardItem[] = [
     summary: "톤에 맞는 드레스 & 예복 매칭",
     description: "나에게 어울리는 화이트 톤(웜/쿨), 네크라인, 헤어메이크업 시안을 전문 스튜디오에서 진단받으세요.",
     href: "/wedding-color/",
-    imageSrc: "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=800&auto=format&fit=crop&q=80",
+    imageSrc: "https://t1.kakaocdn.net/fiy_reboot/place/82E1782D8809464EBB5E551610F64A0F",
     tag: "#드레스톤진단",
-  },
-  {
-    id: "methodology",
-    categoryNumber: "06",
-    englishTitle: "Wedding Data & Insight",
-    koreanTitle: "웨딩 데이터 아카이브",
-    badge: "검증된 데이터",
-    summary: "광고 없는 객관적인 정보 기준",
-    description: "수많은 블로그 광고 속에서 신뢰할 수 있는 객관적인 데이터와 투명한 수집 기준을 안내합니다.",
-    href: "/methodology/",
-    imageSrc: "https://images.unsplash.com/photo-1455390582262-044cdead277a?w=800&auto=format&fit=crop&q=80",
-    tag: "#신뢰도가이드",
   },
 ];
 
@@ -97,11 +85,11 @@ export function MainMagazineCards() {
           결혼 준비의 모든 발품을 하나의 아카이브로
         </h2>
         <p className="main-section-subtitle">
-          인스타그램과 네이버 카페를 헤매지 마세요. 신랑·신부에게 꼭 필요한 6가지 도구를 준비했습니다.
+          인스타그램과 네이버 카페를 헤매지 마세요. 신랑·신부에게 꼭 필요한 5가지 핵심 도구를 준비했습니다.
         </p>
       </div>
 
-      <div className="magazine-grid">
+      <div className="magazine-grid magazine-grid-5">
         {MAGAZINE_CARDS.map((card) => (
           <Link key={card.id} href={card.href} className="magazine-card-link" aria-label={`${card.koreanTitle} 바로가기`}>
             <article className="magazine-card">

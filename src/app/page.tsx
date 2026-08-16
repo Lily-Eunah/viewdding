@@ -36,7 +36,7 @@ export default function HomePage() {
           </div>
 
           <div className="home-hero-content">
-            <span className="home-hero-kicker">WEDDING PLACE &amp; STYLE ARCHIVE</span>
+            <span className="home-hero-kicker">CURATED WEDDING ARCHIVE</span>
             <h1 id="hero-title" className="home-hero-title">
               Wedding Archive
             </h1>
