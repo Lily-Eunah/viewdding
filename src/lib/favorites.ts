@@ -2,7 +2,7 @@ export const FAVORITES_KEY_V1 = "viewdding:favorites:v1";
 export const FAVORITES_KEY = "viewdding:favorites:v2";
 export const FAVORITES_EVENT = "viewdding:favorites-changed";
 
-export type FavoriteCategory = "halls" | "invitation" | "family_meeting" | "wedding_color";
+export type FavoriteCategory = "halls" | "invitation" | "family_meeting" | "wedding_color" | "essentials";
 
 export interface FavoritesData {
   halls: string[];
@@ -11,6 +11,7 @@ export interface FavoritesData {
     family_meeting: string[];
   };
   wedding_color: string[];
+  essentials: string[];
 }
 
 const EMPTY_FAVORITES: FavoritesData = {
@@ -20,6 +21,7 @@ const EMPTY_FAVORITES: FavoritesData = {
     family_meeting: [],
   },
   wedding_color: [],
+  essentials: [],
 };
 
 export function readAllFavorites(): FavoritesData {
@@ -41,6 +43,9 @@ export function readAllFavorites(): FavoritesData {
         wedding_color: Array.isArray(parsed?.wedding_color)
           ? parsed.wedding_color.filter((id: unknown): id is string => typeof id === "string")
           : [],
+        essentials: Array.isArray(parsed?.essentials)
+          ? parsed.essentials.filter((id: unknown): id is string => typeof id === "string")
+          : [],
       };
     }
 
@@ -53,6 +58,7 @@ export function readAllFavorites(): FavoritesData {
         halls,
         restaurants: { invitation: [], family_meeting: [] },
         wedding_color: [],
+        essentials: [],
       };
       window.localStorage.setItem(FAVORITES_KEY, JSON.stringify(migrated));
       return migrated;
@@ -73,6 +79,7 @@ export function writeAllFavorites(data: FavoritesData): void {
       family_meeting: Array.from(new Set(data.restaurants.family_meeting)),
     },
     wedding_color: Array.from(new Set(data.wedding_color || [])),
+    essentials: Array.from(new Set(data.essentials || [])),
   };
   window.localStorage.setItem(FAVORITES_KEY, JSON.stringify(cleanData));
   window.dispatchEvent(new CustomEvent(FAVORITES_EVENT));
@@ -82,6 +89,7 @@ export function readCategoryFavorites(category: FavoriteCategory): string[] {
   const data = readAllFavorites();
   if (category === "halls") return data.halls;
   if (category === "wedding_color") return data.wedding_color ?? [];
+  if (category === "essentials") return data.essentials ?? [];
   return data.restaurants[category] ?? [];
 }
 
@@ -101,6 +109,11 @@ export function toggleFavorite(category: FavoriteCategory, id: string): boolean 
     const exists = list.includes(id);
     data.wedding_color = exists ? list.filter((item) => item !== id) : [...list, id];
     nextSaved = !exists;
+  } else if (category === "essentials") {
+    const list = data.essentials ?? [];
+    const exists = list.includes(id);
+    data.essentials = exists ? list.filter((item) => item !== id) : [...list, id];
+    nextSaved = !exists;
   } else {
     const list = data.restaurants[category] ?? [];
     const exists = list.includes(id);
@@ -117,6 +130,8 @@ export function clearCategory(category: FavoriteCategory): void {
     data.halls = [];
   } else if (category === "wedding_color") {
     data.wedding_color = [];
+  } else if (category === "essentials") {
+    data.essentials = [];
   } else {
     data.restaurants[category] = [];
   }
@@ -133,7 +148,8 @@ export function totalFavoritesCount(): number {
     data.halls.length +
     data.restaurants.invitation.length +
     data.restaurants.family_meeting.length +
-    (data.wedding_color?.length ?? 0)
+    (data.wedding_color?.length ?? 0) +
+    (data.essentials?.length ?? 0)
   );
 }
 

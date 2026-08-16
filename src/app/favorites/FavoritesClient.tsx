@@ -4,21 +4,28 @@ import { useEffect, useMemo, useState } from "react";
 import { HallCard } from "@/components/HallCard";
 import { RestaurantCard } from "@/components/RestaurantCard";
 import { PersonalColorCard } from "@/components/PersonalColorCard";
+import { CurationCard } from "@/components/CurationCard";
 import { halls } from "@/lib/data";
 import { restaurants } from "@/lib/restaurants";
 import { personalColors } from "@/lib/personal-colors";
+import essentialsData from "@/data/wedding-essentials.json";
 import {
   clearCategory,
   FAVORITES_EVENT,
   readAllFavorites,
+  toggleFavorite,
   type FavoriteCategory,
   type FavoritesData,
 } from "@/lib/favorites";
+import type { WeddingEssentialItem } from "@/domain/essentials-types";
+
+const ALL_ESSENTIALS = essentialsData as WeddingEssentialItem[];
 
 const TABS: Array<{ key: FavoriteCategory; label: string; href: string }> = [
   { key: "halls", label: "웨딩홀", href: "/search/" },
   { key: "invitation", label: "청첩장 모임", href: "/gatherings/?purpose=invitation" },
   { key: "family_meeting", label: "상견례", href: "/gatherings/?purpose=family_meeting" },
+  { key: "essentials", label: "결혼 준비물", href: "/essentials/" },
   { key: "wedding_color", label: "퍼스널 컬러", href: "/wedding-color/" },
 ];
 
@@ -27,13 +34,14 @@ export function FavoritesClient() {
     halls: [],
     restaurants: { invitation: [], family_meeting: [] },
     wedding_color: [],
+    essentials: [],
   });
   const [activeTab, setActiveTab] = useState<FavoriteCategory>("halls");
 
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
     const tabParam = params.get("tab") as FavoriteCategory | null;
-    if (tabParam && (tabParam === "halls" || tabParam === "invitation" || tabParam === "family_meeting" || tabParam === "wedding_color")) {
+    if (tabParam && TABS.some((t) => t.key === tabParam)) {
       setActiveTab(tabParam);
     }
   }, []);
@@ -77,6 +85,14 @@ export function FavoritesClient() {
     [favoritesData.restaurants.family_meeting],
   );
 
+  const savedEssentials = useMemo(
+    () =>
+      (favoritesData.essentials || [])
+        .map((id: string) => ALL_ESSENTIALS.find((e) => e.id === id))
+        .filter((e): e is NonNullable<typeof e> => Boolean(e)),
+    [favoritesData.essentials],
+  );
+
   const savedWeddingColors = useMemo(
     () =>
       (favoritesData.wedding_color || [])
@@ -94,6 +110,8 @@ export function FavoritesClient() {
       ? savedInvitationRestaurants.length
       : activeTab === "family_meeting"
       ? savedFamilyMeetingRestaurants.length
+      : activeTab === "essentials"
+      ? savedEssentials.length
       : savedWeddingColors.length;
 
   return (
@@ -107,6 +125,8 @@ export function FavoritesClient() {
               ? savedInvitationRestaurants.length
               : tab.key === "family_meeting"
               ? savedFamilyMeetingRestaurants.length
+              : tab.key === "essentials"
+              ? savedEssentials.length
               : savedWeddingColors.length;
 
           return (
@@ -189,6 +209,38 @@ export function FavoritesClient() {
             <p>룸과 코스 요리가 구비된 정갈한 상견례 장소를 찾아 후보를 저장해보세요.</p>
             <a className="primary-link" href={currentTabInfo.href}>
               상견례 장소 찾아보기
+            </a>
+          </div>
+        )
+      ) : activeTab === "essentials" ? (
+        savedEssentials.length > 0 ? (
+          <div className="essentials-grid" style={{ marginTop: "24px" }}>
+            {savedEssentials.map((item) => (
+              <CurationCard
+                key={item.id}
+                id={item.id}
+                name={item.name}
+                brand={item.brand}
+                priceText={item.priceText}
+                thumbnailUrl={item.thumbnailUrl}
+                affiliateUrl={item.affiliateUrl}
+                platform={item.platform}
+                editorNote={item.editorNote}
+                tips={item.tips}
+                tags={item.tags}
+                isAffiliate={item.isAffiliate}
+                isMustHave={item.isMustHave}
+                isSaved={true}
+                onToggleSave={() => toggleFavorite("essentials", item.id)}
+              />
+            ))}
+          </div>
+        ) : (
+          <div className="empty-state">
+            <h2>아직 저장한 준비물이 없어요.</h2>
+            <p>본식과 스냅 촬영 전 필요한 준비물을 찾아 보관함에 담아보세요.</p>
+            <a className="primary-link" href={currentTabInfo.href}>
+              결혼 준비물 둘러보기
             </a>
           </div>
         )

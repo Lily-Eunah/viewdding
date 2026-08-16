@@ -78,7 +78,7 @@ body{background:#f6f3ee;color:var(--ink)}
 .finder-intro:before{position:absolute;inset:-15%;z-index:-2;content:"";background:#8b8788 url("/viewdding-hero-v48.png") center 48%/cover no-repeat;filter:blur(16px) saturate(.72);opacity:.72}
 .finder-intro:after{position:absolute;inset:0;z-index:-1;content:"";background:#625f6029}
 .finder-intro>div{max-width:680px;padding:42px 24px}.finder-intro .eyebrow{color:#ffffffa6;font-size:9px;letter-spacing:.22em}.finder-intro h1{margin:11px 0 14px;font:400 clamp(38px,4.6vw,54px)/1.12 var(--serif);letter-spacing:-.035em}.finder-intro>div>p:last-child{margin:0;color:#ffffffe3;font-size:14px;line-height:1.8}
-.search-experience.is-compact,.gathering-hero+.restaurant-search-experience{position:relative;z-index:4;margin-top:-42px}
+.search-experience.is-compact,.gathering-hero+.restaurant-search-experience{position:relative;z-index:4;margin-top:16px}
 .search-panel{border:1px solid #ffffff9e;border-radius:16px;background:#f4f1ebf2;box-shadow:0 18px 45px #4a46421a;backdrop-filter:blur(14px)}
 .field-label select,.field-button,.detail-field input,.restaurant-filter-grid select,.restaurant-detail-panel select,.restaurant-detail-panel input{border-color:#c9c4ba;border-radius:9px;background:#faf8f4}.search-button,.complete-button,.purpose-toggle button.is-selected{border-radius:9px;background:#5f5958}.search-button:hover{background:#474242}
 .type-picker-panel{border-radius:12px;background:#f7f4ef}.detail-toggle{letter-spacing:.03em}.detail-panel,.restaurant-detail-panel{border-top-color:#c8c3ba}
@@ -88,7 +88,7 @@ body{background:#f6f3ee;color:var(--ink)}
 .chip,.purpose-badge,.restaurant-links a{border-color:#c6c0b7;background:#f7f4ef73}.favorite-button{border-color:#c6c0b7}.hall-card-footer{border-top-color:#cbc6bd}
 .more-button{border-radius:8px}.unknown-results{border-top-color:#aaa59c}
 .bottom-nav{border-color:#ffffff87;border-radius:16px;background:#e8e4ddef;box-shadow:0 12px 34px #4a46422b}.bottom-nav a span:first-child{color:#5f5958}
-@media(max-width:760px){.site-header{width:calc(100% - 28px);justify-content:center;padding-top:18px}.brand{align-items:center}.site-links{display:none}.finder-intro{min-height:250px;margin-top:12px}.finder-intro>div{padding:34px 18px 58px}.finder-intro h1{font-size:clamp(30px,8vw,39px)}.finder-intro>div>p:last-child{font-size:13px}.search-experience.is-compact,.gathering-hero+.restaurant-search-experience{margin-top:-32px}.search-panel{border-radius:14px}.hall-card,.restaurant-card{border-radius:12px}.bottom-nav{border-radius:14px}}
+@media(max-width:760px){.site-header{width:calc(100% - 28px);justify-content:center;padding-top:18px}.brand{align-items:center}.site-links{display:none}.finder-intro{min-height:250px;margin-top:12px}.finder-intro>div{padding:34px 18px 58px}.finder-intro h1{font-size:clamp(30px,8vw,39px)}.finder-intro>div>p:last-child{font-size:13px}.search-experience.is-compact,.gathering-hero+.restaurant-search-experience{margin-top:12px}.search-panel{border-radius:14px}.hall-card,.restaurant-card{border-radius:12px}.bottom-nav{border-radius:14px}}
 @media(max-width:540px){.brand-name{font-size:36px}.finder-intro{min-height:238px}.finder-intro h1{font-size:30px;line-height:1.2}.finder-intro>div>p:last-child{font-size:12px}.search-panel{border-radius:12px}.field-label select,.field-button,.detail-field input,.restaurant-filter-grid select,.restaurant-detail-panel select,.restaurant-detail-panel input,.search-button{border-radius:8px}.hall-card,.restaurant-card{border-radius:10px}.bottom-nav{border-radius:12px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
 
@@ -4623,20 +4623,20 @@ body:has(.home-editorial-container) > .page-shell {
   margin: 0;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 8px;
 }
 
 .drawer-menu-link {
   display: grid;
-  grid-template-columns: auto 1fr auto;
+  grid-template-columns: 28px 1fr auto;
   align-items: center;
-  gap: 14px;
-  padding: 14px 16px;
-  border-radius: 14px;
+  gap: 16px;
+  padding: 14px 18px;
+  border-radius: 12px;
   text-decoration: none;
   color: inherit;
   background: #ffffff;
-  border: 1px solid rgba(226, 219, 206, 0.65);
+  border: 1px solid rgba(225, 219, 209, 0.7);
   transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
@@ -4644,75 +4644,53 @@ body:has(.home-editorial-container) > .page-shell {
 .drawer-menu-link.is-active {
   background: #f4ede3;
   border-color: #baa48b;
-  transform: translateX(-4px);
-}
-
-.drawer-link-meta {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 4px;
+  transform: translateX(4px);
 }
 
 .drawer-link-num {
   font-family: "Cormorant Garamond", Georgia, serif;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 600;
-  color: #968c7e;
-}
-
-.drawer-link-tag {
-  font-size: 9.5px;
-  font-weight: 600;
-  padding: 2px 5px;
-  border-radius: 4px;
-  background: #ece5d8;
-  color: #5f574d;
-  white-space: nowrap;
+  color: #9c8e7e;
+  letter-spacing: 0.05em;
 }
 
 .drawer-link-titles {
   display: flex;
   flex-direction: column;
-  gap: 1px;
+  gap: 2px;
+}
+
+.drawer-link-ko {
+  font-family: var(--serif, "Noto Serif KR", serif);
+  font-size: 16px;
+  font-weight: 600;
+  color: #272522;
+  letter-spacing: -0.02em;
 }
 
 .drawer-link-en {
   font-family: "Cormorant Garamond", Georgia, serif;
   font-size: 12px;
-  font-weight: 600;
-  color: #8c8375;
+  font-weight: 500;
+  color: #8c8376;
   text-transform: uppercase;
-  letter-spacing: 0.04em;
-}
-
-.drawer-link-ko {
-  font-family: var(--serif, "Noto Serif KR", serif);
-  font-size: 15.5px;
-  font-weight: 600;
-  color: #272522;
-}
-
-.drawer-link-desc {
-  margin: 4px 0 0;
-  font-size: 11.5px;
-  color: #7a7266;
-  line-height: 1.4;
+  letter-spacing: 0.06em;
 }
 
 .drawer-link-arrow {
-  font-size: 16px;
-  color: #a89f92;
-  transition: transform 0.2s ease, color 0.2s ease;
+  font-size: 15px;
+  color: #baa48b;
+  transition: transform 0.2s ease;
 }
 
 .drawer-menu-link:hover .drawer-link-arrow {
   color: #272522;
-  transform: translateX(3px);
+  transform: translateX(4px);
 }
 
 .drawer-footer {
-  padding-top: 18px;
+  padding-top: 20px;
   border-top: 1px solid #ede7dc;
   display: flex;
   flex-direction: column;
@@ -4722,17 +4700,18 @@ body:has(.home-editorial-container) > .page-shell {
 .drawer-footer-card {
   background: #ffffff;
   border: 1px solid #e2dbce;
-  border-radius: 14px;
-  padding: 16px 18px;
+  border-radius: 12px;
+  padding: 14px 16px;
 }
 
 .drawer-footer-card-header {
   display: flex;
   align-items: center;
   gap: 7px;
-  font-size: 13px;
+  font-size: 12.5px;
+  font-weight: 600;
   color: #2e2b27;
-  margin-bottom: 6px;
+  margin-bottom: 4px;
 }
 
 .card-sparkle-icon {
@@ -4740,9 +4719,9 @@ body:has(.home-editorial-container) > .page-shell {
 }
 
 .drawer-footer-card p {
-  margin: 0 0 10px;
+  margin: 0 0 8px;
   font-size: 11.5px;
-  line-height: 1.5;
+  line-height: 1.45;
   color: #797166;
 }
 

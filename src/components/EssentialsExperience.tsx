@@ -8,6 +8,11 @@ import {
   ESSENTIAL_CATEGORIES,
   type WeddingEssentialItem,
 } from "@/domain/essentials-types";
+import {
+  FAVORITES_EVENT,
+  readCategoryFavorites,
+  toggleFavorite,
+} from "@/lib/favorites";
 
 interface EssentialsExperienceProps {
   initialItems: WeddingEssentialItem[];
@@ -18,6 +23,24 @@ export function EssentialsExperience({ initialItems }: EssentialsExperienceProps
   const [selectedCategory, setSelectedCategory] = useState<string>("all");
   const [isChecklistMode, setIsChecklistMode] = useState<boolean>(false);
   const [checkedIds, setCheckedIds] = useState<Set<string>>(new Set());
+  const [savedIds, setSavedIds] = useState<Set<string>>(new Set());
+
+  useEffect(() => {
+    const syncSaved = () => {
+      setSavedIds(new Set(readCategoryFavorites("essentials")));
+    };
+    syncSaved();
+    window.addEventListener(FAVORITES_EVENT, syncSaved);
+    window.addEventListener("storage", syncSaved);
+    return () => {
+      window.removeEventListener(FAVORITES_EVENT, syncSaved);
+      window.removeEventListener("storage", syncSaved);
+    };
+  }, []);
+
+  const handleToggleSave = (id: string) => {
+    toggleFavorite("essentials", id);
+  };
 
   // LocalStorage checklist synchronization
   useEffect(() => {
@@ -176,6 +199,8 @@ export function EssentialsExperience({ initialItems }: EssentialsExperienceProps
               showCheckbox={isChecklistMode}
               isChecked={checkedIds.has(item.id)}
               onToggleCheck={handleToggleCheck}
+              isSaved={savedIds.has(item.id)}
+              onToggleSave={() => handleToggleSave(item.id)}
             />
           ))}
         </section>
