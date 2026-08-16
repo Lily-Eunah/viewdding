@@ -3645,13 +3645,13 @@ body:has(.home-editorial-container) > .page-shell {
    -------------------------------------------------------------------------- */
 .home-hero-section {
   position: relative;
-  min-height: calc(100vh - 66px);
-  min-height: calc(100svh - 66px);
+  min-height: 100vh;
+  min-height: 100svh;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 60px 24px 70px;
+  padding: 96px 24px 70px;
   overflow: hidden;
 }
 
@@ -4500,9 +4500,13 @@ body:has(.home-editorial-container) > .page-shell {
 
 /* Seamless blend on home page over floral background */
 body:has(.home-editorial-container) .site-header-lux {
-  background: rgba(243, 240, 234, 0.15);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: transparent;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
   border-bottom: none;
 }
 
