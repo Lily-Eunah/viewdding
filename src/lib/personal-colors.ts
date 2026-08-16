@@ -1,13 +1,9 @@
 import personalColorsData from "@/data/personal-colors.generated.json";
 import type { PersonalColorRecord, PersonalColorStatus, VerificationGrade } from "@/domain/personal-color-types";
 
-let personalColorPhotosData: Record<string, { photoUrl?: string | null }> = {};
-try {
-  // eslint-disable-next-line @typescript-eslint/no-require-imports
-  personalColorPhotosData = require("@/data/personal-color-photos.generated.json");
-} catch {
-  personalColorPhotosData = {};
-}
+import personalColorPhotosJson from "@/data/personal-color-photos.generated.json";
+
+const personalColorPhotosData = personalColorPhotosJson as Record<string, { photoUrl?: string | null }>;
 
 export const personalColors: PersonalColorRecord[] = (personalColorsData as unknown as PersonalColorRecord[]).map(
   (vendor) => ({
