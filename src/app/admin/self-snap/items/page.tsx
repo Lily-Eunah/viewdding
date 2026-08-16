@@ -60,11 +60,14 @@ export default function AdminSelfSnapItemsPage() {
     }
   };
 
+  const [scrapeManualHint, setScrapeManualHint] = useState("");
+
   const handleScrape = async () => {
     if (!urlInput.trim()) return;
     try {
       setScraping(true);
       setScrapeError("");
+      setScrapeManualHint("");
       const res = await fetch("/api/admin/scrape-og", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -73,7 +76,7 @@ export default function AdminSelfSnapItemsPage() {
       const json = await res.json();
 
       if (json.success && json.data) {
-        const { title, imageUrl, description, platform, finalUrl } = json.data;
+        const { title, imageUrl, description, platform, finalUrl, canAutoScrape, manualHint } = json.data;
         setFormData((prev) => ({
           ...prev,
           name: title || prev.name,
@@ -82,6 +85,11 @@ export default function AdminSelfSnapItemsPage() {
           platform: platform || prev.platform,
           editorNote: prev.editorNote || description || "",
         }));
+        if (canAutoScrape === false) {
+          setScrapeManualHint(
+            manualHint || "이 사이트는 자동 수집이 어렵습니다. 아래에서 직접 입력해 주세요."
+          );
+        }
       } else {
         setScrapeError(json.error || "메타데이터를 가져오지 못했습니다.");
       }
@@ -228,6 +236,35 @@ export default function AdminSelfSnapItemsPage() {
             <p style={{ color: "#b8543f", fontSize: "12px", marginTop: "6px" }}>
               <WarningCircle size={14} style={{ display: "inline", verticalAlign: "middle" }} /> {scrapeError}
             </p>
+          )}
+          {scrapeManualHint && (
+            <div
+              style={{
+                marginTop: "10px",
+                padding: "14px 18px",
+                background: "linear-gradient(135deg, #fdf6ed 0%, #fef9f0 100%)",
+                border: "1px solid #e8d5b8",
+                borderRadius: "12px",
+                fontSize: "13px",
+                color: "#6b5a3e",
+                lineHeight: "1.65",
+                display: "flex",
+                gap: "10px",
+                alignItems: "flex-start",
+              }}
+            >
+              <span style={{ fontSize: "18px", flexShrink: 0, marginTop: "1px" }}>📋</span>
+              <div>
+                <strong style={{ display: "block", marginBottom: "4px", color: "#4a3d2a" }}>
+                  수동 입력이 필요합니다
+                </strong>
+                {scrapeManualHint}
+                <br />
+                <span style={{ fontSize: "11.5px", color: "#8c7a5e" }}>
+                  💡 Tip: 상품 페이지에서 이미지 우클릭 → &quot;이미지 주소 복사&quot; → 아래 이미지 URL 필드에 붙여넣기
+                </span>
+              </div>
+            </div>
           )}
         </div>
 
