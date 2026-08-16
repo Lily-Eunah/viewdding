@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { Heart } from "@phosphor-icons/react";
 import { FAVORITES_EVENT, isFavorite, toggleFavorite, type FavoriteCategory } from "@/lib/favorites";
 import { trackFavoriteToggle } from "@/lib/analytics-client";
 
@@ -55,17 +56,11 @@ export function FavoriteButton({
         onClick={handleClick}
         title={saved ? "보관함에서 제거" : "보관함에 저장"}
       >
-        <span
-          aria-hidden="true"
-          style={{
-            fontSize: "16px",
-            color: saved ? "#E11D48" : "#8A7E72",
-            lineHeight: 1,
-            transition: "color 0.15s ease",
-          }}
-        >
-          {saved ? "♥" : "♡"}
-        </span>
+        <Heart
+          size={18}
+          weight={saved ? "fill" : "regular"}
+          color={saved ? "#E11D48" : "#57524C"}
+        />
       </button>
     );
   }

@@ -177,8 +177,15 @@ function detailFilterCount(filters: RestaurantFilterState): number {
   }
 
   const regionSummaryText = useMemo(() => {
-    if (draft.district) return draft.district;
-    if (selectedDistricts.length > 0) return selectedDistricts[0];
+    if (selectedDistricts.length > 0) {
+      return selectedDistricts.length === 1
+        ? selectedDistricts[0]
+        : `${selectedDistricts[0]} 외 ${selectedDistricts.length - 1}곳`;
+    }
+    if (draft.district) {
+      const parts = draft.district.split(",").filter(Boolean);
+      return parts.length === 1 ? parts[0] : `${parts[0]} 외 ${parts.length - 1}곳`;
+    }
     if (selectedSidos.length > 0) return `${shortSidoLabel(selectedSidos[0])} 전체`;
     return "지역";
   }, [draft.district, selectedDistricts, selectedSidos]);
@@ -186,7 +193,7 @@ function detailFilterCount(filters: RestaurantFilterState): number {
   const handleRegionApply = (sidos: Sido[], codes: string[], districts: string[]) => {
     setSelectedSidos(sidos);
     setSelectedDistricts(districts);
-    const chosenDistrict = districts[0] || (sidos.length > 0 ? `${shortSidoLabel(sidos[0])}` : "");
+    const chosenDistrict = districts.length > 0 ? districts.join(",") : (sidos.length > 0 ? `${shortSidoLabel(sidos[0])}` : "");
     const nextDraft = { ...draft, district: chosenDistrict, area: "" };
     commit(nextDraft);
   };
@@ -197,6 +204,36 @@ function detailFilterCount(filters: RestaurantFilterState): number {
 
   return (
     <section className={`restaurant-search-experience${viewMode === "map" ? " is-map-mode" : ""}`}>
+      {/* Purpose Tabs: 청첩장 모임 vs 상견례 (No emojis) */}
+      <div className="gathering-purpose-tabs" role="tablist" aria-label="모임 목적 선택">
+        <button
+          type="button"
+          role="tab"
+          aria-selected={draft.purpose === "invitation"}
+          className={`gathering-purpose-tab${draft.purpose === "invitation" ? " is-active" : ""}`}
+          onClick={() => {
+            const next = { ...draft, purpose: "invitation" as const };
+            setDraft(next);
+            commit(next);
+          }}
+        >
+          청첩장 모임
+        </button>
+        <button
+          type="button"
+          role="tab"
+          aria-selected={draft.purpose === "family_meeting"}
+          className={`gathering-purpose-tab${draft.purpose === "family_meeting" ? " is-active" : ""}`}
+          onClick={() => {
+            const next = { ...draft, purpose: "family_meeting" as const };
+            setDraft(next);
+            commit(next);
+          }}
+        >
+          상견례
+        </button>
+      </div>
+
       <div className="search-top-bar">
         <div className="search-input-wrapper">
           <input

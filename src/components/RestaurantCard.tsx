@@ -128,37 +128,6 @@ export function RestaurantCard({
 
   const categoryKicker = restaurant.venueType || restaurant.cuisines.slice(0, 2).join("·") || "다이닝";
 
-  const portalLinks = (
-    <div className="restaurant-portal-links">
-      {restaurant.naverMapUrl ? (
-        <a
-          href={restaurant.naverMapUrl}
-          target="_blank"
-          rel="noreferrer"
-          className="portal-icon-only-btn"
-          title="네이버 지도에서 열기"
-          aria-label="네이버 지도에서 열기"
-          onClick={handleNaverMapClick}
-        >
-          <NaverMapAppIcon />
-        </a>
-      ) : null}
-      {restaurant.kakaoMapUrl ? (
-        <a
-          href={restaurant.kakaoMapUrl}
-          target="_blank"
-          rel="noreferrer"
-          className="portal-icon-only-btn"
-          title="카카오맵에서 열기"
-          aria-label="카카오맵에서 열기"
-          onClick={handleKakaoMapClick}
-        >
-          <KakaoMapAppIcon />
-        </a>
-      ) : null}
-    </div>
-  );
-
   return (
     <article className="restaurant-card" ref={cardRef}>
       <div className="restaurant-card-main-grid">
@@ -197,8 +166,33 @@ export function RestaurantCard({
                 <p className="restaurant-kicker">{categoryKicker}</p>
               </Link>
               <div className="restaurant-top-portal-links">
-                {portalLinks}
-                <FavoriteButton itemId={restaurant.id} category={restaurant.purpose} compact />
+                {restaurant.naverMapUrl ? (
+                  <a
+                    href={restaurant.naverMapUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="portal-icon-only-btn portal-naver-btn"
+                    title="네이버 지도에서 열기"
+                    aria-label="네이버 지도에서 열기"
+                    onClick={handleNaverMapClick}
+                  >
+                    <NaverMapAppIcon />
+                  </a>
+                ) : null}
+                {restaurant.kakaoMapUrl ? (
+                  <a
+                    href={restaurant.kakaoMapUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="portal-icon-only-btn portal-kakao-btn"
+                    title="카카오맵에서 열기"
+                    aria-label="카카오맵에서 열기"
+                    onClick={handleKakaoMapClick}
+                  >
+                    <KakaoMapAppIcon />
+                  </a>
+                ) : null}
+                <FavoriteButton itemId={restaurant.id} category={restaurant.purpose} variant="portal" />
               </div>
             </div>
 
@@ -240,7 +234,7 @@ export function RestaurantCard({
           </div>
         </div>
 
-        {/* Right / 4 Metrics (2x2) & Portal Links */}
+        {/* Right / 4 Metrics (2x2) */}
         <div className="restaurant-card-metrics-col">
           <Link href={detailUrl} className="restaurant-metrics-grid-link">
             <dl className="restaurant-metrics-grid">
@@ -268,10 +262,6 @@ export function RestaurantCard({
               </div>
             </dl>
           </Link>
-
-          <div className="restaurant-metrics-portal-links">
-            {portalLinks}
-          </div>
         </div>
       </div>
     </article>

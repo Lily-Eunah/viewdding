@@ -81,51 +81,6 @@ export function PersonalColorCard({
     });
   };
 
-  const portalLinks = (
-    <div className="restaurant-portal-links">
-      {vendor.naverMapUrl ? (
-        <a
-          href={vendor.naverMapUrl}
-          target="_blank"
-          rel="noreferrer"
-          className="portal-icon-only-btn"
-          title="네이버 지도에서 열기"
-          aria-label="네이버 지도에서 열기"
-          onClick={handleNaverMapClick}
-        >
-          <NaverMapAppIcon />
-        </a>
-      ) : null}
-      {vendor.instagramUrl ? (
-        <a
-          href={vendor.instagramUrl}
-          target="_blank"
-          rel="noreferrer"
-          className="portal-icon-only-btn"
-          title="공식 인스타그램 보기"
-          aria-label="공식 인스타그램 보기"
-          onClick={handleInstagramClick}
-        >
-          <InstagramLogo size={20} weight="bold" color="#E1306C" />
-        </a>
-      ) : null}
-      {vendor.reviewUrl ? (
-        <a
-          href={vendor.reviewUrl}
-          target="_blank"
-          rel="noreferrer"
-          className="portal-icon-only-btn"
-          title="실제 후기 및 정보 보기"
-          aria-label="실제 후기 및 정보 보기"
-          onClick={handleReviewClick}
-        >
-          <Article size={20} weight="bold" color="#64748B" />
-        </a>
-      ) : null}
-      <FavoriteButton itemId={vendor.id} category="wedding_color" variant="portal" />
-    </div>
-  );
-
   return (
     <article className="restaurant-card personal-color-no-img-card" ref={cardRef}>
       <div className="restaurant-card-main-grid">
@@ -135,7 +90,46 @@ export function PersonalColorCard({
             <div className="restaurant-kicker-row">
               <p className="restaurant-kicker">{categoryKicker}</p>
               <div className="restaurant-top-portal-links">
-                {portalLinks}
+                {vendor.naverMapUrl ? (
+                  <a
+                    href={vendor.naverMapUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="portal-icon-only-btn"
+                    title="네이버 지도에서 열기"
+                    aria-label="네이버 지도에서 열기"
+                    onClick={handleNaverMapClick}
+                  >
+                    <NaverMapAppIcon />
+                  </a>
+                ) : null}
+                {vendor.instagramUrl ? (
+                  <a
+                    href={vendor.instagramUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="portal-icon-only-btn"
+                    title="공식 인스타그램 보기"
+                    aria-label="공식 인스타그램 보기"
+                    onClick={handleInstagramClick}
+                  >
+                    <InstagramLogo size={20} weight="bold" color="#E1306C" />
+                  </a>
+                ) : null}
+                {vendor.reviewUrl ? (
+                  <a
+                    href={vendor.reviewUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="portal-icon-only-btn"
+                    title="실제 후기 및 정보 보기"
+                    aria-label="실제 후기 및 정보 보기"
+                    onClick={handleReviewClick}
+                  >
+                    <Article size={20} weight="bold" color="#64748B" />
+                  </a>
+                ) : null}
+                <FavoriteButton itemId={vendor.id} category="wedding_color" variant="portal" />
               </div>
             </div>
 
@@ -190,7 +184,7 @@ export function PersonalColorCard({
           ) : null}
         </div>
 
-        {/* Right Metrics & Actions Column */}
+        {/* Right Metrics Column */}
         <div className="restaurant-card-metrics-col">
           <dl className="restaurant-metrics-grid">
             <div className="metric-box" title={vendor.priceRaw || priceDisplay}>
@@ -210,10 +204,6 @@ export function PersonalColorCard({
               <dd>{vendor.serviceTags.includes("dress") ? "드레스/헤메" : "스타일링"}</dd>
             </div>
           </dl>
-
-          <div className="restaurant-metrics-portal-links">
-            {portalLinks}
-          </div>
         </div>
       </div>
     </article>

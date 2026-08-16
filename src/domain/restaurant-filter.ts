@@ -68,11 +68,15 @@ export function evaluateRestaurant(
   }
 
   if (filters.district) {
-    const target = filters.district.trim();
-    const isSido = ["서울", "서울특별시", "경기", "경기도", "인천", "인천광역시", "강원", "충북", "충남", "전북", "전남", "경북", "경남", "제주"].includes(target);
-    const matched = isSido
-      ? Boolean(restaurant.address?.includes(target) || (target.startsWith("서울") && restaurant.address?.includes("서울")))
-      : restaurant.district === target || Boolean(restaurant.address?.includes(target));
+    const targets = filters.district.split(",").map((d) => d.trim()).filter(Boolean);
+    const matched = targets.some((target) => {
+      const isSido = ["서울", "서울특별시", "경기", "경기도", "인천", "인천광역시", "강원", "충북", "충남", "전북", "전남", "경북", "경남", "제주", "수도권", "부산", "대구", "대전", "세종", "울산", "광주"].includes(target);
+      if (isSido) {
+        if (target === "수도권") return Boolean(restaurant.address?.includes("서울") || restaurant.address?.includes("경기") || restaurant.address?.includes("인천"));
+        return Boolean(restaurant.address?.includes(target));
+      }
+      return restaurant.district === target || Boolean(restaurant.address?.includes(target));
+    });
     checks.push({ state: matched ? "match" : "mismatch", reason: "지역" });
   }
   if (filters.area) {
