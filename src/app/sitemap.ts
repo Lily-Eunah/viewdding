@@ -16,6 +16,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: absolute("/"), lastModified: hallMetadata.generatedAt, changeFrequency: "weekly", priority: 1 },
     { url: absolute("/search/"), lastModified: hallMetadata.generatedAt, changeFrequency: "weekly", priority: 0.8 },
     { url: absolute("/gatherings/"), lastModified: restaurantMetadata.generatedAt, changeFrequency: "weekly", priority: 0.8 },
+    { url: absolute("/wedding-color/"), lastModified: hallMetadata.generatedAt, changeFrequency: "weekly", priority: 0.85 },
     { url: absolute("/methodology/"), lastModified: hallMetadata.generatedAt, changeFrequency: "monthly", priority: 0.4 },
   ];
   const collectionPages: MetadataRoute.Sitemap = HALL_SEO_COLLECTION_ORDER.map((key) => ({

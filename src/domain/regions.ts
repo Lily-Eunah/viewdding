@@ -32,6 +32,129 @@ export const SIDO_OPTIONS: ReadonlyArray<{ value: Sido; label: string; shortLabe
   { value: "전북특별자치도", label: "전북특별자치도", shortLabel: "전북" },
 ];
 
+export interface RegionBundle {
+  id: string;
+  label: string;
+  sidos: Sido[];
+  sigungus: string[];
+}
+
+export interface MacroRegionCategory {
+  id: string;
+  name: string;
+  bundles: RegionBundle[];
+}
+
+export const REGION_BUNDLE_GROUPS: ReadonlyArray<MacroRegionCategory> = [
+  {
+    id: "all",
+    name: "전국",
+    bundles: [
+      { id: "all_nation", label: "전국 전체", sidos: SIDO_OPTIONS.map((s) => s.value), sigungus: [] },
+    ],
+  },
+  {
+    id: "capital",
+    name: "수도권",
+    bundles: [
+      { id: "capital_all", label: "수도권(서울/경기/인천) 전체", sidos: ["서울특별시", "경기도", "인천광역시"], sigungus: [] },
+      { id: "seoul_all", label: "서울 전체", sidos: ["서울특별시"], sigungus: [] },
+      { id: "gangnam", label: "강남", sidos: ["서울특별시"], sigungus: ["강남구"] },
+      { id: "seocho", label: "서초", sidos: ["서울특별시"], sigungus: ["서초구"] },
+      { id: "songpa_gangdong", label: "잠실/송파/강동", sidos: ["서울특별시"], sigungus: ["송파구", "강동구"] },
+      { id: "yeongdeungpo_gangseo", label: "영등포/여의도/강서", sidos: ["서울특별시"], sigungus: ["영등포구", "강서구", "양천구"] },
+      { id: "seongsu_gwangjin", label: "건대/성수/왕십리", sidos: ["서울특별시"], sigungus: ["성동구", "광진구", "동대문구", "중랑구"] },
+      { id: "guro_gwanak", label: "구로/관악/동작", sidos: ["서울특별시"], sigungus: ["구로구", "관악구", "동작구", "금천구"] },
+      { id: "jongno_jung_yongsan", label: "종로/중구/용산", sidos: ["서울특별시"], sigungus: ["종로구", "중구", "용산구"] },
+      { id: "mapo_seodaemun", label: "홍대/합정/마포/서대문", sidos: ["서울특별시"], sigungus: ["마포구", "서대문구", "은평구"] },
+      { id: "gangbuk_nowon", label: "강북/노원/도봉/성북", sidos: ["서울특별시"], sigungus: ["성북구", "강북구", "도봉구", "노원구"] },
+      { id: "gyeonggi_all", label: "경기 전체", sidos: ["경기도"], sigungus: [] },
+      { id: "seongnam_hanam", label: "성남/분당/판교/하남", sidos: ["경기도"], sigungus: ["성남시", "하남시", "광주시"] },
+      { id: "suwon_yongin", label: "수원/용인/화성/평택", sidos: ["경기도"], sigungus: ["수원시", "용인시", "화성시", "평택시", "오산시", "안성시"] },
+      { id: "anyang_gwacheon", label: "의왕/안양/군포/과천", sidos: ["경기도"], sigungus: ["안양시", "과천시", "군포시", "의왕시"] },
+      { id: "bucheon_ansan", label: "부천/시흥/안산/광명", sidos: ["경기도"], sigungus: ["부천시", "광명시", "안산시", "시흥시"] },
+      { id: "goyang_paju", label: "고양/일산/파주/김포", sidos: ["경기도"], sigungus: ["고양시", "파주시", "김포시"] },
+      { id: "namyangju_uijeongbu", label: "남양주/구리/의정부/경기북부", sidos: ["경기도"], sigungus: ["남양주시", "구리시", "의정부시", "양주시", "동두천시", "포천시", "가평군", "연천군", "이천시", "여주시", "양평군"] },
+      { id: "incheon_all", label: "인천 전체", sidos: ["인천광역시"], sigungus: [] },
+      { id: "songdo_yeonsu", label: "송도/연수/인천원도심", sidos: ["인천광역시"], sigungus: ["연수구", "남동구", "미추홀구", "중구", "동구", "영종구", "제물포구", "강화군", "옹진군"] },
+      { id: "bupyeong_cheongna", label: "부평/계양/청라/검단", sidos: ["인천광역시"], sigungus: ["부평구", "계양구", "서해구", "검단구"] },
+    ],
+  },
+  {
+    id: "busan",
+    name: "부산",
+    bundles: [
+      { id: "busan_all", label: "부산 전체", sidos: ["부산광역시"], sigungus: [] },
+      { id: "haeundae_suyeong", label: "해운대/수영/기장", sidos: ["부산광역시"], sigungus: ["해운대구", "수영구", "남구", "기장군"] },
+      { id: "seomyeon_busanjin", label: "서면/도심/부산진구", sidos: ["부산광역시"], sigungus: ["부산진구", "동래구", "연제구", "금정구"] },
+      { id: "nampo_yeongdo", label: "남포/원도심/영도", sidos: ["부산광역시"], sigungus: ["중구", "서구", "동구", "영도구"] },
+      { id: "busan_west", label: "서부/사하/사상/북구", sidos: ["부산광역시"], sigungus: ["북구", "사상구", "사하구", "강서구"] },
+    ],
+  },
+  {
+    id: "daegu",
+    name: "대구",
+    bundles: [
+      { id: "daegu_all", label: "대구 전체", sidos: ["대구광역시"], sigungus: [] },
+      { id: "dongseongro_suseong", label: "동성로/중구/수성구", sidos: ["대구광역시"], sigungus: ["중구", "수성구", "동구"] },
+      { id: "dalseo_bukgu", label: "달서구/남구/서구/북구", sidos: ["대구광역시"], sigungus: ["달서구", "달성군", "남구", "서구", "북구", "군위군"] },
+    ],
+  },
+  {
+    id: "daejeon_sejong",
+    name: "대전/세종",
+    bundles: [
+      { id: "daejeon_sejong_all", label: "대전/세종 전체", sidos: ["대전광역시", "세종특별자치시"], sigungus: [] },
+      { id: "yuseong_dunsan", label: "유성/둔산/서구", sidos: ["대전광역시"], sigungus: ["유성구", "서구"] },
+      { id: "daejeon_center", label: "도심/중구/동구/대덕", sidos: ["대전광역시"], sigungus: ["중구", "동구", "대덕구"] },
+      { id: "sejong_all", label: "세종 전체", sidos: ["세종특별자치시"], sigungus: ["세종시"] },
+    ],
+  },
+  {
+    id: "gwangju_jeolla",
+    name: "광주/전라",
+    bundles: [
+      { id: "gwangju_jeolla_all", label: "광주/전라 전체", sidos: ["광주광역시", "전북특별자치도"], sigungus: [] },
+      { id: "gwangju_all", label: "광주 전체", sidos: ["광주광역시"], sigungus: [] },
+      { id: "jeonju_jeonbuk", label: "전주/전북", sidos: ["전북특별자치도"], sigungus: ["전주시"] },
+    ],
+  },
+  {
+    id: "gyeongnam",
+    name: "경남/경북",
+    bundles: [
+      { id: "gyeongnam_all", label: "경남/경북 전체", sidos: ["경상남도"], sigungus: [] },
+      { id: "changwon_gimhae", label: "창원/김해/양산", sidos: ["경상남도"], sigungus: ["창원시", "김해시", "양산시"] },
+      { id: "jinju_geoje", label: "진주/거제/통영/경남", sidos: ["경상남도"], sigungus: ["진주시", "사천시", "거제시", "통영시", "고성군", "밀양시", "창녕군", "남해군", "하동군", "거창군", "함양군", "합천군", "산청군", "함안군", "의령군"] },
+    ],
+  },
+  {
+    id: "chungcheong",
+    name: "충남/충북",
+    bundles: [
+      { id: "chungcheong_all", label: "충남/충북 전체", sidos: ["충청남도", "충청북도"], sigungus: [] },
+      { id: "cheonan_asan", label: "천안/아산", sidos: ["충청남도"], sigungus: ["천안시", "아산시"] },
+      { id: "cheongju", label: "청주", sidos: ["충청북도"], sigungus: ["청주시"] },
+    ],
+  },
+  {
+    id: "ulsan",
+    name: "울산",
+    bundles: [
+      { id: "ulsan_all", label: "울산 전체", sidos: ["울산광역시"], sigungus: [] },
+    ],
+  },
+  {
+    id: "jeju",
+    name: "제주",
+    bundles: [
+      { id: "jeju_all", label: "제주 전체", sidos: ["제주특별자치도"], sigungus: [] },
+      { id: "jeju_si", label: "제주시", sidos: ["제주특별자치도"], sigungus: ["제주시"] },
+      { id: "seogwipo_si", label: "서귀포시", sidos: ["제주특별자치도"], sigungus: ["서귀포시"] },
+    ],
+  },
+];
+
 const SEOUL_METRO_AREAS: Record<string, string> = {
   종로구: "서울 도심권", 중구: "서울 도심권", 용산구: "서울 도심권",
   성동구: "서울 동북권", 광진구: "서울 동북권", 동대문구: "서울 동북권", 중랑구: "서울 동북권",

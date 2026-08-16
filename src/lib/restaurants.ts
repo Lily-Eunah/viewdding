@@ -5,13 +5,9 @@ import type { RestaurantEvidenceRecord } from "@/domain/restaurant-evidence";
 import type { RestaurantRecord } from "@/domain/restaurant-types";
 import { restaurantSlug } from "@/lib/restaurant-routes";
 
-let restaurantPhotosData: Record<string, { photoUrl?: string | null }> = {};
-try {
-  // eslint-disable-next-line @typescript-eslint/no-require-imports
-  restaurantPhotosData = require("@/data/restaurant-photos.generated.json");
-} catch {
-  restaurantPhotosData = {};
-}
+import restaurantPhotosJson from "@/data/restaurant-photos.generated.json";
+
+const restaurantPhotosData = restaurantPhotosJson as Record<string, { photoUrl?: string | null }>;
 
 export const restaurants: RestaurantRecord[] = (restaurantData as unknown as RestaurantRecord[]).map((restaurant) => ({
   ...restaurant,

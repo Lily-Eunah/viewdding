@@ -1,32 +1,42 @@
 "use client";
 
 import Link from "next/link";
-import { Buildings, EnvelopeSimple, Heart, House, Wine } from "@phosphor-icons/react";
-import { usePathname, useSearchParams } from "next/navigation";
+import { Buildings, Camera, EnvelopeSimple, House, ShoppingBagOpen } from "@phosphor-icons/react";
+import { usePathname } from "next/navigation";
 
 export function BottomNav() {
   const pathname = usePathname() ?? "";
-  const searchParams = useSearchParams();
-  const purpose = searchParams?.get("purpose");
 
   const navItems = [
     { key: "home", href: "/", label: "홈", Icon: House, active: pathname === "/" },
-    { key: "wedding", href: "/search/", label: "웨딩홀", Icon: Buildings, active: pathname.startsWith("/search") || pathname.startsWith("/halls") },
     {
-      key: "invitation",
+      key: "wedding",
+      href: "/search/",
+      label: "웨딩홀",
+      Icon: Buildings,
+      active: pathname.startsWith("/search") || pathname.startsWith("/halls"),
+    },
+    {
+      key: "gatherings",
       href: "/gatherings/?purpose=invitation",
-      label: "청첩장 모임",
+      label: "모임장소",
       Icon: EnvelopeSimple,
-      active: pathname.startsWith("/gatherings") && purpose !== "family_meeting",
+      active: pathname.startsWith("/gatherings"),
     },
     {
-      key: "family_meeting",
-      href: "/gatherings/?purpose=family_meeting",
-      label: "상견례",
-      Icon: Wine,
-      active: pathname.startsWith("/gatherings") && purpose === "family_meeting",
+      key: "self_snap",
+      href: "/self-snap/",
+      label: "셀프스냅",
+      Icon: Camera,
+      active: pathname.startsWith("/self-snap"),
     },
-    { key: "favorites", href: "/favorites/", label: "저장", Icon: Heart, active: pathname.startsWith("/favorites") },
+    {
+      key: "essentials",
+      href: "/essentials/",
+      label: "준비물",
+      Icon: ShoppingBagOpen,
+      active: pathname.startsWith("/essentials"),
+    },
   ];
 
   return (
@@ -40,3 +50,4 @@ export function BottomNav() {
     </nav>
   );
 }
+

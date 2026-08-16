@@ -3,14 +3,20 @@ export const RESTAURANT_MARKER_VISUALS = {
   selected: { width: 36, height: 48, color: "#8d4f45" },
 } as const;
 
+export const PERSONAL_COLOR_MARKER_VISUALS = {
+  normal: { width: 30, height: 40, color: "#9d4edd" },
+  selected: { width: 36, height: 48, color: "#e11d48" },
+} as const;
+
 export interface RestaurantMarkerImages {
   normal: KakaoMarkerImageInstance;
   selected: KakaoMarkerImageInstance;
 }
 
 export type HallMarkerImages = RestaurantMarkerImages;
+export type PersonalColorMarkerImages = RestaurantMarkerImages;
 
-function createPinDataUrl({ width, height, color }: (typeof RESTAURANT_MARKER_VISUALS)[keyof typeof RESTAURANT_MARKER_VISUALS]): string {
+function createPinDataUrl({ width, height, color }: { width: number; height: number; color: string }): string {
   const renderScale = 2;
   const canvas = document.createElement("canvas");
   canvas.width = width * renderScale;
@@ -73,6 +79,24 @@ function createMarkerImages(
 
 export function createHallMarkerImages(maps: KakaoMapsNamespace): HallMarkerImages {
   return createMarkerImages(maps, "웨딩홀 위치", "선택한 웨딩홀 위치");
+}
+
+export function createPersonalColorMarkerImages(maps: KakaoMapsNamespace): PersonalColorMarkerImages {
+  const createImage = (visual: (typeof PERSONAL_COLOR_MARKER_VISUALS)[keyof typeof PERSONAL_COLOR_MARKER_VISUALS], alt: string) => (
+    new maps.MarkerImage(
+      createPinDataUrl(visual),
+      new maps.Size(visual.width, visual.height),
+      {
+        offset: new maps.Point(visual.width / 2, visual.height),
+        alt,
+      },
+    )
+  );
+
+  return {
+    normal: createImage(PERSONAL_COLOR_MARKER_VISUALS.normal, "웨딩 퍼스널컬러 업체"),
+    selected: createImage(PERSONAL_COLOR_MARKER_VISUALS.selected, "선택한 웨딩 퍼스널컬러 업체"),
+  };
 }
 
 export function applyRestaurantMarkerSelection(

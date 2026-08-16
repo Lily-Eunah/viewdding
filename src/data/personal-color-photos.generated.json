@@ -1,0 +1,1217 @@
+{
+  "WD-001": {
+    "vendorId": "WD-001",
+    "name": "희플레이스",
+    "photoUrl": null,
+    "thumbnailUrl": null,
+    "sourceType": "none",
+    "placeUrl": null,
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-002": {
+    "vendorId": "WD-002",
+    "name": "몽끄컬러랩 압구정점",
+    "photoUrl": "https://t1.kakaocdn.net/fiy_reboot/place/82E1782D8809464EBB5E551610F64A0F",
+    "thumbnailUrl": "https://t1.kakaocdn.net/fiy_reboot/place/82E1782D8809464EBB5E551610F64A0F",
+    "sourceType": "kakao_place",
+    "placeUrl": "http://place.map.kakao.com/1068005098",
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-003": {
+    "vendorId": "WD-003",
+    "name": "컬러플레이스 본점",
+    "photoUrl": null,
+    "thumbnailUrl": null,
+    "sourceType": "none",
+    "placeUrl": null,
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-004": {
+    "vendorId": "WD-004",
+    "name": "핏컬러",
+    "photoUrl": null,
+    "thumbnailUrl": null,
+    "sourceType": "none",
+    "placeUrl": null,
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-005": {
+    "vendorId": "WD-005",
+    "name": "컬러줌인",
+    "photoUrl": null,
+    "thumbnailUrl": null,
+    "sourceType": "none",
+    "placeUrl": null,
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-006": {
+    "vendorId": "WD-006",
+    "name": "꼴로레",
+    "photoUrl": null,
+    "thumbnailUrl": null,
+    "sourceType": "none",
+    "placeUrl": null,
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-007": {
+    "vendorId": "WD-007",
+    "name": "씨앤에스퍼스널컨설팅",
+    "photoUrl": "https://t1.kakaocdn.net/mystore/7C1C4DE51C0A442C99C453ADCA73432C",
+    "thumbnailUrl": "https://t1.kakaocdn.net/mystore/7C1C4DE51C0A442C99C453ADCA73432C",
+    "sourceType": "kakao_place",
+    "placeUrl": "http://place.map.kakao.com/1403637257",
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-008": {
+    "vendorId": "WD-008",
+    "name": "듀컬러",
+    "photoUrl": "https://t1.kakaocdn.net/mystore/20A91FB979A341C6BDC14E2E71E023C6",
+    "thumbnailUrl": "https://t1.kakaocdn.net/mystore/20A91FB979A341C6BDC14E2E71E023C6",
+    "sourceType": "kakao_place",
+    "placeUrl": "http://place.map.kakao.com/89701005",
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-009": {
+    "vendorId": "WD-009",
+    "name": "더즈 퍼스널컬러 골격진단 웨딩컨설팅",
+    "photoUrl": null,
+    "thumbnailUrl": null,
+    "sourceType": "none",
+    "placeUrl": null,
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-010": {
+    "vendorId": "WD-010",
+    "name": "컬러마인",
+    "photoUrl": null,
+    "thumbnailUrl": null,
+    "sourceType": "none",
+    "placeUrl": null,
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-011": {
+    "vendorId": "WD-011",
+    "name": "주니크컬러 동탄점",
+    "photoUrl": null,
+    "thumbnailUrl": null,
+    "sourceType": "none",
+    "placeUrl": null,
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-012": {
+    "vendorId": "WD-012",
+    "name": "컬러블리스 동탄호수공원점",
+    "photoUrl": "https://t1.kakaocdn.net/mystore/3A06D3CB38974DADAB3F294E8C4DBDCC",
+    "thumbnailUrl": "https://t1.kakaocdn.net/mystore/3A06D3CB38974DADAB3F294E8C4DBDCC",
+    "sourceType": "kakao_place",
+    "placeUrl": "http://place.map.kakao.com/1678363064",
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-013": {
+    "vendorId": "WD-013",
+    "name": "컬러오브데이",
+    "photoUrl": "https://t1.kakaocdn.net/mystore/9F43BFE38AD24506AE9310B189F78DAC",
+    "thumbnailUrl": "https://t1.kakaocdn.net/mystore/9F43BFE38AD24506AE9310B189F78DAC",
+    "sourceType": "kakao_place",
+    "placeUrl": "http://place.map.kakao.com/728207324",
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-014": {
+    "vendorId": "WD-014",
+    "name": "컬러그라운드",
+    "photoUrl": "https://t1.kakaocdn.net/mystore/AFF02389C807477F8F564318805DFBF8",
+    "thumbnailUrl": "https://t1.kakaocdn.net/mystore/AFF02389C807477F8F564318805DFBF8",
+    "sourceType": "kakao_place",
+    "placeUrl": "http://place.map.kakao.com/1992997863",
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-015": {
+    "vendorId": "WD-015",
+    "name": "퍼컬바다 용인점",
+    "photoUrl": null,
+    "thumbnailUrl": null,
+    "sourceType": "none",
+    "placeUrl": null,
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-016": {
+    "vendorId": "WD-016",
+    "name": "컬러시안",
+    "photoUrl": "https://t1.kakaocdn.net/mystore/81ECF13077F043CC8A818AE2E1111442",
+    "thumbnailUrl": "https://t1.kakaocdn.net/mystore/81ECF13077F043CC8A818AE2E1111442",
+    "sourceType": "kakao_place",
+    "placeUrl": "http://place.map.kakao.com/617643702",
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-017": {
+    "vendorId": "WD-017",
+    "name": "컬러샤워",
+    "photoUrl": "https://t1.kakaocdn.net/mystore/BA18091F88D5476BAF4A7959A5F92EA7",
+    "thumbnailUrl": "https://t1.kakaocdn.net/mystore/BA18091F88D5476BAF4A7959A5F92EA7",
+    "sourceType": "kakao_place",
+    "placeUrl": "http://place.map.kakao.com/1365733785",
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-018": {
+    "vendorId": "WD-018",
+    "name": "컬러리티",
+    "photoUrl": null,
+    "thumbnailUrl": null,
+    "sourceType": "none",
+    "placeUrl": null,
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-019": {
+    "vendorId": "WD-019",
+    "name": "컬러제이",
+    "photoUrl": "https://t1.kakaocdn.net/mystore/65BABF8ED5A0420BBDA50DF0E04EC680",
+    "thumbnailUrl": "https://t1.kakaocdn.net/mystore/65BABF8ED5A0420BBDA50DF0E04EC680",
+    "sourceType": "kakao_place",
+    "placeUrl": "http://place.map.kakao.com/1928054775",
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-020": {
+    "vendorId": "WD-020",
+    "name": "로코블랑 인천점",
+    "photoUrl": "https://t1.kakaocdn.net/fiy_reboot/place/FAFE3536025147429413C7D4B880B8D5",
+    "thumbnailUrl": "https://t1.kakaocdn.net/fiy_reboot/place/FAFE3536025147429413C7D4B880B8D5",
+    "sourceType": "kakao_place",
+    "placeUrl": "http://place.map.kakao.com/1047774674",
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-021": {
+    "vendorId": "WD-021",
+    "name": "바이민컬러",
+    "photoUrl": "https://t1.kakaocdn.net/mystore/27F73B035C06441D9A108A9B469F89B5",
+    "thumbnailUrl": "https://t1.kakaocdn.net/mystore/27F73B035C06441D9A108A9B469F89B5",
+    "sourceType": "kakao_place",
+    "placeUrl": "http://place.map.kakao.com/958543909",
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-022": {
+    "vendorId": "WD-022",
+    "name": "아름포미",
+    "photoUrl": "https://t1.kakaocdn.net/mystore/B5FF2DCE68444D3A91D6281122F56872",
+    "thumbnailUrl": "https://t1.kakaocdn.net/mystore/B5FF2DCE68444D3A91D6281122F56872",
+    "sourceType": "kakao_place",
+    "placeUrl": "http://place.map.kakao.com/809225040",
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-023": {
+    "vendorId": "WD-023",
+    "name": "드로우미",
+    "photoUrl": "https://t1.kakaocdn.net/mystore/C493C0A82C21442C9C2B84E7D3CCF697",
+    "thumbnailUrl": "https://t1.kakaocdn.net/mystore/C493C0A82C21442C9C2B84E7D3CCF697",
+    "sourceType": "kakao_place",
+    "placeUrl": "http://place.map.kakao.com/1128548650",
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-024": {
+    "vendorId": "WD-024",
+    "name": "톤앤미 부산점",
+    "photoUrl": null,
+    "thumbnailUrl": null,
+    "sourceType": "none",
+    "placeUrl": null,
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-025": {
+    "vendorId": "WD-025",
+    "name": "컬러플레이스 광안점",
+    "photoUrl": null,
+    "thumbnailUrl": null,
+    "sourceType": "none",
+    "placeUrl": null,
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-026": {
+    "vendorId": "WD-026",
+    "name": "톤앤미 대구점",
+    "photoUrl": null,
+    "thumbnailUrl": null,
+    "sourceType": "none",
+    "placeUrl": null,
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-027": {
+    "vendorId": "WD-027",
+    "name": "어쉬이즈뷰티",
+    "photoUrl": "https://t1.kakaocdn.net/mystore/C9E031E678AC40E189112250A2E4F96C",
+    "thumbnailUrl": "https://t1.kakaocdn.net/mystore/C9E031E678AC40E189112250A2E4F96C",
+    "sourceType": "kakao_place",
+    "placeUrl": "http://place.map.kakao.com/1803586539",
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-028": {
+    "vendorId": "WD-028",
+    "name": "한지퍼스널컬러",
+    "photoUrl": null,
+    "thumbnailUrl": null,
+    "sourceType": "none",
+    "placeUrl": null,
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-029": {
+    "vendorId": "WD-029",
+    "name": "컬러루미닝",
+    "photoUrl": null,
+    "thumbnailUrl": null,
+    "sourceType": "none",
+    "placeUrl": null,
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-030": {
+    "vendorId": "WD-030",
+    "name": "티엔스튜디오",
+    "photoUrl": null,
+    "thumbnailUrl": null,
+    "sourceType": "none",
+    "placeUrl": null,
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-031": {
+    "vendorId": "WD-031",
+    "name": "컬러플라이",
+    "photoUrl": "https://blog.kakaocdn.net/dn/bZza8t/btsGqPi92Uh/rOlXF8n2XGBv9ghxYmw3fk/img.jpg",
+    "thumbnailUrl": "https://blog.kakaocdn.net/dn/bZza8t/btsGqPi92Uh/rOlXF8n2XGBv9ghxYmw3fk/img.jpg",
+    "sourceType": "kakao_place",
+    "placeUrl": "http://place.map.kakao.com/1038782095",
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-032": {
+    "vendorId": "WD-032",
+    "name": "컬러아지트",
+    "photoUrl": "https://t1.kakaocdn.net/mystore/6AE1453D215D4BA5883CBEBB46B6C6B9",
+    "thumbnailUrl": "https://t1.kakaocdn.net/mystore/6AE1453D215D4BA5883CBEBB46B6C6B9",
+    "sourceType": "kakao_place",
+    "placeUrl": "http://place.map.kakao.com/2119523670",
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-033": {
+    "vendorId": "WD-033",
+    "name": "핏미톤미",
+    "photoUrl": "https://t1.kakaocdn.net/mystore/C8BCEDE6FA76491E9392111CEC0129B5",
+    "thumbnailUrl": "https://t1.kakaocdn.net/mystore/C8BCEDE6FA76491E9392111CEC0129B5",
+    "sourceType": "kakao_place",
+    "placeUrl": "http://place.map.kakao.com/1226413052",
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-034": {
+    "vendorId": "WD-034",
+    "name": "컬러소나",
+    "photoUrl": null,
+    "thumbnailUrl": null,
+    "sourceType": "none",
+    "placeUrl": null,
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-035": {
+    "vendorId": "WD-035",
+    "name": "소호 메이크업 & 퍼스널컬러",
+    "photoUrl": null,
+    "thumbnailUrl": null,
+    "sourceType": "none",
+    "placeUrl": null,
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-036": {
+    "vendorId": "WD-036",
+    "name": "오브컬러",
+    "photoUrl": "https://t1.kakaocdn.net/mystore/7DD75657C3254D6A9B68010BC9F57C10",
+    "thumbnailUrl": "https://t1.kakaocdn.net/mystore/7DD75657C3254D6A9B68010BC9F57C10",
+    "sourceType": "kakao_place",
+    "placeUrl": "http://place.map.kakao.com/850748006",
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-037": {
+    "vendorId": "WD-037",
+    "name": "미스데이지",
+    "photoUrl": null,
+    "thumbnailUrl": null,
+    "sourceType": "none",
+    "placeUrl": null,
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-038": {
+    "vendorId": "WD-038",
+    "name": "더뉴컬러",
+    "photoUrl": "https://t1.kakaocdn.net/mystore/697C8DD3F66E446A82C0AB95D3A93B27",
+    "thumbnailUrl": "https://t1.kakaocdn.net/mystore/697C8DD3F66E446A82C0AB95D3A93B27",
+    "sourceType": "kakao_place",
+    "placeUrl": "http://place.map.kakao.com/64052576",
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-039": {
+    "vendorId": "WD-039",
+    "name": "컬러메이트",
+    "photoUrl": null,
+    "thumbnailUrl": null,
+    "sourceType": "none",
+    "placeUrl": null,
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-040": {
+    "vendorId": "WD-040",
+    "name": "컬러라인",
+    "photoUrl": null,
+    "thumbnailUrl": null,
+    "sourceType": "none",
+    "placeUrl": null,
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-041": {
+    "vendorId": "WD-041",
+    "name": "남다른color",
+    "photoUrl": null,
+    "thumbnailUrl": null,
+    "sourceType": "none",
+    "placeUrl": null,
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-042": {
+    "vendorId": "WD-042",
+    "name": "이미지호 제주점",
+    "photoUrl": null,
+    "thumbnailUrl": null,
+    "sourceType": "none",
+    "placeUrl": null,
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-043": {
+    "vendorId": "WD-043",
+    "name": "이미지향 컬러브랜딩센터",
+    "photoUrl": null,
+    "thumbnailUrl": null,
+    "sourceType": "none",
+    "placeUrl": null,
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-044": {
+    "vendorId": "WD-044",
+    "name": "가현컬러스튜디오",
+    "photoUrl": null,
+    "thumbnailUrl": null,
+    "sourceType": "none",
+    "placeUrl": null,
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-045": {
+    "vendorId": "WD-045",
+    "name": "몽끄컬러랩 세종점",
+    "photoUrl": null,
+    "thumbnailUrl": null,
+    "sourceType": "none",
+    "placeUrl": null,
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-046": {
+    "vendorId": "WD-046",
+    "name": "잇츠소다",
+    "photoUrl": null,
+    "thumbnailUrl": null,
+    "sourceType": "none",
+    "placeUrl": null,
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-047": {
+    "vendorId": "WD-047",
+    "name": "포티미닛츠",
+    "photoUrl": "https://t1.kakaocdn.net/mystore/A3EE56253BA34AA0A85D23A0ECA04AE8",
+    "thumbnailUrl": "https://t1.kakaocdn.net/mystore/A3EE56253BA34AA0A85D23A0ECA04AE8",
+    "sourceType": "kakao_place",
+    "placeUrl": "http://place.map.kakao.com/1230339741",
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-048": {
+    "vendorId": "WD-048",
+    "name": "뮤에뷰티",
+    "photoUrl": "https://t1.kakaocdn.net/mystore/3A08C1B6546F4FE49B46B5BB4605C64A",
+    "thumbnailUrl": "https://t1.kakaocdn.net/mystore/3A08C1B6546F4FE49B46B5BB4605C64A",
+    "sourceType": "kakao_place",
+    "placeUrl": "http://place.map.kakao.com/1541507086",
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-049": {
+    "vendorId": "WD-049",
+    "name": "컬러민",
+    "photoUrl": "https://t1.kakaocdn.net/mystore/07FD41157196406FB14E1E52E456BED9",
+    "thumbnailUrl": "https://t1.kakaocdn.net/mystore/07FD41157196406FB14E1E52E456BED9",
+    "sourceType": "kakao_place",
+    "placeUrl": "http://place.map.kakao.com/1349610553",
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-050": {
+    "vendorId": "WD-050",
+    "name": "피타코디",
+    "photoUrl": null,
+    "thumbnailUrl": null,
+    "sourceType": "none",
+    "placeUrl": null,
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-051": {
+    "vendorId": "WD-051",
+    "name": "에보떼",
+    "photoUrl": null,
+    "thumbnailUrl": null,
+    "sourceType": "none",
+    "placeUrl": null,
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-052": {
+    "vendorId": "WD-052",
+    "name": "이비스헤어",
+    "photoUrl": null,
+    "thumbnailUrl": null,
+    "sourceType": "none",
+    "placeUrl": null,
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-053": {
+    "vendorId": "WD-053",
+    "name": "유아이너프",
+    "photoUrl": "https://t1.kakaocdn.net/mystore/E0B01E4EE20F4DD9BE0A284A4066AD22",
+    "thumbnailUrl": "https://t1.kakaocdn.net/mystore/E0B01E4EE20F4DD9BE0A284A4066AD22",
+    "sourceType": "kakao_place",
+    "placeUrl": "http://place.map.kakao.com/96145864",
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-054": {
+    "vendorId": "WD-054",
+    "name": "컬러코드",
+    "photoUrl": null,
+    "thumbnailUrl": null,
+    "sourceType": "none",
+    "placeUrl": null,
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-055": {
+    "vendorId": "WD-055",
+    "name": "럽리브컬러매칭",
+    "photoUrl": null,
+    "thumbnailUrl": null,
+    "sourceType": "none",
+    "placeUrl": null,
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-056": {
+    "vendorId": "WD-056",
+    "name": "버닝 퍼스널컬러",
+    "photoUrl": null,
+    "thumbnailUrl": null,
+    "sourceType": "none",
+    "placeUrl": null,
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-057": {
+    "vendorId": "WD-057",
+    "name": "217헤어살롱 남악점",
+    "photoUrl": null,
+    "thumbnailUrl": null,
+    "sourceType": "none",
+    "placeUrl": null,
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-058": {
+    "vendorId": "WD-058",
+    "name": "무드컬렉트 퍼스널컬러 화이트 신제주점",
+    "photoUrl": null,
+    "thumbnailUrl": null,
+    "sourceType": "none",
+    "placeUrl": null,
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-059": {
+    "vendorId": "WD-059",
+    "name": "컬러멜로우 퍼스널컬러 웨딩 골격진단",
+    "photoUrl": null,
+    "thumbnailUrl": null,
+    "sourceType": "none",
+    "placeUrl": null,
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-060": {
+    "vendorId": "WD-060",
+    "name": "나다움 퍼스널컬러진단 이미지골격진단 웨딩컨설팅",
+    "photoUrl": null,
+    "thumbnailUrl": null,
+    "sourceType": "none",
+    "placeUrl": null,
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-061": {
+    "vendorId": "WD-061",
+    "name": "오버더컬러",
+    "photoUrl": "https://t1.kakaocdn.net/mystore/A8C01E87FE934CB9BAD69C9FD1A9E203",
+    "thumbnailUrl": "https://t1.kakaocdn.net/mystore/A8C01E87FE934CB9BAD69C9FD1A9E203",
+    "sourceType": "kakao_place",
+    "placeUrl": "http://place.map.kakao.com/1708826435",
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-062": {
+    "vendorId": "WD-062",
+    "name": "PBS컬러랩",
+    "photoUrl": null,
+    "thumbnailUrl": null,
+    "sourceType": "none",
+    "placeUrl": null,
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-063": {
+    "vendorId": "WD-063",
+    "name": "뷰티바이서",
+    "photoUrl": null,
+    "thumbnailUrl": null,
+    "sourceType": "none",
+    "placeUrl": null,
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-064": {
+    "vendorId": "WD-064",
+    "name": "페이스비비 울산점",
+    "photoUrl": null,
+    "thumbnailUrl": null,
+    "sourceType": "none",
+    "placeUrl": null,
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-065": {
+    "vendorId": "WD-065",
+    "name": "BBN COLOR",
+    "photoUrl": null,
+    "thumbnailUrl": null,
+    "sourceType": "none",
+    "placeUrl": null,
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-066": {
+    "vendorId": "WD-066",
+    "name": "제이무드뷰티",
+    "photoUrl": "https://t1.kakaocdn.net/mystore/2CBED191A760478FB03FCFEDC76456E1",
+    "thumbnailUrl": "https://t1.kakaocdn.net/mystore/2CBED191A760478FB03FCFEDC76456E1",
+    "sourceType": "kakao_place",
+    "placeUrl": "http://place.map.kakao.com/1718215492",
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-067": {
+    "vendorId": "WD-067",
+    "name": "더해브 퍼스널컬러 골격진단 웨딩진단",
+    "photoUrl": null,
+    "thumbnailUrl": null,
+    "sourceType": "none",
+    "placeUrl": null,
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-068": {
+    "vendorId": "WD-068",
+    "name": "브랜미 부산해운대점",
+    "photoUrl": "https://t1.kakaocdn.net/mystore/CD6DA452F03C41A789EA680A884480AA",
+    "thumbnailUrl": "https://t1.kakaocdn.net/mystore/CD6DA452F03C41A789EA680A884480AA",
+    "sourceType": "kakao_place",
+    "placeUrl": "http://place.map.kakao.com/537566473",
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-069": {
+    "vendorId": "WD-069",
+    "name": "스러운 서면퍼스널컬러&부산웨딩컨설팅",
+    "photoUrl": "https://t1.kakaocdn.net/mystore/63AE7ED9665D4176AD7444747AF5E387",
+    "thumbnailUrl": "https://t1.kakaocdn.net/mystore/63AE7ED9665D4176AD7444747AF5E387",
+    "sourceType": "kakao_place",
+    "placeUrl": "http://place.map.kakao.com/771819551",
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-070": {
+    "vendorId": "WD-070",
+    "name": "컬러포미",
+    "photoUrl": "https://t1.kakaocdn.net/mystore/56513B1C546146E389DB361E25642C59",
+    "thumbnailUrl": "https://t1.kakaocdn.net/mystore/56513B1C546146E389DB361E25642C59",
+    "sourceType": "kakao_place",
+    "placeUrl": "http://place.map.kakao.com/590668197",
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-071": {
+    "vendorId": "WD-071",
+    "name": "시작(SIZAC) 전주점",
+    "photoUrl": null,
+    "thumbnailUrl": null,
+    "sourceType": "none",
+    "placeUrl": null,
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-072": {
+    "vendorId": "WD-072",
+    "name": "컬러아르떼 퍼스널컬러 성수점",
+    "photoUrl": null,
+    "thumbnailUrl": null,
+    "sourceType": "none",
+    "placeUrl": null,
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-073": {
+    "vendorId": "WD-073",
+    "name": "제이앤이미지 퍼스널컬러진단 골격진단 이미지컨설팅 연구소",
+    "photoUrl": null,
+    "thumbnailUrl": null,
+    "sourceType": "none",
+    "placeUrl": null,
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-074": {
+    "vendorId": "WD-074",
+    "name": "컬러라이즈 퍼스널컬러 진단 강남본점",
+    "photoUrl": null,
+    "thumbnailUrl": null,
+    "sourceType": "none",
+    "placeUrl": null,
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-075": {
+    "vendorId": "WD-075",
+    "name": "오혜 퍼스널컬러 이미지컨설팅",
+    "photoUrl": "https://t1.kakaocdn.net/mystore/6D8D7F9FAE6343C7A388B6CCA410FF0A",
+    "thumbnailUrl": "https://t1.kakaocdn.net/mystore/6D8D7F9FAE6343C7A388B6CCA410FF0A",
+    "sourceType": "kakao_place",
+    "placeUrl": "http://place.map.kakao.com/1785436451",
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-076": {
+    "vendorId": "WD-076",
+    "name": "보태다 퍼스널컬러진단 골격진단 웨딩컨설팅",
+    "photoUrl": null,
+    "thumbnailUrl": null,
+    "sourceType": "none",
+    "placeUrl": null,
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-077": {
+    "vendorId": "WD-077",
+    "name": "럽리브 퍼스널컬러진단 체형골격 웨딩진단 남양주본점",
+    "photoUrl": null,
+    "thumbnailUrl": null,
+    "sourceType": "none",
+    "placeUrl": null,
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-078": {
+    "vendorId": "WD-078",
+    "name": "아름포미 퍼스널컬러 골격진단 부천점",
+    "photoUrl": null,
+    "thumbnailUrl": null,
+    "sourceType": "none",
+    "placeUrl": null,
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-079": {
+    "vendorId": "WD-079",
+    "name": "루오아컬러 퍼스널컬러 골격진단 웨딩컨설팅",
+    "photoUrl": null,
+    "thumbnailUrl": null,
+    "sourceType": "none",
+    "placeUrl": null,
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-080": {
+    "vendorId": "WD-080",
+    "name": "컬러포엠 퍼스널컬러 스튜디오",
+    "photoUrl": null,
+    "thumbnailUrl": null,
+    "sourceType": "none",
+    "placeUrl": null,
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-081": {
+    "vendorId": "WD-081",
+    "name": "비다무드 퍼스널컬러 골격진단 이미지브랜딩",
+    "photoUrl": null,
+    "thumbnailUrl": null,
+    "sourceType": "none",
+    "placeUrl": null,
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-082": {
+    "vendorId": "WD-082",
+    "name": "컬러하모니 퍼스널컬러 골격체형진단",
+    "photoUrl": null,
+    "thumbnailUrl": null,
+    "sourceType": "none",
+    "placeUrl": null,
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-083": {
+    "vendorId": "WD-083",
+    "name": "컬러워크 퍼스널컬러",
+    "photoUrl": null,
+    "thumbnailUrl": null,
+    "sourceType": "none",
+    "placeUrl": null,
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-084": {
+    "vendorId": "WD-084",
+    "name": "만나다컬러 퍼스널컬러 골격진단 이미지 웨딩컨설팅",
+    "photoUrl": null,
+    "thumbnailUrl": null,
+    "sourceType": "none",
+    "placeUrl": null,
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-085": {
+    "vendorId": "WD-085",
+    "name": "당신을그리다 퍼스널컬러진단 골격진단 메이크업컨설팅 마곡",
+    "photoUrl": null,
+    "thumbnailUrl": null,
+    "sourceType": "none",
+    "placeUrl": null,
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-086": {
+    "vendorId": "WD-086",
+    "name": "이엔소이 웨딩 퍼스널컬러 스타일링 컨설팅",
+    "photoUrl": null,
+    "thumbnailUrl": null,
+    "sourceType": "none",
+    "placeUrl": null,
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-087": {
+    "vendorId": "WD-087",
+    "name": "닥터비유티풀 이미지케어 웨딩 퍼스널컬러 골격진단",
+    "photoUrl": null,
+    "thumbnailUrl": null,
+    "sourceType": "none",
+    "placeUrl": null,
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-088": {
+    "vendorId": "WD-088",
+    "name": "조이컬러공방 퍼스널컬러 골격 얼굴형 웨딩컨설팅",
+    "photoUrl": null,
+    "thumbnailUrl": null,
+    "sourceType": "none",
+    "placeUrl": null,
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-089": {
+    "vendorId": "WD-089",
+    "name": "컬러챰 퍼스널컬러 골격진단 웨딩컨설팅",
+    "photoUrl": null,
+    "thumbnailUrl": null,
+    "sourceType": "none",
+    "placeUrl": null,
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-090": {
+    "vendorId": "WD-090",
+    "name": "푸른달컬러 퍼스널컬러진단 웨딩 골격진단",
+    "photoUrl": null,
+    "thumbnailUrl": null,
+    "sourceType": "none",
+    "placeUrl": null,
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-091": {
+    "vendorId": "WD-091",
+    "name": "무드컬렉트 퍼스널컬러 블랙 가로수길점",
+    "photoUrl": null,
+    "thumbnailUrl": null,
+    "sourceType": "none",
+    "placeUrl": null,
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-092": {
+    "vendorId": "WD-092",
+    "name": "휴일 퍼스널컬러 웨딩컨설팅 골격진단 이미지컨설팅",
+    "photoUrl": null,
+    "thumbnailUrl": null,
+    "sourceType": "none",
+    "placeUrl": null,
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-093": {
+    "vendorId": "WD-093",
+    "name": "컬러가산다 퍼스널컬러진단 홍대동교센터",
+    "photoUrl": null,
+    "thumbnailUrl": null,
+    "sourceType": "none",
+    "placeUrl": null,
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-094": {
+    "vendorId": "WD-094",
+    "name": "컬러아르떼 혜화점",
+    "photoUrl": null,
+    "thumbnailUrl": null,
+    "sourceType": "none",
+    "placeUrl": null,
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-095": {
+    "vendorId": "WD-095",
+    "name": "어나더29",
+    "photoUrl": null,
+    "thumbnailUrl": null,
+    "sourceType": "none",
+    "placeUrl": null,
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-096": {
+    "vendorId": "WD-096",
+    "name": "블룸팔레트",
+    "photoUrl": null,
+    "thumbnailUrl": null,
+    "sourceType": "none",
+    "placeUrl": null,
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-097": {
+    "vendorId": "WD-097",
+    "name": "리즈컬러",
+    "photoUrl": "https://t1.kakaocdn.net/mystore/7E3DDB34EAD74C66BC78DCA6B1CDCAB9",
+    "thumbnailUrl": "https://t1.kakaocdn.net/mystore/7E3DDB34EAD74C66BC78DCA6B1CDCAB9",
+    "sourceType": "kakao_place",
+    "placeUrl": "http://place.map.kakao.com/1188784657",
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-098": {
+    "vendorId": "WD-098",
+    "name": "느로아 퍼스널컬러 성수점",
+    "photoUrl": "https://t1.kakaocdn.net/mystore/A2FD235F85BD4568A55EA9AE0C0D1E51",
+    "thumbnailUrl": "https://t1.kakaocdn.net/mystore/A2FD235F85BD4568A55EA9AE0C0D1E51",
+    "sourceType": "kakao_place",
+    "placeUrl": "http://place.map.kakao.com/924883275",
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-099": {
+    "vendorId": "WD-099",
+    "name": "아름별컬러 퍼스널컬러",
+    "photoUrl": null,
+    "thumbnailUrl": null,
+    "sourceType": "none",
+    "placeUrl": null,
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-100": {
+    "vendorId": "WD-100",
+    "name": "브랜미 성수점",
+    "photoUrl": null,
+    "thumbnailUrl": null,
+    "sourceType": "none",
+    "placeUrl": null,
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-101": {
+    "vendorId": "WD-101",
+    "name": "솔레아 컨설팅",
+    "photoUrl": null,
+    "thumbnailUrl": null,
+    "sourceType": "none",
+    "placeUrl": null,
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-102": {
+    "vendorId": "WD-102",
+    "name": "더빛날랩 강남점",
+    "photoUrl": null,
+    "thumbnailUrl": null,
+    "sourceType": "none",
+    "placeUrl": null,
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-103": {
+    "vendorId": "WD-103",
+    "name": "디오니 DIONY",
+    "photoUrl": "https://t1.kakaocdn.net/fiy_reboot/place/BCF2D998D0B34293875C783A2B8C524B",
+    "thumbnailUrl": "https://t1.kakaocdn.net/fiy_reboot/place/BCF2D998D0B34293875C783A2B8C524B",
+    "sourceType": "kakao_place",
+    "placeUrl": "http://place.map.kakao.com/1975520178",
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-104": {
+    "vendorId": "WD-104",
+    "name": "오콜로르 신사점",
+    "photoUrl": "https://t1.kakaocdn.net/mystore/8FDC06A3FED0484FA77E87ECAA9A160A",
+    "thumbnailUrl": "https://t1.kakaocdn.net/mystore/8FDC06A3FED0484FA77E87ECAA9A160A",
+    "sourceType": "kakao_place",
+    "placeUrl": "http://place.map.kakao.com/613856720",
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-105": {
+    "vendorId": "WD-105",
+    "name": "컬러에이치 이미지컨설팅 강남본점",
+    "photoUrl": null,
+    "thumbnailUrl": null,
+    "sourceType": "none",
+    "placeUrl": null,
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-106": {
+    "vendorId": "WD-106",
+    "name": "컬러모아 퍼스널컬러진단",
+    "photoUrl": null,
+    "thumbnailUrl": null,
+    "sourceType": "none",
+    "placeUrl": null,
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-107": {
+    "vendorId": "WD-107",
+    "name": "퍼스널블라썸",
+    "photoUrl": null,
+    "thumbnailUrl": null,
+    "sourceType": "none",
+    "placeUrl": null,
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-108": {
+    "vendorId": "WD-108",
+    "name": "컬러팔레트 퍼스널컬러진단 웨딩컨설팅",
+    "photoUrl": null,
+    "thumbnailUrl": null,
+    "sourceType": "none",
+    "placeUrl": null,
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-109": {
+    "vendorId": "WD-109",
+    "name": "룩스컬러 한국퍼스널컬러협회",
+    "photoUrl": null,
+    "thumbnailUrl": null,
+    "sourceType": "none",
+    "placeUrl": null,
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-110": {
+    "vendorId": "WD-110",
+    "name": "픽컬러브랜딩센터",
+    "photoUrl": null,
+    "thumbnailUrl": null,
+    "sourceType": "none",
+    "placeUrl": null,
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-111": {
+    "vendorId": "WD-111",
+    "name": "퍼스널컬러진단 이음컬러 골격진단",
+    "photoUrl": null,
+    "thumbnailUrl": null,
+    "sourceType": "none",
+    "placeUrl": null,
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-112": {
+    "vendorId": "WD-112",
+    "name": "퍼스널컬러 당신의 팔레트",
+    "photoUrl": null,
+    "thumbnailUrl": null,
+    "sourceType": "none",
+    "placeUrl": null,
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-113": {
+    "vendorId": "WD-113",
+    "name": "로멜리 퍼스널컬러 골격진단",
+    "photoUrl": "https://t1.kakaocdn.net/mystore/6912879610124F2ABFE66A1E143BF60C",
+    "thumbnailUrl": "https://t1.kakaocdn.net/mystore/6912879610124F2ABFE66A1E143BF60C",
+    "sourceType": "kakao_place",
+    "placeUrl": "http://place.map.kakao.com/1986156812",
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-114": {
+    "vendorId": "WD-114",
+    "name": "이미지팔레트 퍼스널컬러",
+    "photoUrl": null,
+    "thumbnailUrl": null,
+    "sourceType": "none",
+    "placeUrl": null,
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-115": {
+    "vendorId": "WD-115",
+    "name": "주얼인유 퍼스널컬러",
+    "photoUrl": null,
+    "thumbnailUrl": null,
+    "sourceType": "none",
+    "placeUrl": null,
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-116": {
+    "vendorId": "WD-116",
+    "name": "느로아 퍼스널컬러 연남점",
+    "photoUrl": null,
+    "thumbnailUrl": null,
+    "sourceType": "none",
+    "placeUrl": null,
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-117": {
+    "vendorId": "WD-117",
+    "name": "챠밍아틀리에 퍼스널컬러 메이크업",
+    "photoUrl": null,
+    "thumbnailUrl": null,
+    "sourceType": "none",
+    "placeUrl": null,
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-118": {
+    "vendorId": "WD-118",
+    "name": "닥터비유티풀 이미지케어 공릉점",
+    "photoUrl": null,
+    "thumbnailUrl": null,
+    "sourceType": "none",
+    "placeUrl": null,
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-119": {
+    "vendorId": "WD-119",
+    "name": "코코리색채연구소 본점",
+    "photoUrl": null,
+    "thumbnailUrl": null,
+    "sourceType": "none",
+    "placeUrl": null,
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-120": {
+    "vendorId": "WD-120",
+    "name": "로앤드로우 퍼스널 이미지 스타일 센터",
+    "photoUrl": null,
+    "thumbnailUrl": null,
+    "sourceType": "none",
+    "placeUrl": null,
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-121": {
+    "vendorId": "WD-121",
+    "name": "파레또 퍼스널컬러진단 웨딩컨설팅",
+    "photoUrl": null,
+    "thumbnailUrl": null,
+    "sourceType": "none",
+    "placeUrl": null,
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-122": {
+    "vendorId": "WD-122",
+    "name": "컬러페르테 퍼스널컬러 골격진단 웨딩",
+    "photoUrl": null,
+    "thumbnailUrl": null,
+    "sourceType": "none",
+    "placeUrl": null,
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-123": {
+    "vendorId": "WD-123",
+    "name": "조이컬러 퍼스널컬러 골격진단 웨딩컨설팅 얼굴타입",
+    "photoUrl": null,
+    "thumbnailUrl": null,
+    "sourceType": "none",
+    "placeUrl": null,
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-124": {
+    "vendorId": "WD-124",
+    "name": "컬러즈포유",
+    "photoUrl": "https://t1.daumcdn.net/local/kakaomapPhoto/review/bf97c877c128094dfd83ddb87e5c121c47e36439?original",
+    "thumbnailUrl": "https://t1.daumcdn.net/local/kakaomapPhoto/review/bf97c877c128094dfd83ddb87e5c121c47e36439?original",
+    "sourceType": "kakao_place",
+    "placeUrl": "http://place.map.kakao.com/89205114",
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-125": {
+    "vendorId": "WD-125",
+    "name": "컬러씨(ColorSee)",
+    "photoUrl": null,
+    "thumbnailUrl": null,
+    "sourceType": "none",
+    "placeUrl": null,
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-126": {
+    "vendorId": "WD-126",
+    "name": "브랜미 서현점",
+    "photoUrl": "https://t1.kakaocdn.net/mystore/CA2F7370E6DC40438168059541DCAD31",
+    "thumbnailUrl": "https://t1.kakaocdn.net/mystore/CA2F7370E6DC40438168059541DCAD31",
+    "sourceType": "kakao_place",
+    "placeUrl": "http://place.map.kakao.com/102388370",
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-127": {
+    "vendorId": "WD-127",
+    "name": "퍼스널컬러 이미지컨설팅 피타코디",
+    "photoUrl": null,
+    "thumbnailUrl": null,
+    "sourceType": "none",
+    "placeUrl": null,
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-128": {
+    "vendorId": "WD-128",
+    "name": "컬러몬드",
+    "photoUrl": "https://t1.kakaocdn.net/mystore/37F5C7B92EA14A78BEBFBAE2C2593AB8",
+    "thumbnailUrl": "https://t1.kakaocdn.net/mystore/37F5C7B92EA14A78BEBFBAE2C2593AB8",
+    "sourceType": "kakao_place",
+    "placeUrl": "http://place.map.kakao.com/163208170",
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-129": {
+    "vendorId": "WD-129",
+    "name": "스네지호",
+    "photoUrl": null,
+    "thumbnailUrl": null,
+    "sourceType": "none",
+    "placeUrl": null,
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-130": {
+    "vendorId": "WD-130",
+    "name": "컬러소다 퍼스널컬러 체형 웨딩진단",
+    "photoUrl": null,
+    "thumbnailUrl": null,
+    "sourceType": "none",
+    "placeUrl": null,
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-131": {
+    "vendorId": "WD-131",
+    "name": "컬러미 퍼스널컬러 골격진단 웨딩컨설팅",
+    "photoUrl": null,
+    "thumbnailUrl": null,
+    "sourceType": "none",
+    "placeUrl": null,
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-132": {
+    "vendorId": "WD-132",
+    "name": "ALL THE COLORS",
+    "photoUrl": "https://t1.kakaocdn.net/mystore/BD65565D1AAF4FEA99F4FF67204E277E",
+    "thumbnailUrl": "https://t1.kakaocdn.net/mystore/BD65565D1AAF4FEA99F4FF67204E277E",
+    "sourceType": "kakao_place",
+    "placeUrl": "http://place.map.kakao.com/255287595",
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-133": {
+    "vendorId": "WD-133",
+    "name": "하주선퍼스널컬러교육원",
+    "photoUrl": "https://t1.kakaocdn.net/fiy_reboot/place/595045409AE3405A83E9619ABC4FDE29",
+    "thumbnailUrl": "https://t1.kakaocdn.net/fiy_reboot/place/595045409AE3405A83E9619ABC4FDE29",
+    "sourceType": "kakao_place",
+    "placeUrl": "http://place.map.kakao.com/1490836685",
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-134": {
+    "vendorId": "WD-134",
+    "name": "리본공방",
+    "photoUrl": "https://t1.kakaocdn.net/mystore/DE65FF09A22D40D4BE5CC50DFA0B9A23",
+    "thumbnailUrl": "https://t1.kakaocdn.net/mystore/DE65FF09A22D40D4BE5CC50DFA0B9A23",
+    "sourceType": "kakao_place",
+    "placeUrl": "http://place.map.kakao.com/356559811",
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  },
+  "WD-135": {
+    "vendorId": "WD-135",
+    "name": "단 하나의 뷰티",
+    "photoUrl": "https://t1.kakaocdn.net/mystore/1E83C09DA8AB48739E658DB247D26D10",
+    "thumbnailUrl": "https://t1.kakaocdn.net/mystore/1E83C09DA8AB48739E658DB247D26D10",
+    "sourceType": "kakao_place",
+    "placeUrl": "http://place.map.kakao.com/488651122",
+    "updatedAt": "2026-08-15T15:17:18.868Z"
+  }
+}
