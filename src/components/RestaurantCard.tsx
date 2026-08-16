@@ -169,17 +169,14 @@ export function RestaurantCard({
             style={!hasPhoto ? { background: fallbackVisual.bgGradient } : undefined}
           >
             {hasPhoto ? (
-              <>
-                <img
-                  src={restaurant.photoUrl!}
-                  alt={displayName}
-                  className="restaurant-card-img"
-                  loading="lazy"
-                  referrerPolicy="no-referrer"
-                  onError={() => setImgFailed(true)}
-                />
-                <span className="restaurant-visual-badge">지도 등록 사진</span>
-              </>
+              <img
+                src={restaurant.photoUrl!}
+                alt={displayName}
+                className="restaurant-card-img"
+                loading="lazy"
+                referrerPolicy="no-referrer"
+                onError={() => setImgFailed(true)}
+              />
             ) : (
               <div className="restaurant-brand-visual">
                 <span className="brand-visual-icon" role="img" aria-label={fallbackVisual.categoryLabel}>

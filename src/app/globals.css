@@ -244,8 +244,6 @@ body:has(.landing-page-reference):after{display:none}
 .hall-photo{position:relative;overflow:hidden;margin:0;background:#ddd7ce}
 .hall-photo img{display:block;width:100%;height:100%;object-fit:cover}
 .hall-photo-card{height:clamp(190px,27vw,260px);margin:0 -29px 22px}
-.hall-photo figcaption{position:absolute;right:10px;bottom:9px;padding:5px 8px;color:#f8f5ef;background:#3f3b36b8;font:500 9px/1.2 var(--sans);letter-spacing:.025em;backdrop-filter:blur(5px)}
-.hall-photo figcaption a{color:inherit}
 .hall-photo-gallery{display:grid;gap:10px;margin:0 0 30px}
 .hall-photo-detail{aspect-ratio:16/10;border:1px solid #c9c0b4}
 .hall-photo-detail img{object-position:center}
@@ -255,7 +253,6 @@ body:has(.landing-page-reference):after{display:none}
   .hall-photo-card{height:190px;margin:0 -17px 18px}
   .hall-photo-gallery{margin-bottom:22px}
   .hall-photo-detail{aspect-ratio:4/3}
-  .hall-photo figcaption{right:7px;bottom:7px;font-size:8px}
 }
 
 /* Mobile full-screen restaurant map */
@@ -1557,21 +1554,6 @@ body:has(.landing-page-reference):after{display:none}
   display: block;
 }
 
-.restaurant-visual-badge {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  z-index: 2;
-  padding: 4px 8px;
-  border-radius: 6px;
-  background: rgba(30, 28, 25, 0.85);
-  color: #FFFFFF;
-  font-size: 10px;
-  font-weight: 700;
-  line-height: 1;
-  backdrop-filter: blur(4px);
-  pointer-events: none;
-}
 
 .restaurant-brand-visual {
   display: flex;
