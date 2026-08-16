@@ -48,7 +48,7 @@ const FEATURED_PRODUCTS: CuratedProduct[] = [
     brand: "앙블리 (Anvely)",
     priceText: "16,900원",
     categoryBadge: "본식·피팅 필수",
-    imageUrl: "https://shop-phinf.pstatic.net/20240417_193/1713337968508f7Nve_JPEG/4375000000000000_1578330752.jpg",
+    imageUrl: "https://images.unsplash.com/photo-1594552072238-b8a33785b261?w=600&auto=format&fit=crop&q=80",
     linkUrl: "/essentials/",
     editorNote: "오프숄더 및 브이넥 드레스 피팅 시 흘러내림 없는 초밀착 볼륨업",
   },

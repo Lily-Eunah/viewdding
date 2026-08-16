@@ -59,7 +59,7 @@ const MAGAZINE_CARDS: MagazineCardItem[] = [
     summary: "투어·스냅·본식 필수템",
     description: "골반 보정 속옷, 누브라, 숏베일부터 당일 멘붕 방지 파우치까지 선배 신부들이 검증한 아이템.",
     href: "/essentials/",
-    imageSrc: "https://shop-phinf.pstatic.net/20240417_193/1713337968508f7Nve_JPEG/4375000000000000_1578330752.jpg",
+    imageSrc: "https://images.unsplash.com/photo-1519741497674-611481863552?w=800&auto=format&fit=crop&q=80",
     tag: "#본식필수준비물",
   },
   {
