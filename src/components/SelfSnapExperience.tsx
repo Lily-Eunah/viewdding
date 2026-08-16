@@ -70,7 +70,7 @@ export function SelfSnapExperience({
             onClick={() => setMainTab("items")}
           >
             <Camera size={16} weight="bold" />
-            <span>👗 의상 & 소품 큐레이션</span>
+            <span>의상 & 소품 큐레이션</span>
           </button>
           <button
             type="button"
@@ -78,7 +78,7 @@ export function SelfSnapExperience({
             onClick={() => setMainTab("studios")}
           >
             <Buildings size={16} weight="bold" />
-            <span>🏛️ 렌탈 스튜디오 & 호텔</span>
+            <span>렌탈 스튜디오 & 호텔</span>
           </button>
           <button
             type="button"
@@ -86,7 +86,7 @@ export function SelfSnapExperience({
             onClick={() => setMainTab("outdoor")}
           >
             <Tree size={16} weight="bold" />
-            <span>🌿 야외 스냅 명소</span>
+            <span>야외 스냅 명소</span>
           </button>
         </div>
       </nav>
