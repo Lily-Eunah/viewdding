@@ -1,6 +1,6 @@
 import type { HallRecord, HallTypeFilter } from "@/domain/types";
 
-export const HALL_SEO_SLUGS = ["bright", "outdoor", "dark", "chapel"] as const;
+export const HALL_SEO_SLUGS = ["bright", "outdoor", "dark", "chapel", "hotel"] as const;
 
 export type HallSeoSlug = (typeof HALL_SEO_SLUGS)[number];
 export type HallSeoCollectionKey = "all" | HallSeoSlug;
@@ -87,6 +87,19 @@ const CONFIGS: Record<HallSeoCollectionKey, HallSeoConfig> = {
     filterType: "outdoor",
     csvFileName: "seoul-outdoor-wedding-halls.csv",
   },
+  hotel: {
+    key: "hotel",
+    slug: "hotel",
+    heading: "서울 호텔 웨딩홀 리스트",
+    titleLabel: "서울 호텔 웨딩홀 리스트",
+    eyebrow: "VIEWDDING · HOTEL WEDDING HALLS",
+    searchTerms: "서울 호텔웨딩과 서울 호텔 예식장",
+    definitionTitle: "호텔 웨딩홀은 이렇게 분류했어요",
+    definition: "호텔이 직접 운영하는 연회장과 예식 공간을 모았습니다. 호텔 건물 안에 있더라도 별도 웨딩 업체가 운영하는 홀은 호텔 웨딩홀이 아니라 전문웨딩홀로 분류합니다.",
+    note: "같은 호텔 안에서도 홀마다 수용인원과 보증인원, 식사 구성이 크게 다릅니다. 대관료와 식대 조건은 예식 날짜와 시간대에 따라 달라지므로 상담 시 다시 확인해 주세요.",
+    filterType: "hotel",
+    csvFileName: "seoul-hotel-wedding-halls.csv",
+  },
 };
 
 export function isHallSeoSlug(value: string): value is HallSeoSlug {
@@ -109,6 +122,8 @@ export function hallMatchesSeoCollection(hall: HallRecord, key: HallSeoCollectio
       return hall.chapel === true;
     case "outdoor":
       return hall.indoorOutdoor === "outdoor" || hall.indoorOutdoor === "both";
+    case "hotel":
+      return hall.venueType === "hotel";
   }
 }
 

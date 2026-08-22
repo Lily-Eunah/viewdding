@@ -20,9 +20,9 @@ function hall(overrides: Partial<HallRecord> = {}): HallRecord {
 
 describe("hall SEO collections", () => {
   it("supports only the published type slugs", () => {
-    expect(HALL_SEO_SLUGS).toEqual(["bright", "outdoor", "dark", "chapel"]);
+    expect(HALL_SEO_SLUGS).toEqual(["bright", "outdoor", "dark", "chapel", "hotel"]);
     expect(isHallSeoSlug("bright")).toBe(true);
-    expect(isHallSeoSlug("hotel")).toBe(false);
+    expect(isHallSeoSlug("house")).toBe(false);
   });
 
   it("includes transitional halls in both lighting collections", () => {
@@ -37,5 +37,11 @@ describe("hall SEO collections", () => {
     expect(hallMatchesSeoCollection(hall({ indoorOutdoor: "outdoor" }), "outdoor")).toBe(true);
     expect(hallMatchesSeoCollection(hall({ indoorOutdoor: "both" }), "outdoor")).toBe(true);
     expect(hallMatchesSeoCollection(hall({ indoorOutdoor: "unknown" }), "outdoor")).toBe(false);
+  });
+
+  it("counts only hotel-operated venues as hotel weddings", () => {
+    expect(hallMatchesSeoCollection(hall({ venueType: "hotel" }), "hotel")).toBe(true);
+    expect(hallMatchesSeoCollection(hall({ venueType: "professional_convention" }), "hotel")).toBe(false);
+    expect(hallMatchesSeoCollection(hall({ venueType: "unknown" }), "hotel")).toBe(false);
   });
 });
